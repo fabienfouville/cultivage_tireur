@@ -1,0 +1,107 @@
+{
+  "id": "qcm-langue-francaise",
+  "module": "qcm",
+  "theme": "Langue française",
+  "questions": [
+    {
+      "text": "Que signifie « poser un lapin » ?",
+      "answers": [
+        "Faire un cadeau",
+        "Ne pas venir à un rendez-vous",
+        "Partir en courant",
+        "Raconter un mensonge"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel est le pluriel de « festival » ?",
+      "answers": [
+        "Festivaux",
+        "Festivals",
+        "Festivales",
+        "Festivaus"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Que veut dire « avoir le cafard » ?",
+      "answers": [
+        "Avoir faim",
+        "Avoir le moral à zéro",
+        "Être malade",
+        "Avoir peur"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Combien de lettres compte l'alphabet français ?",
+      "answers": [
+        "24",
+        "26",
+        "28",
+        "30"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Lequel de ces mots est un palindrome ?",
+      "answers": [
+        "Radar",
+        "Rameur",
+        "Rideau",
+        "Rocher"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Que signifie « coûter les yeux de la tête » ?",
+      "answers": [
+        "Coûter très cher",
+        "Faire très mal",
+        "Être gratuit",
+        "Être magnifique"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel est le féminin de « canard » ?",
+      "answers": [
+        "Canarde",
+        "Cane",
+        "Caneton",
+        "Canardine"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle la figure de style qui exagère volontairement ?",
+      "answers": [
+        "La litote",
+        "L'hyperbole",
+        "La métaphore",
+        "L'oxymore"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle institution, fondée en 1635, veille sur la langue française ?",
+      "answers": [
+        "Le Collège de France",
+        "L'Académie française",
+        "La Sorbonne",
+        "Le Conseil d'État"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment appelle-t-on deux mots qui se prononcent pareil mais s'écrivent différemment (vert / verre) ?",
+      "answers": [
+        "Des synonymes",
+        "Des homophones",
+        "Des antonymes",
+        "Des paronymes"
+      ],
+      "correct": 1
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "top-classements-monde",
+  "module": "top",
+  "theme": "Classements du monde",
+  "questions": [
+    {
+      "text": "Les 5 plus hauts sommets du monde",
+      "answers": [
+        "Everest",
+        "K2",
+        "Kangchenjunga",
+        "Lhotse",
+        "Makalu"
+      ]
+    },
+    {
+      "text": "Les 5 océans, du plus grand au plus petit",
+      "answers": [
+        "Pacifique",
+        "Atlantique",
+        "Indien",
+        "Austral",
+        "Arctique"
+      ]
+    },
+    {
+      "text": "Les 5 planètes les plus proches du Soleil",
+      "answers": [
+        "Mercure",
+        "Vénus",
+        "Terre",
+        "Mars",
+        "Jupiter"
+      ]
+    },
+    {
+      "text": "Les 5 villes les plus peuplées de France (communes)",
+      "answers": [
+        "Paris",
+        "Marseille",
+        "Lyon",
+        "Toulouse",
+        "Nice"
+      ]
+    },
+    {
+      "text": "Les 5 plus grands pays d'Afrique (superficie)",
+      "answers": [
+        "Algérie",
+        "République démocratique du Congo",
+        "Soudan",
+        "Libye",
+        "Tchad"
+      ]
+    }
+  ]
+}

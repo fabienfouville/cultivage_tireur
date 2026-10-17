@@ -1,0 +1,47 @@
+{
+  "id": "cash-cinema-series",
+  "module": "cash",
+  "theme": "Cinéma & séries",
+  "questions": [
+    {
+      "text": "Comment s'appelle le lionceau héros du « Roi Lion » ?",
+      "answerHint": "Simba"
+    },
+    {
+      "text": "Dans « Aladdin », quel méchant a un perroquet nommé Iago ?",
+      "answerHint": "Jafar"
+    },
+    {
+      "text": "Quel réalisateur a signé « Les Dents de la mer » et « E.T. » ?",
+      "answerHint": "Steven Spielberg / Spielberg"
+    },
+    {
+      "text": "Comment s'appelle le vaisseau du capitaine Kirk dans « Star Trek » ?",
+      "answerHint": "Enterprise"
+    },
+    {
+      "text": "Comment s'appelle le bonhomme de neige de « La Reine des neiges » ?",
+      "answerHint": "Olaf"
+    },
+    {
+      "text": "Quel film de Christopher Nolan sorti en 2023 raconte la création de la bombe atomique ?",
+      "answerHint": "Oppenheimer"
+    },
+    {
+      "text": "Quel agent secret porte le matricule 007 ?",
+      "answerHint": "James Bond / Bond"
+    },
+    {
+      "text": "Quel personnage de « Toy Story » crie « Vers l'infini et au-delà ! » ?",
+      "answerHint": "Buzz l'Éclair / Buzz"
+    },
+    {
+      "text": "Dans quelle série suit-on Sheldon Cooper et Leonard Hofstadter ?",
+      "answerHint": "The Big Bang Theory / Big Bang Theory"
+    },
+    {
+      "text": "Quel personnage de Molière, joué au cinéma par Louis de Funès en 1980, est obsédé par sa cassette ?",
+      "answerHint": "Harpagon / L'Avare"
+    }
+  ]
+}

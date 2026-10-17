@@ -1,0 +1,47 @@
+{
+  "id": "cash-expressions",
+  "module": "cash",
+  "theme": "Expressions à compléter",
+  "questions": [
+    {
+      "text": "Complète : « Il ne faut pas vendre la peau de l'… avant de l'avoir tué »",
+      "answerHint": "ours"
+    },
+    {
+      "text": "Complète : « Petit à petit, l'oiseau fait son… »",
+      "answerHint": "nid"
+    },
+    {
+      "text": "Complète : « Qui vole un œuf vole un… »",
+      "answerHint": "bœuf / boeuf"
+    },
+    {
+      "text": "Complète : « Tant va la cruche à l'eau qu'à la fin elle se… »",
+      "answerHint": "casse"
+    },
+    {
+      "text": "Complète : « L'habit ne fait pas le… »",
+      "answerHint": "moine"
+    },
+    {
+      "text": "Complète : « Quand le chat n'est pas là, les souris… »",
+      "answerHint": "dansent"
+    },
+    {
+      "text": "Complète : « Il ne faut pas mettre tous ses œufs dans le même… »",
+      "answerHint": "panier"
+    },
+    {
+      "text": "Complète : « Après la pluie, le beau… »",
+      "answerHint": "temps"
+    },
+    {
+      "text": "Complète : « Chat échaudé craint l'eau… »",
+      "answerHint": "froide"
+    },
+    {
+      "text": "Complète : « Les chiens aboient, la caravane… »",
+      "answerHint": "passe"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "qcm-bd-mangas",
+  "module": "qcm",
+  "theme": "BD & mangas",
+  "questions": [
+    {
+      "text": "Comment s'appelle le chien de Tintin ?",
+      "answers": [
+        "Idéfix",
+        "Milou",
+        "Rantanplan",
+        "Pif"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qui est le druide du village d'Astérix ?",
+      "answers": [
+        "Abraracourcix",
+        "Panoramix",
+        "Assurancetourix",
+        "Cétautomatix"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qui est l'auteur du manga « One Piece » ?",
+      "answers": [
+        "Akira Toriyama",
+        "Eiichirō Oda",
+        "Masashi Kishimoto",
+        "Hayao Miyazaki"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle le héros de « Dragon Ball » ?",
+      "answers": [
+        "Vegeta",
+        "Son Goku",
+        "Naruto",
+        "Luffy"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel cow-boy « tire plus vite que son ombre » ?",
+      "answers": [
+        "Lucky Luke",
+        "Blueberry",
+        "Tex Willer",
+        "Jolly Jumper"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Comment s'appellent les petits êtres bleus créés par Peyo ?",
+      "answers": [
+        "Les Schtroumpfs",
+        "Les Minions",
+        "Les Barbapapa",
+        "Les Fraggle"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel festival de BD se tient chaque année en janvier en Charente ?",
+      "answers": [
+        "Le festival d'Angoulême",
+        "Le festival de Cannes",
+        "Japan Expo",
+        "Le festival de Blois"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Qui a créé Gaston Lagaffe ?",
+      "answers": [
+        "Hergé",
+        "André Franquin",
+        "Morris",
+        "Albert Uderzo"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle le héros de « L'Attaque des Titans » ?",
+      "answers": [
+        "Eren Jäger",
+        "Livaï",
+        "Light Yagami",
+        "Tanjirō"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel super-héros Marvel se cache derrière Peter Parker ?",
+      "answers": [
+        "Batman",
+        "Spider-Man",
+        "Iron Man",
+        "Daredevil"
+      ],
+      "correct": 1
+    }
+  ]
+}

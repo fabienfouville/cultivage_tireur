@@ -1,0 +1,107 @@
+{
+  "id": "qcm-cuisine-du-monde",
+  "module": "qcm",
+  "theme": "Cuisine du monde",
+  "questions": [
+    {
+      "text": "Quel pays est célèbre pour le kimchi, son chou fermenté pimenté ?",
+      "answers": [
+        "Japon",
+        "Corée",
+        "Chine",
+        "Thaïlande"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "De quel pays vient le ceviche, du poisson cru mariné au citron vert ?",
+      "answers": [
+        "Pérou",
+        "Espagne",
+        "Cuba",
+        "Philippines"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle sauce italienne mélange basilic, pignons de pin, ail, parmesan et huile d'olive ?",
+      "answers": [
+        "Le pesto",
+        "La carbonara",
+        "L'arrabbiata",
+        "La puttanesca"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Comment s'appelle la galette de maïs ou de blé typique du Mexique ?",
+      "answers": [
+        "Naan",
+        "Tortilla",
+        "Pita",
+        "Chapati"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel fromage garnit une pizza Margherita ?",
+      "answers": [
+        "Cheddar",
+        "Mozzarella",
+        "Emmental",
+        "Feta"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Le goulasch est un plat traditionnel de quel pays ?",
+      "answers": [
+        "Pologne",
+        "Hongrie",
+        "Autriche",
+        "Roumanie"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle le poisson cru tranché servi sans riz au Japon ?",
+      "answers": [
+        "Sushi",
+        "Sashimi",
+        "Maki",
+        "Tempura"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Le tzatziki grec est à base de yaourt et de…",
+      "answers": [
+        "Concombre",
+        "Tomate",
+        "Aubergine",
+        "Poivron"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "De quel pays vient le fish and chips ?",
+      "answers": [
+        "Irlande",
+        "Royaume-Uni",
+        "Australie",
+        "Canada"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel légume donne sa couleur rouge au bortsch ?",
+      "answers": [
+        "La betterave",
+        "La carotte",
+        "Le poivron",
+        "La tomate"
+      ],
+      "correct": 0
+    }
+  ]
+}

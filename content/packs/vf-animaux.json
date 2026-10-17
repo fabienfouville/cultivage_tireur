@@ -1,0 +1,58 @@
+{
+  "id": "vf-animaux",
+  "module": "vf-survie",
+  "theme": "Animaux étonnants",
+  "description": "du plus facile au plus dur",
+  "questions": [
+    {
+      "text": "Le loup est l'ancêtre du chien domestique.",
+      "correct": true,
+      "order": 1
+    },
+    {
+      "text": "Les requins sont des mammifères.",
+      "correct": false,
+      "order": 2
+    },
+    {
+      "text": "L'ornithorynque est un mammifère qui pond des œufs.",
+      "correct": true,
+      "order": 3
+    },
+    {
+      "text": "Les flamants roses sont roses dès leur naissance.",
+      "correct": false,
+      "order": 4
+    },
+    {
+      "text": "Le colibri peut voler en marche arrière.",
+      "correct": true,
+      "order": 5
+    },
+    {
+      "text": "La girafe a plus de vertèbres dans le cou que l'être humain.",
+      "correct": false,
+      "order": 6
+    },
+    {
+      "text": "Les dauphins peuvent dormir avec la moitié du cerveau éveillée.",
+      "correct": true,
+      "order": 7
+    },
+    {
+      "text": "Un kangourou recule aussi facilement qu'il avance.",
+      "correct": false,
+      "order": 8
+    },
+    {
+      "text": "Le paresseux ne descend de son arbre qu'environ une fois par semaine pour faire ses besoins.",
+      "correct": true,
+      "order": 9
+    },
+    {
+      "text": "L'abeille ouvrière meurt généralement après avoir piqué un humain.",
+      "correct": true,
+      "order": 10
+    }
+  ]
+}

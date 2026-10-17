@@ -1,0 +1,24 @@
+# Vérifie chaque push / PR : types, tests (packs de questions), règles de sécurité, build
+name: Vérifications
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4 # pour l'émulateur Firestore
+        with:
+          distribution: temurin
+          java-version: 21
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npx -y firebase-tools@14 emulators:exec --only firestore --project demo-cultivage-rules "npx vitest run --config vitest.rules.config.ts"
+      - run: npm run build

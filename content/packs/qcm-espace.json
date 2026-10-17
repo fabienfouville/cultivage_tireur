@@ -1,0 +1,107 @@
+{
+  "id": "qcm-espace",
+  "module": "qcm",
+  "theme": "Espace & astronomie",
+  "questions": [
+    {
+      "text": "Quelle est la grande galaxie voisine de la Voie lactée ?",
+      "answers": [
+        "Andromède",
+        "Le Triangle",
+        "Le Sombrero",
+        "Le Tourbillon"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle chienne soviétique fut le premier animal placé en orbite, en 1957 ?",
+      "answers": [
+        "Laïka",
+        "Belka",
+        "Strelka",
+        "Félicette"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel astronaute français a séjourné dans l'ISS en 2016-2017 puis en 2021 ?",
+      "answers": [
+        "Jean-Loup Chrétien",
+        "Thomas Pesquet",
+        "Claudie Haigneré",
+        "Philippe Perrin"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Sur quelle planète se trouve l'Olympus Mons, le plus grand volcan connu du système solaire ?",
+      "answers": [
+        "Vénus",
+        "Mars",
+        "Jupiter",
+        "Mercure"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel télescope spatial, lancé en 2021, a pris la relève de Hubble ?",
+      "answers": [
+        "Kepler",
+        "James Webb",
+        "Gaia",
+        "Spitzer"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel astre a perdu son statut de planète en 2006 ?",
+      "answers": [
+        "Cérès",
+        "Pluton",
+        "Éris",
+        "Makemake"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle le rover de la NASA arrivé sur Mars en 2021 ?",
+      "answers": [
+        "Curiosity",
+        "Perseverance",
+        "Opportunity",
+        "Spirit"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel programme américain doit ramener des humains sur la Lune ?",
+      "answers": [
+        "Apollo",
+        "Artemis",
+        "Gemini",
+        "Mercury"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Où se trouve le centre spatial d'où décollent les fusées Ariane ?",
+      "answers": [
+        "Kourou (Guyane)",
+        "Toulouse",
+        "Cap Canaveral",
+        "Baïkonour"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Comment s'appelle la station spatiale habitée en permanence par des équipages internationaux depuis 2000 ?",
+      "answers": [
+        "Mir",
+        "ISS",
+        "Skylab",
+        "Tiangong"
+      ],
+      "correct": 1
+    }
+  ]
+}

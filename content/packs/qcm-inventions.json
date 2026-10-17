@@ -1,0 +1,107 @@
+{
+  "id": "qcm-inventions",
+  "module": "qcm",
+  "theme": "Inventions",
+  "questions": [
+    {
+      "text": "Qui a inventé le phonographe ?",
+      "answers": [
+        "Graham Bell",
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Louis Lumière"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel Français a inventé l'écriture en relief pour les aveugles ?",
+      "answers": [
+        "Valentin Haüy",
+        "Louis Braille",
+        "Charles Barbier",
+        "Jean Massieu"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quels frères ont présenté le cinématographe en 1895 ?",
+      "answers": [
+        "Les frères Wright",
+        "Les frères Lumière",
+        "Les frères Montgolfier",
+        "Les frères Pathé"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qui a mis au point le premier vaccin contre la rage, en 1885 ?",
+      "answers": [
+        "Robert Koch",
+        "Louis Pasteur",
+        "Edward Jenner",
+        "Alexander Fleming"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qu'est-ce que Gutenberg a révolutionné vers 1450 ?",
+      "answers": [
+        "La boussole",
+        "L'imprimerie",
+        "La lunette astronomique",
+        "L'horloge"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel accessoire automobile Mary Anderson a-t-elle breveté en 1903 ?",
+      "answers": [
+        "Le klaxon",
+        "L'essuie-glace",
+        "Le rétroviseur",
+        "La ceinture de sécurité"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qui est considéré comme l'inventeur du World Wide Web ?",
+      "answers": [
+        "Bill Gates",
+        "Tim Berners-Lee",
+        "Steve Jobs",
+        "Vint Cerf"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qu'ont inventé les frères Montgolfier ?",
+      "answers": [
+        "L'avion",
+        "Le ballon à air chaud",
+        "Le parachute",
+        "Le dirigeable"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qui a inventé la dynamite ?",
+      "answers": [
+        "Alfred Nobel",
+        "Marie Curie",
+        "Antoine Lavoisier",
+        "Dmitri Mendeleïev"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel Français a breveté la carte à puce en 1974 ?",
+      "answers": [
+        "Roland Moreno",
+        "Gustave Eiffel",
+        "Louis Renault",
+        "Denis Papin"
+      ],
+      "correct": 0
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "qcm-jeux-video",
+  "module": "qcm",
+  "theme": "Jeux vidéo",
+  "questions": [
+    {
+      "text": "Quel est le métier de Mario ?",
+      "answers": [
+        "Charpentier",
+        "Plombier",
+        "Électricien",
+        "Maçon"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle entreprise a créé la PlayStation ?",
+      "answers": [
+        "Nintendo",
+        "Sega",
+        "Sony",
+        "Microsoft"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel Pokémon porte le numéro 25 du Pokédex ?",
+      "answers": [
+        "Bulbizarre",
+        "Salamèche",
+        "Pikachu",
+        "Évoli"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel jeu de cubes a été créé par Markus « Notch » Persson ?",
+      "answers": [
+        "Roblox",
+        "Minecraft",
+        "Terraria",
+        "Lego Worlds"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle la princesse de la saga « The Legend of… » ?",
+      "answers": [
+        "Peach",
+        "Daisy",
+        "Zelda",
+        "Harmonie"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Dans quel battle royale d'Epic Games peut-on construire des murs et des rampes ?",
+      "answers": [
+        "PUBG",
+        "Fortnite",
+        "Apex Legends",
+        "Warzone"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel hérisson bleu est la mascotte de Sega ?",
+      "answers": [
+        "Sonic",
+        "Knuckles",
+        "Crash",
+        "Spyro"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle console portable Nintendo est sortie en 1989 ?",
+      "answers": [
+        "Game Boy",
+        "Game Gear",
+        "Nintendo DS",
+        "Lynx"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Dans « Tetris », de combien de carrés est composée chaque pièce ?",
+      "answers": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel éditeur français est à l'origine de la saga « Assassin's Creed » ?",
+      "answers": [
+        "Ubisoft",
+        "Quantic Dream",
+        "Dontnod",
+        "Ankama"
+      ],
+      "correct": 0
+    }
+  ]
+}

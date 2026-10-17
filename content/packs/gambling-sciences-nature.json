@@ -1,0 +1,107 @@
+{
+  "id": "gambling-sciences-nature",
+  "module": "gambling",
+  "theme": "Mix Sciences & nature",
+  "questions": [
+    {
+      "text": "Combien de chromosomes compte une cellule humaine (hors ovules et spermatozoïdes) ?",
+      "answers": [
+        "23",
+        "44",
+        "46",
+        "48"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel oiseau peut tourner la tête à environ 270 degrés ?",
+      "answers": [
+        "La chouette",
+        "Le perroquet",
+        "Le corbeau",
+        "L'aigle"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle est la planète la plus chaude du système solaire ?",
+      "answers": [
+        "Mercure",
+        "Vénus",
+        "Mars",
+        "Jupiter"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "À quelle température l'eau gèle-t-elle (en °F) ?",
+      "answers": [
+        "0 °F",
+        "32 °F",
+        "100 °F",
+        "212 °F"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel gaz est le plus abondant dans l'air que nous respirons ?",
+      "answers": [
+        "Oxygène",
+        "Azote",
+        "Argon",
+        "Dioxyde de carbone"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Combien de pattes a un insecte ?",
+      "answers": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle planète tourne le plus vite sur elle-même ?",
+      "answers": [
+        "La Terre",
+        "Mars",
+        "Jupiter",
+        "Vénus"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Combien d'os compte environ un bébé à la naissance ?",
+      "answers": [
+        "Environ 100",
+        "Environ 200",
+        "Environ 300",
+        "Environ 400"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quelle feuille d'arbre figure sur le drapeau du Canada ?",
+      "answers": [
+        "Le chêne",
+        "L'érable",
+        "Le bouleau",
+        "Le pin"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle est la couche de l'atmosphère où nous vivons ?",
+      "answers": [
+        "La stratosphère",
+        "La troposphère",
+        "La mésosphère",
+        "La thermosphère"
+      ],
+      "correct": 1
+    }
+  ]
+}

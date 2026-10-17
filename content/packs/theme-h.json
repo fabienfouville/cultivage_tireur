@@ -1,0 +1,27 @@
+{
+  "id": "theme-h",
+  "module": "theme",
+  "theme": "Thème H",
+  "questions": [
+    {
+      "text": "Un fromage français",
+      "answerHint": "Camembert, Brie, Comté, Roquefort, Reblochon, Munster, Maroilles, Saint-Nectaire…"
+    },
+    {
+      "text": "Un oiseau",
+      "answerHint": "Moineau, aigle, pigeon, mésange, merle, faucon, hibou, perroquet…"
+    },
+    {
+      "text": "Une capitale africaine",
+      "answerHint": "Dakar, Nairobi, Le Caire, Rabat, Alger, Tunis, Abidjan… (attention : Yamoussoukro est la capitale officielle de la Côte d'Ivoire)"
+    },
+    {
+      "text": "Un jeu de cartes",
+      "answerHint": "Belote, tarot, poker, bataille, président, rami, uno, solitaire…"
+    },
+    {
+      "text": "Un personnage de Disney",
+      "answerHint": "Mickey, Donald, Simba, Ariel, Aladdin, Elsa, Stitch, Mulan…"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "cash-monde",
+  "module": "cash",
+  "theme": "Tour du monde",
+  "questions": [
+    {
+      "text": "Quelle est la monnaie du Royaume-Uni ?",
+      "answerHint": "Livre sterling / livre"
+    },
+    {
+      "text": "Quelle est la capitale de l'Islande ?",
+      "answerHint": "Reykjavik"
+    },
+    {
+      "text": "Dans quel pays se trouve la ville de Marrakech ?",
+      "answerHint": "Maroc"
+    },
+    {
+      "text": "Quel fleuve traverse Londres ?",
+      "answerHint": "Tamise"
+    },
+    {
+      "text": "Quelle est la plus grande île de la Méditerranée ?",
+      "answerHint": "Sicile"
+    },
+    {
+      "text": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+      "answerHint": "Pyrénées"
+    },
+    {
+      "text": "Quel est le plus grand désert chaud du monde ?",
+      "answerHint": "Sahara"
+    },
+    {
+      "text": "Quelle ville américaine est surnommée « la Grosse Pomme » ?",
+      "answerHint": "New York"
+    },
+    {
+      "text": "Dans quel pays se trouve la ville de Porto ?",
+      "answerHint": "Portugal"
+    },
+    {
+      "text": "Quelle est la capitale de la Croatie ?",
+      "answerHint": "Zagreb"
+    }
+  ]
+}

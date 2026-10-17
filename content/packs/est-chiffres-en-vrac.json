@@ -1,0 +1,57 @@
+{
+  "id": "est-chiffres-en-vrac",
+  "module": "estimation",
+  "theme": "Chiffres en vrac",
+  "questions": [
+    {
+      "text": "Combien de dominos compte un jeu classique (double-six) ?",
+      "answer": 28,
+      "unit": "dominos"
+    },
+    {
+      "text": "Combien de cases compte un échiquier ?",
+      "answer": 64,
+      "unit": "cases"
+    },
+    {
+      "text": "Combien de cartes compte un jeu de tarot ?",
+      "answer": 78,
+      "unit": "cartes"
+    },
+    {
+      "text": "Combien de cases compte le plateau d'un jeu de dames international ?",
+      "answer": 100,
+      "unit": "cases"
+    },
+    {
+      "text": "Quelle est la circonférence de la Terre à l'équateur ?",
+      "answer": 40075,
+      "unit": "km"
+    },
+    {
+      "text": "Combien d'épisodes compte la série « Friends » ?",
+      "answer": 236,
+      "unit": "épisodes"
+    },
+    {
+      "text": "Combien de secondes y a-t-il dans une journée ?",
+      "answer": 86400,
+      "unit": "secondes"
+    },
+    {
+      "text": "Combien d'étoiles figurent sur le drapeau des États-Unis ?",
+      "answer": 50,
+      "unit": "étoiles"
+    },
+    {
+      "text": "Quelle est la longueur du tunnel sous la Manche ?",
+      "answer": 50,
+      "unit": "km"
+    },
+    {
+      "text": "Combien de dents compte un chat adulte ?",
+      "answer": 30,
+      "unit": "dents"
+    }
+  ]
+}

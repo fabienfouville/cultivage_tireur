@@ -1,0 +1,107 @@
+{
+  "id": "qcm-musique",
+  "module": "qcm",
+  "theme": "Musique",
+  "questions": [
+    {
+      "text": "Quel chanteur français était surnommé « le Taulier » ?",
+      "answers": [
+        "Eddy Mitchell",
+        "Johnny Hallyday",
+        "Michel Sardou",
+        "Jacques Dutronc"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle chanteuse a interprété « Rolling in the Deep » ?",
+      "answers": [
+        "Adele",
+        "Amy Winehouse",
+        "Duffy",
+        "Lady Gaga"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Combien de membres comptaient les Beatles ?",
+      "answers": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel artiste a sorti l'album « Thriller » en 1982 ?",
+      "answers": [
+        "Prince",
+        "Michael Jackson",
+        "Stevie Wonder",
+        "Lionel Richie"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle chanteuse a interprété « Je veux » en 2010 ?",
+      "answers": [
+        "Zaz",
+        "Louane",
+        "Indila",
+        "Christine and the Queens"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle chanson d'Aya Nakamura a été un tube international en 2018 ?",
+      "answers": [
+        "Djadja",
+        "Pookie",
+        "Copines",
+        "Jolie nana"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Qui chante « La Bohème » (1965) ?",
+      "answers": [
+        "Jacques Brel",
+        "Charles Aznavour",
+        "Georges Brassens",
+        "Gilbert Bécaud"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans quel pays est né le reggae ?",
+      "answers": [
+        "Cuba",
+        "Jamaïque",
+        "Brésil",
+        "Trinité-et-Tobago"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel pays a remporté l'Eurovision 2024 avec Nemo ?",
+      "answers": [
+        "Croatie",
+        "Suisse",
+        "Israël",
+        "Ukraine"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel rappeur a sorti l'album « Civilisation » en 2021 ?",
+      "answers": [
+        "Nekfeu",
+        "Orelsan",
+        "Booba",
+        "PNL"
+      ],
+      "correct": 1
+    }
+  ]
+}

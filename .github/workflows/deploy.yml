@@ -1,0 +1,54 @@
+# Mise en ligne automatique sur Firebase :
+# - chaque Pull Request reçoit un lien de prévisualisation (commenté sur la PR)
+# - chaque merge sur main met le site en ligne + publie les règles Firestore
+# Pré-requis (une seule fois) : le secret FIREBASE_SERVICE_ACCOUNT, voir README.md
+name: Déploiement
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # Les PR venant de forks n'ont pas accès aux secrets
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+
+      - name: Prévisualisation (PR)
+        if: github.event_name == 'pull_request'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: cultivage-90317
+          expires: 7d
+
+      - name: Mise en ligne (main)
+        if: github.event_name == 'push'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: cultivage-90317
+          channelId: live
+
+      - name: Règles Firestore (main)
+        if: github.event_name == 'push'
+        env:
+          SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          echo "$SA" > "$RUNNER_TEMP/sa.json"
+          GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/sa.json" npx -y firebase-tools@14 deploy --only firestore --project cultivage-90317 --non-interactive

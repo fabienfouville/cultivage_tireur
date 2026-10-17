@@ -1,0 +1,58 @@
+{
+  "id": "vf-cinema",
+  "module": "vf-survie",
+  "theme": "Cinéma & séries",
+  "description": "du plus facile au plus dur",
+  "questions": [
+    {
+      "text": "Harrison Ford joue Indiana Jones.",
+      "correct": true,
+      "order": 1
+    },
+    {
+      "text": "Dark Vador est le père de Luke Skywalker.",
+      "correct": true,
+      "order": 2
+    },
+    {
+      "text": "La trilogie « Le Seigneur des anneaux » a été tournée en Australie.",
+      "correct": false,
+      "order": 3
+    },
+    {
+      "text": "Le premier « Toy Story » est sorti en 1995.",
+      "correct": true,
+      "order": 4
+    },
+    {
+      "text": "« Titanic » a remporté l'Oscar du meilleur film.",
+      "correct": true,
+      "order": 5
+    },
+    {
+      "text": "« Intouchables » est le film français qui a fait le plus d'entrées en France.",
+      "correct": false,
+      "order": 6
+    },
+    {
+      "text": "Les Na'vi d'« Avatar » ont la peau verte.",
+      "correct": false,
+      "order": 7
+    },
+    {
+      "text": "Walt Disney a prêté sa voix à Mickey Mouse.",
+      "correct": true,
+      "order": 8
+    },
+    {
+      "text": "Dans « Friends », Ross et Rachel finissent ensemble.",
+      "correct": true,
+      "order": 9
+    },
+    {
+      "text": "« Le Dictateur » de Charlie Chaplin est sorti avant la Seconde Guerre mondiale.",
+      "correct": false,
+      "order": 10
+    }
+  ]
+}

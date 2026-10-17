@@ -1,0 +1,107 @@
+{
+  "id": "qcm-annees-90-2000",
+  "module": "qcm",
+  "theme": "Années 90-2000",
+  "questions": [
+    {
+      "text": "Quel animal virtuel japonais en forme d'œuf a fait fureur en 1997 ?",
+      "answers": [
+        "Furby",
+        "Tamagotchi",
+        "Pokéwalker",
+        "Polly Pocket"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel boys band a chanté « I Want It That Way » ?",
+      "answers": [
+        "NSYNC",
+        "Backstreet Boys",
+        "Take That",
+        "2Be3"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle émission de M6 lancée en 2001 a enfermé des candidats dans un loft ?",
+      "answers": [
+        "Star Academy",
+        "Loft Story",
+        "Secret Story",
+        "Koh-Lanta"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel téléphone Nokia sorti en 2000 est resté célèbre pour sa solidité ?",
+      "answers": [
+        "Nokia 3310",
+        "Nokia 8210",
+        "Nokia 7110",
+        "Nokia N95"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel film de 1997 avec Will Smith met en scène des agents en costume noir ?",
+      "answers": [
+        "Independence Day",
+        "Men in Black",
+        "Bad Boys",
+        "Wild Wild West"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel moteur de recherche a été fondé en 1998 ?",
+      "answers": [
+        "Yahoo!",
+        "Google",
+        "AltaVista",
+        "Lycos"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qui chante « Pour que tu m'aimes encore » (1995) ?",
+      "answers": [
+        "Lara Fabian",
+        "Céline Dion",
+        "Patricia Kaas",
+        "Mylène Farmer"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle console de Sony est sortie en Europe en novembre 2000 ?",
+      "answers": [
+        "PlayStation 2",
+        "Dreamcast",
+        "GameCube",
+        "Xbox"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle série animée suit Sacha et son Pikachu, diffusée en France à partir de 1999 ?",
+      "answers": [
+        "Digimon",
+        "Pokémon",
+        "Beyblade",
+        "Yu-Gi-Oh!"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel réseau social a été lancé par Mark Zuckerberg en 2004 ?",
+      "answers": [
+        "MySpace",
+        "Facebook",
+        "Twitter",
+        "Skyrock"
+      ],
+      "correct": 1
+    }
+  ]
+}

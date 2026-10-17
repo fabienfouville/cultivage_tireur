@@ -1,0 +1,57 @@
+{
+  "id": "top-classements-culture",
+  "module": "top",
+  "theme": "Classements culture & histoire",
+  "questions": [
+    {
+      "text": "Les 5 premiers éléments du tableau périodique",
+      "answers": [
+        "Hydrogène",
+        "Hélium",
+        "Lithium",
+        "Béryllium",
+        "Bore"
+      ]
+    },
+    {
+      "text": "Les 5 premiers présidents de la Ve République",
+      "answers": [
+        "Charles de Gaulle",
+        "Georges Pompidou",
+        "Valéry Giscard d'Estaing",
+        "François Mitterrand",
+        "Jacques Chirac"
+      ]
+    },
+    {
+      "text": "Les 5 continents les plus peuplés",
+      "answers": [
+        "Asie",
+        "Afrique",
+        "Europe",
+        "Amérique du Nord",
+        "Amérique du Sud"
+      ]
+    },
+    {
+      "text": "Les 5 derniers champions du monde de football (du plus récent au plus ancien, avant 2026)",
+      "answers": [
+        "Argentine",
+        "France",
+        "Allemagne",
+        "Espagne",
+        "Italie"
+      ]
+    },
+    {
+      "text": "Les 5 premières lettres de l'alphabet grec",
+      "answers": [
+        "Alpha",
+        "Bêta",
+        "Gamma",
+        "Delta",
+        "Epsilon"
+      ]
+    }
+  ]
+}

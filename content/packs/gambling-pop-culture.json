@@ -1,0 +1,107 @@
+{
+  "id": "gambling-pop-culture",
+  "module": "gambling",
+  "theme": "Mix Pop culture",
+  "questions": [
+    {
+      "text": "Quel groupe a chanté « Wonderwall » ?",
+      "answers": [
+        "Blur",
+        "Oasis",
+        "Radiohead",
+        "Coldplay"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel film a lancé la carrière de Leonardo DiCaprio auprès du grand public en 1997 ?",
+      "answers": [
+        "Inception",
+        "Titanic",
+        "Catch Me If You Can",
+        "Gatsby"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel est le vrai prénom de Lady Gaga ?",
+      "answers": [
+        "Stefani",
+        "Alicia",
+        "Robyn",
+        "Katheryn"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Combien de films compte la saga Harry Potter (hors Animaux fantastiques) ?",
+      "answers": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel personnage dit « Hasta la vista, baby » ?",
+      "answers": [
+        "RoboCop",
+        "Terminator",
+        "Rambo",
+        "Predator"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel réseau social est connu pour ses vidéos courtes et sa danse virale ?",
+      "answers": [
+        "Snapchat",
+        "TikTok",
+        "Pinterest",
+        "LinkedIn"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans quelle ville se déroule « Ratatouille » de Pixar ?",
+      "answers": [
+        "Lyon",
+        "Paris",
+        "Marseille",
+        "Bordeaux"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel chanteur est surnommé « The King » ?",
+      "answers": [
+        "Elvis Presley",
+        "Michael Jackson",
+        "Frank Sinatra",
+        "Johnny Cash"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle série met en scène la famille Shelby à Birmingham ?",
+      "answers": [
+        "Peaky Blinders",
+        "The Crown",
+        "Downton Abbey",
+        "Sherlock"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Comment s'appelle l'ogre vert de DreamWorks ?",
+      "answers": [
+        "Hulk",
+        "Shrek",
+        "Fiona",
+        "Grinch"
+      ],
+      "correct": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "theme-g",
+  "module": "theme",
+  "theme": "Thème G",
+  "questions": [
+    {
+      "text": "Un pays d'Asie",
+      "answerHint": "Japon, Chine, Inde, Vietnam, Thaïlande, Corée du Sud, Népal…"
+    },
+    {
+      "text": "Une marque de voiture allemande ou italienne",
+      "answerHint": "BMW, Audi, Mercedes, Volkswagen, Porsche, Opel, Fiat, Ferrari, Lamborghini, Alfa Romeo, Maserati…"
+    },
+    {
+      "text": "Un super-héros",
+      "answerHint": "Superman, Batman, Spider-Man, Wonder Woman, Iron Man, Thor, Hulk…"
+    },
+    {
+      "text": "Un instrument à vent",
+      "answerHint": "Flûte, clarinette, trompette, saxophone, hautbois, trombone, tuba, cor…"
+    },
+    {
+      "text": "Une ville d'Italie",
+      "answerHint": "Rome, Milan, Naples, Turin, Florence, Venise, Bologne, Gênes, Palerme…"
+    }
+  ]
+}

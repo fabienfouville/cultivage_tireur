@@ -1,0 +1,57 @@
+{
+  "id": "est-dates-records",
+  "module": "estimation",
+  "theme": "Dates & records",
+  "questions": [
+    {
+      "text": "En quelle année est sorti le premier film « Star Wars » ?",
+      "answer": 1977,
+      "unit": ""
+    },
+    {
+      "text": "En quelle année est mort Louis XIV ?",
+      "answer": 1715,
+      "unit": ""
+    },
+    {
+      "text": "En quelle année est né Victor Hugo ?",
+      "answer": 1802,
+      "unit": ""
+    },
+    {
+      "text": "En quelle année a été publié le premier tome de « Harry Potter » (en anglais) ?",
+      "answer": 1997,
+      "unit": ""
+    },
+    {
+      "text": "Combien de fois la France a-t-elle remporté l'Eurovision ?",
+      "answer": 5,
+      "unit": "fois"
+    },
+    {
+      "text": "Combien d'années a duré la guerre de Cent Ans ?",
+      "answer": 116,
+      "unit": "ans"
+    },
+    {
+      "text": "Quelle est la longueur du boulevard périphérique parisien ?",
+      "answer": 35,
+      "unit": "km"
+    },
+    {
+      "text": "Quelle est la distance à vol d'oiseau entre Paris et New York ?",
+      "answer": 5837,
+      "unit": "km"
+    },
+    {
+      "text": "Quelle est la hauteur actuelle de la pyramide de Khéops ?",
+      "answer": 138,
+      "unit": "m"
+    },
+    {
+      "text": "Combien de personnes vivent sur Terre en 2024 (en milliards) ?",
+      "answer": 8.1,
+      "unit": "milliards"
+    }
+  ]
+}

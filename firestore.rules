@@ -1,0 +1,124 @@
+rules_version = '2';
+
+// Qui peut faire quoi :
+// - Admins (connexion Google, email listé ci-dessous ou dans la collection `admins`) : tout.
+// - Joueurs (compte anonyme) : voir les sessions, rejoindre, répondre à la question en cours.
+// - Les questions et leurs réponses ne sont lisibles QUE par les admins.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function email() {
+      return request.auth.token.get('email', '').lower();
+    }
+
+    function isAdmin() {
+      return signedIn()
+        && request.auth.token.get('email_verified', false) == true
+        && email() != ''
+        && (
+          // ⚠️ Garder synchronisé avec BUILTIN_ADMINS dans src/lib/auth.ts
+          email() in ['liloufe@gmail.com']
+          || exists(/databases/$(database)/documents/admins/$(email()))
+        );
+    }
+
+    // ── Contenu (admins uniquement) ──────────────────────────────
+    match /themes/{id}     { allow read, write: if isAdmin(); }
+    match /questions/{id}  { allow read, write: if isAdmin(); }
+    match /config/{id}     { allow read, write: if isAdmin(); }
+    match /grandJeux/{id}  { allow read, write: if isAdmin(); }
+    match /sessionSecrets/{id} { allow read, write: if isAdmin(); }
+
+    match /admins/{adminEmail} {
+      allow read: if isAdmin() || (signedIn() && email() == adminEmail);
+      allow write: if isAdmin();
+    }
+
+    // Mesure de l'heure serveur pour synchroniser les comptes à rebours
+    match /clocks/{uid} {
+      allow read, write: if signedIn() && request.auth.uid == uid;
+    }
+
+    // ── Sessions ─────────────────────────────────────────────────
+    match /sessions/{sid} {
+      allow read: if true;
+      allow write: if isAdmin();
+
+      function session() {
+        return get(/databases/$(database)/documents/sessions/$(sid)).data;
+      }
+
+      function isPlayer() {
+        let p = /databases/$(database)/documents/sessions/$(sid)/participants/$(request.auth.uid);
+        return signedIn() && exists(p) && get(p).data.get('kicked', false) != true;
+      }
+
+      // Mot de passe optionnel : le joueur écrit sa clé ici, la règle la compare au secret.
+      match /keys/{uid} {
+        allow read: if isAdmin();
+        allow create: if signedIn() && request.auth.uid == uid
+          && request.resource.data.key == get(/databases/$(database)/documents/sessionSecrets/$(sid)).data.password;
+        allow delete: if isAdmin();
+      }
+
+      match /participants/{uid} {
+        allow read: if true;
+        allow delete: if isAdmin();
+        allow create: if isAdmin() || (
+          signedIn() && request.auth.uid == uid
+          && session().status != 'done'
+          && request.resource.data.keys().hasOnly(['name', 'score', 'joinedAt'])
+          && request.resource.data.score == 0
+          && request.resource.data.name is string
+          && request.resource.data.name.size() > 0 && request.resource.data.name.size() <= 24
+          && (session().hasPassword != true
+              || exists(/databases/$(database)/documents/sessions/$(sid)/keys/$(uid)))
+        );
+        // Le joueur peut seulement changer son pseudo
+        allow update: if isAdmin() || (
+          signedIn() && request.auth.uid == uid
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['name'])
+          && request.resource.data.name is string
+          && request.resource.data.name.size() > 0 && request.resource.data.name.size() <= 24
+        );
+      }
+
+      // Réponses : une par joueur et par question, id = "<seq>_<uid>"
+      match /answers/{aid} {
+        allow read: if isAdmin() || (signedIn() && aid.matches('.*_' + request.auth.uid));
+        allow delete: if isAdmin();
+        allow create, update: if isAdmin() || (
+          isPlayer()
+          && request.resource.data.pid == request.auth.uid
+          && aid == string(request.resource.data.seq) + '_' + request.auth.uid
+          && session().round.seq == request.resource.data.seq
+          && session().round.status == 'answering'
+          && session().round.startedAt != null
+          && request.time < session().round.startedAt + duration.value(session().round.duration + 2, 's')
+        );
+      }
+
+      // Cartes du Grand Jeu : une par joueur et par bloc, id = "<blockCount>_<uid>"
+      match /cardPlays/{cid} {
+        allow read: if true;
+        allow delete: if isAdmin();
+        allow create, update: if isAdmin() || (
+          isPlayer()
+          && request.resource.data.pid == request.auth.uid
+          && cid == string(session().blockCount) + '_' + request.auth.uid
+          && session().phase == 'cards'
+        );
+      }
+
+      // Historique des points (écrit par les admins)
+      match /rounds/{rid} {
+        allow read: if true;
+        allow write: if isAdmin();
+      }
+    }
+  }
+}

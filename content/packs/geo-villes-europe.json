@@ -1,0 +1,68 @@
+{
+  "id": "geo-villes-europe",
+  "module": "geoloc",
+  "theme": "Villes d'Europe",
+  "mapId": "europe",
+  "questions": [
+    {
+      "text": "Lisbonne",
+      "answerHint": "Lisbonne (Portugal)",
+      "lat": 38.7223,
+      "lng": -9.1393
+    },
+    {
+      "text": "Dublin",
+      "answerHint": "Dublin (Irlande)",
+      "lat": 53.3498,
+      "lng": -6.2603
+    },
+    {
+      "text": "Prague",
+      "answerHint": "Prague (Tchéquie)",
+      "lat": 50.0755,
+      "lng": 14.4378
+    },
+    {
+      "text": "Vienne",
+      "answerHint": "Vienne (Autriche)",
+      "lat": 48.2082,
+      "lng": 16.3738
+    },
+    {
+      "text": "Copenhague",
+      "answerHint": "Copenhague (Danemark)",
+      "lat": 55.6761,
+      "lng": 12.5683
+    },
+    {
+      "text": "Athènes",
+      "answerHint": "Athènes (Grèce)",
+      "lat": 37.9838,
+      "lng": 23.7275
+    },
+    {
+      "text": "Édimbourg",
+      "answerHint": "Édimbourg (Écosse, Royaume-Uni)",
+      "lat": 55.9533,
+      "lng": -3.1883
+    },
+    {
+      "text": "Cracovie",
+      "answerHint": "Cracovie (Pologne)",
+      "lat": 50.0647,
+      "lng": 19.945
+    },
+    {
+      "text": "Amsterdam",
+      "answerHint": "Amsterdam (Pays-Bas)",
+      "lat": 52.3676,
+      "lng": 4.9041
+    },
+    {
+      "text": "Helsinki",
+      "answerHint": "Helsinki (Finlande)",
+      "lat": 60.1699,
+      "lng": 24.9384
+    }
+  ]
+}

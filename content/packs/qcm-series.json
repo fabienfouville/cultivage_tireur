@@ -1,0 +1,107 @@
+{
+  "id": "qcm-series",
+  "module": "qcm",
+  "theme": "Séries & télé",
+  "questions": [
+    {
+      "text": "Dans quelle ville se déroule la série « Friends » ?",
+      "answers": [
+        "Los Angeles",
+        "Chicago",
+        "New York",
+        "Boston"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Dans la série « Lupin » de Netflix, quel acteur joue Assane Diop ?",
+      "answers": [
+        "Omar Sy",
+        "Jamel Debbouze",
+        "Vincent Cassel",
+        "Ahmed Sylla"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Dans « Game of Thrones », quelle famille a pour devise « L'hiver vient » ?",
+      "answers": [
+        "Lannister",
+        "Targaryen",
+        "Stark",
+        "Baratheon"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quelle série espagnole met en scène des braqueurs portant des noms de villes ?",
+      "answers": [
+        "Élite",
+        "La Casa de Papel",
+        "Narcos",
+        "Vis a vis"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel jeu télévisé est présenté par Jean-Luc Reichmann depuis 2010 ?",
+      "answers": [
+        "Questions pour un champion",
+        "Les 12 coups de midi",
+        "Slam",
+        "N'oubliez pas les paroles"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans « Kaamelott », qui est le roi de Bretagne ?",
+      "answers": [
+        "Perceval",
+        "Lancelot",
+        "Arthur",
+        "Karadoc"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quelle série Netflix se déroule dans la ville fictive de Hawkins ?",
+      "answers": [
+        "Dark",
+        "Stranger Things",
+        "The OA",
+        "Mercredi"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle le café où se retrouvent les personnages de « Friends » ?",
+      "answers": [
+        "Central Perk",
+        "MacLaren's",
+        "Monk's Café",
+        "Luke's"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle série sud-coréenne de 2021 met en scène des jeux d'enfants mortels ?",
+      "answers": [
+        "Kingdom",
+        "Squid Game",
+        "Alice in Borderland",
+        "Sweet Home"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans « Les Simpson », comment s'appelle le bar où Homer boit sa Duff ?",
+      "answers": [
+        "Chez Moe",
+        "Le Krusty",
+        "Le Kwik-E-Mart",
+        "Le Springfield"
+      ],
+      "correct": 0
+    }
+  ]
+}

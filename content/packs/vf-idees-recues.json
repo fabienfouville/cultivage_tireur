@@ -1,0 +1,58 @@
+{
+  "id": "vf-idees-recues",
+  "module": "vf-survie",
+  "theme": "Idées reçues",
+  "description": "du plus facile au plus dur",
+  "questions": [
+    {
+      "text": "La tomate est un fruit au sens botanique.",
+      "correct": true,
+      "order": 1
+    },
+    {
+      "text": "Un poisson rouge n'a que trois secondes de mémoire.",
+      "correct": false,
+      "order": 2
+    },
+    {
+      "text": "Les cheveux et les ongles continuent de pousser après la mort.",
+      "correct": false,
+      "order": 3
+    },
+    {
+      "text": "Le mot « robot » vient d'une pièce de théâtre tchèque.",
+      "correct": true,
+      "order": 4
+    },
+    {
+      "text": "Le sang est bleu dans nos veines tant qu'il n'a pas touché l'air.",
+      "correct": false,
+      "order": 5
+    },
+    {
+      "text": "Un éléphant ne peut pas sauter.",
+      "correct": true,
+      "order": 6
+    },
+    {
+      "text": "On n'utilise que 10 % de son cerveau.",
+      "correct": false,
+      "order": 7
+    },
+    {
+      "text": "Les autruches enfouissent leur tête dans le sable quand elles ont peur.",
+      "correct": false,
+      "order": 8
+    },
+    {
+      "text": "Le Mont Everest grandit encore de quelques millimètres par an.",
+      "correct": true,
+      "order": 9
+    },
+    {
+      "text": "Napoléon était nettement plus petit que la moyenne des hommes de son époque.",
+      "correct": false,
+      "order": 10
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "qcm-cinema",
+  "module": "qcm",
+  "theme": "Cinéma",
+  "questions": [
+    {
+      "text": "Quel film de James Cameron sorti en 1997 a remporté 11 Oscars ?",
+      "answers": [
+        "Avatar",
+        "Titanic",
+        "Terminator 2",
+        "Abyss"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qui a réalisé « Le Fabuleux Destin d'Amélie Poulain » ?",
+      "answers": [
+        "Luc Besson",
+        "Jean-Pierre Jeunet",
+        "Jacques Audiard",
+        "Michel Gondry"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans « Le Seigneur des anneaux », qui porte l'Anneau jusqu'à la Montagne du Destin ?",
+      "answers": [
+        "Bilbon",
+        "Sam",
+        "Frodon",
+        "Aragorn"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel acteur incarne Jack Sparrow dans « Pirates des Caraïbes » ?",
+      "answers": [
+        "Orlando Bloom",
+        "Johnny Depp",
+        "Brad Pitt",
+        "Jude Law"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel film français de 2011 avec Omar Sy et François Cluzet a dépassé les 19 millions d'entrées en France ?",
+      "answers": [
+        "Intouchables",
+        "Bienvenue chez les Ch'tis",
+        "Le Dîner de cons",
+        "Qu'est-ce qu'on a fait au Bon Dieu ?"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel studio a produit « Toy Story » (1995), premier long-métrage entièrement en images de synthèse ?",
+      "answers": [
+        "DreamWorks",
+        "Pixar",
+        "Illumination",
+        "Blue Sky"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle récompense suprême est remise au Festival de Cannes ?",
+      "answers": [
+        "Le Lion d'or",
+        "L'Ours d'or",
+        "La Palme d'or",
+        "La Coquille d'or"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Qui a réalisé « Pulp Fiction » ?",
+      "answers": [
+        "Martin Scorsese",
+        "Quentin Tarantino",
+        "David Fincher",
+        "Steven Spielberg"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans quelle maison de Poudlard Harry Potter est-il réparti ?",
+      "answers": [
+        "Serpentard",
+        "Poufsouffle",
+        "Serdaigle",
+        "Gryffondor"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Quel film d'animation Disney de 2013 contient la chanson « Libérée, délivrée » ?",
+      "answers": [
+        "Raiponce",
+        "La Reine des neiges",
+        "Vaiana",
+        "Encanto"
+      ],
+      "correct": 1
+    }
+  ]
+}
