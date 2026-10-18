@@ -9,6 +9,12 @@ Pas de serveur ni de Cloud Functions. Tout le texte visible est en français.
 - `npm run test:rules` : tests de `firestore.rules` (émulateur Firestore, Java requis). À lancer si on touche aux règles.
 - Local : `npm run emulators` puis `npm run dev:local` (connexion « admin de test » disponible en mode émulateur).
 
+## Publication
+
+- Les propriétaires veulent que les modifications partent **directement sur `main`** (pas de Pull Request) :
+  chaque push sur `main` met le site en ligne via GitHub Actions. Ne pousser qu'après typecheck, tests et build verts.
+- Après un ajout de packs, rappeler d'aller dans l'admin → 📦 Packs → « Importer tous les nouveaux packs ».
+
 ## Organisation
 
 - `src/modules/<jeu>.tsx` : un fichier par jeu, qui exporte un `ModuleDef` (`src/modules/types.ts`) : champs du
