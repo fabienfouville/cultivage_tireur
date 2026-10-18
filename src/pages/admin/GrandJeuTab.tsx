@@ -4,7 +4,7 @@ import { Spinner } from '../../components/ui'
 import { CARDS, CARD_KEYS } from '../../engine/cards'
 import { db } from '../../firebase'
 import { useCol, useDoc } from '../../lib/hooks'
-import { MODULES, getModule, moduleConfig } from '../../modules'
+import { MODULES, bankOf, getModule, moduleConfig } from '../../modules'
 import { ConfirmButton } from '../../components/ControlPanel'
 import type { GrandJeu, GrandJeuSlot, ModuleKey, Theme } from '../../types'
 
@@ -96,7 +96,7 @@ function GrandJeuEditor({ initial, onDone }: { initial?: GrandJeu; onDone: () =>
       </div>
       <ol className="slots">
         {slots.map((s, i) => {
-          const list = themes.filter((t) => t.module === s.module).sort((a, b) => a.name.localeCompare(b.name))
+          const list = themes.filter((t) => t.module === bankOf(s.module)).sort((a, b) => a.name.localeCompare(b.name))
           return (
             <li key={i} className="card slot">
               <div className="row wrap">
@@ -110,7 +110,7 @@ function GrandJeuEditor({ initial, onDone }: { initial?: GrandJeu; onDone: () =>
                 >
                   {MODULES.map((m) => (
                     <option key={m.key} value={m.key}>
-                      {m.icon} {m.name}
+                      {m.variantOf ? `${getModule(m.variantOf).icon} ${getModule(m.variantOf).name} · ${m.variantName}` : `${m.icon} ${m.name}`}
                     </option>
                   ))}
                 </select>

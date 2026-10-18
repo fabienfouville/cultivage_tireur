@@ -11,16 +11,16 @@ l'animateur pilote depuis son téléphone ou son ordi.
 
 | Module | Principe |
 |---|---|
-| 🔤 QCM | 4 choix, points si bonne réponse |
+| 🔤 QCM | 4 choix, en 3 variantes au lancement : 🔤 Classique, 🎲 Mises (jetons à miser), 👥 Duo/Carré/Cash (plus de risque, plus de points) |
+| 🧠 100% Logique | Énigmes de logique, de plus en plus dures (% de gens qui trouvent), élimination désactivable |
 | ⚔️ VF Survie | Vrai/Faux à élimination, barème croissant |
 | 🎯 Estimation | Un nombre, podium des plus proches |
+| 📏 À l'échelle | Deviner la taille d'un animal, monument, Pokémon… à côté d'une référence |
 | 💬 Cash | Réponse libre validée par l'animateur |
 | 🖼️ Pixel | Image qui se dépixellise, podium des plus rapides |
 | 🗂️ Thème | Un maximum de réponses sur un thème, 1 pt par réponse validée |
 | 🗺️ Géoloc | Point sur une carte, podium des plus proches (0 km si dans le bon pays) |
 | 🎵 Blind Test | Extrait audio, artiste + titre, podium de vitesse |
-| 🎲 Gambling | Jetons à miser sur les 4 choix pour toute la manche |
-| 👥 Duo/Carré | Duo (2 choix), Carré (4) ou Cash (libre) : plus de risque, plus de points |
 | 🏆 Le Top | Classement à deviner en plusieurs tours |
 
 Deux façons de jouer : **roue libre** (l'animateur choisit les jeux au fur et à mesure, avec une roue qui tire au sort)

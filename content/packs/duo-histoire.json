@@ -1,107 +1,107 @@
 {
   "id": "duo-histoire",
-  "module": "duo-carre-cash",
-  "theme": "Histoire",
+  "module": "qcm",
+  "theme": "Histoire 2",
   "questions": [
     {
       "text": "Quelle reine d'Égypte fut l'alliée de Jules César puis de Marc Antoine ?",
-      "choices": [
+      "answers": [
         "Néfertiti",
         "Cléopâtre",
         "Hatchepsout",
         "Néfertari"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Quel empereur romain régnait lors du grand incendie de Rome, en 64 ?",
-      "choices": [
+      "answers": [
         "Caligula",
         "Néron",
         "Auguste",
         "Tibère"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Dans quelle ville Jeanne d'Arc a-t-elle été brûlée ?",
-      "choices": [
+      "answers": [
         "Orléans",
         "Rouen",
         "Reims",
         "Paris"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Quel explorateur a atteint le pôle Sud le premier, en 1911 ?",
-      "choices": [
+      "answers": [
         "Robert Scott",
         "Roald Amundsen",
         "Ernest Shackleton",
         "Fridtjof Nansen"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Sous quelle dynastie la Cité interdite de Pékin a-t-elle été construite ?",
-      "choices": [
+      "answers": [
         "Ming",
         "Qing",
         "Han",
         "Tang"
       ],
-      "correctIndex": 0
+      "correct": 0
     },
     {
       "text": "En quelle année les Françaises ont-elles voté pour la première fois ?",
-      "choices": [
+      "answers": [
         "1918",
         "1945",
         "1958",
         "1968"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Quel pharaon est célèbre pour son tombeau retrouvé presque intact en 1922 ?",
-      "choices": [
+      "answers": [
         "Ramsès II",
         "Toutânkhamon",
         "Khéops",
         "Akhenaton"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Quel peuple a construit le Parthénon ?",
-      "choices": [
+      "answers": [
         "Les Romains",
         "Les Grecs",
         "Les Égyptiens",
         "Les Perses"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Quel roi de France a signé l'édit de Nantes en 1598 ?",
-      "choices": [
+      "answers": [
         "Henri IV",
         "Louis XIII",
         "François Ier",
         "Charles IX"
       ],
-      "correctIndex": 0
+      "correct": 0
     },
     {
       "text": "Quelle ville était la capitale de l'Empire byzantin ?",
-      "choices": [
+      "answers": [
         "Rome",
         "Constantinople",
         "Athènes",
         "Alexandrie"
       ],
-      "correctIndex": 1
+      "correct": 1
     }
   ]
 }

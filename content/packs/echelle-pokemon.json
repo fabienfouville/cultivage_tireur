@@ -1,0 +1,98 @@
+{
+  "id": "echelle-pokemon",
+  "module": "echelle",
+  "theme": "Pokémon à l'échelle",
+  "description": "tailles officielles du Pokédex",
+  "questions": [
+    {
+      "text": "Quelle taille fait Ronflex ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "targetName": "Ronflex",
+      "answer": 2.1,
+      "targetEmoji": "😴"
+    },
+    {
+      "text": "Quelle taille fait Dracaufeu ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "targetName": "Dracaufeu",
+      "answer": 1.7,
+      "targetEmoji": "🐉"
+    },
+    {
+      "text": "Quelle taille fait Évoli ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "targetName": "Évoli",
+      "answer": 0.3,
+      "targetEmoji": "🦊"
+    },
+    {
+      "text": "Quelle taille fait Mewtwo ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "targetName": "Mewtwo",
+      "answer": 2.0,
+      "targetEmoji": "🧬"
+    },
+    {
+      "text": "Quelle taille fait Magicarpe ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "targetName": "Magicarpe",
+      "answer": 0.9,
+      "targetEmoji": "🐟"
+    },
+    {
+      "text": "Quelle taille fait Bulbizarre ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "targetName": "Bulbizarre",
+      "answer": 0.7,
+      "targetEmoji": "🌱"
+    },
+    {
+      "text": "Quelle taille fait Onix ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Onix",
+      "answer": 8.8,
+      "targetEmoji": "🪨"
+    },
+    {
+      "text": "Quelle taille fait Léviator ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Léviator",
+      "answer": 6.5,
+      "targetEmoji": "🐉"
+    },
+    {
+      "text": "Quelle taille fait Wailord ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Wailord",
+      "answer": 14.5,
+      "targetEmoji": "🐋"
+    },
+    {
+      "text": "Quelle taille fait Lokhlass ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Lokhlass",
+      "answer": 2.5,
+      "targetEmoji": "🦕"
+    }
+  ]
+}

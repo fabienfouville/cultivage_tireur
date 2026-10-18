@@ -12,6 +12,8 @@ export type ModuleKey =
   | 'gambling'
   | 'duo-carre-cash'
   | 'top'
+  | 'logique'
+  | 'echelle'
 
 /** themes/{id} */
 export interface Theme {

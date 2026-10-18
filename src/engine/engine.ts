@@ -29,7 +29,7 @@ import {
 import { db } from '../firebase'
 import { serverNow } from '../lib/clock'
 import { ensurePlayableAudio } from '../lib/media'
-import { getModule, moduleConfig } from '../modules'
+import { bankOf, getModule, moduleConfig } from '../modules'
 import type {
   Answer,
   Block,
@@ -178,7 +178,13 @@ export async function pickQuestions(themeId: string, module: ModuleKey, count: n
   const mod = getModule(module)
   if (order === 'keep' || mod.ordered) {
     const created = (q: any) => q.createdAt?.toMillis?.() ?? (typeof q.createdAt === 'string' ? Date.parse(q.createdAt) : 0)
-    qs.sort((a, b) => (Number(a.order ?? 1e9) - Number(b.order ?? 1e9)) || created(a) - created(b))
+    const rank = mod.orderBy ?? ((q: Question) => Number(q.order ?? 1e9))
+    qs.sort((a, b) => rank(a) - rank(b) || created(a) - created(b))
+    // Jeu à difficulté croissante (100% Logique) : on garde des questions de toute la gamme, de la plus facile à la plus dure
+    if (mod.orderBy && count > 0 && count < qs.length) {
+      const step = (qs.length - 1) / Math.max(1, count - 1)
+      qs = Array.from({ length: count }, (_, i) => qs[Math.round(i * step)])
+    }
   } else {
     qs = qs
       .map((q) => ({ q, r: Math.random() + (q.played ?? 0) }))
@@ -193,7 +199,8 @@ export async function pickQuestions(themeId: string, module: ModuleKey, count: n
  * (sauf s'il n'en reste plus).
  */
 export async function randomTheme(module: ModuleKey, alreadyPlayed: string[] = []): Promise<string> {
-  const snap = await getDocs(query(collection(db, 'themes'), where('module', '==', module)))
+  // Les variantes (Gambling, Duo/Carré) piochent dans les thèmes du jeu principal
+  const snap = await getDocs(query(collection(db, 'themes'), where('module', '==', bankOf(module))))
   const ids = snap.docs.map((d) => d.id).sort(() => Math.random() - 0.5)
   const fresh = ids.filter((id) => !alreadyPlayed.includes(id))
   for (const id of [...fresh, ...ids.filter((x) => !fresh.includes(x))]) {
@@ -654,4 +661,41 @@ export async function markAnswered(sid: string, seq: number, pids: string[]) {
     if (cur.round?.seq !== seq) return
     tx.update(sessionRef(sid), { 'round.answered': arrayUnion(...pids) })
   })
+}
+
+/**
+ * Migration (une seule fois) : les thèmes Gambling et Duo/Carré deviennent des thèmes du QCM,
+ * jouables dans les 3 variantes. Les questions Duo/Carré passent au format QCM (answers/correct).
+ * Renvoie le nombre de thèmes déplacés.
+ */
+export async function mergeVariantThemes(): Promise<number> {
+  const [variantThemes, qcmThemes] = await Promise.all([
+    getDocs(query(collection(db, 'themes'), where('module', 'in', ['gambling', 'duo-carre-cash']))),
+    getDocs(query(collection(db, 'themes'), where('module', '==', 'qcm'))),
+  ])
+  const taken = new Set(qcmThemes.docs.map((d) => String(d.get('name')).toLowerCase()))
+  let moved = 0
+  for (const t of variantThemes.docs) {
+    const from = t.get('module') as string
+    let name = String(t.get('name') ?? 'Sans nom')
+    // Évite deux thèmes du même nom (ex. « Wimereux » existait en QCM et en Gambling)
+    if (taken.has(name.toLowerCase())) name = `${name} (${from === 'gambling' ? 'Gambling' : 'Duo/Carré'})`
+    taken.add(name.toLowerCase())
+    const qs = await getDocs(query(collection(db, 'questions'), where('themeId', '==', t.id)))
+    const ops: Array<(b: ReturnType<typeof writeBatch>) => void> = [(b) => b.update(t.ref, { module: 'qcm', name, mergedFrom: from })]
+    for (const q of qs.docs) {
+      const d = q.data()
+      const patch: Record<string, unknown> = { module: 'qcm' }
+      if (d.answers == null && Array.isArray(d.choices)) patch.answers = d.choices
+      if (d.correct == null && d.correctIndex != null) patch.correct = d.correctIndex
+      ops.push((b) => b.update(q.ref, patch))
+    }
+    for (let i = 0; i < ops.length; i += 400) {
+      const b = writeBatch(db)
+      ops.slice(i, i + 400).forEach((op) => op(b))
+      await b.commit()
+    }
+    moved++
+  }
+  return moved
 }

@@ -15,6 +15,8 @@ export const gambling: ModuleDef = {
   name: 'Gambling',
   icon: '🎲',
   tagline: 'Miser des jetons sur les choix',
+  variantOf: 'qcm',
+  variantName: '🎲 Mises (Gambling)',
   rules:
     'Tu as un stock de jetons pour toute la manche. Répartis tes mises sur les 4 choix : chaque jeton posé sur la bonne réponse rapporte des points, les jetons misés sont dépensés. Si tu ne mises rien, tu perds quand même ta part de jetons de la question.',
   defaults: { timer: 30, tokensPerQuestion: 3, multiplier: 1 },

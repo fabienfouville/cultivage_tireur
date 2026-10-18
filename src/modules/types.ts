@@ -14,7 +14,7 @@ export interface ConfigField {
 export type QuestionField =
   | { key: string; label: string; type: 'text' | 'textarea' | 'number' | 'url'; placeholder?: string; optional?: boolean }
   | { key: string; label: string; type: 'choices4'; correctKey: string } // 4 réponses + index de la bonne
-  | { key: string; label: string; type: 'list'; placeholder?: string } // liste ordonnée (Le Top)
+  | { key: string; label: string; type: 'list'; placeholder?: string; optional?: boolean } // liste ordonnée (Le Top)
   | { key: string; label: string; type: 'bool' }
   | { key: string; label: string; type: 'image'; optional?: boolean }
   | { key: string; label: string; type: 'audio' }
@@ -96,6 +96,15 @@ export interface ModuleDef {
   multiTour?: boolean
   /** Une question de liste se joue dans l'ordre (VF Survie) */
   ordered?: boolean
+  /** Ordre de jeu (du plus petit au plus grand) quand `ordered` ; par défaut le champ `order` */
+  orderBy?: (q: Question) => number
+  /**
+   * Variante d'un autre jeu : mêmes questions (banque de ce jeu), autres règles.
+   * Ex. Gambling et Duo/Carré sont des variantes du QCM.
+   */
+  variantOf?: ModuleKey
+  /** Nom de la variante dans le choix de la régie (ex. « Mises ») */
+  variantName?: string
   /** Chaque joueur peut envoyer plusieurs réponses : pas d'arrêt automatique quand tout le monde a répondu */
   multiAnswer?: boolean
   /** La réponse est-elle complète (pour l'arrêt automatique) ? Par défaut : oui dès qu'elle existe */

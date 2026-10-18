@@ -1,0 +1,80 @@
+{
+  "id": "echelle-animaux",
+  "module": "echelle",
+  "theme": "Animaux à l'échelle",
+  "description": "tailles moyennes d'adultes, comparées à un humain de 1,75 m",
+  "questions": [
+    {
+      "text": "Quelle hauteur fait une girafe adulte ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Girafe",
+      "answer": 5.5,
+      "targetEmoji": "🦒"
+    },
+    {
+      "text": "Quelle hauteur fait un éléphant d'Afrique (au garrot) ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Éléphant d'Afrique",
+      "answer": 3.3,
+      "targetEmoji": "🐘"
+    },
+    {
+      "text": "Quelle hauteur fait une autruche adulte ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Autruche",
+      "answer": 2.5,
+      "targetEmoji": "🐦"
+    },
+    {
+      "text": "Quelle hauteur fait un manchot empereur ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Manchot empereur",
+      "answer": 1.15,
+      "targetEmoji": "🐧"
+    },
+    {
+      "text": "Quelle taille fait un gorille mâle debout ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Gorille",
+      "answer": 1.7,
+      "targetEmoji": "🦍"
+    },
+    {
+      "text": "Quelle hauteur fait un chat (au garrot) ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Chat",
+      "answer": 0.25,
+      "targetEmoji": "🐈"
+    },
+    {
+      "text": "Quelle longueur fait un crocodile marin adulte ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Crocodile marin",
+      "answer": 5,
+      "targetEmoji": "🐊"
+    },
+    {
+      "text": "Quelle longueur fait une baleine bleue adulte ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Baleine bleue",
+      "answer": 25,
+      "targetEmoji": "🐋"
+    }
+  ]
+}

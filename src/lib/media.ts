@@ -86,3 +86,36 @@ export async function ensurePlayableAudio(q: Record<string, any>): Promise<strin
     return url || null
   }
 }
+
+export interface CommonsImage {
+  title: string
+  /** image redimensionnée (800 px), à utiliser dans le jeu */
+  url: string
+  thumb: string
+}
+
+/**
+ * Recherche d'images libres sur Wikimedia Commons (gratuit, sans compte, liens stables).
+ * L'API autorise les appels depuis n'importe quel site avec `origin=*`.
+ */
+export async function searchCommonsImages(term: string): Promise<CommonsImage[]> {
+  const params = new URLSearchParams({
+    action: 'query',
+    generator: 'search',
+    gsrnamespace: '6',
+    gsrsearch: `${term} filetype:bitmap`,
+    gsrlimit: '18',
+    prop: 'imageinfo',
+    iiprop: 'url',
+    iiurlwidth: '800',
+    format: 'json',
+    origin: '*',
+  })
+  const res = await fetch(`https://commons.wikimedia.org/w/api.php?${params}`)
+  if (!res.ok) throw new Error('Recherche Wikimedia indisponible')
+  const data = await res.json()
+  const pages = Object.values<any>(data?.query?.pages ?? {}).sort((a, b) => (a.index ?? 0) - (b.index ?? 0))
+  return pages
+    .map((p) => ({ title: String(p.title ?? '').replace(/^File:|^Fichier:/, ''), url: p.imageinfo?.[0]?.thumburl ?? p.imageinfo?.[0]?.url, thumb: p.imageinfo?.[0]?.thumburl }))
+    .filter((p) => p.url)
+}

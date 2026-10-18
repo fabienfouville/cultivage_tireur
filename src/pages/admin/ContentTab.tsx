@@ -5,7 +5,8 @@ import { Spinner } from '../../components/ui'
 import { db } from '../../firebase'
 import { MAPS } from '../../lib/geo'
 import { useCol } from '../../lib/hooks'
-import { MODULES, getModule } from '../../modules'
+import { MAIN_MODULES, getModule } from '../../modules'
+import { mergeVariantThemes } from '../../engine/engine'
 import type { ModuleKey, Question, Theme } from '../../types'
 import { ConfirmButton } from '../../components/ControlPanel'
 import { QuestionForm } from './QuestionForm'
@@ -27,12 +28,30 @@ export function ContentTab() {
 
 function ModuleGrid({ open }: { open: (k: string) => void }) {
   const themes = useCol<Theme>(collection(db, 'themes'), 'themes-all') ?? []
+  const toMerge = themes.filter((t) => t.module === 'gambling' || t.module === 'duo-carre-cash').length
+  const [merged, setMerged] = useState('')
   return (
     <>
+      {toMerge > 0 && (
+        <div className="card merge-banner">
+          <p>
+            <b>Gambling et Duo/Carré sont maintenant des variantes du QCM.</b> {toMerge} thème(s) sont encore rangés à part : regroupe-les
+            dans le QCM pour que leurs questions servent aux 3 variantes. Rien n'est supprimé.
+          </p>
+          <ConfirmButton
+            className="btn btn-primary"
+            confirmLabel={`Regrouper ${toMerge} thème(s) ?`}
+            onConfirm={async () => setMerged(`${await mergeVariantThemes()} thème(s) regroupé(s) dans le QCM`)}
+          >
+            Regrouper dans le QCM
+          </ConfirmButton>
+        </div>
+      )}
+      {merged && <p>✅ {merged}</p>}
       <h2>Choisir un module</h2>
       <p className="muted">Sélectionne le type de jeu pour gérer son contenu.</p>
       <div className="grid">
-        {MODULES.map((mod) => {
+        {MAIN_MODULES.map((mod) => {
           const n = themes.filter((th) => th.module === mod.key).length
           return (
             <button key={mod.key} className="tile" onClick={() => open(mod.key)}>

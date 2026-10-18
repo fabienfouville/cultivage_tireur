@@ -1,0 +1,139 @@
+{
+  "id": "logique-1",
+  "module": "logique",
+  "theme": "100% Logique · 1",
+  "description": "énigmes du plus facile (92 %) au plus dur (2 %)",
+  "questions": [
+    {
+      "text": "Complète la suite :\n2, 4, 6, 8, ?",
+      "answer": "10",
+      "percent": 92,
+      "explain": "On ajoute 2 à chaque fois."
+    },
+    {
+      "text": "Si demain on est samedi, quel jour était-on avant-hier ?",
+      "choices": [
+        "Mardi",
+        "Mercredi",
+        "Jeudi",
+        "Vendredi"
+      ],
+      "answer": "Mercredi",
+      "percent": 80,
+      "explain": "Aujourd'hui = vendredi, donc avant-hier = mercredi."
+    },
+    {
+      "text": "Un fermier a 17 moutons.\nTous meurent sauf 9.\nCombien lui en reste-t-il ?",
+      "choices": [
+        "8",
+        "9",
+        "17",
+        "0"
+      ],
+      "answer": "9",
+      "percent": 75,
+      "explain": "« Tous sauf 9 » : il en reste 9."
+    },
+    {
+      "text": "Quelle lettre vient ensuite ?\nU, D, T, Q, C, S, S, ?",
+      "answer": "H",
+      "percent": 70,
+      "explain": "Un, Deux, Trois, Quatre, Cinq, Six, Sept, Huit."
+    },
+    {
+      "text": "Quel est l'intrus ?",
+      "choices": [
+        "POMME",
+        "POIRE",
+        "PRUNE",
+        "POIREAU"
+      ],
+      "answer": "POIREAU",
+      "percent": 62,
+      "explain": "Le poireau est un légume, les autres sont des fruits."
+    },
+    {
+      "text": "Combien de mois ont 28 jours ?",
+      "choices": [
+        "1",
+        "4",
+        "12",
+        "Ça dépend des années"
+      ],
+      "answer": "12",
+      "percent": 50,
+      "explain": "Tous les mois ont au moins 28 jours."
+    },
+    {
+      "text": "Dans une course, tu doubles le deuxième.\nQuelle est ta place ?",
+      "choices": [
+        "Premier",
+        "Deuxième",
+        "Troisième"
+      ],
+      "answer": "Deuxième",
+      "percent": 40,
+      "explain": "Tu prends sa place : deuxième."
+    },
+    {
+      "text": "Complète la suite :\n2, 4, 5, 6, 4, 3, 4, ?",
+      "answer": "4",
+      "percent": 30,
+      "explain": "Nombre de lettres de un, deux, trois, quatre, cinq, six, sept, huit."
+    },
+    {
+      "text": "Qui manque à l'appel ?\nMARIE\nANTOINE\nTHOMAS\n?\nSOPHIE",
+      "choices": [
+        "HÉLÈNE",
+        "PAUL",
+        "CLARA",
+        "LUCAS"
+      ],
+      "answer": "HÉLÈNE",
+      "percent": 25,
+      "explain": "Les initiales forment le mot MATHS."
+    },
+    {
+      "text": "Une batte et une balle coûtent 1,10 € en tout.\nLa batte coûte 1 € de plus que la balle.\nCombien coûte la balle ?",
+      "choices": [
+        "10 centimes",
+        "5 centimes",
+        "1 centime",
+        "50 centimes"
+      ],
+      "answer": "5 centimes",
+      "percent": 15,
+      "explain": "Balle 0,05 € + batte 1,05 € = 1,10 €."
+    },
+    {
+      "text": "Si on range les 12 mois par ordre alphabétique,\nlequel vient juste après OCTOBRE ?",
+      "choices": [
+        "Novembre",
+        "Septembre",
+        "Décembre",
+        "Août"
+      ],
+      "answer": "Septembre",
+      "percent": 10,
+      "explain": "… novembre, octobre, septembre : septembre est le dernier."
+    },
+    {
+      "text": "Qui manque à l'appel ?\nCLARA\nHUGO\nANNA\nTOM\n?\nARTHUR\nULYSSE",
+      "choices": [
+        "ÉLISE",
+        "NOAH",
+        "LÉA",
+        "ZOÉ"
+      ],
+      "answer": "ÉLISE",
+      "percent": 5,
+      "explain": "Les initiales forment le mot CHATEAU : il manque le E."
+    },
+    {
+      "text": "Complète la suite :\n5, 2, 8, 9, 4, 7, 6, 3, ?",
+      "answer": "1",
+      "percent": 2,
+      "explain": "Les chiffres rangés par ordre alphabétique : cinq, deux, huit, neuf, quatre, sept, six, trois, un."
+    }
+  ]
+}

@@ -7,13 +7,18 @@ const MODES: { key: Mode; label: string; icon: string }[] = [
   { key: 'carre', label: 'Carré', icon: '🟩' },
   { key: 'cash', label: 'Cash', icon: '💰' },
 ]
-const correctLabel = (q: Record<string, unknown>) => (q.choices as string[])?.[q.correctIndex as number] ?? ''
+// Questions de la banque QCM (answers/correct) ; les anciennes questions Duo/Carré utilisaient choices/correctIndex
+const choicesOf = (q: Record<string, unknown>) => ((q.answers ?? q.choices) as string[]) ?? []
+const correctOf = (q: Record<string, unknown>) => Number(q.correct ?? q.correctIndex)
+const correctLabel = (q: Record<string, unknown>) => choicesOf(q)[correctOf(q)] ?? ''
 
 export const duoCarreCash: ModuleDef = {
   key: 'duo-carre-cash',
   name: 'Duo/Carré',
   icon: '👥',
   tagline: 'Duo ou Carré + Cash',
+  variantOf: 'qcm',
+  variantName: '👥 Duo / Carré / Cash',
   rules: 'Choisis ton niveau de risque : Duo (2 propositions), Carré (4) ou Cash (réponse libre). Plus c’est risqué, plus ça rapporte.',
   defaults: { timer: 30, duo: 1, carre: 3, cash: 5 },
   configFields: [
@@ -23,7 +28,7 @@ export const duoCarreCash: ModuleDef = {
   ],
   questionFields: [
     { key: 'text', label: 'Question', type: 'textarea' },
-    { key: 'choices', label: 'Propositions', type: 'choices4', correctKey: 'correctIndex' },
+    { key: 'answers', label: 'Propositions', type: 'choices4', correctKey: 'correct' },
     { key: 'answerHint', label: 'Variantes acceptées en Cash', type: 'text', optional: true, placeholder: 'séparées par /' },
   ],
   manual: true,
@@ -31,12 +36,12 @@ export const duoCarreCash: ModuleDef = {
   summary: (q) => correctLabel(q),
   publicPayload: (q) => {
     // La paire du Duo est tirée au lancement de la question (même paire pour tout le monde)
-    const correct = q.correctIndex as number
+    const correct = correctOf(q)
     const wrong = [0, 1, 2, 3].filter((i) => i !== correct)
     const other = wrong[Math.floor(Math.random() * wrong.length)]
-    return { text: q.text, choices: q.choices, duo: [correct, other].sort() }
+    return { text: q.text, choices: choicesOf(q), duo: [correct, other].sort() }
   },
-  solution: (q) => ({ correct: q.correctIndex, label: correctLabel(q) }),
+  solution: (q) => ({ correct: correctOf(q), label: correctLabel(q) }),
   validationItems: ({ q, answers }) =>
     groupFreeAnswers(
       answers.filter((a) => a.data.mode === 'cash'),
@@ -51,7 +56,7 @@ export const duoCarreCash: ModuleDef = {
       if (!(mode in modes)) continue
       modes[mode]++
       const ok =
-        mode === 'cash' ? isValidated({ verdicts }, a.data.text) : a.data.choice === (q.correctIndex as number)
+        mode === 'cash' ? isValidated({ verdicts }, a.data.text) : a.data.choice === correctOf(q)
       results[a.pid] = {
         pts: ok ? Number(cfg[mode]) : 0,
         detail: `${MODES.find((m) => m.key === mode)!.label} ${ok ? '✅' : '❌'}`,

@@ -1,107 +1,107 @@
 {
   "id": "duo-culture-generale",
-  "module": "duo-carre-cash",
+  "module": "qcm",
   "theme": "Culture générale",
   "questions": [
     {
       "text": "Dans quel pays a été inventé le Lego ?",
-      "choices": [
+      "answers": [
         "Allemagne",
         "Danemark",
         "Suède",
         "Pays-Bas"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Quelle est la langue maternelle la plus parlée au Canada ?",
-      "choices": [
+      "answers": [
         "Le français",
         "L'anglais",
         "L'espagnol",
         "Le mandarin"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Combien de cordes a un violon ?",
-      "choices": [
+      "answers": [
         "3",
         "4",
         "5",
         "6"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Quel est le seul pays traversé à la fois par l'équateur et le tropique du Capricorne ?",
-      "choices": [
+      "answers": [
         "Brésil",
         "Indonésie",
         "Kenya",
         "Pérou"
       ],
-      "correctIndex": 0
+      "correct": 0
     },
     {
       "text": "Quel animal est l'emblème du WWF ?",
-      "choices": [
+      "answers": [
         "Le tigre",
         "Le panda",
         "L'ours polaire",
         "Le gorille"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "En quelle année a eu lieu le premier Tour de France ?",
-      "choices": [
+      "answers": [
         "1889",
         "1903",
         "1919",
         "1924"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Quel écrivain a créé Sherlock Holmes ?",
-      "choices": [
+      "answers": [
         "Agatha Christie",
         "Arthur Conan Doyle",
         "Edgar Allan Poe",
         "Charles Dickens"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Avec quel fruit fabrique-t-on le calvados ?",
-      "choices": [
+      "answers": [
         "La poire",
         "La pomme",
         "Le raisin",
         "La prune"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Combien de côtés a un hexagone ?",
-      "choices": [
+      "answers": [
         "5",
         "6",
         "7",
         "8"
       ],
-      "correctIndex": 1
+      "correct": 1
     },
     {
       "text": "Quel est le plus grand pays d'Amérique du Sud ?",
-      "choices": [
+      "answers": [
         "Argentine",
         "Brésil",
         "Pérou",
         "Colombie"
       ],
-      "correctIndex": 1
+      "correct": 1
     }
   ]
 }

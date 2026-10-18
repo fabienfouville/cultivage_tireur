@@ -1,0 +1,71 @@
+{
+  "id": "echelle-monuments",
+  "module": "echelle",
+  "theme": "Monuments à l'échelle",
+  "description": "comparées à la tour Eiffel (330 m)",
+  "questions": [
+    {
+      "text": "Quelle hauteur fait la statue de la Liberté (socle compris) ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "targetName": "Statue de la Liberté",
+      "answer": 93,
+      "targetEmoji": "🗽"
+    },
+    {
+      "text": "Quelle hauteur fait le Burj Khalifa, la plus haute tour du monde ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "targetName": "Burj Khalifa",
+      "answer": 828,
+      "targetEmoji": "🏙️"
+    },
+    {
+      "text": "Quelle hauteur fait l'Arc de Triomphe ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "targetName": "Arc de Triomphe",
+      "answer": 50,
+      "targetEmoji": "🏛️"
+    },
+    {
+      "text": "Quelle hauteur fait la tour de Big Ben ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "targetName": "Big Ben",
+      "answer": 96,
+      "targetEmoji": "🕰️"
+    },
+    {
+      "text": "Quelle hauteur fait la tour de Pise ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "targetName": "Tour de Pise",
+      "answer": 56,
+      "targetEmoji": "🗼"
+    },
+    {
+      "text": "Quelle hauteur fait l'Empire State Building (sans l'antenne) ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "targetName": "Empire State Building",
+      "answer": 381,
+      "targetEmoji": "🏢"
+    },
+    {
+      "text": "Quelle hauteur fait la statue du Christ Rédempteur de Rio (sans le socle) ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "targetName": "Christ Rédempteur",
+      "answer": 30,
+      "targetEmoji": "🙏"
+    }
+  ]
+}

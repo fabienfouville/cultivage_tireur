@@ -1380,3 +1380,92 @@ details > summary {
   border-color: var(--danger);
   color: #fff;
 }
+
+/* ───────── 100% Logique ───────── */
+
+.logic-text {
+  white-space: pre-line;
+}
+
+.percent-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+}
+
+.screen-main .percent-badge {
+  font-size: 22px;
+}
+
+/* ───────── À l'échelle ───────── */
+
+.scale-scene {
+  width: 100%;
+  display: block;
+  color: var(--text);
+}
+
+.scale-input {
+  display: grid;
+  gap: 10px;
+}
+
+.scale-input input[type='range'] {
+  width: 100%;
+  height: 36px;
+  accent-color: var(--primary);
+}
+
+.scale-value {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.scale-screen {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .scale-screen {
+    grid-template-columns: 1fr;
+  }
+}
+
+.merge-banner {
+  display: grid;
+  gap: 10px;
+  justify-items: start;
+  border-color: var(--gold);
+}
+
+.image-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 6px;
+}
+
+.image-results button {
+  padding: 0;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface);
+  cursor: pointer;
+  aspect-ratio: 1;
+}
+
+.image-results img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

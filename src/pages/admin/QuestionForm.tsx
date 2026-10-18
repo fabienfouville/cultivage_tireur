@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { GeoMap } from '../../components/GeoMap'
 import { countryNames } from '../../lib/geo'
-import { searchSongs, uploadFile, type Song } from '../../lib/media'
+import { searchCommonsImages, searchSongs, uploadFile, type CommonsImage, type Song } from '../../lib/media'
 import type { ModuleDef, QuestionField } from '../../modules/types'
 import type { Question } from '../../types'
 
@@ -169,9 +169,61 @@ function Field({ f, d, set, mapId }: { f: QuestionField; d: Draft; set: (k: stri
 function ImageField({ f, d, set }: { f: QuestionField; d: Draft; set: (k: string, v: unknown) => void }) {
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState('')
+  const [term, setTerm] = useState('')
+  const [found, setFound] = useState<CommonsImage[]>([])
   return (
     <fieldset>
       <legend>{f.label}</legend>
+      <div className="row">
+        <input
+          placeholder="Chercher une image libre (Wikimedia)…"
+          value={term}
+          onChange={(e) => setTerm(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              e.preventDefault()
+              ;(e.currentTarget.nextElementSibling as HTMLButtonElement | null)?.click()
+            }
+          }}
+        />
+        <button
+          type="button"
+          className="btn"
+          disabled={!term.trim() || busy}
+          onClick={async () => {
+            setBusy(true)
+            setErr('')
+            try {
+              const r = await searchCommonsImages(term)
+              setFound(r)
+              if (!r.length) setErr('Aucune image trouvée')
+            } catch (x: any) {
+              setErr(String(x?.message ?? x))
+            } finally {
+              setBusy(false)
+            }
+          }}
+        >
+          🔎
+        </button>
+      </div>
+      {found.length > 0 && (
+        <div className="image-results">
+          {found.map((img) => (
+            <button
+              type="button"
+              key={img.url}
+              title={img.title}
+              onClick={() => {
+                set(f.key, img.url)
+                setFound([])
+              }}
+            >
+              <img src={img.thumb} alt={img.title} loading="lazy" />
+            </button>
+          ))}
+        </div>
+      )}
       <input placeholder="https://… (lien direct vers l'image)" value={d[f.key] ?? ''} onChange={(e) => set(f.key, e.target.value)} />
       <label className="small">
         ou envoyer un fichier{' '}

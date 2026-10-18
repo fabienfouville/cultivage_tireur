@@ -4,7 +4,7 @@ import { CARDS } from '../engine/cards'
 import * as E from '../engine/engine'
 import { db } from '../firebase'
 import { useCol, useDoc } from '../lib/hooks'
-import { MODULES, getModule, moduleConfig } from '../modules'
+import { MAIN_MODULES, getModule, moduleConfig, variantsOf } from '../modules'
 import { describeAnswer } from '../modules/common'
 import { useServerClock } from '../lib/clock'
 import type { Answer, GrandJeu, ModuleKey, Participant, Question, Session, Theme } from '../types'
@@ -197,11 +197,15 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
   useEffect(() => {
     if (session.wheel?.module) setModule(session.wheel.module)
   }, [session.wheel?.at])
+  // Règles du jeu (ex. QCM classique, Mises, Duo/Carré/Cash) : mêmes questions
+  const [variant, setVariant] = useState<ModuleKey | ''>('')
+  const variants = module ? variantsOf(module) : []
+  const played = (variant || module) as ModuleKey | ''
   const themes =
     useCol<Theme>(module ? query(collection(db, 'themes'), where('module', '==', module)) : null, `themes-${module}`, [module]) ?? []
   const [themeId, setThemeId] = useState('')
   const [available, setAvailable] = useState<number | null>(null)
-  const cfg = module ? moduleConfig(module, config) : null
+  const cfg = played ? moduleConfig(played, config) : null
   const [count, setCount] = useState(10)
   const [order, setOrder] = useState<'keep' | 'random'>('random')
   const [timer, setTimer] = useState<number | ''>('')
@@ -211,6 +215,7 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
     setThemeId('')
     setTimer('')
     setTokens('')
+    setVariant('')
   }, [module])
   useEffect(() => {
     setAvailable(null)
@@ -221,23 +226,36 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
     })
   }, [themeId])
 
-  const mod = module ? getModule(module) : null
+  const mod = played ? getModule(played) : null
   const effTimer = timer === '' ? cfg?.timer ?? 30 : timer
   return (
     <section className="card">
       <h3>🎡 Prochain jeu</h3>
       <div className="module-pick">
-        {MODULES.map((m) => (
+        {MAIN_MODULES.map((m) => (
           <button key={m.key} className={'chip-btn' + (module === m.key ? ' chip-on' : '')} onClick={() => setModule(m.key)}>
             {m.icon} {m.name}
           </button>
         ))}
       </div>
-      <button className="btn btn-block" disabled={busy} onClick={() => run(() => E.spinWheel(session.id, MODULES.map((m) => m.key)).then(setModule))}>
+      <button className="btn btn-block" disabled={busy} onClick={() => run(() => E.spinWheel(session.id, MAIN_MODULES.map((m) => m.key)).then(setModule))}>
         🎰 Tourner la roue (affichée sur l'écran)
       </button>
       {mod && (
         <div className="form">
+          {variants.length > 1 && (
+            <label>
+              Règles
+              <select id="variant" value={played} onChange={(e) => setVariant(e.target.value as ModuleKey)}>
+                {variants.map((v) => (
+                  <option key={v.key} value={v.key}>
+                    {v.variantName ?? v.name}
+                  </option>
+                ))}
+              </select>
+              <span className="muted small">{mod.rules}</span>
+            </label>
+          )}
           <label>
             Thème
             <select value={themeId} onChange={(e) => setThemeId(e.target.value)}>
@@ -271,7 +289,7 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
               </select>
             </label>
           )}
-          {module === 'gambling' && (
+          {played === 'gambling' && (
             <label>
               Jetons de départ
               <input
@@ -289,7 +307,7 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
             onClick={() =>
               run(() =>
                 E.startBlock(session.id, {
-                  module: module as ModuleKey,
+                  module: played as ModuleKey,
                   themeId,
                   count,
                   order,

@@ -43,7 +43,9 @@ Règles d'or :
 ## Ajouter un jeu
 
 1. Créer `src/modules/mon-jeu.tsx` en s'inspirant du module le plus proche (`qcm.tsx` pour un choix, `cash.tsx` pour une
-   réponse libre validée à la main, `top.tsx` pour plusieurs tours).
+   réponse libre validée à la main, `top.tsx` pour plusieurs tours, `logique.tsx` pour une difficulté croissante).
+   Une **variante** d'un jeu (mêmes questions, autres règles) déclare `variantOf` + `variantName` : elle n'a pas de
+   banque à elle et apparaît dans le sélecteur « Règles » (ex. `gambling.tsx` et `duo-carre-cash.tsx`, variantes du QCM).
 2. Ajouter la clé dans le type `ModuleKey` (`src/types.ts`) et le module dans `MODULES` (`src/modules/index.ts`).
 3. Ajouter un pack d'exemple dans `content/packs/` et lancer `npm test`.
 4. Tester une partie en local (émulateurs) sur un écran de téléphone.
@@ -58,7 +60,9 @@ Un fichier `content/packs/<id>.json` :
 ```
 
 Champs par module (voir `questionFields` de chaque module) :
-qcm/gambling `answers[4]` + `correct` · duo-carre-cash `choices[4]` + `correctIndex` (+ `answerHint` variantes) ·
+qcm `answers[4]` + `correct` (+ `answerHint` variantes pour le Cash du Duo/Carré ; les anciens `choices`/`correctIndex`
+sont encore lus) · logique `text` (multiligne), `answer` (variantes `/`), `choices[]` optionnel, `percent` (% qui trouvent),
+`explain` · echelle `refName`, `refHeight` (m), `refEmoji`, `targetName`, `answer` (m), `targetEmoji` (tailles officielles) ·
 cash/pixel `answerHint` (variantes séparées par `/`) + `imageUrl` pour pixel · vf-survie `correct` (bool), `order` ·
 estimation `answer` (nombre), `unit` · theme `answerHint` (exemples) · top `answers[]` du n°1 au dernier ·
 geoloc `lat`, `lng`, `answerHint`, `isoNum` (code ISO numérique si la réponse est un pays), `mapId` du pack ·
