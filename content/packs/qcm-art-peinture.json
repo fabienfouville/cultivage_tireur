@@ -1,0 +1,157 @@
+{
+  "id": "qcm-art-peinture",
+  "module": "qcm",
+  "theme": "Art & peinture",
+  "questions": [
+    {
+      "text": "Quel tableau de Claude Monet a donné son nom au mouvement impressionniste ?",
+      "answers": [
+        "Les Nymphéas",
+        "La Pie",
+        "Les Coquelicots",
+        "Impression, soleil levant"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Quel peintre a réalisé « Le Cri » ?",
+      "answers": [
+        "Egon Schiele",
+        "Gustav Klimt",
+        "Edvard Munch",
+        "Vincent van Gogh"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Qui a peint « La Jeune Fille à la perle » ?",
+      "answers": [
+        "Rembrandt",
+        "Johannes Vermeer",
+        "Pierre Paul Rubens",
+        "Jan van Eyck"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel peintre a fait scandale au Salon des refusés de 1863 avec « Le Déjeuner sur l'herbe » ?",
+      "answers": [
+        "Claude Monet",
+        "Auguste Renoir",
+        "Gustave Courbet",
+        "Édouard Manet"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Qui a peint « La Liberté guidant le peuple » ?",
+      "answers": [
+        "Jacques-Louis David",
+        "Théodore Géricault",
+        "Eugène Delacroix",
+        "Jean-Auguste-Dominique Ingres"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel mouvement artistique Pablo Picasso et Georges Braque ont-ils fondé ?",
+      "answers": [
+        "Le cubisme",
+        "Le fauvisme",
+        "Le dadaïsme",
+        "Le futurisme"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Qui a peint « La Naissance de Vénus » ?",
+      "answers": [
+        "Raphaël",
+        "Titien",
+        "Michel-Ange",
+        "Sandro Botticelli"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Dans quel musée parisien les grands « Nymphéas » de Monet sont-ils installés dans deux salles ovales ?",
+      "answers": [
+        "Le musée d'Orsay",
+        "Le Centre Pompidou",
+        "Le musée de l'Orangerie",
+        "Le musée du Louvre"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel sculpteur a créé « Le Penseur » ?",
+      "answers": [
+        "Camille Claudel",
+        "Auguste Rodin",
+        "Antoine Bourdelle",
+        "Aristide Maillol"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel artiste du pop art a représenté les célèbres boîtes de soupe Campbell's ?",
+      "answers": [
+        "Andy Warhol",
+        "Roy Lichtenstein",
+        "Keith Haring",
+        "Jasper Johns"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel peintre autrichien a réalisé le tableau « Le Baiser », couvert de feuilles d'or ?",
+      "answers": [
+        "Egon Schiele",
+        "Gustav Klimt",
+        "Alfons Mucha",
+        "Oskar Kokoschka"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qui a peint « La Ronde de nuit » ?",
+      "answers": [
+        "Johannes Vermeer",
+        "Rembrandt",
+        "Frans Hals",
+        "Pierre Paul Rubens"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelles couleurs mélange-t-on pour obtenir du vert en peinture ?",
+      "answers": [
+        "Bleu et jaune",
+        "Rouge et bleu",
+        "Rouge et jaune",
+        "Jaune et blanc"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel peintre a écrit « Ceci n'est pas une pipe » sous une pipe peinte ?",
+      "answers": [
+        "Salvador Dalí",
+        "Marcel Duchamp",
+        "René Magritte",
+        "Joan Miró"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel peintre américain est célèbre pour la technique du « dripping » (peinture projetée) ?",
+      "answers": [
+        "Jackson Pollock",
+        "Mark Rothko",
+        "Edward Hopper",
+        "Andy Warhol"
+      ],
+      "correct": 0
+    }
+  ]
+}

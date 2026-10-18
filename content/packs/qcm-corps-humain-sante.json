@@ -1,0 +1,157 @@
+{
+  "id": "qcm-corps-humain-sante",
+  "module": "qcm",
+  "theme": "Corps humain & santé",
+  "questions": [
+    {
+      "text": "Contre quelle maladie protège le vaccin BCG ?",
+      "answers": [
+        "La tuberculose",
+        "La rougeole",
+        "Le tétanos",
+        "La poliomyélite"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Dans quel organe se trouve le tympan ?",
+      "answers": [
+        "L'œil",
+        "Le nez",
+        "La gorge",
+        "L'oreille"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Quelle est la température corporelle normale moyenne d'un adulte ?",
+      "answers": [
+        "Environ 35 °C",
+        "Environ 38,5 °C",
+        "Environ 37 °C",
+        "Environ 40 °C"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Les dents de sagesse sont des…",
+      "answers": [
+        "Incisives",
+        "Canines",
+        "Molaires",
+        "Prémolaires"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Dans quel organe se trouvent les alvéoles où se font les échanges d'oxygène ?",
+      "answers": [
+        "Les poumons",
+        "Le foie",
+        "Les reins",
+        "L'estomac"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel muscle forme l'avant de la cuisse ?",
+      "answers": [
+        "Le biceps",
+        "Le quadriceps",
+        "Le triceps",
+        "Le deltoïde"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel os forme la mâchoire inférieure ?",
+      "answers": [
+        "Le maxillaire",
+        "L'os zygomatique",
+        "La mandibule",
+        "Le sphénoïde"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quelle vitamine est indispensable à la coagulation du sang ?",
+      "answers": [
+        "La vitamine K",
+        "La vitamine A",
+        "La vitamine C",
+        "La vitamine B12"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle maladie chronique se caractérise par un excès de sucre dans le sang ?",
+      "answers": [
+        "L'hypertension",
+        "L'anémie",
+        "La goutte",
+        "Le diabète"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Où se trouve l'hippocampe, structure essentielle à la mémoire ?",
+      "answers": [
+        "Dans le cœur",
+        "Dans l'oreille interne",
+        "Dans le foie",
+        "Dans le cerveau"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Combien de lobes compte le poumon droit ?",
+      "answers": [
+        "2",
+        "4",
+        "3",
+        "5"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quelle est la plus grosse glande du corps humain ?",
+      "answers": [
+        "Le foie",
+        "Le pancréas",
+        "La thyroïde",
+        "La rate"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Comment calcule-t-on l'indice de masse corporelle (IMC) ?",
+      "answers": [
+        "Poids divisé par la taille",
+        "Poids divisé par la taille au carré",
+        "Taille divisée par le poids",
+        "Poids multiplié par la taille"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel médecin grec de l'Antiquité est considéré comme le père de la médecine ?",
+      "answers": [
+        "Galien",
+        "Asclépios",
+        "Aristote",
+        "Hippocrate"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Que mesure un tensiomètre ?",
+      "answers": [
+        "Le taux de sucre dans le sang",
+        "La pression artérielle",
+        "La température",
+        "Le rythme respiratoire"
+      ],
+      "correct": 1
+    }
+  ]
+}

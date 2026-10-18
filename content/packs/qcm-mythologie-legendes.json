@@ -1,0 +1,157 @@
+{
+  "id": "qcm-mythologie-legendes",
+  "module": "qcm",
+  "theme": "Mythologie & légendes",
+  "questions": [
+    {
+      "text": "Quelle créature mi-homme mi-taureau était enfermée dans le Labyrinthe de Crète ?",
+      "answers": [
+        "Le Minotaure",
+        "Le centaure",
+        "Le cyclope",
+        "Le satyre"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel héros grec a tranché la tête de la Gorgone Méduse ?",
+      "answers": [
+        "Persée",
+        "Thésée",
+        "Jason",
+        "Achille"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Comment s'appelle l'épée du roi Arthur ?",
+      "answers": [
+        "Durandal",
+        "Joyeuse",
+        "Excalibur",
+        "Gram"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel héros de la chanson de geste portait l'épée Durandal ?",
+      "answers": [
+        "Lancelot",
+        "Perceval",
+        "Roland",
+        "Olivier"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel dieu égyptien, tué par son frère Seth, règne sur le royaume des morts ?",
+      "answers": [
+        "Osiris",
+        "Horus",
+        "Thot",
+        "Ptah"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Combien de pattes possède Sleipnir, le cheval d'Odin ?",
+      "answers": [
+        "4",
+        "8",
+        "6",
+        "12"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle le marteau de Thor ?",
+      "answers": [
+        "Gungnir",
+        "Draupnir",
+        "Mjöllnir",
+        "Gjallarhorn"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Selon la mythologie grecque, qui a ouvert la jarre (ou boîte) libérant les maux sur l'humanité ?",
+      "answers": [
+        "Hélène",
+        "Perséphone",
+        "Psyché",
+        "Pandore"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Par quelle partie du corps Achille était-il vulnérable ?",
+      "answers": [
+        "Le genou",
+        "Le talon",
+        "La nuque",
+        "Le dos"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Selon la légende, quel animal a allaité Romulus et Rémus, les fondateurs de Rome ?",
+      "answers": [
+        "Une biche",
+        "Une louve",
+        "Une chèvre",
+        "Une ourse"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle île est le royaume d'Ulysse ?",
+      "answers": [
+        "La Crète",
+        "Ithaque",
+        "Rhodes",
+        "Chypre"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle le passeur qui fait traverser aux âmes des morts le fleuve des Enfers ?",
+      "answers": [
+        "Hadès",
+        "Cerbère",
+        "Charon",
+        "Thanatos"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel Titan a volé le feu aux dieux pour le donner aux hommes ?",
+      "answers": [
+        "Atlas",
+        "Cronos",
+        "Hypérion",
+        "Prométhée"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Quel personnage est condamné à pousser éternellement un rocher au sommet d'une colline ?",
+      "answers": [
+        "Tantale",
+        "Ixion",
+        "Prométhée",
+        "Sisyphe"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Quelle fée des légendes françaises se transforme chaque samedi en femme-serpent ?",
+      "answers": [
+        "Mélusine",
+        "Viviane",
+        "Morgane",
+        "Titania"
+      ],
+      "correct": 0
+    }
+  ]
+}

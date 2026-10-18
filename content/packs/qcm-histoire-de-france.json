@@ -1,0 +1,157 @@
+{
+  "id": "qcm-histoire-de-france",
+  "module": "qcm",
+  "theme": "Histoire de France",
+  "questions": [
+    {
+      "text": "Quel roi de France était surnommé « le Bien-Aimé » ?",
+      "answers": [
+        "Louis XIII",
+        "Louis XIV",
+        "Louis XV",
+        "Louis XVI"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel roi, élu en 987, a donné son nom à la dynastie des Capétiens ?",
+      "answers": [
+        "Hugues Capet",
+        "Robert le Pieux",
+        "Charles le Chauve",
+        "Pépin le Bref"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle reine était surnommée « la reine Margot » ?",
+      "answers": [
+        "Marguerite de Valois",
+        "Marie de Médicis",
+        "Anne d'Autriche",
+        "Catherine de Médicis"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle victoire de Philippe Auguste, en 1214, a renforcé le pouvoir royal face à l'empereur germanique et à ses alliés ?",
+      "answers": [
+        "Azincourt",
+        "Crécy",
+        "Poitiers",
+        "Bouvines"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Quel roi a signé en 1539 l'ordonnance de Villers-Cotterêts, qui impose le français dans les actes officiels ?",
+      "answers": [
+        "Louis XII",
+        "François Ier",
+        "Henri II",
+        "Charles VIII"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel ministre de Louis XIV a fondé la Compagnie française des Indes orientales en 1664 ?",
+      "answers": [
+        "Mazarin",
+        "Richelieu",
+        "Fouquet",
+        "Colbert"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Dans quelle cathédrale Napoléon Ier a-t-il été sacré empereur en 1804 ?",
+      "answers": [
+        "Notre-Dame de Paris",
+        "Cathédrale de Reims",
+        "Basilique de Saint-Denis",
+        "Cathédrale de Chartres"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "En quelle année a été votée la loi de séparation des Églises et de l'État ?",
+      "answers": [
+        "1882",
+        "1919",
+        "1905",
+        "1946"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel roi de France était surnommé « le Vert Galant » ?",
+      "answers": [
+        "François Ier",
+        "Louis XIII",
+        "Henri III",
+        "Henri IV"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Qui fut le dernier roi à régner en France, renversé par la révolution de 1848 ?",
+      "answers": [
+        "Charles X",
+        "Louis XVIII",
+        "Napoléon III",
+        "Louis-Philippe Ier"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Que décide l'Assemblée constituante lors de la nuit du 4 août 1789 ?",
+      "answers": [
+        "L'exécution du roi",
+        "L'abolition des privilèges",
+        "La création du franc",
+        "L'abolition de l'esclavage"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel cardinal fut le principal ministre de Louis XIII ?",
+      "answers": [
+        "Mazarin",
+        "Fleury",
+        "Richelieu",
+        "Dubois"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel roi de France est surnommé « Saint Louis » ?",
+      "answers": [
+        "Louis VI",
+        "Louis IX",
+        "Louis VII",
+        "Louis XI"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "À quelle dynastie appartenait le roi franc Clovis ?",
+      "answers": [
+        "Les Mérovingiens",
+        "Les Carolingiens",
+        "Les Capétiens",
+        "Les Valois"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Qui a arrêté une armée omeyyade près de Poitiers, en 732 ?",
+      "answers": [
+        "Charlemagne",
+        "Clovis",
+        "Charles Martel",
+        "Pépin le Bref"
+      ],
+      "correct": 2
+    }
+  ]
+}

@@ -22,6 +22,11 @@ l'animateur pilote depuis son téléphone ou son ordi.
 | 🗺️ Géoloc | Point sur une carte, podium des plus proches (0 km si dans le bon pays) |
 | 🎵 Blind Test | Extrait audio, artiste + titre, podium de vitesse |
 | 🏆 Le Top | Classement à deviner en plusieurs tours |
+| 📅 Chronologie | Remettre 4 événements dans l'ordre, 1 pt par événement bien placé + bonus si tout est juste |
+| 🕵️ Qui suis-je ? | Indices de plus en plus faciles, une seule réponse : plus on répond tôt, plus on gagne |
+
+Au lancement d'un jeu, le thème par défaut est « 🌍 Toutes les questions » (tirage dans tous les thèmes du jeu,
+les moins jouées d'abord) ; on peut aussi choisir un thème précis ou « 🎲 Un thème au hasard ».
 
 Deux façons de jouer : **roue libre** (l'animateur choisit les jeux au fur et à mesure, avec une roue qui tire au sort)
 ou **Grand Jeu** (suite de modules préparée à l'avance, avec des cartes bonus/malus entre deux modules :

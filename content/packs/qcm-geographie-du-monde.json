@@ -1,0 +1,157 @@
+{
+  "id": "qcm-geographie-du-monde",
+  "module": "qcm",
+  "theme": "Géographie du monde",
+  "questions": [
+    {
+      "text": "Quel pays est entièrement enclavé dans l'Afrique du Sud ?",
+      "answers": [
+        "L'Eswatini",
+        "Le Botswana",
+        "La Namibie",
+        "Le Lesotho"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Quel fleuve traverse Bagdad ?",
+      "answers": [
+        "Le Tigre",
+        "L'Euphrate",
+        "Le Jourdain",
+        "L'Indus"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel est le plus grand pays d'Afrique par sa superficie ?",
+      "answers": [
+        "Le Soudan",
+        "La RD Congo",
+        "La Libye",
+        "L'Algérie"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Dans quel pays se trouve la ville de Tombouctou ?",
+      "answers": [
+        "Le Niger",
+        "Le Mali",
+        "La Mauritanie",
+        "Le Sénégal"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans quel pays se trouve la majeure partie du désert d'Atacama, l'un des plus arides du monde ?",
+      "answers": [
+        "Le Chili",
+        "Le Pérou",
+        "L'Argentine",
+        "La Bolivie"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quito est la capitale de quel pays ?",
+      "answers": [
+        "La Colombie",
+        "Le Venezuela",
+        "L'Équateur",
+        "Le Pérou"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel est le plus long fleuve d'Asie ?",
+      "answers": [
+        "Le Mékong",
+        "Le Yangtsé",
+        "Le Gange",
+        "L'Indus"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle chaîne de montagnes longe toute la côte ouest de l'Amérique du Sud ?",
+      "answers": [
+        "Les Rocheuses",
+        "La cordillère des Andes",
+        "La Sierra Madre",
+        "Les Appalaches"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "La Laponie s'étend sur la Norvège, la Suède, la Russie et quel autre pays ?",
+      "answers": [
+        "Le Danemark",
+        "L'Islande",
+        "La Finlande",
+        "L'Estonie"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quelle mer sépare la péninsule Arabique de l'Afrique ?",
+      "answers": [
+        "La mer d'Arabie",
+        "La mer Morte",
+        "La mer Rouge",
+        "La mer Caspienne"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel État de l'océan Indien est formé d'environ 1 200 îles coralliennes regroupées en atolls ?",
+      "answers": [
+        "Les Maldives",
+        "Les Seychelles",
+        "Maurice",
+        "Les Comores"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle île le détroit de Magellan sépare-t-il du continent sud-américain ?",
+      "answers": [
+        "Les Malouines",
+        "La Géorgie du Sud",
+        "L'île de Pâques",
+        "La Terre de Feu"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Combien d'États composent les États-Unis ?",
+      "answers": [
+        "48",
+        "51",
+        "52",
+        "50"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Quel pays Jacques Brel a-t-il surnommé « le plat pays » dans une célèbre chanson ?",
+      "answers": [
+        "Les Pays-Bas",
+        "Le Danemark",
+        "La Belgique",
+        "Le Luxembourg"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel grand fleuve d'Asie du Sud-Est forme un vaste delta au sud du Vietnam ?",
+      "answers": [
+        "Le Mékong",
+        "L'Irrawaddy",
+        "Le fleuve Rouge",
+        "La Chao Phraya"
+      ],
+      "correct": 0
+    }
+  ]
+}

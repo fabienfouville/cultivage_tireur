@@ -1,0 +1,157 @@
+{
+  "id": "qcm-animaux-du-monde",
+  "module": "qcm",
+  "theme": "Animaux du monde",
+  "questions": [
+    {
+      "text": "Comment s'appelle le petit du cerf ?",
+      "answers": [
+        "Le marcassin",
+        "Le chevreau",
+        "Le faon",
+        "L'ourson"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Comment s'appelle la femelle du sanglier ?",
+      "answers": [
+        "La laie",
+        "La biche",
+        "La hase",
+        "La chevrette"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Comment appelle-t-on le cri du cerf en période de rut ?",
+      "answers": [
+        "Le barrissement",
+        "Le brame",
+        "Le hennissement",
+        "Le glapissement"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Combien de bosses possède un dromadaire ?",
+      "answers": [
+        "Deux",
+        "Une",
+        "Trois",
+        "Aucune"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "De quelles feuilles le koala se nourrit-il presque exclusivement ?",
+      "answers": [
+        "De bambou",
+        "D'acacia",
+        "D'eucalyptus",
+        "De figuier"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel oiseau incapable de voler est l'emblème de la Nouvelle-Zélande ?",
+      "answers": [
+        "Le kiwi",
+        "L'émeu",
+        "Le casoar",
+        "Le nandou"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quels sont les plus proches parents vivants de l'hippopotame ?",
+      "answers": [
+        "Les cétacés (baleines, dauphins)",
+        "Les cochons",
+        "Les rhinocéros",
+        "Les éléphants"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Combien de pattes possède une araignée ?",
+      "answers": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "À quel groupe d'animaux appartient le dauphin ?",
+      "answers": [
+        "Les poissons",
+        "Les amphibiens",
+        "Les mammifères",
+        "Les reptiles"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel est le plus grand félin sauvage du monde ?",
+      "answers": [
+        "Le lion",
+        "Le jaguar",
+        "Le tigre",
+        "Le léopard"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Comment s'appelle le petit du lièvre ?",
+      "answers": [
+        "Le lapereau",
+        "Le faon",
+        "Le marcassin",
+        "Le levraut"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Comment s'appelle le petit de l'âne ?",
+      "answers": [
+        "Le poulain",
+        "Le muleton",
+        "Le chevreau",
+        "L'ânon"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Comment appelle-t-on un groupe de loups ?",
+      "answers": [
+        "Une harde",
+        "Un essaim",
+        "Une volée",
+        "Une meute"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "La longue « corne » torsadée du narval est en réalité…",
+      "answers": [
+        "Un os du crâne",
+        "Une dent",
+        "Un poil géant",
+        "Une nageoire"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment appelle-t-on la science qui étudie les oiseaux ?",
+      "answers": [
+        "L'ornithologie",
+        "L'entomologie",
+        "L'herpétologie",
+        "L'ichtyologie"
+      ],
+      "correct": 0
+    }
+  ]
+}

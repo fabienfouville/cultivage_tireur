@@ -1,0 +1,157 @@
+{
+  "id": "qcm-sport-competitions",
+  "module": "qcm",
+  "theme": "Sport & compétitions",
+  "questions": [
+    {
+      "text": "Qui est considéré comme le père des Jeux olympiques modernes ?",
+      "answers": [
+        "Jules Rimet",
+        "Pierre de Coubertin",
+        "Henri Desgrange",
+        "Jacques Rogge"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans quel sport se dispute la Ryder Cup, entre l'Europe et les États-Unis ?",
+      "answers": [
+        "Le golf",
+        "Le tennis",
+        "La voile",
+        "Le polo"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Le premier trophée de la Coupe du monde de football portait le nom de quel dirigeant français ?",
+      "answers": [
+        "Henri Delaunay",
+        "Pierre de Coubertin",
+        "Jules Rimet",
+        "Gabriel Hanot"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Au hockey sur glace, combien de joueurs par équipe sont sur la glace, gardien compris ?",
+      "answers": [
+        "6",
+        "5",
+        "7",
+        "11"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "À la pétanque, comment s'appelle la petite boule que l'on cherche à approcher ?",
+      "answers": [
+        "La mène",
+        "Le carreau",
+        "Le cochonnet",
+        "Le pointeur"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Dans quel sport parle-t-on de « guichet » et de « batteur » ?",
+      "answers": [
+        "Le baseball",
+        "Le polo",
+        "Le hurling",
+        "Le cricket"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Quelles disciplines le biathlon combine-t-il ?",
+      "answers": [
+        "Ski alpin et saut à ski",
+        "Ski de fond et tir à la carabine",
+        "Natation et course à pied",
+        "Patinage et tir à l'arc"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelles sont les trois armes de l'escrime olympique ?",
+      "answers": [
+        "Fleuret, dague, sabre",
+        "Fleuret, épée, sabre",
+        "Épée, rapière, sabre",
+        "Fleuret, épée, lance"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Au rugby à XV, combien de points rapporte une transformation réussie ?",
+      "answers": [
+        "1",
+        "3",
+        "5",
+        "2"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Au tennis, comment appelle-t-on un service gagnant que l'adversaire ne touche pas ?",
+      "answers": [
+        "Un let",
+        "Un break",
+        "Un lob",
+        "Un ace"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Qui était Roland Garros, qui a donné son nom au stade et au tournoi parisien ?",
+      "answers": [
+        "Un aviateur",
+        "Un champion de tennis",
+        "Un président de la Fédération",
+        "Un architecte"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Au golf, que signifie réussir un « eagle » sur un trou ?",
+      "answers": [
+        "Deux coups sous le par",
+        "Un coup sous le par",
+        "Un coup au-dessus du par",
+        "Un trou en un coup"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle nation a rejoint le Tournoi en 2000, le faisant passer de Cinq à Six Nations ?",
+      "answers": [
+        "L'Argentine",
+        "La Géorgie",
+        "L'Italie",
+        "L'Espagne"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Dans quel sport fait-on glisser des pierres de granit sur la glace en balayant devant elles ?",
+      "answers": [
+        "Le bobsleigh",
+        "Le hockey",
+        "Le biathlon",
+        "Le curling"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Au tennis, comment annonce-t-on un score de 40-40 ?",
+      "answers": [
+        "Avantage",
+        "Jeu blanc",
+        "Égalité",
+        "Balle de break"
+      ],
+      "correct": 2
+    }
+  ]
+}

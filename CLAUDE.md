@@ -29,6 +29,7 @@ Pas de serveur ni de Cloud Functions. Tout le texte visible est en français.
 ## Modèle de données (Firestore)
 
 - `themes/{id}` `{module, name, mapId?, packId?}` · `questions/{id}` `{module, themeId, text, …champs du module}`
+- Thème d'un bloc : `''` = toutes les questions du jeu (défaut), `'?'` = un thème au hasard (`ALL_THEMES`/`RANDOM_THEME`).
 - `config/modules` `{<module>: {timer, …}}` · `grandJeux/{id}` · `admins/{email}` · `sessionSecrets/{sid}` `{password}`
 - `sessions/{sid}` : `phase` (lobby | pick | cards | play | blockResults | final), `block` (série de questions en cours),
   `round` (question en cours : `status` answering | validating | revealed, `public`, `solution`, `results`…), `seq`.
@@ -62,7 +63,8 @@ Un fichier `content/packs/<id>.json` :
 Champs par module (voir `questionFields` de chaque module) :
 qcm `answers[4]` + `correct` (+ `answerHint` variantes pour le Cash du Duo/Carré ; les anciens `choices`/`correctIndex`
 sont encore lus) · logique `text` (multiligne), `answer` (variantes `/`), `choices[]` optionnel, `percent` (% qui trouvent),
-`explain` · echelle `refName`, `refHeight` (m), `refEmoji`, `targetName`, `answer` (m), `targetEmoji` (tailles officielles) ·
+`explain` · chronologie `events[]` du plus ancien au plus récent + `dates[]` alignées · quisuisje `clues[5]` du plus dur
+au plus facile + `answerHint` (variantes `/`) · echelle `refName`, `refHeight` (m), `refEmoji`, `targetName`, `answer` (m), `targetEmoji` (tailles officielles) ·
 cash/pixel `answerHint` (variantes séparées par `/`) + `imageUrl` pour pixel · vf-survie `correct` (bool), `order` ·
 estimation `answer` (nombre), `unit` · theme `answerHint` (exemples) · top `answers[]` du n°1 au dernier ·
 geoloc `lat`, `lng`, `answerHint`, `isoNum` (code ISO numérique si la réponse est un pays), `mapId` du pack ·
