@@ -1,0 +1,67 @@
+{
+  "id": "cash-histoire",
+  "module": "cash",
+  "theme": "Histoire express",
+  "questions": [
+    {
+      "text": "Quel roi de France a été guillotiné en 1793 ?",
+      "answerHint": "Louis XVI"
+    },
+    {
+      "text": "Quel chef gaulois a capitulé face à Jules César à Alésia ?",
+      "answerHint": "Vercingétorix"
+    },
+    {
+      "text": "Quel pharaon a été découvert dans un tombeau quasi intact par Howard Carter en 1922 ?",
+      "answerHint": "Toutânkhamon / Toutankhamon"
+    },
+    {
+      "text": "Quelle ville romaine a été ensevelie par l'éruption du Vésuve en 79 ?",
+      "answerHint": "Pompéi / Herculanum"
+    },
+    {
+      "text": "Sur quelle île de l'Atlantique Napoléon est-il mort en exil ?",
+      "answerHint": "Sainte-Hélène"
+    },
+    {
+      "text": "Quel président des États-Unis a été assassiné en 1865 ?",
+      "answerHint": "Abraham Lincoln / Lincoln"
+    },
+    {
+      "text": "Quelle reine a régné sur le Royaume-Uni de 1837 à 1901 ?",
+      "answerHint": "Victoria"
+    },
+    {
+      "text": "Quel explorateur vénitien a raconté son voyage en Chine dans « Le Devisement du monde » ?",
+      "answerHint": "Marco Polo"
+    },
+    {
+      "text": "Quel traité, signé en 1919, a mis fin à la Première Guerre mondiale avec l'Allemagne ?",
+      "answerHint": "Versailles / traité de Versailles"
+    },
+    {
+      "text": "Comment s'appelle le massacre des protestants commencé à Paris le 24 août 1572 ?",
+      "answerHint": "Saint-Barthélemy / la Saint-Barthélemy"
+    },
+    {
+      "text": "Quel penseur allemand a écrit le « Manifeste du Parti communiste » avec Friedrich Engels ?",
+      "answerHint": "Karl Marx / Marx"
+    },
+    {
+      "text": "Quelle dynastie a régné sur la Russie jusqu'en 1917 ?",
+      "answerHint": "Romanov"
+    },
+    {
+      "text": "Qui fut le premier empereur romain ?",
+      "answerHint": "Auguste / Octave"
+    },
+    {
+      "text": "Sous quel empereur romain a eu lieu le grand incendie de Rome en 64 ?",
+      "answerHint": "Néron"
+    },
+    {
+      "text": "Qui a dirigé l'Union soviétique après la mort de Lénine jusqu'en 1953 ?",
+      "answerHint": "Staline / Joseph Staline"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "cash-geographie",
+  "module": "cash",
+  "theme": "Géographie express",
+  "questions": [
+    {
+      "text": "Quel fleuve traverse Rome ?",
+      "answerHint": "Tibre"
+    },
+    {
+      "text": "Quel pays est surnommé « le pays du Soleil-Levant » ?",
+      "answerHint": "Japon"
+    },
+    {
+      "text": "Quel pays a la forme d'une botte ?",
+      "answerHint": "Italie"
+    },
+    {
+      "text": "Quel océan borde la côte ouest des États-Unis ?",
+      "answerHint": "Pacifique / océan Pacifique"
+    },
+    {
+      "text": "Quelle est la capitale de la Suisse ?",
+      "answerHint": "Berne"
+    },
+    {
+      "text": "Quel est le plus petit État du monde ?",
+      "answerHint": "Vatican"
+    },
+    {
+      "text": "Quel fleuve se jette dans la Manche au Havre ?",
+      "answerHint": "Seine"
+    },
+    {
+      "text": "Quel détroit sépare l'Espagne du Maroc ?",
+      "answerHint": "Gibraltar / détroit de Gibraltar"
+    },
+    {
+      "text": "Quel canal relie la mer Méditerranée à la mer Rouge ?",
+      "answerHint": "Suez / canal de Suez"
+    },
+    {
+      "text": "Quelle mer baigne Venise ?",
+      "answerHint": "Adriatique / mer Adriatique"
+    },
+    {
+      "text": "Quelle est la capitale du Brésil ?",
+      "answerHint": "Brasília / Brasilia"
+    },
+    {
+      "text": "Quel est le plus grand lac d'Afrique ?",
+      "answerHint": "Victoria / lac Victoria"
+    },
+    {
+      "text": "Quelle est la capitale de la Nouvelle-Zélande ?",
+      "answerHint": "Wellington"
+    },
+    {
+      "text": "Quelle chaîne de montagnes marque la limite entre l'Europe et l'Asie en Russie ?",
+      "answerHint": "Oural"
+    },
+    {
+      "text": "Quel désert s'étend sur le sud de la Mongolie et le nord de la Chine ?",
+      "answerHint": "Gobi / désert de Gobi"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "vf-corps-humain",
+  "module": "vf-survie",
+  "theme": "Corps humain vrai ou faux",
+  "description": "du plus facile au plus dur",
+  "questions": [
+    {
+      "text": "Le cœur est un muscle.",
+      "correct": true,
+      "order": 1
+    },
+    {
+      "text": "Le fémur est l'os le plus long du corps humain.",
+      "correct": true,
+      "order": 2
+    },
+    {
+      "text": "Le groupe sanguin O négatif est le receveur universel.",
+      "correct": false,
+      "order": 3
+    },
+    {
+      "text": "La langue est divisée en zones qui ne perçoivent chacune qu'une seule saveur.",
+      "correct": false,
+      "order": 4
+    },
+    {
+      "text": "Un chewing-gum avalé reste sept ans dans l'estomac.",
+      "correct": false,
+      "order": 5
+    },
+    {
+      "text": "Un nouveau-né possède plus d'os qu'un adulte.",
+      "correct": true,
+      "order": 6
+    },
+    {
+      "text": "On perd la majeure partie de sa chaleur corporelle par la tête.",
+      "correct": false,
+      "order": 7
+    },
+    {
+      "text": "Nos deux poumons ont exactement la même taille.",
+      "correct": false,
+      "order": 8
+    },
+    {
+      "text": "L'étrier, situé dans l'oreille, est le plus petit os du corps humain.",
+      "correct": true,
+      "order": 9
+    },
+    {
+      "text": "Faire craquer ses doigts provoque de l'arthrose.",
+      "correct": false,
+      "order": 10
+    },
+    {
+      "text": "Les ongles des mains poussent plus vite que ceux des pieds.",
+      "correct": true,
+      "order": 11
+    },
+    {
+      "text": "L'intestin grêle est plus long que le gros intestin.",
+      "correct": true,
+      "order": 12
+    },
+    {
+      "text": "Chez l'être humain, les globules rouges matures possèdent un noyau.",
+      "correct": false,
+      "order": 13
+    },
+    {
+      "text": "Le foie peut repousser après l'ablation d'une partie de l'organe.",
+      "correct": true,
+      "order": 14
+    },
+    {
+      "text": "La cornée de l'œil ne contient aucun vaisseau sanguin.",
+      "correct": true,
+      "order": 15
+    }
+  ]
+}

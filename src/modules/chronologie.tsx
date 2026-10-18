@@ -89,7 +89,7 @@ export const chronologie: ModuleDef = {
             )
           })}
         </div>
-        {answer && picked.length === items.length && !locked && <Sent>Ordre envoyé, tu peux encore le changer</Sent>}
+        {answer && picked.length === items.length && !locked && <Sent>Ordre envoyé</Sent>}
         {locked && <Locked />}
       </>
     )

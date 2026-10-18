@@ -1,0 +1,83 @@
+{
+  "id": "vf-geographie",
+  "module": "vf-survie",
+  "theme": "Géographie vraie ou fausse",
+  "description": "du plus facile au plus dur",
+  "questions": [
+    {
+      "text": "Madrid est la capitale du Portugal.",
+      "correct": false,
+      "order": 1
+    },
+    {
+      "text": "Le Nil se jette dans la mer Méditerranée.",
+      "correct": true,
+      "order": 2
+    },
+    {
+      "text": "La Suisse possède un accès à la mer.",
+      "correct": false,
+      "order": 3
+    },
+    {
+      "text": "Le mont Blanc est le plus haut sommet des Alpes.",
+      "correct": true,
+      "order": 4
+    },
+    {
+      "text": "Istanbul est la capitale de la Turquie.",
+      "correct": false,
+      "order": 5
+    },
+    {
+      "text": "L'équateur traverse le Brésil.",
+      "correct": true,
+      "order": 6
+    },
+    {
+      "text": "Un pont relie le Danemark à la Suède.",
+      "correct": true,
+      "order": 7
+    },
+    {
+      "text": "L'Afrique compte plus de 50 pays.",
+      "correct": true,
+      "order": 8
+    },
+    {
+      "text": "Le Rhin prend sa source en Allemagne.",
+      "correct": false,
+      "order": 9
+    },
+    {
+      "text": "L'Australie est plus grande que le Brésil.",
+      "correct": false,
+      "order": 10
+    },
+    {
+      "text": "Le lac Titicaca est partagé entre le Pérou et la Bolivie.",
+      "correct": true,
+      "order": 11
+    },
+    {
+      "text": "La Bolivie possède un accès à la mer.",
+      "correct": false,
+      "order": 12
+    },
+    {
+      "text": "Le Kazakhstan est le plus grand pays du monde sans accès à la mer.",
+      "correct": true,
+      "order": 13
+    },
+    {
+      "text": "Le point le plus au sud de l'Afrique est le cap de Bonne-Espérance.",
+      "correct": false,
+      "order": 14
+    },
+    {
+      "text": "La ville de Reno, dans le Nevada, est située plus à l'ouest que Los Angeles.",
+      "correct": true,
+      "order": 15
+    }
+  ]
+}

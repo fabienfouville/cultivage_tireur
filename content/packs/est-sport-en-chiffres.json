@@ -1,0 +1,67 @@
+{
+  "id": "est-sport-en-chiffres",
+  "module": "estimation",
+  "theme": "Sport en chiffres",
+  "questions": [
+    {
+      "text": "À quelle hauteur se trouve le cercle d'un panier de basket ?",
+      "answer": 3.05,
+      "unit": "m"
+    },
+    {
+      "text": "Quelle est la largeur d'un but de football (entre les poteaux) ?",
+      "answer": 7.32,
+      "unit": "m"
+    },
+    {
+      "text": "Quel est le score maximal possible sur une partie de bowling ?",
+      "answer": 300,
+      "unit": "points"
+    },
+    {
+      "text": "Quel est le score maximal possible avec trois fléchettes ?",
+      "answer": 180,
+      "unit": "points"
+    },
+    {
+      "text": "Quelle est la hauteur du filet de tennis en son centre ?",
+      "answer": 91.4,
+      "unit": "cm"
+    },
+    {
+      "text": "Quelle est la longueur d'un court de tennis ?",
+      "answer": 23.77,
+      "unit": "m"
+    },
+    {
+      "text": "Combien pèse le poids lancé par les hommes en athlétisme ?",
+      "answer": 7.26,
+      "unit": "kg"
+    },
+    {
+      "text": "Quelle est la hauteur d'une haie du 110 m haies masculin ?",
+      "answer": 106.7,
+      "unit": "cm"
+    },
+    {
+      "text": "Quelle distance totale parcourt-on lors d'un triathlon Ironman (natation + vélo + course) ?",
+      "answer": 226,
+      "unit": "km"
+    },
+    {
+      "text": "À quelle distance de la ligne de but se trouve le point de penalty au football ?",
+      "answer": 11,
+      "unit": "m"
+    },
+    {
+      "text": "Combien de joueurs par équipe sont sur le terrain au baseball (en défense) ?",
+      "answer": 9,
+      "unit": "joueurs"
+    },
+    {
+      "text": "Combien pèse la barre olympique masculine en haltérophilie (sans les disques) ?",
+      "answer": 20,
+      "unit": "kg"
+    }
+  ]
+}

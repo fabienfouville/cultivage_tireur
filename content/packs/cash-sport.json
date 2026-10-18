@@ -1,0 +1,67 @@
+{
+  "id": "cash-sport",
+  "module": "cash",
+  "theme": "Sport express",
+  "questions": [
+    {
+      "text": "Quel est le surnom de l'équipe de France de football ?",
+      "answerHint": "Les Bleus"
+    },
+    {
+      "text": "Quel sport se pratique avec une raquette et un volant ?",
+      "answerHint": "Badminton"
+    },
+    {
+      "text": "Dans quel pays se sont déroulés les premiers Jeux olympiques modernes, en 1896 ?",
+      "answerHint": "Grèce"
+    },
+    {
+      "text": "Quel sprinteur jamaïcain a couru le 100 m en 9 s 58 en 2009 ?",
+      "answerHint": "Usain Bolt / Bolt"
+    },
+    {
+      "text": "Quel joueur espagnol a remporté Roland-Garros 14 fois ?",
+      "answerHint": "Rafael Nadal / Nadal"
+    },
+    {
+      "text": "Quel capitaine argentin a soulevé la Coupe du monde de football en 2022 ?",
+      "answerHint": "Lionel Messi / Messi"
+    },
+    {
+      "text": "Quelle course automobile d'endurance se dispute chaque année dans la Sarthe ?",
+      "answerHint": "24 Heures du Mans / Le Mans"
+    },
+    {
+      "text": "Dans quelle principauté se court un célèbre Grand Prix de Formule 1 en ville ?",
+      "answerHint": "Monaco / Monte-Carlo"
+    },
+    {
+      "text": "Dans quel sport le Français Tony Parker a-t-il fait carrière en NBA ?",
+      "answerHint": "Basket / basket-ball"
+    },
+    {
+      "text": "Dans quel pays le rugby est-il né ?",
+      "answerHint": "Angleterre"
+    },
+    {
+      "text": "Quel maillot distingue le meilleur grimpeur du Tour de France ?",
+      "answerHint": "Maillot à pois / blanc à pois rouges"
+    },
+    {
+      "text": "Quel tournoi de rugby oppose chaque année six nations européennes ?",
+      "answerHint": "Tournoi des Six Nations / Six Nations"
+    },
+    {
+      "text": "Quel nageur américain a remporté 8 médailles d'or aux Jeux de Pékin en 2008 ?",
+      "answerHint": "Michael Phelps / Phelps"
+    },
+    {
+      "text": "Quel cycliste belge, surnommé « le Cannibale », a remporté cinq Tours de France ?",
+      "answerHint": "Eddy Merckx / Merckx"
+    },
+    {
+      "text": "Quelle classique cycliste est surnommée « l'Enfer du Nord » ?",
+      "answerHint": "Paris-Roubaix"
+    }
+  ]
+}

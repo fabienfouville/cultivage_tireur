@@ -1,0 +1,67 @@
+{
+  "id": "est-nature-animaux",
+  "module": "estimation",
+  "theme": "Nature & animaux en chiffres",
+  "questions": [
+    {
+      "text": "Combien de pattes possède un scorpion ?",
+      "answer": 8,
+      "unit": "pattes"
+    },
+    {
+      "text": "Combien d'ailes possède une libellule ?",
+      "answer": 4,
+      "unit": "ailes"
+    },
+    {
+      "text": "Combien de branches compte un flocon de neige ?",
+      "answer": 6,
+      "unit": "branches"
+    },
+    {
+      "text": "Combien de compartiments compte l'estomac d'une vache ?",
+      "answer": 4,
+      "unit": "compartiments"
+    },
+    {
+      "text": "Combien de pattes possède un crabe (pinces comprises) ?",
+      "answer": 10,
+      "unit": "pattes"
+    },
+    {
+      "text": "Combien d'yeux possède une abeille ?",
+      "answer": 5,
+      "unit": "yeux"
+    },
+    {
+      "text": "Combien de doigts compte chaque patte avant d'un chat ?",
+      "answer": 5,
+      "unit": "doigts"
+    },
+    {
+      "text": "Combien de pattes possède un cloporte ?",
+      "answer": 14,
+      "unit": "pattes"
+    },
+    {
+      "text": "Combien un calmar possède-t-il de bras et tentacules au total ?",
+      "answer": 10,
+      "unit": "bras et tentacules"
+    },
+    {
+      "text": "Combien de mois dure la gestation d'une jument ?",
+      "answer": 11,
+      "unit": "mois"
+    },
+    {
+      "text": "Combien de jours dure environ la gestation d'une lapine ?",
+      "answer": 31,
+      "unit": "jours"
+    },
+    {
+      "text": "Combien de chromosomes compte une cellule de chien ?",
+      "answer": 78,
+      "unit": "chromosomes"
+    }
+  ]
+}

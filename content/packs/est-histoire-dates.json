@@ -1,0 +1,67 @@
+{
+  "id": "est-histoire-dates",
+  "module": "estimation",
+  "theme": "Histoire en dates",
+  "questions": [
+    {
+      "text": "En quelle année Charlemagne a-t-il été couronné empereur ?",
+      "answer": 800,
+      "unit": "année"
+    },
+    {
+      "text": "En quelle année a eu lieu la bataille d'Hastings ?",
+      "answer": 1066,
+      "unit": "année"
+    },
+    {
+      "text": "En quelle année Jeanne d'Arc est-elle morte ?",
+      "answer": 1431,
+      "unit": "année"
+    },
+    {
+      "text": "En quelle année a eu lieu la bataille de Marignan ?",
+      "answer": 1515,
+      "unit": "année"
+    },
+    {
+      "text": "En quelle année a eu lieu la bataille de Waterloo ?",
+      "answer": 1815,
+      "unit": "année"
+    },
+    {
+      "text": "En quelle année les frères Wright ont-ils réalisé leur premier vol motorisé ?",
+      "answer": 1903,
+      "unit": "année"
+    },
+    {
+      "text": "En quelle année Alexander Fleming a-t-il découvert la pénicilline ?",
+      "answer": 1928,
+      "unit": "année"
+    },
+    {
+      "text": "En quelle année a eu lieu le krach boursier de Wall Street ?",
+      "answer": 1929,
+      "unit": "année"
+    },
+    {
+      "text": "En quelle année les Françaises ont-elles obtenu le droit de vote ?",
+      "answer": 1944,
+      "unit": "année"
+    },
+    {
+      "text": "En quelle année la Ve République a-t-elle été instaurée ?",
+      "answer": 1958,
+      "unit": "année"
+    },
+    {
+      "text": "En quelle année ont été signés les accords d'Évian, mettant fin à la guerre d'Algérie ?",
+      "answer": 1962,
+      "unit": "année"
+    },
+    {
+      "text": "En quelle année la peine de mort a-t-elle été abolie en France ?",
+      "answer": 1981,
+      "unit": "année"
+    }
+  ]
+}
