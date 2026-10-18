@@ -25,7 +25,7 @@ function Control() {
   const session = useDoc<Session>(doc(db, 'sessions', sid))
   const participants = useCol<Participant>(collection(db, 'sessions', sid, 'participants'), `p-${sid}`) ?? []
   const secret = useDoc<{ password: string }>(doc(db, 'sessionSecrets', sid))
-  const { now } = useHost(session, true)
+  const { now } = useHost(session, true, participants)
   const [copied, setCopied] = useState(false)
 
   if (session === undefined) return <Spinner />

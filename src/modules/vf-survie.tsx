@@ -41,10 +41,11 @@ export const vfSurvie: ModuleDef = {
       if (a?.data.value === true) vrai++
       if (a?.data.value === false) faux++
       if (a && a.data.value === !!q.correct) {
-        results[p.id] = { pts }
+        results[p.id] = { pts, detail: a.data.value ? 'VRAI' : 'FAUX' }
         nextAlive[p.id] = true
       } else {
-        results[p.id] = { pts: 0, detail: '💀 éliminé' }
+        const said = a ? (a.data.value ? 'VRAI' : 'FAUX') : 'pas de réponse'
+        results[p.id] = { pts: 0, detail: `${said} · 💀 éliminé` }
         nextAlive[p.id] = false
       }
     }

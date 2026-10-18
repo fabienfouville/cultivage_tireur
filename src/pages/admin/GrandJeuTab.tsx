@@ -5,6 +5,7 @@ import { CARDS, CARD_KEYS } from '../../engine/cards'
 import { db } from '../../firebase'
 import { useCol, useDoc } from '../../lib/hooks'
 import { MODULES, getModule, moduleConfig } from '../../modules'
+import { ConfirmButton } from '../../components/ControlPanel'
 import type { GrandJeu, GrandJeuSlot, ModuleKey, Theme } from '../../types'
 
 /** Composer une soirée : une suite de modules (slots) avec phases cartes entre deux */
@@ -38,9 +39,9 @@ export function GrandJeuTab() {
               <button className="btn btn-small" onClick={() => setEditing(g)}>
                 Modifier
               </button>
-              <button className="btn btn-small btn-danger" onClick={() => confirm(`Supprimer « ${g.name} » ?`) && deleteDoc(doc(db, 'grandJeux', g.id))}>
+              <ConfirmButton className="btn btn-small btn-danger" confirmLabel="Supprimer ?" onConfirm={() => deleteDoc(doc(db, 'grandJeux', g.id))}>
                 ×
-              </button>
+              </ConfirmButton>
             </div>
           </li>
         ))}

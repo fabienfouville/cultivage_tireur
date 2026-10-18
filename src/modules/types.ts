@@ -49,6 +49,8 @@ export interface ValidationItem {
   label: string
   /** nb de joueurs ayant donné cette réponse */
   count: number
+  /** joueurs ayant donné cette réponse */
+  pids?: string[]
   suggested: boolean
   /** regroupement dans l'écran de validation (ex. Artiste / Titre) */
   group?: string
@@ -94,6 +96,12 @@ export interface ModuleDef {
   multiTour?: boolean
   /** Une question de liste se joue dans l'ordre (VF Survie) */
   ordered?: boolean
+  /** Chaque joueur peut envoyer plusieurs réponses : pas d'arrêt automatique quand tout le monde a répondu */
+  multiAnswer?: boolean
+  /** La réponse est-elle complète (pour l'arrêt automatique) ? Par défaut : oui dès qu'elle existe */
+  isComplete?: (data: Record<string, any>) => boolean
+  /** Texte lisible d'une réponse (régie, correction) */
+  describe?: (data: Record<string, any>, round: Round) => string
   summary: (q: Question) => string
   /** Ce que les joueurs voient pendant la question — JAMAIS la solution */
   publicPayload: (q: Question, ctx: { block: Block; cfg: ModuleConfig; state?: Record<string, any> }) => Record<string, any>

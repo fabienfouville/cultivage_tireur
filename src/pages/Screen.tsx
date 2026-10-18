@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { collection, doc } from 'firebase/firestore'
 import { useParams } from 'react-router'
 import { BlockResults } from '../components/BlockResults'
@@ -8,10 +9,12 @@ import { Wheel } from '../components/Wheel'
 import { CARDS, CARD_KEYS } from '../engine/cards'
 import { useHost } from '../engine/useHost'
 import { db } from '../firebase'
-import { useIsAdmin } from '../lib/auth'
+import { ensurePlayerAuth, useIsAdmin } from '../lib/auth'
 import { remaining } from '../lib/clock'
 import { useCol, useDoc } from '../lib/hooks'
 import { getModule } from '../modules'
+import { ReviewList } from '../modules/common'
+import { AutoNext } from '../components/AutoNext'
 import type { Participant, RoundLog, Session } from '../types'
 
 /** Écran projeté (TV / vidéoprojecteur). Public ; si un admin est connecté, il pilote aussi la partie. */
@@ -19,8 +22,13 @@ export default function Screen() {
   const { sid = '' } = useParams()
   const session = useDoc<Session>(doc(db, 'sessions', sid))
   const participants = useCol<Participant>(collection(db, 'sessions', sid, 'participants'), `p-${sid}`) ?? []
-  const { isAdmin } = useIsAdmin()
-  const { now } = useHost(session, !!isAdmin)
+  const { user, isAdmin } = useIsAdmin()
+  const { now } = useHost(session, !!isAdmin, participants)
+  const [controlOpen, setControlOpen] = useState(false)
+  // Sans compte, l'écran ne peut pas mesurer l'heure du serveur : on ouvre une session anonyme (comme un joueur)
+  useEffect(() => {
+    if (user === null) ensurePlayerAuth().catch(console.warn)
+  }, [user])
 
   if (session === undefined) return <Spinner />
   if (session === null) return <div className="page center">Session introuvable</div>
@@ -85,7 +93,10 @@ export default function Screen() {
           ) : session.phase === 'play' && round && mod && block ? (
             <>
               {round.status === 'answering' && <TimerBar left={left} total={round.duration} />}
-              <mod.Screen session={session} round={round} block={block} participants={participants} left={left} />
+              {/* key : chaque question repart d'un affichage vierge */}
+              <mod.Screen key={round.seq} session={session} round={round} block={block} participants={participants} left={left} />
+              {(round.status === 'validating' || round.status === 'revealed') && <ReviewList round={round} />}
+              <AutoNext round={round} now={now} />
               {round.status === 'answering' && (
                 <div className="answered">
                   {active.map((p) => (
@@ -111,9 +122,10 @@ export default function Screen() {
         </aside>
       </div>
       {isAdmin && (
-        <details className="screen-control">
+        <details className="screen-control" open={controlOpen} onToggle={(e) => setControlOpen((e.target as HTMLDetailsElement).open)}>
           <summary>🎛️ Régie</summary>
-          <ControlPanel session={session} participants={participants} compact />
+          {/* Version écran : sans la bonne réponse, et se referme après chaque action */}
+          <ControlPanel session={session} participants={participants} compact onScreen onAction={() => setControlOpen(false)} />
         </details>
       )}
     </div>

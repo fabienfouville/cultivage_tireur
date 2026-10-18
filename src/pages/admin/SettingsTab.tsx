@@ -2,6 +2,7 @@ import { collection, deleteDoc, doc, serverTimestamp, setDoc } from 'firebase/fi
 import { useState } from 'react'
 import { db } from '../../firebase'
 import { BUILTIN_ADMINS, useUser } from '../../lib/auth'
+import { ConfirmButton } from '../../components/ControlPanel'
 import { useCol } from '../../lib/hooks'
 
 /** Gestion des admins (en plus de ceux écrits dans le code) */
@@ -23,9 +24,9 @@ export function SettingsTab() {
           {admins.map((a) => (
             <li key={a.id} className="list-row">
               {a.id}
-              <button className="btn btn-small btn-danger" onClick={() => confirm(`Retirer ${a.id} ?`) && deleteDoc(doc(db, 'admins', a.id))}>
+              <ConfirmButton className="btn btn-small btn-danger" confirmLabel="Retirer ?" onConfirm={() => deleteDoc(doc(db, 'admins', a.id))}>
                 Retirer
-              </button>
+              </ConfirmButton>
             </li>
           ))}
         </ul>

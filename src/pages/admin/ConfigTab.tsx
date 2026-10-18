@@ -1,10 +1,41 @@
 import { doc, setDoc } from 'firebase/firestore'
 import { useState } from 'react'
 import { Spinner } from '../../components/ui'
-import { clearConfigCache } from '../../engine/engine'
+import { GENERAL_DEFAULTS, clearConfigCache, type GeneralConfig } from '../../engine/engine'
 import { db } from '../../firebase'
 import { useDoc } from '../../lib/hooks'
 import { MODULES, moduleConfig } from '../../modules'
+
+/** Réglages généraux du déroulement des questions — stockés dans config/general */
+function GeneralSettings() {
+  const stored = useDoc<Partial<GeneralConfig>>(doc(db, 'config', 'general'))
+  const cur: GeneralConfig = { ...GENERAL_DEFAULTS, ...(stored ?? {}) }
+  const save = async (patch: Partial<GeneralConfig>) => {
+    await setDoc(doc(db, 'config', 'general'), { ...cur, ...patch })
+    clearConfigCache()
+  }
+  if (stored === undefined) return null
+  return (
+    <fieldset className="card">
+      <legend>⏱️ Déroulement des questions</legend>
+      <label className="check">
+        <input type="checkbox" checked={cur.autoClose} onChange={(e) => save({ autoClose: e.target.checked })} />
+        Arrêter la question dès que tout le monde a répondu (sauf Thème, où l'on peut donner plusieurs réponses)
+      </label>
+      <label>
+        Passage automatique à la question suivante, après la révélation (secondes, 0 = jamais)
+        <input
+          id="auto-next"
+          type="number"
+          min={0}
+          defaultValue={cur.autoNext}
+          onBlur={(e) => save({ autoNext: Math.max(0, Number(e.target.value) || 0) })}
+        />
+        <span className="muted small">L'animateur peut toujours mettre en pause ou passer plus vite depuis la régie.</span>
+      </label>
+    </fieldset>
+  )
+}
 
 /** Réglages par défaut de chaque module (durée, points…) — stockés dans config/modules */
 export function ConfigTab() {
@@ -36,6 +67,7 @@ export function ConfigTab() {
         setSaved(true)
       }}
     >
+      <GeneralSettings />
       <div className="grid">
         {MODULES.map((m) => (
           <fieldset key={m.key} className="card">

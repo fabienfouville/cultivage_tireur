@@ -1,15 +1,17 @@
 import { collection, doc, getCountFromServer, getDoc, orderBy, query, where } from 'firebase/firestore'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { CARDS } from '../engine/cards'
 import * as E from '../engine/engine'
 import { db } from '../firebase'
 import { useCol, useDoc } from '../lib/hooks'
 import { MODULES, getModule, moduleConfig } from '../modules'
+import { describeAnswer } from '../modules/common'
+import { useServerClock } from '../lib/clock'
 import type { Answer, GrandJeu, ModuleKey, Participant, Question, Session, Theme } from '../types'
 import { Leaderboard } from './ui'
 
 /** Exécute une action du moteur en affichant les erreurs */
-function useAction() {
+function useAction(onDone?: () => void) {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
   const run = async (fn: () => Promise<unknown>) => {
@@ -17,6 +19,7 @@ function useAction() {
     setError('')
     try {
       await fn()
+      onDone?.()
     } catch (e: any) {
       console.error(e)
       setError(String(e?.message ?? e))
@@ -27,9 +30,60 @@ function useAction() {
   return { busy, error, run }
 }
 
-/** La régie : tout ce qu'il faut pour animer, utilisable sur téléphone */
-export function ControlPanel({ session, participants, compact }: { session: Session; participants: Participant[]; compact?: boolean }) {
-  const { busy, error, run } = useAction()
+/** Bouton qui demande une confirmation dans la page (les fenêtres confirm() du navigateur bloquent certains outils) */
+export function ConfirmButton({
+  children,
+  confirmLabel = 'Sûr ? Confirmer',
+  onConfirm,
+  className = 'btn',
+  disabled,
+}: {
+  children: ReactNode
+  confirmLabel?: string
+  onConfirm: () => unknown
+  className?: string
+  disabled?: boolean
+}) {
+  const [asking, setAsking] = useState(false)
+  useEffect(() => {
+    if (!asking) return
+    const t = setTimeout(() => setAsking(false), 4000)
+    return () => clearTimeout(t)
+  }, [asking])
+  return (
+    <button
+      className={className + (asking ? ' btn-confirm' : '')}
+      disabled={disabled}
+      onClick={() => {
+        if (!asking) return setAsking(true)
+        setAsking(false)
+        void onConfirm()
+      }}
+    >
+      {asking ? confirmLabel : children}
+    </button>
+  )
+}
+
+/**
+ * La régie : tout ce qu'il faut pour animer, utilisable sur téléphone.
+ * `onScreen` : version affichée sur l'écran projeté → jamais la bonne réponse ni les réponses en cours.
+ */
+export function ControlPanel({
+  session,
+  participants,
+  compact,
+  onScreen,
+  onAction,
+}: {
+  session: Session
+  participants: Participant[]
+  compact?: boolean
+  onScreen?: boolean
+  /** appelé après chaque action réussie (ex. replier la régie de l'écran) */
+  onAction?: () => void
+}) {
+  const { busy, error, run } = useAction(onAction)
   const sid = session.id
   const round = session.round
   const block = session.block
@@ -49,7 +103,9 @@ export function ControlPanel({ session, participants, compact }: { session: Sess
           </button>
         </section>
       )}
-      {session.phase === 'play' && round && block && <RoundControls session={session} participants={participants} busy={busy} run={run} />}
+      {session.phase === 'play' && round && block && (
+        <RoundControls session={session} participants={participants} busy={busy} run={run} onScreen={onScreen} />
+      )}
       {session.phase === 'blockResults' && (
         <section className="card">
           <h3>Fin du module {block && getModule(block.module).name}</h3>
@@ -94,13 +150,9 @@ export function ControlPanel({ session, participants, compact }: { session: Sess
                 🎡 Retour au choix du jeu
               </button>
             )}
-            <button
-              className="btn btn-danger"
-              disabled={busy}
-              onClick={() => confirm('Afficher le classement final ?') && run(() => E.endSession(sid))}
-            >
+            <ConfirmButton className="btn btn-danger" disabled={busy} confirmLabel="Sûr ? Terminer" onConfirm={() => run(() => E.endSession(sid))}>
               🏁 Terminer la partie
-            </button>
+            </ConfirmButton>
           </div>
         </details>
       )}
@@ -255,19 +307,42 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
   )
 }
 
-function RoundControls({ session, participants, busy, run }: { session: Session; participants: Participant[]; busy: boolean; run: Run }) {
+function RoundControls({
+  session,
+  participants,
+  busy,
+  run,
+  onScreen,
+}: {
+  session: Session
+  participants: Participant[]
+  busy: boolean
+  run: Run
+  onScreen?: boolean
+}) {
   const round = session.round!
   const block = session.block!
   const sid = session.id
   const mod = getModule(round.module)
   const [q, setQ] = useState<Question | null>(null)
   useEffect(() => {
+    if (onScreen) return
     getDoc(doc(db, 'questions', round.qid)).then((s) => setQ(s.exists() ? ({ id: s.id, ...s.data() } as Question) : null))
-  }, [round.qid])
-  const answers = useCol<Answer>(query(collection(db, 'sessions', sid, 'answers'), where('seq', '==', round.seq)), `ans-${round.seq}`, [round.seq]) ?? []
-  const active = participants.filter((p) => !p.kicked)
+  }, [round.qid, onScreen])
+  const answers =
+    useCol<Answer>(
+      onScreen ? null : query(collection(db, 'sessions', sid, 'answers'), where('seq', '==', round.seq)),
+      `ans-${round.seq}`,
+      [round.seq],
+    ) ?? []
+  const now = useServerClock(500)
+  const active = participants.filter((p) => !p.kicked && (!mod.canAnswer || mod.canAnswer(block, p.id)))
   const last = round.index + 1 >= round.total || !!mod.blockOver?.(block)
   const topAllFound = mod.multiTour && Object.keys(round.state?.found ?? {}).length >= (round.public.n ?? 0)
+  const autoLeft = round.status === 'revealed' && round.autoNextAt ? Math.max(0, Math.ceil((round.autoNextAt.toMillis() - now) / 1000)) : null
+  const byPid = new Map(answers.map((a) => [a.pid, a]))
+  const nextLabel =
+    mod.multiTour && !round.state?.ended ? '👀 Dévoiler tout le classement' : last ? '🏁 Résultats du module' : '➡️ Question suivante'
 
   return (
     <section className="card">
@@ -276,13 +351,15 @@ function RoundControls({ session, participants, busy, run }: { session: Session;
         {mod.multiTour && ` · tour ${round.tour ?? 1}`}
       </div>
       <h3>{String(q?.text ?? round.public.text ?? '')}</h3>
-      {q && <p className="solution">✅ {mod.summary(q)}</p>}
+      {/* Sur l'écran projeté, jamais la bonne réponse */}
+      {!onScreen && q && <p className="solution">✅ {mod.summary(q)}</p>}
       <p className="small">
-        {answers.length}/{active.length} réponse(s)
+        {(round.answered ?? []).length}/{active.length} réponse(s)
+        {round.status === 'answering' && !mod.multiAnswer && ' · arrêt automatique quand tout le monde a répondu'}
       </p>
 
       {round.status === 'answering' && (
-        <div className="row">
+        <div className="row wrap">
           <button className="btn" disabled={busy} onClick={() => run(() => E.addTime(sid, 10))}>
             +10 s
           </button>
@@ -292,7 +369,7 @@ function RoundControls({ session, participants, busy, run }: { session: Session;
         </div>
       )}
 
-      {round.status === 'validating' && <Validation session={session} />}
+      {round.status === 'validating' && <Validation session={session} participants={participants} />}
       {round.status === 'validating' && (
         <button className="btn btn-primary btn-block" disabled={busy} onClick={() => run(() => E.reveal(sid, round.seq))}>
           ✅ Valider et révéler
@@ -300,34 +377,47 @@ function RoundControls({ session, participants, busy, run }: { session: Session;
       )}
 
       {round.status === 'revealed' && (
-        <div className="row wrap">
-          {mod.multiTour && !topAllFound && !round.state?.ended && (
-            <button className="btn" disabled={busy} onClick={() => run(() => E.nextTour(sid))}>
-              🔁 Nouveau tour
-            </button>
+        <>
+          {autoLeft != null && (
+            <div className="row between auto-next">
+              <span>Suite automatique dans {autoLeft} s</span>
+              <button className="btn btn-small" onClick={() => run(() => E.pauseAutoNext(sid))}>
+                ⏸ Pause
+              </button>
+            </div>
           )}
-          {mod.multiTour && !round.state?.ended && (
-            <button className="btn" disabled={busy} onClick={() => run(() => E.revealAll(sid))}>
-              👀 Tout dévoiler
+          <div className="row wrap">
+            {mod.multiTour && !topAllFound && !round.state?.ended && (
+              <button className="btn" disabled={busy} onClick={() => run(() => E.nextTour(sid))}>
+                🔁 Nouveau tour
+              </button>
+            )}
+            <button className="btn btn-primary" disabled={busy} onClick={() => run(() => E.next(sid, round.seq))}>
+              {nextLabel}
             </button>
-          )}
-          <button className="btn btn-primary" disabled={busy} onClick={() => run(() => E.next(sid))}>
-            {last ? '🏁 Résultats du module' : '➡️ Question suivante'}
-          </button>
-        </div>
+          </div>
+        </>
       )}
 
-      {answers.length > 0 && (
-        <details>
-          <summary className="small">Voir les réponses</summary>
-          <ul className="small answers-admin">
-            {answers.map((a) => (
-              <li key={a.id}>
-                <b>{a.name}</b> : {JSON.stringify(a.data)}
-              </li>
-            ))}
+      {/* Réponses en direct, avec le nom de chacun (pas sur l'écran projeté) */}
+      {!onScreen && round.status !== 'validating' && (
+        <div className="live-answers">
+          <h4>Réponses en direct</h4>
+          <ul>
+            {active.map((p) => {
+              const a = byPid.get(p.id)
+              return (
+                <li key={p.id} className={a ? '' : 'muted'}>
+                  <b>{p.name}</b>
+                  <span>{a ? (mod.describe ?? describeAnswer)(a.data, round) : '…'}</span>
+                  {round.status === 'revealed' && round.results?.[p.id] && (
+                    <span className="pts">{round.results[p.id].pts > 0 ? `+${round.results[p.id].pts}` : round.results[p.id].pts}</span>
+                  )}
+                </li>
+              )
+            })}
           </ul>
-        </details>
+        </div>
       )}
       {round.status === 'answering' && (
         <button className="btn btn-small" disabled={busy} onClick={() => run(() => E.skip(sid))}>
@@ -339,7 +429,8 @@ function RoundControls({ session, participants, busy, run }: { session: Session;
 }
 
 /** Validation manuelle des réponses libres : cocher ce qui est juste */
-function Validation({ session }: { session: Session }) {
+function Validation({ session, participants }: { session: Session; participants: Participant[] }) {
+  const nameOf = new Map(participants.map((p) => [p.id, p.name]))
   const round = session.round!
   const [items, setItems] = useState<ReturnType<NonNullable<ReturnType<typeof getModule>['validationItems']>>>([])
   const mod = getModule(round.module)
@@ -362,7 +453,10 @@ function Validation({ session }: { session: Session }) {
   const groups = [...new Set(items.map((i) => i.group ?? ''))]
   return (
     <div className="validation">
-      <p className="small muted">Coche les bonnes réponses (pré-cochées quand elles ressemblent à la réponse attendue).</p>
+      <p className="small muted">
+        Coche les bonnes réponses (pré-cochées quand elles ressemblent à la réponse attendue). Tout le monde voit la correction en direct
+        sur l'écran et les téléphones.
+      </p>
       {groups.map((g) => {
         const list = items
           .filter((i) => (i.group ?? '') === g)
@@ -372,7 +466,7 @@ function Validation({ session }: { session: Session }) {
               <button key={i.key} className={'verdict' + (on ? ' verdict-ok' : '')} onClick={() => E.setVerdict(session.id, i.key, !on)}>
                 <span>{on ? '✅' : '⬜'}</span>
                 <span className="verdict-label">{i.label}</span>
-                {i.count > 1 && <span className="muted small">×{i.count}</span>}
+                {!!i.pids?.length && <span className="muted small">{i.pids.map((pid) => nameOf.get(pid) ?? '?').join(', ')}</span>}
               </button>
             )
           })
@@ -437,9 +531,9 @@ function PlayersAdmin({ session, participants }: { session: Session; participant
               <button className="btn btn-small" onClick={() => E.adjustScore(session.id, p.id, +1)}>
                 +1
               </button>
-              <button className="btn btn-small btn-danger" onClick={() => confirm(`Exclure ${p.name} ?`) && E.kick(session.id, p.id)}>
+              <ConfirmButton className="btn btn-small btn-danger" confirmLabel="Sûr ?" onConfirm={() => E.kick(session.id, p.id)}>
                 Exclure
-              </button>
+              </ConfirmButton>
             </span>
           ) : null
         }

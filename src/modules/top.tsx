@@ -55,8 +55,10 @@ export const top: ModuleDef = {
       const label =
         rank >= 0 ? `${raw} → #${rank + 1} ${list[rank]}` : already >= 0 ? `${raw} (déjà trouvé : #${already + 1})` : `${raw} → pas dans le top ?`
       const it = map.get(key)
-      if (it) it.count++
-      else map.set(key, { key, label, count: 1, suggested: rank >= 0 })
+      if (it) {
+        it.count++
+        it.pids!.push(a.pid)
+      } else map.set(key, { key, label, count: 1, pids: [a.pid], suggested: rank >= 0 })
       // Toutes les autres places possibles, pour corriger à la main
       if (rank < 0) {
         list.forEach((li, i) => {
@@ -93,17 +95,23 @@ export const top: ModuleDef = {
     return (
       <>
         <QuestionText>{round.public.text}</QuestionText>
-        <p className="muted center small">Tour {round.tour ?? 1}</p>
-        {round.status === 'answering' && (
-          <>
-            <FreeAnswer initial={answer?.data.text} disabled={locked} onSubmit={(text) => submit({ text })} />
-            {answer && !locked && <Sent>Proposé : « {answer.data.text} »</Sent>}
-            {locked && <Locked />}
-          </>
-        )}
-        {round.status === 'validating' && <p className="center muted">L'animateur vérifie…</p>}
+        <p className="muted center small">
+          Tour {round.tour ?? 1} · une seule proposition par tour, elle ne peut plus être changée
+        </p>
+        {round.status === 'answering' &&
+          (answer ? (
+            <Sent final>Ta proposition pour ce tour : « {answer.data.text} »</Sent>
+          ) : locked ? (
+            <Locked />
+          ) : (
+            <FreeAnswer disabled={locked} placeholder="Un élément du classement…" onSubmit={(text) => submit({ text })} />
+          ))}
         {revealed && round.results?.[me.id] && <p className="center">{round.results[me.id].detail}</p>}
-        <TopBoard n={round.public.n} found={found} />
+        <TopBoard
+          n={round.public.n}
+          found={found}
+          solution={round.solution?.list && round.state?.ended ? round.solution.list : undefined}
+        />
       </>
     )
   },
@@ -115,7 +123,7 @@ export const top: ModuleDef = {
         <div>
           <QuestionText big>{round.public.text}</QuestionText>
           <p className="muted">Tour {round.tour ?? 1}</p>
-          {round.status === 'revealed' && <RevealList round={round} names={namesOf(participants)} />}
+          {round.status === 'revealed' && !round.review?.length && <RevealList round={round} names={namesOf(participants)} />}
         </div>
         <TopBoard n={round.public.n} found={found} solution={round.solution?.list && (allFound || round.state?.ended) ? round.solution.list : undefined} />
       </div>

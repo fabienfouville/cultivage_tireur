@@ -22,7 +22,7 @@ export const qcm: ModuleDef = {
     for (const a of answers) {
       const c = a.data.choice as number
       if (c >= 0 && c < 4) counts[c]++
-      results[a.pid] = { pts: c === q.correct ? Number(cfg.points) : 0 }
+      results[a.pid] = { pts: c === q.correct ? Number(cfg.points) : 0, detail: (q.answers as string[])?.[c] ?? '' }
     }
     return { results, summary: { counts } }
   },

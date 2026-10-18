@@ -54,17 +54,16 @@ export const pixel: ModuleDef = {
     for (const r of ranked) results[r.pid] = { pts: r.pts, detail: `« ${r.text} » ✅ ${r.rank}ᵉ` }
     return { results }
   },
-  Player: ({ round, answer, submit, locked, left, me }) => {
+  Player: ({ round, answer, submit, locked, me }) => {
     const revealed = round.status === 'revealed'
     return (
       <>
         <QuestionText>{round.public.text}</QuestionText>
-        <PixelImage
-          src={round.public.imageUrl}
-          progress={progress(round.status, left, round.duration, round.public.step)}
-          startCells={round.public.startCells}
-          curve={round.public.curve}
-        />
+        {revealed ? (
+          <img src={round.public.imageUrl} alt="" className="pixel-img" />
+        ) : (
+          <p className="center muted small">👀 Regarde l'image sur l'écran commun</p>
+        )}
         {revealed ? (
           <div className="big-answer">
             {round.solution?.label}

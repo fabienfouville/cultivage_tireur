@@ -50,3 +50,39 @@ export function searchSongs(term: string): Promise<Song[]> {
     document.head.appendChild(script)
   })
 }
+
+/** L'extrait se charge-t-il ? (les liens Deezer de l'ancienne app expirent au bout de quelques jours) */
+export function canPlayAudio(url: string, timeoutMs = 6000): Promise<boolean> {
+  return new Promise((resolve) => {
+    const a = new Audio()
+    const done = (ok: boolean) => {
+      clearTimeout(t)
+      a.removeAttribute('src')
+      resolve(ok)
+    }
+    const t = setTimeout(() => done(false), timeoutMs)
+    a.preload = 'metadata'
+    a.onloadedmetadata = () => done(true)
+    a.onerror = () => done(false)
+    a.src = url
+  })
+}
+
+/**
+ * Renvoie un lien d'extrait qui fonctionne pour une question de blind test : le lien actuel s'il marche,
+ * sinon un nouvel extrait iTunes trouvé avec l'artiste et le titre. null si rien trouvé.
+ */
+export async function ensurePlayableAudio(q: Record<string, any>): Promise<string | null> {
+  const url = String(q.audioUrl ?? '')
+  if (url && (await canPlayAudio(url))) return url
+  const author = q.answerHintAuthor ?? ''
+  const title = q.answerHintTitle ?? ''
+  const term = [author, title].filter(Boolean).join(' ') || String(q.answerHint ?? '').replace(/[-—–]/g, ' ')
+  if (!term.trim()) return url || null
+  try {
+    const songs = await searchSongs(term)
+    return songs[0]?.previewUrl ?? (url || null)
+  } catch {
+    return url || null
+  }
+}

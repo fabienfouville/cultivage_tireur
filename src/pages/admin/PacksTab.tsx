@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { db } from '../../firebase'
 import { useCol } from '../../lib/hooks'
 import { MODULES, getModule } from '../../modules'
+import { ConfirmButton } from '../../components/ControlPanel'
 import type { ModuleKey, Theme } from '../../types'
 
 export interface Pack {
@@ -94,11 +95,11 @@ export function PacksTab() {
                   {mod.name} · {p.questions.length} questions{p.description && ` · ${p.description}`}
                 </div>
               </div>
-              <button
+              <ConfirmButton
                 className={'btn btn-small' + (existing ? '' : ' btn-primary')}
                 disabled={!!busy}
-                onClick={async () => {
-                  if (existing && !confirm(`Remplacer les questions de « ${existing.name} » par celles du pack ?`)) return
+                confirmLabel={existing ? 'Remplacer les questions ?' : 'Importer ?'}
+                onConfirm={async () => {
                   setBusy(p.id)
                   try {
                     await importPack(p, existing)
@@ -109,7 +110,7 @@ export function PacksTab() {
                 }}
               >
                 {busy === p.id ? '…' : existing ? '↻ Ré-importer' : 'Importer'}
-              </button>
+              </ConfirmButton>
             </li>
           )
         })}

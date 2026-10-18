@@ -93,6 +93,8 @@ export interface MapDef {
   tiles: string
   attribution: string
   maxZoom?: number
+  /** zone à afficher en entier, quelle que soit la taille de l'écran (sud-ouest, nord-est) */
+  bounds?: [[number, number], [number, number]]
 }
 
 // Fond gris clair sans aucun nom (pays, villes…) : on ne donne pas la réponse. Pas de clé API nécessaire.
@@ -104,16 +106,16 @@ const ESRI_ATTR = '© Esri'
 
 /** Fonds de carte disponibles pour les thèmes Géoloc (champ `mapId` du thème) */
 export const MAPS: Record<string, MapDef> = {
-  world: { label: 'Monde (sans noms)', center: [20, 0], zoom: 2, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
-  france: { label: 'France', center: [46.6, 2.4], zoom: 5, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
-  europe: { label: 'Europe', center: [52, 12], zoom: 4, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
-  usa: { label: 'États-Unis', center: [39, -97], zoom: 4, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
-  africa: { label: 'Afrique', center: [2, 18], zoom: 3, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
-  asia: { label: 'Asie', center: [32, 95], zoom: 3, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
-  america: { label: 'Amériques', center: [8, -75], zoom: 2, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
-  oceania: { label: 'Océanie', center: [-22, 145], zoom: 3, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
-  summit: { label: 'Relief (sommets)', center: [25, 10], zoom: 2, tiles: ESRI_PHYS, attribution: ESRI_ATTR, maxZoom: 8 },
-  satellite: { label: 'Satellite', center: [20, 0], zoom: 2, tiles: ESRI_SAT, attribution: ESRI_ATTR },
+  world: { label: 'Monde (sans noms)', center: [20, 0], zoom: 2, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16, bounds: [[-58, -170], [75, 180]] },
+  france: { label: 'France', center: [46.6, 2.4], zoom: 5, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16, bounds: [[41.3, -5.2], [51.1, 9.6]] },
+  europe: { label: 'Europe', center: [52, 12], zoom: 4, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16, bounds: [[34, -25], [71, 45]] },
+  usa: { label: 'États-Unis', center: [39, -97], zoom: 4, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16, bounds: [[24, -125], [50, -66]] },
+  africa: { label: 'Afrique', center: [2, 18], zoom: 3, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16, bounds: [[-35, -18], [37, 52]] },
+  asia: { label: 'Asie', center: [32, 95], zoom: 3, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16, bounds: [[-10, 25], [60, 150]] },
+  america: { label: 'Amériques', center: [8, -75], zoom: 2, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16, bounds: [[-56, -130], [62, -30]] },
+  oceania: { label: 'Océanie', center: [-22, 145], zoom: 3, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16, bounds: [[-48, 110], [2, 180]] },
+  summit: { label: 'Relief (sommets)', center: [25, 10], zoom: 2, tiles: ESRI_PHYS, attribution: ESRI_ATTR, maxZoom: 8, bounds: [[-58, -170], [75, 180]] },
+  satellite: { label: 'Satellite', center: [20, 0], zoom: 2, tiles: ESRI_SAT, attribution: ESRI_ATTR, bounds: [[-58, -170], [75, 180]] },
 }
 
 export function mapFor(id: unknown): MapDef {

@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import { looksRight, normalize } from '../lib/normalize'
-import type { Answer, Round } from '../types'
+import type { Answer, ReviewItem, Round } from '../types'
 import type { ScoreContext, ValidationItem } from './types'
 
 export const CHOICE_COLORS = ['#e4572e', '#2e86de', '#f0a202', '#3bb273']
@@ -52,8 +52,10 @@ export function groupFreeAnswers(
     if (!n) continue
     const key = prefix + n
     const item = map.get(key)
-    if (item) item.count++
-    else map.set(key, { key, label: raw, count: 1, suggested: looksRight(raw, expected), group })
+    if (item) {
+      item.count++
+      item.pids!.push(a.pid)
+    } else map.set(key, { key, label: raw, count: 1, pids: [a.pid], suggested: looksRight(raw, expected), group })
   }
   return [...map.values()].sort((a, b) => Number(b.suggested) - Number(a.suggested) || b.count - a.count)
 }
@@ -70,12 +72,12 @@ export function QuestionText({ children, big }: { children: ReactNode; big?: boo
   return <h2 className={big ? 'q-text q-text-big' : 'q-text'}>{children}</h2>
 }
 
-export function Sent({ children }: { children?: ReactNode }) {
+export function Sent({ children, final }: { children?: ReactNode; final?: boolean }) {
   return (
     <div className="sent">
       <div className="sent-check">✓</div>
       <div>{children ?? 'Réponse envoyée'}</div>
-      <div className="muted small">Tu peux encore la changer tant que le temps n'est pas écoulé.</div>
+      {!final && <div className="muted small">Tu peux encore la changer tant que le temps n'est pas écoulé.</div>}
     </div>
   )
 }
@@ -210,4 +212,61 @@ export function RevealList({ round, names }: { round: Round; names: Record<strin
 
 export function namesOf(participants: { id: string; name: string }[]): Record<string, string> {
   return Object.fromEntries(participants.map((p) => [p.id, p.name]))
+}
+
+/** Texte lisible d'une réponse, quel que soit le jeu (régie, correction collective) */
+export function describeAnswer(data: Record<string, any>, round: Round): string {
+  const choices: string[] | undefined = round.public?.choices
+  const parts: string[] = []
+  if (data.mode) parts.push({ duo: 'Duo', carre: 'Carré', cash: 'Cash' }[data.mode as string] ?? String(data.mode))
+  if (typeof data.choice === 'number') parts.push(`${CHOICE_SHAPES[data.choice] ?? ''} ${choices?.[data.choice] ?? data.choice}`.trim())
+  if (typeof data.value === 'boolean') parts.push(data.value ? 'VRAI' : 'FAUX')
+  if (typeof data.value === 'number') parts.push(`${data.value.toLocaleString('fr-FR')} ${round.public?.unit ?? ''}`.trim())
+  if (typeof data.text === 'string' && data.text) parts.push(`« ${data.text} »`)
+  if (Array.isArray(data.items)) parts.push(data.items.join(', ') || '—')
+  if (data.author || data.title) parts.push(`${data.author || '?'} — ${data.title || '?'}`)
+  if (Array.isArray(data.bets))
+    parts.push(
+      data.bets
+        .map((b: number, i: number) => (b ? `${CHOICE_SHAPES[i]} ${choices?.[i] ?? ''} : ${b}` : ''))
+        .filter(Boolean)
+        .join(' · ') || 'aucune mise',
+    )
+  if (typeof data.lat === 'number') parts.push('📍 point placé')
+  return parts.join(' · ') || '—'
+}
+
+/**
+ * Correction collective : chaque réponse donnée, par qui, et si l'animateur la valide.
+ * Affichée sur l'écran et les téléphones pendant la validation et à la révélation.
+ */
+export function ReviewList({ round }: { round: Round }) {
+  const items: ReviewItem[] = round.review ?? []
+  if (!items.length) return null
+  const groups = [...new Set(items.map((i) => i.group ?? ''))]
+  const validating = round.status === 'validating'
+  return (
+    <div className="review">
+      <p className="muted small">{validating ? "L'animateur corrige, en direct :" : 'Les réponses de chacun :'}</p>
+      {groups.map((g) => (
+        <div key={g} className="review-group">
+          {g && <h4>{g}</h4>}
+          <ul>
+            {items
+              .filter((i) => (i.group ?? '') === g)
+              .map((i) => {
+                const ok = round.verdicts?.[i.key] === true
+                return (
+                  <li key={i.key} className={ok ? 'review-ok' : 'review-ko'}>
+                    <span className="review-mark">{ok ? '✅' : '❌'}</span>
+                    <span className="review-label">{i.label}</span>
+                    <span className="review-names">{i.names.join(', ')}</span>
+                  </li>
+                )
+              })}
+          </ul>
+        </div>
+      ))}
+    </div>
+  )
 }

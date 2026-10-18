@@ -5,6 +5,7 @@ import { Spinner } from '../../components/ui'
 import { createSession, deleteSession, endSession } from '../../engine/engine'
 import { db } from '../../firebase'
 import { useCol } from '../../lib/hooks'
+import { ConfirmButton } from '../../components/ControlPanel'
 import type { Session } from '../../types'
 
 const STATUS: Record<Session['status'], string> = { waiting: 'Ouverte', playing: 'En cours', done: 'Terminée' }
@@ -99,13 +100,13 @@ function SessionRow({ s }: { s: Session }) {
           📺 Écran
         </a>
         {s.status !== 'done' ? (
-          <button className="btn btn-small" onClick={() => confirm(`Terminer « ${s.name} » ?`) && endSession(s.id)}>
+          <ConfirmButton className="btn btn-small" confirmLabel="Terminer ?" onConfirm={() => endSession(s.id)}>
             Terminer
-          </button>
+          </ConfirmButton>
         ) : (
-          <button className="btn btn-small btn-danger" onClick={() => confirm(`Supprimer « ${s.name} » et ses scores ?`) && deleteSession(s.id)}>
+          <ConfirmButton className="btn btn-small btn-danger" confirmLabel="Supprimer ?" onConfirm={() => deleteSession(s.id)}>
             Supprimer
-          </button>
+          </ConfirmButton>
         )}
       </div>
     </li>

@@ -24,6 +24,7 @@ export const blindtest: ModuleDef = {
     { key: 'answerHintTitle', label: 'Titre', type: 'text' },
   ],
   manual: true,
+  isComplete: (d) => !!String(d.author ?? '').trim() && !!String(d.title ?? '').trim(),
   summary: (q) => `${author(q)} — ${title(q)}`,
   publicPayload: (q, { cfg }) => ({
     text: q.text || 'Quelle est cette chanson ? 🎵',

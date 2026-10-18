@@ -33,8 +33,10 @@ export function GeoMap({
     <div className="geomap" style={{ height }}>
       <MapContainer
         key={mapId}
-        center={m.center}
-        zoom={m.zoom}
+        // La zone entière tient dans l'écran, du téléphone à la télé
+        {...(m.bounds ? { bounds: m.bounds } : { center: m.center, zoom: m.zoom })}
+        // Un double tap pour placer son point ne doit pas zoomer
+        doubleClickZoom={false}
         minZoom={1}
         maxZoom={m.maxZoom ?? 12}
         worldCopyJump

@@ -17,6 +17,7 @@ export const theme: ModuleDef = {
     { key: 'answerHint', label: 'Exemples de réponses (aide à la validation)', type: 'textarea', optional: true },
   ],
   manual: true,
+  multiAnswer: true,
   summary: (q) => String(q.answerHint ?? ''),
   publicPayload: (q) => ({ text: q.text }),
   solution: (q) => ({ label: q.answerHint ?? '' }),
@@ -27,8 +28,10 @@ export const theme: ModuleDef = {
         const n = normalize(raw)
         if (!n) continue
         const it = map.get(n)
-        if (it) it.count++
-        else map.set(n, { key: n, label: raw, count: 1, suggested: true })
+        if (it) {
+          it.count++
+          if (!it.pids!.includes(a.pid)) it.pids!.push(a.pid)
+        } else map.set(n, { key: n, label: raw, count: 1, pids: [a.pid], suggested: true })
       }
     }
     return [...map.values()].sort((a, b) => a.label.localeCompare(b.label))

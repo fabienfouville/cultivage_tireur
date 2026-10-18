@@ -53,6 +53,8 @@ export interface Block {
   cards?: Record<string, CardPlay>
   /** gambling : jetons de départ */
   tokensStart?: number
+  /** gambling : jetons déjà dépensés par joueur sur la manche */
+  spent?: Record<string, number>
   /** vf-survie : pid → encore en vie */
   alive?: Record<string, boolean>
 }
@@ -81,6 +83,13 @@ export interface Round {
   answered?: string[]
   /** Validation manuelle : clé normalisée → bonne réponse ? */
   verdicts?: Record<string, boolean>
+  /**
+   * Réponses de chacun, publiées à la fin du temps pour la correction collective
+   * (écran et téléphones) : une ligne par réponse distincte, avec qui l'a donnée.
+   */
+  review?: ReviewItem[]
+  /** Passage automatique à la question suivante à cette heure (serveur) ; null = en pause */
+  autoNextAt?: Timestamp | null
   /** Le Top : numéro du tour */
   tour?: number
   /** État propre au module qui persiste entre les tours */
@@ -127,6 +136,13 @@ export interface Session {
   playedThemes?: string[]
   /** Roue libre : module tiré par la roue (affiché sur l'écran) */
   wheel?: { module: ModuleKey; at: number } | null
+}
+
+export interface ReviewItem {
+  key: string
+  label: string
+  names: string[]
+  group?: string
 }
 
 export interface Participant {

@@ -27,6 +27,7 @@ export const duoCarreCash: ModuleDef = {
     { key: 'answerHint', label: 'Variantes acceptées en Cash', type: 'text', optional: true, placeholder: 'séparées par /' },
   ],
   manual: true,
+  isComplete: (d) => !!d.mode && (d.choice != null || !!String(d.text ?? '').trim()),
   summary: (q) => correctLabel(q),
   publicPayload: (q) => {
     // La paire du Duo est tirée au lancement de la question (même paire pour tout le monde)

@@ -27,6 +27,8 @@ import {
   writeBatch,
 } from 'firebase/firestore'
 import { db } from '../firebase'
+import { serverNow } from '../lib/clock'
+import { ensurePlayableAudio } from '../lib/media'
 import { getModule, moduleConfig } from '../modules'
 import type {
   Answer,
@@ -38,6 +40,7 @@ import type {
   ModuleKey,
   Participant,
   Question,
+  ReviewItem,
   Round,
   RoundLog,
   Session,
@@ -78,6 +81,23 @@ export async function getStoredConfig(): Promise<Record<string, any>> {
 }
 export function clearConfigCache() {
   configCache = null
+  generalCache = null
+}
+
+/** Réglages généraux (config/general) */
+export interface GeneralConfig {
+  /** secondes avant de passer automatiquement à la question suivante après la révélation (0 = jamais) */
+  autoNext: number
+  /** arrêter la question dès que tout le monde a répondu */
+  autoClose: boolean
+}
+export const GENERAL_DEFAULTS: GeneralConfig = { autoNext: 10, autoClose: true }
+let generalCache: { at: number; value: GeneralConfig } | null = null
+export async function getGeneralConfig(): Promise<GeneralConfig> {
+  if (generalCache && Date.now() - generalCache.at < 10_000) return generalCache.value
+  const snap = await getDoc(doc(db, 'config', 'general'))
+  generalCache = { at: Date.now(), value: { ...GENERAL_DEFAULTS, ...(snap.exists() ? snap.data() : {}) } }
+  return generalCache.value
 }
 
 /* ───────────────────────────── Sessions ───────────────────────────── */
@@ -260,6 +280,14 @@ export async function startRound(sid: string, index: number, opts: { tour?: numb
   const [q, stored] = await Promise.all([getQuestion(qid), getStoredConfig()])
   const mod = getModule(block.module)
   const cfg = { ...moduleConfig(block.module, stored), timer: block.timer }
+  // Blind test : les vieux liens d'extraits (Deezer) expirent → on retrouve l'extrait et on corrige la question
+  if (block.module === 'blindtest' && q.audioUrl) {
+    const url = await ensurePlayableAudio(q)
+    if (url && url !== q.audioUrl) {
+      q.audioUrl = url
+      await updateDoc(doc(db, 'questions', q.id), { audioUrl: url }).catch(console.warn)
+    }
+  }
   const seq = (session.seq ?? 0) + 1
   const round: Round = {
     seq,
@@ -275,6 +303,8 @@ export async function startRound(sid: string, index: number, opts: { tour?: numb
     state: opts.state ?? {},
     answered: [],
     verdicts: {},
+    review: [],
+    autoNextAt: null,
   }
   await runTransaction(db, async (tx) => {
     const cur = (await tx.get(sessionRef(sid))).data() as Session
@@ -330,10 +360,15 @@ export async function closeRound(sid: string, seq: number) {
     })
     if (items.length) {
       const verdicts = Object.fromEntries(items.filter((i) => i.suggested).map((i) => [i.key, true]))
+      const names = new Map(participants.map((p) => [p.id, p.name]))
+      // Publié pour la correction collective (le temps est écoulé, on peut tout montrer)
+      const review: ReviewItem[] = items
+        .filter((i) => i.count > 0)
+        .map((i) => ({ key: i.key, label: i.label, group: i.group, names: (i.pids ?? []).map((pid) => names.get(pid) ?? '?') }))
       await runTransaction(db, async (tx) => {
         const cur = (await tx.get(sessionRef(sid))).data() as Session
         if (cur.round?.seq !== seq || cur.round.status !== 'answering') return
-        tx.update(sessionRef(sid), { 'round.status': 'validating', 'round.verdicts': verdicts })
+        tx.update(sessionRef(sid), { 'round.status': 'validating', 'round.verdicts': verdicts, 'round.review': review })
       })
       return
     }
@@ -352,11 +387,12 @@ export async function reveal(sid: string, seq: number) {
   const block = session.block
   if (!round || !block || round.seq !== seq || round.status === 'revealed') return
   const mod = getModule(round.module)
-  const [answers, participants, q, stored] = await Promise.all([
+  const [answers, participants, q, stored, general] = await Promise.all([
     getAnswers(sid, seq),
     getParticipants(sid),
     getQuestion(round.qid),
     getStoredConfig(),
+    getGeneralConfig(),
   ])
   const cfg = { ...moduleConfig(round.module, stored), timer: block.timer }
   const res = await mod.score({
@@ -387,6 +423,9 @@ export async function reveal(sid: string, seq: number) {
       'round.status': 'revealed',
       'round.results': res.results,
       'round.summary': res.summary ?? {},
+      // Le Top se joue en plusieurs tours : l'animateur décide de la suite
+      'round.autoNextAt':
+        !mod.multiTour && general.autoNext > 0 ? Timestamp.fromMillis(serverNow() + general.autoNext * 1000) : null,
     }
     if (solution) update['round.solution'] = solution
     if (res.state) update['round.state'] = { ...(cur.round.state ?? {}), ...res.state }
@@ -419,19 +458,23 @@ export async function revealAll(sid: string) {
   const session = await getSession(sid)
   const round = session.round
   if (!round) return
-  const q = await getQuestion(round.qid)
+  const [q, general] = await Promise.all([getQuestion(round.qid), getGeneralConfig()])
   await updateDoc(sessionRef(sid), {
     'round.solution': getModule(round.module).solution(q),
     'round.state.ended': true,
+    'round.autoNextAt': general.autoNext > 0 ? Timestamp.fromMillis(serverNow() + general.autoNext * 1000) : null,
   })
 }
 
-/** Question suivante, ou fin du bloc */
-export async function next(sid: string) {
+/** Question suivante, ou fin du bloc. `expectedSeq` : ne rien faire si la question a déjà changé (passage auto) */
+export async function next(sid: string, expectedSeq?: number) {
   const session = await getSession(sid)
   const block = session.block
-  if (!block) return
+  if (!block || session.phase !== 'play') return
+  if (expectedSeq != null && session.round?.seq !== expectedSeq) return
   const mod = getModule(block.module)
+  // Le Top : on montre d'abord le classement complet à tout le monde
+  if (mod.multiTour && session.round?.status === 'revealed' && !session.round.state?.ended) return revealAll(sid)
   const idx = session.round ? session.round.index + 1 : block.index
   if (idx >= block.questionIds.length || mod.blockOver?.(block)) return endBlock(sid)
   await startRound(sid, idx)
@@ -440,6 +483,11 @@ export async function next(sid: string) {
 /** Passer la question sans compter de points */
 export async function skip(sid: string) {
   return next(sid)
+}
+
+/** Met en pause le passage automatique à la question suivante */
+export async function pauseAutoNext(sid: string) {
+  await updateDoc(sessionRef(sid), { 'round.autoNextAt': null })
 }
 
 export async function addTime(sid: string, seconds: number) {

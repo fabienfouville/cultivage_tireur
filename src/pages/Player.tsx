@@ -10,6 +10,8 @@ import { ensurePlayerAuth, useUser } from '../lib/auth'
 import { remaining, useServerClock } from '../lib/clock'
 import { useCol, useDoc } from '../lib/hooks'
 import { getModule } from '../modules'
+import { RevealList, ReviewList } from '../modules/common'
+import { AutoNext } from '../components/AutoNext'
 import type { Answer, Participant, Session } from '../types'
 
 const NAME_KEY = 'cultivage:name'
@@ -218,6 +220,15 @@ function PlayerGame({ session, me }: { session: Session; me: Participant }) {
             left={left}
           />
           {error && <p className="error center">{error}</p>}
+          <AutoNext round={round} now={now} />
+          {/* Correction collective : les réponses de chacun et les verdicts de l'animateur, en direct */}
+          {(round.status === 'validating' || round.status === 'revealed') && <ReviewList round={round} />}
+          {round.status === 'revealed' && !round.review?.length && (
+            <details className="everyone" open>
+              <summary>Les réponses de chacun</summary>
+              <RevealList round={round} names={Object.fromEntries(participants.map((p) => [p.id, p.name]))} />
+            </details>
+          )}
         </main>
       ) : session.phase === 'cards' ? (
         <CardsPicker session={session} me={me} participants={participants} />

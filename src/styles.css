@@ -1275,3 +1275,108 @@ details > summary {
     font-size: 16px;
   }
 }
+
+/* ───────── Correction collective, réponses en direct, passage auto ───────── */
+
+.review {
+  display: grid;
+  gap: 8px;
+}
+
+.review-group h4 {
+  margin: 4px 0;
+}
+
+.review ul,
+.live-answers ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.review li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 10px;
+  align-items: baseline;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.review-ok {
+  border-color: var(--good) !important;
+  background: color-mix(in srgb, var(--good) 14%, var(--surface)) !important;
+}
+
+.review-ko {
+  opacity: 0.75;
+}
+
+.review-label {
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.review-names {
+  grid-column: 2;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.screen-main .review li {
+  font-size: 20px;
+}
+
+.screen-main .review-names {
+  font-size: 15px;
+}
+
+.live-answers {
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.live-answers li {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.live-answers li span:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.auto-next {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.auto-next-banner {
+  text-align: center;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 0;
+}
+
+.everyone summary {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.btn-confirm {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #fff;
+}

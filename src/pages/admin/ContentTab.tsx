@@ -7,6 +7,7 @@ import { MAPS } from '../../lib/geo'
 import { useCol } from '../../lib/hooks'
 import { MODULES, getModule } from '../../modules'
 import type { ModuleKey, Question, Theme } from '../../types'
+import { ConfirmButton } from '../../components/ControlPanel'
 import { QuestionForm } from './QuestionForm'
 
 /** Modules → thèmes → questions. La navigation est gardée dans l'URL (?m=…&t=…) */
@@ -107,10 +108,10 @@ function ModuleView({ module, back, open }: { module: ModuleKey; back: () => voi
                   {th.packId && ' · 📦 pack'}
                 </span>
               </button>
-              <button
+              <ConfirmButton
                 className="btn btn-small btn-danger"
-                onClick={async () => {
-                  if (!confirm(`Supprimer le thème « ${th.name} » et ses ${count(th.id)} questions ?`)) return
+                confirmLabel={`Supprimer ${count(th.id)} questions ?`}
+                onConfirm={async () => {
                   const qs = await getDocs(query(collection(db, 'questions'), where('themeId', '==', th.id)))
                   const b = writeBatch(db)
                   qs.docs.forEach((d) => b.delete(d.ref))
@@ -119,7 +120,7 @@ function ModuleView({ module, back, open }: { module: ModuleKey; back: () => voi
                 }}
               >
                 Supprimer
-              </button>
+              </ConfirmButton>
             </li>
           ))}
       </ul>
@@ -221,9 +222,9 @@ function ThemeView({ module, themeId, back }: { module: ModuleKey; themeId: stri
                 <button className="btn btn-small" onClick={() => setEditing(q)}>
                   Modifier
                 </button>
-                <button className="btn btn-small btn-danger" onClick={() => confirm('Supprimer cette question ?') && deleteDoc(doc(db, 'questions', q.id))}>
+                <ConfirmButton className="btn btn-small btn-danger" confirmLabel="Supprimer ?" onConfirm={() => deleteDoc(doc(db, 'questions', q.id))}>
                   ×
-                </button>
+                </ConfirmButton>
               </div>
             </li>
           ),
