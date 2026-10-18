@@ -2,8 +2,17 @@ import { PixelImage } from '../components/PixelImage'
 import { FreeAnswer, Locked, QuestionText, RevealList, Sent, groupFreeAnswers, isValidated, ms, namesOf, parsePoints, podium } from './common'
 import type { ModuleDef } from './types'
 
-const progress = (status: string, left: number, duration: number) =>
-  status === 'answering' ? 1 - Math.max(0, left) / Math.max(1, duration) : 1
+/**
+ * Avancement de la dépixellisation (0 → 1). L'image ne change que par paliers de `step` secondes,
+ * pour laisser le temps de l'observer ; elle devient nette à la révélation.
+ */
+export const progress = (status: string, left: number, duration: number, step = 3) => {
+  if (status !== 'answering') return 1
+  const d = Math.max(1, duration)
+  const elapsed = Math.min(d, Math.max(0, d - left))
+  const s = step > 0 ? step : 1
+  return (Math.floor(elapsed / s) * s) / d
+}
 
 export const pixel: ModuleDef = {
   key: 'pixel',
@@ -11,10 +20,11 @@ export const pixel: ModuleDef = {
   icon: '🖼️',
   tagline: 'Réponse libre validée',
   rules: "L'image se précise petit à petit. Les plus rapides à trouver gagnent (podium).",
-  defaults: { timer: 30, podium: '5,3,1', startCells: 5, curve: 2.5 },
+  defaults: { timer: 30, podium: '5,3,1', startCells: 5, curve: 2.5, step: 3 },
   configFields: [
     { key: 'podium', label: 'Points du podium (vitesse)', type: 'text', help: 'ex : 5,3,1' },
     { key: 'startCells', label: 'Pixellisation de départ', type: 'number', help: "nombre de gros pixels en largeur au début (5 = illisible)" },
+    { key: 'step', label: "Changement d'image toutes les… (s)", type: 'number', help: "l'image se précise par paliers (3 s par défaut)" },
     { key: 'curve', label: 'Courbe de dépixellisation', type: 'number', help: "plus c'est grand, plus l'image reste floue longtemps avant de se révéler d'un coup (2,5 par défaut)" },
   ],
   questionFields: [
@@ -29,6 +39,7 @@ export const pixel: ModuleDef = {
     imageUrl: q.imageUrl,
     startCells: Number(cfg.startCells) || 5,
     curve: Number(cfg.curve) || 2.5,
+    step: Number(cfg.step) || 3,
   }),
   solution: (q) => ({ label: q.answerHint }),
   validationItems: ({ q, answers }) => groupFreeAnswers(answers, (a) => a.data.text, q.answerHint),
@@ -50,7 +61,7 @@ export const pixel: ModuleDef = {
         <QuestionText>{round.public.text}</QuestionText>
         <PixelImage
           src={round.public.imageUrl}
-          progress={progress(round.status, left, round.duration)}
+          progress={progress(round.status, left, round.duration, round.public.step)}
           startCells={round.public.startCells}
           curve={round.public.curve}
         />
@@ -77,7 +88,7 @@ export const pixel: ModuleDef = {
         <QuestionText big>{round.public.text}</QuestionText>
         <PixelImage
           src={round.public.imageUrl}
-          progress={progress(round.status, left, round.duration)}
+          progress={progress(round.status, left, round.duration, round.public.step)}
           startCells={round.public.startCells}
           curve={round.public.curve}
         />
