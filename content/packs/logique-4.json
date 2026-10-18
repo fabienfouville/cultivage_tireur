@@ -1,0 +1,100 @@
+{
+  "id": "logique-4",
+  "module": "logique",
+  "theme": "100% Logique · 4",
+  "description": "énigmes du plus facile (92 %) au plus dur (2 %)",
+  "questions": [
+    {
+      "text": "Complète la suite :\n1, 3, 5, 7, 9, ?",
+      "answer": "11/onze",
+      "percent": 92,
+      "explain": "Les nombres impairs : on ajoute 2."
+    },
+    {
+      "text": "LUNDI est à MARDI\nce que JANVIER est à ?",
+      "answer": "Février",
+      "percent": 85,
+      "explain": "Le suivant : mardi suit lundi, février suit janvier."
+    },
+    {
+      "text": "Quelle lettre est l'intrus ?",
+      "choices": [
+        "A",
+        "E",
+        "I",
+        "K",
+        "O",
+        "U"
+      ],
+      "answer": "K",
+      "percent": 80,
+      "explain": "Toutes les autres sont des voyelles."
+    },
+    {
+      "text": "Dans une cour, il y a 3 chats et 2 poules.\nCombien de pattes en tout ?",
+      "answer": "16/seize",
+      "percent": 72,
+      "explain": "3 × 4 + 2 × 2 = 12 + 4 = 16."
+    },
+    {
+      "text": "Je suis un nombre pair entre 20 et 30.\nJe suis multiple de 3 et de 4.\nQui suis-je ?",
+      "answer": "24/vingt-quatre/vingt quatre",
+      "percent": 65,
+      "explain": "Multiple de 3 et de 4 = multiple de 12 : le seul entre 20 et 30 est 24."
+    },
+    {
+      "text": "Quelle lettre vient ensuite ?\nA, B, D, G, K, ?",
+      "answer": "P",
+      "percent": 55,
+      "explain": "On avance de 1, 2, 3, 4 puis 5 lettres : K + 5 = P."
+    },
+    {
+      "text": "Pierre a 3 sœurs.\nChaque sœur a un seul frère.\nCombien d'enfants y a-t-il dans la famille ?",
+      "answer": "4/quatre",
+      "percent": 45,
+      "explain": "Le frère unique des sœurs, c'est Pierre : 3 filles + Pierre = 4."
+    },
+    {
+      "text": "Quelle lettre vient ensuite ?\nD, R, M, F, S, L, ?",
+      "answer": "S",
+      "percent": 35,
+      "explain": "Les notes de musique : Do, Ré, Mi, Fa, Sol, La, Si."
+    },
+    {
+      "text": "Il faut 10 minutes pour scier une bûche en 2 morceaux.\nCombien de minutes faut-il pour la scier en 4 morceaux ?",
+      "answer": "30/30 min/30 minutes/trente/trente minutes",
+      "percent": 25,
+      "explain": "2 morceaux = 1 coupe ; 4 morceaux = 3 coupes de 10 minutes."
+    },
+    {
+      "text": "Le 1er janvier est un mardi (année non bissextile).\nQuel jour sera le 31 décembre ?",
+      "choices": [
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Dimanche"
+      ],
+      "answer": "Mardi",
+      "percent": 15,
+      "explain": "365 jours = 52 semaines + 1 jour : le 365e jour tombe le même jour que le 1er."
+    },
+    {
+      "text": "Combien de lettres DIFFÉRENTES\ndans le mot ANTICONSTITUTIONNELLEMENT ?",
+      "answer": "11/onze",
+      "percent": 10,
+      "explain": "A, C, E, I, L, M, N, O, S, T, U : 11 lettres différentes."
+    },
+    {
+      "text": "Dans une famille, chaque fille a autant de frères que de sœurs.\nChaque garçon a deux fois plus de sœurs que de frères.\nCombien d'enfants y a-t-il ?",
+      "answer": "7/sept",
+      "percent": 5,
+      "explain": "4 filles et 3 garçons : une fille a 3 sœurs et 3 frères, un garçon a 2 frères et 4 sœurs."
+    },
+    {
+      "text": "Complète la suite :\n61, 52, 63, 94, 46, ?",
+      "answer": "18/dix-huit/dix huit",
+      "percent": 2,
+      "explain": "Les carrés écrits à l'envers : 16, 25, 36, 49, 64, 81 → 18."
+    }
+  ]
+}

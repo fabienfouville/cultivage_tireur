@@ -1,0 +1,104 @@
+{
+  "id": "logique-5",
+  "module": "logique",
+  "theme": "100% Logique · 5",
+  "description": "énigmes du plus facile (90 %) au plus dur (3 %)",
+  "questions": [
+    {
+      "text": "Complète la suite :\n100, 90, 80, 70, ?",
+      "answer": "60/soixante",
+      "percent": 90,
+      "explain": "On retire 10 à chaque fois."
+    },
+    {
+      "text": "Quel mot est l'intrus ?",
+      "choices": [
+        "CHIEN",
+        "CHAT",
+        "LAPIN",
+        "SAPIN"
+      ],
+      "answer": "SAPIN",
+      "percent": 85,
+      "explain": "Le sapin est un arbre, les autres sont des animaux."
+    },
+    {
+      "text": "L'ŒUF est à la POULE\nce que le TÊTARD est à ?",
+      "choices": [
+        "Grenouille",
+        "Poisson",
+        "Serpent",
+        "Tortue"
+      ],
+      "answer": "Grenouille",
+      "percent": 78,
+      "explain": "Le têtard devient une grenouille."
+    },
+    {
+      "text": "Sur un dé, deux faces opposées font toujours 7.\nQuel chiffre est sur la face opposée au 2 ?",
+      "answer": "5/cinq",
+      "percent": 70,
+      "explain": "2 + 5 = 7."
+    },
+    {
+      "text": "Il y a 6 pommes dans un panier.\nTu en prends 4.\nCombien de pommes as-tu ?",
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "10"
+      ],
+      "answer": "4",
+      "percent": 62,
+      "explain": "Tu as les 4 que tu as prises (il en reste 2 dans le panier)."
+    },
+    {
+      "text": "Le père de Marie a 5 filles :\nLala, Lélé, Lili, Lolo…\nComment s'appelle la cinquième ?",
+      "answer": "Marie",
+      "percent": 55,
+      "explain": "C'est le père de Marie : la cinquième, c'est Marie !"
+    },
+    {
+      "text": "Complète la suite :\n2, 3, 5, 7, 11, 13, ?",
+      "answer": "17/dix-sept/dix sept",
+      "percent": 45,
+      "explain": "Les nombres premiers (divisibles seulement par 1 et par eux-mêmes)."
+    },
+    {
+      "text": "Divise 30 par un demi,\npuis ajoute 10.\nCombien obtiens-tu ?",
+      "answer": "70/soixante-dix/soixante dix",
+      "percent": 35,
+      "explain": "Diviser par ½ revient à multiplier par 2 : 60 + 10 = 70."
+    },
+    {
+      "text": "Dans un tiroir, dans le noir : 10 chaussettes noires\net 10 chaussettes blanches.\nCombien faut-il en prendre au minimum\npour être sûr d'avoir deux chaussettes de la même couleur ?",
+      "answer": "3/trois",
+      "percent": 28,
+      "explain": "Avec 2 couleurs, la 3e chaussette est forcément de la couleur d'une des deux premières."
+    },
+    {
+      "text": "Une brique pèse 1 kg plus une demi-brique.\nCombien pèse la brique ?",
+      "answer": "2/2 kg/2kg/2 kilos/2 kilo/2 kilogrammes/deux/deux kilos",
+      "percent": 20,
+      "explain": "La demi-brique pèse 1 kg, donc la brique entière pèse 2 kg."
+    },
+    {
+      "text": "Une horloge sonne 6 coups en 5 secondes.\nCombien de secondes lui faut-il pour sonner 12 coups ?",
+      "answer": "11/11 s/11s/11 secondes/onze/onze secondes",
+      "percent": 12,
+      "explain": "6 coups = 5 intervalles d'une seconde ; 12 coups = 11 intervalles."
+    },
+    {
+      "text": "Tu n'as que des pièces de 2 € et de 5 €.\nQuel est le plus grand montant entier (en euros)\nque tu ne peux PAS payer exactement ?",
+      "answer": "3/3 €/3€/3 euros/trois/trois euros",
+      "percent": 6,
+      "explain": "1 € et 3 € sont impossibles ; ensuite 4, 5, 6, 7… tout se paie."
+    },
+    {
+      "text": "Complète la suite :\n1, 2, 4, 8, 16, 23, 28, 38, 49, ?",
+      "answer": "62/soixante-deux/soixante deux",
+      "percent": 3,
+      "explain": "On ajoute la somme des chiffres du nombre : 49 + 4 + 9 = 62."
+    }
+  ]
+}
