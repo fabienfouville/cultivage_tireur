@@ -40,7 +40,7 @@ export function CardsPicker({ session, me, participants }: { session: Session; m
       <h2 className="center">🃏 Phase cartes · {left}s</h2>
       {slot && (
         <p className="center muted">
-          Prochain module : {getModule(slot.module).icon} {getModule(slot.module).name} — {slot.themeName}
+          Prochain module : {getModule(slot.module).icon} {getModule(slot.module).name} — {slot.themeName || 'thème au hasard'}
         </p>
       )}
       {played ? (

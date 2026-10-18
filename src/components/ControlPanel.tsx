@@ -189,7 +189,7 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
           <label>
             Thème
             <select value={themeId} onChange={(e) => setThemeId(e.target.value)}>
-              <option value="">— choisir —</option>
+              <option value="">🎲 Au hasard</option>
               {[...themes]
                 .sort((a, b) => a.name.localeCompare(b.name))
                 .map((t) => (
@@ -233,7 +233,7 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
           )}
           <button
             className="btn btn-primary btn-block btn-big"
-            disabled={busy || !themeId}
+            disabled={busy}
             onClick={() =>
               run(() =>
                 E.startBlock(session.id, {

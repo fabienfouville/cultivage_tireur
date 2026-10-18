@@ -116,9 +116,8 @@ function GrandJeuEditor({ initial, onDone }: { initial?: GrandJeu; onDone: () =>
                 <select
                   value={s.themeId}
                   onChange={(e) => upd(i, { themeId: e.target.value, themeName: list.find((t) => t.id === e.target.value)?.name ?? '' })}
-                  required
                 >
-                  <option value="">— thème —</option>
+                  <option value="">🎲 Au hasard</option>
                   {list.map((t) => (
                     <option key={t.id} value={t.id}>
                       {t.name}
@@ -160,7 +159,7 @@ function GrandJeuEditor({ initial, onDone }: { initial?: GrandJeu; onDone: () =>
         <button type="button" className="btn" onClick={onDone}>
           Annuler
         </button>
-        <button className="btn btn-primary" disabled={!slots.length || slots.some((s) => !s.themeId)}>
+        <button className="btn btn-primary" disabled={!slots.length}>
           Enregistrer
         </button>
       </div>

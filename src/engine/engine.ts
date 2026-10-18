@@ -14,6 +14,7 @@ import {
   doc,
   FieldPath,
   getDoc,
+  getCountFromServer,
   getDocs,
   increment,
   query,
@@ -141,6 +142,7 @@ export async function spinWheel(sid: string, modules: ModuleKey[]): Promise<Modu
 
 export interface BlockOptions {
   module: ModuleKey
+  /** vide = thème au hasard */
   themeId: string
   count: number
   order: 'keep' | 'random'
@@ -166,7 +168,25 @@ export async function pickQuestions(themeId: string, module: ModuleKey, count: n
   return qs.slice(0, Math.max(1, count))
 }
 
+/**
+ * Thème au hasard pour un module : un thème qui a des questions, en évitant ceux déjà joués dans la session
+ * (sauf s'il n'en reste plus).
+ */
+export async function randomTheme(module: ModuleKey, alreadyPlayed: string[] = []): Promise<string> {
+  const snap = await getDocs(query(collection(db, 'themes'), where('module', '==', module)))
+  const ids = snap.docs.map((d) => d.id).sort(() => Math.random() - 0.5)
+  const fresh = ids.filter((id) => !alreadyPlayed.includes(id))
+  for (const id of [...fresh, ...ids.filter((x) => !fresh.includes(x))]) {
+    const count = await getCountFromServer(query(collection(db, 'questions'), where('themeId', '==', id)))
+    if (count.data().count > 0) return id
+  }
+  throw new Error('Aucun thème avec des questions pour ce jeu')
+}
+
 export async function startBlock(sid: string, opts: BlockOptions) {
+  const current = await getSession(sid)
+  // Pas de thème choisi → thème au hasard
+  if (!opts.themeId) opts = { ...opts, themeId: await randomTheme(opts.module, current.playedThemes ?? []) }
   const [session, participants, stored, themeSnap] = await Promise.all([
     getSession(sid),
     getParticipants(sid),
@@ -221,6 +241,7 @@ export async function startBlock(sid: string, opts: BlockOptions) {
     phase: 'play',
     block,
     blockCount: block.no,
+    playedThemes: arrayUnion(opts.themeId),
     round: null,
     wheel: null,
     cardsUntil: null,

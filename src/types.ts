@@ -91,6 +91,7 @@ export type Phase = 'lobby' | 'pick' | 'cards' | 'play' | 'blockResults' | 'fina
 
 export interface GrandJeuSlot {
   module: ModuleKey
+  /** vide = thème au hasard au moment de jouer */
   themeId: string
   themeName: string
   questionCount: number
@@ -122,6 +123,8 @@ export interface Session {
   grandJeu?: (GrandJeu & { step: number }) | null
   /** Phase cartes : fin de la phase */
   cardsUntil?: Timestamp | null
+  /** Thèmes déjà joués dans la session (pour le tirage au hasard) */
+  playedThemes?: string[]
   /** Roue libre : module tiré par la roue (affiché sur l'écran) */
   wheel?: { module: ModuleKey; at: number } | null
 }
