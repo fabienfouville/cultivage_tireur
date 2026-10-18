@@ -1,0 +1,107 @@
+{
+  "id": "duo-histoire",
+  "module": "duo-carre-cash",
+  "theme": "Histoire",
+  "questions": [
+    {
+      "text": "Quelle reine d'Égypte fut l'alliée de Jules César puis de Marc Antoine ?",
+      "choices": [
+        "Néfertiti",
+        "Cléopâtre",
+        "Hatchepsout",
+        "Néfertari"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Quel empereur romain régnait lors du grand incendie de Rome, en 64 ?",
+      "choices": [
+        "Caligula",
+        "Néron",
+        "Auguste",
+        "Tibère"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Dans quelle ville Jeanne d'Arc a-t-elle été brûlée ?",
+      "choices": [
+        "Orléans",
+        "Rouen",
+        "Reims",
+        "Paris"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Quel explorateur a atteint le pôle Sud le premier, en 1911 ?",
+      "choices": [
+        "Robert Scott",
+        "Roald Amundsen",
+        "Ernest Shackleton",
+        "Fridtjof Nansen"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Sous quelle dynastie la Cité interdite de Pékin a-t-elle été construite ?",
+      "choices": [
+        "Ming",
+        "Qing",
+        "Han",
+        "Tang"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "text": "En quelle année les Françaises ont-elles voté pour la première fois ?",
+      "choices": [
+        "1918",
+        "1945",
+        "1958",
+        "1968"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Quel pharaon est célèbre pour son tombeau retrouvé presque intact en 1922 ?",
+      "choices": [
+        "Ramsès II",
+        "Toutânkhamon",
+        "Khéops",
+        "Akhenaton"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Quel peuple a construit le Parthénon ?",
+      "choices": [
+        "Les Romains",
+        "Les Grecs",
+        "Les Égyptiens",
+        "Les Perses"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Quel roi de France a signé l'édit de Nantes en 1598 ?",
+      "choices": [
+        "Henri IV",
+        "Louis XIII",
+        "François Ier",
+        "Charles IX"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "text": "Quelle ville était la capitale de l'Empire byzantin ?",
+      "choices": [
+        "Rome",
+        "Constantinople",
+        "Athènes",
+        "Alexandrie"
+      ],
+      "correctIndex": 1
+    }
+  ]
+}

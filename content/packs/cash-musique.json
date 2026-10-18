@@ -1,0 +1,47 @@
+{
+  "id": "cash-musique",
+  "module": "cash",
+  "theme": "Musique",
+  "questions": [
+    {
+      "text": "Quel chanteur belge a sorti « Alors on danse » ?",
+      "answerHint": "Stromae"
+    },
+    {
+      "text": "Quel compositeur, devenu sourd, a écrit la 9e symphonie et l'« Hymne à la joie » ?",
+      "answerHint": "Beethoven"
+    },
+    {
+      "text": "Quel groupe a sorti l'album « Abbey Road » en 1969 ?",
+      "answerHint": "The Beatles / Beatles"
+    },
+    {
+      "text": "Quelle chanteuse française était surnommée « la Môme » ?",
+      "answerHint": "Édith Piaf / Piaf"
+    },
+    {
+      "text": "Quel rappeur a sorti l'album « Feu » en 2015 ?",
+      "answerHint": "Nekfeu"
+    },
+    {
+      "text": "Comment appelle-t-on un ensemble de quatre musiciens ?",
+      "answerHint": "Quatuor / quartette / quartet"
+    },
+    {
+      "text": "Quelle chanteuse américaine a fait le « Eras Tour » ?",
+      "answerHint": "Taylor Swift / Swift"
+    },
+    {
+      "text": "Quel est le prénom du chanteur des Rolling Stones, M. Jagger ?",
+      "answerHint": "Mick"
+    },
+    {
+      "text": "De quel pays vient le groupe ABBA ?",
+      "answerHint": "Suède"
+    },
+    {
+      "text": "Qui chante « Les Champs-Élysées » (1969) ?",
+      "answerHint": "Joe Dassin / Dassin"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "cash-sciences-quotidien",
+  "module": "cash",
+  "theme": "Sciences du quotidien",
+  "questions": [
+    {
+      "text": "Quel gaz rend la voix aiguë quand on l'inspire ?",
+      "answerHint": "Hélium"
+    },
+    {
+      "text": "Quel organe filtre le sang et produit l'urine ?",
+      "answerHint": "Rein / reins"
+    },
+    {
+      "text": "Comment appelle-t-on la peur des araignées ?",
+      "answerHint": "Arachnophobie"
+    },
+    {
+      "text": "Quelle vitamine notre peau fabrique-t-elle grâce au soleil ?",
+      "answerHint": "D / vitamine D"
+    },
+    {
+      "text": "Comment appelle-t-on la peur des espaces clos ?",
+      "answerHint": "Claustrophobie"
+    },
+    {
+      "text": "Quel instrument mesure la pression atmosphérique ?",
+      "answerHint": "Baromètre"
+    },
+    {
+      "text": "Comment appelle-t-on un animal qui mange de tout ?",
+      "answerHint": "Omnivore"
+    },
+    {
+      "text": "Quelle unité mesure une fréquence ?",
+      "answerHint": "Hertz / Hz"
+    },
+    {
+      "text": "Quelle est la formule chimique du sel de table ?",
+      "answerHint": "NaCl"
+    },
+    {
+      "text": "Comment s'appelle le passage direct de l'état solide à l'état gazeux ?",
+      "answerHint": "Sublimation"
+    }
+  ]
+}

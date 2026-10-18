@@ -1,0 +1,107 @@
+{
+  "id": "qcm-science-fiction",
+  "module": "qcm",
+  "theme": "Science-fiction",
+  "questions": [
+    {
+      "text": "Dans « Star Wars », comment s'appelle le vaisseau de Han Solo ?",
+      "answers": [
+        "Le Faucon Millenium",
+        "L'Étoile de la Mort",
+        "Le Destroyer",
+        "L'Executor"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel robot doré accompagne R2-D2 ?",
+      "answers": [
+        "C-3PO",
+        "BB-8",
+        "Wall-E",
+        "K-2SO"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Dans « Matrix », quelle pilule Neo choisit-il ?",
+      "answers": [
+        "La bleue",
+        "La rouge",
+        "La verte",
+        "La jaune"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qui a réalisé « 2001 : l'Odyssée de l'espace » ?",
+      "answers": [
+        "Ridley Scott",
+        "Stanley Kubrick",
+        "George Lucas",
+        "Steven Spielberg"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle l'ordinateur de bord de « 2001 : l'Odyssée de l'espace » ?",
+      "answers": [
+        "HAL 9000",
+        "Skynet",
+        "JARVIS",
+        "Mère"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Dans « Retour vers le futur », quelle voiture sert de machine à remonter le temps ?",
+      "answers": [
+        "Une DeLorean",
+        "Une Ford Mustang",
+        "Une Cadillac",
+        "Une Porsche 911"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Qui a imaginé les « trois lois de la robotique » ?",
+      "answers": [
+        "Isaac Asimov",
+        "Philip K. Dick",
+        "Arthur C. Clarke",
+        "Ray Bradbury"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Que veut faire E.T. dans le film de Spielberg ?",
+      "answers": [
+        "Téléphoner maison",
+        "Conquérir la Terre",
+        "Devenir humain",
+        "Retrouver son chien"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel film de 1979 avait pour slogan « Dans l'espace, personne ne vous entend crier » ?",
+      "answers": [
+        "Alien",
+        "Predator",
+        "The Thing",
+        "Star Trek"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Dans « Dune », comment s'appelle la planète désertique ?",
+      "answers": [
+        "Tatooine",
+        "Arrakis",
+        "Pandora",
+        "Solaris"
+      ],
+      "correct": 1
+    }
+  ]
+}

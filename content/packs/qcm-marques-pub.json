@@ -1,0 +1,107 @@
+{
+  "id": "qcm-marques-pub",
+  "module": "qcm",
+  "theme": "Marques & pub",
+  "questions": [
+    {
+      "text": "Quelle marque a pour slogan « Just Do It » ?",
+      "answers": [
+        "Adidas",
+        "Nike",
+        "Puma",
+        "Reebok"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle marque automobile a pour logo un losange ?",
+      "answers": [
+        "Peugeot",
+        "Renault",
+        "Citroën",
+        "Dacia"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel animal figure sur le logo de Lacoste ?",
+      "answers": [
+        "Un tigre",
+        "Un crocodile",
+        "Un lézard",
+        "Un serpent"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "De quel pays vient la marque IKEA ?",
+      "answers": [
+        "Norvège",
+        "Danemark",
+        "Suède",
+        "Finlande"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quelle marque de chocolat a pour mascotte une vache violette ?",
+      "answers": [
+        "Milka",
+        "Côte d'Or",
+        "Lindt",
+        "Suchard"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle maison de luxe a pour emblème deux C entrelacés ?",
+      "answers": [
+        "Céline",
+        "Chanel",
+        "Cartier",
+        "Courrèges"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel constructeur a pour logo un cheval cabré noir sur fond jaune ?",
+      "answers": [
+        "Lamborghini",
+        "Ferrari",
+        "Porsche",
+        "Maserati"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle marque française est célèbre pour son stylo « Cristal » ?",
+      "answers": [
+        "Bic",
+        "Waterman",
+        "Parker",
+        "S.T. Dupont"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Comment s'appelle le bonhomme blanc mascotte de Michelin ?",
+      "answers": [
+        "Bibendum",
+        "Monsieur Propre",
+        "Bonhomme Carnaval",
+        "Mister Peanut"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel réseau social avait un oiseau bleu pour logo avant de devenir X ?",
+      "answers": [
+        "Facebook",
+        "Twitter",
+        "Tumblr",
+        "Snapchat"
+      ],
+      "correct": 1
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "est-france-en-chiffres",
+  "module": "estimation",
+  "theme": "La France en chiffres",
+  "questions": [
+    {
+      "text": "Quelle est l'altitude du puy de Dôme ?",
+      "answer": 1465,
+      "unit": "m"
+    },
+    {
+      "text": "Quelle est la longueur de la Seine ?",
+      "answer": 777,
+      "unit": "km"
+    },
+    {
+      "text": "En quelle année le viaduc de Millau a-t-il été inauguré ?",
+      "answer": 2004,
+      "unit": ""
+    },
+    {
+      "text": "Combien de marches faut-il gravir pour atteindre le sommet de l'Arc de Triomphe ?",
+      "answer": 284,
+      "unit": "marches"
+    },
+    {
+      "text": "Combien de départements compte la France, outre-mer compris ?",
+      "answer": 101,
+      "unit": "départements"
+    },
+    {
+      "text": "En quelle année la Joconde a-t-elle été volée au Louvre ?",
+      "answer": 1911,
+      "unit": ""
+    },
+    {
+      "text": "Quelle est la hauteur de la flèche de la cathédrale de Strasbourg ?",
+      "answer": 142,
+      "unit": "m"
+    },
+    {
+      "text": "En quelle année Paris a-t-il accueilli ses premiers Jeux olympiques ?",
+      "answer": 1900,
+      "unit": ""
+    },
+    {
+      "text": "Selon de Gaulle, combien de variétés de fromage rendaient la France difficile à gouverner ?",
+      "answer": 246,
+      "unit": "fromages"
+    },
+    {
+      "text": "Combien de communes compte la France au 1er janvier 2024 ?",
+      "answer": 34935,
+      "unit": "communes"
+    }
+  ]
+}

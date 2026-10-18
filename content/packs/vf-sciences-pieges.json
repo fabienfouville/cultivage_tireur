@@ -1,0 +1,58 @@
+{
+  "id": "vf-sciences-pieges",
+  "module": "vf-survie",
+  "theme": "Sciences pièges",
+  "description": "du plus facile au plus dur",
+  "questions": [
+    {
+      "text": "Le diamant est composé de carbone.",
+      "correct": true,
+      "order": 1
+    },
+    {
+      "text": "Le son va plus vite dans l'eau que dans l'air.",
+      "correct": true,
+      "order": 2
+    },
+    {
+      "text": "Dans le vide, un objet lourd tombe plus vite qu'un objet léger.",
+      "correct": false,
+      "order": 3
+    },
+    {
+      "text": "L'or est un métal attiré par les aimants.",
+      "correct": false,
+      "order": 4
+    },
+    {
+      "text": "Les plantes ne respirent que le jour.",
+      "correct": false,
+      "order": 5
+    },
+    {
+      "text": "Le cœur humain bat environ 100 000 fois par jour.",
+      "correct": true,
+      "order": 6
+    },
+    {
+      "text": "La Lune s'éloigne de la Terre de quelques centimètres par an.",
+      "correct": true,
+      "order": 7
+    },
+    {
+      "text": "Sur Vénus, le Soleil se lève à l'ouest.",
+      "correct": true,
+      "order": 8
+    },
+    {
+      "text": "Le sommet de l'Everest est le point le plus éloigné du centre de la Terre.",
+      "correct": false,
+      "order": 9
+    },
+    {
+      "text": "Un éclair est plus chaud que la surface du Soleil.",
+      "correct": true,
+      "order": 10
+    }
+  ]
+}

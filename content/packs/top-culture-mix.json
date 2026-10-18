@@ -1,0 +1,57 @@
+{
+  "id": "top-culture-mix",
+  "module": "top",
+  "theme": "Classements culture",
+  "questions": [
+    {
+      "text": "Les 5 premiers mois de l'année qui ont 31 jours",
+      "answers": [
+        "Janvier",
+        "Mars",
+        "Mai",
+        "Juillet",
+        "Août"
+      ]
+    },
+    {
+      "text": "Les 5 rois de France de la dynastie des Bourbons, dans l'ordre",
+      "answers": [
+        "Henri IV",
+        "Louis XIII",
+        "Louis XIV",
+        "Louis XV",
+        "Louis XVI"
+      ]
+    },
+    {
+      "text": "Les 5 premiers albums d'Astérix, dans l'ordre de parution",
+      "answers": [
+        "Astérix le Gaulois",
+        "La Serpe d'or",
+        "Astérix et les Goths",
+        "Astérix gladiateur",
+        "Le Tour de Gaule d'Astérix"
+      ]
+    },
+    {
+      "text": "Les 5 premiers longs-métrages Pixar, dans l'ordre",
+      "answers": [
+        "Toy Story",
+        "1001 pattes",
+        "Toy Story 2",
+        "Monstres & Cie",
+        "Le Monde de Nemo"
+      ]
+    },
+    {
+      "text": "Les 5 premiers mots de l'alphabet radio international",
+      "answers": [
+        "Alpha",
+        "Bravo",
+        "Charlie",
+        "Delta",
+        "Echo"
+      ]
+    }
+  ]
+}

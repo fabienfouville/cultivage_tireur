@@ -1,0 +1,68 @@
+{
+  "id": "geo-lieux-de-france",
+  "module": "geoloc",
+  "theme": "Lieux de France",
+  "mapId": "france",
+  "questions": [
+    {
+      "text": "Le Mont-Saint-Michel",
+      "answerHint": "Mont-Saint-Michel (Manche)",
+      "lat": 48.6361,
+      "lng": -1.5115
+    },
+    {
+      "text": "Le pont du Gard",
+      "answerHint": "Pont du Gard (Gard)",
+      "lat": 43.9475,
+      "lng": 4.5353
+    },
+    {
+      "text": "Le château de Chambord",
+      "answerHint": "Château de Chambord (Loir-et-Cher)",
+      "lat": 47.6161,
+      "lng": 1.517
+    },
+    {
+      "text": "La dune du Pilat",
+      "answerHint": "Dune du Pilat (Gironde)",
+      "lat": 44.5891,
+      "lng": -1.2129
+    },
+    {
+      "text": "Les gorges du Verdon",
+      "answerHint": "Gorges du Verdon (Alpes-de-Haute-Provence / Var)",
+      "lat": 43.7496,
+      "lng": 6.3285
+    },
+    {
+      "text": "Les falaises d'Étretat",
+      "answerHint": "Étretat (Seine-Maritime)",
+      "lat": 49.7071,
+      "lng": 0.2056
+    },
+    {
+      "text": "La cité de Carcassonne",
+      "answerHint": "Carcassonne (Aude)",
+      "lat": 43.2063,
+      "lng": 2.3637
+    },
+    {
+      "text": "Le mont Ventoux",
+      "answerHint": "Mont Ventoux (Vaucluse)",
+      "lat": 44.1739,
+      "lng": 5.2786
+    },
+    {
+      "text": "La grotte de Lascaux",
+      "answerHint": "Lascaux (Dordogne)",
+      "lat": 45.0537,
+      "lng": 1.169
+    },
+    {
+      "text": "Le cirque de Gavarnie",
+      "answerHint": "Cirque de Gavarnie (Hautes-Pyrénées)",
+      "lat": 42.695,
+      "lng": -0.0097
+    }
+  ]
+}

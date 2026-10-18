@@ -1,0 +1,107 @@
+{
+  "id": "qcm-transports",
+  "module": "qcm",
+  "theme": "Transports",
+  "questions": [
+    {
+      "text": "En quelle année le TGV a-t-il transporté ses premiers voyageurs en France ?",
+      "answers": [
+        "1971",
+        "1981",
+        "1991",
+        "1995"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel avion supersonique franco-britannique a volé de 1976 à 2003 ?",
+      "answers": [
+        "Concorde",
+        "Caravelle",
+        "Mirage",
+        "Airbus A380"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel est le plus grand avion de ligne pour passagers construit en série ?",
+      "answers": [
+        "Boeing 747",
+        "Airbus A380",
+        "Boeing 777",
+        "Antonov An-225"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans quelle ville a ouvert le premier métro du monde, en 1863 ?",
+      "answers": [
+        "Paris",
+        "Londres",
+        "New York",
+        "Berlin"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle entreprise fabrique la voiture électrique « Model 3 » ?",
+      "answers": [
+        "Tesla",
+        "Toyota",
+        "BYD",
+        "Renault"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle est la couleur des célèbres taxis de New York ?",
+      "answers": [
+        "Noirs",
+        "Jaunes",
+        "Blancs",
+        "Verts"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel navigateur a lancé la première expédition autour du monde (1519-1522) ?",
+      "answers": [
+        "Christophe Colomb",
+        "Fernand de Magellan",
+        "Vasco de Gama",
+        "James Cook"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel pays possède le plus long réseau de trains à grande vitesse ?",
+      "answers": [
+        "France",
+        "Japon",
+        "Chine",
+        "Espagne"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Que signifie le sigle SNCF ?",
+      "answers": [
+        "Société nationale des chemins de fer français",
+        "Service national de circulation ferroviaire",
+        "Société nouvelle des chemins de fer",
+        "Syndicat national des cheminots français"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Dans quelle ville roule le célèbre tramway jaune numéro 28 ?",
+      "answers": [
+        "Porto",
+        "Lisbonne",
+        "Séville",
+        "Rome"
+      ],
+      "correct": 1
+    }
+  ]
+}

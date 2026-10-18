@@ -1,0 +1,27 @@
+{
+  "id": "theme-i",
+  "module": "theme",
+  "theme": "Thème I",
+  "questions": [
+    {
+      "text": "Un dessert",
+      "answerHint": "Tarte tatin, mousse au chocolat, crème brûlée, tiramisu, île flottante…"
+    },
+    {
+      "text": "Un pays où l'on parle espagnol",
+      "answerHint": "Espagne, Mexique, Argentine, Colombie, Chili, Pérou, Cuba…"
+    },
+    {
+      "text": "Une marque de téléphone",
+      "answerHint": "Apple, Samsung, Xiaomi, Google, Nokia, Motorola, OnePlus…"
+    },
+    {
+      "text": "Un animal de la savane",
+      "answerHint": "Lion, girafe, zèbre, éléphant, guépard, hyène, gnou…"
+    },
+    {
+      "text": "Un métier qui se termine par « -eur »",
+      "answerHint": "Coiffeur, facteur, chauffeur, professeur, pêcheur, docteur…"
+    }
+  ]
+}

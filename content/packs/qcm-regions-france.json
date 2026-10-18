@@ -1,0 +1,107 @@
+{
+  "id": "qcm-regions-france",
+  "module": "qcm",
+  "theme": "Régions & terroirs",
+  "questions": [
+    {
+      "text": "De quelle région vient le kouign-amann ?",
+      "answers": [
+        "Alsace",
+        "Bretagne",
+        "Normandie",
+        "Pays basque"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Le cassoulet est une spécialité de quelle région ?",
+      "answers": [
+        "Occitanie",
+        "Bretagne",
+        "Lorraine",
+        "Picardie"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Dans quel département se trouve le Mont-Saint-Michel ?",
+      "answers": [
+        "Ille-et-Vilaine",
+        "Manche",
+        "Calvados",
+        "Côtes-d'Armor"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel fromage est fabriqué dans le massif du Jura ?",
+      "answers": [
+        "Le comté",
+        "Le cantal",
+        "Le roquefort",
+        "Le munster"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel est le plus haut sommet des Pyrénées ?",
+      "answers": [
+        "Le Vignemale",
+        "L'Aneto",
+        "Le Canigou",
+        "Le pic du Midi"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "De quelle région vient le piment d'Espelette ?",
+      "answers": [
+        "Le Pays basque",
+        "La Provence",
+        "L'Alsace",
+        "La Bretagne"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel fleuve se jette dans la Manche au Havre ?",
+      "answers": [
+        "La Loire",
+        "La Seine",
+        "La Somme",
+        "L'Orne"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle île est surnommée « l'île de Beauté » ?",
+      "answers": [
+        "La Corse",
+        "La Réunion",
+        "Belle-Île",
+        "L'île de Ré"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle ville est la préfecture du Bas-Rhin ?",
+      "answers": [
+        "Colmar",
+        "Mulhouse",
+        "Strasbourg",
+        "Metz"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "De quelle ville la moutarde la plus célèbre de France tient-elle son nom ?",
+      "answers": [
+        "Dijon",
+        "Meaux",
+        "Reims",
+        "Beaune"
+      ],
+      "correct": 0
+    }
+  ]
+}

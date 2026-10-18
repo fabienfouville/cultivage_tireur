@@ -1,0 +1,107 @@
+{
+  "id": "gambling-mix-difficile",
+  "module": "gambling",
+  "theme": "Mix Difficile",
+  "questions": [
+    {
+      "text": "Quel pays compte le plus de fuseaux horaires, territoires d'outre-mer compris ?",
+      "answers": [
+        "Russie",
+        "États-Unis",
+        "France",
+        "Chine"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quelle langue compte le plus de locuteurs natifs ?",
+      "answers": [
+        "L'anglais",
+        "L'espagnol",
+        "Le mandarin",
+        "L'hindi"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel État souverain est le plus densément peuplé ?",
+      "answers": [
+        "Monaco",
+        "Singapour",
+        "Bangladesh",
+        "Malte"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel État, fondé selon la tradition en 301, se dit la plus ancienne république du monde ?",
+      "answers": [
+        "Andorre",
+        "Saint-Marin",
+        "Monaco",
+        "Liechtenstein"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Avec combien de pays la France métropolitaine a-t-elle une frontière terrestre ?",
+      "answers": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Avec quel pays la France a-t-elle sa plus longue frontière terrestre ?",
+      "answers": [
+        "Espagne",
+        "Brésil",
+        "Belgique",
+        "Suisse"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel écrivain a refusé le prix Nobel de littérature en 1964 ?",
+      "answers": [
+        "Albert Camus",
+        "Jean-Paul Sartre",
+        "André Gide",
+        "Samuel Beckett"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle ville était la capitale du Japon avant Tokyo ?",
+      "answers": [
+        "Osaka",
+        "Kyoto",
+        "Nara",
+        "Kobe"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel est le plus petit pays d'Amérique du Sud ?",
+      "answers": [
+        "Uruguay",
+        "Suriname",
+        "Guyana",
+        "Paraguay"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel océan est le plus profond ?",
+      "answers": [
+        "Atlantique",
+        "Indien",
+        "Pacifique",
+        "Arctique"
+      ],
+      "correct": 2
+    }
+  ]
+}

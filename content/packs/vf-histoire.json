@@ -1,0 +1,58 @@
+{
+  "id": "vf-histoire",
+  "module": "vf-survie",
+  "theme": "Histoire vraie ou fausse",
+  "description": "du plus facile au plus dur",
+  "questions": [
+    {
+      "text": "Napoléon Bonaparte est né en Corse.",
+      "correct": true,
+      "order": 1
+    },
+    {
+      "text": "Les Vikings portaient des casques à cornes au combat.",
+      "correct": false,
+      "order": 2
+    },
+    {
+      "text": "Christophe Colomb pensait avoir atteint les Indes.",
+      "correct": true,
+      "order": 3
+    },
+    {
+      "text": "La tour Eiffel ne devait rester debout que 20 ans.",
+      "correct": true,
+      "order": 4
+    },
+    {
+      "text": "Albert Einstein était mauvais en mathématiques à l'école.",
+      "correct": false,
+      "order": 5
+    },
+    {
+      "text": "Le drapeau français est bleu-blanc-rouge sans interruption depuis la Révolution.",
+      "correct": false,
+      "order": 6
+    },
+    {
+      "text": "Cléopâtre a vécu plus près de nous que de la construction de la pyramide de Khéops.",
+      "correct": true,
+      "order": 7
+    },
+    {
+      "text": "Marie-Antoinette a réellement dit « Qu'ils mangent de la brioche ».",
+      "correct": false,
+      "order": 8
+    },
+    {
+      "text": "Les pyramides d'Égypte ont été bâties par des esclaves.",
+      "correct": false,
+      "order": 9
+    },
+    {
+      "text": "La guerre de Cent Ans a duré exactement cent ans.",
+      "correct": false,
+      "order": 10
+    }
+  ]
+}

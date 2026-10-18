@@ -1,0 +1,107 @@
+{
+  "id": "duo-sport",
+  "module": "duo-carre-cash",
+  "theme": "Sport",
+  "questions": [
+    {
+      "text": "Quel pays a remporté le plus de Coupes Davis en tennis ?",
+      "choices": [
+        "Australie",
+        "États-Unis",
+        "France",
+        "Espagne"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Dans quel pays le judo a-t-il été inventé ?",
+      "choices": [
+        "Chine",
+        "Japon",
+        "Corée du Sud",
+        "Brésil"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Combien de trous compte un parcours de golf standard ?",
+      "choices": [
+        "9",
+        "12",
+        "18",
+        "21"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "Quel nageur détient le record de médailles d'or olympiques ?",
+      "choices": [
+        "Mark Spitz",
+        "Michael Phelps",
+        "Ian Thorpe",
+        "Léon Marchand"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Combien de minutes dure un match NBA (temps réglementaire) ?",
+      "choices": [
+        "40",
+        "44",
+        "48",
+        "60"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "Quelle est la longueur d'un bassin olympique ?",
+      "choices": [
+        "25 m",
+        "33 m",
+        "50 m",
+        "100 m"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "text": "Dans quelle ville se dispute le tournoi de Wimbledon ?",
+      "choices": [
+        "Paris",
+        "Londres",
+        "New York",
+        "Melbourne"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Quel sport se joue lors du Super Bowl ?",
+      "choices": [
+        "Le basket",
+        "Le football américain",
+        "Le baseball",
+        "Le hockey sur glace"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Quelle épreuve enchaîne natation, vélo et course à pied ?",
+      "choices": [
+        "Le pentathlon",
+        "Le triathlon",
+        "Le décathlon",
+        "Le biathlon"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "text": "Quel club de football est surnommé « les Gones » ?",
+      "choices": [
+        "Olympique lyonnais",
+        "AS Saint-Étienne",
+        "OGC Nice",
+        "FC Nantes"
+      ],
+      "correctIndex": 0
+    }
+  ]
+}

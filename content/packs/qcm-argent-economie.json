@@ -1,0 +1,107 @@
+{
+  "id": "qcm-argent-economie",
+  "module": "qcm",
+  "theme": "Argent & économie",
+  "questions": [
+    {
+      "text": "Quelle est la monnaie de l'Inde ?",
+      "answers": [
+        "La roupie",
+        "Le dinar",
+        "Le baht",
+        "Le rial"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Dans quelle ville se trouve Wall Street ?",
+      "answers": [
+        "Chicago",
+        "New York",
+        "Londres",
+        "Boston"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle institution fixe les taux directeurs de la zone euro ?",
+      "answers": [
+        "La Banque de France",
+        "La Banque centrale européenne",
+        "Le FMI",
+        "La Banque mondiale"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Que signifie l'acronyme PIB ?",
+      "answers": [
+        "Produit intérieur brut",
+        "Prix indexé de base",
+        "Part industrielle brute",
+        "Production interne de biens"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle cryptomonnaie a été créée par un certain Satoshi Nakamoto ?",
+      "answers": [
+        "Ethereum",
+        "Bitcoin",
+        "Dogecoin",
+        "Litecoin"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle la Bourse de Paris ?",
+      "answers": [
+        "Le CAC 40",
+        "Euronext Paris",
+        "Le Nasdaq",
+        "Le Dow Jones"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel animal symbolise un marché boursier en hausse ?",
+      "answers": [
+        "L'ours",
+        "Le taureau",
+        "Le lion",
+        "L'aigle"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel personnage figure sur le billet de 100 dollars américain ?",
+      "answers": [
+        "George Washington",
+        "Benjamin Franklin",
+        "Abraham Lincoln",
+        "Thomas Jefferson"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle entreprise a été la première à valoir 3 000 milliards de dollars en Bourse, en 2022 ?",
+      "answers": [
+        "Microsoft",
+        "Apple",
+        "Amazon",
+        "Nvidia"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment appelle-t-on une hausse générale et durable des prix ?",
+      "answers": [
+        "La déflation",
+        "L'inflation",
+        "La récession",
+        "La stagnation"
+      ],
+      "correct": 1
+    }
+  ]
+}

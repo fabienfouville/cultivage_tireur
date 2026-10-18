@@ -1,0 +1,71 @@
+{
+  "id": "geo-iles",
+  "module": "geoloc",
+  "theme": "Îles du monde",
+  "mapId": "world",
+  "questions": [
+    {
+      "text": "Hawaï (Honolulu)",
+      "answerHint": "Honolulu, Hawaï (États-Unis)",
+      "lat": 21.3069,
+      "lng": -157.8583
+    },
+    {
+      "text": "Bali",
+      "answerHint": "Bali (Indonésie)",
+      "lat": -8.3405,
+      "lng": 115.092
+    },
+    {
+      "text": "Zanzibar",
+      "answerHint": "Zanzibar (Tanzanie)",
+      "lat": -6.1659,
+      "lng": 39.2026
+    },
+    {
+      "text": "Tahiti",
+      "answerHint": "Tahiti (Polynésie française)",
+      "lat": -17.6509,
+      "lng": -149.426
+    },
+    {
+      "text": "La Sicile",
+      "answerHint": "Sicile (Italie)",
+      "lat": 37.5999,
+      "lng": 14.0154
+    },
+    {
+      "text": "Le Groenland",
+      "answerHint": "Groenland",
+      "lat": 72.0,
+      "lng": -40.0,
+      "isoNum": 304
+    },
+    {
+      "text": "Le Sri Lanka",
+      "answerHint": "Sri Lanka",
+      "lat": 7.8731,
+      "lng": 80.7718,
+      "isoNum": 144
+    },
+    {
+      "text": "Cuba",
+      "answerHint": "Cuba",
+      "lat": 21.5218,
+      "lng": -77.7812,
+      "isoNum": 192
+    },
+    {
+      "text": "La Tasmanie",
+      "answerHint": "Tasmanie (Australie)",
+      "lat": -42.0409,
+      "lng": 146.8087
+    },
+    {
+      "text": "Les îles Galápagos",
+      "answerHint": "Galápagos (Équateur)",
+      "lat": -0.9538,
+      "lng": -90.9656
+    }
+  ]
+}
