@@ -11,8 +11,12 @@ export const pixel: ModuleDef = {
   icon: '🖼️',
   tagline: 'Réponse libre validée',
   rules: "L'image se précise petit à petit. Les plus rapides à trouver gagnent (podium).",
-  defaults: { timer: 30, podium: '5,3,1' },
-  configFields: [{ key: 'podium', label: 'Points du podium (vitesse)', type: 'text', help: 'ex : 5,3,1' }],
+  defaults: { timer: 30, podium: '5,3,1', startCells: 5, curve: 2.5 },
+  configFields: [
+    { key: 'podium', label: 'Points du podium (vitesse)', type: 'text', help: 'ex : 5,3,1' },
+    { key: 'startCells', label: 'Pixellisation de départ', type: 'number', help: "nombre de gros pixels en largeur au début (5 = illisible)" },
+    { key: 'curve', label: 'Courbe de dépixellisation', type: 'number', help: "plus c'est grand, plus l'image reste floue longtemps avant de se révéler d'un coup (2,5 par défaut)" },
+  ],
   questionFields: [
     { key: 'text', label: 'Question', type: 'text', placeholder: 'Qui est-ce ?' },
     { key: 'imageUrl', label: 'Image', type: 'image' },
@@ -20,7 +24,12 @@ export const pixel: ModuleDef = {
   ],
   manual: true,
   summary: (q) => String(q.answerHint ?? ''),
-  publicPayload: (q) => ({ text: q.text, imageUrl: q.imageUrl }),
+  publicPayload: (q, { cfg }) => ({
+    text: q.text,
+    imageUrl: q.imageUrl,
+    startCells: Number(cfg.startCells) || 5,
+    curve: Number(cfg.curve) || 2.5,
+  }),
   solution: (q) => ({ label: q.answerHint }),
   validationItems: ({ q, answers }) => groupFreeAnswers(answers, (a) => a.data.text, q.answerHint),
   score: ({ answers, cfg, verdicts }) => {
@@ -39,7 +48,12 @@ export const pixel: ModuleDef = {
     return (
       <>
         <QuestionText>{round.public.text}</QuestionText>
-        <PixelImage src={round.public.imageUrl} progress={progress(round.status, left, round.duration)} />
+        <PixelImage
+          src={round.public.imageUrl}
+          progress={progress(round.status, left, round.duration)}
+          startCells={round.public.startCells}
+          curve={round.public.curve}
+        />
         {revealed ? (
           <div className="big-answer">
             {round.solution?.label}
@@ -61,7 +75,12 @@ export const pixel: ModuleDef = {
     <div className="pixel-screen">
       <div>
         <QuestionText big>{round.public.text}</QuestionText>
-        <PixelImage src={round.public.imageUrl} progress={progress(round.status, left, round.duration)} />
+        <PixelImage
+          src={round.public.imageUrl}
+          progress={progress(round.status, left, round.duration)}
+          startCells={round.public.startCells}
+          curve={round.public.curve}
+        />
       </div>
       {round.status === 'revealed' && (
         <div>
