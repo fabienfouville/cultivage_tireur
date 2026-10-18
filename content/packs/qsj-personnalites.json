@@ -1,0 +1,139 @@
+{
+  "id": "qsj-personnalites",
+  "module": "quisuisje",
+  "theme": "Qui suis-je ? · Personnalités",
+  "questions": [
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis née à Varsovie en 1867.",
+        "Un des éléments que j'ai découverts porte le nom de mon pays natal.",
+        "Je repose au Panthéon depuis 1995.",
+        "J'ai reçu deux prix Nobel, en physique puis en chimie.",
+        "Pionnière de la radioactivité, j'ai travaillé avec mon mari Pierre."
+      ],
+      "answerHint": "Marie Curie/Curie/Marie Skłodowska-Curie/Madame Curie"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "J'ai créé la Banque de France en 1800.",
+        "J'ai fondé les lycées et la Légion d'honneur.",
+        "J'ai été exilé une première fois sur l'île d'Elbe.",
+        "J'ai perdu la bataille de Waterloo.",
+        "Empereur des Français, je suis né à Ajaccio."
+      ],
+      "answerHint": "Napoléon Bonaparte/Napoléon/Bonaparte/Napoléon Ier"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis la dernière souveraine de la dynastie des Ptolémées.",
+        "J'ai eu un fils de Jules César, surnommé Césarion.",
+        "Marc Antoine fut mon amant et mon allié.",
+        "Selon la légende, je me suis donné la mort avec un aspic.",
+        "Reine d'Égypte, Elizabeth Taylor m'a incarnée au cinéma."
+      ],
+      "answerHint": "Cléopâtre/Cleopatre/Cléopâtre VII"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis mort au Clos Lucé, à Amboise, en 1519.",
+        "J'écrivais mes carnets en écriture inversée, en miroir.",
+        "J'ai dessiné l'Homme de Vitruve.",
+        "J'ai peint « La Cène » à Milan.",
+        "J'ai peint « La Joconde »."
+      ],
+      "answerHint": "Léonard de Vinci/Leonard de Vinci/De Vinci/Léonard"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "J'ai travaillé à l'Office des brevets de Berne.",
+        "Mon prix Nobel récompensait mes travaux sur l'effet photoélectrique.",
+        "J'ai quitté l'Allemagne pour les États-Unis à l'arrivée des nazis.",
+        "Ma formule la plus célèbre est E = mc².",
+        "Physicien à la langue tirée, j'ai formulé la théorie de la relativité."
+      ],
+      "answerHint": "Albert Einstein/Einstein"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "En 1934, j'ai publié « Vers l'armée de métier ».",
+        "Je suis mort à Colombey-les-Deux-Églises.",
+        "J'ai fondé la Ve République en 1958.",
+        "J'ai lancé un appel depuis Londres le 18 juin 1940.",
+        "Le principal aéroport de Paris porte mon nom."
+      ],
+      "answerHint": "Charles de Gaulle/De Gaulle/Général de Gaulle"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis née à Domrémy.",
+        "J'ai été capturée à Compiègne par les Bourguignons.",
+        "J'ai fait sacrer Charles VII à Reims.",
+        "J'ai été brûlée vive à Rouen en 1431.",
+        "On m'appelle la Pucelle d'Orléans."
+      ],
+      "answerHint": "Jeanne d'Arc/Jeanne"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Enfant, mon père Leopold m'exhibait dans les cours d'Europe.",
+        "Je suis mort à Vienne en 1791, à 35 ans.",
+        "J'ai composé « Les Noces de Figaro » et « La Flûte enchantée ».",
+        "Je suis né à Salzbourg, où des chocolats portent mon nom.",
+        "Prodige autrichien, j'ai composé « Une petite musique de nuit »."
+      ],
+      "answerHint": "Wolfgang Amadeus Mozart/Mozart"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Enfant, j'ai été placée à l'orphelinat de l'abbaye d'Aubazine.",
+        "Mon vrai prénom était Gabrielle.",
+        "J'ai popularisé la petite robe noire.",
+        "Mon parfum le plus célèbre porte le numéro 5.",
+        "Créatrice de mode, mon logo est formé de deux C entrelacés."
+      ],
+      "answerHint": "Coco Chanel/Gabrielle Chanel/Chanel"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né à Besançon en 1802.",
+        "J'ai vécu près de quinze ans en exil à Guernesey.",
+        "Ma fille Léopoldine s'est noyée dans la Seine à Villequier.",
+        "Plus d'un million de personnes ont suivi mes funérailles en 1885.",
+        "J'ai écrit « Les Misérables » et « Notre-Dame de Paris »."
+      ],
+      "answerHint": "Victor Hugo/Hugo"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "J'étais pasteur baptiste à Montgomery, en Alabama.",
+        "J'ai mené le boycott des bus après l'arrestation de Rosa Parks.",
+        "J'ai reçu le prix Nobel de la paix en 1964.",
+        "J'ai été assassiné à Memphis en 1968.",
+        "J'ai prononcé le discours « I have a dream »."
+      ],
+      "answerHint": "Martin Luther King/MLK/Martin Luther King Jr"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Enfant, j'ai dû fuir Paris pendant la Fronde.",
+        "Ma mère était Anne d'Autriche.",
+        "J'ai révoqué l'édit de Nantes en 1685.",
+        "J'ai régné 72 ans, un record pour un roi de France.",
+        "On m'appelle le Roi-Soleil."
+      ],
+      "answerHint": "Louis XIV/Louis 14"
+    }
+  ]
+}

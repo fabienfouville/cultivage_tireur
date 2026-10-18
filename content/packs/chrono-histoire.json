@@ -1,0 +1,187 @@
+{
+  "id": "chrono-histoire",
+  "module": "chronologie",
+  "theme": "Chronologie · Histoire",
+  "questions": [
+    {
+      "text": "Histoire de France, de la Révolution à la Commune",
+      "events": [
+        "Prise de la Bastille",
+        "Sacre de Napoléon Ier",
+        "Révolution de 1848",
+        "Commune de Paris"
+      ],
+      "dates": [
+        "1789",
+        "1804",
+        "1848",
+        "1871"
+      ]
+    },
+    {
+      "text": "Antiquité",
+      "events": [
+        "Construction de la pyramide de Khéops",
+        "Fondation légendaire de Rome",
+        "Mort d'Alexandre le Grand",
+        "Assassinat de Jules César"
+      ],
+      "dates": [
+        "vers -2560",
+        "-753",
+        "-323",
+        "-44"
+      ]
+    },
+    {
+      "text": "Moyen Âge",
+      "events": [
+        "Baptême de Clovis",
+        "Couronnement de Charlemagne",
+        "Bataille d'Hastings",
+        "Prise de Jérusalem (1re croisade)"
+      ],
+      "dates": [
+        "vers 500",
+        "800",
+        "1066",
+        "1099"
+      ]
+    },
+    {
+      "text": "Le XVIe siècle en France",
+      "events": [
+        "Bataille de Marignan",
+        "Massacre de la Saint-Barthélemy",
+        "Édit de Nantes",
+        "Assassinat d'Henri IV"
+      ],
+      "dates": [
+        "1515",
+        "1572",
+        "1598",
+        "1610"
+      ]
+    },
+    {
+      "text": "Début du XXe siècle",
+      "events": [
+        "Attentat de Sarajevo",
+        "Révolution d'Octobre en Russie",
+        "Krach de Wall Street",
+        "Hitler devient chancelier"
+      ],
+      "dates": [
+        "1914",
+        "1917",
+        "1929",
+        "1933"
+      ]
+    },
+    {
+      "text": "Seconde Guerre mondiale",
+      "events": [
+        "Invasion de la Pologne",
+        "Attaque de Pearl Harbor",
+        "Débarquement en Normandie",
+        "Bombe atomique sur Hiroshima"
+      ],
+      "dates": [
+        "1939",
+        "1941",
+        "1944",
+        "1945"
+      ]
+    },
+    {
+      "text": "Années 60 (attention, c'est serré !)",
+      "events": [
+        "Construction du mur de Berlin",
+        "Crise des missiles de Cuba",
+        "Assassinat de John F. Kennedy",
+        "Premiers pas sur la Lune"
+      ],
+      "dates": [
+        "1961",
+        "1962",
+        "1963",
+        "1969"
+      ]
+    },
+    {
+      "text": "Du plus ancien au plus récent",
+      "events": [
+        "Mai 68",
+        "Chute du mur de Berlin",
+        "Dissolution de l'URSS",
+        "Mandela élu président"
+      ],
+      "dates": [
+        "1968",
+        "1989",
+        "1991",
+        "1994"
+      ]
+    },
+    {
+      "text": "La Ve République",
+      "events": [
+        "Naissance de la Ve République",
+        "Indépendance de l'Algérie",
+        "Abolition de la peine de mort",
+        "Arrivée des pièces et billets en euros"
+      ],
+      "dates": [
+        "1958",
+        "1962",
+        "1981",
+        "2002"
+      ]
+    },
+    {
+      "text": "Grandes explorations",
+      "events": [
+        "Marco Polo à la cour de Kubilai Khan",
+        "Colomb atteint l'Amérique",
+        "Vasco de Gama atteint l'Inde",
+        "Retour de l'expédition de Magellan"
+      ],
+      "dates": [
+        "vers 1275",
+        "1492",
+        "1498",
+        "1522"
+      ]
+    },
+    {
+      "text": "XVe siècle",
+      "events": [
+        "Bataille d'Azincourt",
+        "Jeanne d'Arc brûlée à Rouen",
+        "Chute de Constantinople",
+        "Mort de Louis XI"
+      ],
+      "dates": [
+        "1415",
+        "1431",
+        "1453",
+        "1483"
+      ]
+    },
+    {
+      "text": "XXIe siècle",
+      "events": [
+        "Attentats du 11 Septembre",
+        "Faillite de Lehman Brothers",
+        "Référendum sur le Brexit",
+        "Début de la pandémie de Covid-19"
+      ],
+      "dates": [
+        "2001",
+        "2008",
+        "2016",
+        "2020"
+      ]
+    }
+  ]
+}

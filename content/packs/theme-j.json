@@ -1,0 +1,47 @@
+{
+  "id": "theme-j",
+  "module": "theme",
+  "theme": "Thème J",
+  "questions": [
+    {
+      "text": "Un légume",
+      "answerHint": "Carotte, poireau, courgette, brocoli, épinard, haricot vert, petit pois, chou-fleur, artichaut, aubergine…"
+    },
+    {
+      "text": "Un groupe de rock",
+      "answerHint": "Queen, The Beatles, The Rolling Stones, AC/DC, Nirvana, Metallica, Led Zeppelin, U2, Indochine, Téléphone…"
+    },
+    {
+      "text": "Une ville des États-Unis",
+      "answerHint": "New York, Los Angeles, Chicago, Houston, Miami, Las Vegas, Seattle, Boston, San Francisco, La Nouvelle-Orléans…"
+    },
+    {
+      "text": "Un plat italien",
+      "answerHint": "Pizza, lasagnes, risotto, spaghetti carbonara, osso buco, gnocchis, vitello tonnato, raviolis, minestrone…"
+    },
+    {
+      "text": "Un sport collectif",
+      "answerHint": "Football, rugby, basket, handball, volley, hockey, water-polo, baseball, cricket, polo…"
+    },
+    {
+      "text": "Un personnage des Simpson",
+      "answerHint": "Homer, Marge, Bart, Lisa, Maggie, Ned Flanders, Monsieur Burns, Smithers, Apu, Moe, Krusty, Milhouse…"
+    },
+    {
+      "text": "Un arbre",
+      "answerHint": "Chêne, hêtre, sapin, bouleau, platane, érable, saule, peuplier, olivier, tilleul, marronnier, pin…"
+    },
+    {
+      "text": "Un cocktail",
+      "answerHint": "Mojito, margarita, piña colada, cosmopolitan, spritz, caïpirinha, daïquiri, Bloody Mary, Sex on the Beach…"
+    },
+    {
+      "text": "Un département français",
+      "answerHint": "Ain, Aisne, Gironde, Finistère, Var, Nord, Calvados, Savoie, Morbihan, Bouches-du-Rhône, Haute-Garonne…"
+    },
+    {
+      "text": "Un mot anglais utilisé couramment en français",
+      "answerHint": "Week-end, parking, e-mail, shopping, sandwich, marketing, chewing-gum, best-seller, footing, brunch…"
+    }
+  ]
+}

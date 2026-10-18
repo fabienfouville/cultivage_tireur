@@ -1,0 +1,89 @@
+{
+  "id": "top-geographie-classements",
+  "module": "top",
+  "theme": "Géographie en classements",
+  "questions": [
+    {
+      "text": "Les 5 plus grands pays d'Amérique du Sud (superficie)",
+      "answers": [
+        "Brésil",
+        "Argentine",
+        "Pérou",
+        "Colombie",
+        "Bolivie"
+      ]
+    },
+    {
+      "text": "Les 5 plus grandes îles du monde (sans compter l'Australie)",
+      "answers": [
+        "Groenland",
+        "Nouvelle-Guinée",
+        "Bornéo",
+        "Madagascar",
+        "Terre de Baffin"
+      ]
+    },
+    {
+      "text": "Les 5 plus grands lacs du monde (superficie, mer Caspienne comprise)",
+      "answers": [
+        "Mer Caspienne",
+        "Lac Supérieur",
+        "Lac Victoria",
+        "Lac Huron",
+        "Lac Michigan"
+      ]
+    },
+    {
+      "text": "Les 5 pays les plus peuplés d'Afrique",
+      "answers": [
+        "Nigeria",
+        "Éthiopie",
+        "Égypte",
+        "RD Congo",
+        "Tanzanie"
+      ]
+    },
+    {
+      "text": "Les 7 continents, du plus grand au plus petit (superficie)",
+      "answers": [
+        "Asie",
+        "Afrique",
+        "Amérique du Nord",
+        "Amérique du Sud",
+        "Antarctique",
+        "Europe",
+        "Océanie"
+      ]
+    },
+    {
+      "text": "Les 5 pays les plus peuplés du continent américain",
+      "answers": [
+        "États-Unis",
+        "Brésil",
+        "Mexique",
+        "Colombie",
+        "Argentine"
+      ]
+    },
+    {
+      "text": "Les 5 plus grandes régions de France métropolitaine (superficie)",
+      "answers": [
+        "Nouvelle-Aquitaine",
+        "Occitanie",
+        "Auvergne-Rhône-Alpes",
+        "Grand Est",
+        "Bourgogne-Franche-Comté"
+      ]
+    },
+    {
+      "text": "Les 5 pays les plus peuplés de l'Union européenne",
+      "answers": [
+        "Allemagne",
+        "France",
+        "Italie",
+        "Espagne",
+        "Pologne"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "qsj-pays-villes",
+  "module": "quisuisje",
+  "theme": "Qui suis-je ? · Pays & villes",
+  "questions": [
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "Mon hymne national compte parmi les plus courts du monde.",
+        "Mon parlement s'appelle la Diète.",
+        "Mon point culminant est un volcan de 3 776 m.",
+        "Mes trains à grande vitesse s'appellent les Shinkansen.",
+        "Pays du Soleil-Levant, ma capitale est Tokyo."
+      ],
+      "answerHint": "Japon"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "Ma capitale a été créée pour départager deux grandes villes rivales.",
+        "Mon plus haut sommet est le mont Kosciuszko.",
+        "Je suis un pays-continent de l'hémisphère Sud.",
+        "J'abrite la Grande Barrière de corail.",
+        "Je suis le pays des kangourous et de l'opéra de Sydney."
+      ],
+      "answerHint": "Australie"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "Mon littoral est le plus long du monde.",
+        "Mon chef d'État est le monarque britannique.",
+        "Mes deux langues officielles sont l'anglais et le français.",
+        "Je suis le deuxième plus grand pays du monde par la superficie.",
+        "Mon drapeau arbore une feuille d'érable rouge."
+      ],
+      "answerHint": "Canada"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "Ma capitale a été inaugurée en 1960, sortie de nulle part.",
+        "Je partage une frontière terrestre avec la France.",
+        "Je suis le seul pays d'Amérique du Sud à parler portugais.",
+        "J'ai remporté cinq Coupes du monde de football.",
+        "Le Christ Rédempteur domine ma ville de Rio de Janeiro."
+      ],
+      "answerHint": "Brésil/Bresil"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "Le canal qui me traverse a été inauguré en 1869.",
+        "Ma capitale est la plus grande ville du monde arabe.",
+        "Champollion a déchiffré l'écriture de mes ancêtres.",
+        "Le Nil me traverse du sud au nord.",
+        "Je suis le pays des pyramides de Gizeh."
+      ],
+      "answerHint": "Égypte/Egypte"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "Mon parlement, l'Althing, compte parmi les plus anciens du monde.",
+        "Je n'ai pas d'armée.",
+        "Mon volcan Eyjafjallajökull a cloué les avions européens au sol en 2010.",
+        "Je suis une île de geysers et de glaciers dans l'Atlantique Nord.",
+        "Ma capitale est Reykjavik."
+      ],
+      "answerHint": "Islande"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "Ma capitale a été bâtie sur un lac asséché, le lac Texcoco.",
+        "Maximilien, soutenu par Napoléon III, a été mon empereur.",
+        "La bataille de Puebla, le 5 mai, est fêtée chez moi.",
+        "Je suis la patrie de Frida Kahlo.",
+        "Pays de la tequila, je suis le voisin sud des États-Unis."
+      ],
+      "answerHint": "Mexique"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "Mon festival de cinéma décerne le Lion d'or.",
+        "J'étais une république dirigée par un doge.",
+        "Mon carnaval est célèbre pour ses masques.",
+        "On me surnomme la Sérénissime.",
+        "Mes gondoles glissent sur le Grand Canal."
+      ],
+      "answerHint": "Venise"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "Les Néerlandais m'ont fondée sous le nom de Nouvelle-Amsterdam.",
+        "Je compte cinq arrondissements, dont Brooklyn et le Bronx.",
+        "Le siège de l'ONU se trouve chez moi.",
+        "On me surnomme la Grosse Pomme.",
+        "La statue de la Liberté veille sur mon port."
+      ],
+      "answerHint": "New York/NYC/New York City"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "Des Grecs de Phocée m'ont fondée vers 600 av. J.-C.",
+        "Dans l'Antiquité, je m'appelais Massalia.",
+        "L'hymne national français porte le nom de mes habitants.",
+        "Notre-Dame-de-la-Garde, la « Bonne Mère », veille sur moi.",
+        "Mon Vieux-Port et mon club de foot, l'OM, sont célèbres."
+      ],
+      "answerHint": "Marseille"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "Je ne suis pas la capitale de mon pays, mais sa plus grande ville.",
+        "On m'a appelée Byzance, puis Constantinople.",
+        "Le Bosphore me coupe en deux.",
+        "Sainte-Sophie est mon monument le plus célèbre.",
+        "Je suis la grande ville turque à cheval sur l'Europe et l'Asie."
+      ],
+      "answerHint": "Istanbul"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "L'empereur romain Claude est né chez moi.",
+        "Mes traboules permettent de passer d'une rue à l'autre par les immeubles.",
+        "La Fête des Lumières m'illumine autour du 8 décembre.",
+        "Le Rhône et la Saône s'y rejoignent.",
+        "Capitale des Gaules, je suis réputée pour mes bouchons."
+      ],
+      "answerHint": "Lyon"
+    }
+  ]
+}

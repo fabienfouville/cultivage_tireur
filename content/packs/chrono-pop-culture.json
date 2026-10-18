@@ -1,0 +1,187 @@
+{
+  "id": "chrono-pop-culture",
+  "module": "chronologie",
+  "theme": "Chronologie · Pop culture",
+  "questions": [
+    {
+      "text": "Ordre de sortie au cinéma",
+      "events": [
+        "Autant en emporte le vent",
+        "Psychose",
+        "Les Dents de la mer",
+        "Titanic"
+      ],
+      "dates": [
+        "1939",
+        "1960",
+        "1975",
+        "1997"
+      ]
+    },
+    {
+      "text": "Ordre de sortie des films Star Wars",
+      "events": [
+        "La Guerre des étoiles",
+        "La Menace fantôme",
+        "Le Réveil de la Force",
+        "Rogue One"
+      ],
+      "dates": [
+        "1977",
+        "1999",
+        "2015",
+        "2016"
+      ]
+    },
+    {
+      "text": "Ordre de sortie des Disney",
+      "events": [
+        "Blanche-Neige et les Sept Nains",
+        "Le Livre de la jungle",
+        "La Petite Sirène",
+        "Le Roi lion"
+      ],
+      "dates": [
+        "1937",
+        "1967",
+        "1989",
+        "1994"
+      ]
+    },
+    {
+      "text": "Ordre de sortie des Pixar",
+      "events": [
+        "Toy Story",
+        "Le Monde de Nemo",
+        "Ratatouille",
+        "Là-haut"
+      ],
+      "dates": [
+        "1995",
+        "2003",
+        "2007",
+        "2009"
+      ]
+    },
+    {
+      "text": "Consoles et jeux",
+      "events": [
+        "Pong",
+        "Game Boy",
+        "PlayStation",
+        "Nintendo Switch"
+      ],
+      "dates": [
+        "1972",
+        "1989",
+        "1994",
+        "2017"
+      ]
+    },
+    {
+      "text": "Ordre de sortie des jeux vidéo",
+      "events": [
+        "Pac-Man",
+        "Tetris",
+        "Super Mario Bros.",
+        "Pokémon Rouge et Vert"
+      ],
+      "dates": [
+        "1980",
+        "1984",
+        "1985",
+        "1996"
+      ]
+    },
+    {
+      "text": "Ordre de sortie en musique",
+      "events": [
+        "« Love Me Do » des Beatles",
+        "« Thriller » de Michael Jackson",
+        "« Nevermind » de Nirvana",
+        "« Get Lucky » de Daft Punk"
+      ],
+      "dates": [
+        "1962",
+        "1982",
+        "1991",
+        "2013"
+      ]
+    },
+    {
+      "text": "Chanson française",
+      "events": [
+        "« Non, je ne regrette rien » (Piaf)",
+        "« Comme d'habitude » (Claude François)",
+        "« Alors on danse » (Stromae)",
+        "« Je veux » (Zaz)"
+      ],
+      "dates": [
+        "1960",
+        "1967",
+        "2009",
+        "2010"
+      ]
+    },
+    {
+      "text": "Ordre de début des séries",
+      "events": [
+        "Friends",
+        "Les Soprano",
+        "Lost",
+        "Game of Thrones"
+      ],
+      "dates": [
+        "1994",
+        "1999",
+        "2004",
+        "2011"
+      ]
+    },
+    {
+      "text": "Premier James Bond de chaque acteur",
+      "events": [
+        "James Bond contre Dr No (Connery)",
+        "Vivre et laisser mourir (Moore)",
+        "GoldenEye (Brosnan)",
+        "Casino Royale (Craig)"
+      ],
+      "dates": [
+        "1962",
+        "1973",
+        "1995",
+        "2006"
+      ]
+    },
+    {
+      "text": "Première apparition en BD",
+      "events": [
+        "Tintin",
+        "Lucky Luke",
+        "Gaston Lagaffe",
+        "Astérix"
+      ],
+      "dates": [
+        "1929",
+        "1946",
+        "1957",
+        "1959"
+      ]
+    },
+    {
+      "text": "Premières éditions",
+      "events": [
+        "Festival de Cannes",
+        "Concours Eurovision",
+        "Festival de Woodstock",
+        "Concert Live Aid"
+      ],
+      "dates": [
+        "1946",
+        "1956",
+        "1969",
+        "1985"
+      ]
+    }
+  ]
+}

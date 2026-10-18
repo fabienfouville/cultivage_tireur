@@ -1,0 +1,98 @@
+{
+  "id": "echelle-dinosaures",
+  "module": "echelle",
+  "theme": "Dinosaures à l’échelle",
+  "description": "tailles communément admises (estimations moyennes), comparées à un humain de 1,75 m",
+  "questions": [
+    {
+      "text": "Quelle longueur faisait un Tyrannosaurus rex (du museau au bout de la queue) ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Tyrannosaurus rex",
+      "answer": 12,
+      "targetEmoji": "🦖"
+    },
+    {
+      "text": "Quelle hauteur faisait un Brachiosaure (tête dressée) ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Brachiosaure",
+      "answer": 13,
+      "targetEmoji": "🦕"
+    },
+    {
+      "text": "Quelle longueur faisait un Diplodocus ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Diplodocus",
+      "answer": 25,
+      "targetEmoji": "🦕"
+    },
+    {
+      "text": "Quelle longueur faisait un Tricératops ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Tricératops",
+      "answer": 9,
+      "targetEmoji": "🦏"
+    },
+    {
+      "text": "Quelle longueur faisait un Stégosaure ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Stégosaure",
+      "answer": 9,
+      "targetEmoji": "🦎"
+    },
+    {
+      "text": "Quelle longueur faisait un Vélociraptor ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Vélociraptor",
+      "answer": 2,
+      "targetEmoji": "🦖"
+    },
+    {
+      "text": "Quelle longueur faisait un Spinosaure ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Spinosaure",
+      "answer": 15,
+      "targetEmoji": "🐊"
+    },
+    {
+      "text": "Quelle longueur faisait un Argentinosaure, l'un des plus grands dinosaures connus ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Argentinosaure",
+      "answer": 35,
+      "targetEmoji": "🦕"
+    },
+    {
+      "text": "Quelle longueur faisait un Compsognathus ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Compsognathus",
+      "answer": 1,
+      "targetEmoji": "🦎"
+    },
+    {
+      "text": "Quelle longueur faisait un Iguanodon ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "targetName": "Iguanodon",
+      "answer": 10,
+      "targetEmoji": "🦖"
+    }
+  ]
+}

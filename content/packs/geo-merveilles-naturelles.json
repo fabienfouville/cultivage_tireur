@@ -1,0 +1,98 @@
+{
+  "id": "geo-merveilles-naturelles",
+  "module": "geoloc",
+  "theme": "Merveilles naturelles",
+  "mapId": "world",
+  "questions": [
+    {
+      "text": "Où se trouve le Grand Canyon ?",
+      "answerHint": "Grand Canyon — Arizona, États-Unis",
+      "lat": 36.1069,
+      "lng": -112.1129
+    },
+    {
+      "text": "Où se trouvent les chutes du Niagara ?",
+      "answerHint": "Chutes du Niagara — frontière Canada / États-Unis",
+      "lat": 43.0962,
+      "lng": -79.0377
+    },
+    {
+      "text": "Où se trouvent les chutes Victoria ?",
+      "answerHint": "Chutes Victoria — frontière Zambie / Zimbabwe",
+      "lat": -17.9243,
+      "lng": 25.8572
+    },
+    {
+      "text": "Où se trouvent les chutes d'Iguazú ?",
+      "answerHint": "Chutes d'Iguazú — frontière Argentine / Brésil",
+      "lat": -25.6953,
+      "lng": -54.4367
+    },
+    {
+      "text": "Où se trouve la Grande Barrière de corail ?",
+      "answerHint": "Grande Barrière de corail — Queensland, Australie",
+      "lat": -18.2871,
+      "lng": 147.6992
+    },
+    {
+      "text": "Où se trouve Uluru (Ayers Rock) ?",
+      "answerHint": "Uluru — centre de l'Australie",
+      "lat": -25.3444,
+      "lng": 131.0369
+    },
+    {
+      "text": "Où se trouve la baie d'Along (Ha Long) ?",
+      "answerHint": "Baie d'Along — Vietnam",
+      "lat": 20.9101,
+      "lng": 107.1839
+    },
+    {
+      "text": "Où se trouve le salar d'Uyuni ?",
+      "answerHint": "Salar d'Uyuni — Bolivie",
+      "lat": -20.1338,
+      "lng": -67.4891
+    },
+    {
+      "text": "Où se trouve le glacier Perito Moreno ?",
+      "answerHint": "Perito Moreno — Patagonie, Argentine",
+      "lat": -50.4967,
+      "lng": -73.1377
+    },
+    {
+      "text": "Où se trouve le Geirangerfjord ?",
+      "answerHint": "Geirangerfjord — Norvège",
+      "lat": 62.1049,
+      "lng": 7.0941
+    },
+    {
+      "text": "Où se trouve la Cappadoce ?",
+      "answerHint": "Cappadoce (Göreme) — Turquie",
+      "lat": 38.6431,
+      "lng": 34.8289
+    },
+    {
+      "text": "Où se trouve la mer Morte ?",
+      "answerHint": "Mer Morte — entre Israël, la Cisjordanie et la Jordanie",
+      "lat": 31.559,
+      "lng": 35.4732
+    },
+    {
+      "text": "Où se trouve le Salto Ángel, la plus haute chute d'eau du monde ?",
+      "answerHint": "Salto Ángel — Venezuela",
+      "lat": 5.9675,
+      "lng": -62.5356
+    },
+    {
+      "text": "Où se trouve la Chaussée des Géants ?",
+      "answerHint": "Chaussée des Géants — Irlande du Nord, Royaume-Uni",
+      "lat": 55.2408,
+      "lng": -6.5116
+    },
+    {
+      "text": "Où se trouve le geyser Old Faithful ?",
+      "answerHint": "Old Faithful — parc de Yellowstone, Wyoming, États-Unis",
+      "lat": 44.4605,
+      "lng": -110.8281
+    }
+  ]
+}

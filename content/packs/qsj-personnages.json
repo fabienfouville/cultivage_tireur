@@ -1,0 +1,139 @@
+{
+  "id": "qsj-personnages",
+  "module": "quisuisje",
+  "theme": "Qui suis-je ? · Personnages de fiction",
+  "questions": [
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "Ma première aventure s'intitule « Une étude en rouge ».",
+        "Je joue du violon et je consomme parfois de la cocaïne.",
+        "Mon ennemi juré est le professeur Moriarty.",
+        "J'habite au 221B Baker Street.",
+        "Détective londonien, mon fidèle ami est le docteur Watson."
+      ],
+      "answerHint": "Sherlock Holmes/Sherlock/Holmes"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "Ma première aventure m'a mené au pays des Soviets.",
+        "J'ai marché sur la Lune bien avant Neil Armstrong.",
+        "Mon créateur belge signait Hergé.",
+        "Mon ami capitaine jure « Mille sabords ! »",
+        "Reporter à la houppe, mon chien blanc s'appelle Milou."
+      ],
+      "answerHint": "Tintin"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "Dans ma première apparition, je m'appelais Jumpman.",
+        "J'ai débuté en 1981 face à Donkey Kong.",
+        "Je suis plombier de métier.",
+        "Je passe ma vie à sauver la princesse Peach.",
+        "Héros moustachu de Nintendo, mon frère s'appelle Luigi."
+      ],
+      "answerHint": "Mario/Super Mario"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "Je suis né le 31 juillet 1980.",
+        "Je parle le fourchelang.",
+        "Je suis devenu attrapeur dès ma première année.",
+        "Ma cicatrice en forme d'éclair vient de Voldemort.",
+        "Jeune sorcier à lunettes, j'étudie à Poudlard."
+      ],
+      "answerHint": "Harry Potter/Harry"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "On m'a cru l'Élu de la prophétie.",
+        "Enfant, j'ai gagné une course de modules sur Tatooine.",
+        "En version originale, James Earl Jones me prête sa voix.",
+        "Je respire bruyamment sous mon casque noir.",
+        "« Je suis ton père », ai-je révélé à Luke."
+      ],
+      "answerHint": "Dark Vador/Darth Vader/Vador/Anakin Skywalker/Anakin"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "Je suis apparue en 1996 sur PlayStation, Saturn et PC.",
+        "Je suis une aristocrate anglaise passionnée d'archéologie.",
+        "Je porte deux pistolets, un à chaque cuisse.",
+        "Angelina Jolie m'a incarnée au cinéma.",
+        "Je suis l'héroïne de la série « Tomb Raider »."
+      ],
+      "answerHint": "Lara Croft/Lara"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "Je travaille au secteur 7G d'une centrale nucléaire.",
+        "Mon patron est M. Burns.",
+        "Mon cri le plus célèbre est « D'oh! ».",
+        "J'adore les donuts et la bière Duff.",
+        "Père de famille jaune de Springfield, mon fils s'appelle Bart."
+      ],
+      "answerHint": "Homer Simpson/Homer"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "Mon film a remporté le tout premier Oscar du film d'animation.",
+        "Mon meilleur ami est un âne bavard.",
+        "J'ai épousé la princesse Fiona.",
+        "Je vis seul dans un marais.",
+        "Je suis un ogre vert."
+      ],
+      "answerHint": "Shrek"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "Mon créateur, Ian Fleming, était un ancien du renseignement naval.",
+        "Mon matricule me donne le permis de tuer.",
+        "Mon chef s'appelle M.",
+        "Je bois ma vodka-martini « au shaker, pas à la cuillère ».",
+        "Agent secret britannique, mon matricule est 007."
+      ],
+      "answerHint": "James Bond/Bond"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "Je porte le numéro 25 du Pokédex national.",
+        "J'évolue grâce à une Pierre Foudre.",
+        "Dans le dessin animé, je refuse d'entrer dans ma Poké Ball.",
+        "Mes joues rouges lancent des éclairs.",
+        "Souris électrique jaune, je suis le compagnon de Sacha."
+      ],
+      "answerHint": "Pikachu"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "J'ai tué mon ami Déagol pour lui voler un objet.",
+        "J'ai vécu des siècles dans une grotte sous les Monts Brumeux.",
+        "Andy Serkis m'a donné vie en capture de mouvement.",
+        "Avant, on m'appelait Sméagol.",
+        "Je parle de l'Anneau en disant « mon précieux »."
+      ],
+      "answerHint": "Gollum"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "Mon vrai prénom est Henry, comme celui de mon père.",
+        "J'enseigne l'archéologie à l'université.",
+        "J'ai une peur bleue des serpents.",
+        "Je ne me sépare jamais de mon fouet et de mon chapeau.",
+        "Harrison Ford m'a incarné dans « Les Aventuriers de l'arche perdue »."
+      ],
+      "answerHint": "Indiana Jones/Indy"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "id": "chrono-inventions",
+  "module": "chronologie",
+  "theme": "Chronologie · Sciences & inventions",
+  "questions": [
+    {
+      "text": "Du plus ancien au plus récent",
+      "events": [
+        "Imprimerie de Gutenberg",
+        "Lunette astronomique de Galilée",
+        "Machine à vapeur de Watt",
+        "Pile de Volta"
+      ],
+      "dates": [
+        "vers 1450",
+        "1609",
+        "1769",
+        "1800"
+      ]
+    },
+    {
+      "text": "Du plus ancien au plus récent",
+      "events": [
+        "Première photographie (Niépce)",
+        "Téléphone de Bell",
+        "Ampoule à incandescence d'Edison",
+        "Cinématographe des frères Lumière"
+      ],
+      "dates": [
+        "vers 1826",
+        "1876",
+        "1879",
+        "1895"
+      ]
+    },
+    {
+      "text": "Du plus ancien au plus récent",
+      "events": [
+        "Premier vol des frères Wright",
+        "Relativité restreinte d'Einstein",
+        "Première démonstration de télévision",
+        "Découverte de la pénicilline"
+      ],
+      "dates": [
+        "1903",
+        "1905",
+        "1926",
+        "1928"
+      ]
+    },
+    {
+      "text": "Conquête spatiale",
+      "events": [
+        "Lancement de Spoutnik 1",
+        "Gagarine, premier homme dans l'espace",
+        "Lancement de la station Mir",
+        "Mise en orbite du télescope Hubble"
+      ],
+      "dates": [
+        "1957",
+        "1961",
+        "1986",
+        "1990"
+      ]
+    },
+    {
+      "text": "Informatique",
+      "events": [
+        "Invention du transistor",
+        "Premier microprocesseur (Intel 4004)",
+        "Sortie de l'Apple II",
+        "Invention du World Wide Web"
+      ],
+      "dates": [
+        "1947",
+        "1971",
+        "1977",
+        "1989"
+      ]
+    },
+    {
+      "text": "Internet et téléphones (c'est serré !)",
+      "events": [
+        "Création de Google",
+        "Lancement de Wikipédia",
+        "Création de YouTube",
+        "Premier iPhone"
+      ],
+      "dates": [
+        "1998",
+        "2001",
+        "2005",
+        "2007"
+      ]
+    },
+    {
+      "text": "Médecine",
+      "events": [
+        "Vaccin contre la variole (Jenner)",
+        "Vaccin contre la rage (Pasteur)",
+        "Découverte des rayons X",
+        "Structure en double hélice de l'ADN"
+      ],
+      "dates": [
+        "1796",
+        "1885",
+        "1895",
+        "1953"
+      ]
+    },
+    {
+      "text": "Grandes théories scientifiques",
+      "events": [
+        "Héliocentrisme de Copernic",
+        "Gravitation universelle de Newton",
+        "Classification des espèces de Linné",
+        "« L'Origine des espèces » de Darwin"
+      ],
+      "dates": [
+        "1543",
+        "1687",
+        "1735",
+        "1859"
+      ]
+    },
+    {
+      "text": "Transports",
+      "events": [
+        "Premier vol en montgolfière",
+        "Locomotive « Rocket » de Stephenson",
+        "Automobile de Karl Benz",
+        "Blériot traverse la Manche en avion"
+      ],
+      "dates": [
+        "1783",
+        "1829",
+        "1886",
+        "1909"
+      ]
+    },
+    {
+      "text": "Inventions du XIXe siècle",
+      "events": [
+        "Stéthoscope de Laennec",
+        "Alphabet Braille publié",
+        "Dynamite de Nobel",
+        "Phonographe d'Edison"
+      ],
+      "dates": [
+        "1816",
+        "1829",
+        "1867",
+        "1877"
+      ]
+    },
+    {
+      "text": "Physique moderne",
+      "events": [
+        "Découverte de la radioactivité",
+        "Théorie des quanta de Planck",
+        "Modèle atomique de Bohr",
+        "Découverte de la fission nucléaire"
+      ],
+      "dates": [
+        "1896",
+        "1900",
+        "1913",
+        "1938"
+      ]
+    },
+    {
+      "text": "Années 70-80 (c'est serré !)",
+      "events": [
+        "Brevet de la carte à puce (Moreno)",
+        "Walkman de Sony",
+        "Premier TGV commercial",
+        "Sortie du CD audio"
+      ],
+      "dates": [
+        "1974",
+        "1979",
+        "1981",
+        "1982"
+      ]
+    }
+  ]
+}

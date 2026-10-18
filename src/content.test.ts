@@ -56,7 +56,8 @@ describe('packs de contenu', () => {
       })
 
       it("n'a pas deux fois la même question", () => {
-        const texts = pack.questions.map((q) => normalize(q.text))
+        // Qui suis-je ? et Chronologie répètent la même consigne : ce sont les indices / événements qui comptent
+        const texts = pack.questions.map((q) => normalize(String(q.text) + ' ' + JSON.stringify(q.clues ?? q.events ?? '')))
         expect(new Set(texts).size).toBe(texts.length)
       })
 

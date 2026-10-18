@@ -1,0 +1,98 @@
+{
+  "id": "geo-capitales-afrique-asie",
+  "module": "geoloc",
+  "theme": "Capitales d'Afrique et d'Asie",
+  "mapId": "world",
+  "questions": [
+    {
+      "text": "Où se trouve Dakar ?",
+      "answerHint": "Dakar (Sénégal)",
+      "lat": 14.7167,
+      "lng": -17.4677
+    },
+    {
+      "text": "Où se trouve Addis-Abeba ?",
+      "answerHint": "Addis-Abeba (Éthiopie)",
+      "lat": 9.03,
+      "lng": 38.74
+    },
+    {
+      "text": "Où se trouve Kinshasa ?",
+      "answerHint": "Kinshasa (RD Congo)",
+      "lat": -4.3217,
+      "lng": 15.3125
+    },
+    {
+      "text": "Où se trouve Antananarivo ?",
+      "answerHint": "Antananarivo (Madagascar)",
+      "lat": -18.8792,
+      "lng": 47.5079
+    },
+    {
+      "text": "Où se trouve Rabat ?",
+      "answerHint": "Rabat (Maroc)",
+      "lat": 34.0209,
+      "lng": -6.8416
+    },
+    {
+      "text": "Où se trouve Accra ?",
+      "answerHint": "Accra (Ghana)",
+      "lat": 5.6037,
+      "lng": -0.187
+    },
+    {
+      "text": "Où se trouve Windhoek ?",
+      "answerHint": "Windhoek (Namibie)",
+      "lat": -22.5609,
+      "lng": 17.0658
+    },
+    {
+      "text": "Où se trouve Kampala ?",
+      "answerHint": "Kampala (Ouganda)",
+      "lat": 0.3476,
+      "lng": 32.5825
+    },
+    {
+      "text": "Où se trouve Oulan-Bator ?",
+      "answerHint": "Oulan-Bator (Mongolie)",
+      "lat": 47.8864,
+      "lng": 106.9057
+    },
+    {
+      "text": "Où se trouve Katmandou ?",
+      "answerHint": "Katmandou (Népal)",
+      "lat": 27.7172,
+      "lng": 85.324
+    },
+    {
+      "text": "Où se trouve Bangkok ?",
+      "answerHint": "Bangkok (Thaïlande)",
+      "lat": 13.7563,
+      "lng": 100.5018
+    },
+    {
+      "text": "Où se trouve Manille ?",
+      "answerHint": "Manille (Philippines)",
+      "lat": 14.5995,
+      "lng": 120.9842
+    },
+    {
+      "text": "Où se trouve Téhéran ?",
+      "answerHint": "Téhéran (Iran)",
+      "lat": 35.6892,
+      "lng": 51.389
+    },
+    {
+      "text": "Où se trouve Séoul ?",
+      "answerHint": "Séoul (Corée du Sud)",
+      "lat": 37.5665,
+      "lng": 126.978
+    },
+    {
+      "text": "Où se trouve Tachkent ?",
+      "answerHint": "Tachkent (Ouzbékistan)",
+      "lat": 41.2995,
+      "lng": 69.2401
+    }
+  ]
+}

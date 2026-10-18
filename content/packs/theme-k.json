@@ -1,0 +1,47 @@
+{
+  "id": "theme-k",
+  "module": "theme",
+  "theme": "Thème K",
+  "questions": [
+    {
+      "text": "Une partie du corps humain",
+      "answerHint": "Coude, genou, épaule, nez, oreille, cheville, poignet, nombril, menton, talon, front…"
+    },
+    {
+      "text": "Une marque de vêtements ou de mode",
+      "answerHint": "Nike, Adidas, Zara, H&M, Levi's, Lacoste, Uniqlo, Gucci, Chanel, Dior, Kiabi, Petit Bateau…"
+    },
+    {
+      "text": "Un pays d'Afrique",
+      "answerHint": "Maroc, Sénégal, Kenya, Nigeria, Égypte, Mali, Cameroun, Ghana, Madagascar, Tunisie, Afrique du Sud…"
+    },
+    {
+      "text": "Un film d'horreur",
+      "answerHint": "Shining, Scream, L'Exorciste, Halloween, Ça, Saw, Conjuring, Psychose, Massacre à la tronçonneuse, Get Out…"
+    },
+    {
+      "text": "Une épice ou une herbe aromatique",
+      "answerHint": "Cannelle, curcuma, cumin, paprika, safran, poivre, muscade, basilic, thym, romarin, persil, coriandre…"
+    },
+    {
+      "text": "Une race de chat",
+      "answerHint": "Persan, siamois, maine coon, sacré de Birmanie, bengal, sphynx, chartreux, ragdoll, british shorthair…"
+    },
+    {
+      "text": "Un jeu vidéo",
+      "answerHint": "Mario Kart, Tetris, Fortnite, Minecraft, Zelda, FIFA, Call of Duty, Pac-Man, Les Sims, Pokémon, GTA…"
+    },
+    {
+      "text": "Une boisson sans alcool",
+      "answerHint": "Coca-Cola, Orangina, Ice Tea, limonade, jus d'orange, Oasis, Schweppes, Perrier, sirop de menthe, thé, café…"
+    },
+    {
+      "text": "Un fleuve ou une rivière de France",
+      "answerHint": "Loire, Seine, Rhône, Garonne, Dordogne, Lot, Marne, Somme, Durance, Charente, Moselle, Saône…"
+    },
+    {
+      "text": "Un chanteur ou une chanteuse français(e)",
+      "answerHint": "Johnny Hallyday, Édith Piaf, Mylène Farmer, Renaud, Jean-Jacques Goldman, Aya Nakamura, Zaz, Orelsan, Charles Aznavour… (attention : Stromae, Brel et Angèle sont belges, Céline Dion est canadienne)"
+    }
+  ]
+}

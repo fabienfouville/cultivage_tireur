@@ -1,0 +1,98 @@
+{
+  "id": "echelle-vehicules-geants",
+  "module": "echelle",
+  "theme": "Véhicules & objets géants",
+  "description": "dimensions officielles, comparées à une référence connue",
+  "questions": [
+    {
+      "text": "Quelle longueur fait un Airbus A380, le plus gros avion de ligne ?",
+      "refName": "Un bus",
+      "refHeight": 12,
+      "refEmoji": "🚌",
+      "targetName": "Airbus A380",
+      "answer": 72.7,
+      "targetEmoji": "✈️"
+    },
+    {
+      "text": "Quelle longueur faisait le Titanic ?",
+      "refName": "Un Airbus A380 (longueur)",
+      "refHeight": 72.7,
+      "refEmoji": "✈️",
+      "targetName": "Titanic",
+      "answer": 269,
+      "targetEmoji": "🚢"
+    },
+    {
+      "text": "Quelle longueur fait l'Ever Given, le porte-conteneurs bloqué dans le canal de Suez en 2021 ?",
+      "refName": "Le Titanic",
+      "refHeight": 269,
+      "refEmoji": "🚢",
+      "targetName": "Ever Given",
+      "answer": 400,
+      "targetEmoji": "🛳️"
+    },
+    {
+      "text": "Quelle hauteur faisait la fusée Saturn V des missions Apollo ?",
+      "refName": "La statue de la Liberté (socle compris)",
+      "refHeight": 93,
+      "refEmoji": "🗽",
+      "targetName": "Saturn V",
+      "answer": 110.6,
+      "targetEmoji": "🚀"
+    },
+    {
+      "text": "Quelle longueur fait une rame de TGV Duplex ?",
+      "refName": "Un bus",
+      "refHeight": 12,
+      "refEmoji": "🚌",
+      "targetName": "TGV Duplex",
+      "answer": 200,
+      "targetEmoji": "🚄"
+    },
+    {
+      "text": "Quelle hauteur fait la grande roue London Eye ?",
+      "refName": "La statue de la Liberté (socle compris)",
+      "refHeight": 93,
+      "refEmoji": "🗽",
+      "targetName": "London Eye",
+      "answer": 135,
+      "targetEmoji": "🎡"
+    },
+    {
+      "text": "Quelle longueur faisait le dirigeable Hindenburg ?",
+      "refName": "Un Airbus A380 (longueur)",
+      "refHeight": 72.7,
+      "refEmoji": "✈️",
+      "targetName": "Hindenburg",
+      "answer": 245,
+      "targetEmoji": "🎈"
+    },
+    {
+      "text": "Quelle hauteur fait la pelleteuse géante Bagger 288 ?",
+      "refName": "La statue de la Liberté (socle compris)",
+      "refHeight": 93,
+      "refEmoji": "🗽",
+      "targetName": "Bagger 288",
+      "answer": 96,
+      "targetEmoji": "🏗️"
+    },
+    {
+      "text": "Quelle longueur fait le porte-avions Charles-de-Gaulle ?",
+      "refName": "Le Titanic",
+      "refHeight": 269,
+      "refEmoji": "🚢",
+      "targetName": "Charles-de-Gaulle",
+      "answer": 261.5,
+      "targetEmoji": "⚓"
+    },
+    {
+      "text": "Quelle envergure fait la Station spatiale internationale (ISS) ?",
+      "refName": "Un Airbus A380 (envergure)",
+      "refHeight": 79.8,
+      "refEmoji": "✈️",
+      "targetName": "ISS",
+      "answer": 109,
+      "targetEmoji": "🛰️"
+    }
+  ]
+}
