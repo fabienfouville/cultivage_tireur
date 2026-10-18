@@ -14,6 +14,8 @@ export type ModuleKey =
   | 'top'
   | 'logique'
   | 'echelle'
+  | 'chronologie'
+  | 'quisuisje'
 
 /** themes/{id} */
 export interface Theme {

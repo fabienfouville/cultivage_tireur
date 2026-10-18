@@ -1,6 +1,7 @@
 import type { ModuleKey } from '../types'
 import { blindtest } from './blindtest'
 import { cash } from './cash'
+import { chronologie } from './chronologie'
 import { duoCarreCash } from './duo-carre-cash'
 import { echelle } from './echelle'
 import { estimation } from './estimation'
@@ -9,6 +10,7 @@ import { geoloc } from './geoloc'
 import { logique } from './logique'
 import { pixel } from './pixel'
 import { qcm } from './qcm'
+import { quisuisje } from './quisuisje'
 import { theme } from './theme'
 import { top } from './top'
 import type { ModuleConfig, ModuleDef } from './types'
@@ -30,6 +32,8 @@ export const MODULES: ModuleDef[] = [
   geoloc,
   blindtest,
   top,
+  chronologie,
+  quisuisje,
   // Variantes du QCM (mêmes questions, autres règles)
   gambling,
   duoCarreCash,
