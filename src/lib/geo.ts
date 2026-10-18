@@ -95,22 +95,23 @@ export interface MapDef {
   maxZoom?: number
 }
 
-const CARTO = 'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png'
-const CARTO_ATTR = '© OpenStreetMap, © CARTO'
+// Fond gris clair sans aucun nom (pays, villes…) : on ne donne pas la réponse. Pas de clé API nécessaire.
+// (Les fonds Carto demandent désormais une clé : ne pas y revenir.)
+const PLAIN = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}'
 const ESRI_PHYS = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}'
 const ESRI_SAT = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
 const ESRI_ATTR = '© Esri'
 
 /** Fonds de carte disponibles pour les thèmes Géoloc (champ `mapId` du thème) */
 export const MAPS: Record<string, MapDef> = {
-  world: { label: 'Monde (sans noms)', center: [20, 0], zoom: 2, tiles: CARTO, attribution: CARTO_ATTR },
-  france: { label: 'France', center: [46.6, 2.4], zoom: 5, tiles: CARTO, attribution: CARTO_ATTR },
-  europe: { label: 'Europe', center: [52, 12], zoom: 4, tiles: CARTO, attribution: CARTO_ATTR },
-  usa: { label: 'États-Unis', center: [39, -97], zoom: 4, tiles: CARTO, attribution: CARTO_ATTR },
-  africa: { label: 'Afrique', center: [2, 18], zoom: 3, tiles: CARTO, attribution: CARTO_ATTR },
-  asia: { label: 'Asie', center: [32, 95], zoom: 3, tiles: CARTO, attribution: CARTO_ATTR },
-  america: { label: 'Amériques', center: [8, -75], zoom: 2, tiles: CARTO, attribution: CARTO_ATTR },
-  oceania: { label: 'Océanie', center: [-22, 145], zoom: 3, tiles: CARTO, attribution: CARTO_ATTR },
+  world: { label: 'Monde (sans noms)', center: [20, 0], zoom: 2, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
+  france: { label: 'France', center: [46.6, 2.4], zoom: 5, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
+  europe: { label: 'Europe', center: [52, 12], zoom: 4, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
+  usa: { label: 'États-Unis', center: [39, -97], zoom: 4, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
+  africa: { label: 'Afrique', center: [2, 18], zoom: 3, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
+  asia: { label: 'Asie', center: [32, 95], zoom: 3, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
+  america: { label: 'Amériques', center: [8, -75], zoom: 2, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
+  oceania: { label: 'Océanie', center: [-22, 145], zoom: 3, tiles: PLAIN, attribution: ESRI_ATTR, maxZoom: 16 },
   summit: { label: 'Relief (sommets)', center: [25, 10], zoom: 2, tiles: ESRI_PHYS, attribution: ESRI_ATTR, maxZoom: 8 },
   satellite: { label: 'Satellite', center: [20, 0], zoom: 2, tiles: ESRI_SAT, attribution: ESRI_ATTR },
 }
