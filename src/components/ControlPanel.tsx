@@ -219,12 +219,13 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
   }, [module])
   useEffect(() => {
     setAvailable(null)
-    if (!themeId) return
-    getCountFromServer(query(collection(db, 'questions'), where('themeId', '==', themeId))).then((s) => {
+    if (themeId === E.RANDOM_THEME || !module) return
+    const filter = themeId === E.ALL_THEMES ? where('module', '==', module) : where('themeId', '==', themeId)
+    getCountFromServer(query(collection(db, 'questions'), filter)).then((s) => {
       setAvailable(s.data().count)
       setCount((c) => Math.min(c || 10, s.data().count) || 1)
     })
-  }, [themeId])
+  }, [themeId, module])
 
   const mod = played ? getModule(played) : null
   const effTimer = timer === '' ? cfg?.timer ?? 30 : timer
@@ -259,7 +260,8 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
           <label>
             Thème
             <select value={themeId} onChange={(e) => setThemeId(e.target.value)}>
-              <option value="">🎲 Au hasard</option>
+              <option value={E.ALL_THEMES}>🌍 Toutes les questions</option>
+              <option value={E.RANDOM_THEME}>🎲 Un thème au hasard</option>
               {[...themes]
                 .sort((a, b) => a.name.localeCompare(b.name))
                 .map((t) => (
@@ -269,7 +271,7 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
                 ))}
             </select>
           </label>
-          {available != null && <p className="muted small">{available} question(s) dans ce thème</p>}
+          {available != null && <p className="muted small">{available} question(s) {themeId === E.ALL_THEMES ? 'en tout' : 'dans ce thème'}</p>}
           <div className="row">
             <label>
               Questions
@@ -280,7 +282,7 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
               <input type="number" min={3} value={effTimer} onChange={(e) => setTimer(Number(e.target.value))} />
             </label>
           </div>
-          {!mod.ordered && (
+          {!mod.ordered && themeId !== E.ALL_THEMES && (
             <label>
               Ordre
               <select value={order} onChange={(e) => setOrder(e.target.value as 'keep' | 'random')}>

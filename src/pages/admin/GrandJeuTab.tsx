@@ -2,6 +2,7 @@ import { addDoc, collection, deleteDoc, doc, orderBy, query, serverTimestamp, up
 import { useState } from 'react'
 import { Spinner } from '../../components/ui'
 import { CARDS, CARD_KEYS } from '../../engine/cards'
+import { ALL_THEMES, RANDOM_THEME } from '../../engine/engine'
 import { db } from '../../firebase'
 import { useCol, useDoc } from '../../lib/hooks'
 import { MODULES, bankOf, getModule, moduleConfig } from '../../modules'
@@ -118,7 +119,8 @@ function GrandJeuEditor({ initial, onDone }: { initial?: GrandJeu; onDone: () =>
                   value={s.themeId}
                   onChange={(e) => upd(i, { themeId: e.target.value, themeName: list.find((t) => t.id === e.target.value)?.name ?? '' })}
                 >
-                  <option value="">🎲 Au hasard</option>
+                  <option value={ALL_THEMES}>🌍 Toutes les questions</option>
+                  <option value={RANDOM_THEME}>🎲 Un thème au hasard</option>
                   {list.map((t) => (
                     <option key={t.id} value={t.id}>
                       {t.name}

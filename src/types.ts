@@ -44,6 +44,8 @@ export interface Block {
   themeName: string
   /** Géoloc : fond de carte du thème */
   mapId?: string
+  /** Géoloc, toutes les questions : fond de carte de chaque question (id → carte) */
+  mapIds?: Record<string, string>
   questionIds: string[]
   index: number
   timer: number

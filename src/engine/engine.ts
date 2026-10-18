@@ -160,9 +160,13 @@ export async function spinWheel(sid: string, modules: ModuleKey[]): Promise<Modu
 
 /* ───────────────────────────── Blocs ───────────────────────────── */
 
+/** Valeurs spéciales du thème d'un bloc : toutes les questions du jeu (par défaut) ou un thème tiré au sort */
+export const ALL_THEMES = ''
+export const RANDOM_THEME = '?'
+
 export interface BlockOptions {
   module: ModuleKey
-  /** vide = thème au hasard */
+  /** ALL_THEMES (vide) = toutes les questions du jeu, RANDOM_THEME = un thème au hasard, sinon l'id du thème */
   themeId: string
   count: number
   order: 'keep' | 'random'
@@ -171,12 +175,19 @@ export interface BlockOptions {
   tokensStart?: number
 }
 
-/** Choisit les questions d'un thème : dans l'ordre, ou au hasard en privilégiant les moins jouées */
+/**
+ * Choisit les questions d'un thème (ou de tous les thèmes du jeu) : dans l'ordre, ou au hasard en privilégiant
+ * les moins jouées
+ */
 export async function pickQuestions(themeId: string, module: ModuleKey, count: number, order: 'keep' | 'random') {
-  const snap = await getDocs(query(collection(db, 'questions'), where('themeId', '==', themeId)))
+  const all = themeId === ALL_THEMES
+  const snap = await getDocs(
+    query(collection(db, 'questions'), all ? where('module', '==', bankOf(module)) : where('themeId', '==', themeId)),
+  )
   let qs = snap.docs.map((d) => ({ id: d.id, ...d.data() }) as Question & { played?: number; createdAt?: any })
   const mod = getModule(module)
-  if (order === 'keep' || mod.ordered) {
+  // Toutes les questions : mélangées, sauf pour les jeux à difficulté croissante (100% Logique)
+  if (mod.orderBy || (!all && (order === 'keep' || mod.ordered))) {
     const created = (q: any) => q.createdAt?.toMillis?.() ?? (typeof q.createdAt === 'string' ? Date.parse(q.createdAt) : 0)
     const rank = mod.orderBy ?? ((q: Question) => Number(q.order ?? 1e9))
     qs.sort((a, b) => rank(a) - rank(b) || created(a) - created(b))
@@ -212,24 +223,32 @@ export async function randomTheme(module: ModuleKey, alreadyPlayed: string[] = [
 
 export async function startBlock(sid: string, opts: BlockOptions) {
   const current = await getSession(sid)
-  // Pas de thème choisi → thème au hasard
-  if (!opts.themeId) opts = { ...opts, themeId: await randomTheme(opts.module, current.playedThemes ?? []) }
+  if (opts.themeId === RANDOM_THEME) opts = { ...opts, themeId: await randomTheme(opts.module, current.playedThemes ?? []) }
+  const all = opts.themeId === ALL_THEMES
   const [session, participants, stored, themeSnap] = await Promise.all([
     getSession(sid),
     getParticipants(sid),
     getStoredConfig(),
-    getDoc(doc(db, 'themes', opts.themeId)),
+    all ? null : getDoc(doc(db, 'themes', opts.themeId)),
   ])
   const questions = await pickQuestions(opts.themeId, opts.module, opts.count, opts.order)
-  if (!questions.length) throw new Error('Ce thème ne contient aucune question')
+  if (!questions.length) throw new Error(all ? 'Aucune question pour ce jeu' : 'Ce thème ne contient aucune question')
+  // Toutes les questions en Géoloc : chaque question garde la carte de son thème
+  let mapIds: Record<string, string> | undefined
+  if (all && getModule(opts.module).themeHasMap) {
+    const themes = await getDocs(query(collection(db, 'themes'), where('module', '==', bankOf(opts.module))))
+    const byTheme = Object.fromEntries(themes.docs.map((d) => [d.id, d.get('mapId') ?? 'world']))
+    mapIds = Object.fromEntries(questions.map((q) => [q.id, byTheme[q.themeId] ?? 'world']))
+  }
   const mod = getModule(opts.module)
   const cfg = { ...moduleConfig(opts.module, stored), timer: opts.timer }
   let block: Block = {
     no: (session.blockCount ?? 0) + 1,
     module: opts.module,
     themeId: opts.themeId,
-    themeName: themeSnap.get('name') ?? '',
-    mapId: themeSnap.get('mapId') ?? undefined,
+    themeName: all ? 'Toutes les questions' : themeSnap?.get('name') ?? '',
+    ...(themeSnap?.get('mapId') ? { mapId: themeSnap.get('mapId') } : {}),
+    ...(mapIds ? { mapIds } : {}),
     questionIds: questions.map((q) => q.id),
     index: 0,
     timer: opts.timer,
@@ -268,7 +287,7 @@ export async function startBlock(sid: string, opts: BlockOptions) {
     phase: 'play',
     block,
     blockCount: block.no,
-    playedThemes: arrayUnion(opts.themeId),
+    ...(all ? {} : { playedThemes: arrayUnion(opts.themeId) }),
     round: null,
     wheel: null,
     cardsUntil: null,

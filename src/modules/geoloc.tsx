@@ -33,7 +33,7 @@ export const geoloc: ModuleDef = {
   ],
   themeHasMap: true,
   summary: (q) => `${q.answerHint ?? ''} (${Number(q.lat).toFixed(2)}, ${Number(q.lng).toFixed(2)})${q.isoNum ? ' · pays ' + q.isoNum : ''}`,
-  publicPayload: (q, { block }) => ({ text: q.text, mapId: block.mapId ?? 'world' }),
+  publicPayload: (q, { block }) => ({ text: q.text, mapId: block.mapIds?.[q.id] ?? block.mapId ?? 'world' }),
   solution: (q) => ({ lat: Number(q.lat), lng: Number(q.lng), label: q.answerHint ?? '', isoNum: q.isoNum ?? null }),
   score: async ({ q, answers, cfg }) => {
     const scored = []
