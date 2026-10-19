@@ -14,6 +14,12 @@ Pas de serveur ni de Cloud Functions. Tout le texte visible est en français.
 - Les propriétaires veulent que les modifications partent **directement sur `main`** (pas de Pull Request) :
   chaque push sur `main` met le site en ligne via GitHub Actions. Ne pousser qu'après typecheck, tests et build verts.
 - Après un ajout de packs, rappeler d'aller dans l'admin → 📦 Packs → « Importer tous les nouveaux packs ».
+- Hébergement (`firebase.json`) : `index.html` et les routes ne sont jamais mis en cache, `/assets/*` (noms hashés) le
+  sont pour un an. La réécriture vers `index.html` ne concerne que les chemins **sans point** : une route ne doit pas
+  contenir de point, et un ancien fichier JS disparu renvoie bien une 404 (l'app recharge alors la page). Chaque build
+  publie `/version.json` : les pages ouvertes proposent de recharger quand une nouvelle version est en ligne.
+- Quota gratuit Firestore : 50 000 lectures / 20 000 écritures par jour. Chaque document lu ou reçu en temps réel
+  compte : éviter de lire des collections entières pendant une partie (voir `sampleQuestions` dans le moteur).
 
 ## Organisation
 

@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import { Spinner } from './components/ui'
+import { UpdateBanner } from './components/UpdateBanner'
 import Home from './pages/Home'
 import Player from './pages/Player'
 
@@ -12,6 +13,7 @@ const Control = lazy(() => import('./pages/admin/Control'))
 export default function App() {
   return (
     <BrowserRouter>
+      <UpdateBanner />
       <Suspense fallback={<Spinner />}>
         <Routes>
           <Route path="/" element={<Home />} />

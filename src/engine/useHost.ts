@@ -22,6 +22,9 @@ export function useHost(session: Session | null | undefined, enabled: boolean, p
   const [answers, setAnswers] = useState<Answer[]>([])
   const now = useServerClock(500)
   const busy = useRef<string | null>(null)
+  // Plusieurs appareils admin (régie, écran…) font les mêmes passages automatiques : chacun attend un petit délai
+  // différent, le premier agit et les autres voient que c'est fait (moins de lectures, moins de conflits)
+  const jitter = useRef(Math.round(Math.random() * 800))
   const stored = useDoc<Partial<GeneralConfig>>(enabled ? doc(db, 'config', 'general') : null)
   const general: GeneralConfig = { ...GENERAL_DEFAULTS, ...(stored ?? {}) }
 
@@ -50,7 +53,7 @@ export function useHost(session: Session | null | undefined, enabled: boolean, p
   const missing = answers.map((a) => a.pid).filter((pid) => !answered.includes(pid))
   useEffect(() => {
     if (!enabled || !sid || seq == null || !missing.length) return
-    const t = setTimeout(() => void markAnswered(sid, seq, missing).catch(console.warn), 300)
+    const t = setTimeout(() => void markAnswered(sid, seq, missing).catch(console.warn), 300 + jitter.current)
     return () => clearTimeout(t)
   }, [enabled, sid, seq, missing.join(',')])
 
@@ -73,7 +76,7 @@ export function useHost(session: Session | null | undefined, enabled: boolean, p
   useEffect(() => {
     if (!enabled || !sid || seq == null || !(timeUp || everyone)) return
     // Petit délai quand tout le monde a répondu, pour laisser voir la dernière réponse arriver
-    const t = setTimeout(() => once(`close-${seq}`, () => closeRound(sid, seq)), timeUp ? 0 : 1200)
+    const t = setTimeout(() => once(`close-${seq}`, () => closeRound(sid, seq)), (timeUp ? 0 : 1200) + jitter.current)
     return () => clearTimeout(t)
   }, [enabled, sid, seq, timeUp, everyone])
 
@@ -81,14 +84,16 @@ export function useHost(session: Session | null | undefined, enabled: boolean, p
   const autoNextDue = round?.status === 'revealed' && !!round.autoNextAt && round.autoNextAt.toMillis() <= now
   useEffect(() => {
     if (!enabled || !sid || seq == null || !autoNextDue) return
-    once(`next-${seq}`, () => next(sid, seq))
+    const t = setTimeout(() => once(`next-${seq}`, () => next(sid, seq)), jitter.current)
+    return () => clearTimeout(t)
   }, [enabled, sid, seq, autoNextDue])
 
   // Fin de la phase cartes
   const cardsOver = session?.phase === 'cards' && session.cardsUntil && session.cardsUntil.toMillis() < now
   useEffect(() => {
     if (!enabled || !sid || !cardsOver) return
-    once(`cards-${session?.blockCount}`, () => endCardsPhase(sid))
+    const t = setTimeout(() => once(`cards-${session?.blockCount}`, () => endCardsPhase(sid)), jitter.current)
+    return () => clearTimeout(t)
   }, [enabled, sid, cardsOver])
 
   return { answers, now, general }

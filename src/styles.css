@@ -1485,3 +1485,6 @@ details > summary {
 .clue-off { opacity: 0.4; font-style: italic; }
 .clue-on { animation: clue-in 0.4s ease; }
 @keyframes clue-in { from { opacity: 0; transform: translateY(4px); } }
+
+/* Nouvelle version en ligne */
+.update-banner { position: fixed; left: 50%; bottom: 12px; transform: translateX(-50%); z-index: 1000; max-width: calc(100% - 24px); padding: 0.7rem 1rem; border: 0; border-radius: var(--radius); background: var(--primary); color: var(--primary-text); font: inherit; font-weight: 600; box-shadow: var(--shadow); }

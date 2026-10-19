@@ -22,6 +22,7 @@ import {
   serverTimestamp,
   setDoc,
   Timestamp,
+  type Transaction,
   updateDoc,
   where,
   writeBatch,
@@ -181,10 +182,11 @@ export interface BlockOptions {
  */
 export async function pickQuestions(themeId: string, module: ModuleKey, count: number, order: 'keep' | 'random') {
   const all = themeId === ALL_THEMES
-  const snap = await getDocs(
-    query(collection(db, 'questions'), all ? where('module', '==', bankOf(module)) : where('themeId', '==', themeId)),
-  )
-  let qs = snap.docs.map((d) => ({ id: d.id, ...d.data() }) as Question & { played?: number; createdAt?: any })
+  let qs = all
+    ? await sampleQuestions(module, count)
+    : (await getDocs(query(collection(db, 'questions'), where('themeId', '==', themeId)))).docs.map(
+        (d) => ({ id: d.id, ...d.data() }) as Question & { played?: number; createdAt?: any },
+      )
   const mod = getModule(module)
   // Toutes les questions : mélangées, sauf pour les jeux à difficulté croissante (100% Logique)
   if (mod.orderBy || (!all && (order === 'keep' || mod.ordered))) {
@@ -203,6 +205,23 @@ export async function pickQuestions(themeId: string, module: ModuleKey, count: n
       .map((x) => x.q)
   }
   return qs.slice(0, Math.max(1, count))
+}
+
+/**
+ * Toutes les questions d'un jeu, sans tout lire : chaque question lue compte dans le quota gratuit de Firestore
+ * (50 000 lectures par jour) et le QCM en a près d'un millier. On lit des thèmes tirés au sort, quelques-uns à la fois,
+ * jusqu'à avoir largement de quoi choisir (3 fois le nombre de questions demandé).
+ */
+async function sampleQuestions(module: ModuleKey, count: number) {
+  const themes = await getDocs(query(collection(db, 'themes'), where('module', '==', bankOf(module))))
+  const ids = themes.docs.map((d) => d.id).sort(() => Math.random() - 0.5)
+  const want = Math.max(count * 3, 30)
+  const out: Array<Question & { played?: number; createdAt?: any }> = []
+  for (let i = 0; i < ids.length && out.length < want; i += 3) {
+    const snap = await getDocs(query(collection(db, 'questions'), where('themeId', 'in', ids.slice(i, i + 3))))
+    out.push(...snap.docs.map((d) => ({ id: d.id, ...d.data() }) as Question & { played?: number; createdAt?: any }))
+  }
+  return out
 }
 
 /**
@@ -255,7 +274,8 @@ export async function startBlock(sid: string, opts: BlockOptions) {
     slot: opts.slot,
     tokensStart: opts.tokensStart,
   }
-  const batch = writeBatch(db)
+  // Écritures faites d'un bloc, seulement si personne n'a lancé un autre jeu entre-temps (double clic, 2 admins)
+  const ops: Array<(tx: Transaction) => void> = []
   const active = participants.filter((p) => !p.kicked)
 
   // Cartes du Grand Jeu jouées pendant la phase cartes qui précède ce bloc
@@ -268,7 +288,7 @@ export async function startBlock(sid: string, opts: BlockOptions) {
       if (!p || p.kicked || !CARDS[card] || p.usedCards?.includes(card)) continue
       if (CARDS[card].needsTarget && (!target || target === pid || !participants.some((x) => x.id === target))) continue
       cards[pid] = { card, target }
-      batch.update(doc(db, 'sessions', sid, 'participants', pid), { usedCards: arrayUnion(card) })
+      ops.push((tx) => tx.update(doc(db, 'sessions', sid, 'participants', pid), { usedCards: arrayUnion(card) }))
     }
     const shielded = new Set(Object.entries(cards).filter(([, c]) => c.card === 'bouclier').map(([pid]) => pid))
     const slowed = [...new Set(Object.values(cards).filter((c) => c.card === 'tortue').map((c) => c.target!))].filter(
@@ -280,9 +300,10 @@ export async function startBlock(sid: string, opts: BlockOptions) {
   const init = mod.initBlock?.(block, active, cfg)
   if (init?.block) block = { ...block, ...init.block }
   for (const [pid, upd] of Object.entries(init?.participants ?? {})) {
-    batch.update(doc(db, 'sessions', sid, 'participants', pid), upd)
+    ops.push((tx) => tx.update(doc(db, 'sessions', sid, 'participants', pid), upd))
   }
-  batch.update(sessionRef(sid), {
+  ops.push((tx) =>
+    tx.update(sessionRef(sid), {
     status: 'playing',
     phase: 'play',
     block,
@@ -291,8 +312,14 @@ export async function startBlock(sid: string, opts: BlockOptions) {
     round: null,
     wheel: null,
     cardsUntil: null,
+    }),
+  )
+  await runTransaction(db, async (tx) => {
+    const cur = (await tx.get(sessionRef(sid))).data() as Session
+    if ((cur.blockCount ?? 0) !== (session.blockCount ?? 0) || (cur.seq ?? 0) !== (session.seq ?? 0))
+      throw new Error('Un jeu vient déjà d’être lancé')
+    ops.forEach((op) => op(tx))
   })
-  await batch.commit()
   await startRound(sid, 0)
 }
 
@@ -538,7 +565,9 @@ export async function endBlock(sid: string) {
   const session = await getSession(sid)
   const block = session.block
   if (!block || session.phase === 'blockResults') return
-  const batch = writeBatch(db)
+  // Transaction : le passage auto peut être déclenché par plusieurs appareils admin à la fois,
+  // il ne faut compter les bonus des cartes qu'une fois
+  const ops: Array<(tx: Transaction) => void> = []
   if (block.cards && Object.keys(block.cards).length) {
     const [totals, participants] = await Promise.all([blockTotals(sid, block.no), getParticipants(sid)])
     const bonus = resolveCards(
@@ -550,9 +579,9 @@ export async function endBlock(sid: string) {
     for (const [pid, b] of Object.entries(bonus)) {
       if (!b.pts) continue
       results[pid] = b.pts
-      batch.update(doc(db, 'sessions', sid, 'participants', pid), { score: increment(b.pts) })
+      ops.push((tx) => tx.update(doc(db, 'sessions', sid, 'participants', pid), { score: increment(b.pts) }))
     }
-    batch.set(doc(db, 'sessions', sid, 'rounds', `cards_${block.no}`), {
+    const log = {
       seq: session.seq + 0.5,
       kind: 'cards',
       blockNo: block.no,
@@ -560,10 +589,15 @@ export async function endBlock(sid: string) {
       results,
       details: Object.fromEntries(Object.entries(bonus).map(([pid, b]) => [pid, b.detail])),
       at: serverTimestamp(),
-    })
+    }
+    ops.push((tx) => tx.set(doc(db, 'sessions', sid, 'rounds', `cards_${block.no}`), log))
   }
-  batch.update(sessionRef(sid), { phase: 'blockResults' })
-  await batch.commit()
+  await runTransaction(db, async (tx) => {
+    const cur = (await tx.get(sessionRef(sid))).data() as Session
+    if (cur.phase !== 'play' || cur.block?.no !== block.no) return
+    ops.forEach((op) => op(tx))
+    tx.update(sessionRef(sid), { phase: 'blockResults' })
+  })
 }
 
 /** Après les résultats d'un bloc : retour au choix (roue libre) ou slot suivant (Grand Jeu) */
@@ -678,6 +712,8 @@ export async function markAnswered(sid: string, seq: number, pids: string[]) {
   await runTransaction(db, async (tx) => {
     const cur = (await tx.get(sessionRef(sid))).data() as Session
     if (cur.round?.seq !== seq) return
+    // Déjà noté par un autre appareil admin : pas d'écriture inutile
+    if (pids.every((pid) => cur.round!.answered?.includes(pid))) return
     tx.update(sessionRef(sid), { 'round.answered': arrayUnion(...pids) })
   })
 }
