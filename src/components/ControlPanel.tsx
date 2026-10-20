@@ -106,6 +106,34 @@ export function ControlPanel({
       {session.phase === 'play' && round && block && (
         <RoundControls session={session} participants={participants} busy={busy} run={run} onScreen={onScreen} />
       )}
+      {session.phase === 'play' && !block && (
+        <section className="card">
+          <h3>Le jeu n'a pas démarré</h3>
+          {session.mode === 'grandjeu' && session.grandJeu ? (
+            <button
+              className="btn btn-primary btn-block"
+              disabled={busy}
+              onClick={() => run(() => E.startSlot(sid, session.grandJeu!.slots[session.grandJeu!.step], session.grandJeu!.step))}
+            >
+              ▶️ Relancer le module {session.grandJeu.step + 1}
+            </button>
+          ) : (
+            <button className="btn btn-primary btn-block" disabled={busy} onClick={() => run(() => E.reopenSession(sid))}>
+              🎡 Choisir un jeu
+            </button>
+          )}
+        </section>
+      )}
+      {session.phase === 'play' && !round && block && (
+        <section className="card">
+          <h3>
+            {getModule(block.module).icon} {getModule(block.module).name} · prêt
+          </h3>
+          <button className="btn btn-primary btn-block btn-big" disabled={busy} onClick={() => run(() => E.startRound(sid, block.index ?? 0))}>
+            ▶️ Lancer la question {(block.index ?? 0) + 1}
+          </button>
+        </section>
+      )}
       {session.phase === 'blockResults' && (
         <section className="card">
           <h3>Fin du module {block && getModule(block.module).name}</h3>

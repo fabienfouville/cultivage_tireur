@@ -51,8 +51,12 @@ import { CARDS, TORTUE_FACTOR, resolveCards } from './cards'
 const sessionRef = (sid: string) => doc(db, 'sessions', sid)
 const sub = (sid: string, name: string) => collection(db, 'sessions', sid, name)
 
+// Le moteur lit la session dans une transaction, c'est-à-dire toujours sur le serveur. Un simple getDoc (même
+// getDocFromServer) renvoie l'état connu de l'écoute en temps réel déjà ouverte sur la session ; or une transaction
+// qui vient de réussir n'y arrive que quelques centaines de millisecondes plus tard sur le vrai Firestore
+// (bug « Aucun bloc en cours » au lancement de chaque jeu, invisible avec l'émulateur local qui est instantané).
 async function getSession(sid: string): Promise<Session> {
-  const snap = await getDoc(sessionRef(sid))
+  const snap = await runTransaction(db, (tx) => tx.get(sessionRef(sid)))
   if (!snap.exists()) throw new Error('Session introuvable')
   return { id: snap.id, ...snap.data() } as Session
 }

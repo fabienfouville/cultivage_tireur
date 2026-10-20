@@ -45,6 +45,10 @@ Pas de serveur ni de Cloud Functions. Tout le texte visible est en français.
 Règles d'or :
 - **Jamais la solution dans `round.public`** : la session est lisible par tous. La solution n'est écrite qu'à la révélation.
 - Les transitions de partie passent par des transactions qui vérifient l'état attendu (plusieurs admins possibles).
+- Dans le moteur, lire la session avec `getSession` (lecture dans une transaction, donc sur le serveur), jamais avec
+  `getDoc` : quand la page écoute déjà la session, `getDoc` (et même `getDocFromServer`) renvoie l'état de l'écoute, où
+  une transaction qui vient de réussir n'est pas encore arrivée. L'émulateur local est trop rapide pour le montrer.
+  Pour tester en conditions réelles : forcer `experimentalForceLongPolling` et retarder les requêtes `Listen/channel`.
 - Les champs des questions existantes viennent de l'ancienne app : ne pas les renommer (les données en dépendent).
 
 ## Ajouter un jeu
