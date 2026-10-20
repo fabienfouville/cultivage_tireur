@@ -2,23 +2,12 @@
   "id": "logique-3",
   "module": "logique",
   "theme": "100% Logique · 3",
-  "description": "énigmes du plus facile (95 %) au plus dur (3 %)",
+  "description": "énigmes de 50 % (moyennes) à 2 % (très dures)",
   "questions": [
     {
-      "text": "Complète la suite :\n10, 20, 30, 40, ?",
-      "answer": "50",
-      "percent": 95
-    },
-    {
-      "text": "Quelle lettre manque ?\nJ, F, M, A, M, J, J, A, S, O, ?, D",
-      "answer": "N",
-      "percent": 80,
-      "explain": "Les initiales des mois : il manque Novembre."
-    },
-    {
       "text": "Complète la suite :\n0, 1, 1, 2, 3, 5, 8, ?",
-      "answer": "13",
-      "percent": 55,
+      "answer": "13/treize",
+      "percent": 50,
       "explain": "Chaque nombre est la somme des deux précédents."
     },
     {
@@ -31,24 +20,36 @@
         "NON"
       ],
       "answer": "RÊVES",
-      "percent": 50,
+      "percent": 46,
       "explain": "Les autres se lisent pareil dans les deux sens."
     },
     {
       "text": "Complète la suite :\n31, 28, 31, 30, 31, 30, ?",
-      "answer": "31",
-      "percent": 45,
+      "answer": "31/trente et un/trente-et-un",
+      "percent": 42,
       "explain": "Le nombre de jours des mois : janvier, février… juillet a 31 jours."
     },
     {
+      "text": "Quelle lettre vient ensuite ?\nA, E, I, M, Q, ?",
+      "answer": "U",
+      "explain": "On avance de 4 lettres à chaque fois : Q + 4 = U.",
+      "percent": 38
+    },
+    {
       "text": "Je suis un nombre.\nMultiplié par 3 puis augmenté de 3, je vaux 30.\nQui suis-je ?",
-      "answer": "9",
-      "percent": 35,
+      "answer": "9/neuf",
+      "percent": 34,
       "explain": "9 × 3 = 27, + 3 = 30."
     },
     {
+      "text": "Quel est le plus petit nombre entier\ndivisible à la fois par 2, 3, 4, 5 et 6 ?",
+      "answer": "60/soixante",
+      "explain": "Il doit être multiple de 4, de 3 et de 5 : 4 × 3 × 5 = 60.",
+      "percent": 30
+    },
+    {
       "text": "Complète la suite :\n2, 3, 5, 9, 17, ?",
-      "answer": "33",
+      "answer": "33/trente-trois/trente trois",
       "percent": 25,
       "explain": "On double et on retire 1 : 17 × 2 − 1 = 33."
     },
@@ -79,25 +80,25 @@
     {
       "text": "Je suis un nombre à deux chiffres.\nLa somme de mes chiffres fait 11.\nÉcrit à l'envers, je vaux 9 de plus.\nQui suis-je ?",
       "answer": "56",
-      "percent": 12,
+      "percent": 11,
       "explain": "56 → 65 = 56 + 9, et 5 + 6 = 11."
     },
     {
       "text": "Un escargot grimpe un mur de 10 m.\nIl monte de 3 m le jour et redescend de 2 m la nuit.\nEn combien de jours atteint-il le haut ?",
-      "answer": "8",
-      "percent": 10,
+      "answer": "8/huit",
+      "percent": 7,
       "explain": "Au matin du 8e jour il est à 7 m : il atteint 10 m dans la journée."
     },
     {
       "text": "Combien de chiffres 9 écrit-on\nen écrivant tous les nombres de 1 à 100 ?",
-      "answer": "20",
-      "percent": 8,
+      "answer": "20/vingt",
+      "percent": 4,
       "explain": "9, 19… 89 (9 fois) + 90 à 99 (10 fois) + le deuxième 9 de 99."
     },
     {
       "text": "Complète la suite :\n1, 11, 21, 1211, 111221, ?",
       "answer": "312211",
-      "percent": 3,
+      "percent": 2,
       "explain": "Chaque ligne décrit la précédente : « trois 1, deux 2, un 1 » → 312211."
     }
   ]

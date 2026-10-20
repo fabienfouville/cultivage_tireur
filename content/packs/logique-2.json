@@ -2,31 +2,19 @@
   "id": "logique-2",
   "module": "logique",
   "theme": "100% Logique · 2",
-  "description": "énigmes du plus facile (90 %) au plus dur (3 %)",
+  "description": "énigmes de 50 % (moyennes) à 2 % (très dures)",
   "questions": [
     {
-      "text": "Quelle lettre vient ensuite ?\nA, C, E, G, ?",
-      "answer": "I",
-      "percent": 90,
-      "explain": "Une lettre sur deux."
-    },
-    {
-      "text": "Complète la suite :\n1, 4, 9, 16, 25, ?",
-      "answer": "36",
-      "percent": 65,
-      "explain": "Les carrés : 1×1, 2×2, 3×3… 6×6 = 36."
-    },
-    {
-      "text": "Quelle lettre vient ensuite ?\nD, L, M, M, J, V, ?",
-      "answer": "S",
-      "percent": 55,
-      "explain": "Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi."
-    },
-    {
       "text": "Combien de lettres reste-t-il dans l'alphabet\nsi on enlève les 6 voyelles (A, E, I, O, U, Y) ?",
-      "answer": "20",
+      "answer": "20/vingt",
       "percent": 50,
       "explain": "26 − 6 = 20."
+    },
+    {
+      "text": "Le fils de mon père\nqui n'est pas mon frère,\nqui est-ce ?",
+      "answer": "Moi/C'est moi/Moi-même/Moi meme",
+      "explain": "Le fils de mon père qui n'est pas mon frère… c'est moi.",
+      "percent": 46
     },
     {
       "text": "Quel nombre est l'intrus ?",
@@ -38,55 +26,67 @@
         "64"
       ],
       "answer": "48",
-      "percent": 45,
+      "percent": 42,
       "explain": "Tous les autres sont des carrés (4², 5², 6², 8²)."
+    },
+    {
+      "text": "Complète la suite :\n7, 10, 8, 11, 9, 12, ?",
+      "answer": "10/dix",
+      "explain": "On ajoute 3, on enlève 2, et ainsi de suite : 12 − 2 = 10.",
+      "percent": 38
     },
     {
       "text": "Quelle lettre vient ensuite ?\nZ, X, V, T, R, ?",
       "answer": "P",
-      "percent": 40,
+      "percent": 34,
       "explain": "On recule d'une lettre sur deux."
     },
     {
       "text": "Combien de fois la lettre S apparaît-elle dans :\n« LES SAUCISSES SÈCHENT » ?",
-      "answer": "6",
+      "answer": "6/six",
       "percent": 30,
       "explain": "LES (1) + SAUCISSES (4) + SÈCHENT (1)."
     },
     {
+      "text": "Complète la suite :\n1, 2, 6, 24, 120, ?",
+      "answer": "720/sept cent vingt/sept-cent-vingt",
+      "explain": "On multiplie par 2, puis 3, puis 4, puis 5, puis 6 : 120 × 6 = 720.",
+      "percent": 25
+    },
+    {
       "text": "Il est 21 h.\nQuelle heure sera-t-il dans 100 heures ?",
       "answer": "1 h/1h/01h/01:00/1:00/1/une heure/1 heure",
-      "percent": 25,
+      "percent": 20,
       "explain": "96 h = 4 jours pile, puis + 4 h : 1 h du matin."
     },
     {
       "text": "Un nénuphar double de surface chaque jour.\nIl recouvre tout l'étang en 30 jours.\nEn combien de jours en recouvrait-il la moitié ?",
-      "answer": "29",
-      "percent": 20,
+      "answer": "29/vingt-neuf/vingt neuf",
+      "percent": 15,
       "explain": "La veille du 30e jour, il en couvrait la moitié."
     },
     {
       "text": "Quelle lettre vient ensuite ?\nM, V, T, M, J, S, U, ?",
       "answer": "N",
-      "percent": 15,
+      "percent": 11,
       "explain": "Les planètes : Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune."
     },
     {
       "text": "Nous sommes lundi.\nQuel jour serons-nous dans 1 000 jours ?",
       "answer": "Dimanche",
-      "percent": 10,
+      "percent": 7,
       "explain": "1 000 = 142 semaines + 6 jours : lundi + 6 = dimanche."
     },
     {
       "text": "Combien de fois écrit-on le chiffre 1\nen écrivant tous les nombres de 1 à 20 ?",
-      "answer": "12",
-      "percent": 8,
+      "answer": "12/douze",
+      "percent": 4,
       "explain": "1, 10, 11 (deux fois), 12 à 19 : 1 + 1 + 2 + 8 = 12."
     },
     {
       "text": "Combien y a-t-il de carrés, de toutes tailles,\nsur un échiquier de 8 × 8 cases ?",
       "answer": "204",
-      "percent": 3,
+      "percent": 2,
       "explain": "64 + 49 + 36 + 25 + 16 + 9 + 4 + 1 = 204."
     }
   ]

@@ -2,48 +2,24 @@
   "id": "logique-6",
   "module": "logique",
   "theme": "100% Logique · 6",
-  "description": "énigmes du plus facile (90 %) au plus dur (2 %)",
+  "description": "énigmes de 50 % (moyennes) à 2 % (très dures)",
   "questions": [
-    {
-      "text": "Complète la suite :\n3, 6, 12, 24, ?",
-      "answer": "48/quarante-huit/quarante huit",
-      "percent": 90,
-      "explain": "On double à chaque fois."
-    },
-    {
-      "text": "Quelle forme est l'intrus ?",
-      "choices": [
-        "TRIANGLE",
-        "CARRÉ",
-        "CERCLE",
-        "PENTAGONE"
-      ],
-      "answer": "CERCLE",
-      "percent": 82,
-      "explain": "Le cercle n'a pas de côtés, les autres sont des polygones."
-    },
-    {
-      "text": "Alice est plus grande que Bob.\nBob est plus grand que Chloé.\nChloé est plus grande que David.\nQui est le deuxième plus petit ?",
-      "answer": "Chloé",
-      "percent": 75,
-      "explain": "Du plus petit au plus grand : David, Chloé, Bob, Alice."
-    },
     {
       "text": "Cette année, Noël (25 décembre) tombe un lundi.\nQuel jour tombera le 1er janvier suivant ?",
       "answer": "Lundi",
-      "percent": 68,
+      "percent": 50,
       "explain": "Le 1er janvier est 7 jours après le 25 décembre : même jour."
     },
     {
       "text": "Quelle lettre vient ensuite ?\nA, Z, B, Y, C, ?",
       "answer": "X",
-      "percent": 60,
+      "percent": 46,
       "explain": "Deux suites mêlées : A, B, C… et Z, Y, X…"
     },
     {
       "text": "Complète la suite :\n1, 3, 6, 10, 15, ?",
       "answer": "21/vingt et un/vingt-et-un",
-      "percent": 52,
+      "percent": 42,
       "explain": "On ajoute 2, 3, 4, 5 puis 6."
     },
     {
@@ -56,37 +32,55 @@
         "125"
       ],
       "answer": "100",
-      "percent": 42,
+      "percent": 38,
       "explain": "Les autres sont des cubes : 2×2×2, 3×3×3, 4×4×4, 5×5×5."
+    },
+    {
+      "text": "Complète la suite :\n1, 3, 7, 15, 31, ?",
+      "answer": "63/soixante-trois/soixante trois",
+      "explain": "On double et on ajoute 1 : 31 × 2 + 1 = 63.",
+      "percent": 34
+    },
+    {
+      "text": "Mon frère a 2 ans de plus que moi.\nDans 5 ans, nos deux âges additionnés feront 30 ans.\nQuel âge ai-je aujourd'hui ?",
+      "answer": "9/neuf/9 ans/neuf ans",
+      "explain": "Aujourd'hui 9 et 11 ans ; dans 5 ans 14 + 16 = 30.",
+      "percent": 30
+    },
+    {
+      "text": "Avant-hier, c'était le lendemain de lundi.\nQuel jour sommes-nous ?",
+      "answer": "Jeudi",
+      "explain": "Le lendemain de lundi est mardi : si avant-hier était mardi, aujourd'hui c'est jeudi.",
+      "percent": 25
     },
     {
       "text": "Une clôture droite mesure 20 m.\nOn plante un poteau tous les 2 m,\ny compris aux deux extrémités.\nCombien de poteaux faut-il ?",
       "answer": "11/onze",
-      "percent": 33,
+      "percent": 20,
       "explain": "20 ÷ 2 = 10 intervalles, donc 11 poteaux."
     },
     {
       "text": "Pour monter du 1er au 3e étage, il y a 40 marches.\nCombien de marches pour monter du 1er au 5e étage ?",
       "answer": "80/quatre-vingts/quatre vingts/quatre-vingt/quatre vingt",
-      "percent": 25,
+      "percent": 15,
       "explain": "Du 1er au 3e = 2 étages, soit 20 marches par étage ; du 1er au 5e = 4 étages = 80."
     },
     {
       "text": "Le médecin te donne 3 pilules :\nune à prendre toutes les demi-heures.\nCombien de minutes vont-elles te durer ?",
       "answer": "60/60 min/60 minutes/soixante/1 h/1h/une heure/1 heure",
-      "percent": 18,
+      "percent": 11,
       "explain": "Une tout de suite, une à 30 minutes, la dernière à 60 minutes."
     },
     {
       "text": "Quelle lettre apparaît une fois dans MINUTE,\ndeux fois dans MOMENT\net jamais dans SECONDE ?",
       "answer": "M",
-      "percent": 12,
+      "percent": 7,
       "explain": "La lettre M."
     },
     {
       "text": "Un cube de 3 × 3 × 3 est peint en rouge à l'extérieur,\npuis découpé en 27 petits cubes.\nCombien de petits cubes ont exactement 2 faces peintes ?",
       "answer": "12/douze",
-      "percent": 6,
+      "percent": 4,
       "explain": "Ce sont les cubes du milieu de chaque arête : un cube a 12 arêtes."
     },
     {

@@ -2,68 +2,54 @@
   "id": "logique-4",
   "module": "logique",
   "theme": "100% Logique · 4",
-  "description": "énigmes du plus facile (92 %) au plus dur (2 %)",
+  "description": "énigmes de 50 % (moyennes) à 2 % (très dures)",
   "questions": [
-    {
-      "text": "Complète la suite :\n1, 3, 5, 7, 9, ?",
-      "answer": "11/onze",
-      "percent": 92,
-      "explain": "Les nombres impairs : on ajoute 2."
-    },
-    {
-      "text": "LUNDI est à MARDI\nce que JANVIER est à ?",
-      "answer": "Février",
-      "percent": 85,
-      "explain": "Le suivant : mardi suit lundi, février suit janvier."
-    },
-    {
-      "text": "Quelle lettre est l'intrus ?",
-      "choices": [
-        "A",
-        "E",
-        "I",
-        "K",
-        "O",
-        "U"
-      ],
-      "answer": "K",
-      "percent": 80,
-      "explain": "Toutes les autres sont des voyelles."
-    },
-    {
-      "text": "Dans une cour, il y a 3 chats et 2 poules.\nCombien de pattes en tout ?",
-      "answer": "16/seize",
-      "percent": 72,
-      "explain": "3 × 4 + 2 × 2 = 12 + 4 = 16."
-    },
-    {
-      "text": "Je suis un nombre pair entre 20 et 30.\nJe suis multiple de 3 et de 4.\nQui suis-je ?",
-      "answer": "24/vingt-quatre/vingt quatre",
-      "percent": 65,
-      "explain": "Multiple de 3 et de 4 = multiple de 12 : le seul entre 20 et 30 est 24."
-    },
     {
       "text": "Quelle lettre vient ensuite ?\nA, B, D, G, K, ?",
       "answer": "P",
-      "percent": 55,
+      "percent": 50,
       "explain": "On avance de 1, 2, 3, 4 puis 5 lettres : K + 5 = P."
     },
     {
       "text": "Pierre a 3 sœurs.\nChaque sœur a un seul frère.\nCombien d'enfants y a-t-il dans la famille ?",
       "answer": "4/quatre",
-      "percent": 45,
+      "percent": 46,
       "explain": "Le frère unique des sœurs, c'est Pierre : 3 filles + Pierre = 4."
+    },
+    {
+      "text": "Complète la suite :\n1, 2, 4, 7, 11, 16, ?",
+      "answer": "22/vingt-deux/vingt deux",
+      "explain": "On ajoute 1, puis 2, puis 3, puis 4, puis 5, puis 6 : 16 + 6 = 22.",
+      "percent": 42
+    },
+    {
+      "text": "Un train part à 23 h 40\net roule pendant 2 h 50.\nÀ quelle heure arrive-t-il ?",
+      "answer": "2 h 30/2h30/2h 30/2 h30/2:30/02:30/02h30/2 h 30 min/2h30min/deux heures trente/deux heures et demie/2 heures 30",
+      "explain": "23 h 40 + 20 min = minuit, puis encore 2 h 30 : il arrive à 2 h 30.",
+      "percent": 38
+    },
+    {
+      "text": "Pense à un nombre. Double-le, ajoute 6,\ndivise par 2, puis enlève le nombre de départ.\nCombien obtiens-tu ?",
+      "answer": "3/trois",
+      "explain": "(2x + 6) ÷ 2 − x = x + 3 − x = 3, quel que soit le nombre.",
+      "percent": 34
     },
     {
       "text": "Quelle lettre vient ensuite ?\nD, R, M, F, S, L, ?",
       "answer": "S",
-      "percent": 35,
+      "percent": 30,
       "explain": "Les notes de musique : Do, Ré, Mi, Fa, Sol, La, Si."
+    },
+    {
+      "text": "Un père a 40 ans, son fils 10 ans.\nDans combien d'années le père aura-t-il\nexactement le double de l'âge de son fils ?",
+      "answer": "20/vingt/20 ans/vingt ans",
+      "explain": "Dans 20 ans : le père aura 60 ans et le fils 30 ans.",
+      "percent": 25
     },
     {
       "text": "Il faut 10 minutes pour scier une bûche en 2 morceaux.\nCombien de minutes faut-il pour la scier en 4 morceaux ?",
       "answer": "30/30 min/30 minutes/trente/trente minutes",
-      "percent": 25,
+      "percent": 20,
       "explain": "2 morceaux = 1 coupe ; 4 morceaux = 3 coupes de 10 minutes."
     },
     {
@@ -81,14 +67,20 @@
     {
       "text": "Combien de lettres DIFFÉRENTES\ndans le mot ANTICONSTITUTIONNELLEMENT ?",
       "answer": "11/onze",
-      "percent": 10,
+      "percent": 11,
       "explain": "A, C, E, I, L, M, N, O, S, T, U : 11 lettres différentes."
     },
     {
       "text": "Dans une famille, chaque fille a autant de frères que de sœurs.\nChaque garçon a deux fois plus de sœurs que de frères.\nCombien d'enfants y a-t-il ?",
       "answer": "7/sept",
-      "percent": 5,
+      "percent": 7,
       "explain": "4 filles et 3 garçons : une fille a 3 sœurs et 3 frères, un garçon a 2 frères et 4 sœurs."
+    },
+    {
+      "text": "Il est 3 h 15.\nQuel angle font les deux aiguilles\nde l'horloge (en degrés) ?",
+      "answer": "7,5/7.5/7,5°/7.5°/7,5 degres/7.5 degres/sept et demi/7 degres et demi",
+      "explain": "La grande aiguille est sur le 3 (90°), mais la petite a déjà fait un quart du chemin vers le 4 : 30° ÷ 4 = 7,5°.",
+      "percent": 4
     },
     {
       "text": "Complète la suite :\n61, 52, 63, 94, 46, ?",

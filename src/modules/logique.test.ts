@@ -26,3 +26,24 @@ describe("À l'échelle", () => {
     expect(relativeError(2, 1)).toBeCloseTo(relativeError(0.5, 1))
   })
 })
+
+describe('packs 100% Logique', async () => {
+  const { readdirSync, readFileSync } = await import('node:fs')
+  const { normalize } = await import('../lib/normalize')
+  const dir = new URL('../../content/packs/', import.meta.url)
+  const packs = readdirSync(dir)
+    .filter((f) => f.startsWith('logique-'))
+    .map((f) => JSON.parse(readFileSync(new URL(f, dir), 'utf8')))
+  for (const p of packs) {
+    it(`${p.id} : réponses utilisables, de 50 % à 2 %`, () => {
+      for (const q of p.questions) {
+        const where = `${p.id} › ${q.text}`
+        expect(q.percent, where).toBeLessThanOrEqual(50)
+        // Une variante vide (ex. « un ») ne pourrait jamais être trouvée
+        for (const v of String(q.answer).split('/')) expect(normalize(v), `${where} : « ${v} »`).not.toBe('')
+        if (q.choices?.length) expect(q.choices.some((c: string) => isRight(q, { choice: q.choices.indexOf(c) })), where).toBe(true)
+        else expect(isRight(q, { text: String(q.answer).split('/')[0] }), where).toBe(true)
+      }
+    })
+  }
+})
