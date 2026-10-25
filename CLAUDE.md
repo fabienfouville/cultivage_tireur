@@ -19,7 +19,8 @@ Pas de serveur ni de Cloud Functions. Tout le texte visible est en français.
   contenir de point, et un ancien fichier JS disparu renvoie bien une 404 (l'app recharge alors la page). Chaque build
   publie `/version.json` : les pages ouvertes proposent de recharger quand une nouvelle version est en ligne.
 - Quota gratuit Firestore : 50 000 lectures / 20 000 écritures par jour. Chaque document lu ou reçu en temps réel
-  compte : éviter de lire des collections entières pendant une partie (voir `sampleQuestions` dans le moteur).
+  compte : éviter de lire des collections entières pendant une partie. « Toutes les questions » lit la banque du jeu une
+  fois par appareil puis la garde 30 min en mémoire (`sampleQuestions` dans le moteur).
 
 ## Organisation
 

@@ -187,11 +187,13 @@ export interface BlockOptions {
 export async function pickQuestions(themeId: string, module: ModuleKey, count: number, order: 'keep' | 'random') {
   const all = themeId === ALL_THEMES
   let qs = all
-    ? await sampleQuestions(module, count)
+    ? await sampleQuestions(module)
     : (await getDocs(query(collection(db, 'questions'), where('themeId', '==', themeId)))).docs.map(
         (d) => ({ id: d.id, ...d.data() }) as Question & { played?: number; createdAt?: any },
       )
   const mod = getModule(module)
+  // Copie mélangée : à difficulté égale (100% Logique), on ne reprend pas toujours les mêmes questions
+  if (all) qs = qs.map((q) => ({ q, r: Math.random() + (q.played ?? 0) })).sort((a, b) => a.r - b.r).map((x) => x.q)
   // Toutes les questions : mélangées, sauf pour les jeux à difficulté croissante (100% Logique)
   if (mod.orderBy || (!all && (order === 'keep' || mod.ordered))) {
     const created = (q: any) => q.createdAt?.toMillis?.() ?? (typeof q.createdAt === 'string' ? Date.parse(q.createdAt) : 0)
@@ -208,24 +210,27 @@ export async function pickQuestions(themeId: string, module: ModuleKey, count: n
       .sort((a, b) => a.r - b.r)
       .map((x) => x.q)
   }
-  return qs.slice(0, Math.max(1, count))
+  const picked = qs.slice(0, Math.max(1, count))
+  // Banque gardée en mémoire : on note tout de suite ces questions comme jouées pour les prochains tirages
+  if (all) picked.forEach((q) => (q.played = (q.played ?? 0) + 1))
+  return picked
 }
 
+type Banked = Question & { played?: number; createdAt?: any }
 /**
- * Toutes les questions d'un jeu, sans tout lire : chaque question lue compte dans le quota gratuit de Firestore
- * (50 000 lectures par jour) et le QCM en a près d'un millier. On lit des thèmes tirés au sort, quelques-uns à la fois,
- * jusqu'à avoir largement de quoi choisir (3 fois le nombre de questions demandé).
+ * Toutes les questions d'un jeu, pour un tirage vraiment au hasard dans toute la banque.
+ * Chaque question lue compte dans le quota gratuit de Firestore (50 000 lectures par jour) et le QCM en a près
+ * d'un millier : la banque est lue une fois par appareil, puis gardée en mémoire 30 minutes.
  */
-async function sampleQuestions(module: ModuleKey, count: number) {
-  const themes = await getDocs(query(collection(db, 'themes'), where('module', '==', bankOf(module))))
-  const ids = themes.docs.map((d) => d.id).sort(() => Math.random() - 0.5)
-  const want = Math.max(count * 3, 30)
-  const out: Array<Question & { played?: number; createdAt?: any }> = []
-  for (let i = 0; i < ids.length && out.length < want; i += 3) {
-    const snap = await getDocs(query(collection(db, 'questions'), where('themeId', 'in', ids.slice(i, i + 3))))
-    out.push(...snap.docs.map((d) => ({ id: d.id, ...d.data() }) as Question & { played?: number; createdAt?: any }))
-  }
-  return out
+const bankCache = new Map<string, { at: number; questions: Banked[] }>()
+async function sampleQuestions(module: ModuleKey): Promise<Banked[]> {
+  const key = bankOf(module)
+  const cached = bankCache.get(key)
+  if (cached && Date.now() - cached.at < 30 * 60_000) return cached.questions
+  const snap = await getDocs(query(collection(db, 'questions'), where('module', '==', key)))
+  const questions = snap.docs.map((d) => ({ id: d.id, ...d.data() }) as Banked)
+  bankCache.set(key, { at: Date.now(), questions })
+  return questions
 }
 
 /**
