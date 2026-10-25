@@ -1,0 +1,8 @@
+Images du jeu « À l'échelle » (détourées et recadrées pour le jeu, usage privé non commercial)
+
+- Animaux, dinosaures, humain, tour Eiffel, statue de la Liberté, Empire State Building, bus, Airbus A380,
+  Titanic, cargo, TGV, ISS, paquebot : pngimg.com, licence CC BY-NC 4.0 (https://pngimg.com/license)
+- Pokémon : illustrations officielles © Nintendo / Creatures / GAME FREAK, via PokéAPI (github.com/PokeAPI/sprites)
+- Tour de Pise, Christ Rédempteur, Arc de Triomphe, Big Ben, Hindenburg, Saturn V, Burj Khalifa, London Eye,
+  porte-avions Charles-de-Gaulle : photos Wikimedia Commons (licences libres, voir les fichiers d'origine sur
+  commons.wikimedia.org), détourage automatique

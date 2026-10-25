@@ -11,7 +11,11 @@
       "refEmoji": "🧍",
       "targetName": "Tyrannosaurus rex",
       "answer": 12,
-      "targetEmoji": "🦖"
+      "targetEmoji": "🦖",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/trex.webp"
     },
     {
       "text": "Quelle hauteur faisait un Brachiosaure (tête dressée) ?",
@@ -20,7 +24,11 @@
       "refEmoji": "🧍",
       "targetName": "Brachiosaure",
       "answer": 13,
-      "targetEmoji": "🦕"
+      "targetEmoji": "🦕",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/brachiosaure.webp"
     },
     {
       "text": "Quelle longueur faisait un Diplodocus ?",
@@ -29,7 +37,11 @@
       "refEmoji": "🧍",
       "targetName": "Diplodocus",
       "answer": 25,
-      "targetEmoji": "🦕"
+      "targetEmoji": "🦕",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/diplodocus.webp"
     },
     {
       "text": "Quelle longueur faisait un Tricératops ?",
@@ -38,7 +50,11 @@
       "refEmoji": "🧍",
       "targetName": "Tricératops",
       "answer": 9,
-      "targetEmoji": "🦏"
+      "targetEmoji": "🦏",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/triceratops.webp"
     },
     {
       "text": "Quelle longueur faisait un Stégosaure ?",
@@ -47,7 +63,11 @@
       "refEmoji": "🧍",
       "targetName": "Stégosaure",
       "answer": 9,
-      "targetEmoji": "🦎"
+      "targetEmoji": "🦎",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/stegosaure.webp"
     },
     {
       "text": "Quelle longueur faisait un Vélociraptor ?",
@@ -56,7 +76,11 @@
       "refEmoji": "🧍",
       "targetName": "Vélociraptor",
       "answer": 2,
-      "targetEmoji": "🦖"
+      "targetEmoji": "🦖",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/velociraptor.webp"
     },
     {
       "text": "Quelle longueur faisait un Spinosaure ?",
@@ -65,7 +89,11 @@
       "refEmoji": "🧍",
       "targetName": "Spinosaure",
       "answer": 15,
-      "targetEmoji": "🐊"
+      "targetEmoji": "🐊",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/spinosaure.webp"
     },
     {
       "text": "Quelle longueur faisait un Argentinosaure, l'un des plus grands dinosaures connus ?",
@@ -74,7 +102,11 @@
       "refEmoji": "🧍",
       "targetName": "Argentinosaure",
       "answer": 35,
-      "targetEmoji": "🦕"
+      "targetEmoji": "🦕",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/argentinosaure.webp"
     },
     {
       "text": "Quelle longueur faisait un Compsognathus ?",
@@ -83,16 +115,24 @@
       "refEmoji": "🧍",
       "targetName": "Compsognathus",
       "answer": 1,
-      "targetEmoji": "🦎"
+      "targetEmoji": "🦎",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/compsognathus.webp"
     },
     {
-      "text": "Quelle longueur faisait un Iguanodon ?",
+      "text": "Quelle longueur faisait un Ankylosaure (de la tête à la massue de la queue) ?",
       "refName": "Un humain",
       "refHeight": 1.75,
       "refEmoji": "🧍",
-      "targetName": "Iguanodon",
-      "answer": 10,
-      "targetEmoji": "🦖"
+      "targetName": "Ankylosaure",
+      "answer": 7,
+      "targetEmoji": "🦕",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/ankylosaure.webp"
     }
   ]
 }

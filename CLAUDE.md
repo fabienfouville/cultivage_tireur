@@ -75,7 +75,9 @@ Champs par module (voir `questionFields` de chaque module) :
 qcm `answers[4]` + `correct` (+ `answerHint` variantes pour le Cash du Duo/Carré ; les anciens `choices`/`correctIndex`
 sont encore lus) · logique `text` (multiligne), `answer` (variantes `/`), `choices[]` optionnel, `percent` (% qui trouvent),
 `explain` · chronologie `events[]` du plus ancien au plus récent + `dates[]` alignées · quisuisje `clues[5]` du plus dur
-au plus facile + `answerHint` (variantes `/`) · echelle `refName`, `refHeight` (m), `refEmoji`, `targetName`, `answer` (m), `targetEmoji` (tailles officielles) ·
+au plus facile + `answerHint` (variantes `/`) · echelle `refName`, `refHeight` (m), `refEmoji`, `targetName`, `answer` (m), `targetEmoji` (tailles officielles),
+`refImage`/`targetImage` (images détourées et recadrées au plus près dans `public/echelle/*.webp`, crédits dans
+`public/echelle/CREDITS.txt`), `refLength`/`targetLength` (true si la taille est une longueur, sinon une hauteur) ·
 cash/pixel `answerHint` (variantes séparées par `/`) + `imageUrl` pour pixel · vf-survie `correct` (bool), `order` ·
 estimation `answer` (nombre), `unit` · theme `answerHint` (exemples) · top `answers[]` du n°1 au dernier ·
 geoloc `lat`, `lng`, `answerHint`, `isoNum` (code ISO numérique si la réponse est un pays), `mapId` du pack ·

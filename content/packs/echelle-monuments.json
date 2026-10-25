@@ -11,7 +11,11 @@
       "refEmoji": "🗼",
       "targetName": "Statue de la Liberté",
       "answer": 93,
-      "targetEmoji": "🗽"
+      "targetEmoji": "🗽",
+      "refLength": false,
+      "refImage": "/echelle/eiffel.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/liberte.webp"
     },
     {
       "text": "Quelle hauteur fait le Burj Khalifa, la plus haute tour du monde ?",
@@ -20,7 +24,11 @@
       "refEmoji": "🗼",
       "targetName": "Burj Khalifa",
       "answer": 828,
-      "targetEmoji": "🏙️"
+      "targetEmoji": "🏙️",
+      "refLength": false,
+      "refImage": "/echelle/eiffel.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/burj.webp"
     },
     {
       "text": "Quelle hauteur fait l'Arc de Triomphe ?",
@@ -29,7 +37,11 @@
       "refEmoji": "🗼",
       "targetName": "Arc de Triomphe",
       "answer": 50,
-      "targetEmoji": "🏛️"
+      "targetEmoji": "🏛️",
+      "refLength": false,
+      "refImage": "/echelle/eiffel.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/arc.webp"
     },
     {
       "text": "Quelle hauteur fait la tour de Big Ben ?",
@@ -38,7 +50,11 @@
       "refEmoji": "🗼",
       "targetName": "Big Ben",
       "answer": 96,
-      "targetEmoji": "🕰️"
+      "targetEmoji": "🕰️",
+      "refLength": false,
+      "refImage": "/echelle/eiffel.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/bigben.webp"
     },
     {
       "text": "Quelle hauteur fait la tour de Pise ?",
@@ -47,7 +63,11 @@
       "refEmoji": "🗼",
       "targetName": "Tour de Pise",
       "answer": 56,
-      "targetEmoji": "🗼"
+      "targetEmoji": "🗼",
+      "refLength": false,
+      "refImage": "/echelle/eiffel.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/pise.webp"
     },
     {
       "text": "Quelle hauteur fait l'Empire State Building (sans l'antenne) ?",
@@ -56,7 +76,11 @@
       "refEmoji": "🗼",
       "targetName": "Empire State Building",
       "answer": 381,
-      "targetEmoji": "🏢"
+      "targetEmoji": "🏢",
+      "refLength": false,
+      "refImage": "/echelle/eiffel.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/empire.webp"
     },
     {
       "text": "Quelle hauteur fait la statue du Christ Rédempteur de Rio (sans le socle) ?",
@@ -65,7 +89,11 @@
       "refEmoji": "🗼",
       "targetName": "Christ Rédempteur",
       "answer": 30,
-      "targetEmoji": "🙏"
+      "targetEmoji": "🙏",
+      "refLength": false,
+      "refImage": "/echelle/eiffel.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/christ.webp"
     }
   ]
 }

@@ -2,7 +2,7 @@
  * Vérifie tous les packs de content/packs/ : bon format pour chaque module, pas de doublons,
  * coordonnées et pays cohérents. À lancer après avoir ajouté un pack : `npm test`.
  */
-import { readdirSync, readFileSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { distanceToCountryKm } from './lib/geo'
 import { normalize } from './lib/normalize'
@@ -59,6 +59,13 @@ describe('packs de contenu', () => {
         // Qui suis-je ? et Chronologie répètent la même consigne : ce sont les indices / événements qui comptent
         const texts = pack.questions.map((q) => normalize(String(q.text) + ' ' + JSON.stringify(q.clues ?? q.events ?? '')))
         expect(new Set(texts).size).toBe(texts.length)
+      })
+
+      it('les images du site citées existent (public/)', () => {
+        for (const q of pack.questions)
+          for (const v of Object.values(q))
+            if (typeof v === 'string' && /^\/[\w/-]+\.(webp|png|jpe?g|svg)$/.test(v))
+              expect(existsSync(new URL('../public' + v, import.meta.url)), `${pack.id} › ${v}`).toBe(true)
       })
 
       if (pack.module === 'geoloc') {

@@ -28,8 +28,10 @@ export const echelle: ModuleDef = {
     { key: 'targetName', label: 'À deviner (nom)', type: 'text', placeholder: 'Pikachu' },
     { key: 'answer', label: 'Vraie taille (m)', type: 'number' },
     { key: 'targetEmoji', label: 'Émoji de ce qu’il faut deviner', type: 'text', placeholder: '⚡' },
-    { key: 'refImage', label: 'Image de la référence (optionnelle)', type: 'image', optional: true },
-    { key: 'targetImage', label: 'Image à deviner (optionnelle)', type: 'image', optional: true },
+    { key: 'refImage', label: 'Image de la référence (fond transparent, recadrée au plus près)', type: 'image', optional: true },
+    { key: 'refLength', label: 'La taille de la référence est une longueur (sinon une hauteur)', type: 'bool' },
+    { key: 'targetImage', label: 'Image à deviner (fond transparent, recadrée au plus près)', type: 'image', optional: true },
+    { key: 'targetLength', label: 'La taille à deviner est une longueur (sinon une hauteur)', type: 'bool' },
   ],
   summary: (q) => `${q.targetName} : ${formatMeters(Number(q.answer))} (réf. ${q.refName} ${formatMeters(Number(q.refHeight))})`,
   publicPayload: (q) => ({
@@ -38,8 +40,12 @@ export const echelle: ModuleDef = {
     refHeight: Number(q.refHeight),
     refEmoji: q.refEmoji || '🧍',
     refImage: q.refImage || null,
+    refLength: !!q.refLength,
     targetName: q.targetName,
     targetEmoji: q.targetEmoji || '❓',
+    // L'image ne dit rien de la taille : elle est montrée pendant la question, à la taille proposée par le joueur
+    targetImage: q.targetImage || null,
+    targetLength: !!q.targetLength,
   }),
   solution: (q) => ({ meters: Number(q.answer), label: `${q.targetName} : ${formatMeters(Number(q.answer))}`, targetImage: q.targetImage || null }),
   score: ({ q, answers, cfg }) => {
@@ -69,8 +75,14 @@ export const echelle: ModuleDef = {
         <ScaleScene
           height={260}
           figures={[
-            { label: p.refName, meters: ref, emoji: p.refEmoji, image: p.refImage ?? undefined },
-            { label: revealed ? p.targetName : `${p.targetName} ?`, meters: shown, emoji: p.targetEmoji, image: revealed ? round.solution?.targetImage ?? undefined : undefined },
+            { label: p.refName, meters: ref, emoji: p.refEmoji, image: p.refImage ?? undefined, length: p.refLength },
+            {
+              label: revealed ? p.targetName : `${p.targetName} ?`,
+              meters: shown,
+              emoji: p.targetEmoji,
+              image: p.targetImage ?? (revealed ? round.solution?.targetImage : undefined) ?? undefined,
+              length: p.targetLength,
+            },
           ]}
           marks={revealed && answer ? [{ meters: answer.data.value, label: 'Toi', color: CHOICE_COLORS[0] }] : []}
         />
@@ -123,12 +135,13 @@ export const echelle: ModuleDef = {
           height={480}
           unknownMeters={Number(p.refHeight)}
           figures={[
-            { label: p.refName, meters: Number(p.refHeight), emoji: p.refEmoji, image: p.refImage ?? undefined },
+            { label: p.refName, meters: Number(p.refHeight), emoji: p.refEmoji, image: p.refImage ?? undefined, length: p.refLength },
             {
               label: p.targetName,
               meters: revealed ? round.solution?.meters : null,
               emoji: p.targetEmoji,
-              image: revealed ? round.solution?.targetImage ?? undefined : undefined,
+              image: p.targetImage ?? (revealed ? round.solution?.targetImage : undefined) ?? undefined,
+              length: p.targetLength,
             },
           ]}
           marks={revealed ? guesses.slice(0, 6).map((g, i) => ({ meters: g.value, label: names[g.pid] ?? '?', color: CHOICE_COLORS[i % 4] })) : []}

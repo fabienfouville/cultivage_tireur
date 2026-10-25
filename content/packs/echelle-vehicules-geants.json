@@ -11,7 +11,11 @@
       "refEmoji": "🚌",
       "targetName": "Airbus A380",
       "answer": 72.7,
-      "targetEmoji": "✈️"
+      "targetEmoji": "✈️",
+      "refLength": true,
+      "refImage": "/echelle/bus.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/a380.webp"
     },
     {
       "text": "Quelle longueur faisait le Titanic ?",
@@ -20,7 +24,11 @@
       "refEmoji": "✈️",
       "targetName": "Titanic",
       "answer": 269,
-      "targetEmoji": "🚢"
+      "targetEmoji": "🚢",
+      "refLength": true,
+      "refImage": "/echelle/a380.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/titanic.webp"
     },
     {
       "text": "Quelle longueur fait l'Ever Given, le porte-conteneurs bloqué dans le canal de Suez en 2021 ?",
@@ -29,7 +37,11 @@
       "refEmoji": "🚢",
       "targetName": "Ever Given",
       "answer": 400,
-      "targetEmoji": "🛳️"
+      "targetEmoji": "🛳️",
+      "refLength": true,
+      "refImage": "/echelle/titanic.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/evergiven.webp"
     },
     {
       "text": "Quelle hauteur faisait la fusée Saturn V des missions Apollo ?",
@@ -38,7 +50,11 @@
       "refEmoji": "🗽",
       "targetName": "Saturn V",
       "answer": 110.6,
-      "targetEmoji": "🚀"
+      "targetEmoji": "🚀",
+      "refLength": false,
+      "refImage": "/echelle/liberte.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/saturnv.webp"
     },
     {
       "text": "Quelle longueur fait une rame de TGV Duplex ?",
@@ -47,7 +63,11 @@
       "refEmoji": "🚌",
       "targetName": "TGV Duplex",
       "answer": 200,
-      "targetEmoji": "🚄"
+      "targetEmoji": "🚄",
+      "refLength": true,
+      "refImage": "/echelle/bus.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/tgv.webp"
     },
     {
       "text": "Quelle hauteur fait la grande roue London Eye ?",
@@ -56,7 +76,11 @@
       "refEmoji": "🗽",
       "targetName": "London Eye",
       "answer": 135,
-      "targetEmoji": "🎡"
+      "targetEmoji": "🎡",
+      "refLength": false,
+      "refImage": "/echelle/liberte.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/londoneye.webp"
     },
     {
       "text": "Quelle longueur faisait le dirigeable Hindenburg ?",
@@ -65,16 +89,24 @@
       "refEmoji": "✈️",
       "targetName": "Hindenburg",
       "answer": 245,
-      "targetEmoji": "🎈"
+      "targetEmoji": "🎈",
+      "refLength": true,
+      "refImage": "/echelle/a380.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/hindenburg.webp"
     },
     {
-      "text": "Quelle hauteur fait la pelleteuse géante Bagger 288 ?",
-      "refName": "La statue de la Liberté (socle compris)",
-      "refHeight": 93,
-      "refEmoji": "🗽",
-      "targetName": "Bagger 288",
-      "answer": 96,
-      "targetEmoji": "🏗️"
+      "text": "Quelle longueur fait le Symphony of the Seas, l’un des plus grands paquebots du monde ?",
+      "refName": "Le Titanic",
+      "refHeight": 269,
+      "refEmoji": "🚢",
+      "targetName": "Symphony of the Seas",
+      "answer": 362,
+      "targetEmoji": "🛳️",
+      "refLength": true,
+      "refImage": "/echelle/titanic.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/paquebot.webp"
     },
     {
       "text": "Quelle longueur fait le porte-avions Charles-de-Gaulle ?",
@@ -83,16 +115,24 @@
       "refEmoji": "🚢",
       "targetName": "Charles-de-Gaulle",
       "answer": 261.5,
-      "targetEmoji": "⚓"
+      "targetEmoji": "⚓",
+      "refLength": true,
+      "refImage": "/echelle/titanic.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/cdg.webp"
     },
     {
       "text": "Quelle envergure fait la Station spatiale internationale (ISS) ?",
-      "refName": "Un Airbus A380 (envergure)",
-      "refHeight": 79.8,
+      "refName": "Un Airbus A380 (longueur)",
+      "refHeight": 72.7,
       "refEmoji": "✈️",
       "targetName": "ISS",
       "answer": 109,
-      "targetEmoji": "🛰️"
+      "targetEmoji": "🛰️",
+      "refLength": true,
+      "refImage": "/echelle/a380.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/iss.webp"
     }
   ]
 }

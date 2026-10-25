@@ -11,7 +11,11 @@
       "refEmoji": "🧍",
       "targetName": "Girafe",
       "answer": 5.5,
-      "targetEmoji": "🦒"
+      "targetEmoji": "🦒",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/girafe.webp"
     },
     {
       "text": "Quelle hauteur fait un éléphant d'Afrique (au garrot) ?",
@@ -20,7 +24,11 @@
       "refEmoji": "🧍",
       "targetName": "Éléphant d'Afrique",
       "answer": 3.3,
-      "targetEmoji": "🐘"
+      "targetEmoji": "🐘",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/elephant.webp"
     },
     {
       "text": "Quelle hauteur fait une autruche adulte ?",
@@ -29,7 +37,11 @@
       "refEmoji": "🧍",
       "targetName": "Autruche",
       "answer": 2.5,
-      "targetEmoji": "🐦"
+      "targetEmoji": "🐦",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/autruche.webp"
     },
     {
       "text": "Quelle hauteur fait un manchot empereur ?",
@@ -38,16 +50,24 @@
       "refEmoji": "🧍",
       "targetName": "Manchot empereur",
       "answer": 1.15,
-      "targetEmoji": "🐧"
+      "targetEmoji": "🐧",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/manchot.webp"
     },
     {
-      "text": "Quelle taille fait un gorille mâle debout ?",
+      "text": "Jusqu’à quelle taille un kangourou roux mâle se dresse-t-il debout ?",
       "refName": "Un humain",
       "refHeight": 1.75,
       "refEmoji": "🧍",
-      "targetName": "Gorille",
-      "answer": 1.7,
-      "targetEmoji": "🦍"
+      "targetName": "Kangourou roux",
+      "answer": 1.8,
+      "targetEmoji": "🦘",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/kangourou.webp"
     },
     {
       "text": "Quelle hauteur fait un chat (au garrot) ?",
@@ -56,7 +76,11 @@
       "refEmoji": "🧍",
       "targetName": "Chat",
       "answer": 0.25,
-      "targetEmoji": "🐈"
+      "targetEmoji": "🐈",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/chat.webp"
     },
     {
       "text": "Quelle longueur fait un crocodile marin adulte ?",
@@ -65,7 +89,11 @@
       "refEmoji": "🧍",
       "targetName": "Crocodile marin",
       "answer": 5,
-      "targetEmoji": "🐊"
+      "targetEmoji": "🐊",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/crocodile.webp"
     },
     {
       "text": "Quelle longueur fait une baleine bleue adulte ?",
@@ -74,7 +102,11 @@
       "refEmoji": "🧍",
       "targetName": "Baleine bleue",
       "answer": 25,
-      "targetEmoji": "🐋"
+      "targetEmoji": "🐋",
+      "refLength": false,
+      "refImage": "/echelle/humain.webp",
+      "targetLength": true,
+      "targetImage": "/echelle/baleine.webp"
     }
   ]
 }
