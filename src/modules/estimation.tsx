@@ -4,6 +4,18 @@ import type { ModuleDef } from './types'
 
 const fmt = (n: unknown) => (typeof n === 'number' ? n.toLocaleString('fr-FR') : String(n ?? '?'))
 
+/** Saisie lisible : « 1234567,5 » s'affiche « 1 234 567,5 » pendant la frappe */
+export function formatTyping(raw: string): string {
+  const neg = raw.trim().startsWith('-') ? '-' : ''
+  const cleaned = raw.replace(/[^\d,.]/g, '')
+  const sep = cleaned.search(/[,.]/)
+  const int = (sep < 0 ? cleaned : cleaned.slice(0, sep)).replace(/\D/g, '')
+  const dec = sep < 0 ? null : cleaned.slice(sep + 1).replace(/\D/g, '')
+  const grouped = int.replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
+  return neg + grouped + (dec != null ? ',' + dec : '')
+}
+export const parseTyping = (v: string) => Number(v.replace(/\s/g, '').replace(',', '.'))
+
 export const estimation: ModuleDef = {
   key: 'estimation',
   name: 'Estimation',
@@ -32,9 +44,9 @@ export const estimation: ModuleDef = {
     return { results, summary: { ranking: ranked.map((r) => ({ pid: r.pid, value: r.value, rank: r.rank })) } }
   },
   Player: ({ round, answer, submit, locked }) => {
-    const [v, setV] = useState<string>(answer?.data.value != null ? String(answer.data.value) : '')
+    const [v, setV] = useState<string>(answer?.data.value != null ? formatTyping(String(answer.data.value).replace('.', ',')) : '')
     const revealed = round.status === 'revealed'
-    const parsed = Number(v.replace(/\s/g, '').replace(',', '.'))
+    const parsed = parseTyping(v)
     return (
       <>
         <QuestionText>{round.public.text}</QuestionText>
@@ -55,7 +67,7 @@ export const estimation: ModuleDef = {
               <input
                 inputMode="decimal"
                 value={v}
-                onChange={(e) => setV(e.target.value)}
+                onChange={(e) => setV(formatTyping(e.target.value))}
                 placeholder="Ton estimation"
                 disabled={locked}
               />

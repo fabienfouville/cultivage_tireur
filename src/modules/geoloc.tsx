@@ -23,7 +23,7 @@ export const geoloc: ModuleDef = {
   name: 'Géoloc',
   icon: '🗺️',
   tagline: 'Ping sur la carte',
-  rules: 'Place ton point sur la carte. Les plus proches gagnent (podium). Pour un pays : 0 km si tu es dedans.',
+  rules: 'Place ton point sur la carte. Les plus proches gagnent (podium). Pour un lieu précis (ville, monument…), on mesure la distance au point exact ; quand la réponse est un pays entier, 0 km si ton point est dans le pays.',
   defaults: { timer: 30, podium: '5,3,1' },
   configFields: [{ key: 'podium', label: 'Points du podium', type: 'text', help: 'ex : 5,3,1' }],
   questionFields: [
@@ -33,7 +33,12 @@ export const geoloc: ModuleDef = {
   ],
   themeHasMap: true,
   summary: (q) => `${q.answerHint ?? ''} (${Number(q.lat).toFixed(2)}, ${Number(q.lng).toFixed(2)})${q.isoNum ? ' · pays ' + q.isoNum : ''}`,
-  publicPayload: (q, { block }) => ({ text: q.text, mapId: block.mapIds?.[q.id] ?? block.mapId ?? 'world' }),
+  publicPayload: (q, { block }) => ({
+    text: q.text,
+    mapId: block.mapIds?.[q.id] ?? block.mapId ?? 'world',
+    // La réponse est un pays entier (sans dire lequel) : 0 km si le point est dedans
+    country: q.isoNum != null && q.isoNum !== '',
+  }),
   solution: (q) => ({ lat: Number(q.lat), lng: Number(q.lng), label: q.answerHint ?? '', isoNum: q.isoNum ?? null }),
   score: async ({ q, answers, cfg }) => {
     const scored = []
@@ -60,6 +65,7 @@ export const geoloc: ModuleDef = {
     return (
       <>
         <QuestionText>{round.public.text}</QuestionText>
+        <GeoHint country={round.public.country} />
         <GeoMap
           mapId={round.public.mapId}
           height="55vh"
@@ -85,6 +91,7 @@ export const geoloc: ModuleDef = {
       <div className="geo-screen">
         <div>
           <QuestionText big>{round.public.text}</QuestionText>
+          <GeoHint country={round.public.country} />
           {revealed && (
             <>
               <div className="big-answer">{round.solution?.label}</div>
@@ -96,4 +103,13 @@ export const geoloc: ModuleDef = {
       </div>
     )
   },
+}
+
+/** Rappel de la règle de distance pour la question en cours */
+function GeoHint({ country }: { country?: boolean }) {
+  return (
+    <p className="center muted small">
+      {country ? '🌍 Un pays : 0 km si ton point est dedans' : '📍 Un lieu précis : la distance au point exact compte'}
+    </p>
+  )
 }

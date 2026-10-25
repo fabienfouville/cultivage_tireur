@@ -11,10 +11,11 @@ export const blindtest: ModuleDef = {
   name: 'Blind Test',
   icon: '🎵',
   tagline: 'Audio + réponse libre',
-  rules: "Écoute l'extrait, trouve l'artiste et le titre. Les plus rapides gagnent sur chacun des deux.",
-  defaults: { timer: 30, podium: '5,3,1', audioOnPhones: 0 },
+  rules: "Écoute l'extrait, trouve l'artiste et le titre. Chaque bonne réponse rapporte des points : 3, 2 et 1 pour les trois plus rapides, puis 1 pour les autres.",
+  defaults: { timer: 30, podium: '3,2,1', others: 1, audioOnPhones: 0 },
   configFields: [
-    { key: 'podium', label: 'Podium (artiste et titre)', type: 'text', help: 'ex : 5,3,1' },
+    { key: 'podium', label: 'Points des plus rapides (artiste et titre)', type: 'text', help: 'ex : 3,2,1' },
+    { key: 'others', label: 'Points pour les autres bonnes réponses', type: 'number' },
     { key: 'audioOnPhones', label: 'Son aussi sur les téléphones (1 = oui)', type: 'number', help: 'utile sans écran commun' },
   ],
   questionFields: [
@@ -49,7 +50,9 @@ export const blindtest: ModuleDef = {
         .map((a) => ({ pid: a.pid, at: ms(a) }))
         .sort((a, b) => a.at - b.at)
       for (const r of podium(good, pts, () => false)) {
-        results[r.pid] = { pts: (results[r.pid]?.pts ?? 0) + r.pts }
+        // Hors podium, une bonne réponse rapporte quand même quelque chose
+        const won = r.pts || Number(cfg.others ?? 0)
+        results[r.pid] = { pts: (results[r.pid]?.pts ?? 0) + won }
         ;(detail[r.pid] ??= []).push(`${label} ✅`)
       }
     }

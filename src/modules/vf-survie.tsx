@@ -8,7 +8,7 @@ export const vfSurvie: ModuleDef = {
   name: 'VF Survie',
   icon: '⚔️',
   tagline: 'Élimination progressive',
-  rules: 'Vrai ou Faux ? Une erreur (ou pas de réponse) et tu es éliminé. Les questions rapportent de plus en plus.',
+  rules: 'Vrai ou Faux ? Une erreur et tu es éliminé ; sans réponse, tu restes en jeu mais sans point. Les questions rapportent de plus en plus.',
   defaults: { timer: 10, pointsScheme: '1,1,2,2,3,3,4,4,5,5' },
   configFields: [
     { key: 'pointsScheme', label: 'Points question par question', type: 'text', help: 'ex : 1,1,2,2,3,3,4,4,5,5' },
@@ -43,9 +43,12 @@ export const vfSurvie: ModuleDef = {
       if (a && a.data.value === !!q.correct) {
         results[p.id] = { pts, detail: a.data.value ? 'VRAI' : 'FAUX' }
         nextAlive[p.id] = true
+      } else if (!a || typeof a.data.value !== 'boolean') {
+        // Pas de réponse : pas de point, mais on reste en jeu
+        results[p.id] = { pts: 0, detail: 'pas de réponse' }
+        nextAlive[p.id] = true
       } else {
-        const said = a ? (a.data.value ? 'VRAI' : 'FAUX') : 'pas de réponse'
-        results[p.id] = { pts: 0, detail: `${said} · 💀 éliminé` }
+        results[p.id] = { pts: 0, detail: `${a.data.value ? 'VRAI' : 'FAUX'} · 💀 éliminé` }
         nextAlive[p.id] = false
       }
     }

@@ -7,6 +7,12 @@ const items = (q: Record<string, unknown>) => ((q.answers as string[]) ?? []).ma
 /** Propositions d'un joueur pour ce tour (`text` : ancien format, une seule proposition) */
 const proposals = (data: Record<string, any> | undefined): string[] =>
   Array.isArray(data?.items) ? data!.items : data?.text ? [String(data.text)] : []
+/** Autant de propositions par tour que d'éléments encore à trouver */
+export const proposalLimit = (round: { public?: Record<string, any>; state?: Record<string, any> }) =>
+  Math.max(1, Number(round.public?.n ?? 0) - Object.keys(round.state?.found ?? {}).length)
+/** Les propositions qui comptent pour ce tour (les premières, dans la limite) */
+const counted = (data: Record<string, any> | undefined, round: Parameters<typeof proposalLimit>[0]) =>
+  proposals(data).slice(0, proposalLimit(round))
 
 function TopBoard({ n, found, solution }: { n: number; found: Found; solution?: string[] }) {
   return (
@@ -31,7 +37,7 @@ export const top: ModuleDef = {
   icon: '🏆',
   tagline: 'Classement à deviner',
   rules:
-    'Un classement est à deviner. À chaque tour, propose autant d’éléments que tu veux : chaque élément du classement trouvé est révélé et rapporte des points (plus il est haut… moins il rapporte : n − rang + 1).',
+    'Un classement est à deviner. À chaque tour, propose autant d’éléments qu’il en reste à trouver : chaque élément du classement trouvé est révélé et rapporte des points (plus il est haut… moins il rapporte : n − rang + 1).',
   defaults: { timer: 20, wrong: 0 },
   configFields: [{ key: 'wrong', label: 'Points perdus par proposition fausse', type: 'number', help: '0 = proposer ne coûte rien' }],
   questionFields: [
@@ -49,7 +55,7 @@ export const top: ModuleDef = {
     const found: Found = round.state?.found ?? {}
     const map = new Map<string, ValidationItem>()
     for (const a of answers) {
-      for (const prop of proposals(a.data)) {
+      for (const prop of counted(a.data, round)) {
         const raw = String(prop).trim()
         const n = normalize(raw)
         if (!n) continue
@@ -91,7 +97,7 @@ export const top: ModuleDef = {
       const ranks = new Set<number>()
       const details: string[] = []
       // Une même proposition écrite deux fois ne compte qu'une fois
-      for (const [g, text] of new Map(proposals(a.data).map((p) => [normalize(p), p]))) {
+      for (const [g, text] of new Map(counted(a.data, round).map((p) => [normalize(p), p]))) {
         if (!g) continue
         const rank = list.findIndex((_, i) => verdicts[`${i}|${g}`] === true)
         // Trouvé à un tour précédent ou déjà compté pour ce joueur : ni gagné ni perdu
@@ -115,19 +121,24 @@ export const top: ModuleDef = {
     const found: Found = round.state?.found ?? {}
     const revealed = round.status === 'revealed'
     const mine = proposals(answer?.data)
+    const limit = proposalLimit(round)
+    const full = mine.length >= limit
     return (
       <>
         <QuestionText>{round.public.text}</QuestionText>
-        <p className="muted center small">Tour {round.tour ?? 1} · propose autant d'éléments que tu veux</p>
+        <p className="muted center small">
+          Tour {round.tour ?? 1} · jusqu'à {limit} proposition{limit > 1 ? 's' : ''} ({mine.length}/{limit})
+        </p>
         {round.status === 'answering' &&
           (locked ? (
             <Locked />
           ) : (
             <FreeAnswer
               clearOnSubmit
-              placeholder="Un élément puis Entrée…"
+              disabled={full}
+              placeholder={full ? 'Maximum atteint : retire-en une pour changer' : 'Un élément puis Entrée…'}
               onSubmit={(v) => {
-                if (mine.some((m) => normalize(m) === normalize(v))) return
+                if (full || mine.some((m) => normalize(m) === normalize(v))) return
                 return submit({ items: [...mine, v] })
               }}
             />

@@ -13,15 +13,15 @@ l'animateur pilote depuis son téléphone ou son ordi.
 |---|---|
 | 🔤 QCM | 4 choix, en 3 variantes au lancement : 🔤 Classique, 🎲 Mises (jetons à miser), 👥 Duo/Carré/Cash (plus de risque, plus de points) |
 | 🧠 100% Logique | Énigmes de logique, de plus en plus dures (% de gens qui trouvent), élimination désactivable |
-| ⚔️ VF Survie | Vrai/Faux à élimination, barème croissant |
+| ⚔️ VF Survie | Vrai/Faux : une erreur élimine (sans réponse : 0 point mais on reste), barème croissant |
 | 🎯 Estimation | Un nombre, podium des plus proches |
 | 📏 À l'échelle | Deviner la taille d'un animal, monument, Pokémon… à côté d'une référence |
 | 💬 Cash | Réponse libre validée par l'animateur |
 | 🖼️ Pixel | Image qui se dépixellise, podium des plus rapides |
-| 🗂️ Thème | Un maximum de réponses sur un thème, 1 pt par réponse validée |
-| 🗺️ Géoloc | Point sur une carte, podium des plus proches (0 km si dans le bon pays) |
-| 🎵 Blind Test | Extrait audio, artiste + titre, podium de vitesse |
-| 🏆 Le Top | Classement à deviner en plusieurs tours |
+| 🗂️ Thème | Un maximum de réponses sur un thème : 1 pt par réponse validée, 3 si on est seul à l'avoir |
+| 🗺️ Géoloc | Point sur une carte, podium des plus proches (distance au point exact ; 0 km si la réponse est un pays et qu'on est dedans) |
+| 🎵 Blind Test | Extrait audio, artiste + titre : 3/2/1 pts pour les plus rapides, 1 pt pour les autres bonnes réponses |
+| 🏆 Le Top | Classement à deviner en plusieurs tours (autant de propositions par tour que d'éléments restants) |
 | 📅 Chronologie | Remettre 4 événements dans l'ordre, 1 pt par événement bien placé + bonus si tout est juste |
 | 🕵️ Qui suis-je ? | Indices de plus en plus faciles, une seule réponse : plus on répond tôt, plus on gagne |
 

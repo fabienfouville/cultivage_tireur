@@ -9,9 +9,12 @@ export const theme: ModuleDef = {
   name: 'Thème',
   icon: '🗂️',
   tagline: 'Réponse libre validée',
-  rules: "Donne un maximum de réponses qui collent au thème. 1 point par réponse validée par l'animateur.",
-  defaults: { timer: 45, points: 1 },
-  configFields: [{ key: 'points', label: 'Points par réponse validée', type: 'number' }],
+  rules: "Donne un maximum de réponses qui collent au thème. 1 point par réponse validée, 3 si tu es le seul à l'avoir trouvée.",
+  defaults: { timer: 45, points: 1, solo: 3 },
+  configFields: [
+    { key: 'points', label: 'Points par réponse validée', type: 'number' },
+    { key: 'solo', label: 'Points si on est seul à avoir donné cette réponse', type: 'number' },
+  ],
   questionFields: [
     { key: 'text', label: 'Thème à trouver', type: 'text', placeholder: 'Un pays d’Europe commençant par A' },
     { key: 'answerHint', label: 'Exemples de réponses (aide à la validation)', type: 'textarea', optional: true },
@@ -38,10 +41,19 @@ export const theme: ModuleDef = {
   },
   score: ({ answers, cfg, verdicts }) => {
     const results: Record<string, { pts: number; detail?: string }> = {}
+    const mine = new Map(answers.map((a) => [a.pid, [...new Set(list(a.data).map(normalize))].filter(Boolean)]))
+    // Combien de joueurs ont donné chaque réponse : une réponse trouvée seul rapporte plus
+    const howMany = new Map<string, number>()
+    for (const items of mine.values()) for (const n of items) howMany.set(n, (howMany.get(n) ?? 0) + 1)
+    const solo = Number(cfg.solo ?? cfg.points)
     for (const a of answers) {
-      const uniq = [...new Set(list(a.data).map(normalize))].filter(Boolean)
-      const ok = uniq.filter((n) => verdicts[n] === true).length
-      results[a.pid] = { pts: ok * Number(cfg.points), detail: `${ok}/${uniq.length} validée${ok > 1 ? 's' : ''}` }
+      const uniq = mine.get(a.pid) ?? []
+      const ok = uniq.filter((n) => verdicts[n] === true)
+      const alone = ok.filter((n) => howMany.get(n) === 1).length
+      results[a.pid] = {
+        pts: (ok.length - alone) * Number(cfg.points) + alone * solo,
+        detail: `${ok.length}/${uniq.length} validée${ok.length > 1 ? 's' : ''}${alone ? ` dont ${alone} en solo ⭐` : ''}`,
+      }
     }
     return { results }
   },
