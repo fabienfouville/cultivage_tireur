@@ -1,0 +1,79 @@
+{
+  "id": "gs-blindtest",
+  "module": "blindtest",
+  "theme": "Grande soirée · Blind Test",
+  "questions": [
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Michel Sardou",
+      "answerHintTitle": "Les lacs du Connemara"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "ABBA",
+      "answerHintTitle": "Dancing Queen"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Jean-Jacques Goldman",
+      "answerHintTitle": "Quand la musique est bonne"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Bee Gees",
+      "answerHintTitle": "Stayin' Alive"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "France Gall",
+      "answerHintTitle": "Ella, elle l'a"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Whitney Houston",
+      "answerHintTitle": "I Wanna Dance with Somebody"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Céline Dion",
+      "answerHintTitle": "Pour que tu m'aimes encore"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Spice Girls",
+      "answerHintTitle": "Wannabe"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Lady Gaga",
+      "answerHintTitle": "Bad Romance"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "GIMS",
+      "answerHintTitle": "Bella"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Luis Fonsi & Daddy Yankee",
+      "answerHintTitle": "Despacito"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Angèle",
+      "answerHintTitle": "Balance ton quoi"
+    }
+  ]
+}

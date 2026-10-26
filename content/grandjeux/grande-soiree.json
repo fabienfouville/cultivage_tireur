@@ -1,0 +1,21 @@
+{
+  "id": "grande-soiree",
+  "name": "Grande soirée",
+  "description": "tous les jeux, avec des questions inédites",
+  "cardsEnabled": true,
+  "slots": [
+    { "module": "qcm", "packId": "gs-qcm", "questionCount": 6, "timer": 20 },
+    { "module": "estimation", "packId": "gs-estimation", "questionCount": 4, "timer": 30 },
+    { "module": "echelle", "packId": "gs-echelle", "questionCount": 4, "timer": 25 },
+    { "module": "quisuisje", "packId": "gs-qsj", "questionCount": 4, "timer": 50 },
+    { "module": "vf-survie", "packId": "gs-vf", "questionCount": 10, "timer": 12 },
+    { "module": "pixel", "packId": "gs-pixel", "questionCount": 4, "timer": 30 },
+    { "module": "cash", "packId": "gs-cash", "questionCount": 5, "timer": 25 },
+    { "module": "chronologie", "packId": "gs-chrono", "questionCount": 4, "timer": 40 },
+    { "module": "geoloc", "packId": "gs-geoloc", "questionCount": 5, "timer": 30 },
+    { "module": "blindtest", "packId": "gs-blindtest", "questionCount": 6, "timer": 30 },
+    { "module": "theme", "packId": "gs-theme", "questionCount": 2, "timer": 45 },
+    { "module": "top", "packId": "gs-top", "questionCount": 2, "timer": 25 },
+    { "module": "logique", "packId": "gs-logique", "questionCount": 7, "timer": 35 }
+  ]
+}

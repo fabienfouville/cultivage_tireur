@@ -6,3 +6,6 @@ Images du jeu « À l'échelle » (détourées et recadrées pour le jeu, usage 
 - Tour de Pise, Christ Rédempteur, Arc de Triomphe, Big Ben, Hindenburg, Saturn V, Burj Khalifa, London Eye,
   porte-avions Charles-de-Gaulle : photos Wikimedia Commons (licences libres, voir les fichiers d'origine sur
   commons.wikimedia.org), détourage automatique
+
+Images du pack Pixel « Grande soirée » (public/pixel/) : illustrations officielles Pokémon © Nintendo / Creatures /
+GAME FREAK, via PokéAPI.

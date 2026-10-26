@@ -1,0 +1,99 @@
+{
+  "id": "gs-echelle",
+  "module": "echelle",
+  "theme": "Grande soirée · Pokémon à l’échelle",
+  "description": "tailles officielles du Pokédex",
+  "questions": [
+    {
+      "text": "Quelle taille fait Arcanin ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "refImage": "/echelle/pikachu.webp",
+      "refLength": false,
+      "targetName": "Arcanin",
+      "answer": 1.9,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/arcanin.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle taille fait Dracolosse ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "refImage": "/echelle/pikachu.webp",
+      "refLength": false,
+      "targetName": "Dracolosse",
+      "answer": 2.2,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/dracolosse.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle taille fait Steelix ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "refImage": "/echelle/humain.webp",
+      "refLength": false,
+      "targetName": "Steelix",
+      "answer": 9.2,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/steelix.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle taille fait Rayquaza ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "refImage": "/echelle/humain.webp",
+      "refLength": false,
+      "targetName": "Rayquaza",
+      "answer": 7.0,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/rayquaza.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle taille fait Grolem ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "refImage": "/echelle/pikachu.webp",
+      "refLength": false,
+      "targetName": "Grolem",
+      "answer": 1.4,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/grolem.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle taille fait Kangourex ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "refImage": "/echelle/pikachu.webp",
+      "refLength": false,
+      "targetName": "Kangourex",
+      "answer": 2.2,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/kangourex.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle taille fait Tortank ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "refImage": "/echelle/pikachu.webp",
+      "refLength": false,
+      "targetName": "Tortank",
+      "answer": 1.6,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/tortank.webp",
+      "targetLength": false
+    }
+  ]
+}

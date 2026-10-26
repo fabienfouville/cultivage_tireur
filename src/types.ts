@@ -106,7 +106,7 @@ export type Phase = 'lobby' | 'pick' | 'cards' | 'play' | 'blockResults' | 'fina
 
 export interface GrandJeuSlot {
   module: ModuleKey
-  /** vide = thème au hasard au moment de jouer */
+  /** vide = toutes les questions du jeu, « ? » = un thème au hasard */
   themeId: string
   themeName: string
   questionCount: number

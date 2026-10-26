@@ -342,8 +342,8 @@ export async function startRound(sid: string, index: number, opts: { tour?: numb
   const [q, stored] = await Promise.all([getQuestion(qid), getStoredConfig()])
   const mod = getModule(block.module)
   const cfg = { ...moduleConfig(block.module, stored), timer: block.timer }
-  // Blind test : les vieux liens d'extraits (Deezer) expirent → on retrouve l'extrait et on corrige la question
-  if (block.module === 'blindtest' && q.audioUrl) {
+  // Blind test : extrait absent (pack) ou vieux lien expiré (Deezer) → on le retrouve sur iTunes et on corrige la question
+  if (block.module === 'blindtest' && (q.audioUrl || q.answerHintAuthor || q.answerHintTitle)) {
     const url = await ensurePlayableAudio(q)
     if (url && url !== q.audioUrl) {
       q.audioUrl = url

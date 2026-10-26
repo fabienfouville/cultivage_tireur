@@ -20,7 +20,7 @@ export const blindtest: ModuleDef = {
   ],
   questionFields: [
     { key: 'text', label: 'Consigne', type: 'text', placeholder: 'Quelle est cette chanson ? 🎵' },
-    { key: 'audioUrl', label: 'Extrait audio', type: 'audio' },
+    { key: 'audioUrl', label: 'Extrait audio (vide : retrouvé automatiquement sur iTunes avec l’artiste et le titre)', type: 'audio', optional: true },
     { key: 'answerHintAuthor', label: 'Artiste', type: 'text' },
     { key: 'answerHintTitle', label: 'Titre', type: 'text' },
   ],

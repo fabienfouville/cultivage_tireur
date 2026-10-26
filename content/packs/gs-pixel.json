@@ -1,0 +1,47 @@
+{
+  "id": "gs-pixel",
+  "module": "pixel",
+  "theme": "Grande soirée · Pixel Pokémon",
+  "questions": [
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/rondoudou.jpg",
+      "answerHint": "Rondoudou/Jigglypuff"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/psykokwak.jpg",
+      "answerHint": "Psykokwak/Psyduck"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/salameche.jpg",
+      "answerHint": "Salamèche/Charmander"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/carapuce.jpg",
+      "answerHint": "Carapuce/Squirtle"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/ectoplasme.jpg",
+      "answerHint": "Ectoplasma/Ectoplasme/Gengar"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/lucario.jpg",
+      "answerHint": "Lucario/Lucario"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/togepi.jpg",
+      "answerHint": "Togepi/Togepi"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/mew.jpg",
+      "answerHint": "Mew/Mew"
+    }
+  ]
+}

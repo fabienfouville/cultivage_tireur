@@ -6,7 +6,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { distanceToCountryKm } from './lib/geo'
 import { normalize } from './lib/normalize'
-import { MODULE_BY_KEY } from './modules'
+import { MODULE_BY_KEY, bankOf } from './modules'
 import type { Pack } from './pages/admin/PacksTab'
 
 const dir = new URL('../content/packs/', import.meta.url)
@@ -56,8 +56,10 @@ describe('packs de contenu', () => {
       })
 
       it("n'a pas deux fois la même question", () => {
-        // Qui suis-je ? et Chronologie répètent la même consigne : ce sont les indices / événements qui comptent
-        const texts = pack.questions.map((q) => normalize(String(q.text) + ' ' + JSON.stringify(q.clues ?? q.events ?? '')))
+        // Certains jeux répètent la même consigne : ce sont alors les indices, événements, image ou chanson qui comptent
+        const texts = pack.questions.map((q) =>
+          normalize(String(q.text) + ' ' + JSON.stringify(q.clues ?? q.events ?? q.imageUrl ?? q.answerHintTitle ?? '')),
+        )
         expect(new Set(texts).size).toBe(texts.length)
       })
 
@@ -74,6 +76,23 @@ describe('packs de contenu', () => {
             expect(await distanceToCountryKm(q.isoNum, q.lat as number, q.lng as number), String(q.text)).toBe(0)
           }
         })
+      }
+    })
+  }
+})
+
+describe('grands jeux prêts à l’emploi', () => {
+  const gdir = new URL('../content/grandjeux/', import.meta.url)
+  const files = readdirSync(gdir).filter((f) => f.endsWith('.json'))
+  for (const f of files) {
+    const gj = JSON.parse(readFileSync(new URL(f, gdir), 'utf8'))
+    it(`${gj.id} : chaque jeu pointe vers un pack de la bonne banque`, () => {
+      expect(gj.slots.length).toBeGreaterThan(0)
+      for (const s of gj.slots) {
+        const pack = packs.find((p) => p.id === s.packId)
+        expect(pack, s.packId).toBeTruthy()
+        expect(bankOf(s.module), `${s.packId} pour ${s.module}`).toBe(pack!.module)
+        expect(s.questionCount, s.packId).toBeLessThanOrEqual(pack!.questions.length)
       }
     })
   }

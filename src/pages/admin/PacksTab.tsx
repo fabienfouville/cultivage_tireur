@@ -1,10 +1,10 @@
-import { collection, doc, getDocs, query, serverTimestamp, where, writeBatch } from 'firebase/firestore'
+import { addDoc, collection, doc, getDocs, query, serverTimestamp, updateDoc, where, writeBatch } from 'firebase/firestore'
 import { useState } from 'react'
 import { db } from '../../firebase'
 import { useCol } from '../../lib/hooks'
 import { MODULES, getModule } from '../../modules'
 import { ConfirmButton } from '../../components/ControlPanel'
-import type { ModuleKey, Theme } from '../../types'
+import type { GrandJeu, ModuleKey, Theme } from '../../types'
 
 export interface Pack {
   id: string
@@ -20,7 +20,43 @@ const PACKS: Pack[] = Object.values(import.meta.glob<Pack>('../../../content/pac
   (a, b) => MODULES.findIndex((m) => m.key === a.module) - MODULES.findIndex((m) => m.key === b.module) || a.theme.localeCompare(b.theme),
 )
 
-async function importPack(pack: Pack, existing?: Theme) {
+/** Un Grand Jeu prêt à l'emploi (content/grandjeux) : chaque jeu pointe vers un pack */
+export interface GrandJeuFile {
+  id: string
+  name: string
+  description?: string
+  cardsEnabled: boolean
+  slots: { module: ModuleKey; packId: string; questionCount: number; timer: number }[]
+}
+
+const GRAND_JEUX: GrandJeuFile[] = Object.values(
+  import.meta.glob<GrandJeuFile>('../../../content/grandjeux/*.json', { eager: true, import: 'default' }),
+)
+
+/** Crée (ou met à jour) le Grand Jeu : importe d'abord les packs qui manquent, puis relie chaque jeu à son thème */
+async function importGrandJeu(gj: GrandJeuFile, themes: Theme[]) {
+  const byPack = new Map(themes.filter((t) => t.packId).map((t) => [t.packId!, t]))
+  for (const packId of new Set(gj.slots.map((s) => s.packId))) {
+    if (byPack.has(packId)) continue
+    const pack = PACKS.find((p) => p.id === packId)
+    if (!pack) throw new Error(`Pack introuvable : ${packId}`)
+    byPack.set(packId, await importPack(pack))
+  }
+  const data = {
+    name: gj.name,
+    cardsEnabled: gj.cardsEnabled,
+    gjFile: gj.id,
+    slots: gj.slots.map((s) => {
+      const t = byPack.get(s.packId)!
+      return { module: s.module, themeId: t.id, themeName: t.name, questionCount: s.questionCount, timer: s.timer }
+    }),
+  }
+  const existing = await getDocs(query(collection(db, 'grandJeux'), where('gjFile', '==', gj.id)))
+  if (existing.docs[0]) await updateDoc(existing.docs[0].ref, data)
+  else await addDoc(collection(db, 'grandJeux'), { ...data, createdAt: serverTimestamp() })
+}
+
+async function importPack(pack: Pack, existing?: Theme): Promise<Theme> {
   const batch = writeBatch(db)
   let themeId = existing?.id
   if (existing) {
@@ -47,6 +83,7 @@ async function importPack(pack: Pack, existing?: Theme) {
     })
   })
   await batch.commit()
+  return existing ?? ({ id: themeId!, module: pack.module, name: pack.theme, packId: pack.id } as Theme)
 }
 
 export function PacksTab() {
@@ -81,6 +118,8 @@ export function PacksTab() {
         <ExportButton />
       </div>
       {msg && <p>{msg}</p>}
+      <GrandJeuxFiles themes={themes} />
+      <h3>Packs de questions</h3>
       <ul className="list">
         {PACKS.map((p) => {
           const mod = getModule(p.module)
@@ -116,6 +155,54 @@ export function PacksTab() {
         })}
       </ul>
     </div>
+  )
+}
+
+function GrandJeuxFiles({ themes }: { themes: Theme[] }) {
+  const gjs = useCol<GrandJeu & { gjFile?: string }>(collection(db, 'grandJeux'), 'gj-all') ?? []
+  const [busy, setBusy] = useState<string | null>(null)
+  const [msg, setMsg] = useState('')
+  if (!GRAND_JEUX.length) return null
+  return (
+    <section className="card">
+      <h3>🏁 Grands Jeux prêts à l'emploi</h3>
+      <p className="muted small">Crée le Grand Jeu et importe les packs dont il a besoin. Il apparaît ensuite dans l'onglet Grand Jeu et dans la régie.</p>
+      <ul className="list">
+        {GRAND_JEUX.map((g) => {
+          const done = gjs.some((x) => x.gjFile === g.id)
+          return (
+            <li key={g.id} className="list-row">
+              <div>
+                <b>{g.name}</b>
+                <div className="muted small">
+                  {g.slots.map((s) => getModule(s.module).icon).join(' ')} · {g.slots.length} jeux ·{' '}
+                  {g.slots.reduce((n, s) => n + s.questionCount, 0)} questions{g.description && ` · ${g.description}`}
+                </div>
+              </div>
+              <button
+                className={'btn btn-small' + (done ? '' : ' btn-primary')}
+                disabled={!!busy}
+                onClick={async () => {
+                  setBusy(g.id)
+                  setMsg('')
+                  try {
+                    await importGrandJeu(g, themes)
+                    setMsg(`« ${g.name} » est prêt : régie d'une session → Grand Jeu → Lancer`)
+                  } catch (e: any) {
+                    setMsg(`Erreur : ${e?.message ?? e}`)
+                  } finally {
+                    setBusy(null)
+                  }
+                }}
+              >
+                {busy === g.id ? '…' : done ? '↻ Mettre à jour' : 'Créer le Grand Jeu'}
+              </button>
+            </li>
+          )
+        })}
+      </ul>
+      {msg && <p>{msg}</p>}
+    </section>
   )
 }
 

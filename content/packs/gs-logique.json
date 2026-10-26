@@ -1,0 +1,86 @@
+{
+  "id": "gs-logique",
+  "module": "logique",
+  "theme": "Grande soirée · 100% Logique",
+  "description": "énigmes de 50 % (moyennes) à 2 % (très dures)",
+  "questions": [
+    {
+      "text": "Complète la suite :\n2, 5, 11, 23, 47, ?",
+      "answer": "95/quatre-vingt-quinze/quatre vingt quinze",
+      "percent": 50,
+      "explain": "Chaque nombre est le double du précédent plus 1 : 47 × 2 + 1 = 95."
+    },
+    {
+      "text": "Quelle lettre vient ensuite ?\nJ, F, M, A, M, J, J, A, ?",
+      "answer": "S",
+      "percent": 46,
+      "explain": "Les initiales des mois : Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août… Septembre."
+    },
+    {
+      "text": "Dans 4 ans, Léa aura le double\nde l'âge qu'elle avait il y a 4 ans.\nQuel âge a-t-elle aujourd'hui ?",
+      "answer": "12/douze/12 ans/douze ans",
+      "percent": 42,
+      "explain": "Il y a 4 ans elle avait 8 ans, dans 4 ans elle en aura 16 : le double. Elle a donc 12 ans."
+    },
+    {
+      "text": "On lance deux dés classiques\net on additionne les deux faces.\nQuel total a le plus de chances de sortir ?",
+      "answer": "7/sept",
+      "percent": 38,
+      "explain": "7 se fait de 6 façons (1+6, 2+5, 3+4, 4+3, 5+2, 6+1) sur 36 : plus que n'importe quel autre total."
+    },
+    {
+      "text": "Un seau plein d'eau pèse 9 kg.\nRempli à moitié, il pèse 5 kg.\nCombien pèse le seau vide ?",
+      "answer": "1/1 kg/1kg/1 kilo/un kilo/1 kilogramme/un kilogramme",
+      "percent": 34,
+      "explain": "La moitié de l'eau pèse 9 − 5 = 4 kg, donc toute l'eau 8 kg : il reste 1 kg pour le seau."
+    },
+    {
+      "text": "Un robinet remplit une baignoire en 3 heures,\nun autre la remplit en 6 heures.\nEn combien d'heures la remplissent-ils ensemble ?",
+      "answer": "2/2 h/2h/2 heures/deux/deux heures/120 min/120 minutes",
+      "percent": 30,
+      "explain": "En 1 heure, le premier remplit 1/3 et le second 1/6 : 1/3 + 1/6 = 1/2 baignoire par heure, donc 2 heures."
+    },
+    {
+      "text": "100 équipes s'affrontent dans une coupe\nà élimination directe (pas de match nul).\nCombien de matchs faut-il jouer\npour désigner le vainqueur ?",
+      "answer": "99/quatre-vingt-dix-neuf/quatre vingt dix neuf/99 matchs",
+      "percent": 25,
+      "explain": "Chaque match élimine exactement une équipe : pour en éliminer 99, il faut 99 matchs."
+    },
+    {
+      "text": "Complète la suite :\n1, 2, 3, 6, 11, 20, ?",
+      "answer": "37/trente-sept/trente sept",
+      "percent": 20,
+      "explain": "Chaque nombre est la somme des trois précédents : 6 + 11 + 20 = 37."
+    },
+    {
+      "text": "Tu fais l'aller à 30 km/h\net le retour, par la même route, à 60 km/h.\nQuelle est ta vitesse moyenne\nsur l'aller-retour (en km/h) ?",
+      "answer": "40/40 km/h/40km/h/40 kmh/quarante/quarante km/h",
+      "percent": 15,
+      "explain": "Pour 60 km aller : 2 h à l'aller, 1 h au retour. 120 km en 3 h = 40 km/h (et non 45)."
+    },
+    {
+      "text": "Je pense à un nombre entier de 1 à 100.\nTu ne peux poser que des questions\nauxquelles je réponds par oui ou non.\nCombien de questions au minimum\npour être SÛR de le trouver ?",
+      "answer": "7/sept/7 questions/sept questions",
+      "percent": 11,
+      "explain": "Chaque question coupe les possibilités en deux : 6 questions départagent 64 nombres, 7 en départagent 128 ≥ 100."
+    },
+    {
+      "text": "Avant-hier, j'avais 17 ans.\nL'année prochaine, j'aurai 20 ans.\nQuel jour est mon anniversaire ?",
+      "answer": "31 décembre/31 decembre/trente et un décembre/trente-et-un décembre/31 déc",
+      "percent": 7,
+      "explain": "On est le 1er janvier. Le 30 décembre, j'avais 17 ans ; le 31, 18 ans ; cette année j'en aurai 19, et l'an prochain 20."
+    },
+    {
+      "text": "Marie a 24 ans.\nElle a le double de l'âge qu'avait Anne\nquand Marie avait l'âge qu'Anne a aujourd'hui.\nQuel âge a Anne ?",
+      "answer": "18/dix-huit/dix huit/18 ans/dix-huit ans",
+      "percent": 4,
+      "explain": "Il y a 6 ans, Marie avait 18 ans (l'âge actuel d'Anne) et Anne 12 ans : 24 = 2 × 12."
+    },
+    {
+      "text": "Trouve le nombre de 4 chiffres qui,\nmultiplié par 4, s'écrit à l'envers.\n(ABCD × 4 = DCBA)",
+      "answer": "2178",
+      "percent": 2,
+      "explain": "2178 × 4 = 8712. C'est le seul nombre de 4 chiffres qui marche."
+    }
+  ]
+}

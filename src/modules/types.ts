@@ -17,7 +17,7 @@ export type QuestionField =
   | { key: string; label: string; type: 'list'; placeholder?: string; optional?: boolean } // liste ordonnée (Le Top)
   | { key: string; label: string; type: 'bool' }
   | { key: string; label: string; type: 'image'; optional?: boolean }
-  | { key: string; label: string; type: 'audio' }
+  | { key: string; label: string; type: 'audio'; optional?: boolean }
   | { key: string; label: string; type: 'latlng' }
 
 export interface ScoreContext {
