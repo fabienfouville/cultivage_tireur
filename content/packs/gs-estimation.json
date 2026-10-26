@@ -1,0 +1,57 @@
+{
+  "id": "gs-estimation",
+  "module": "estimation",
+  "theme": "Grande soirée · Estimation",
+  "questions": [
+    {
+      "text": "Combien de cases compte le plateau du Monopoly ?",
+      "answer": 40,
+      "unit": "cases"
+    },
+    {
+      "text": "Combien de cases compte un jeu de l'oie classique ?",
+      "answer": 63,
+      "unit": "cases"
+    },
+    {
+      "text": "Combien de Pokémon compte la toute première génération (Rouge et Bleu) ?",
+      "answer": 151,
+      "unit": "Pokémon"
+    },
+    {
+      "text": "Combien de sonnets William Shakespeare a-t-il publiés dans son recueil de 1609 ?",
+      "answer": 154,
+      "unit": "sonnets"
+    },
+    {
+      "text": "Combien de litres contient un baril de pétrole ?",
+      "answer": 159,
+      "unit": "litres"
+    },
+    {
+      "text": "Combien de kilocalories apporte 1 gramme de matières grasses (lipides) ?",
+      "answer": 9,
+      "unit": "kcal"
+    },
+    {
+      "text": "Combien de cases compte la grille d'un Scrabble ?",
+      "answer": 225,
+      "unit": "cases"
+    },
+    {
+      "text": "Combien de litres d'eau contient une piscine olympique de 50 m × 25 m et 2 m de profondeur ?",
+      "answer": 2500000,
+      "unit": "litres"
+    },
+    {
+      "text": "Combien de rivets assemblent la structure de la tour Eiffel ?",
+      "answer": 2500000,
+      "unit": "rivets"
+    },
+    {
+      "text": "Combien de neurones compte environ un cerveau humain adulte ?",
+      "answer": 86000000000,
+      "unit": "neurones"
+    }
+  ]
+}

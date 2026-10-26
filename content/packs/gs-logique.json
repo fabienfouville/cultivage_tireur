@@ -11,10 +11,10 @@
       "explain": "Chaque nombre est le double du précédent plus 1 : 47 × 2 + 1 = 95."
     },
     {
-      "text": "Quelle lettre vient ensuite ?\nJ, F, M, A, M, J, J, A, ?",
-      "answer": "S",
+      "text": "PIED est à CHAUSSURE\nce que MAIN est à ?",
+      "answer": "Gant/Gants",
       "percent": 46,
-      "explain": "Les initiales des mois : Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août… Septembre."
+      "explain": "On enfile une chaussure sur un pied, un gant sur une main."
     },
     {
       "text": "Dans 4 ans, Léa aura le double\nde l'âge qu'elle avait il y a 4 ans.\nQuel âge a-t-elle aujourd'hui ?",

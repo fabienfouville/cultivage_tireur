@@ -1,0 +1,95 @@
+{
+  "id": "gs-qsj",
+  "module": "quisuisje",
+  "theme": "Grande soirée · Qui suis-je ?",
+  "questions": [
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né en 1972 à Marseille, de parents originaires de Kabylie.",
+        "J'ai débuté chez les pros à Cannes, puis j'ai joué à Bordeaux et à la Juventus.",
+        "Entraîneur, j'ai gagné trois Ligues des champions d'affilée avec le Real Madrid.",
+        "En 2006, j'ai fini ma carrière par un coup de tête en finale de Coupe du monde.",
+        "Surnommé « Zizou », j'ai marqué deux buts de la tête en finale du Mondial 1998."
+      ],
+      "answerHint": "Zinédine Zidane/Zinedine Zidane/Zidane/Zizou"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "J'ai commencé enfant dans un groupe avec quatre de mes frères.",
+        "Mon ranch en Californie s'appelait Neverland.",
+        "J'ai été marié à Lisa Marie Presley, la fille d'Elvis.",
+        "Mon album sorti en 1982 est le plus vendu de l'histoire.",
+        "Roi de la pop, j'ai rendu célèbre le moonwalk."
+      ],
+      "answerHint": "Michael Jackson/Jackson/MJ"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "Je suis amoureux de Falbala, mais elle en aime un autre.",
+        "Je ne supporte pas qu'on me traite de gros.",
+        "Je suis tailleur et livreur de menhirs.",
+        "Mon petit chien s'appelle Idéfix et je raffole des sangliers.",
+        "Je suis tombé dans la marmite de potion magique quand j'étais petit."
+      ],
+      "answerHint": "Obélix/Obelix"
+    },
+    {
+      "text": "Quel personnage suis-je ?",
+      "clues": [
+        "Mon créateur m'a d'abord prêté sa propre voix.",
+        "Mon premier dessin animé sonore s'appelait « Steamboat Willie ».",
+        "Je porte des gants blancs et une culotte rouge à boutons.",
+        "Ma fiancée s'appelle Minnie et mon chien Pluto.",
+        "Souris la plus célèbre du monde, je suis la mascotte de Disney."
+      ],
+      "answerHint": "Mickey/Mickey Mouse"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "J'ai accueilli les Jeux olympiques d'été à trois reprises.",
+        "Un grand incendie m'a ravagée en 1666.",
+        "Mon métro, ouvert en 1863, est le plus ancien du monde.",
+        "On y voit la relève de la garde devant Buckingham Palace.",
+        "Big Ben et la Tamise font partie de mes symboles."
+      ],
+      "answerHint": "Londres/London"
+    },
+    {
+      "text": "Quel pays ou quelle ville suis-je ?",
+      "clues": [
+        "J'ai obtenu mon indépendance en 1947.",
+        "Mon drapeau porte une roue bleue à 24 rayons en son centre.",
+        "Mon cinéma, le plus prolifique du monde, a pour capitale Bombay.",
+        "Depuis 2023, je suis le pays le plus peuplé du monde.",
+        "Gandhi m'a mené à l'indépendance et le Taj Mahal est mon emblème."
+      ],
+      "answerHint": "Inde/India"
+    },
+    {
+      "text": "Quel objet suis-je ?",
+      "clues": [
+        "J'ai été inventé en 1974 par un professeur d'architecture hongrois.",
+        "Je peux prendre plus de 43 milliards de milliards de positions.",
+        "Les meilleurs champions me résolvent en moins de 4 secondes.",
+        "J'ai six faces, chacune d'une couleur différente.",
+        "Casse-tête en forme de cube, je porte le nom de mon inventeur."
+      ],
+      "answerHint": "Rubik's Cube/Rubik/Rubiks Cube/Cube de Rubik/Rubik's"
+    },
+    {
+      "text": "Quel animal suis-je ?",
+      "clues": [
+        "Mon « sixième doigt » est en fait un os du poignet allongé.",
+        "J'ai le système digestif d'un carnivore, mais je suis presque végétarien.",
+        "Je passe plus de dix heures par jour à manger.",
+        "À l'état sauvage, on ne me trouve qu'en Chine.",
+        "Noir et blanc, je mange du bambou et je suis le logo du WWF."
+      ],
+      "answerHint": "Panda/Panda géant/Grand panda"
+    }
+  ]
+}

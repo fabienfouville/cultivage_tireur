@@ -1,0 +1,68 @@
+{
+  "id": "gs-vf",
+  "module": "vf-survie",
+  "theme": "Grande soirée · VF Survie",
+  "description": "du plus facile au plus dur",
+  "questions": [
+    {
+      "text": "Pluton est toujours officiellement classée parmi les planètes du système solaire.",
+      "correct": false,
+      "order": 1
+    },
+    {
+      "text": "Le dromadaire n'a qu'une seule bosse.",
+      "correct": true,
+      "order": 2
+    },
+    {
+      "text": "« Pays-Bas » et « Hollande » désignent exactement le même territoire.",
+      "correct": false,
+      "order": 3
+    },
+    {
+      "text": "Les bananes sont très légèrement radioactives.",
+      "correct": true,
+      "order": 4
+    },
+    {
+      "text": "Le Titanic a été construit à Belfast.",
+      "correct": true,
+      "order": 5
+    },
+    {
+      "text": "Albert Einstein a reçu le prix Nobel de physique pour sa théorie de la relativité.",
+      "correct": false,
+      "order": 6
+    },
+    {
+      "text": "Les escargots ont des dents.",
+      "correct": true,
+      "order": 7
+    },
+    {
+      "text": "Le panda roux appartient à la même famille que le panda géant.",
+      "correct": false,
+      "order": 8
+    },
+    {
+      "text": "Les chats sont incapables de percevoir le goût sucré.",
+      "correct": true,
+      "order": 9
+    },
+    {
+      "text": "La tour Eiffel est un peu plus haute en hiver qu'en été.",
+      "correct": false,
+      "order": 10
+    },
+    {
+      "text": "Au sens botanique, la fraise est une baie.",
+      "correct": false,
+      "order": 11
+    },
+    {
+      "text": "Le Japon compte plus de 6 000 îles.",
+      "correct": true,
+      "order": 12
+    }
+  ]
+}

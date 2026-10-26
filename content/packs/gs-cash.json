@@ -1,0 +1,55 @@
+{
+  "id": "gs-cash",
+  "module": "cash",
+  "theme": "Grande soirée · Cash",
+  "questions": [
+    {
+      "text": "Comment s'appelle le chien de Tintin ?",
+      "answerHint": "Milou"
+    },
+    {
+      "text": "Dans quelle ville se trouve la célèbre statue du Manneken-Pis ?",
+      "answerHint": "Bruxelles"
+    },
+    {
+      "text": "Comment s'appelle le frère de Mario dans les jeux Nintendo ?",
+      "answerHint": "Luigi"
+    },
+    {
+      "text": "Quel fromage italien est la base de la crème du tiramisu ?",
+      "answerHint": "Mascarpone"
+    },
+    {
+      "text": "Comment s'appelle la fée qui accompagne Peter Pan ?",
+      "answerHint": "Clochette / Fée Clochette / Tinker Bell"
+    },
+    {
+      "text": "Quel super-héros a pour identité secrète Bruce Wayne ?",
+      "answerHint": "Batman"
+    },
+    {
+      "text": "Quel métal, liquide à température ambiante, remplissait les anciens thermomètres ?",
+      "answerHint": "Mercure"
+    },
+    {
+      "text": "Comment appelle-t-on un polygone à huit côtés ?",
+      "answerHint": "Octogone"
+    },
+    {
+      "text": "De quelle région d'Espagne la paella est-elle originaire ?",
+      "answerHint": "Valence / Communauté valencienne / Valencia"
+    },
+    {
+      "text": "Quel savant anglais aurait pensé à la gravitation en voyant tomber une pomme ?",
+      "answerHint": "Isaac Newton / Newton"
+    },
+    {
+      "text": "Quel parc d'attractions de l'Oise a pour mascotte un célèbre petit Gaulois ?",
+      "answerHint": "Parc Astérix"
+    },
+    {
+      "text": "Quel animal est l'emblème des équipes de France de rugby et de football ?",
+      "answerHint": "Coq / Le coq gaulois"
+    }
+  ]
+}

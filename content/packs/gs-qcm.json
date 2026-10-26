@@ -1,0 +1,157 @@
+{
+  "id": "gs-qcm",
+  "module": "qcm",
+  "theme": "Grande soirée · QCM",
+  "questions": [
+    {
+      "text": "Quel est l'animal national officiel de l'Écosse ?",
+      "answers": [
+        "Le cerf",
+        "Le saumon",
+        "La licorne",
+        "L'aigle royal"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Comment s'appelle le petit chien d'Obélix ?",
+      "answers": [
+        "Milou",
+        "Idéfix",
+        "Rantanplan",
+        "Pif"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel réalisateur a signé le film « Psychose » (1960) ?",
+      "answers": [
+        "Stanley Kubrick",
+        "Orson Welles",
+        "Billy Wilder",
+        "Alfred Hitchcock"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Qui a déchiffré les hiéroglyphes égyptiens en 1822 ?",
+      "answers": [
+        "Jean-François Champollion",
+        "Howard Carter",
+        "Auguste Mariette",
+        "Gaston Maspero"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel gaz compose environ 78 % de l'air que nous respirons ?",
+      "answers": [
+        "L'oxygène",
+        "Le dioxyde de carbone",
+        "L'azote",
+        "L'argon"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Dans le Monopoly français, quelle est la case la plus chère du plateau ?",
+      "answers": [
+        "Avenue des Champs-Élysées",
+        "Rue de la Paix",
+        "Avenue Foch",
+        "Boulevard Malesherbes"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel pays d'Amérique du Sud a l'anglais pour langue officielle ?",
+      "answers": [
+        "Le Suriname",
+        "L'Uruguay",
+        "Le Paraguay",
+        "Le Guyana"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "De quel pays est originaire Ernő Rubik, l'inventeur du Rubik's Cube ?",
+      "answers": [
+        "La Hongrie",
+        "Le Japon",
+        "La Russie",
+        "L'Allemagne"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel alliage obtient-on en mélangeant du cuivre et de l'étain ?",
+      "answers": [
+        "Le laiton",
+        "Le bronze",
+        "L'acier",
+        "Le duralumin"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans quel pays est né le tango, à la fin du XIXe siècle (notamment à Buenos Aires) ?",
+      "answers": [
+        "Le Brésil",
+        "Cuba",
+        "L'Argentine",
+        "L'Espagne"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quelle langue compte le plus de locuteurs natifs au monde ?",
+      "answers": [
+        "L'anglais",
+        "L'espagnol",
+        "L'hindi",
+        "Le chinois mandarin"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Quel acteur britannique incarne Mr Bean ?",
+      "answers": [
+        "Rowan Atkinson",
+        "Hugh Grant",
+        "John Cleese",
+        "Benny Hill"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle est l'unité de mesure de la résistance électrique ?",
+      "answers": [
+        "Le volt",
+        "L'ampère",
+        "Le watt",
+        "L'ohm"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Avec le lait de quel animal fabrique-t-on la « mozzarella di bufala » ?",
+      "answers": [
+        "La vache",
+        "La bufflonne",
+        "La chèvre",
+        "La brebis"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle planète du système solaire tourne quasiment « couchée » sur le côté, avec un axe incliné d'environ 98° ?",
+      "answers": [
+        "Neptune",
+        "Uranus",
+        "Saturne",
+        "Mars"
+      ],
+      "correct": 1
+    }
+  ]
+}

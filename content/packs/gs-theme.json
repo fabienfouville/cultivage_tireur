@@ -1,0 +1,39 @@
+{
+  "id": "gs-theme",
+  "module": "theme",
+  "theme": "Grande soirée · Thème",
+  "questions": [
+    {
+      "text": "Une série télé",
+      "answerHint": "Friends, Game of Thrones, Breaking Bad, Les Simpson, Plus belle la vie, Kaamelott, Stranger Things, Lost, Dr House, La Casa de papel, Dix pour cent…"
+    },
+    {
+      "text": "Un dessin animé",
+      "answerHint": "Les Schtroumpfs, Pokémon, Dragon Ball, Bob l'éponge, Tom et Jerry, Il était une fois… la vie, Les Mystérieuses Cités d'or, Goldorak, Totally Spies, Peppa Pig…"
+    },
+    {
+      "text": "Un personnage de Harry Potter",
+      "answerHint": "Harry, Ron, Hermione, Dumbledore, Rogue, Voldemort, Hagrid, Drago Malefoy, Dobby, Sirius Black, Neville, Ginny, McGonagall…"
+    },
+    {
+      "text": "Une capitale européenne",
+      "answerHint": "Paris, Londres, Berlin, Madrid, Rome, Lisbonne, Bruxelles, Amsterdam, Vienne, Prague, Varsovie, Athènes, Dublin, Oslo, Stockholm…"
+    },
+    {
+      "text": "Un ustensile de cuisine",
+      "answerHint": "Fouet, louche, spatule, passoire, poêle, casserole, rouleau à pâtisserie, économe, râpe, écumoire, cocotte, mandoline, chinois…"
+    },
+    {
+      "text": "Un footballeur célèbre",
+      "answerHint": "Zidane, Pelé, Maradona, Messi, Cristiano Ronaldo, Mbappé, Platini, Henry, Ronaldinho, Cantona, Neymar, Benzema, Griezmann…"
+    },
+    {
+      "text": "Une émission de télé française",
+      "answerHint": "Questions pour un champion, Koh-Lanta, Fort Boyard, N'oubliez pas les paroles, Le Maillon faible, Star Academy, Qui veut gagner des millions ?, Des chiffres et des lettres, Pékin Express…"
+    },
+    {
+      "text": "Un plat traditionnel français",
+      "answerHint": "Pot-au-feu, bœuf bourguignon, blanquette de veau, cassoulet, choucroute, ratatouille, tartiflette, bouillabaisse, gratin dauphinois, quiche lorraine, coq au vin…"
+    }
+  ]
+}

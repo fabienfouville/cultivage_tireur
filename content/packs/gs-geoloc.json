@@ -1,0 +1,82 @@
+{
+  "id": "gs-geoloc",
+  "module": "geoloc",
+  "theme": "Grande soirée · Géoloc",
+  "mapId": "world",
+  "questions": [
+    {
+      "text": "Où se trouve la statue de la Liberté ?",
+      "answerHint": "Statue de la Liberté — New York, États-Unis",
+      "lat": 40.6892,
+      "lng": -74.0445
+    },
+    {
+      "text": "Où se trouve le Machu Picchu ?",
+      "answerHint": "Machu Picchu — Pérou",
+      "lat": -13.1631,
+      "lng": -72.545
+    },
+    {
+      "text": "Où se trouve le Golden Gate Bridge ?",
+      "answerHint": "Golden Gate Bridge — San Francisco, États-Unis",
+      "lat": 37.8199,
+      "lng": -122.4783
+    },
+    {
+      "text": "Où se trouve Stonehenge ?",
+      "answerHint": "Stonehenge — Angleterre, Royaume-Uni",
+      "lat": 51.1789,
+      "lng": -1.8262
+    },
+    {
+      "text": "Où se trouve le Burj Khalifa, la plus haute tour du monde ?",
+      "answerHint": "Burj Khalifa — Dubaï, Émirats arabes unis",
+      "lat": 25.1972,
+      "lng": 55.2744
+    },
+    {
+      "text": "Où se trouve l'Alhambra ?",
+      "answerHint": "Alhambra — Grenade, Espagne",
+      "lat": 37.1761,
+      "lng": -3.5881
+    },
+    {
+      "text": "Où se trouve la place Rouge ?",
+      "answerHint": "Place Rouge — Moscou, Russie",
+      "lat": 55.7539,
+      "lng": 37.6208
+    },
+    {
+      "text": "Où se trouve la montagne de la Table ?",
+      "answerHint": "Montagne de la Table — Le Cap, Afrique du Sud",
+      "lat": -33.9622,
+      "lng": 18.41
+    },
+    {
+      "text": "Où se trouve le lac Baïkal ?",
+      "answerHint": "Lac Baïkal — Sibérie, Russie",
+      "lat": 53.5,
+      "lng": 108.0
+    },
+    {
+      "text": "Où se trouve Singapour ?",
+      "answerHint": "Singapour (Marina Bay)",
+      "lat": 1.2834,
+      "lng": 103.8607
+    },
+    {
+      "text": "Italie",
+      "answerHint": "Italie",
+      "lat": 42.5,
+      "lng": 12.5,
+      "isoNum": 380
+    },
+    {
+      "text": "Corée du Nord",
+      "answerHint": "Corée du Nord",
+      "lat": 40.3399,
+      "lng": 127.5101,
+      "isoNum": 408
+    }
+  ]
+}

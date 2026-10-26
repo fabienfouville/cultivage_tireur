@@ -1,0 +1,127 @@
+{
+  "id": "gs-chrono",
+  "module": "chronologie",
+  "theme": "Grande soirée · Chronologie",
+  "questions": [
+    {
+      "text": "Premières grandes compétitions sportives",
+      "events": [
+        "Premiers Jeux olympiques modernes",
+        "Premier Tour de France",
+        "Première Coupe du monde de football",
+        "Premier championnat du monde de F1"
+      ],
+      "dates": [
+        "1896",
+        "1903",
+        "1930",
+        "1950"
+      ]
+    },
+    {
+      "text": "Les grandes heures des Bleus",
+      "events": [
+        "Premier Euro gagné par la France (Platini)",
+        "Première étoile (France-Brésil 3-0)",
+        "Coup de tête de Zidane en finale",
+        "Deuxième étoile des Bleus"
+      ],
+      "dates": [
+        "1984",
+        "1998",
+        "2006",
+        "2018"
+      ]
+    },
+    {
+      "text": "Dessins animés pour adultes (et enfants)",
+      "events": [
+        "Premier épisode de la série Les Simpson",
+        "Premier épisode de South Park",
+        "Premier épisode de Bob l'éponge",
+        "Premier épisode de Rick et Morty"
+      ],
+      "dates": [
+        "1989",
+        "1997",
+        "1999",
+        "2013"
+      ]
+    },
+    {
+      "text": "Astronomie : les planètes lointaines",
+      "events": [
+        "Découverte d'Uranus",
+        "Découverte de Neptune",
+        "Découverte de Pluton",
+        "Pluton reléguée au rang de planète naine"
+      ],
+      "dates": [
+        "1781",
+        "1846",
+        "1930",
+        "2006"
+      ]
+    },
+    {
+      "text": "Histoire des États-Unis",
+      "events": [
+        "Déclaration d'indépendance",
+        "Début de la guerre de Sécession",
+        "Inauguration de la statue de la Liberté",
+        "Entrée dans la Première Guerre mondiale"
+      ],
+      "dates": [
+        "1776",
+        "1861",
+        "1886",
+        "1917"
+      ]
+    },
+    {
+      "text": "Grands monuments",
+      "events": [
+        "Inauguration du Colisée de Rome",
+        "Début du chantier de Notre-Dame de Paris",
+        "Inauguration de la tour Eiffel",
+        "Inauguration du viaduc de Millau"
+      ],
+      "dates": [
+        "80",
+        "1163",
+        "1889",
+        "2004"
+      ]
+    },
+    {
+      "text": "Tubes planétaires",
+      "events": [
+        "« Heartbreak Hotel » d'Elvis Presley",
+        "« Bohemian Rhapsody » de Queen",
+        "« Like a Virgin » de Madonna",
+        "« Despacito » de Luis Fonsi"
+      ],
+      "dates": [
+        "1956",
+        "1975",
+        "1984",
+        "2017"
+      ]
+    },
+    {
+      "text": "Réseaux et applis",
+      "events": [
+        "Création de Facebook",
+        "Création de Twitter",
+        "Lancement d'Instagram",
+        "Lancement de ChatGPT"
+      ],
+      "dates": [
+        "2004",
+        "2006",
+        "2010",
+        "2022"
+      ]
+    }
+  ]
+}
