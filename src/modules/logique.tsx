@@ -2,7 +2,6 @@ import { normalize } from '../lib/normalize'
 import { ChoiceButtons, FreeAnswer, Locked, QuestionText, RevealList, Sent, namesOf } from './common'
 import type { ModuleDef } from './types'
 
-const alive = (block: { alive?: Record<string, boolean> }, pid: string) => block.alive?.[pid] !== false
 const choicesOf = (q: Record<string, unknown>): string[] =>
   (Array.isArray(q.choices) ? (q.choices as string[]) : []).map((c) => String(c).trim()).filter(Boolean)
 const variants = (answer: unknown) =>
@@ -34,10 +33,9 @@ export const logique: ModuleDef = {
   icon: '🧠',
   tagline: 'Logique et observation, pas de culture',
   rules:
-    "Pas besoin de culture : la réponse est sous tes yeux. Les questions sont de plus en plus dures (le % indique la part de gens qui trouvent) et rapportent de plus en plus. Une erreur et tu es éliminé.",
-  defaults: { timer: 30, eliminate: 1, maxPoints: 10 },
+    "Pas besoin de culture : la réponse est sous tes yeux. Les questions sont de plus en plus dures (le % indique la part de gens qui trouvent) et rapportent de plus en plus. Une erreur ne rapporte rien, mais tu continues à jouer.",
+  defaults: { timer: 30, maxPoints: 10 },
   configFields: [
-    { key: 'eliminate', label: 'Élimination à la première erreur (1 = oui, 0 = non)', type: 'number' },
     { key: 'maxPoints', label: 'Points de la question la plus dure (1 %)', type: 'number', help: 'une question à 90 % rapporte 1 point' },
   ],
   questionFields: [
@@ -52,48 +50,26 @@ export const logique: ModuleDef = {
   summary: (q) => `${q.answer} · ${q.percent ?? '?'} %`,
   publicPayload: (q) => ({ text: q.text, choices: choicesOf(q), percent: q.percent ?? null }),
   solution: (q) => ({ label: String(q.answer ?? '').split('/')[0].trim(), explain: q.explain ?? '' }),
-  canAnswer: (block, pid) => alive(block, pid),
-  blockOver: (block) => !!block.alive && Object.keys(block.alive).length > 0 && !Object.values(block.alive).some(Boolean),
-  initBlock: (_block, participants, cfg) =>
-    Number(cfg.eliminate) === 1
-      ? { block: { alive: Object.fromEntries(participants.filter((p) => !p.kicked).map((p) => [p.id, true])) } }
-      : {},
   isComplete: (d) => typeof d.choice === 'number' || !!String(d.text ?? '').trim(),
-  score: ({ q, answers, cfg, block, participants }) => {
+  score: ({ q, answers, cfg, participants }) => {
     const pts = pointsFor(q.percent, Number(cfg.maxPoints) || 10)
-    const eliminate = !!block.alive
     const byPid = new Map(answers.map((a) => [a.pid, a]))
     const results: Record<string, { pts: number; detail?: string }> = {}
-    const nextAlive = { ...(block.alive ?? {}) }
     const choices = choicesOf(q)
     let right = 0
     for (const p of participants) {
-      if (p.kicked || !alive(block, p.id)) continue
+      if (p.kicked) continue
       const a = byPid.get(p.id)
       const said = a ? (choices.length ? choices[a.data.choice] ?? '?' : String(a.data.text ?? '')) : 'pas de réponse'
-      if (a && isRight(q, a.data)) {
-        right++
-        results[p.id] = { pts, detail: said }
-        if (eliminate) nextAlive[p.id] = true
-      } else {
-        results[p.id] = { pts: 0, detail: eliminate ? `${said} · 💀 éliminé` : said }
-        if (eliminate) nextAlive[p.id] = false
-      }
+      const ok = !!a && isRight(q, a.data)
+      if (ok) right++
+      results[p.id] = { pts: ok ? pts : 0, detail: said }
     }
-    return { results, ...(eliminate ? { block: { alive: nextAlive } } : {}), summary: { right } }
+    return { results, summary: { right } }
   },
-  Player: ({ round, block, me, answer, submit, locked }) => {
+  Player: ({ round, answer, submit, locked }) => {
     const revealed = round.status === 'revealed'
     const choices: string[] = round.public.choices ?? []
-    if (!alive(block, me.id) && !(revealed && round.results?.[me.id])) {
-      return (
-        <div className="center">
-          <div className="huge">💀</div>
-          <p>Tu es éliminé de cette manche. Essaie quand même de trouver !</p>
-          <p className="logic-text">{round.public.text}</p>
-        </div>
-      )
-    }
     return (
       <>
         <div className="center">
@@ -126,10 +102,9 @@ export const logique: ModuleDef = {
       </>
     )
   },
-  Screen: ({ round, block, participants }) => {
+  Screen: ({ round, participants }) => {
     const choices: string[] = round.public.choices ?? []
     const revealed = round.status === 'revealed'
-    const living = participants.filter((p) => !p.kicked && alive(block, p.id))
     return (
       <>
         <div className="center">
@@ -145,7 +120,7 @@ export const logique: ModuleDef = {
             correct={revealed ? choices.findIndex((c) => normalize(c) === normalize(round.solution?.label)) : null}
           />
         )}
-        {revealed ? (
+        {revealed && (
           <>
             <div className="big-answer">
               {round.solution?.label}
@@ -153,8 +128,6 @@ export const logique: ModuleDef = {
             </div>
             <RevealList round={round} names={namesOf(participants)} />
           </>
-        ) : (
-          block.alive && <p className="survivors">🧠 En lice : {living.map((p) => p.name).join(', ') || 'personne'}</p>
         )}
       </>
     )

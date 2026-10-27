@@ -2,7 +2,7 @@
   "id": "grande-soiree",
   "name": "Grande soirée",
   "description": "tous les jeux, avec des questions inédites",
-  "cardsEnabled": true,
+  "cardsEnabled": false,
   "slots": [
     { "module": "qcm", "packId": "gs-qcm", "questionCount": 6, "timer": 20 },
     { "module": "estimation", "packId": "gs-estimation", "questionCount": 4, "timer": 30 },

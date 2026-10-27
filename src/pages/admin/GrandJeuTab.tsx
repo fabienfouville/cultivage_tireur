@@ -1,7 +1,7 @@
 import { addDoc, collection, deleteDoc, doc, orderBy, query, serverTimestamp, updateDoc } from 'firebase/firestore'
 import { useState } from 'react'
 import { Spinner } from '../../components/ui'
-import { CARDS, CARD_KEYS } from '../../engine/cards'
+import { CARDS, CARDS_ON, CARD_KEYS } from '../../engine/cards'
 import { ALL_THEMES, RANDOM_THEME } from '../../engine/engine'
 import { db } from '../../firebase'
 import { useCol, useDoc } from '../../lib/hooks'
@@ -33,7 +33,7 @@ export function GrandJeuTab() {
               <b>{g.name}</b>
               <div className="muted small">
                 {g.slots.map((s) => getModule(s.module).icon).join(' ')} · {g.slots.length} modules
-                {g.cardsEnabled && ' · 🃏 cartes'}
+                {CARDS_ON && g.cardsEnabled && ' · 🃏 cartes'}
               </div>
             </div>
             <div className="row">
@@ -48,6 +48,7 @@ export function GrandJeuTab() {
         ))}
       </ul>
       <p className="muted small">Pour le lancer : ouvre la régie d'une session → « Grand Jeu » → Lancer.</p>
+      {CARDS_ON && (
       <section className="card">
         <h3>🃏 Les cartes</h3>
         <p className="small muted">Chaque joueur a une carte de chaque. Entre deux modules, il peut en jouer une.</p>
@@ -59,6 +60,7 @@ export function GrandJeuTab() {
           ))}
         </ul>
       </section>
+      )}
     </div>
   )
 }
@@ -67,7 +69,7 @@ function GrandJeuEditor({ initial, onDone }: { initial?: GrandJeu; onDone: () =>
   const themes = useCol<Theme>(collection(db, 'themes'), 'themes-all') ?? []
   const config = useDoc<Record<string, any>>(doc(db, 'config', 'modules'))
   const [name, setName] = useState(initial?.name ?? '')
-  const [cardsEnabled, setCards] = useState(initial?.cardsEnabled ?? true)
+  const [cardsEnabled, setCards] = useState(initial?.cardsEnabled ?? CARDS_ON)
   const [slots, setSlots] = useState<GrandJeuSlot[]>(initial?.slots ?? [])
   const upd = (i: number, patch: Partial<GrandJeuSlot>) => setSlots((s) => s.map((x, j) => (j === i ? { ...x, ...patch } : x)))
   const move = (i: number, d: number) =>
@@ -91,9 +93,11 @@ function GrandJeuEditor({ initial, onDone }: { initial?: GrandJeu; onDone: () =>
     >
       <div className="row wrap">
         <input placeholder="Nom de la soirée" value={name} onChange={(e) => setName(e.target.value)} required />
-        <label className="check">
-          <input type="checkbox" checked={cardsEnabled} onChange={(e) => setCards(e.target.checked)} /> Cartes bonus/malus
-        </label>
+        {CARDS_ON && (
+          <label className="check">
+            <input type="checkbox" checked={cardsEnabled} onChange={(e) => setCards(e.target.checked)} /> Cartes bonus/malus
+          </label>
+        )}
       </div>
       <ol className="slots">
         {slots.map((s, i) => {

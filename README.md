@@ -12,14 +12,14 @@ l'animateur pilote depuis son téléphone ou son ordi.
 | Module | Principe |
 |---|---|
 | 🔤 QCM | 4 choix, en 3 variantes au lancement : 🔤 Classique, 🎲 Mises (jetons à miser), 👥 Duo/Carré/Cash (plus de risque, plus de points) |
-| 🧠 100% Logique | Énigmes de logique, de plus en plus dures (% de gens qui trouvent), élimination désactivable |
+| 🧠 100% Logique | Énigmes de logique, de plus en plus dures (% de gens qui trouvent) ; une erreur ne rapporte rien mais on continue |
 | ⚔️ VF Survie | Vrai/Faux : une erreur élimine (sans réponse : 0 point mais on reste), barème croissant |
 | 🎯 Estimation | Un nombre, podium des plus proches |
-| 📏 À l'échelle | Deviner la taille d'un animal, monument, Pokémon… à côté d'une référence |
+| 📏 À l'échelle | Deviner la taille d'un animal, monument, Pokémon… à côté d'une référence (dans une manche : l'objet deviné juste avant) |
 | 💬 Cash | Réponse libre validée par l'animateur |
 | 🖼️ Pixel | Image qui se dépixellise, podium des plus rapides |
 | 🗂️ Thème | Un maximum de réponses sur un thème : 1 pt par réponse validée, 3 si on est seul à l'avoir |
-| 🗺️ Géoloc | Point sur une carte, podium des plus proches (distance au point exact ; 0 km si la réponse est un pays et qu'on est dedans) |
+| 🗺️ Géoloc | Point sur une carte, podium des plus proches (distance au point exact ; 0 km si la réponse est un pays et qu'on est dedans) ; on peut déplacer son point jusqu'à la fin du temps |
 | 🎵 Blind Test | Extrait audio, artiste + titre : 3/2/1 pts pour les plus rapides, 1 pt pour les autres bonnes réponses |
 | 🏆 Le Top | Classement à deviner en plusieurs tours (autant de propositions par tour que d'éléments restants) |
 | 📅 Chronologie | Remettre 4 événements dans l'ordre, 1 pt par événement bien placé + bonus si tout est juste |
@@ -29,8 +29,8 @@ Au lancement d'un jeu, le thème par défaut est « 🌍 Toutes les questions »
 les moins jouées d'abord) ; on peut aussi choisir un thème précis ou « 🎲 Un thème au hasard ».
 
 Deux façons de jouer : **roue libre** (l'animateur choisit les jeux au fur et à mesure, avec une roue qui tire au sort)
-ou **Grand Jeu** (suite de modules préparée à l'avance, avec des cartes bonus/malus entre deux modules :
-🐢 Tortue, 😤 Confiant, ⚔️ Duel, 🛡️ Bouclier).
+ou **Grand Jeu** (suite de modules préparée à l'avance). Les cartes bonus/malus entre deux modules (🐢 Tortue, 😤 Confiant,
+⚔️ Duel, 🛡️ Bouclier) sont désactivées pour l'instant : `CARDS_ON` dans `src/engine/cards.ts`.
 
 ## Architecture
 

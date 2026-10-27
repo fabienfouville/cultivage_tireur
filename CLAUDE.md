@@ -27,7 +27,8 @@ Pas de serveur ni de Cloud Functions. Tout le texte visible est en français.
 - `src/modules/<jeu>.tsx` : un fichier par jeu, qui exporte un `ModuleDef` (`src/modules/types.ts`) : champs du
   formulaire admin, réglages, `publicPayload` (ce que voient les joueurs), `solution`, `score`, et les vues `Player`
   (téléphone) et `Screen` (écran projeté). Liste des jeux : `src/modules/index.ts`.
-- `src/engine/engine.ts` : le moteur (actions admin : lancer un bloc, une question, fermer, valider, révéler, cartes…).
+- `src/engine/engine.ts` : le moteur (actions admin : lancer un bloc, une question, fermer, valider, révéler…). Cartes bonus/malus du
+  Grand Jeu désactivées pour l'instant (`CARDS_ON = false` dans `src/engine/cards.ts`).
   `src/engine/useHost.ts` : sur chaque appareil admin, ferme la question à la fin du temps et tient « qui a répondu ».
 - `src/pages/` : `Home` (liste des sessions), `Player`, `Screen`, `admin/*` (back-office et régie `Control`).
 - `firestore.rules` : sécurité. `tests/rules.test.ts` : ses tests.

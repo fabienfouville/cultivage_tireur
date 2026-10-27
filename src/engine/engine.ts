@@ -46,7 +46,7 @@ import type {
   RoundLog,
   Session,
 } from '../types'
-import { CARDS, TORTUE_FACTOR, resolveCards } from './cards'
+import { CARDS, CARDS_ON, TORTUE_FACTOR, resolveCards } from './cards'
 
 const sessionRef = (sid: string) => doc(db, 'sessions', sid)
 const sub = (sid: string, name: string) => collection(db, 'sessions', sid, name)
@@ -288,7 +288,7 @@ export async function startBlock(sid: string, opts: BlockOptions) {
   const active = participants.filter((p) => !p.kicked)
 
   // Cartes du Grand Jeu jouées pendant la phase cartes qui précède ce bloc
-  if (session.mode === 'grandjeu' && session.grandJeu?.cardsEnabled) {
+  if (CARDS_ON && session.mode === 'grandjeu' && session.grandJeu?.cardsEnabled) {
     const plays = await getDocs(query(sub(sid, 'cardPlays'), where('blockNo', '==', session.blockCount ?? 0)))
     const cards: Record<string, CardPlay> = {}
     for (const d of plays.docs) {
@@ -339,8 +339,9 @@ export async function startRound(sid: string, index: number, opts: { tour?: numb
   const block = session.block
   if (!block) throw new Error('Aucun bloc en cours')
   const qid = block.questionIds[index]
-  const [q, stored] = await Promise.all([getQuestion(qid), getStoredConfig()])
   const mod = getModule(block.module)
+  const prevId = mod.usesPrevious && index > 0 ? block.questionIds[index - 1] : null
+  const [q, stored, prev] = await Promise.all([getQuestion(qid), getStoredConfig(), prevId ? getQuestion(prevId).catch(() => undefined) : undefined])
   const cfg = { ...moduleConfig(block.module, stored), timer: block.timer }
   // Blind test : extrait absent (pack) ou vieux lien expiré (Deezer) → on le retrouve sur iTunes et on corrige la question
   if (block.module === 'blindtest' && (q.audioUrl || q.answerHintAuthor || q.answerHintTitle)) {
@@ -360,7 +361,7 @@ export async function startRound(sid: string, index: number, opts: { tour?: numb
     status: 'answering',
     startedAt: null,
     duration: block.timer,
-    public: mod.publicPayload(q, { block, cfg, state: opts.state }),
+    public: mod.publicPayload(q, { block, cfg, state: opts.state, prev }),
     tour: opts.tour ?? 1,
     state: opts.state ?? {},
     answered: [],
@@ -621,7 +622,7 @@ export async function afterBlock(sid: string) {
     await updateDoc(sessionRef(sid), { phase: 'final', round: null, block: null, 'grandJeu.step': step })
     return
   }
-  if (session.grandJeu.cardsEnabled) {
+  if (CARDS_ON && session.grandJeu.cardsEnabled) {
     await updateDoc(sessionRef(sid), {
       phase: 'cards',
       round: null,
@@ -675,7 +676,7 @@ export async function startGrandJeu(sid: string, gj: GrandJeu) {
     status: 'playing',
     mode: 'grandjeu',
     phase: 'play',
-    grandJeu: { id, name, slots, cardsEnabled, step: 0 },
+    grandJeu: { id, name, slots, cardsEnabled: CARDS_ON && !!cardsEnabled, step: 0 },
     round: null,
     block: null,
   })

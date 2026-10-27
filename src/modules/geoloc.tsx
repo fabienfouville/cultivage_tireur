@@ -23,7 +23,9 @@ export const geoloc: ModuleDef = {
   name: 'Géoloc',
   icon: '🗺️',
   tagline: 'Ping sur la carte',
-  rules: 'Place ton point sur la carte. Les plus proches gagnent (podium). Pour un lieu précis (ville, monument…), on mesure la distance au point exact ; quand la réponse est un pays entier, 0 km si ton point est dans le pays.',
+  rules: 'Place ton point sur la carte. Les plus proches gagnent (podium). Pour un lieu précis (ville, monument…), on mesure la distance au point exact ; quand la réponse est un pays entier, 0 km si ton point est dans le pays. Tu peux déplacer ton point jusqu’à la fin du temps : la question ne s’arrête pas quand tout le monde a répondu.',
+  // On avance à tâtons : pas d'arrêt automatique quand tout le monde a placé son point
+  multiAnswer: true,
   defaults: { timer: 30, podium: '5,3,1' },
   configFields: [{ key: 'podium', label: 'Points du podium', type: 'text', help: 'ex : 5,3,1' }],
   questionFields: [

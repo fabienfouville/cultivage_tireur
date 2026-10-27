@@ -1,5 +1,11 @@
 import type { CardKey, CardPlay } from '../types'
 
+/**
+ * Cartes bonus/malus désactivées pour l'instant (trop compliqué en soirée) : aucune phase cartes, même pour un Grand Jeu
+ * enregistré avec les cartes. Repasser à true pour les remettre.
+ */
+export const CARDS_ON = false
+
 /** Le temps de réponse d'un joueur visé par la Tortue est réduit de 30 % */
 export const TORTUE_FACTOR = 0.7
 

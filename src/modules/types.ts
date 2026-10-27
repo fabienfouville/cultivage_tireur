@@ -113,7 +113,9 @@ export interface ModuleDef {
   describe?: (data: Record<string, any>, round: Round) => string
   summary: (q: Question) => string
   /** Ce que les joueurs voient pendant la question — JAMAIS la solution */
-  publicPayload: (q: Question, ctx: { block: Block; cfg: ModuleConfig; state?: Record<string, any> }) => Record<string, any>
+  /** Le moteur passe la question précédente du bloc à `publicPayload` (`ctx.prev`) : À l'échelle compare au dernier objet deviné */
+  usesPrevious?: boolean
+  publicPayload: (q: Question, ctx: { block: Block; cfg: ModuleConfig; state?: Record<string, any>; prev?: Question }) => Record<string, any>
   solution: (q: Question) => Record<string, any>
   /** Réponses à valider à la main (modules `manual`) */
   validationItems?: (ctx: Omit<ScoreContext, 'verdicts'>) => ValidationItem[]

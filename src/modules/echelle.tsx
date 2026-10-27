@@ -17,7 +17,7 @@ export const echelle: ModuleDef = {
   icon: '📏',
   tagline: 'Comparer des tailles',
   rules:
-    "On te donne la taille d'une référence : règle le curseur pour donner la taille de l'autre. Les plus proches gagnent (l'écart est compté en proportion).",
+    "On te donne la taille d'une référence : règle le curseur pour donner la taille de l'autre. Les plus proches gagnent (l'écart est compté en proportion). Dans une manche, la référence est l'objet deviné juste avant.",
   defaults: { timer: 25, podium: '5,3,1' },
   configFields: [{ key: 'podium', label: 'Points du podium', type: 'text', help: 'ex : 5,3,1' }],
   questionFields: [
@@ -34,19 +34,36 @@ export const echelle: ModuleDef = {
     { key: 'targetLength', label: 'La taille à deviner est une longueur (sinon une hauteur)', type: 'bool' },
   ],
   summary: (q) => `${q.targetName} : ${formatMeters(Number(q.answer))} (réf. ${q.refName} ${formatMeters(Number(q.refHeight))})`,
-  publicPayload: (q) => ({
-    text: q.text || `Quelle taille fait ${q.targetName} ?`,
-    refName: q.refName,
-    refHeight: Number(q.refHeight),
-    refEmoji: q.refEmoji || '🧍',
-    refImage: q.refImage || null,
-    refLength: !!q.refLength,
-    targetName: q.targetName,
-    targetEmoji: q.targetEmoji || '❓',
-    // L'image ne dit rien de la taille : elle est montrée pendant la question, à la taille proposée par le joueur
-    targetImage: q.targetImage || null,
-    targetLength: !!q.targetLength,
-  }),
+  usesPrevious: true,
+  publicPayload: (q, { prev }) => {
+    // Dans une manche, la référence est l'objet deviné à la question d'avant (la 1re garde celle de sa question),
+    // sauf si l'écart de taille sort de la plage du curseur
+    const ratio = prev ? Number(q.answer) / Number(prev.answer) : NaN
+    const chained = prev && prev.targetName && ratio > 1.5 / RANGE && ratio < RANGE / 1.5
+    return {
+      text: q.text || `Quelle taille fait ${q.targetName} ?`,
+      ...(chained
+        ? {
+            refName: prev.targetName,
+            refHeight: Number(prev.answer),
+            refEmoji: prev.targetEmoji || '❓',
+            refImage: prev.targetImage || null,
+            refLength: !!prev.targetLength,
+          }
+        : {
+            refName: q.refName,
+            refHeight: Number(q.refHeight),
+            refEmoji: q.refEmoji || '🧍',
+            refImage: q.refImage || null,
+            refLength: !!q.refLength,
+          }),
+      targetName: q.targetName,
+      targetEmoji: q.targetEmoji || '❓',
+      // L'image ne dit rien de la taille : elle est montrée pendant la question, à la taille proposée par le joueur
+      targetImage: q.targetImage || null,
+      targetLength: !!q.targetLength,
+    }
+  },
   solution: (q) => ({ meters: Number(q.answer), label: `${q.targetName} : ${formatMeters(Number(q.answer))}`, targetImage: q.targetImage || null }),
   score: ({ q, answers, cfg }) => {
     const truth = Number(q.answer)
