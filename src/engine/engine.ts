@@ -488,7 +488,7 @@ export async function reveal(sid: string, seq: number) {
       'round.summary': res.summary ?? {},
       // Le Top se joue en plusieurs tours : l'animateur décide de la suite
       'round.autoNextAt':
-        !mod.multiTour && general.autoNext > 0 ? Timestamp.fromMillis(serverNow() + general.autoNext * 1000) : null,
+        !mod.multiTour && !cur.autoNextOff && general.autoNext > 0 ? Timestamp.fromMillis(serverNow() + general.autoNext * 1000) : null,
     }
     if (solution) update['round.solution'] = solution
     if (res.state) update['round.state'] = { ...(cur.round.state ?? {}), ...res.state }
@@ -525,7 +525,7 @@ export async function revealAll(sid: string) {
   await updateDoc(sessionRef(sid), {
     'round.solution': getModule(round.module).solution(q),
     'round.state.ended': true,
-    'round.autoNextAt': general.autoNext > 0 ? Timestamp.fromMillis(serverNow() + general.autoNext * 1000) : null,
+    'round.autoNextAt': !session.autoNextOff && general.autoNext > 0 ? Timestamp.fromMillis(serverNow() + general.autoNext * 1000) : null,
   })
 }
 
@@ -551,6 +551,26 @@ export async function skip(sid: string) {
 /** Met en pause le passage automatique à la question suivante */
 export async function pauseAutoNext(sid: string) {
   await updateDoc(sessionRef(sid), { 'round.autoNextAt': null })
+}
+
+/**
+ * Coupe (ou remet) le passage automatique pour toute la session, le temps de débattre d'une question.
+ * Remis en route sur une question déjà révélée : le compte à rebours repart de zéro.
+ */
+export async function setAutoNext(sid: string, on: boolean) {
+  const general = await getGeneralConfig()
+  await runTransaction(db, async (tx) => {
+    const ref = sessionRef(sid)
+    const cur = (await tx.get(ref)).data() as Session
+    const update: Record<string, any> = { autoNextOff: !on }
+    const round = cur.round
+    if (round?.status === 'revealed') {
+      const waitsHost = getModule(round.module).multiTour && !round.state?.ended
+      update['round.autoNextAt'] =
+        on && !waitsHost && general.autoNext > 0 ? Timestamp.fromMillis(serverNow() + general.autoNext * 1000) : null
+    }
+    tx.update(ref, update)
+  })
 }
 
 export async function addTime(sid: string, seconds: number) {

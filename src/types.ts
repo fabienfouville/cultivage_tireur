@@ -138,6 +138,8 @@ export interface Session {
   grandJeu?: (GrandJeu & { step: number }) | null
   /** Phase cartes : fin de la phase */
   cardsUntil?: Timestamp | null
+  /** La régie a coupé le passage automatique à la question suivante (pour débattre) */
+  autoNextOff?: boolean
   /** Thèmes déjà joués dans la session (pour le tirage au hasard) */
   playedThemes?: string[]
   /** Roue libre : module tiré par la roue (affiché sur l'écran) */

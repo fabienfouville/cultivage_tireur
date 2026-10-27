@@ -28,6 +28,10 @@ l'animateur pilote depuis son téléphone ou son ordi.
 Au lancement d'un jeu, le thème par défaut est « 🌍 Toutes les questions » (tirage dans tous les thèmes du jeu,
 les moins jouées d'abord) ; on peut aussi choisir un thème précis ou « 🎲 Un thème au hasard ».
 
+À la fin de chaque manche, l'écran projeté anime le podium des 3 premiers de la manche ; chaque téléphone ne montre
+que la place et les points de son joueur. La régie peut couper la suite automatique (« ⏸ Couper (débat) ») pour
+débattre d'une question : elle reste coupée pour la session jusqu'à « ▶️ Remettre ».
+
 Deux façons de jouer : **roue libre** (l'animateur choisit les jeux au fur et à mesure, avec une roue qui tire au sort)
 ou **Grand Jeu** (suite de modules préparée à l'avance). Les cartes bonus/malus entre deux modules (🐢 Tortue, 😤 Confiant,
 ⚔️ Duel, 🛡️ Bouclier) sont désactivées pour l'instant : `CARDS_ON` dans `src/engine/cards.ts`.

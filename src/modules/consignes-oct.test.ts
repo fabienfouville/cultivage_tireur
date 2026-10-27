@@ -43,3 +43,17 @@ describe('consignes d’octobre', () => {
     expect(echelle.publicPayload(far, { block, cfg: { timer: 25 }, prev: first }).refName).toBe('Humain')
   })
 })
+
+describe('podium de fin de manche', () => {
+  it('3 marches dans l’ordre 2e · 1er · 3e, ex aequo sur la même marche, sans ceux à 0', async () => {
+    const { podiumSteps } = await import('../components/BlockResults')
+    const ps = ['a', 'b', 'c', 'd', 'e'].map((id) => ({ id, name: id.toUpperCase() })) as any
+    const steps = podiumSteps(ps, { a: 5, b: 9, c: 5, d: 2, e: 0 })
+    // B 1er, A et C 2es ex aequo, D 4e : pas de 3e marche
+    expect(steps.map((s) => s.rank)).toEqual([2, 1])
+    expect(steps.find((s) => s.rank === 1)!.names).toEqual(['B'])
+    expect(steps.find((s) => s.rank === 2)!.names).toEqual(['A', 'C'])
+    expect(steps.some((s) => s.names.includes('E'))).toBe(false)
+    expect(podiumSteps(ps, {})).toEqual([])
+  })
+})

@@ -1,7 +1,7 @@
 import { collection, doc, serverTimestamp, setDoc } from 'firebase/firestore'
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router'
-import { BlockResults } from '../components/BlockResults'
+import { MyBlockResult } from '../components/BlockResults'
 import { CardsPicker } from '../components/CardsPicker'
 import { Header, Leaderboard, Podium, Spinner, TimerBar } from '../components/ui'
 import { TORTUE_FACTOR } from '../engine/cards'
@@ -233,7 +233,7 @@ function PlayerGame({ session, me }: { session: Session; me: Participant }) {
       ) : session.phase === 'cards' ? (
         <CardsPicker session={session} me={me} participants={participants} />
       ) : session.phase === 'blockResults' && block ? (
-        <BlockResults session={session} participants={participants} highlight={me.id} />
+        <MyBlockResult session={session} participants={participants} me={me.id} />
       ) : session.phase === 'final' || session.status === 'done' ? (
         <main className="player-main">
           <h2 className="center">🏁 Classement final</h2>

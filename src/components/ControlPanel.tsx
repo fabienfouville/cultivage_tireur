@@ -401,6 +401,13 @@ function RoundControls({
       <h3>{String(q?.text ?? round.public.text ?? '')}</h3>
       {/* Sur l'écran projeté, jamais la bonne réponse */}
       {!onScreen && q && <p className="solution">✅ {mod.summary(q)}</p>}
+      {/* Pour toute la session : on garde la main pour débattre d'une question ou d'une réponse */}
+      <div className="row between auto-next-switch">
+        <span className="small">{session.autoNextOff ? '💬 Suite automatique coupée : on passe quand vous voulez' : '⏭ Suite automatique après chaque réponse'}</span>
+        <button className="btn btn-small" disabled={busy} onClick={() => run(() => E.setAutoNext(sid, !!session.autoNextOff))}>
+          {session.autoNextOff ? '▶️ Remettre' : '⏸ Couper (débat)'}
+        </button>
+      </div>
       <p className="small">
         {(round.answered ?? []).length}/{active.length} réponse(s)
         {round.status === 'answering' && !mod.multiAnswer && ' · arrêt automatique quand tout le monde a répondu'}
