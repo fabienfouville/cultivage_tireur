@@ -78,3 +78,17 @@ describe('réglages conseillés', () => {
     }
   })
 })
+
+describe('Thème : validation', () => {
+  it('ne pré-valide que les réponses reconnues parmi les exemples', async () => {
+    const { theme, examplesOf, isKnownAnswer } = await import('./theme')
+    const hint = 'Chêne, hêtre, sapin, bouleau, platane… (et d’autres)'
+    expect(examplesOf(hint)).toEqual(['Chêne', 'hêtre', 'sapin', 'bouleau', 'platane'])
+    expect(isKnownAnswer('chene', hint)).toBe(true)
+    expect(isKnownAnswer('Sapins', hint)).toBe(true)
+    expect(isKnownAnswer('Érable', hint)).toBe(false)
+    const ans = (pid: string, items: string[]) => ({ id: pid, seq: 1, pid, name: pid, at: null, data: { items } }) as any
+    const items = theme.validationItems!({ q: { answerHint: hint } as any, answers: [ans('a', ['Chêne', 'Érable']), ans('b', ['chene'])], round: {} as any } as any)
+    expect(items.map((i) => [i.label, i.suggested, i.count])).toEqual([['Chêne', true, 2], ['Érable', false, 1]])
+  })
+})

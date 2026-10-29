@@ -1,8 +1,16 @@
-import { normalize } from '../lib/normalize'
+import { looksRight, normalize } from '../lib/normalize'
 import { FreeAnswer, Locked, QuestionText, RevealList, namesOf } from './common'
 import type { ModuleDef, ValidationItem } from './types'
 
 const list = (data: Record<string, any> | undefined): string[] => (Array.isArray(data?.items) ? data!.items : [])
+/** Exemples de bonnes réponses de la question (« Chêne, hêtre, sapin… ») */
+export const examplesOf = (hint: unknown): string[] =>
+  String(hint ?? '')
+    .split(/[,;/…]|\.{3}| et /)
+    .map((x) => x.replace(/\(.*?\)/g, '').trim())
+    .filter((x) => normalize(x))
+/** Réponse reconnue parmi les exemples : validée d'office, les autres restent à corriger par l'animateur */
+export const isKnownAnswer = (raw: unknown, hint: unknown) => examplesOf(hint).some((e) => looksRight(raw, e))
 
 export const theme: ModuleDef = {
   key: 'theme',
@@ -24,7 +32,7 @@ export const theme: ModuleDef = {
   summary: (q) => String(q.answerHint ?? ''),
   publicPayload: (q) => ({ text: q.text }),
   solution: (q) => ({ label: q.answerHint ?? '' }),
-  validationItems: ({ answers }) => {
+  validationItems: ({ q, answers }) => {
     const map = new Map<string, ValidationItem>()
     for (const a of answers) {
       for (const raw of list(a.data)) {
@@ -34,10 +42,11 @@ export const theme: ModuleDef = {
         if (it) {
           it.count++
           if (!it.pids!.includes(a.pid)) it.pids!.push(a.pid)
-        } else map.set(n, { key: n, label: raw, count: 1, pids: [a.pid], suggested: true })
+        } else map.set(n, { key: n, label: raw, count: 1, pids: [a.pid], suggested: isKnownAnswer(raw, q.answerHint) })
       }
     }
-    return [...map.values()].sort((a, b) => a.label.localeCompare(b.label))
+    // Les réponses reconnues d'abord, puis celles à corriger
+    return [...map.values()].sort((a, b) => Number(b.suggested) - Number(a.suggested) || a.label.localeCompare(b.label))
   },
   score: ({ answers, cfg, verdicts }) => {
     const results: Record<string, { pts: number; detail?: string }> = {}
