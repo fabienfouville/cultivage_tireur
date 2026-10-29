@@ -14,6 +14,6 @@
     { "module": "chronologie", "packId": "vrac-chrono", "questionCount": 4, "timer": 40 },
     { "module": "pixel", "packId": "vrac-pixel-tableaux", "questionCount": 4, "timer": 30 },
     { "module": "quisuisje", "packId": "vrac-qsj", "questionCount": 3, "timer": 50 },
-    { "module": "logique", "packId": "vrac-logique", "questionCount": 5, "timer": 35 }
+    { "module": "logique", "packId": "vrac-logique", "questionCount": 5, "timer": 45 }
   ]
 }

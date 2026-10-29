@@ -67,3 +67,14 @@ describe('réponse affichée (Cash, Pixel)', () => {
     expect(firstVariant(undefined)).toBe('')
   })
 })
+
+describe('réglages conseillés', () => {
+  it('ne visent que des jeux et des champs qui existent', async () => {
+    const { RECOMMENDED } = await import('../pages/admin/ConfigTab')
+    const { getModule } = await import('./index')
+    for (const [key, values] of Object.entries(RECOMMENDED)) {
+      const fields = ['timer', ...getModule(key as never).configFields.map((f) => f.key)]
+      for (const field of Object.keys(values)) expect(fields, `${key}.${field}`).toContain(field)
+    }
+  })
+})

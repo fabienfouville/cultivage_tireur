@@ -37,6 +37,22 @@ function GeneralSettings() {
   )
 }
 
+/**
+ * Réglages conseillés pour une soirée équilibrée (≈ 10 joueurs ou plus) : chaque manche rapporte à peu près autant au
+ * meilleur joueur, et les jeux à podium récompensent 5 personnes au lieu de 3
+ */
+export const RECOMMENDED: Record<string, Record<string, unknown>> = {
+  logique: { timer: 45, maxPoints: 5 },
+  'vf-survie': { pointsScheme: '1,1,1,2,2,2,3,3,3,4' },
+  estimation: { podium: '5,4,3,2,1' },
+  echelle: { podium: '5,4,3,2,1' },
+  geoloc: { podium: '5,4,3,2,1' },
+  pixel: { podium: '5,4,3,2,1', startCells: 8, step: 3, curve: 2.5 },
+  cash: { points: 4 },
+  theme: { solo: 2 },
+  top: { timer: 30 },
+}
+
 /** Réglages par défaut de chaque module (durée, points…) — stockés dans config/modules */
 export function ConfigTab() {
   const stored = useDoc<Record<string, any>>(doc(db, 'config', 'modules'))
@@ -68,6 +84,23 @@ export function ConfigTab() {
       }}
     >
       <GeneralSettings />
+      <div className="row between wrap">
+        <p className="muted small">Les champs modifiés ne sont enregistrés qu'avec le bouton « Enregistrer » en bas.</p>
+        <button
+          type="button"
+          className="btn"
+          onClick={() => {
+            setSaved(false)
+            setDraft((d) => {
+              const next = { ...d }
+              for (const [key, values] of Object.entries(RECOMMENDED)) next[key] = { ...(next[key] ?? {}), ...values }
+              return next
+            })
+          }}
+        >
+          ⚖️ Appliquer les réglages conseillés
+        </button>
+      </div>
       <div className="grid">
         {MODULES.map((m) => (
           <fieldset key={m.key} className="card">
