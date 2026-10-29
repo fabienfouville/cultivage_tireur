@@ -1,10 +1,10 @@
 {
   "id": "quiz-edf",
   "name": "Quiz EDF",
-  "description": "≈ 50 minutes, 11 jeux, questions inédites (spécial énergie en ouverture)",
+  "description": "≈ 50 minutes, 11 jeux, questions inédites",
   "cardsEnabled": false,
   "slots": [
-    { "module": "qcm", "packId": "edf-energie", "questionCount": 6, "timer": 20 },
+    { "module": "qcm", "packId": "vrac-qcm", "questionCount": 6, "timer": 20 },
     { "module": "vf-survie", "packId": "vrac-vf", "questionCount": 10, "timer": 12 },
     { "module": "estimation", "packId": "vrac-estimation", "questionCount": 4, "timer": 25 },
     { "module": "geoloc", "packId": "vrac-geoloc", "questionCount": 5, "timer": 30 },
