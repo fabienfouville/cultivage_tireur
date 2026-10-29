@@ -203,11 +203,16 @@ function PlayerGame({ session, me }: { session: Session; me: Participant }) {
               {slowed && <p className="small center">🐢 Tortue : tu as 30 % de temps en moins</p>}
             </>
           )}
-          {round.status === 'revealed' && (
-            <div className={'result-banner ' + (myResult?.pts ? 'result-good' : 'result-bad')}>
-              {myResult ? (myResult.pts > 0 ? `+${myResult.pts} pts` : myResult.pts < 0 ? `${myResult.pts} pts` : '0 pt') : 'Pas de réponse'}
-            </div>
-          )}
+          {round.status === 'revealed' &&
+            (() => {
+              const custom = mod.resultBanner?.({ round, block, pid: me.id, pts: myResult?.pts })
+              if (custom) return <div className={'result-banner ' + (custom.good ? 'result-good' : 'result-bad')}>{custom.text}</div>
+              return (
+                <div className={'result-banner ' + (myResult?.pts ? 'result-good' : 'result-bad')}>
+                  {myResult ? (myResult.pts > 0 ? `+${myResult.pts} pts` : myResult.pts < 0 ? `${myResult.pts} pts` : '0 pt') : 'Pas de réponse'}
+                </div>
+              )
+            })()}
           {/* key : chaque question repart d'un état vierge (saisie, mises…) */}
           <mod.Player
             key={round.seq}

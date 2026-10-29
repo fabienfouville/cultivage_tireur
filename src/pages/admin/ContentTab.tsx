@@ -35,7 +35,7 @@ function ModuleGrid({ open }: { open: (k: string) => void }) {
       {toMerge > 0 && (
         <div className="card merge-banner">
           <p>
-            <b>Gambling et Duo/Carré sont maintenant des variantes du QCM.</b> {toMerge} thème(s) sont encore rangés à part : regroupe-les
+            <b>Money Drop (ex-Gambling) et Duo/Carré sont maintenant des variantes du QCM.</b> {toMerge} thème(s) sont encore rangés à part : regroupe-les
             dans le QCM pour que leurs questions servent aux 3 variantes. Rien n'est supprimé.
           </p>
           <ConfirmButton

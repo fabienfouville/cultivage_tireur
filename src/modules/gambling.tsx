@@ -1,88 +1,138 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { CHOICE_COLORS, CHOICE_SHAPES, ChoiceButtons, Locked, QuestionText, RevealList, Sent, namesOf } from './common'
 import type { ModuleDef } from './types'
+
+// Money Drop (clé « gambling » conservée : les thèmes et réglages existants en dépendent)
 
 const sum = (a: number[]) => a.reduce((x, y) => x + y, 0)
 const cleanBets = (b: unknown): number[] =>
   Array.isArray(b) ? [0, 1, 2, 3].map((i) => Math.max(0, Math.floor(Number(b[i]) || 0))) : [0, 0, 0, 0]
 
-/** Jetons restants d'un joueur sur la manche (marche aussi pour ceux arrivés en cours de route) */
-export const tokensLeft = (block: { tokensStart?: number; spent?: Record<string, number> }, pid: string) =>
-  Math.max(0, (block.tokensStart ?? 0) - (block.spent?.[pid] ?? 0))
+/** Jetons encore en jeu pour un joueur (un joueur arrivé en cours de manche part avec le stock complet) */
+export const tokensLeft = (block: { tokensStart?: number; bank?: Record<string, number> }, pid: string) =>
+  Math.max(0, block.bank?.[pid] ?? block.tokensStart ?? 0)
+
+/** Les mises respectent la règle : tout est posé, sans couvrir les 4 réponses (si la règle est active) */
+export const betsValid = (bets: number[], have: number, keepOneEmpty: boolean) =>
+  sum(bets) === have && (!keepOneEmpty || bets.some((b) => b === 0))
 
 export const gambling: ModuleDef = {
   key: 'gambling',
-  name: 'Gambling',
-  icon: '🎲',
-  tagline: 'Miser des jetons sur les choix',
+  name: 'Money Drop',
+  icon: '💰',
+  tagline: 'Tout miser, ne garder que la bonne réponse',
   variantOf: 'qcm',
-  variantName: '🎲 Mises (Gambling)',
+  variantName: '💰 Money Drop',
   rules:
-    'Tu as un stock de jetons pour toute la manche. Répartis tes mises sur les 4 choix : chaque jeton posé sur la bonne réponse rapporte des points, les jetons misés sont dépensés. Si tu ne mises rien, tu perds quand même ta part de jetons de la question.',
-  defaults: { timer: 30, tokensPerQuestion: 3, multiplier: 1 },
+    "Tu commences la manche avec un stock de jetons. À chaque question, répartis TOUS tes jetons sur les réponses, en laissant au moins une réponse vide. Seuls les jetons posés sur la bonne réponse restent, les autres tombent. Les jetons non posés à la fin du temps tombent aussi. À la fin de la manche, chaque jeton restant rapporte des points.",
+  defaults: { timer: 30, stock: 20, multiplier: 1, keepOneEmpty: 1 },
   configFields: [
-    { key: 'tokensPerQuestion', label: 'Jetons par question', type: 'number', help: '3 → 30 jetons pour 10 questions ; ne pas miser fait perdre ces jetons' },
-    { key: 'multiplier', label: 'Points par jeton gagnant', type: 'number' },
+    { key: 'stock', label: 'Jetons au départ de la manche', type: 'number', help: 'ex. 20' },
+    { key: 'multiplier', label: 'Points par jeton restant à la fin', type: 'number' },
+    { key: 'keepOneEmpty', label: 'Laisser au moins une réponse vide (1 = oui, 0 = non)', type: 'number', help: 'comme dans l’émission' },
   ],
   questionFields: [
     { key: 'text', label: 'Question', type: 'textarea' },
     { key: 'answers', label: 'Réponses', type: 'choices4', correctKey: 'correct' },
   ],
   summary: (q) => `${(q.answers as string[])?.[q.correct as number] ?? '?'}`,
-  publicPayload: (q) => ({ text: q.text, choices: q.answers }),
+  publicPayload: (q, { cfg }) => ({ text: q.text, choices: q.answers, keepOneEmpty: Number(cfg.keepOneEmpty ?? 1) === 1 }),
   solution: (q) => ({ correct: q.correct, label: (q.answers as string[])[q.correct as number] }),
-  initBlock: (block, participants, cfg) => {
-    const tokens = block.tokensStart ?? Number(cfg.tokensPerQuestion) * block.questionIds.length
-    return { block: { tokensStart: tokens, spent: {} } }
+  initBlock: (block, _participants, cfg) => ({ block: { tokensStart: block.tokensStart ?? (Number(cfg.stock) || 20), bank: {} } }),
+  // Plus de jetons : on regarde la suite sans jouer
+  canAnswer: (block, pid) => tokensLeft(block, pid) > 0,
+  blockOver: (block) => !!block.bank && Object.keys(block.bank).length > 0 && Object.values(block.bank).every((t) => t <= 0),
+  isComplete: (d) => !!d.complete,
+  describe: (d) => cleanBets(d.bets).join(' / '),
+  // Les points ne tombent qu'à la fin de la manche : avant, on affiche les jetons qui restent
+  resultBanner: ({ round, block, pid }) => {
+    if (round.index + 1 >= round.total) return null
+    const kept = tokensLeft(block, pid)
+    return { text: `🪙 ${kept} jeton${kept > 1 ? 's' : ''} restant${kept > 1 ? 's' : ''}`, good: kept > 0 }
   },
-  score: ({ q, answers, cfg, participants, block }) => {
+  score: ({ q, answers, cfg, participants, block, round }) => {
     const totals = [0, 0, 0, 0]
     const results: Record<string, { pts: number; detail?: string }> = {}
-    const spent = { ...(block.spent ?? {}) }
+    const bank = { ...(block.bank ?? {}) }
     const byPid = new Map(answers.map((a) => [a.pid, a]))
-    const share = Math.max(0, Number(cfg.tokensPerQuestion) || 0)
+    const correct = q.correct as number
+    const last = round.index + 1 >= round.total
     for (const p of participants) {
+      if (p.kicked) continue
       const have = tokensLeft(block, p.id)
+      if (have <= 0) continue
       let bets = cleanBets(byPid.get(p.id)?.data.bets)
-      // Sécurité : on ne peut pas miser plus que ce qu'on a
+      // Sécurité : on ne peut pas poser plus que ce qu'on a
       if (sum(bets) > have) bets = [0, 0, 0, 0]
-      if (sum(bets) === 0) {
-        // Pas de mise : on perd quand même sa part de la question
-        const lost = Math.min(share, have)
-        spent[p.id] = (spent[p.id] ?? 0) + lost
-        results[p.id] = { pts: 0, detail: lost ? `pas de mise : −${lost} jeton${lost > 1 ? 's' : ''}` : 'plus de jetons' }
-        continue
-      }
       bets.forEach((b, i) => (totals[i] += b))
-      const won = bets[q.correct as number] * Number(cfg.multiplier || 1)
-      spent[p.id] = (spent[p.id] ?? 0) + sum(bets)
-      results[p.id] = { pts: won, detail: `misé ${sum(bets)}` }
+      const kept = bets[correct]
+      bank[p.id] = kept
+      const lost = have - kept
+      const pts = last ? kept * Number(cfg.multiplier || 1) : 0
+      results[p.id] = {
+        pts,
+        detail: `🪙 ${have} → ${kept}` + (lost ? ` (${lost} tombé${lost > 1 ? 's' : ''})` : '') + (last ? ` · +${pts} pts` : ''),
+      }
     }
-    return { results, block: { spent }, summary: { counts: totals } }
+    return { results, block: { bank }, summary: { counts: totals } }
   },
   Player: ({ round, block, answer, submit, locked, me }) => {
     const have = tokensLeft(block, me.id)
+    const keepOneEmpty = round.public.keepOneEmpty !== false
     const [bets, setBets] = useState<number[]>(cleanBets(answer?.data.bets))
     // Mises déjà envoyées (ex. après un rechargement de la page)
     useEffect(() => {
       if (answer) setBets(cleanBets(answer.data.bets))
     }, [answer?.id])
+    // Chaque mise est envoyée automatiquement (comme dans l'émission, ce qui est posé à la fin du temps compte)
+    const timer = useRef<ReturnType<typeof setTimeout>>()
+    const place = (next: number[]) => {
+      setBets(next)
+      clearTimeout(timer.current)
+      timer.current = setTimeout(() => void submit({ bets: next, complete: betsValid(next, have, keepOneEmpty) }), 400)
+    }
+    useEffect(() => () => clearTimeout(timer.current), [])
     const revealed = round.status === 'revealed'
     const left = have - sum(bets)
-    const shown = revealed ? have : left
-    const plural = shown > 1 ? 's' : ''
     const choices = round.public.choices as string[]
-    const change = (i: number, d: number) =>
-      setBets((b) => {
-        const n = [...b]
-        n[i] = Math.max(0, n[i] + d)
-        return sum(n) > have ? b : n
-      })
+    const kept = revealed ? bets[round.solution?.correct] ?? 0 : 0
+    const change = (i: number, d: number) => {
+      const n = [...bets]
+      n[i] = Math.max(0, n[i] + d)
+      if (sum(n) > have) return
+      if (keepOneEmpty && n.every((b) => b > 0)) return
+      place(n)
+    }
+    const allIn = (i: number) => {
+      const n = [...bets]
+      n[i] += left
+      if (keepOneEmpty && n.every((b) => b > 0)) return
+      place(n)
+    }
+    if (have <= 0 && !revealed) {
+      return (
+        <div className="center">
+          <div className="huge">💸</div>
+          <p>Tu n'as plus de jetons pour cette manche. Regarde les autres tomber !</p>
+          <QuestionText>{round.public.text}</QuestionText>
+        </div>
+      )
+    }
     return (
       <>
         <QuestionText>{round.public.text}</QuestionText>
         <div className="tokens">
-          🪙 <b>{shown}</b> jeton{plural} {revealed ? `restant${plural}` : 'à miser'}
+          {revealed ? (
+            <>
+              🪙 Il te reste <b>{kept}</b> jeton{kept > 1 ? 's' : ''}
+            </>
+          ) : left > 0 ? (
+            <>
+              🪙 <b>{left}</b> jeton{left > 1 ? 's' : ''} à placer (sur {have})
+            </>
+          ) : (
+            <>✅ Tous tes jetons sont placés</>
+          )}
         </div>
         <div className="bets">
           {choices.map((c, i) => (
@@ -106,16 +156,16 @@ export const gambling: ModuleDef = {
                 <button type="button" disabled={locked || revealed || left <= 0} onClick={() => change(i, +1)}>
                   +
                 </button>
+                <button type="button" className="bet-all" disabled={locked || revealed || left <= 0} onClick={() => allIn(i)}>
+                  Tout
+                </button>
               </span>
             </div>
           ))}
         </div>
-        {!revealed && (
-          <button className="btn btn-primary btn-block" disabled={locked} onClick={() => submit({ bets })}>
-            Valider mes mises ({sum(bets)})
-          </button>
-        )}
-        {answer && !locked && !revealed && <Sent>Mises enregistrées : {sum(cleanBets(answer.data.bets))} jetons</Sent>}
+        {!revealed && keepOneEmpty && <p className="muted small center">Laisse au moins une réponse sans jeton.</p>}
+        {!revealed && left > 0 && <p className="muted small center">Les jetons non placés à la fin du temps tombent.</p>}
+        {answer && !locked && !revealed && left === 0 && <Sent>Mises enregistrées, tu peux encore les déplacer</Sent>}
         {locked && !revealed && <Locked />}
       </>
     )
@@ -128,7 +178,7 @@ export const gambling: ModuleDef = {
         {round.status === 'revealed' ? (
           <>
             <ChoiceButtons choices={choices} disabled correct={round.solution?.correct} counts={round.summary?.counts ?? [0, 0, 0, 0]} />
-            <p className="muted center">Nombre de jetons misés sur chaque réponse</p>
+            <p className="muted center">Jetons posés sur chaque réponse : seuls ceux de la bonne réponse restent</p>
             <RevealList round={round} names={namesOf(participants)} />
           </>
         ) : (
@@ -142,7 +192,7 @@ export const gambling: ModuleDef = {
               ))}
             </div>
             <p className="muted center">
-              🪙 Jetons : {participants.filter((p) => !p.kicked).map((p) => `${p.name} ${tokensLeft(block, p.id)}`).join(' · ')}
+              🪙 Jetons en jeu : {participants.filter((p) => !p.kicked).map((p) => `${p.name} ${tokensLeft(block, p.id)}`).join(' · ')}
             </p>
           </>
         )}

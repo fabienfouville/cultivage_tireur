@@ -89,7 +89,7 @@ export function Locked({ text = 'Temps écoulé' }: { text?: string }) {
   return <div className="locked">⏱ {text}</div>
 }
 
-/** 4 gros boutons colorés (QCM, Gambling, Duo/Carré) */
+/** 4 gros boutons colorés (QCM, Money Drop, Duo/Carré) */
 export function ChoiceButtons({
   choices,
   selected,

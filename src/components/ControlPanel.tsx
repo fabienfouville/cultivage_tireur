@@ -347,7 +347,7 @@ function BlockPicker({ session, busy, run }: { session: Session; busy: boolean; 
               <input
                 type="number"
                 min={1}
-                placeholder={String(Number(cfg?.tokensPerQuestion ?? 3) * count)}
+                placeholder={String(Number(cfg?.stock ?? 20))}
                 value={tokens}
                 onChange={(e) => setTokens(e.target.value === '' ? '' : Number(e.target.value))}
               />

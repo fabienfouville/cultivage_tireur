@@ -57,9 +57,11 @@ export interface Block {
   slowed?: string[]
   /** cartes jouées pour ce bloc : pid → carte */
   cards?: Record<string, CardPlay>
-  /** gambling : jetons de départ */
+  /** Money Drop : jetons au départ de la manche */
   tokensStart?: number
-  /** gambling : jetons déjà dépensés par joueur sur la manche */
+  /** Money Drop : jetons encore en jeu par joueur */
+  bank?: Record<string, number>
+  /** ancien Gambling : jetons déjà dépensés par joueur sur la manche */
   spent?: Record<string, number>
   /** vf-survie : pid → encore en vie */
   alive?: Record<string, boolean>

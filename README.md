@@ -11,7 +11,7 @@ l'animateur pilote depuis son téléphone ou son ordi.
 
 | Module | Principe |
 |---|---|
-| 🔤 QCM | 4 choix, en 3 variantes au lancement : 🔤 Classique, 🎲 Mises (jetons à miser), 👥 Duo/Carré/Cash (plus de risque, plus de points) |
+| 🔤 QCM | 4 choix, en 3 variantes au lancement : 🔤 Classique, 💰 Money Drop (un stock de jetons à répartir en entier ; seuls ceux posés sur la bonne réponse restent et valent des points en fin de manche), 👥 Duo/Carré/Cash (plus de risque, plus de points) |
 | 🧠 100% Logique | Énigmes de logique, de plus en plus dures (% de gens qui trouvent) ; une erreur ne rapporte rien mais on continue |
 | ⚔️ VF Survie | Vrai/Faux : une erreur élimine (sans réponse : 0 point mais on reste), barème croissant |
 | 🎯 Estimation | Un nombre, podium des plus proches |

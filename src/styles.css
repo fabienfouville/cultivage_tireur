@@ -1755,3 +1755,9 @@ details > summary {
   font-size: 17px;
   padding: 0 8px;
 }
+
+.bet-ctrl .bet-all {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}

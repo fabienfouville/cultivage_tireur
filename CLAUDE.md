@@ -61,7 +61,7 @@ Règles d'or :
 1. Créer `src/modules/mon-jeu.tsx` en s'inspirant du module le plus proche (`qcm.tsx` pour un choix, `cash.tsx` pour une
    réponse libre validée à la main, `top.tsx` pour plusieurs tours, `logique.tsx` pour une difficulté croissante).
    Une **variante** d'un jeu (mêmes questions, autres règles) déclare `variantOf` + `variantName` : elle n'a pas de
-   banque à elle et apparaît dans le sélecteur « Règles » (ex. `gambling.tsx` et `duo-carre-cash.tsx`, variantes du QCM).
+   banque à elle et apparaît dans le sélecteur « Règles » (ex. `gambling.tsx`, le Money Drop, dont la clé reste `gambling`, et `duo-carre-cash.tsx`, variantes du QCM).
 2. Ajouter la clé dans le type `ModuleKey` (`src/types.ts`) et le module dans `MODULES` (`src/modules/index.ts`).
 3. Ajouter un pack d'exemple dans `content/packs/` et lancer `npm test`.
 4. Tester une partie en local (émulateurs) sur un écran de téléphone.
