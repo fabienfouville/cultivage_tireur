@@ -1,0 +1,143 @@
+{
+  "id": "vrac-echelle",
+  "module": "echelle",
+  "theme": "Vrac · À l’échelle",
+  "questions": [
+    {
+      "text": "Quelle hauteur fait un panneau de basket, jusqu'en haut de la planche ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "refImage": "/echelle/humain.webp",
+      "refLength": false,
+      "targetName": "Panneau de basket",
+      "answer": 3.95,
+      "targetEmoji": "🏀",
+      "targetImage": "/echelle/panier-basket.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle hauteur fait une cage de football ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "refImage": "/echelle/humain.webp",
+      "refLength": false,
+      "targetName": "Cage de football",
+      "answer": 2.44,
+      "targetEmoji": "🥅",
+      "targetImage": "/echelle/cage-foot.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle longueur fait un grand requin blanc adulte ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "refImage": "/echelle/humain.webp",
+      "refLength": false,
+      "targetName": "Grand requin blanc",
+      "answer": 5,
+      "targetEmoji": "🦈",
+      "targetImage": "/echelle/requin-blanc.webp",
+      "targetLength": true
+    },
+    {
+      "text": "Quelle hauteur fait aujourd'hui la pyramide de Khéops ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "refImage": "/echelle/eiffel.webp",
+      "refLength": false,
+      "targetName": "Pyramide de Khéops",
+      "answer": 138,
+      "targetEmoji": "🔺",
+      "targetImage": "/echelle/pyramide.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle hauteur fait le séquoia géant « General Sherman » ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "refImage": "/echelle/eiffel.webp",
+      "refLength": false,
+      "targetName": "Séquoia General Sherman",
+      "answer": 83.8,
+      "targetEmoji": "🌲",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle hauteur fait la Grande Arche de la Défense ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "refImage": "/echelle/eiffel.webp",
+      "refLength": false,
+      "targetName": "Grande Arche",
+      "answer": 110,
+      "targetEmoji": "🏛️",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle hauteur font les tours de Notre-Dame de Paris ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "refImage": "/echelle/eiffel.webp",
+      "refLength": false,
+      "targetName": "Tours de Notre-Dame",
+      "answer": 69,
+      "targetEmoji": "⛪",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle hauteur fait la tour Montparnasse ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "refImage": "/echelle/eiffel.webp",
+      "refLength": false,
+      "targetName": "Tour Montparnasse",
+      "answer": 210,
+      "targetEmoji": "🏢",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle hauteur maximale atteint le viaduc de Millau ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "refImage": "/echelle/eiffel.webp",
+      "refLength": false,
+      "targetName": "Viaduc de Millau",
+      "answer": 343,
+      "targetEmoji": "🌉",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle hauteur fait la tour CN de Toronto ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "refImage": "/echelle/eiffel.webp",
+      "refLength": false,
+      "targetName": "Tour CN",
+      "answer": 553,
+      "targetEmoji": "🗼",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle hauteur fait le barrage de Tignes, le plus haut de France ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "refImage": "/echelle/eiffel.webp",
+      "refLength": false,
+      "targetName": "Barrage de Tignes",
+      "answer": 180,
+      "targetEmoji": "🏞️",
+      "targetLength": false
+    }
+  ]
+}

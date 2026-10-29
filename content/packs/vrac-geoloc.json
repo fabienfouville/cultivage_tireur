@@ -1,0 +1,171 @@
+{
+  "id": "vrac-geoloc",
+  "module": "geoloc",
+  "theme": "Vrac · Géoloc",
+  "mapId": "world",
+  "questions": [
+    {
+      "text": "Où se trouve Tombouctou ?",
+      "answerHint": "Tombouctou (Mali)",
+      "lat": 16.7735,
+      "lng": -3.0074
+    },
+    {
+      "text": "Où se trouve Reykjavik ?",
+      "answerHint": "Reykjavik (Islande)",
+      "lat": 64.1466,
+      "lng": -21.9426
+    },
+    {
+      "text": "Où se trouve Ushuaïa, la ville la plus australe du monde ?",
+      "answerHint": "Ushuaïa (Argentine)",
+      "lat": -54.8019,
+      "lng": -68.303
+    },
+    {
+      "text": "Où se trouve le lac Titicaca ?",
+      "answerHint": "Lac Titicaca — Pérou / Bolivie",
+      "lat": -15.9254,
+      "lng": -69.3354
+    },
+    {
+      "text": "Où se trouve Venise ?",
+      "answerHint": "Venise (Italie)",
+      "lat": 45.4408,
+      "lng": 12.3155
+    },
+    {
+      "text": "Où se trouve le mont Rushmore ?",
+      "answerHint": "Mont Rushmore — Dakota du Sud, États-Unis",
+      "lat": 43.8791,
+      "lng": -103.4591
+    },
+    {
+      "text": "Où se trouve la tour de Pise ?",
+      "answerHint": "Tour de Pise (Italie)",
+      "lat": 43.723,
+      "lng": 10.3966
+    },
+    {
+      "text": "Où se trouve le château de Neuschwanstein ?",
+      "answerHint": "Neuschwanstein — Bavière, Allemagne",
+      "lat": 47.5576,
+      "lng": 10.7498
+    },
+    {
+      "text": "Où se trouve Saint-Pétersbourg ?",
+      "answerHint": "Saint-Pétersbourg (Russie)",
+      "lat": 59.9398,
+      "lng": 30.3146
+    },
+    {
+      "text": "Où se trouve Marrakech ?",
+      "answerHint": "Marrakech (Maroc)",
+      "lat": 31.6295,
+      "lng": -7.9811
+    },
+    {
+      "text": "Où se trouve Dubrovnik ?",
+      "answerHint": "Dubrovnik (Croatie)",
+      "lat": 42.6507,
+      "lng": 18.0944
+    },
+    {
+      "text": "Où se trouvent les lettres « HOLLYWOOD » ?",
+      "answerHint": "Hollywood Sign — Los Angeles, États-Unis",
+      "lat": 34.1341,
+      "lng": -118.3215
+    },
+    {
+      "text": "Où se trouve Bora-Bora ?",
+      "answerHint": "Bora-Bora (Polynésie française)",
+      "lat": -16.5004,
+      "lng": -151.7415
+    },
+    {
+      "text": "Où se trouve Vancouver ?",
+      "answerHint": "Vancouver (Canada)",
+      "lat": 49.2827,
+      "lng": -123.1207
+    },
+    {
+      "text": "Où se trouve Lourdes ?",
+      "answerHint": "Lourdes (Hautes-Pyrénées)",
+      "lat": 43.0947,
+      "lng": -0.0458
+    },
+    {
+      "text": "Où se trouve le lac d'Annecy ?",
+      "answerHint": "Lac d'Annecy (Haute-Savoie)",
+      "lat": 45.85,
+      "lng": 6.17
+    },
+    {
+      "text": "Où se trouve Biarritz ?",
+      "answerHint": "Biarritz (Pyrénées-Atlantiques)",
+      "lat": 43.4832,
+      "lng": -1.5586
+    },
+    {
+      "text": "Où se trouve l'usine marémotrice de la Rance ?",
+      "answerHint": "Usine marémotrice de la Rance (Ille-et-Vilaine)",
+      "lat": 48.6182,
+      "lng": -2.0236
+    },
+    {
+      "text": "Où se trouve le lac de Serre-Ponçon ?",
+      "answerHint": "Lac de Serre-Ponçon (Hautes-Alpes)",
+      "lat": 44.53,
+      "lng": 6.35
+    },
+    {
+      "text": "Où se trouve la Norvège ?",
+      "answerHint": "Norvège",
+      "lat": 61.0,
+      "lng": 8.5,
+      "isoNum": 578
+    },
+    {
+      "text": "Où se trouve l'Argentine ?",
+      "answerHint": "Argentine",
+      "lat": -34.0,
+      "lng": -64.0,
+      "isoNum": 32
+    },
+    {
+      "text": "Où se trouve le Canada ?",
+      "answerHint": "Canada",
+      "lat": 56.0,
+      "lng": -106.0,
+      "isoNum": 124
+    },
+    {
+      "text": "Où se trouve l'Espagne ?",
+      "answerHint": "Espagne",
+      "lat": 40.0,
+      "lng": -3.7,
+      "isoNum": 724
+    },
+    {
+      "text": "Où se trouve la Grèce ?",
+      "answerHint": "Grèce",
+      "lat": 39.07,
+      "lng": 22.0,
+      "isoNum": 300
+    },
+    {
+      "text": "Où se trouve le Portugal ?",
+      "answerHint": "Portugal",
+      "lat": 39.6,
+      "lng": -8.0,
+      "isoNum": 620
+    },
+    {
+      "text": "Où se trouve l'Afrique du Sud ?",
+      "answerHint": "Afrique du Sud",
+      "lat": -29.0,
+      "lng": 24.0,
+      "isoNum": 710
+    }
+  ]
+}

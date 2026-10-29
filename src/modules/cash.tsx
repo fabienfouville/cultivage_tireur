@@ -1,4 +1,4 @@
-import { FreeAnswer, Locked, QuestionText, RevealList, Sent, groupFreeAnswers, isValidated, namesOf } from './common'
+import { FreeAnswer, Locked, QuestionText, RevealList, Sent, firstVariant, groupFreeAnswers, isValidated, namesOf } from './common'
 import type { ModuleDef } from './types'
 
 export const cash: ModuleDef = {
@@ -16,7 +16,7 @@ export const cash: ModuleDef = {
   manual: true,
   summary: (q) => String(q.answerHint ?? ''),
   publicPayload: (q) => ({ text: q.text }),
-  solution: (q) => ({ label: q.answerHint }),
+  solution: (q) => ({ label: firstVariant(q.answerHint) }),
   validationItems: ({ q, answers }) => groupFreeAnswers(answers, (a) => a.data.text, q.answerHint),
   score: ({ answers, cfg, verdicts }) => {
     const results: Record<string, { pts: number; detail?: string }> = {}

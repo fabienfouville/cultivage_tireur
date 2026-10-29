@@ -1,0 +1,55 @@
+{
+  "id": "vrac-theme",
+  "module": "theme",
+  "theme": "Vrac · Thème",
+  "questions": [
+    {
+      "text": "Un pays qui a une frontière terrestre avec la France",
+      "answerHint": "Belgique, Luxembourg, Allemagne, Suisse, Italie, Monaco, Espagne, Andorre… et, outre-mer, Brésil, Suriname, Pays-Bas (Saint-Martin)"
+    },
+    {
+      "text": "Une source d'énergie",
+      "answerHint": "Nucléaire, solaire, éolien, hydraulique, géothermie, biomasse, charbon, gaz, pétrole, marémotrice, hydrogène…"
+    },
+    {
+      "text": "Un appareil électroménager",
+      "answerHint": "Frigo, lave-linge, lave-vaisselle, four, micro-ondes, aspirateur, grille-pain, bouilloire, cafetière, sèche-linge…"
+    },
+    {
+      "text": "Un sport olympique d'hiver",
+      "answerHint": "Ski alpin, biathlon, curling, bobsleigh, luge, patinage artistique, hockey sur glace, saut à ski, snowboard, skeleton…"
+    },
+    {
+      "text": "Un personnage de Star Wars",
+      "answerHint": "Luke Skywalker, Dark Vador, Leia, Han Solo, Chewbacca, Yoda, R2-D2, C-3PO, Obi-Wan Kenobi, Palpatine…"
+    },
+    {
+      "text": "Une planète ou une lune du système solaire",
+      "answerHint": "Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune, la Lune, Io, Europe, Titan, Ganymède, Phobos…"
+    },
+    {
+      "text": "Une langue parlée en Europe",
+      "answerHint": "Français, anglais, allemand, espagnol, italien, portugais, néerlandais, polonais, grec, suédois, breton, basque…"
+    },
+    {
+      "text": "Un instrument à cordes",
+      "answerHint": "Guitare, violon, violoncelle, contrebasse, alto, harpe, piano, banjo, mandoline, ukulélé, sitar…"
+    },
+    {
+      "text": "Un monument de Paris",
+      "answerHint": "Tour Eiffel, Arc de Triomphe, Notre-Dame, Sacré-Cœur, Louvre, Panthéon, Invalides, Opéra Garnier, Grande Arche…"
+    },
+    {
+      "text": "Un film avec Louis de Funès",
+      "answerHint": "La Grande Vadrouille, Le Corniaud, Les Aventures de Rabbi Jacob, La Folie des grandeurs, L'Aile ou la Cuisse, Fantômas…"
+    },
+    {
+      "text": "Un sport de raquette",
+      "answerHint": "Tennis, badminton, squash, padel, tennis de table, pelote basque, racquetball…"
+    },
+    {
+      "text": "Un réseau social ou une appli de messagerie",
+      "answerHint": "Facebook, Instagram, TikTok, X (Twitter), Snapchat, WhatsApp, LinkedIn, Telegram, Pinterest…"
+    }
+  ]
+}

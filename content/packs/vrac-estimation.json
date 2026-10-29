@@ -1,0 +1,102 @@
+{
+  "id": "vrac-estimation",
+  "module": "estimation",
+  "theme": "Vrac · Estimation",
+  "questions": [
+    {
+      "text": "Quelle distance mesure un marathon ?",
+      "answer": 42.195,
+      "unit": "km"
+    },
+    {
+      "text": "Combien d'habitants compte la France, en millions (2024) ?",
+      "answer": 68,
+      "unit": "millions"
+    },
+    {
+      "text": "Quelle est la vitesse de la lumière dans le vide ?",
+      "answer": 299792,
+      "unit": "km/s"
+    },
+    {
+      "text": "Combien de petits cubes visibles forment un Rubik's Cube 3×3×3 ?",
+      "answer": 26,
+      "unit": "cubes"
+    },
+    {
+      "text": "Combien de langues sont parlées dans le monde, environ ?",
+      "answer": 7000,
+      "unit": "langues"
+    },
+    {
+      "text": "Combien d'étages compte le Burj Khalifa ?",
+      "answer": 163,
+      "unit": "étages"
+    },
+    {
+      "text": "Combien de jours dure la gestation d'un éléphant, environ ?",
+      "answer": 650,
+      "unit": "jours"
+    },
+    {
+      "text": "En quelle année est sorti le film « Les Bronzés » ?",
+      "answer": 1978,
+      "unit": ""
+    },
+    {
+      "text": "En quelle année a eu lieu le premier vol du Concorde ?",
+      "answer": 1969,
+      "unit": ""
+    },
+    {
+      "text": "Combien d'os compte la main humaine (poignet compris) ?",
+      "answer": 27,
+      "unit": "os"
+    },
+    {
+      "text": "Quelle est la température d'ébullition de l'eau en degrés Fahrenheit ?",
+      "answer": 212,
+      "unit": "°F"
+    },
+    {
+      "text": "Combien de passagers un Airbus A380 peut-il transporter au maximum (certification) ?",
+      "answer": 853,
+      "unit": "passagers"
+    },
+    {
+      "text": "En quelle année ont commencé les travaux du château de Chambord ?",
+      "answer": 1519,
+      "unit": ""
+    },
+    {
+      "text": "Quelle distance parcourt le Tour de France cycliste, environ ?",
+      "answer": 3400,
+      "unit": "km"
+    },
+    {
+      "text": "Quelle température règne au centre de la Terre, environ ?",
+      "answer": 5500,
+      "unit": "°C"
+    },
+    {
+      "text": "En quelle année l'Everest a-t-il été gravi pour la première fois ?",
+      "answer": 1953,
+      "unit": ""
+    },
+    {
+      "text": "À quelle vitesse maximale roule un TGV en service commercial ?",
+      "answer": 320,
+      "unit": "km/h"
+    },
+    {
+      "text": "Quel est le record du monde de vitesse sur rail, établi par un TGV en 2007 ?",
+      "answer": 574.8,
+      "unit": "km/h"
+    },
+    {
+      "text": "Combien pèse une pièce de 1 euro ?",
+      "answer": 7.5,
+      "unit": "grammes"
+    }
+  ]
+}

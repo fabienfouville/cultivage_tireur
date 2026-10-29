@@ -1,0 +1,104 @@
+{
+  "id": "vrac-logique",
+  "module": "logique",
+  "theme": "Vrac · 100% Logique",
+  "description": "énigmes de 50 % à 5 %",
+  "questions": [
+    {
+      "text": "Complète la suite :\n1, 4, 9, 16, 25, ?",
+      "answer": "36/trente-six/trente six",
+      "percent": 50,
+      "explain": "Ce sont les carrés : 1², 2², 3², 4², 5², puis 6² = 36."
+    },
+    {
+      "text": "Pierre a deux fois l'âge de Paul. Dans 10 ans, la somme de leurs âges sera 50.\nQuel âge a Paul aujourd'hui ?",
+      "answer": "10/dix/10 ans/dix ans",
+      "percent": 40,
+      "explain": "Paul a x ans, Pierre 2x. Dans 10 ans : x + 10 + 2x + 10 = 50, donc x = 10."
+    },
+    {
+      "text": "Complète la suite :\nJ, F, M, A, M, J, J, ?",
+      "answer": "A/a",
+      "percent": 35,
+      "explain": "Ce sont les initiales des mois : juillet est suivi d'août."
+    },
+    {
+      "text": "Combien de fois peut-on soustraire 10 de 100 ?",
+      "answer": "1/une/une fois/une seule fois/1 fois",
+      "percent": 15,
+      "explain": "Une seule fois : après, on soustrait 10 de 90, plus de 100."
+    },
+    {
+      "text": "Avec 3 coups de couteau bien droits, combien de parts au maximum peut-on faire dans une galette (sans empiler les morceaux) ?",
+      "answer": "7/sept",
+      "percent": 10,
+      "explain": "Chaque nouvelle coupe croise toutes les précédentes : 2, puis 4, puis 7 parts."
+    },
+    {
+      "text": "Un bus part vide. Au 1er arrêt, 12 personnes montent. Au 2e, 5 descendent et 3 montent. Au 3e, 8 descendent.\nCombien de passagers reste-t-il ?",
+      "answer": "2/deux/2 passagers/deux passagers",
+      "percent": 45,
+      "explain": "12 − 5 + 3 − 8 = 2."
+    },
+    {
+      "text": "Une montre retarde de 2 minutes par heure.\nCombien de minutes de retard a-t-elle au bout d'une journée entière ?",
+      "answer": "48/quarante-huit/quarante huit/48 min/48 minutes",
+      "percent": 45,
+      "explain": "24 heures × 2 minutes = 48 minutes."
+    },
+    {
+      "text": "Complète la suite :\n1, 8, 27, 64, ?",
+      "answer": "125/cent vingt-cinq/cent-vingt-cinq/cent vingt cinq",
+      "percent": 40,
+      "explain": "Ce sont les cubes : 1³, 2³, 3³, 4³, puis 5³ = 125."
+    },
+    {
+      "text": "Complète la suite :\n10, 9, 7, 4, ?",
+      "answer": "0/zéro/zero",
+      "percent": 40,
+      "explain": "On enlève 1, puis 2, puis 3, puis 4 : 4 − 4 = 0."
+    },
+    {
+      "text": "Hier, c'était dimanche.\nQuel jour serons-nous après-demain ?",
+      "answer": "Mercredi",
+      "percent": 40,
+      "explain": "Aujourd'hui c'est lundi, donc après-demain mercredi."
+    },
+    {
+      "text": "Depuis son 1er anniversaire, Léo a soufflé toutes ses bougies chaque année : 1, puis 2, puis 3…\nCombien de bougies en tout le jour de ses 10 ans ?",
+      "answer": "55/cinquante-cinq/cinquante cinq",
+      "percent": 30,
+      "explain": "1 + 2 + … + 10 = 55."
+    },
+    {
+      "text": "Combien de dimanches peut-il y avoir, au maximum, dans une année ?",
+      "answer": "53/cinquante-trois/cinquante trois",
+      "percent": 25,
+      "explain": "Une année fait 52 semaines et 1 ou 2 jours : si l'un de ces jours en plus est un dimanche, on en compte 53."
+    },
+    {
+      "text": "J'ai deux pièces qui font 3 € en tout.\nL'une des deux n'est pas une pièce de 1 €.\nQuelles sont ces pièces ?",
+      "answer": "2 € et 1 €",
+      "percent": 15,
+      "explain": "« L'une n'est pas une pièce de 1 € » : c'est la pièce de 2 €. L'autre, si !",
+      "choices": [
+        "2 € et 1 €",
+        "1,50 € et 1,50 €",
+        "Trois pièces de 1 €",
+        "C'est impossible"
+      ]
+    },
+    {
+      "text": "On veut fabriquer un grand cube de 4 × 4 × 4 avec des petits cubes, mais creux : seulement la couche extérieure.\nCombien de petits cubes faut-il ?",
+      "answer": "56/cinquante-six/cinquante six",
+      "percent": 8,
+      "explain": "Un cube plein en demande 64 ; l'intérieur caché fait 2 × 2 × 2 = 8 cubes, donc 64 − 8 = 56."
+    },
+    {
+      "text": "De midi à minuit (minuit exclu), combien de fois les deux aiguilles d'une horloge se superposent-elles ?",
+      "answer": "11/onze/11 fois/onze fois",
+      "percent": 5,
+      "explain": "L'aiguille des minutes rattrape celle des heures toutes les 12/11 d'heure : 11 fois en 12 heures (à midi, puis vers 13 h 05, 14 h 11…)."
+    }
+  ]
+}

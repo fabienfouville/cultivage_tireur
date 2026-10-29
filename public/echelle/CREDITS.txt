@@ -9,3 +9,9 @@ Images du jeu « À l'échelle » (détourées et recadrées pour le jeu, usage 
 
 Images du pack Pixel « Grande soirée » (public/pixel/) : illustrations officielles Pokémon © Nintendo / Creatures /
 GAME FREAK, via PokéAPI.
+
+Ajouts (pack Vrac) — pngimg.com, licence CC BY-NC 4.0 :
+- panier-basket.webp : basketball_PNG102506
+- cage-foot.webp : football_goal_PNG17 (dessin)
+- requin-blanc.webp : shark (pngimg)
+- pyramide.webp : pyramid (pngimg)

@@ -1,0 +1,77 @@
+{
+  "id": "vrac-top",
+  "module": "top",
+  "theme": "Vrac · Le Top",
+  "questions": [
+    {
+      "text": "Les 5 pays les plus visités au monde (touristes internationaux, 2023)",
+      "answers": [
+        "France",
+        "Espagne",
+        "États-Unis",
+        "Italie",
+        "Turquie"
+      ]
+    },
+    {
+      "text": "Les 5 plus grands pays d'Asie (superficie, Russie exclue)",
+      "answers": [
+        "Chine",
+        "Inde",
+        "Kazakhstan",
+        "Arabie saoudite",
+        "Indonésie"
+      ]
+    },
+    {
+      "text": "Les 5 planètes les plus éloignées du Soleil",
+      "answers": [
+        "Neptune",
+        "Uranus",
+        "Saturne",
+        "Jupiter",
+        "Mars"
+      ]
+    },
+    {
+      "text": "Les 5 derniers pays hôtes de la Coupe du monde de football (de 2022 en remontant)",
+      "answers": [
+        "Qatar",
+        "Russie",
+        "Brésil",
+        "Afrique du Sud",
+        "Allemagne"
+      ]
+    },
+    {
+      "text": "Les 5 premiers pays au tableau des médailles des JO de Paris 2024",
+      "answers": [
+        "États-Unis",
+        "Chine",
+        "Japon",
+        "Australie",
+        "France"
+      ]
+    },
+    {
+      "text": "Les 5 pays les plus peuplés d'Asie (2024)",
+      "answers": [
+        "Inde",
+        "Chine",
+        "Indonésie",
+        "Pakistan",
+        "Bangladesh"
+      ]
+    },
+    {
+      "text": "Les 5 premiers producteurs d'électricité nucléaire au monde (2023)",
+      "answers": [
+        "États-Unis",
+        "Chine",
+        "France",
+        "Russie",
+        "Corée du Sud"
+      ]
+    }
+  ]
+}

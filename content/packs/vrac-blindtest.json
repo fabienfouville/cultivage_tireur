@@ -1,0 +1,187 @@
+{
+  "id": "vrac-blindtest",
+  "module": "blindtest",
+  "theme": "Vrac · Blind Test",
+  "questions": [
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Johnny Hallyday",
+      "answerHintTitle": "Allumer le feu"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "The Police",
+      "answerHintTitle": "Every Breath You Take"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Gloria Gaynor",
+      "answerHintTitle": "I Will Survive"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Bob Marley & The Wailers",
+      "answerHintTitle": "Could You Be Loved"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Coldplay",
+      "answerHintTitle": "Viva la Vida"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Vianney",
+      "answerHintTitle": "Je m'en vais"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Dalida",
+      "answerHintTitle": "Paroles, paroles"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Les Rita Mitsouko",
+      "answerHintTitle": "Marcia Baila"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Toto",
+      "answerHintTitle": "Africa"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Jean-Jacques Goldman",
+      "answerHintTitle": "Envole-moi"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Eurythmics",
+      "answerHintTitle": "Sweet Dreams (Are Made of This)"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Mylène Farmer",
+      "answerHintTitle": "Désenchantée"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Renaud",
+      "answerHintTitle": "Mistral gagnant"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Earth, Wind & Fire",
+      "answerHintTitle": "September"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "a-ha",
+      "answerHintTitle": "Take On Me"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Rihanna",
+      "answerHintTitle": "Umbrella"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Calogero",
+      "answerHintTitle": "En apesanteur"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Gala",
+      "answerHintTitle": "Freed from Desire"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Patrick Hernandez",
+      "answerHintTitle": "Born to Be Alive"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Bon Jovi",
+      "answerHintTitle": "Livin' on a Prayer"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Christophe Maé",
+      "answerHintTitle": "Il est où le bonheur"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Survivor",
+      "answerHintTitle": "Eye of the Tiger"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Lou Bega",
+      "answerHintTitle": "Mambo No. 5"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Indila",
+      "answerHintTitle": "Dernière danse"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Stevie Wonder",
+      "answerHintTitle": "Superstition"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Kylie Minogue",
+      "answerHintTitle": "Can't Get You Out of My Head"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Céline Dion",
+      "answerHintTitle": "My Heart Will Go On"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Michel Berger",
+      "answerHintTitle": "La groupie du pianiste"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Kassav'",
+      "answerHintTitle": "Zouk la sé sèl médikaman nou ni"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Matmatah",
+      "answerHintTitle": "Lambé an dro"
+    }
+  ]
+}

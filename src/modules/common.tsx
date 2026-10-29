@@ -3,6 +3,9 @@ import { looksRight, normalize } from '../lib/normalize'
 import type { Answer, ReviewItem, Round } from '../types'
 import type { ScoreContext, ValidationItem } from './types'
 
+/** Réponse affichée à la révélation : la première des variantes séparées par « / » (pas un « / » entre deux chiffres) */
+export const firstVariant = (hint: unknown) => String(hint ?? '').split(/(?<!\d)\/|\/(?!\d)/)[0].trim()
+
 export const CHOICE_COLORS = ['#e4572e', '#2e86de', '#f0a202', '#3bb273']
 export const CHOICE_SHAPES = ['▲', '◆', '●', '■']
 

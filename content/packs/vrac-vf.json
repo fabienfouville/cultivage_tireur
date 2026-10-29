@@ -1,0 +1,223 @@
+{
+  "id": "vrac-vf",
+  "module": "vf-survie",
+  "theme": "Vrac · VF Survie",
+  "description": "du plus facile au plus dur",
+  "questions": [
+    {
+      "text": "Le Soleil est une étoile.",
+      "correct": true,
+      "order": 1
+    },
+    {
+      "text": "Un octogone a huit côtés.",
+      "correct": true,
+      "order": 2
+    },
+    {
+      "text": "Le Portugal a une frontière avec la France.",
+      "correct": false,
+      "order": 3
+    },
+    {
+      "text": "La Belgique a pour capitale Bruges.",
+      "correct": false,
+      "order": 4
+    },
+    {
+      "text": "Le français est une langue officielle au Canada.",
+      "correct": true,
+      "order": 5
+    },
+    {
+      "text": "La Joconde est exposée au musée d'Orsay.",
+      "correct": false,
+      "order": 6
+    },
+    {
+      "text": "Le koala est un ours.",
+      "correct": false,
+      "order": 7
+    },
+    {
+      "text": "Un kilo de plumes est plus léger qu'un kilo de plomb.",
+      "correct": false,
+      "order": 8
+    },
+    {
+      "text": "Le rugby à XV se joue à quinze joueurs par équipe sur le terrain.",
+      "correct": true,
+      "order": 9
+    },
+    {
+      "text": "Le chocolat est toxique pour les chiens.",
+      "correct": true,
+      "order": 10
+    },
+    {
+      "text": "La Suisse est membre de l'Union européenne.",
+      "correct": false,
+      "order": 11
+    },
+    {
+      "text": "Le diamant et le graphite sont tous les deux faits de carbone.",
+      "correct": true,
+      "order": 12
+    },
+    {
+      "text": "Le mont Everest se trouve à la frontière entre le Népal et la Chine.",
+      "correct": true,
+      "order": 13
+    },
+    {
+      "text": "Mozart est mort avant d'avoir 40 ans.",
+      "correct": true,
+      "order": 14
+    },
+    {
+      "text": "L'eau bout à 100 °C au sommet de l'Everest.",
+      "correct": false,
+      "order": 15
+    },
+    {
+      "text": "Le mur d'Hadrien se trouve en Italie.",
+      "correct": false,
+      "order": 16
+    },
+    {
+      "text": "Les girafes ont autant de vertèbres dans le cou que les humains.",
+      "correct": true,
+      "order": 17
+    },
+    {
+      "text": "Venise est construite sur plus de 100 îles.",
+      "correct": true,
+      "order": 18
+    },
+    {
+      "text": "La banane est une baie, au sens botanique.",
+      "correct": true,
+      "order": 19
+    },
+    {
+      "text": "Le Sahara est le plus grand désert du monde.",
+      "correct": false,
+      "order": 20
+    },
+    {
+      "text": "Le hoquet peut durer plusieurs années.",
+      "correct": true,
+      "order": 21
+    },
+    {
+      "text": "La planète Vénus tourne sur elle-même dans le sens inverse de la Terre.",
+      "correct": true,
+      "order": 22
+    },
+    {
+      "text": "L'Australie est plus large que la Lune.",
+      "correct": true,
+      "order": 23
+    },
+    {
+      "text": "Le Canada compte plus de lacs que tout le reste du monde réuni.",
+      "correct": true,
+      "order": 24
+    },
+    {
+      "text": "Il y a plus d'arbres sur Terre que d'étoiles dans la Voie lactée.",
+      "correct": true,
+      "order": 25
+    },
+    {
+      "text": "Le verre est un liquide qui coule très lentement.",
+      "correct": false,
+      "order": 26
+    },
+    {
+      "text": "Le Mont-Saint-Michel se trouve en Bretagne.",
+      "correct": false,
+      "order": 27
+    },
+    {
+      "text": "Les requins sont des mammifères.",
+      "correct": false,
+      "order": 28
+    },
+    {
+      "text": "Le cœur humain compte quatre cavités.",
+      "correct": true,
+      "order": 29
+    },
+    {
+      "text": "Une année de chien équivaut toujours à sept années humaines.",
+      "correct": false,
+      "order": 30
+    },
+    {
+      "text": "Le Brésil est le seul pays d'Amérique du Sud dont la langue officielle est le portugais.",
+      "correct": true,
+      "order": 31
+    },
+    {
+      "text": "La Corse est plus grande que la Sardaigne.",
+      "correct": false,
+      "order": 32
+    },
+    {
+      "text": "Le Coca-Cola était vendu à l'origine comme un remède en pharmacie.",
+      "correct": true,
+      "order": 33
+    },
+    {
+      "text": "Le Soleil se lève toujours exactement à l'est.",
+      "correct": false,
+      "order": 34
+    },
+    {
+      "text": "Albert Einstein a reçu le prix Nobel pour sa théorie de la relativité.",
+      "correct": false,
+      "order": 35
+    },
+    {
+      "text": "La tour Eiffel peut grandir de quelques centimètres en été.",
+      "correct": true,
+      "order": 36
+    },
+    {
+      "text": "Une journée sur Mars dure environ 24 h 40.",
+      "correct": true,
+      "order": 37
+    },
+    {
+      "text": "La Lune s'éloigne de la Terre de quelques centimètres chaque année.",
+      "correct": true,
+      "order": 38
+    },
+    {
+      "text": "Le français est langue officielle dans plus de 25 pays.",
+      "correct": true,
+      "order": 39
+    },
+    {
+      "text": "Il y a plus de kangourous que d'habitants en Australie.",
+      "correct": true,
+      "order": 40
+    },
+    {
+      "text": "Le Sahara a été couvert de végétation il y a quelques milliers d'années.",
+      "correct": true,
+      "order": 41
+    },
+    {
+      "text": "La France est le pays qui compte le plus de fuseaux horaires.",
+      "correct": true,
+      "order": 42
+    },
+    {
+      "text": "Le mot « kiosque » vient du turc.",
+      "correct": true,
+      "order": 43
+    }
+  ]
+}

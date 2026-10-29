@@ -1,0 +1,18 @@
+Images du jeu Pixel
+
+Pokémon (carapuce, ectoplasme, lucario, mew, psykokwak, rondoudou, salameche, togepi) :
+illustrations officielles via PokéAPI (© Nintendo / Game Freak / The Pokémon Company), usage privé non commercial.
+
+Tableaux célèbres, œuvres du domaine public, reproductions issues de Wikimedia Commons :
+- nuit-etoilee.jpg : Vincent van Gogh, La Nuit étoilée (1889)
+- jeune-fille-perle.jpg : Johannes Vermeer, La Jeune Fille à la perle (v. 1665)
+- le-cri.jpg : Edvard Munch, Le Cri (1893)
+- grande-vague.jpg : Katsushika Hokusai, La Grande Vague de Kanagawa (v. 1831)
+- naissance-venus.jpg : Sandro Botticelli, La Naissance de Vénus (v. 1485)
+- radeau-meduse.jpg : Théodore Géricault, Le Radeau de La Méduse (1818-1819)
+- liberte-peuple.jpg : Eugène Delacroix, La Liberté guidant le peuple (1830)
+- creation-adam.jpg : Michel-Ange, La Création d'Adam (v. 1512)
+- american-gothic.jpg : Grant Wood, American Gothic (1930)
+- impression-soleil.jpg : Claude Monet, Impression, soleil levant (1872)
+- le-baiser.jpg : Gustav Klimt, Le Baiser (1908-1909)
+- glaneuses.jpg : Jean-François Millet, Des glaneuses (1857)

@@ -57,3 +57,13 @@ describe('podium de fin de manche', () => {
     expect(podiumSteps(ps, {})).toEqual([])
   })
 })
+
+describe('réponse affichée (Cash, Pixel)', () => {
+  it('ne garde que la première variante, sans couper « 3/2 »', async () => {
+    const { firstVariant } = await import('./common')
+    expect(firstVariant('La Grande Vague de Kanagawa (Hokusai)/La Grande Vague')).toBe('La Grande Vague de Kanagawa (Hokusai)')
+    expect(firstVariant('Clochette / Fée Clochette')).toBe('Clochette')
+    expect(firstVariant('1 si on prend 3/2 = 1,5')).toBe('1 si on prend 3/2 = 1,5')
+    expect(firstVariant(undefined)).toBe('')
+  })
+})

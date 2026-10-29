@@ -1,0 +1,232 @@
+{
+  "id": "vrac-chrono",
+  "module": "chronologie",
+  "theme": "Vrac · Chronologie",
+  "questions": [
+    {
+      "text": "Films à succès",
+      "events": [
+        "Titanic",
+        "Matrix",
+        "Avatar",
+        "Intouchables"
+      ],
+      "dates": [
+        "1997",
+        "1999",
+        "2009",
+        "2011"
+      ]
+    },
+    {
+      "text": "Monuments",
+      "events": [
+        "Pyramide de Khéops",
+        "Colisée de Rome",
+        "Château de Versailles",
+        "Tour Eiffel"
+      ],
+      "dates": [
+        "v. 2560 av. J.-C.",
+        "80",
+        "1682 (installation de la cour)",
+        "1889"
+      ]
+    },
+    {
+      "text": "Histoire de France",
+      "events": [
+        "Révolution française",
+        "Commune de Paris",
+        "Front populaire",
+        "Mai 68"
+      ],
+      "dates": [
+        "1789",
+        "1871",
+        "1936",
+        "1968"
+      ]
+    },
+    {
+      "text": "Le numérique",
+      "events": [
+        "Premier SMS",
+        "Création de Google",
+        "Création de Facebook",
+        "Premier iPhone"
+      ],
+      "dates": [
+        "1992",
+        "1998",
+        "2004",
+        "2007"
+      ]
+    },
+    {
+      "text": "Les Bleus",
+      "events": [
+        "France championne d'Europe de football",
+        "France championne du monde de football",
+        "France championne du monde de football (2e étoile)",
+        "Jeux olympiques de Paris"
+      ],
+      "dates": [
+        "1984",
+        "1998",
+        "2018",
+        "2024"
+      ]
+    },
+    {
+      "text": "La conquête spatiale",
+      "events": [
+        "Spoutnik, premier satellite",
+        "Gagarine dans l'espace",
+        "Premiers pas sur la Lune",
+        "Premier module de l'ISS"
+      ],
+      "dates": [
+        "1957",
+        "1961",
+        "1969",
+        "1998"
+      ]
+    },
+    {
+      "text": "Albums cultes",
+      "events": [
+        "« Please Please Me » des Beatles",
+        "« Thriller » de Michael Jackson",
+        "« Nevermind » de Nirvana",
+        "« Random Access Memories » de Daft Punk"
+      ],
+      "dates": [
+        "1963",
+        "1982",
+        "1991",
+        "2013"
+      ]
+    },
+    {
+      "text": "Moyen Âge et Renaissance",
+      "events": [
+        "Couronnement de Charlemagne",
+        "Bataille de Hastings",
+        "Jeanne d'Arc délivre Orléans",
+        "Christophe Colomb atteint l'Amérique"
+      ],
+      "dates": [
+        "800",
+        "1066",
+        "1429",
+        "1492"
+      ]
+    },
+    {
+      "text": "L'Europe",
+      "events": [
+        "Traité de Rome",
+        "Chute du mur de Berlin",
+        "Billets et pièces en euros",
+        "Sortie du Royaume-Uni de l'UE"
+      ],
+      "dates": [
+        "1957",
+        "1989",
+        "2002",
+        "2020"
+      ]
+    },
+    {
+      "text": "Les sciences",
+      "events": [
+        "« Principia » de Newton",
+        "« L'Origine des espèces » de Darwin",
+        "Relativité restreinte d'Einstein",
+        "Découverte de la pénicilline"
+      ],
+      "dates": [
+        "1687",
+        "1859",
+        "1905",
+        "1928"
+      ]
+    },
+    {
+      "text": "Romans célèbres",
+      "events": [
+        "« Les Misérables »",
+        "« Vingt mille lieues sous les mers »",
+        "« Le Petit Prince »",
+        "« Harry Potter à l'école des sorciers »"
+      ],
+      "dates": [
+        "1862",
+        "1870",
+        "1943",
+        "1997"
+      ]
+    },
+    {
+      "text": "Dessins animés",
+      "events": [
+        "« Blanche-Neige et les Sept Nains »",
+        "« Le Roi lion »",
+        "« Toy Story »",
+        "« La Reine des neiges »"
+      ],
+      "dates": [
+        "1937",
+        "1994",
+        "1995",
+        "2013"
+      ]
+    },
+    {
+      "text": "L'électricité",
+      "events": [
+        "Pile électrique de Volta",
+        "Ampoule d'Edison",
+        "Création d'EDF",
+        "Premier TGV commercial"
+      ],
+      "dates": [
+        "1800",
+        "1879",
+        "1946",
+        "1981"
+      ]
+    },
+    {
+      "text": "Les transports",
+      "events": [
+        "Première locomotive à vapeur sur rails",
+        "Première automobile à essence (Benz)",
+        "Premier vol des frères Wright",
+        "Premier vol du Concorde"
+      ],
+      "dates": [
+        "1804",
+        "1886",
+        "1903",
+        "1969"
+      ]
+    },
+    {
+      "text": "Jeux de société",
+      "events": [
+        "Monopoly",
+        "Scrabble",
+        "Trivial Pursuit",
+        "Les Colons de Catane"
+      ],
+      "dates": [
+        "1935",
+        "1948",
+        "1981",
+        "1995"
+      ]
+    }
+  ]
+}

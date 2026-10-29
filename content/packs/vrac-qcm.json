@@ -1,0 +1,557 @@
+{
+  "id": "vrac-qcm",
+  "module": "qcm",
+  "theme": "Vrac · QCM",
+  "questions": [
+    {
+      "text": "Quelle mer borde la ville d'Odessa ?",
+      "answers": [
+        "La mer Baltique",
+        "La mer Noire",
+        "La mer Caspienne",
+        "La mer Égée"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel écrivain a créé le détective Hercule Poirot ?",
+      "answers": [
+        "Arthur Conan Doyle",
+        "Agatha Christie",
+        "Georges Simenon",
+        "Maurice Leblanc"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Que signifie le « www » des adresses web ?",
+      "answers": [
+        "World Wide Web",
+        "Web World Wide",
+        "World Web Window",
+        "Wide World Web"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle est la plus petite unité du vivant ?",
+      "answers": [
+        "L'atome",
+        "La molécule",
+        "La cellule",
+        "Le gène"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel compositeur a écrit « Les Quatre Saisons » ?",
+      "answers": [
+        "Bach",
+        "Mozart",
+        "Vivaldi",
+        "Haendel"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Dans quel pays se trouvent les ruines de Pétra ?",
+      "answers": [
+        "Égypte",
+        "Jordanie",
+        "Liban",
+        "Syrie"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel gaz les plantes absorbent-elles pour la photosynthèse ?",
+      "answers": [
+        "L'oxygène",
+        "L'azote",
+        "Le dioxyde de carbone",
+        "L'hydrogène"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel est le pays le plus peuplé d'Afrique ?",
+      "answers": [
+        "L'Égypte",
+        "L'Éthiopie",
+        "Le Nigeria",
+        "L'Afrique du Sud"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel métal conduit le mieux l'électricité ?",
+      "answers": [
+        "Le cuivre",
+        "L'or",
+        "L'argent",
+        "L'aluminium"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Combien de fuseaux horaires compte la Russie ?",
+      "answers": [
+        "7",
+        "9",
+        "11",
+        "13"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Combien de minutes dure un match de rugby (hors prolongations) ?",
+      "answers": [
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Combien d'étoiles figurent sur le drapeau de l'Union européenne ?",
+      "answers": [
+        "10",
+        "12",
+        "15",
+        "27"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans quel organe se trouve le cristallin ?",
+      "answers": [
+        "L'oreille",
+        "L'œil",
+        "Le cœur",
+        "Le cerveau"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel navigateur a donné son nom à l'Amérique ?",
+      "answers": [
+        "Christophe Colomb",
+        "Amerigo Vespucci",
+        "Fernand de Magellan",
+        "Jacques Cartier"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle la galaxie dans laquelle se trouve la Terre ?",
+      "answers": [
+        "Andromède",
+        "La Voie lactée",
+        "Le Triangle",
+        "Le Sombrero"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle ville est la capitale du Kenya ?",
+      "answers": [
+        "Mombasa",
+        "Kampala",
+        "Nairobi",
+        "Addis-Abeba"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Combien de temps dure une année sur Mars, environ ?",
+      "answers": [
+        "365 jours terrestres",
+        "687 jours terrestres",
+        "88 jours terrestres",
+        "12 ans terrestres"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel est le nom de famille de Ron, le meilleur ami de Harry Potter ?",
+      "answers": [
+        "Weasley",
+        "Granger",
+        "Londubat",
+        "Malefoy"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel scientifique a exposé la théorie de l'évolution par sélection naturelle ?",
+      "answers": [
+        "Lamarck",
+        "Darwin",
+        "Mendel",
+        "Pasteur"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "De quelle couleur est la « boîte noire » d'un avion ?",
+      "answers": [
+        "Noire",
+        "Orange",
+        "Rouge",
+        "Jaune"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle chanteuse a interprété « Non, je ne regrette rien » ?",
+      "answers": [
+        "Dalida",
+        "Édith Piaf",
+        "Barbara",
+        "Juliette Gréco"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qui a réalisé « Jurassic Park » ?",
+      "answers": [
+        "James Cameron",
+        "George Lucas",
+        "Steven Spielberg",
+        "Ridley Scott"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quelle est la vitesse du son dans l'air, environ ?",
+      "answers": [
+        "34 m/s",
+        "340 m/s",
+        "3 400 m/s",
+        "340 km/s"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans quel jeu parle-t-on de « roque » et de « pat » ?",
+      "answers": [
+        "Les dames",
+        "Les échecs",
+        "Le go",
+        "Le backgammon"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel océan borde la côte ouest de l'Afrique ?",
+      "answers": [
+        "L'océan Indien",
+        "L'océan Atlantique",
+        "L'océan Pacifique",
+        "L'océan Austral"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel animal pond les plus gros œufs ?",
+      "answers": [
+        "L'émeu",
+        "L'autruche",
+        "Le crocodile",
+        "Le manchot empereur"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Combien de joueurs compte une équipe de handball sur le terrain (gardien compris) ?",
+      "answers": [
+        "5",
+        "6",
+        "7",
+        "9"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel peintre est célèbre pour ses « Nymphéas » ?",
+      "answers": [
+        "Renoir",
+        "Monet",
+        "Degas",
+        "Cézanne"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle partie de la plante absorbe l'eau du sol ?",
+      "answers": [
+        "Les feuilles",
+        "La tige",
+        "Les racines",
+        "Les fleurs"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Combien d'os compte le squelette d'un nouveau-né, environ ?",
+      "answers": [
+        "150",
+        "206",
+        "270 à 300",
+        "400"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quelle ville est le chef-lieu (préfecture) de la région Bourgogne-Franche-Comté ?",
+      "answers": [
+        "Besançon",
+        "Dijon",
+        "Auxerre",
+        "Mâcon"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qui a peint « La Persistance de la mémoire », le tableau aux montres molles ?",
+      "answers": [
+        "René Magritte",
+        "Salvador Dalí",
+        "Joan Miró",
+        "Max Ernst"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "De quel instrument jouait Miles Davis ?",
+      "answers": [
+        "Du saxophone",
+        "De la trompette",
+        "Du piano",
+        "De la contrebasse"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "En cuisine, que signifie « al dente » ?",
+      "answers": [
+        "Très cuit",
+        "Encore légèrement ferme",
+        "Avec de l'ail",
+        "Avec du parmesan"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Combien d'épouses le roi Henri VIII a-t-il eues ?",
+      "answers": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Dans quelle ville se trouve le musée du Prado ?",
+      "answers": [
+        "Barcelone",
+        "Madrid",
+        "Séville",
+        "Lisbonne"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle langue est la plus parlée en Suisse ?",
+      "answers": [
+        "Le français",
+        "L'allemand",
+        "L'italien",
+        "Le romanche"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle est la ville la plus peuplée du Canada ?",
+      "answers": [
+        "Montréal",
+        "Toronto",
+        "Vancouver",
+        "Ottawa"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans la série « Friends », quel est le métier de Ross ?",
+      "answers": [
+        "Dentiste",
+        "Paléontologue",
+        "Avocat",
+        "Cuisinier"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle la princesse qui épouse Shrek ?",
+      "answers": [
+        "Fiona",
+        "Raiponce",
+        "Aurore",
+        "Belle"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle eau-de-vie est la boisson nationale du Pérou et du Chili ?",
+      "answers": [
+        "Le pisco",
+        "La tequila",
+        "Le mezcal",
+        "La cachaça"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quelle ville a accueilli les Jeux olympiques d'hiver de 1992 ?",
+      "answers": [
+        "Grenoble",
+        "Albertville",
+        "Chamonix",
+        "Annecy"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle est la capitale du Vietnam ?",
+      "answers": [
+        "Hô-Chi-Minh-Ville",
+        "Hanoï",
+        "Hué",
+        "Da Nang"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Combien de pions chaque joueur a-t-il au début d'une partie de dames (damier de 10 × 10) ?",
+      "answers": [
+        "12",
+        "15",
+        "20",
+        "24"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quel mammifère pond des œufs, comme l'échidné ?",
+      "answers": [
+        "L'ornithorynque",
+        "Le tatou",
+        "Le pangolin",
+        "Le wombat"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Combien de lettres compte l'alphabet grec ?",
+      "answers": [
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans quel pays le Rubik's Cube a-t-il été inventé ?",
+      "answers": [
+        "Le Japon",
+        "La Hongrie",
+        "L'Allemagne",
+        "L'URSS"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel légume est la base du baba ganoush ?",
+      "answers": [
+        "La courgette",
+        "L'aubergine",
+        "Le poivron",
+        "Le chou-fleur"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel est le plus ancien parc national du monde, créé en 1872 ?",
+      "answers": [
+        "Yellowstone",
+        "Yosemite",
+        "Kruger",
+        "Banff"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel animal figure sur les armoiries de Berlin ?",
+      "answers": [
+        "Un aigle",
+        "Un ours",
+        "Un lion",
+        "Un loup"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle couleur ne figure pas sur le drapeau allemand ?",
+      "answers": [
+        "Le noir",
+        "Le rouge",
+        "L'or",
+        "Le blanc"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Combien de faces a un dodécaèdre ?",
+      "answers": [
+        "8",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Dans quel pays se trouve la ville de Gand ?",
+      "answers": [
+        "Les Pays-Bas",
+        "La Belgique",
+        "Le Luxembourg",
+        "La Suisse"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel est le plat préféré de Garfield ?",
+      "answers": [
+        "La pizza",
+        "Les lasagnes",
+        "Les hamburgers",
+        "Les spaghettis"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel autre nom donne-t-on au fruit de la passion ?",
+      "answers": [
+        "Le maracuja",
+        "La goyave",
+        "Le litchi",
+        "La papaye"
+      ],
+      "correct": 0
+    }
+  ]
+}

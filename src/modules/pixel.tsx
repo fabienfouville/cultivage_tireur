@@ -1,5 +1,5 @@
 import { PixelImage } from '../components/PixelImage'
-import { FreeAnswer, Locked, QuestionText, RevealList, Sent, groupFreeAnswers, isValidated, ms, namesOf, parsePoints, podium } from './common'
+import { FreeAnswer, Locked, QuestionText, RevealList, Sent, firstVariant, groupFreeAnswers, isValidated, ms, namesOf, parsePoints, podium } from './common'
 import type { ModuleDef } from './types'
 
 /**
@@ -41,7 +41,7 @@ export const pixel: ModuleDef = {
     curve: Number(cfg.curve) || 2.5,
     step: Number(cfg.step) || 3,
   }),
-  solution: (q) => ({ label: q.answerHint }),
+  solution: (q) => ({ label: firstVariant(q.answerHint) }),
   validationItems: ({ q, answers }) => groupFreeAnswers(answers, (a) => a.data.text, q.answerHint),
   score: ({ answers, cfg, verdicts }) => {
     const good = answers

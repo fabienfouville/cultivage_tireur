@@ -1,0 +1,139 @@
+{
+  "id": "vrac-qsj",
+  "module": "quisuisje",
+  "theme": "Vrac · Qui suis-je ?",
+  "questions": [
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né à Nantes en 1828.",
+        "J'ai d'abord étudié le droit avant de me consacrer à l'écriture.",
+        "Mon éditeur, Pierre-Jules Hetzel, a publié mes « Voyages extraordinaires ».",
+        "J'ai imaginé le capitaine Nemo et son Nautilus.",
+        "J'ai écrit « Le Tour du monde en quatre-vingts jours »."
+      ],
+      "answerHint": "Jules Verne/Verne"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "On m'a assemblée en un peu plus de deux ans, avec environ 18 000 pièces métalliques.",
+        "Je ne devais rester debout que 20 ans : la radio m'a sauvée.",
+        "On me repeint environ tous les sept ans.",
+        "J'ai été inaugurée pour l'Exposition universelle de 1889.",
+        "On me surnomme la Dame de fer et je domine le Champ-de-Mars."
+      ],
+      "answerHint": "La tour Eiffel/Tour Eiffel"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né à Londres en 1889, dans une famille d'artistes de music-hall.",
+        "J'ai cofondé le studio United Artists.",
+        "J'ai réalisé « Le Dictateur » en 1940.",
+        "Mes films les plus célèbres sont muets, comme « Les Temps modernes ».",
+        "Mon vagabond porte un chapeau melon, une canne et une petite moustache."
+      ],
+      "answerHint": "Charlie Chaplin/Chaplin/Charlot"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "Mon cœur peut peser plus de 10 kg.",
+        "Ma langue bleu-noir mesure près de 50 cm.",
+        "Je dors très peu, souvent moins de deux heures par jour.",
+        "J'ai sept vertèbres dans le cou, comme toi, mais elles sont immenses.",
+        "Je suis l'animal le plus grand du monde."
+      ],
+      "answerHint": "La girafe/Girafe"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né en 1959 dans les pages du magazine Pilote.",
+        "Mes créateurs sont René Goscinny et Albert Uderzo.",
+        "Je porte un casque ailé et une moustache blonde.",
+        "Je tire ma force d'une potion magique préparée par le druide.",
+        "Mon meilleur ami livre des menhirs et s'appelle Obélix."
+      ],
+      "answerHint": "Astérix/Asterix"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né à Rouen en 1978 et j'ai été pilote de ligne.",
+        "L'Agence spatiale européenne m'a sélectionné en 2009.",
+        "Ma première mission s'appelait « Proxima », en 2016-2017.",
+        "En 2021, je suis devenu le premier Français commandant de la Station spatiale internationale.",
+        "Je suis l'astronaute français le plus célèbre de ma génération."
+      ],
+      "answerHint": "Thomas Pesquet/Pesquet"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né en 1946 à Zanzibar, sous le nom de Farrokh Bulsara.",
+        "J'ai dessiné moi-même le logo de mon groupe.",
+        "Notre concert au Live Aid de 1985 est resté légendaire.",
+        "J'ai chanté « We Are the Champions » et « Bohemian Rhapsody ».",
+        "J'étais le chanteur moustachu de Queen."
+      ],
+      "answerHint": "Freddie Mercury/Mercury"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "J'ai été volée en 1911 par un vitrier italien et retrouvée deux ans plus tard.",
+        "Je suis peinte sur un panneau de bois de peuplier.",
+        "Je suis protégée par une vitre blindée et des millions de visiteurs viennent me voir.",
+        "Mon auteur est Léonard de Vinci.",
+        "Mon sourire mystérieux est exposé au Louvre."
+      ],
+      "answerHint": "La Joconde/Joconde/Mona Lisa"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né en 1986 en Jamaïque.",
+        "J'ai remporté huit titres olympiques.",
+        "Mon record du monde du 200 m est de 19,19 secondes.",
+        "Depuis 2009, je détiens le record du monde du 100 m en 9,58 secondes.",
+        "On me surnomme « la Foudre » et je célèbre mes victoires en pose d'archer."
+      ],
+      "answerHint": "Usain Bolt/Bolt"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "Je suis composé surtout d'hydrogène et d'hélium.",
+        "J'ai environ 4,6 milliards d'années.",
+        "Je représente plus de 99 % de la masse du système solaire.",
+        "Il ne faut jamais me regarder en face, même avec des lunettes de soleil.",
+        "Je suis l'étoile autour de laquelle tourne la Terre."
+      ],
+      "answerHint": "Le Soleil/Soleil"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né en 1847 dans l'Ohio, aux États-Unis.",
+        "On m'a surnommé « le sorcier de Menlo Park ».",
+        "J'ai déposé plus de 1 000 brevets.",
+        "J'ai inventé le phonographe.",
+        "On me présente souvent comme l'inventeur de l'ampoule électrique."
+      ],
+      "answerHint": "Thomas Edison/Edison"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis née en 1907 à Coyoacán.",
+        "Un grave accident de bus, à 18 ans, a marqué toute ma vie.",
+        "J'ai épousé le peintre muraliste Diego Rivera.",
+        "Je suis célèbre pour mes autoportraits, avec mes sourcils qui se rejoignent.",
+        "Je suis la plus célèbre peintre mexicaine."
+      ],
+      "answerHint": "Frida Kahlo/Kahlo/Frida"
+    }
+  ]
+}

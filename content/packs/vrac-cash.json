@@ -1,0 +1,123 @@
+{
+  "id": "vrac-cash",
+  "module": "cash",
+  "theme": "Vrac · Cash",
+  "questions": [
+    {
+      "text": "Comment s'appelle le cheval de Lucky Luke ?",
+      "answerHint": "Jolly Jumper"
+    },
+    {
+      "text": "Qui a peint « Guernica » ?",
+      "answerHint": "Pablo Picasso/Picasso"
+    },
+    {
+      "text": "Comment s'appelle le robot doré de Star Wars ?",
+      "answerHint": "C-3PO/C3PO/Z-6PO/Z6PO"
+    },
+    {
+      "text": "Comment s'appelle le méchant du « Roi lion » ?",
+      "answerHint": "Scar"
+    },
+    {
+      "text": "Comment s'appelle l'ours du « Livre de la jungle » ?",
+      "answerHint": "Baloo"
+    },
+    {
+      "text": "Quel chanteur américain est surnommé « le Boss » ?",
+      "answerHint": "Bruce Springsteen/Springsteen"
+    },
+    {
+      "text": "Qui a fondé Microsoft avec Paul Allen ?",
+      "answerHint": "Bill Gates/Gates"
+    },
+    {
+      "text": "De quel pays vient le gouda ?",
+      "answerHint": "Pays-Bas/Hollande"
+    },
+    {
+      "text": "Comment s'appelle le petit dragon qui accompagne Mulan ?",
+      "answerHint": "Mushu"
+    },
+    {
+      "text": "Quel instrument jouait Jimi Hendrix ?",
+      "answerHint": "Guitare/Guitare électrique"
+    },
+    {
+      "text": "Comment s'appelle l'écuyer de Don Quichotte ?",
+      "answerHint": "Sancho Panza/Sancho"
+    },
+    {
+      "text": "Quel physicien a énoncé E = mc² ?",
+      "answerHint": "Albert Einstein/Einstein"
+    },
+    {
+      "text": "Dans quelle ville se trouve la Sagrada Família ?",
+      "answerHint": "Barcelone"
+    },
+    {
+      "text": "Qui est devenu roi du Royaume-Uni en 2022 ?",
+      "answerHint": "Charles III/Charles"
+    },
+    {
+      "text": "Comment s'appelle le savant de « Retour vers le futur » ?",
+      "answerHint": "Doc/Doc Brown/Emmett Brown"
+    },
+    {
+      "text": "Quelle est la capitale de l'Écosse ?",
+      "answerHint": "Édimbourg/Edimbourg/Edinburgh"
+    },
+    {
+      "text": "Quel est le nom de famille de Mario et Luigi ?",
+      "answerHint": "Mario/Mario Bros"
+    },
+    {
+      "text": "Comment s'appelle la souris rivale de Tom ?",
+      "answerHint": "Jerry"
+    },
+    {
+      "text": "Comment s'appelle le dieu grec du vin et de la fête ?",
+      "answerHint": "Dionysos"
+    },
+    {
+      "text": "Quel est le prénom du commissaire Maigret ?",
+      "answerHint": "Jules"
+    },
+    {
+      "text": "Comment s'appelle le chat de Gargamel ?",
+      "answerHint": "Azraël/Azrael"
+    },
+    {
+      "text": "Qui a composé « La Marseillaise » ?",
+      "answerHint": "Rouget de Lisle/Claude Joseph Rouget de Lisle"
+    },
+    {
+      "text": "Quel est le prénom de Zorro, alias don … de la Vega ?",
+      "answerHint": "Diego/Don Diego"
+    },
+    {
+      "text": "Quel fruit sec sert à fabriquer la pâte d'amande et le massepain ?",
+      "answerHint": "Amande"
+    },
+    {
+      "text": "Comment s'appelle la planète natale de Superman ?",
+      "answerHint": "Krypton"
+    },
+    {
+      "text": "Comment appelle-t-on le cri du loup ?",
+      "answerHint": "Hurlement/Il hurle"
+    },
+    {
+      "text": "Quel savant a donné son nom à l'unité de force ?",
+      "answerHint": "Isaac Newton/Newton"
+    },
+    {
+      "text": "Dans quelle ville se déroule la série « Plus belle la vie » ?",
+      "answerHint": "Marseille"
+    },
+    {
+      "text": "Quelle est la préfecture de la Corse-du-Sud ?",
+      "answerHint": "Ajaccio"
+    }
+  ]
+}

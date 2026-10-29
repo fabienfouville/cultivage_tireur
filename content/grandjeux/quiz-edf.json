@@ -1,0 +1,19 @@
+{
+  "id": "quiz-edf",
+  "name": "Quiz EDF",
+  "description": "≈ 50 minutes, 11 jeux, questions inédites (spécial énergie en ouverture)",
+  "cardsEnabled": false,
+  "slots": [
+    { "module": "qcm", "packId": "edf-energie", "questionCount": 6, "timer": 20 },
+    { "module": "vf-survie", "packId": "vrac-vf", "questionCount": 10, "timer": 12 },
+    { "module": "estimation", "packId": "vrac-estimation", "questionCount": 4, "timer": 25 },
+    { "module": "geoloc", "packId": "vrac-geoloc", "questionCount": 5, "timer": 30 },
+    { "module": "blindtest", "packId": "vrac-blindtest", "questionCount": 6, "timer": 30 },
+    { "module": "echelle", "packId": "vrac-echelle", "questionCount": 4, "timer": 25 },
+    { "module": "cash", "packId": "vrac-cash", "questionCount": 5, "timer": 25 },
+    { "module": "chronologie", "packId": "vrac-chrono", "questionCount": 4, "timer": 40 },
+    { "module": "pixel", "packId": "vrac-pixel-tableaux", "questionCount": 4, "timer": 30 },
+    { "module": "quisuisje", "packId": "vrac-qsj", "questionCount": 3, "timer": 50 },
+    { "module": "logique", "packId": "vrac-logique", "questionCount": 5, "timer": 35 }
+  ]
+}

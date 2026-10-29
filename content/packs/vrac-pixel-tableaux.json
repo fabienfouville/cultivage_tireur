@@ -1,0 +1,67 @@
+{
+  "id": "vrac-pixel-tableaux",
+  "module": "pixel",
+  "theme": "Vrac · Pixel tableaux",
+  "questions": [
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/nuit-etoilee.jpg",
+      "answerHint": "La Nuit étoilée (Van Gogh)/La Nuit étoilée/Nuit étoilée"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/jeune-fille-perle.jpg",
+      "answerHint": "La Jeune Fille à la perle (Vermeer)/La Jeune Fille à la perle/Jeune fille à la perle"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/le-cri.jpg",
+      "answerHint": "Le Cri (Munch)/Le Cri/Cri"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/grande-vague.jpg",
+      "answerHint": "La Grande Vague de Kanagawa (Hokusai)/La Grande Vague/Grande Vague de Kanagawa/La Vague"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/naissance-venus.jpg",
+      "answerHint": "La Naissance de Vénus (Botticelli)/La Naissance de Vénus/Naissance de Vénus"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/radeau-meduse.jpg",
+      "answerHint": "Le Radeau de La Méduse (Géricault)/Le Radeau de la Méduse/Radeau de la Méduse"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/liberte-peuple.jpg",
+      "answerHint": "La Liberté guidant le peuple (Delacroix)/La Liberté guidant le peuple"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/creation-adam.jpg",
+      "answerHint": "La Création d'Adam (Michel-Ange)/La Création d'Adam/Création d'Adam"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/american-gothic.jpg",
+      "answerHint": "American Gothic (Grant Wood)/American Gothic"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/impression-soleil.jpg",
+      "answerHint": "Impression, soleil levant (Monet)/Impression soleil levant/Impression, soleil levant"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/le-baiser.jpg",
+      "answerHint": "Le Baiser (Klimt)/Le Baiser/Baiser"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/glaneuses.jpg",
+      "answerHint": "Des glaneuses (Millet)/Les Glaneuses/Des glaneuses"
+    }
+  ]
+}
