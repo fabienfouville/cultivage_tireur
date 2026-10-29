@@ -1,0 +1,67 @@
+{
+  "id": "test-gambling",
+  "module": "qcm",
+  "theme": "Test · Gambling",
+  "questions": [
+    {
+      "text": "Quelle est la monnaie de la Pologne ?",
+      "answers": [
+        "Le złoty",
+        "La couronne",
+        "Le forint",
+        "Le lev"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel est le plus long fleuve d'Italie ?",
+      "answers": [
+        "Le Pô",
+        "Le Tibre",
+        "L'Arno",
+        "L'Adige"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Combien de symphonies Beethoven a-t-il achevées ?",
+      "answers": [
+        "5",
+        "7",
+        "9",
+        "12"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Dans quel pays le papier a-t-il été inventé ?",
+      "answers": [
+        "L'Égypte",
+        "La Chine",
+        "L'Inde",
+        "La Grèce"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle est la plus grande des planètes rocheuses du système solaire ?",
+      "answers": [
+        "Vénus",
+        "La Terre",
+        "Mars",
+        "Mercure"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel peintre est l'auteur de « La Laitière » ?",
+      "answers": [
+        "Johannes Vermeer",
+        "Rembrandt",
+        "Frans Hals",
+        "Pieter Bruegel"
+      ],
+      "correct": 0
+    }
+  ]
+}

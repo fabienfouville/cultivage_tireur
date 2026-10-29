@@ -1,0 +1,86 @@
+{
+  "id": "test-echelle",
+  "module": "echelle",
+  "theme": "Test · Pokémon à l’échelle",
+  "description": "tailles officielles du Pokédex",
+  "questions": [
+    {
+      "text": "Quelle taille fait Florizarre ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "refImage": "/echelle/pikachu.webp",
+      "refLength": false,
+      "targetName": "Florizarre",
+      "answer": 2.0,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/florizarre.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle taille fait Mackogneur ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "refImage": "/echelle/pikachu.webp",
+      "refLength": false,
+      "targetName": "Mackogneur",
+      "answer": 1.6,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/mackogneur.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle taille fait Ptéra ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "refImage": "/echelle/pikachu.webp",
+      "refLength": false,
+      "targetName": "Ptéra",
+      "answer": 1.8,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/ptera.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle taille fait Groudon ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "refImage": "/echelle/pikachu.webp",
+      "refLength": false,
+      "targetName": "Groudon",
+      "answer": 3.5,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/groudon.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle taille fait Kyogre ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "refImage": "/echelle/pikachu.webp",
+      "refLength": false,
+      "targetName": "Kyogre",
+      "answer": 4.5,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/kyogre.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle taille fait Dialga ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "refImage": "/echelle/pikachu.webp",
+      "refLength": false,
+      "targetName": "Dialga",
+      "answer": 5.4,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/dialga.webp",
+      "targetLength": false
+    }
+  ]
+}

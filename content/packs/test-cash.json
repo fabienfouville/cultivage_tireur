@@ -1,0 +1,31 @@
+{
+  "id": "test-cash",
+  "module": "cash",
+  "theme": "Test · Cash",
+  "questions": [
+    {
+      "text": "Quel est le prénom du docteur Watson, l'ami de Sherlock Holmes ?",
+      "answerHint": "John"
+    },
+    {
+      "text": "Quel est le prénom de l'inspecteur Clouseau, de « La Panthère rose » ?",
+      "answerHint": "Jacques"
+    },
+    {
+      "text": "Comment s'appelle le majordome de Batman ?",
+      "answerHint": "Alfred/Alfred Pennyworth"
+    },
+    {
+      "text": "Quelle est la langue officielle de l'Iran ?",
+      "answerHint": "Persan/Farsi"
+    },
+    {
+      "text": "De quel instrument jouait Jean-Pierre Rampal ?",
+      "answerHint": "Flûte/Flute/La flûte"
+    },
+    {
+      "text": "Comment s'appelle le hobbit qui porte l'Anneau dans « Le Seigneur des anneaux » ?",
+      "answerHint": "Frodon/Frodo/Frodon Sacquet"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "test-pixel",
+  "module": "pixel",
+  "theme": "Test · Pixel Pokémon",
+  "questions": [
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/pikachu.jpg",
+      "answerHint": "Pikachu"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/evoli.jpg",
+      "answerHint": "Évoli/Evoli/Eevee"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/ronflex.jpg",
+      "answerHint": "Ronflex/Snorlax"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/mewtwo.jpg",
+      "answerHint": "Mewtwo"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/bulbizarre.jpg",
+      "answerHint": "Bulbizarre/Bulbasaur"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/magicarpe.jpg",
+      "answerHint": "Magicarpe/Magikarp"
+    }
+  ]
+}

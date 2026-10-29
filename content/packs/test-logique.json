@@ -1,0 +1,44 @@
+{
+  "id": "test-logique",
+  "module": "logique",
+  "theme": "Test · 100% Logique",
+  "description": "énigmes de 50 % à 20 %",
+  "questions": [
+    {
+      "text": "Complète la suite :\n1, 2, 4, 8, 16, ?",
+      "answer": "32/trente-deux/trente deux",
+      "percent": 50,
+      "explain": "Chaque nombre est le double du précédent."
+    },
+    {
+      "text": "Combien de jours comptent les trois premiers mois d'une année non bissextile ?",
+      "answer": "90/quatre-vingt-dix/quatre vingt dix",
+      "percent": 40,
+      "explain": "31 + 28 + 31 = 90."
+    },
+    {
+      "text": "Paul est plus grand que Marc, Marc est plus grand que Léo, et Léo est plus grand que Tom.\nQui est le deuxième plus petit ?",
+      "answer": "Léo/Leo",
+      "percent": 40,
+      "explain": "Du plus petit au plus grand : Tom, Léo, Marc, Paul."
+    },
+    {
+      "text": "On numérote les pages d'un livre de 1 à 50.\nCombien de fois écrit-on le chiffre 0 ?",
+      "answer": "5/cinq",
+      "percent": 35,
+      "explain": "Dans 10, 20, 30, 40 et 50."
+    },
+    {
+      "text": "Un père et son fils ont 36 ans à eux deux. Le père a 30 ans de plus que son fils.\nQuel âge a le fils ?",
+      "answer": "3/trois/3 ans/trois ans",
+      "percent": 25,
+      "explain": "Fils x, père x + 30 : 2x + 30 = 36, donc x = 3."
+    },
+    {
+      "text": "Une horloge à aiguilles indique exactement 3 h.\nQuelle heure semble-t-elle indiquer dans un miroir ?",
+      "answer": "9 h/9h/9/neuf heures/21 h/21h/9 heures",
+      "percent": 20,
+      "explain": "Le miroir inverse gauche et droite : l'aiguille des heures pointe alors sur le 9."
+    }
+  ]
+}

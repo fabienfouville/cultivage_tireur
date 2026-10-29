@@ -15,3 +15,6 @@ Ajouts (pack Vrac) — pngimg.com, licence CC BY-NC 4.0 :
 - cage-foot.webp : football_goal_PNG17 (dessin)
 - requin-blanc.webp : shark (pngimg)
 - pyramide.webp : pyramid (pngimg)
+
+Pack Test (florizarre, mackogneur, ptera, groudon, kyogre, dialga) : illustrations officielles Pokémon © Nintendo /
+Creatures / GAME FREAK, via PokéAPI.

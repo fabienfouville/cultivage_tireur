@@ -1,21 +1,23 @@
 {
   "id": "soiree-test",
   "name": "Soirée test",
-  "description": "≈ 1 heure, les 13 jeux, pour tester avant le Quiz EDF (sans toucher à ses questions)",
+  "description": "les 15 jeux, 5 questions chacun, questions inédites (≈ 1 h 30)",
   "cardsEnabled": false,
   "slots": [
-    { "module": "qcm", "packId": "cultureg-abordable", "questionCount": 5, "timer": 20 },
-    { "module": "vf-survie", "packId": "gs-vf", "questionCount": 8, "timer": 12 },
-    { "module": "estimation", "packId": "gs-estimation", "questionCount": 3, "timer": 25 },
-    { "module": "geoloc", "packId": "gs-geoloc", "questionCount": 3, "timer": 30 },
-    { "module": "blindtest", "packId": "gs-blindtest", "questionCount": 4, "timer": 30 },
-    { "module": "echelle", "packId": "gs-echelle", "questionCount": 3, "timer": 25 },
-    { "module": "cash", "packId": "cultureg-expert", "questionCount": 4, "timer": 30 },
-    { "module": "theme", "packId": "gs-theme", "questionCount": 1, "timer": 45 },
-    { "module": "chronologie", "packId": "gs-chrono", "questionCount": 3, "timer": 40 },
-    { "module": "pixel", "packId": "gs-pixel", "questionCount": 3, "timer": 30 },
-    { "module": "top", "packId": "gs-top", "questionCount": 1, "timer": 30 },
-    { "module": "quisuisje", "packId": "gs-qsj", "questionCount": 2, "timer": 50 },
-    { "module": "logique", "packId": "gs-logique", "questionCount": 4, "timer": 45 }
+    { "module": "qcm", "packId": "test-qcm", "questionCount": 5, "timer": 20 },
+    { "module": "vf-survie", "packId": "test-vf", "questionCount": 5, "timer": 12 },
+    { "module": "estimation", "packId": "test-estimation", "questionCount": 5, "timer": 25 },
+    { "module": "geoloc", "packId": "test-geoloc", "questionCount": 5, "timer": 30 },
+    { "module": "blindtest", "packId": "test-blindtest", "questionCount": 5, "timer": 30 },
+    { "module": "echelle", "packId": "test-echelle", "questionCount": 5, "timer": 25 },
+    { "module": "gambling", "packId": "test-gambling", "questionCount": 5, "timer": 30 },
+    { "module": "cash", "packId": "test-cash", "questionCount": 5, "timer": 30 },
+    { "module": "theme", "packId": "test-theme", "questionCount": 5, "timer": 45 },
+    { "module": "chronologie", "packId": "test-chrono", "questionCount": 5, "timer": 40 },
+    { "module": "pixel", "packId": "test-pixel", "questionCount": 5, "timer": 30 },
+    { "module": "duo-carre-cash", "packId": "test-duo", "questionCount": 5, "timer": 30 },
+    { "module": "top", "packId": "test-top", "questionCount": 5, "timer": 30 },
+    { "module": "quisuisje", "packId": "test-qsj", "questionCount": 5, "timer": 50 },
+    { "module": "logique", "packId": "test-logique", "questionCount": 5, "timer": 45 }
   ]
 }

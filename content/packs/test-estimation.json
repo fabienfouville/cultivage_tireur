@@ -1,0 +1,42 @@
+{
+  "id": "test-estimation",
+  "module": "estimation",
+  "theme": "Test · Estimation",
+  "questions": [
+    {
+      "text": "En quelle année Gutenberg a-t-il achevé sa Bible imprimée ?",
+      "answer": 1455,
+      "unit": ""
+    },
+    {
+      "text": "Combien de cases compte une grille de sudoku ?",
+      "answer": 81,
+      "unit": "cases"
+    },
+    {
+      "text": "En quelle année la Sécurité sociale a-t-elle été créée en France ?",
+      "answer": 1945,
+      "unit": ""
+    },
+    {
+      "text": "En quelle année la première ligne du métro de Paris a-t-elle été inaugurée ?",
+      "answer": 1900,
+      "unit": ""
+    },
+    {
+      "text": "Combien de pays le Danube traverse-t-il ?",
+      "answer": 10,
+      "unit": "pays"
+    },
+    {
+      "text": "Combien de minutes met la Station spatiale internationale pour faire le tour de la Terre ?",
+      "answer": 92,
+      "unit": "minutes"
+    },
+    {
+      "text": "Combien d'os compte le crâne humain ?",
+      "answer": 22,
+      "unit": "os"
+    }
+  ]
+}

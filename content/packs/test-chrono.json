@@ -1,0 +1,97 @@
+{
+  "id": "test-chrono",
+  "module": "chronologie",
+  "theme": "Test · Chronologie",
+  "questions": [
+    {
+      "text": "Grandes guerres (début)",
+      "events": [
+        "Guerre de Cent Ans",
+        "Guerre de Trente Ans",
+        "Guerre de Sécession",
+        "Guerre de Corée"
+      ],
+      "dates": [
+        "1337",
+        "1618",
+        "1861",
+        "1950"
+      ]
+    },
+    {
+      "text": "Naissances de peintres",
+      "events": [
+        "Léonard de Vinci",
+        "Rembrandt",
+        "Vincent van Gogh",
+        "Pablo Picasso"
+      ],
+      "dates": [
+        "1452",
+        "1606",
+        "1853",
+        "1881"
+      ]
+    },
+    {
+      "text": "Naissances de compositeurs",
+      "events": [
+        "Jean-Sébastien Bach",
+        "Wolfgang Amadeus Mozart",
+        "Ludwig van Beethoven",
+        "Claude Debussy"
+      ],
+      "dates": [
+        "1685",
+        "1756",
+        "1770",
+        "1862"
+      ]
+    },
+    {
+      "text": "Premières fois",
+      "events": [
+        "Premier timbre-poste (Penny Black)",
+        "Premier film des frères Lumière",
+        "Lindbergh traverse l'Atlantique en avion",
+        "Ordinateur Apple II"
+      ],
+      "dates": [
+        "1840",
+        "1895",
+        "1927",
+        "1977"
+      ]
+    },
+    {
+      "text": "Débuts de règne",
+      "events": [
+        "Louis XIV devient roi",
+        "Napoléon devient empereur",
+        "Victoria devient reine",
+        "Élisabeth II devient reine"
+      ],
+      "dates": [
+        "1643",
+        "1804",
+        "1837",
+        "1952"
+      ]
+    },
+    {
+      "text": "Exploits",
+      "events": [
+        "Amundsen au pôle Sud",
+        "Hillary et Tensing au sommet de l'Everest",
+        "Gagarine dans l'espace",
+        "Premiers pas sur la Lune"
+      ],
+      "dates": [
+        "1911",
+        "1953",
+        "1961",
+        "1969"
+      ]
+    }
+  ]
+}

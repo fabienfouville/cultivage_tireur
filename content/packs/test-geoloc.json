@@ -1,0 +1,58 @@
+{
+  "id": "test-geoloc",
+  "module": "geoloc",
+  "theme": "Test · Géoloc",
+  "mapId": "world",
+  "questions": [
+    {
+      "text": "Où se trouve Chamonix ?",
+      "answerHint": "Chamonix-Mont-Blanc (Haute-Savoie)",
+      "lat": 45.9237,
+      "lng": 6.8694
+    },
+    {
+      "text": "Où se trouve Bruges ?",
+      "answerHint": "Bruges (Belgique)",
+      "lat": 51.2093,
+      "lng": 3.2247
+    },
+    {
+      "text": "Où se trouve Montréal ?",
+      "answerHint": "Montréal (Québec, Canada)",
+      "lat": 45.5019,
+      "lng": -73.5674
+    },
+    {
+      "text": "Où se trouve Séville ?",
+      "answerHint": "Séville (Espagne)",
+      "lat": 37.3891,
+      "lng": -5.9845
+    },
+    {
+      "text": "Où se trouve l'Etna ?",
+      "answerHint": "Etna — Sicile, Italie",
+      "lat": 37.751,
+      "lng": 14.9934
+    },
+    {
+      "text": "Où se trouvent les alignements de Carnac ?",
+      "answerHint": "Carnac (Morbihan)",
+      "lat": 47.5945,
+      "lng": -3.079
+    },
+    {
+      "text": "Où se trouve la Pologne ?",
+      "answerHint": "Pologne",
+      "lat": 52.1,
+      "lng": 19.4,
+      "isoNum": 616
+    },
+    {
+      "text": "Où se trouve la Côte d'Ivoire ?",
+      "answerHint": "Côte d'Ivoire",
+      "lat": 7.5,
+      "lng": -5.5,
+      "isoNum": 384
+    }
+  ]
+}

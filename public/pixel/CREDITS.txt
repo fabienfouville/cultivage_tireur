@@ -16,3 +16,5 @@ Tableaux célèbres, œuvres du domaine public, reproductions issues de Wikimedi
 - impression-soleil.jpg : Claude Monet, Impression, soleil levant (1872)
 - le-baiser.jpg : Gustav Klimt, Le Baiser (1908-1909)
 - glaneuses.jpg : Jean-François Millet, Des glaneuses (1857)
+
+Pack Test (pikachu, evoli, ronflex, mewtwo, bulbizarre, magicarpe) : illustrations officielles Pokémon via PokéAPI.

@@ -1,0 +1,27 @@
+{
+  "id": "test-theme",
+  "module": "theme",
+  "theme": "Test · Thème",
+  "questions": [
+    {
+      "text": "Un pays d'Amérique du Sud",
+      "answerHint": "Brésil, Argentine, Chili, Pérou, Colombie, Venezuela, Équateur, Bolivie, Paraguay, Uruguay, Guyana, Suriname"
+    },
+    {
+      "text": "Un animal marin",
+      "answerHint": "Baleine, dauphin, requin, pieuvre, méduse, orque, tortue de mer, phoque, crabe, homard, raie, hippocampe…"
+    },
+    {
+      "text": "Un personnage de Molière",
+      "answerHint": "Harpagon, Tartuffe, Alceste, Sganarelle, Scapin, Argan, Monsieur Jourdain, Dom Juan, Célimène, Toinette…"
+    },
+    {
+      "text": "Une œuvre de Victor Hugo",
+      "answerHint": "Les Misérables, Notre-Dame de Paris, Hernani, Ruy Blas, Les Contemplations, Les Châtiments, Quatrevingt-treize…"
+    },
+    {
+      "text": "Un dieu ou une déesse de l'Olympe",
+      "answerHint": "Zeus, Héra, Poséidon, Athéna, Apollon, Artémis, Arès, Aphrodite, Héphaïstos, Hermès, Déméter, Dionysos, Hestia"
+    }
+  ]
+}

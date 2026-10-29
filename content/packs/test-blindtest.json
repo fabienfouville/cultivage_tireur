@@ -1,0 +1,49 @@
+{
+  "id": "test-blindtest",
+  "module": "blindtest",
+  "theme": "Test · Blind Test",
+  "questions": [
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Michel Polnareff",
+      "answerHintTitle": "On ira tous au paradis"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Queen",
+      "answerHintTitle": "Don't Stop Me Now"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Louise Attaque",
+      "answerHintTitle": "J't'emmène au vent"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "The Beatles",
+      "answerHintTitle": "Hey Jude"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Zazie",
+      "answerHintTitle": "Zen"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Village People",
+      "answerHintTitle": "Y.M.C.A."
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Elvis Presley",
+      "answerHintTitle": "Jailhouse Rock"
+    }
+  ]
+}

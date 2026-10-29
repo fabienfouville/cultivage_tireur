@@ -1,0 +1,77 @@
+{
+  "id": "test-qcm",
+  "module": "qcm",
+  "theme": "Test · QCM",
+  "questions": [
+    {
+      "text": "Quel écrivain a créé le personnage de Gavroche ?",
+      "answers": [
+        "Émile Zola",
+        "Victor Hugo",
+        "Alexandre Dumas",
+        "Honoré de Balzac"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle est la capitale de l'Albanie ?",
+      "answers": [
+        "Tirana",
+        "Skopje",
+        "Podgorica",
+        "Sofia"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Quel peintre a réalisé « Bal du moulin de la Galette » ?",
+      "answers": [
+        "Edgar Degas",
+        "Auguste Renoir",
+        "Édouard Manet",
+        "Toulouse-Lautrec"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quelle planète met le plus de temps à faire un tour sur elle-même ?",
+      "answers": [
+        "Mercure",
+        "Vénus",
+        "Mars",
+        "Jupiter"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel traité a créé l'Union européenne en 1992 ?",
+      "answers": [
+        "Le traité de Rome",
+        "Le traité de Maastricht",
+        "Le traité de Lisbonne",
+        "Le traité de Nice"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Qui a peint « Les Ménines » ?",
+      "answers": [
+        "Francisco de Goya",
+        "Diego Vélasquez",
+        "Le Greco",
+        "Murillo"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Comment s'appelle la plus grande lune de Neptune ?",
+      "answers": [
+        "Titan",
+        "Triton",
+        "Europe",
+        "Obéron"
+      ],
+      "correct": 1
+    }
+  ]
+}

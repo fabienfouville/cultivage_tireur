@@ -1,0 +1,63 @@
+{
+  "id": "test-vf",
+  "module": "vf-survie",
+  "theme": "Test · VF Survie",
+  "description": "du plus facile au plus dur",
+  "questions": [
+    {
+      "text": "La Terre fait le tour du Soleil en environ 365 jours.",
+      "correct": true,
+      "order": 1
+    },
+    {
+      "text": "Le dauphin est un poisson.",
+      "correct": false,
+      "order": 2
+    },
+    {
+      "text": "Les araignées sont des insectes.",
+      "correct": false,
+      "order": 3
+    },
+    {
+      "text": "Le Kilimandjaro se trouve au Kenya.",
+      "correct": false,
+      "order": 4
+    },
+    {
+      "text": "L'Amazone se jette dans l'océan Atlantique.",
+      "correct": true,
+      "order": 5
+    },
+    {
+      "text": "Victor Hugo est enterré au Panthéon.",
+      "correct": true,
+      "order": 6
+    },
+    {
+      "text": "Le pôle Sud est plus froid que le pôle Nord.",
+      "correct": true,
+      "order": 7
+    },
+    {
+      "text": "Le mot « algèbre » vient de l'arabe.",
+      "correct": true,
+      "order": 8
+    },
+    {
+      "text": "Le premier prix Nobel de la paix a été décerné en 1901.",
+      "correct": true,
+      "order": 9
+    },
+    {
+      "text": "L'or est plus dense que le plomb.",
+      "correct": true,
+      "order": 10
+    },
+    {
+      "text": "Le cœur d'une baleine bleue peut peser plus de 150 kg.",
+      "correct": true,
+      "order": 11
+    }
+  ]
+}

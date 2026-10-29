@@ -1,0 +1,84 @@
+{
+  "id": "test-duo",
+  "module": "qcm",
+  "theme": "Test · Duo / Carré / Cash",
+  "questions": [
+    {
+      "text": "Quel peintre a réalisé « Le Jardin des délices » ?",
+      "answers": [
+        "Pieter Bruegel",
+        "Jérôme Bosch",
+        "Jan van Eyck",
+        "Albrecht Dürer"
+      ],
+      "correct": 1,
+      "answerHint": "Jérôme Bosch/Bosch"
+    },
+    {
+      "text": "Quelle est la capitale de la Lituanie ?",
+      "answers": [
+        "Riga",
+        "Vilnius",
+        "Tallinn",
+        "Minsk"
+      ],
+      "correct": 1,
+      "answerHint": "Vilnius"
+    },
+    {
+      "text": "Quel physicien a découvert l'électron en 1897 ?",
+      "answers": [
+        "J. J. Thomson",
+        "Ernest Rutherford",
+        "Niels Bohr",
+        "Robert Millikan"
+      ],
+      "correct": 0,
+      "answerHint": "Thomson/J. J. Thomson/Joseph John Thomson"
+    },
+    {
+      "text": "Quel est le plus haut volcan actif d'Europe ?",
+      "answers": [
+        "Le Vésuve",
+        "L'Etna",
+        "Le Stromboli",
+        "L'Hekla"
+      ],
+      "correct": 1,
+      "answerHint": "Etna/L'Etna"
+    },
+    {
+      "text": "Quel instrument compte 47 cordes et 7 pédales ?",
+      "answers": [
+        "La harpe",
+        "Le piano",
+        "La cithare",
+        "Le clavecin"
+      ],
+      "correct": 0,
+      "answerHint": "Harpe/La harpe"
+    },
+    {
+      "text": "Quel métal a pour symbole Pb ?",
+      "answers": [
+        "Le plomb",
+        "Le platine",
+        "Le palladium",
+        "Le phosphore"
+      ],
+      "correct": 0,
+      "answerHint": "Plomb/Le plomb"
+    },
+    {
+      "text": "Dans quel pays est né Frédéric Chopin ?",
+      "answers": [
+        "La France",
+        "La Pologne",
+        "L'Autriche",
+        "La Hongrie"
+      ],
+      "correct": 1,
+      "answerHint": "Pologne"
+    }
+  ]
+}

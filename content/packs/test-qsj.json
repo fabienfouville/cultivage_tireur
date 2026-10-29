@@ -1,0 +1,62 @@
+{
+  "id": "test-qsj",
+  "module": "quisuisje",
+  "theme": "Test · Qui suis-je ?",
+  "questions": [
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Mon père était tapissier du roi.",
+        "J'ai fondé l'Illustre Théâtre avec la famille Béjart.",
+        "J'ai sillonné les provinces pendant treize ans avec ma troupe.",
+        "J'ai écrit « Le Bourgeois gentilhomme » et « Tartuffe ».",
+        "On dit du français que c'est « la langue de » … moi."
+      ],
+      "answerHint": "Molière/Moliere/Jean-Baptiste Poquelin"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis née à Nice en 1927.",
+        "J'ai survécu à la déportation à Auschwitz.",
+        "J'ai été la première présidente du Parlement européen élu au suffrage universel.",
+        "Ministre de la Santé, j'ai porté la loi de 1975 sur l'IVG.",
+        "Je repose au Panthéon depuis 2018."
+      ],
+      "answerHint": "Simone Veil/Veil"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "Je m'éloigne d'environ 3,8 cm chaque année.",
+        "Ma gravité est environ six fois plus faible que celle de la Terre.",
+        "Je montre toujours la même face.",
+        "Douze hommes ont marché sur moi.",
+        "Je suis le seul satellite naturel de la Terre."
+      ],
+      "answerHint": "La Lune/Lune"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Mon livre a d'abord été publié à New York, en 1943.",
+        "Mon auteur était aviateur.",
+        "Je viens de l'astéroïde B 612.",
+        "Je demande qu'on me dessine un mouton.",
+        "Mon auteur est Antoine de Saint-Exupéry."
+      ],
+      "answerHint": "Le Petit Prince/Petit Prince"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "Je mesure environ 6 650 km.",
+        "Je nais de la rencontre de deux branches, l'une blanche, l'autre bleue.",
+        "Je traverse notamment le Soudan.",
+        "Le haut barrage d'Assouan me retient.",
+        "Je traverse l'Égypte et me jette dans la Méditerranée."
+      ],
+      "answerHint": "Le Nil/Nil"
+    }
+  ]
+}
