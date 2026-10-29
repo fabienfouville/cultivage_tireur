@@ -87,5 +87,11 @@ estimation `answer` (nombre), `unit` · theme `answerHint` (exemples) · top `an
 geoloc `lat`, `lng`, `answerHint`, `isoNum` (code ISO numérique si la réponse est un pays), `mapId` du pack ·
 blindtest `audioUrl`, `answerHintAuthor`, `answerHintTitle`.
 
+Style des questions : s'inspirer de « La Table des Savoirs » (le quiz quotidien d'Émilien, champion des 12 Coups de midi) :
+de la vraie culture générale, répartie sur une dizaine de domaines (littérature, histoire, sciences, géographie, arts,
+sport, langue française, cinéma et musique, mythologie, divers), une seule bonne réponse vérifiable, formulation courte
+et précise, deux niveaux (abordable en QCM, expert en réponse libre). Packs `cultureg-abordable` et `cultureg-expert`.
+Ne jamais recopier leurs questions : seulement le style.
+
 Les questions doivent être exactes et ne pas doublonner l'existant : demander à l'utilisateur une sauvegarde JSON
 (admin → Packs → « Sauvegarder tout ») pour vérifier. `npm test` valide le format de tous les packs.

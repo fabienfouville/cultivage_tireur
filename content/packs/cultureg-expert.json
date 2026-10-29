@@ -1,0 +1,172 @@
+{
+  "id": "cultureg-expert",
+  "module": "cash",
+  "theme": "Culture G · Expert",
+  "description": "10 domaines, niveau expert, réponse libre",
+  "questions": [
+    {
+      "text": "📚 Littérature · Quel écrivain a créé le gentleman cambrioleur Arsène Lupin ?",
+      "answerHint": "Maurice Leblanc/Leblanc"
+    },
+    {
+      "text": "📚 Littérature · Quel poète a écrit « Le Dormeur du val » ?",
+      "answerHint": "Arthur Rimbaud/Rimbaud"
+    },
+    {
+      "text": "📚 Littérature · Quel écrivain a reçu le prix Goncourt 1919 pour « À l'ombre des jeunes filles en fleurs » ?",
+      "answerHint": "Marcel Proust/Proust"
+    },
+    {
+      "text": "📚 Littérature · Quelle romancière a publié « Bonjour tristesse » à 18 ans ?",
+      "answerHint": "Françoise Sagan/Sagan"
+    },
+    {
+      "text": "🏛️ Histoire · Quel président de la République est mort à l'Élysée en 1899 ?",
+      "answerHint": "Félix Faure/Faure"
+    },
+    {
+      "text": "🏛️ Histoire · Quelle ville a été la capitale de la France sous le régime de Pétain ?",
+      "answerHint": "Vichy"
+    },
+    {
+      "text": "🔬 Sciences · Quel est le symbole chimique du tungstène ?",
+      "answerHint": "W"
+    },
+    {
+      "text": "🔬 Sciences · Comment s'appelle l'os du talon ?",
+      "answerHint": "Calcanéum/Calcaneum"
+    },
+    {
+      "text": "🔬 Sciences · Quelle unité du Système international mesure la quantité de matière ?",
+      "answerHint": "Mole"
+    },
+    {
+      "text": "🔬 Sciences · Quelle est la plus grande lune de Saturne ?",
+      "answerHint": "Titan"
+    },
+    {
+      "text": "🔬 Sciences · Quelle glande du cou règle le métabolisme grâce à ses hormones ?",
+      "answerHint": "Thyroïde/La thyroïde"
+    },
+    {
+      "text": "🌍 Géographie · Quelle est la capitale du Kazakhstan ?",
+      "answerHint": "Astana/Nour-Soultan"
+    },
+    {
+      "text": "🌍 Géographie · Quel pays a pour capitale Ouagadougou ?",
+      "answerHint": "Burkina Faso/Burkina"
+    },
+    {
+      "text": "🌍 Géographie · Quel est le plus long fleuve qui coule entièrement en France ?",
+      "answerHint": "Loire/La Loire"
+    },
+    {
+      "text": "🌍 Géographie · Quelle ville possède la plus haute flèche de cathédrale de France (151 m) ?",
+      "answerHint": "Rouen"
+    },
+    {
+      "text": "🌍 Géographie · Quel fleuve sépare les États-Unis du Mexique sur une grande partie de leur frontière ?",
+      "answerHint": "Rio Grande/Río Bravo/Rio Bravo"
+    },
+    {
+      "text": "🎨 Arts · Quel peintre a réalisé « Le Déjeuner des canotiers » ?",
+      "answerHint": "Pierre-Auguste Renoir/Auguste Renoir/Renoir"
+    },
+    {
+      "text": "🎨 Arts · Quel compositeur français a écrit le « Boléro » ?",
+      "answerHint": "Maurice Ravel/Ravel"
+    },
+    {
+      "text": "🎨 Arts · Quel opéra de Bizet a pour héroïne une cigarière de Séville ?",
+      "answerHint": "Carmen"
+    },
+    {
+      "text": "🎨 Arts · Quel architecte suisse a construit la Cité radieuse de Marseille ?",
+      "answerHint": "Le Corbusier/Corbusier"
+    },
+    {
+      "text": "🏅 Sport · Quel cycliste breton a remporté cinq Tours de France, le dernier en 1985 ?",
+      "answerHint": "Bernard Hinault/Hinault"
+    },
+    {
+      "text": "🏅 Sport · Combien de joueurs compte une équipe de cricket sur le terrain ?",
+      "answerHint": "11/onze"
+    },
+    {
+      "text": "✍️ Langue française · Comment appelle-t-on les habitants de Saint-Étienne ?",
+      "answerHint": "Stéphanois/Stéphanoises"
+    },
+    {
+      "text": "✍️ Langue française · Comment appelle-t-on les habitants de Pont-à-Mousson ?",
+      "answerHint": "Mussipontains/Mussipontain"
+    },
+    {
+      "text": "✍️ Langue française · Comment appelle-t-on un sigle qui se prononce comme un mot, comme OTAN ?",
+      "answerHint": "Acronyme/Un acronyme"
+    },
+    {
+      "text": "🎬 Cinéma et musique · Qui a réalisé « La Haine » (1995) ?",
+      "answerHint": "Mathieu Kassovitz/Kassovitz"
+    },
+    {
+      "text": "🎬 Cinéma et musique · Quel chanteur a écrit « La Javanaise » ?",
+      "answerHint": "Serge Gainsbourg/Gainsbourg"
+    },
+    {
+      "text": "🎬 Cinéma et musique · Quel film de Jacques Demy, avec Catherine Deneuve, est entièrement chanté ?",
+      "answerHint": "Les Parapluies de Cherbourg/Parapluies de Cherbourg"
+    },
+    {
+      "text": "⚡ Mythologie · Quelle déesse grecque est née de l'écume de la mer ?",
+      "answerHint": "Aphrodite"
+    },
+    {
+      "text": "⚡ Mythologie · Quel titan porte la voûte céleste sur ses épaules ?",
+      "answerHint": "Atlas"
+    },
+    {
+      "text": "⚡ Mythologie · Comment s'appelle le chien à trois têtes qui garde les Enfers ?",
+      "answerHint": "Cerbère/Cerbere"
+    },
+    {
+      "text": "🎲 Divers · Combien de cases compte un plateau de jeu de dames international ?",
+      "answerHint": "100/cent"
+    },
+    {
+      "text": "🎲 Divers · Quel est le nom du célèbre carnet de route des marins, où l'on consigne tout ce qui se passe à bord ?",
+      "answerHint": "Journal de bord/Livre de bord"
+    },
+    {
+      "text": "📚 Littérature · Quel écrivain, mort en 1914, a écrit « Le Grand Meaulnes » ?",
+      "answerHint": "Alain-Fournier/Alain Fournier"
+    },
+    {
+      "text": "🏛️ Histoire · Quelle bataille François Ier a-t-il remportée en 1515 ?",
+      "answerHint": "Marignan/Bataille de Marignan"
+    },
+    {
+      "text": "🏛️ Histoire · Quel nom de code portait le débarquement allié en Normandie ?",
+      "answerHint": "Overlord/Opération Overlord"
+    },
+    {
+      "text": "🌍 Géographie · Quel est le point culminant de la Corse ?",
+      "answerHint": "Monte Cinto/Cinto"
+    },
+    {
+      "text": "🔬 Sciences · Quel ingénieur écossais a donné son nom à l'unité de puissance ?",
+      "answerHint": "James Watt/Watt"
+    },
+    {
+      "text": "🎨 Arts · Quel peintre néerlandais a réalisé « La Ronde de nuit » ?",
+      "answerHint": "Rembrandt"
+    },
+    {
+      "text": "⚡ Mythologie · Quelle magicienne aide Jason à conquérir la Toison d'or ?",
+      "answerHint": "Médée/Medee"
+    },
+    {
+      "text": "✍️ Langue française · Comment appelle-t-on les habitants de Charleville-Mézières ?",
+      "answerHint": "Carolomacériens/Carolomacérien"
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "id": "cultureg-abordable",
+  "module": "qcm",
+  "theme": "Culture G · Abordable",
+  "description": "10 domaines, niveau abordable",
+  "questions": [
+    {
+      "text": "📚 Littérature · Qui a écrit « Germinal » ?",
+      "answers": [
+        "Victor Hugo",
+        "Émile Zola",
+        "Gustave Flaubert",
+        "Honoré de Balzac"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "📚 Littérature · Dans quelle pièce de Molière trouve-t-on Harpagon ?",
+      "answers": [
+        "Le Misanthrope",
+        "L'Avare",
+        "Tartuffe",
+        "Le Malade imaginaire"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "📚 Littérature · Quel est le prénom de Madame Bovary ?",
+      "answers": [
+        "Emma",
+        "Nana",
+        "Thérèse",
+        "Julie"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "📚 Littérature · Qui est l'auteur de « Candide » ?",
+      "answers": [
+        "Jean-Jacques Rousseau",
+        "Voltaire",
+        "Denis Diderot",
+        "Montesquieu"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🏛️ Histoire · En quelle année a eu lieu la bataille de Waterloo ?",
+      "answers": [
+        "1805",
+        "1812",
+        "1815",
+        "1830"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "🏛️ Histoire · Quel garde des Sceaux a porté l'abolition de la peine de mort en 1981 ?",
+      "answers": [
+        "Simone Veil",
+        "Robert Badinter",
+        "Jack Lang",
+        "Pierre Mauroy"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🔬 Sciences · Quel savant a établi le tableau périodique des éléments ?",
+      "answers": [
+        "Antoine Lavoisier",
+        "Dmitri Mendeleïev",
+        "John Dalton",
+        "Niels Bohr"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🌍 Géographie · Comment s'appelle l'estuaire formé par la Garonne et la Dordogne ?",
+      "answers": [
+        "La Gironde",
+        "La Rance",
+        "Le Médoc",
+        "La Charente"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "🌍 Géographie · Quelle est la capitale de la Slovaquie ?",
+      "answers": [
+        "Ljubljana",
+        "Bratislava",
+        "Budapest",
+        "Zagreb"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🌍 Géographie · Quel détroit sépare la Sicile de l'Italie continentale ?",
+      "answers": [
+        "Le Bosphore",
+        "Le détroit de Messine",
+        "Les bouches de Bonifacio",
+        "Le canal d'Otrante"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎨 Arts · Quel sculpteur a réalisé « Le Penseur » ?",
+      "answers": [
+        "Camille Claudel",
+        "Auguste Rodin",
+        "Michel-Ange",
+        "Antoine Bourdelle"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎨 Arts · Quel compositeur a écrit « La Flûte enchantée » ?",
+      "answers": [
+        "Mozart",
+        "Beethoven",
+        "Verdi",
+        "Wagner"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "🎨 Arts · Quel architecte a conçu la pyramide du Louvre ?",
+      "answers": [
+        "Le Corbusier",
+        "Ieoh Ming Pei",
+        "Jean Nouvel",
+        "Renzo Piano"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎨 Arts · Quel peintre a réalisé « Le Sacre de Napoléon » ?",
+      "answers": [
+        "Ingres",
+        "Jacques-Louis David",
+        "Delacroix",
+        "Géricault"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "✍️ Langue française · Comment appelle-t-on un mot qui se lit dans les deux sens, comme « kayak » ?",
+      "answers": [
+        "Une anagramme",
+        "Un palindrome",
+        "Un homonyme",
+        "Un oxymore"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "✍️ Langue française · Quelle figure de style associe deux mots contraires, comme « obscure clarté » ?",
+      "answers": [
+        "L'antithèse",
+        "L'oxymore",
+        "La litote",
+        "L'hyperbole"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "✍️ Langue française · Que signifie l'adjectif « ubiquitaire » ?",
+      "answers": [
+        "Qui est présent partout",
+        "Qui ne sert à rien",
+        "Qui change d'avis",
+        "Qui parle beaucoup"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "🎬 Cinéma et musique · Qui a réalisé « Les Quatre Cents Coups » (1959) ?",
+      "answers": [
+        "Jean-Luc Godard",
+        "François Truffaut",
+        "Claude Chabrol",
+        "Éric Rohmer"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎬 Cinéma et musique · Quel groupe a sorti l'album « The Dark Side of the Moon » ?",
+      "answers": [
+        "The Who",
+        "Pink Floyd",
+        "Led Zeppelin",
+        "Genesis"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎬 Cinéma et musique · Qui joue le commissaire Juve dans les « Fantômas » des années 1960 ?",
+      "answers": [
+        "Bourvil",
+        "Louis de Funès",
+        "Jean Marais",
+        "Lino Ventura"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "⚡ Mythologie · Qui est le messager des dieux dans la mythologie grecque ?",
+      "answers": [
+        "Apollon",
+        "Hermès",
+        "Arès",
+        "Héphaïstos"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "⚡ Mythologie · Quel héros grec a tué le Minotaure ?",
+      "answers": [
+        "Persée",
+        "Thésée",
+        "Héraclès",
+        "Jason"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎲 Divers · Quelle est la plus haute distinction honorifique française ?",
+      "answers": [
+        "La Légion d'honneur",
+        "L'ordre national du Mérite",
+        "Les Palmes académiques",
+        "La croix de guerre"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "🎲 Divers · Combien de pièces chaque joueur a-t-il au début d'une partie d'échecs ?",
+      "answers": [
+        "12",
+        "16",
+        "18",
+        "20"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎲 Divers · Quel est l'âge minimum pour se présenter à l'élection présidentielle française ?",
+      "answers": [
+        "18 ans",
+        "21 ans",
+        "23 ans",
+        "35 ans"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "📚 Littérature · Qui a écrit « Le Comte de Monte-Cristo » ?",
+      "answers": [
+        "Victor Hugo",
+        "Alexandre Dumas",
+        "Eugène Sue",
+        "Jules Verne"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🏛️ Histoire · Quelle reine de France était surnommée « l'Autrichienne » ?",
+      "answers": [
+        "Marie-Antoinette",
+        "Catherine de Médicis",
+        "Anne d'Autriche",
+        "Marie de Médicis"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "🔬 Sciences · Quel organe l'hépatite touche-t-elle ?",
+      "answers": [
+        "Le foie",
+        "Le pancréas",
+        "Les reins",
+        "Le cœur"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "🌍 Géographie · Quel département français de l'océan Indien a pour chef-lieu Mamoudzou ?",
+      "answers": [
+        "La Réunion",
+        "Mayotte",
+        "Madagascar",
+        "Maurice"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎨 Arts · Quel peintre a réalisé « Les Demoiselles d'Avignon » ?",
+      "answers": [
+        "Henri Matisse",
+        "Pablo Picasso",
+        "Georges Braque",
+        "Paul Cézanne"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎨 Arts · De quel instrument jouait Django Reinhardt ?",
+      "answers": [
+        "La guitare",
+        "Le violon",
+        "Le piano",
+        "La contrebasse"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "🏅 Sport · Quelle ville a accueilli les Jeux olympiques d'été de 1924 ?",
+      "answers": [
+        "Londres",
+        "Paris",
+        "Amsterdam",
+        "Anvers"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "✍️ Langue française · Quel est le féminin de « mulet », l'animal ?",
+      "answers": [
+        "La mule",
+        "La mulette",
+        "La mulasse",
+        "La muline"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "✍️ Langue française · Que signifie « procrastiner » ?",
+      "answers": [
+        "Remettre au lendemain",
+        "Se prosterner",
+        "Exagérer",
+        "Critiquer"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "🎲 Divers · Combien de cartes compte un jeu de belote ?",
+      "answers": [
+        "32",
+        "40",
+        "52",
+        "54"
+      ],
+      "correct": 0
+    }
+  ]
+}
