@@ -321,6 +321,7 @@ export async function startBlock(sid: string, opts: BlockOptions) {
     round: null,
     wheel: null,
     cardsUntil: null,
+    introAt: null,
     }),
   )
   await runTransaction(db, async (tx) => {
@@ -652,7 +653,19 @@ export async function afterBlock(sid: string) {
     })
     return
   }
-  await updateDoc(sessionRef(sid), { 'grandJeu.step': step })
+  // Annonce du jeu suivant ; un seul appareil admin fait passer à l'étape suivante
+  await runTransaction(db, async (tx) => {
+    const cur = (await tx.get(sessionRef(sid))).data() as Session
+    if (cur.phase !== 'blockResults' || cur.grandJeu?.step !== step - 1) return
+    tx.update(sessionRef(sid), { phase: 'intro', round: null, block: null, 'grandJeu.step': step, introAt: Date.now() })
+  })
+}
+
+/** Grand Jeu : fin de l'annonce, on lance le jeu annoncé (une seule fois, même avec plusieurs admins) */
+export async function startAnnouncedGame(sid: string) {
+  const session = await getSession(sid)
+  if (session.phase !== 'intro' || !session.grandJeu) return
+  const step = session.grandJeu.step
   await startSlot(sid, session.grandJeu.slots[step], step)
 }
 
@@ -695,13 +708,14 @@ export async function startGrandJeu(sid: string, gj: GrandJeu) {
   batch.update(sessionRef(sid), {
     status: 'playing',
     mode: 'grandjeu',
-    phase: 'play',
     grandJeu: { id, name, slots, cardsEnabled: CARDS_ON && !!cardsEnabled, step: 0 },
     round: null,
     block: null,
+    // Le premier jeu est annoncé (roue + règles) avant de commencer
+    phase: 'intro',
+    introAt: Date.now(),
   })
   await batch.commit()
-  await startSlot(sid, slots[0], 0)
 }
 
 /* ───────────────────────────── Joueurs ───────────────────────────── */

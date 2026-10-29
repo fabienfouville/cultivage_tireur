@@ -42,7 +42,7 @@ Pas de serveur ni de Cloud Functions. Tout le texte visible est en français.
 - `themes/{id}` `{module, name, mapId?, packId?}` · `questions/{id}` `{module, themeId, text, …champs du module}`
 - Thème d'un bloc : `''` = toutes les questions du jeu (défaut), `'?'` = un thème au hasard (`ALL_THEMES`/`RANDOM_THEME`).
 - `config/modules` `{<module>: {timer, …}}` · `grandJeux/{id}` · `admins/{email}` · `sessionSecrets/{sid}` `{password}`
-- `sessions/{sid}` : `phase` (lobby | pick | cards | play | blockResults | final), `block` (série de questions en cours),
+- `sessions/{sid}` : `phase` (lobby | pick | intro | cards | play | blockResults | final ; `intro` = annonce du jeu suivant en Grand Jeu), `block` (série de questions en cours),
   `round` (question en cours : `status` answering | validating | revealed, `public`, `solution`, `results`…), `seq`.
   Sous-collections : `participants/{uid}`, `answers/{seq}_{uid}`, `rounds/{id}` (historique des points),
   `cardPlays/{blockCount}_{uid}`, `keys/{uid}` (mot de passe saisi par le joueur).

@@ -94,6 +94,7 @@ export function ControlPanel({
 
       {session.phase === 'lobby' && <LobbyControls session={session} busy={busy} run={run} />}
       {session.phase === 'pick' && <BlockPicker session={session} busy={busy} run={run} />}
+      {session.phase === 'intro' && session.grandJeu && <IntroControls session={session} busy={busy} run={run} />}
       {session.phase === 'cards' && (
         <section className="card">
           <h3>🃏 Phase cartes</h3>
@@ -189,6 +190,27 @@ export function ControlPanel({
 }
 
 type Run = (fn: () => Promise<unknown>) => Promise<void>
+
+/** Grand Jeu : le jeu suivant est annoncé sur les écrans, l'animateur explique les règles puis lance */
+function IntroControls({ session, busy, run }: { session: Session; busy: boolean; run: Run }) {
+  const gj = session.grandJeu!
+  const slot = gj.slots[gj.step]
+  const mod = getModule(slot.module)
+  return (
+    <section className="card">
+      <p className="muted small">
+        Jeu {gj.step + 1}/{gj.slots.length} · annoncé sur les écrans
+      </p>
+      <h3>
+        {mod.icon} {mod.name} · {slot.questionCount} question{slot.questionCount > 1 ? 's' : ''} · {slot.timer} s
+      </h3>
+      <p className="small">🗣️ {mod.rules}</p>
+      <button className="btn btn-primary btn-block btn-big" disabled={busy} onClick={() => run(() => E.startAnnouncedGame(session.id))}>
+        ▶️ Lancer le jeu
+      </button>
+    </section>
+  )
+}
 
 function LobbyControls({ session, busy, run }: { session: Session; busy: boolean; run: Run }) {
   const gjs = useCol<GrandJeu>(query(collection(db, 'grandJeux'), orderBy('createdAt', 'desc')), 'gj-list') ?? []

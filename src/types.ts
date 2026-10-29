@@ -102,7 +102,7 @@ export interface Round {
   state?: Record<string, any>
 }
 
-export type Phase = 'lobby' | 'pick' | 'cards' | 'play' | 'blockResults' | 'final'
+export type Phase = 'lobby' | 'pick' | 'intro' | 'cards' | 'play' | 'blockResults' | 'final'
 
 export interface GrandJeuSlot {
   module: ModuleKey
@@ -144,6 +144,8 @@ export interface Session {
   playedThemes?: string[]
   /** Roue libre : module tiré par la roue (affiché sur l'écran) */
   wheel?: { module: ModuleKey; at: number } | null
+  /** Grand Jeu : annonce du jeu suivant (début de la roue, en ms) */
+  introAt?: number | null
 }
 
 export interface ReviewItem {

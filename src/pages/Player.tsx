@@ -2,6 +2,7 @@ import { collection, doc, serverTimestamp, setDoc } from 'firebase/firestore'
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router'
 import { MyBlockResult } from '../components/BlockResults'
+import { GameIntro } from '../components/GameIntro'
 import { CardsPicker } from '../components/CardsPicker'
 import { Header, Leaderboard, Podium, Spinner, TimerBar } from '../components/ui'
 import { TORTUE_FACTOR } from '../engine/cards'
@@ -229,6 +230,10 @@ function PlayerGame({ session, me }: { session: Session; me: Participant }) {
               <RevealList round={round} names={Object.fromEntries(participants.map((p) => [p.id, p.name]))} />
             </details>
           )}
+        </main>
+      ) : session.phase === 'intro' ? (
+        <main className="player-main">
+          <GameIntro session={session} compact />
         </main>
       ) : session.phase === 'cards' ? (
         <CardsPicker session={session} me={me} participants={participants} />

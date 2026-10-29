@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { collection, doc } from 'firebase/firestore'
 import { useParams } from 'react-router'
 import { BlockResults } from '../components/BlockResults'
+import { GameIntro } from '../components/GameIntro'
 import { CardsPlayedCount } from '../components/CardsPicker'
 import { ControlPanel } from '../components/ControlPanel'
 import { Leaderboard, Podium, ProgressChart, QR, Spinner, TimerBar, playerUrl } from '../components/ui'
@@ -76,6 +77,8 @@ export default function Screen() {
             </div>
           ) : session.phase === 'pick' ? (
             <Wheel result={session.wheel?.module} at={session.wheel?.at} />
+          ) : session.phase === 'intro' ? (
+            <GameIntro session={session} />
           ) : session.phase === 'cards' ? (
             <div className="cards-screen">
               <h2>🃏 Phase cartes · {session.cardsUntil ? Math.max(0, Math.ceil((session.cardsUntil.toMillis() - now) / 1000)) : 0}s</h2>
