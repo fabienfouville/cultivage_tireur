@@ -1,0 +1,177 @@
+{
+  "id": "geo-actifs-edf",
+  "module": "geoloc",
+  "theme": "Les actifs EDF",
+  "mapId": "france",
+  "description": "centrales nucléaires, barrages, marémotrice, éolien en mer",
+  "questions": [
+    {
+      "text": "Où se trouve la centrale nucléaire de Gravelines ?",
+      "answerHint": "Centrale nucléaire de Gravelines (Nord)",
+      "lat": 51.0153,
+      "lng": 2.1361
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Penly ?",
+      "answerHint": "Centrale nucléaire de Penly (Seine-Maritime)",
+      "lat": 49.9767,
+      "lng": 1.2122
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Paluel ?",
+      "answerHint": "Centrale nucléaire de Paluel (Seine-Maritime)",
+      "lat": 49.8581,
+      "lng": 0.6356
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Flamanville ?",
+      "answerHint": "Centrale nucléaire de Flamanville (Manche)",
+      "lat": 49.5366,
+      "lng": -1.8817
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Nogent-sur-Seine ?",
+      "answerHint": "Centrale nucléaire de Nogent-sur-Seine (Aube)",
+      "lat": 48.515,
+      "lng": 3.5178
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Chooz ?",
+      "answerHint": "Centrale nucléaire de Chooz (Ardennes)",
+      "lat": 50.09,
+      "lng": 4.7894
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Cattenom ?",
+      "answerHint": "Centrale nucléaire de Cattenom (Moselle)",
+      "lat": 49.4158,
+      "lng": 6.2181
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Dampierre-en-Burly ?",
+      "answerHint": "Centrale nucléaire de Dampierre-en-Burly (Loiret)",
+      "lat": 47.7331,
+      "lng": 2.5167
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Saint-Laurent-des-Eaux ?",
+      "answerHint": "Centrale nucléaire de Saint-Laurent-des-Eaux (Loir-et-Cher)",
+      "lat": 47.72,
+      "lng": 1.5775
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Chinon ?",
+      "answerHint": "Centrale nucléaire de Chinon (Indre-et-Loire)",
+      "lat": 47.2306,
+      "lng": 0.1703
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Belleville-sur-Loire ?",
+      "answerHint": "Centrale nucléaire de Belleville-sur-Loire (Cher)",
+      "lat": 47.5103,
+      "lng": 2.875
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Civaux ?",
+      "answerHint": "Centrale nucléaire de Civaux (Vienne)",
+      "lat": 46.4567,
+      "lng": 0.6528
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Blayais ?",
+      "answerHint": "Centrale nucléaire de Blayais (Gironde)",
+      "lat": 45.2558,
+      "lng": -0.6931
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Golfech ?",
+      "answerHint": "Centrale nucléaire de Golfech (Tarn-et-Garonne)",
+      "lat": 44.1067,
+      "lng": 0.8453
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Bugey ?",
+      "answerHint": "Centrale nucléaire de Bugey (Ain)",
+      "lat": 45.7983,
+      "lng": 5.2708
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Saint-Alban ?",
+      "answerHint": "Centrale nucléaire de Saint-Alban (Isère)",
+      "lat": 45.4044,
+      "lng": 4.755
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Cruas ?",
+      "answerHint": "Centrale nucléaire de Cruas (Ardèche)",
+      "lat": 44.6331,
+      "lng": 4.7567
+    },
+    {
+      "text": "Où se trouve la centrale nucléaire de Tricastin ?",
+      "answerHint": "Centrale nucléaire de Tricastin (Drôme)",
+      "lat": 44.3297,
+      "lng": 4.7322
+    },
+    {
+      "text": "Où se trouve le barrage de Grand'Maison, la plus puissante centrale hydroélectrique de France ?",
+      "answerHint": "Barrage de Grand'Maison (Isère)",
+      "lat": 45.2069,
+      "lng": 6.12
+    },
+    {
+      "text": "Où se trouve le barrage de Tignes (lac du Chevril) ?",
+      "answerHint": "Barrage de Tignes (Savoie)",
+      "lat": 45.4986,
+      "lng": 6.9294
+    },
+    {
+      "text": "Où se trouve le barrage de Vouglans ?",
+      "answerHint": "Barrage de Vouglans (Jura)",
+      "lat": 46.3967,
+      "lng": 5.66
+    },
+    {
+      "text": "Où se trouve le barrage de Sainte-Croix, aux portes des gorges du Verdon ?",
+      "answerHint": "Barrage de Sainte-Croix (Var / Alpes-de-Haute-Provence)",
+      "lat": 43.7639,
+      "lng": 6.1953
+    },
+    {
+      "text": "Où se trouve le barrage de Serre-Ponçon ?",
+      "answerHint": "Barrage de Serre-Ponçon (Hautes-Alpes)",
+      "lat": 44.47,
+      "lng": 6.27
+    },
+    {
+      "text": "Où se trouve la centrale marémotrice de la Rance, exploitée par EDF depuis 1966 ?",
+      "answerHint": "Usine marémotrice de la Rance (Ille-et-Vilaine)",
+      "lat": 48.6182,
+      "lng": -2.0236
+    },
+    {
+      "text": "Où se trouve le parc éolien en mer de Saint-Nazaire, le premier de France ?",
+      "answerHint": "Parc éolien en mer de Saint-Nazaire (Loire-Atlantique)",
+      "lat": 47.15,
+      "lng": -2.58
+    },
+    {
+      "text": "Où se trouvait la centrale de Fessenheim, arrêtée en 2020 ?",
+      "answerHint": "Ancienne centrale de Fessenheim (Haut-Rhin)",
+      "lat": 47.9031,
+      "lng": 7.5631
+    },
+    {
+      "text": "Où se trouvait Superphénix, le surgénérateur arrêté en 1997 ?",
+      "answerHint": "Superphénix — Creys-Malville (Isère)",
+      "lat": 45.7583,
+      "lng": 5.4722
+    },
+    {
+      "text": "Où se trouve le siège social d'EDF ?",
+      "answerHint": "Siège d'EDF — avenue de Wagram, Paris 8e",
+      "lat": 48.8768,
+      "lng": 2.2978
+    }
+  ]
+}
