@@ -1,0 +1,127 @@
+{
+  "id": "lancement-top",
+  "module": "top",
+  "theme": "Lancement · Le Top",
+  "questions": [
+    {
+      "text": "Les 5 dernières villes hôtes des JO d'hiver (de 2026 en remontant)",
+      "answers": [
+        "Milan-Cortina",
+        "Pékin",
+        "Pyeongchang",
+        "Sotchi",
+        "Vancouver"
+      ]
+    },
+    {
+      "text": "Les 5 premiers films de James Bond, dans l'ordre",
+      "answers": [
+        "James Bond 007 contre Dr No",
+        "Bons baisers de Russie",
+        "Goldfinger",
+        "Opération Tonnerre",
+        "On ne vit que deux fois"
+      ]
+    },
+    {
+      "text": "Les 5 plus hauts gratte-ciel du monde",
+      "answers": [
+        "Burj Khalifa",
+        "Merdeka 118",
+        "Shanghai Tower",
+        "Abraj Al-Bait (tour de l'Horloge)",
+        "Ping An Finance Center"
+      ]
+    },
+    {
+      "text": "Les 5 plus grands déserts du monde (superficie)",
+      "answers": [
+        "Antarctique",
+        "Arctique",
+        "Sahara",
+        "Désert d'Arabie",
+        "Gobi"
+      ]
+    },
+    {
+      "text": "Les 5 pays les plus peuplés d'Océanie",
+      "answers": [
+        "Australie",
+        "Papouasie-Nouvelle-Guinée",
+        "Nouvelle-Zélande",
+        "Fidji",
+        "Îles Salomon"
+      ]
+    },
+    {
+      "text": "Les 5 premiers présidents des États-Unis",
+      "answers": [
+        "George Washington",
+        "John Adams",
+        "Thomas Jefferson",
+        "James Madison",
+        "James Monroe"
+      ]
+    },
+    {
+      "text": "Les 5 plus grandes îles de la Méditerranée",
+      "answers": [
+        "Sicile",
+        "Sardaigne",
+        "Chypre",
+        "Corse",
+        "Crète"
+      ]
+    },
+    {
+      "text": "Les 5 premiers mots de « La Marseillaise »",
+      "answers": [
+        "Allons",
+        "enfants",
+        "de",
+        "la",
+        "Patrie"
+      ]
+    },
+    {
+      "text": "Les 5 villes les plus peuplées d'Italie",
+      "answers": [
+        "Rome",
+        "Milan",
+        "Naples",
+        "Turin",
+        "Palerme"
+      ]
+    },
+    {
+      "text": "Les 5 villes les plus peuplées d'Espagne",
+      "answers": [
+        "Madrid",
+        "Barcelone",
+        "Valence",
+        "Séville",
+        "Saragosse"
+      ]
+    },
+    {
+      "text": "Les 5 villes les plus peuplées d'Allemagne",
+      "answers": [
+        "Berlin",
+        "Hambourg",
+        "Munich",
+        "Cologne",
+        "Francfort"
+      ]
+    },
+    {
+      "text": "Les 5 plus grands pays d'Europe (Russie comprise)",
+      "answers": [
+        "Russie",
+        "Ukraine",
+        "France",
+        "Espagne",
+        "Suède"
+      ]
+    }
+  ]
+}

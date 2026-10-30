@@ -192,6 +192,8 @@ export async function pickQuestions(themeId: string, module: ModuleKey, count: n
         (d) => ({ id: d.id, ...d.data() }) as Question & { played?: number; createdAt?: any },
       )
   const mod = getModule(module)
+  // Questions écartées par le jeu (ex. À l'échelle sans image)
+  if (mod.playable) qs = qs.filter((q) => mod.playable!(q))
   // Copie mélangée : à difficulté égale (100% Logique), on ne reprend pas toujours les mêmes questions
   if (all) qs = qs.map((q) => ({ q, r: Math.random() + (q.played ?? 0) })).sort((a, b) => a.r - b.r).map((x) => x.q)
   // Toutes les questions : mélangées, sauf pour les jeux à difficulté croissante (100% Logique)

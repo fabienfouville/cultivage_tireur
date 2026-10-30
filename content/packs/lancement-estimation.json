@@ -1,0 +1,87 @@
+{
+  "id": "lancement-estimation",
+  "module": "estimation",
+  "theme": "Lancement · Estimation",
+  "questions": [
+    {
+      "text": "Combien de pays compte l'Afrique ?",
+      "answer": 54,
+      "unit": "pays"
+    },
+    {
+      "text": "Quelle est la hauteur de la tour Montparnasse ?",
+      "answer": 210,
+      "unit": "m"
+    },
+    {
+      "text": "En quelle année le premier Astérix est-il paru ?",
+      "answer": 1961,
+      "unit": ""
+    },
+    {
+      "text": "Quelle distance sépare Paris de Tokyo à vol d'oiseau ?",
+      "answer": 9700,
+      "unit": "km"
+    },
+    {
+      "text": "Combien de langues officielles reconnaît la Constitution indienne ?",
+      "answer": 22,
+      "unit": "langues"
+    },
+    {
+      "text": "En quelle année est née la reine Élisabeth II ?",
+      "answer": 1926,
+      "unit": ""
+    },
+    {
+      "text": "Combien de buts Just Fontaine a-t-il marqués à la Coupe du monde 1958 ?",
+      "answer": 13,
+      "unit": "buts"
+    },
+    {
+      "text": "En quelle année le Stade de France a-t-il été inauguré ?",
+      "answer": 1998,
+      "unit": ""
+    },
+    {
+      "text": "Combien d'heures dure un vol Paris – New York, environ ?",
+      "answer": 8,
+      "unit": "heures"
+    },
+    {
+      "text": "À quelle température le fer fond-il ?",
+      "answer": 1538,
+      "unit": "°C"
+    },
+    {
+      "text": "Combien d'équipes ont disputé la Coupe du monde de football 2022 ?",
+      "answer": 32,
+      "unit": "équipes"
+    },
+    {
+      "text": "Quelle est la longueur de la frontière entre la France et l'Espagne ?",
+      "answer": 623,
+      "unit": "km"
+    },
+    {
+      "text": "Combien pèse un éléphant d'Afrique mâle adulte, environ ?",
+      "answer": 6000,
+      "unit": "kg"
+    },
+    {
+      "text": "Combien d'habitants compte la Chine, en millions (2024) ?",
+      "answer": 1410,
+      "unit": "millions"
+    },
+    {
+      "text": "Combien de cases noires compte un échiquier ?",
+      "answer": 32,
+      "unit": "cases"
+    },
+    {
+      "text": "Combien de pattes a un mille-pattes de l'espèce Eumillipes persephone, record mondial ?",
+      "answer": 1306,
+      "unit": "pattes"
+    }
+  ]
+}

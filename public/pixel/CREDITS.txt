@@ -18,3 +18,5 @@ Tableaux célèbres, œuvres du domaine public, reproductions issues de Wikimedi
 - glaneuses.jpg : Jean-François Millet, Des glaneuses (1857)
 
 Pack Test (pikachu, evoli, ronflex, mewtwo, bulbizarre, magicarpe) : illustrations officielles Pokémon via PokéAPI.
+
+Pack Lancement · drapeaux (public/pixel/drapeaux/) : flagcdn.com (drapeaux nationaux, domaine public).

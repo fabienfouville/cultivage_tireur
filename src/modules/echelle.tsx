@@ -4,6 +4,8 @@ import { CHOICE_COLORS, Locked, QuestionText, RevealList, Sent, ms, namesOf, par
 import type { ModuleDef } from './types'
 
 /** Le curseur va de la taille de référence ÷ RANGE à × RANGE, en échelle logarithmique */
+/** Images retirées car de mauvaise qualité (questions déjà importées dans la base) */
+const BAD_IMAGES = ['/echelle/londoneye.webp', '/echelle/cage-foot.webp']
 const RANGE = 50
 const STEPS = 1000
 const toMeters = (step: number, ref: number) => Math.exp(Math.log(ref / RANGE) + (step / STEPS) * Math.log(RANGE * RANGE))
@@ -36,12 +38,14 @@ export const echelle: ModuleDef = {
     { key: 'targetLength', label: 'La taille à deviner est une longueur (sinon une hauteur)', type: 'bool' },
   ],
   summary: (q) => `${q.targetName} : ${formatMeters(Number(q.answer))} (réf. ${q.refName} ${formatMeters(Number(q.refHeight))})`,
+  // Seulement des questions avec de vraies images (référence et objet à deviner)
+  playable: (q) => !!q.targetImage && !BAD_IMAGES.includes(String(q.targetImage)),
   usesPrevious: true,
   publicPayload: (q, { prev }) => {
     // Dans une manche, la référence est l'objet deviné à la question d'avant (la 1re garde celle de sa question),
     // sauf si l'écart de taille sort de la plage du curseur
     const ratio = prev ? Number(q.answer) / Number(prev.answer) : NaN
-    const chained = prev && prev.targetName && ratio > 1.5 / RANGE && ratio < RANGE / 1.5
+    const chained = prev && prev.targetName && prev.targetImage && ratio > 1.5 / RANGE && ratio < RANGE / 1.5
     return {
       text: q.text || `Quelle taille fait ${q.targetName} ?`,
       ...(chained

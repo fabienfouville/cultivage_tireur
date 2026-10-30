@@ -9,7 +9,7 @@
     { "module": "estimation", "packId": "vrac-estimation", "questionCount": 4, "timer": 25 },
     { "module": "geoloc", "packId": "vrac-geoloc", "questionCount": 5, "timer": 30 },
     { "module": "top", "packId": "vrac-top", "questionCount": 2, "timer": 30 },
-    { "module": "echelle", "packId": "vrac-echelle", "questionCount": 4, "timer": 25 },
+    { "module": "echelle", "packId": "echelle-monuments", "questionCount": 4, "timer": 25 },
     { "module": "cash", "packId": "vrac-cash", "questionCount": 5, "timer": 25 },
     { "module": "chronologie", "packId": "vrac-chrono", "questionCount": 4, "timer": 40 },
     { "module": "pixel", "packId": "vrac-pixel-tableaux", "questionCount": 4, "timer": 30 },

@@ -1,0 +1,202 @@
+{
+  "id": "lancement-chrono",
+  "module": "chronologie",
+  "theme": "Lancement · Chronologie",
+  "questions": [
+    {
+      "text": "Objets du quotidien",
+      "events": [
+        "Allumette à friction",
+        "Fermeture éclair",
+        "Stylo-bille de Biro",
+        "Post-it"
+      ],
+      "dates": [
+        "1826",
+        "1913",
+        "1938",
+        "1980"
+      ]
+    },
+    {
+      "text": "Débuts de règne",
+      "events": [
+        "Clovis",
+        "Hugues Capet",
+        "Saint Louis",
+        "François Ier"
+      ],
+      "dates": [
+        "481",
+        "987",
+        "1226",
+        "1515"
+      ]
+    },
+    {
+      "text": "Le XXe siècle",
+      "events": [
+        "Krach de Wall Street",
+        "Débarquement en Normandie",
+        "Indépendance de l'Inde",
+        "Construction du mur de Berlin"
+      ],
+      "dates": [
+        "1929",
+        "1944",
+        "1947",
+        "1961"
+      ]
+    },
+    {
+      "text": "Groupes de musique (formation)",
+      "events": [
+        "The Beatles",
+        "ABBA",
+        "U2",
+        "Daft Punk"
+      ],
+      "dates": [
+        "1960",
+        "1972",
+        "1976",
+        "1993"
+      ]
+    },
+    {
+      "text": "Création de marques",
+      "events": [
+        "Peugeot",
+        "Coca-Cola",
+        "Apple",
+        "Amazon"
+      ],
+      "dates": [
+        "1810",
+        "1886",
+        "1976",
+        "1994"
+      ]
+    },
+    {
+      "text": "Explorateurs",
+      "events": [
+        "Marco Polo part pour la Chine",
+        "Vasco de Gama atteint les Indes",
+        "Magellan part autour du monde",
+        "Cook atteint l'Australie"
+      ],
+      "dates": [
+        "1271",
+        "1498",
+        "1519",
+        "1770"
+      ]
+    },
+    {
+      "text": "Technologie à la maison",
+      "events": [
+        "Télévision couleur en France",
+        "Disque compact (CD)",
+        "Lecteur DVD",
+        "Clé USB"
+      ],
+      "dates": [
+        "1967",
+        "1982",
+        "1996",
+        "2000"
+      ]
+    },
+    {
+      "text": "Naissances d'écrivains",
+      "events": [
+        "Molière",
+        "Voltaire",
+        "Victor Hugo",
+        "Marcel Proust"
+      ],
+      "dates": [
+        "1622",
+        "1694",
+        "1802",
+        "1871"
+      ]
+    },
+    {
+      "text": "Films de Spielberg",
+      "events": [
+        "E.T. l'extra-terrestre",
+        "Jurassic Park",
+        "Il faut sauver le soldat Ryan",
+        "Lincoln"
+      ],
+      "dates": [
+        "1982",
+        "1993",
+        "1998",
+        "2012"
+      ]
+    },
+    {
+      "text": "Jeux olympiques en France",
+      "events": [
+        "Jeux de Paris",
+        "Jeux d'hiver de Chamonix",
+        "Jeux d'hiver de Grenoble",
+        "Jeux d'hiver d'Albertville"
+      ],
+      "dates": [
+        "1900",
+        "1924",
+        "1968",
+        "1992"
+      ]
+    },
+    {
+      "text": "Monnaies françaises",
+      "events": [
+        "Premier franc",
+        "Louis d'or",
+        "Nouveau franc",
+        "Euro"
+      ],
+      "dates": [
+        "1360",
+        "1640",
+        "1960",
+        "2002"
+      ]
+    },
+    {
+      "text": "L'espace",
+      "events": [
+        "Apollo 13",
+        "Premier vol de la navette spatiale",
+        "Lancement du télescope Hubble",
+        "Curiosity se pose sur Mars"
+      ],
+      "dates": [
+        "1970",
+        "1981",
+        "1990",
+        "2012"
+      ]
+    },
+    {
+      "text": "Écouter de la musique",
+      "events": [
+        "Phonographe d'Edison",
+        "Disque vinyle 33 tours",
+        "Cassette audio",
+        "iPod"
+      ],
+      "dates": [
+        "1877",
+        "1948",
+        "1963",
+        "2001"
+      ]
+    }
+  ]
+}

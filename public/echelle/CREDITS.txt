@@ -18,3 +18,6 @@ Ajouts (pack Vrac) — pngimg.com, licence CC BY-NC 4.0 :
 
 Pack Test (florizarre, mackogneur, ptera, groudon, kyogre, dialga) : illustrations officielles Pokémon © Nintendo /
 Creatures / GAME FREAK, via PokéAPI.
+
+Pack Lancement (tower-bridge, orque, rhinoceros, hippopotame, ours-polaire, velo, bison, dromadaire) : pngimg.com,
+licence CC BY-NC 4.0.

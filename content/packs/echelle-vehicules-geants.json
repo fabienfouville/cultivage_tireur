@@ -70,19 +70,6 @@
       "targetImage": "/echelle/tgv.webp"
     },
     {
-      "text": "Quelle hauteur fait la grande roue London Eye ?",
-      "refName": "La statue de la Liberté (socle compris)",
-      "refHeight": 93,
-      "refEmoji": "🗽",
-      "targetName": "London Eye",
-      "answer": 135,
-      "targetEmoji": "🎡",
-      "refLength": false,
-      "refImage": "/echelle/liberte.webp",
-      "targetLength": false,
-      "targetImage": "/echelle/londoneye.webp"
-    },
-    {
       "text": "Quelle longueur faisait le dirigeable Hindenburg ?",
       "refName": "Un Airbus A380 (longueur)",
       "refHeight": 72.7,

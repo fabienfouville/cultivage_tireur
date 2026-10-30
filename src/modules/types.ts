@@ -113,6 +113,8 @@ export interface ModuleDef {
   describe?: (data: Record<string, any>, round: Round) => string
   summary: (q: Question) => string
   /** Ce que les joueurs voient pendant la question — JAMAIS la solution */
+  /** La question peut-elle être tirée ? (ex. À l'échelle : seulement avec une vraie image) */
+  playable?: (q: Question) => boolean
   /** Bandeau de résultat du téléphone à la révélation, à la place des points (ex. jetons restants du Money Drop) */
   resultBanner?: (ctx: { round: Round; block: Block; pid: string; pts: number | undefined }) => { text: string; good: boolean } | null
   /** Le moteur passe la question précédente du bloc à `publicPayload` (`ctx.prev`) : À l'échelle compare au dernier objet deviné */

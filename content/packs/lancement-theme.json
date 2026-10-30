@@ -1,0 +1,87 @@
+{
+  "id": "lancement-theme",
+  "module": "theme",
+  "theme": "Lancement · Thème",
+  "questions": [
+    {
+      "text": "Une ville de France de plus de 200 000 habitants",
+      "answerHint": "Paris, Marseille, Lyon, Toulouse, Nice, Nantes, Montpellier, Strasbourg, Bordeaux, Lille, Rennes"
+    },
+    {
+      "text": "Un fromage italien",
+      "answerHint": "Parmesan, mozzarella, gorgonzola, pecorino, ricotta, mascarpone, burrata, taleggio, provolone, grana padano"
+    },
+    {
+      "text": "Un animal d'Australie",
+      "answerHint": "Kangourou, koala, wombat, ornithorynque, émeu, dingo, échidné, wallaby, diable de Tasmanie, casoar, quokka"
+    },
+    {
+      "text": "Un plat japonais",
+      "answerHint": "Sushi, ramen, tempura, sashimi, maki, gyoza, yakitori, udon, onigiri, soupe miso, okonomiyaki, takoyaki"
+    },
+    {
+      "text": "Un métier du cinéma",
+      "answerHint": "Réalisateur, acteur, scénariste, monteur, producteur, cadreur, ingénieur du son, maquilleur, costumier, cascadeur, chef opérateur"
+    },
+    {
+      "text": "Un pays de l'Union européenne",
+      "answerHint": "Allemagne, Autriche, Belgique, Bulgarie, Chypre, Croatie, Danemark, Espagne, Estonie, Finlande, France, Grèce, Hongrie, Irlande, Italie, Lettonie, Lituanie, Luxembourg, Malte, Pays-Bas, Pologne, Portugal, Roumanie, Slovaquie, Slovénie, Suède, Tchéquie"
+    },
+    {
+      "text": "Une marque de voiture française",
+      "answerHint": "Renault, Peugeot, Citroën, DS, Alpine, Bugatti, Venturi, Ligier, Aixam, Panhard, Simca, Talbot, Matra"
+    },
+    {
+      "text": "Un élément chimique dont le symbole tient en une seule lettre",
+      "answerHint": "Hydrogène, bore, carbone, azote, oxygène, fluor, phosphore, soufre, potassium, vanadium, yttrium, iode, tungstène, uranium"
+    },
+    {
+      "text": "Une pièce de Molière",
+      "answerHint": "L'Avare, Tartuffe, Le Misanthrope, Le Malade imaginaire, Le Bourgeois gentilhomme, Dom Juan, Les Fourberies de Scapin, L'École des femmes, Les Précieuses ridicules, Le Médecin malgré lui, Les Femmes savantes, George Dandin, Amphitryon"
+    },
+    {
+      "text": "Un super-héros Marvel",
+      "answerHint": "Iron Man, Captain America, Thor, Hulk, Spider-Man, Black Widow, Black Panther, Doctor Strange, Wolverine, Ant-Man, Captain Marvel, Hawkeye, Deadpool, Daredevil, Vision, Sorcière rouge"
+    },
+    {
+      "text": "Un monument d'Italie",
+      "answerHint": "Colisée, tour de Pise, Panthéon de Rome, fontaine de Trevi, basilique Saint-Pierre, Duomo de Florence, pont du Rialto, place Saint-Marc, Forum romain, chapelle Sixtine"
+    },
+    {
+      "text": "Un instrument de l'orchestre symphonique",
+      "answerHint": "Violon, alto, violoncelle, contrebasse, flûte, hautbois, clarinette, basson, cor, trompette, trombone, tuba, timbales, harpe, piano, piccolo"
+    },
+    {
+      "text": "Une île française",
+      "answerHint": "Corse, Ré, Oléron, Belle-Île, Noirmoutier, Porquerolles, Ouessant, Groix, Yeu, Bréhat, Martinique, Guadeloupe, La Réunion, Tahiti, Mayotte, Saint-Martin, Saint-Barthélemy"
+    },
+    {
+      "text": "Un dessert italien",
+      "answerHint": "Tiramisu, panna cotta, cannoli, gelato, panettone, sabayon, affogato, sfogliatella, cassata, cantucci, torta caprese"
+    },
+    {
+      "text": "Un sport de combat",
+      "answerHint": "Boxe, judo, karaté, lutte, taekwondo, escrime, MMA, kick-boxing, sumo, aïkido, jiu-jitsu, savate, muay-thaï, kendo"
+    },
+    {
+      "text": "Une langue officielle de l'ONU",
+      "answerHint": "Anglais, français, espagnol, russe, chinois, arabe"
+    },
+    {
+      "text": "Un pays traversé par le Danube",
+      "answerHint": "Allemagne, Autriche, Slovaquie, Hongrie, Croatie, Serbie, Roumanie, Bulgarie, Moldavie, Ukraine"
+    },
+    {
+      "text": "Une mer ou un océan",
+      "answerHint": "Méditerranée, mer du Nord, Manche, mer Baltique, mer Noire, mer Rouge, mer des Caraïbes, mer de Chine, mer Caspienne, Atlantique, Pacifique, océan Indien, Arctique, Austral…"
+    },
+    {
+      "text": "Un personnage d'Astérix",
+      "answerHint": "Astérix, Obélix, Idéfix, Panoramix, Abraracourcix, Assurancetourix, Bonemine, Falbala, Ordralfabétix, Cétautomatix, Agecanonix, Jules César, Cléopâtre…"
+    },
+    {
+      "text": "Un jeu de société",
+      "answerHint": "Monopoly, Scrabble, Cluedo, Trivial Pursuit, Risk, Dixit, Catane, Uno, Jungle Speed, Puissance 4, Bonne paye, Mille Bornes, Time's Up, Dobble…"
+    }
+  ]
+}

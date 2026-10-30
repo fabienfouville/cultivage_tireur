@@ -1,0 +1,271 @@
+{
+  "id": "lancement-blindtest",
+  "module": "blindtest",
+  "theme": "Lancement · Blind Test",
+  "questions": [
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Édith Piaf",
+      "answerHintTitle": "Milord"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Charles Aznavour",
+      "answerHintTitle": "Emmenez-moi"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Serge Gainsbourg",
+      "answerHintTitle": "Le Poinçonneur des Lilas"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Mylène Farmer",
+      "answerHintTitle": "Sans contrefaçon"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Indochine",
+      "answerHintTitle": "J'ai demandé à la lune"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Noir Désir",
+      "answerHintTitle": "Le vent nous portera"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Jean-Jacques Goldman",
+      "answerHintTitle": "Je te donne"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Céline Dion",
+      "answerHintTitle": "S'il suffisait d'aimer"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Francis Cabrel",
+      "answerHintTitle": "Petite Marie"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Patrick Bruel",
+      "answerHintTitle": "Casser la voix"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Christophe",
+      "answerHintTitle": "Aline"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Michel Sardou",
+      "answerHintTitle": "En chantant"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Johnny Hallyday",
+      "answerHintTitle": "Que je t'aime"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Angèle",
+      "answerHintTitle": "Tout oublier"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Stromae",
+      "answerHintTitle": "Tous les mêmes"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "GIMS",
+      "answerHintTitle": "Sapés comme jamais"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Orelsan",
+      "answerHintTitle": "Basique"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Louane",
+      "answerHintTitle": "Jour 1"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Kendji Girac",
+      "answerHintTitle": "Andalouse"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Claude François",
+      "answerHintTitle": "Cette année-là"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Dalida",
+      "answerHintTitle": "Gigi l'amoroso"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "France Gall",
+      "answerHintTitle": "Résiste"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Queen",
+      "answerHintTitle": "We Will Rock You"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Michael Jackson",
+      "answerHintTitle": "Thriller"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Madonna",
+      "answerHintTitle": "Like a Prayer"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "ABBA",
+      "answerHintTitle": "Waterloo"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Bon Jovi",
+      "answerHintTitle": "It's My Life"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "U2",
+      "answerHintTitle": "With or Without You"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "The Rolling Stones",
+      "answerHintTitle": "(I Can't Get No) Satisfaction"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Oasis",
+      "answerHintTitle": "Wonderwall"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Rihanna",
+      "answerHintTitle": "Diamonds"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Avicii",
+      "answerHintTitle": "Wake Me Up"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Daft Punk",
+      "answerHintTitle": "One More Time"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Lady Gaga",
+      "answerHintTitle": "Poker Face"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Katy Perry",
+      "answerHintTitle": "Roar"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Shakira",
+      "answerHintTitle": "Waka Waka (This Time for Africa)"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Cyndi Lauper",
+      "answerHintTitle": "Girls Just Want to Have Fun"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Tina Turner",
+      "answerHintTitle": "The Best"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "AC/DC",
+      "answerHintTitle": "Highway to Hell"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "The Cranberries",
+      "answerHintTitle": "Zombie"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Eagles",
+      "answerHintTitle": "Hotel California"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Dire Straits",
+      "answerHintTitle": "Sultans of Swing"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Elton John",
+      "answerHintTitle": "I'm Still Standing"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Bruno Mars",
+      "answerHintTitle": "Just the Way You Are"
+    }
+  ]
+}

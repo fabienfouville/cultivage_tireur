@@ -1,0 +1,147 @@
+{
+  "id": "lancement-pixel-drapeaux",
+  "module": "pixel",
+  "theme": "Lancement · Pixel drapeaux",
+  "questions": [
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/jp.jpg",
+      "answerHint": "Japon"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/br.jpg",
+      "answerHint": "Brésil/Bresil"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/ca.jpg",
+      "answerHint": "Canada"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/gb.jpg",
+      "answerHint": "Royaume-Uni/Angleterre/Grande-Bretagne"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/us.jpg",
+      "answerHint": "États-Unis/Etats-Unis/USA"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/de.jpg",
+      "answerHint": "Allemagne"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/it.jpg",
+      "answerHint": "Italie"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/es.jpg",
+      "answerHint": "Espagne"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/kr.jpg",
+      "answerHint": "Corée du Sud/Coree du Sud/Corée"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/in.jpg",
+      "answerHint": "Inde"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/mx.jpg",
+      "answerHint": "Mexique"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/ar.jpg",
+      "answerHint": "Argentine"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/za.jpg",
+      "answerHint": "Afrique du Sud"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/ch.jpg",
+      "answerHint": "Suisse"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/se.jpg",
+      "answerHint": "Suède/Suede"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/no.jpg",
+      "answerHint": "Norvège/Norvege"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/gr.jpg",
+      "answerHint": "Grèce/Grece"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/tr.jpg",
+      "answerHint": "Turquie"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/pt.jpg",
+      "answerHint": "Portugal"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/be.jpg",
+      "answerHint": "Belgique"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/ie.jpg",
+      "answerHint": "Irlande"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/au.jpg",
+      "answerHint": "Australie"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/cn.jpg",
+      "answerHint": "Chine"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/sn.jpg",
+      "answerHint": "Sénégal/Senegal"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/ma.jpg",
+      "answerHint": "Maroc"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/np.jpg",
+      "answerHint": "Népal/Nepal"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/jm.jpg",
+      "answerHint": "Jamaïque/Jamaique"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/ke.jpg",
+      "answerHint": "Kenya"
+    }
+  ]
+}

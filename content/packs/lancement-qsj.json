@@ -1,0 +1,172 @@
+{
+  "id": "lancement-qsj",
+  "module": "quisuisje",
+  "theme": "Lancement · Qui suis-je ?",
+  "questions": [
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis née à Paris en 1915, dans le quartier de Belleville.",
+        "Mon vrai nom est Édith Giovanna Gassion.",
+        "On m'a surnommée « la Môme ».",
+        "Marion Cotillard a reçu un Oscar en jouant mon rôle.",
+        "J'ai chanté « La Vie en rose » et « Non, je ne regrette rien »."
+      ],
+      "answerHint": "Édith Piaf/Piaf"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né à Dole, dans le Jura, en 1822.",
+        "J'ai étudié la fermentation du vin et de la bière.",
+        "Un procédé de conservation par la chaleur porte mon nom.",
+        "En 1885, j'ai sauvé le jeune Joseph Meister.",
+        "J'ai mis au point le vaccin contre la rage."
+      ],
+      "answerHint": "Louis Pasteur/Pasteur"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né en Gironde en 1910.",
+        "J'ai coinventé un détendeur pour la plongée autonome.",
+        "Mon film « Le Monde du silence » a reçu la Palme d'or.",
+        "Mon navire s'appelait la Calypso.",
+        "Je portais toujours un bonnet rouge."
+      ],
+      "answerHint": "Jacques-Yves Cousteau/Cousteau/Commandant Cousteau"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né à Paris en 1998 et j'ai grandi à Bondy.",
+        "J'ai débuté chez les professionnels à Monaco.",
+        "J'ai marqué en finale de Coupe du monde à 19 ans.",
+        "J'ai réussi un triplé en finale de la Coupe du monde 2022.",
+        "J'ai quitté le PSG pour le Real Madrid en 2024."
+      ],
+      "answerHint": "Kylian Mbappé/Mbappé/Mbappe"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis née à Vienne en 1755.",
+        "Ma mère était l'impératrice Marie-Thérèse d'Autriche.",
+        "J'aimais me réfugier dans mon hameau, près du Petit Trianon.",
+        "On m'attribue à tort une phrase sur la brioche.",
+        "Reine de France, j'ai été guillotinée en 1793."
+      ],
+      "answerHint": "Marie-Antoinette"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Mon père s'appelait Pépin le Bref.",
+        "J'ai fait d'Aix-la-Chapelle ma capitale.",
+        "J'ai mené une trentaine d'années de guerre contre les Saxons.",
+        "J'ai été couronné empereur à Rome en l'an 800.",
+        "Une chanson prétend que j'ai inventé l'école."
+      ],
+      "answerHint": "Charlemagne"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "J'ai franchi le Rubicon avec mes légions.",
+        "J'ai écrit « La Guerre des Gaules ».",
+        "J'ai vaincu Vercingétorix à Alésia.",
+        "J'ai été assassiné aux ides de mars, en 44 av. J.-C.",
+        "On me prête la phrase « Tu quoque, mi fili ! »."
+      ],
+      "answerHint": "Jules César/César/Cesar"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "J'ai d'abord été une forteresse, bâtie sous Philippe Auguste.",
+        "Je suis devenu un musée en 1793.",
+        "Une pyramide de verre marque mon entrée depuis 1989.",
+        "Je suis le musée le plus visité au monde.",
+        "J'abrite la Joconde."
+      ],
+      "answerHint": "Le Louvre/Louvre/Musée du Louvre"
+    },
+    {
+      "text": "Qui sommes-nous ?",
+      "clues": [
+        "Nous nous sommes formés à Liverpool.",
+        "Nous avons joué des mois à Hambourg à nos débuts.",
+        "Notre album « Sgt. Pepper's » est sorti en 1967.",
+        "Nous traversons Abbey Road sur une pochette célèbre.",
+        "Nous sommes John, Paul, George et Ringo."
+      ],
+      "answerHint": "Les Beatles/Beatles/The Beatles"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "J'ai été construit à Belfast.",
+        "J'appartenais à la White Star Line.",
+        "Je suis parti de Southampton pour New York.",
+        "J'ai heurté un iceberg dans la nuit du 14 au 15 avril 1912.",
+        "James Cameron a fait de moi un film à succès en 1997."
+      ],
+      "answerHint": "Le Titanic/Titanic"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "Je prends ma source sur le plateau de Langres.",
+        "Je mesure 777 km.",
+        "Je traverse Troyes et Rouen.",
+        "Je me jette dans la Manche, au Havre.",
+        "Je traverse Paris."
+      ],
+      "answerHint": "La Seine/Seine"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "Je suis né en 1903, imaginé par le journal L'Auto.",
+        "La couleur de mon leader vient du papier de ce journal.",
+        "Mon meilleur grimpeur porte un maillot à pois.",
+        "Je me termine traditionnellement sur les Champs-Élysées.",
+        "Je suis la plus célèbre course cycliste du monde."
+      ],
+      "answerHint": "Le Tour de France/Tour de France"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né à Malaga en 1881.",
+        "J'ai connu une période bleue, puis une période rose.",
+        "J'ai fondé le cubisme avec Georges Braque.",
+        "J'ai peint « Guernica » en 1937.",
+        "Je suis le plus célèbre peintre espagnol du XXe siècle."
+      ],
+      "answerHint": "Pablo Picasso/Picasso"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "Ma construction a commencé en 1173.",
+        "Je suis le campanile d'une cathédrale.",
+        "Mon sol trop mou est la cause de mon défaut.",
+        "Au début des années 2000, des travaux m'ont redressée d'environ 40 cm.",
+        "Je penche, en Toscane."
+      ],
+      "answerHint": "La tour de Pise/Tour de Pise"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né dans l'Ohio en 1930.",
+        "J'ai été pilote d'essai sur l'avion-fusée X-15.",
+        "J'ai commandé la mission Gemini 8.",
+        "Ma mission de 1969 s'appelait Apollo 11.",
+        "J'ai été le premier homme à marcher sur la Lune."
+      ],
+      "answerHint": "Neil Armstrong/Armstrong"
+    }
+  ]
+}

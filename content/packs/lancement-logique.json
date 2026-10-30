@@ -1,0 +1,80 @@
+{
+  "id": "lancement-logique",
+  "module": "logique",
+  "theme": "Lancement · 100% Logique",
+  "description": "énigmes de 50 % à 5 %",
+  "questions": [
+    {
+      "text": "Combien de zéros compte un milliard ?",
+      "answer": "9/neuf",
+      "percent": 50,
+      "explain": "1 000 000 000 : neuf zéros."
+    },
+    {
+      "text": "Complète la suite :\n100, 81, 64, 49, ?",
+      "answer": "36/trente-six/trente six",
+      "percent": 45,
+      "explain": "Ce sont les carrés de 10, 9, 8, 7… puis 6² = 36."
+    },
+    {
+      "text": "Complète la suite :\n2, 6, 18, 54, ?",
+      "answer": "162/cent soixante-deux/cent soixante deux",
+      "percent": 45,
+      "explain": "Chaque nombre est le triple du précédent."
+    },
+    {
+      "text": "Quel est le plus grand nombre à trois chiffres tous différents ?",
+      "answer": "987/neuf cent quatre-vingt-sept",
+      "percent": 45,
+      "explain": "On prend les trois plus grands chiffres, du plus grand au plus petit."
+    },
+    {
+      "text": "Combien de fois faut-il plier une feuille en deux pour obtenir 8 épaisseurs ?",
+      "answer": "3/trois/3 fois/trois fois",
+      "percent": 40,
+      "explain": "2, puis 4, puis 8 épaisseurs : trois pliages."
+    },
+    {
+      "text": "Un rectangle a un périmètre de 20 cm et une longueur de 6 cm.\nQuelle est son aire, en cm² ?",
+      "answer": "24/vingt-quatre/vingt quatre",
+      "percent": 40,
+      "explain": "Largeur : 20 ÷ 2 − 6 = 4 cm, donc 6 × 4 = 24 cm²."
+    },
+    {
+      "text": "Cinq coureurs : Anne arrive avant Bruno mais après Chloé. David arrive juste après Bruno. Élise est dernière.\nQui est deuxième ?",
+      "answer": "Anne",
+      "percent": 30,
+      "explain": "L'ordre est Chloé, Anne, Bruno, David, Élise."
+    },
+    {
+      "text": "Huit équipes jouent un tournoi où chacune rencontre toutes les autres une seule fois.\nCombien de matchs en tout ?",
+      "answer": "28/vingt-huit/vingt huit",
+      "percent": 25,
+      "explain": "8 × 7 ÷ 2 = 28."
+    },
+    {
+      "text": "Complète la suite :\n1, 4, 10, 22, 46, ?",
+      "answer": "94/quatre-vingt-quatorze/quatre vingt quatorze",
+      "percent": 20,
+      "explain": "Chaque nombre est le double du précédent plus 2."
+    },
+    {
+      "text": "Une poule et demie pond un œuf et demi en un jour et demi.\nCombien d'œufs une poule pond-elle en un jour ?",
+      "answer": "Deux tiers d'œuf",
+      "percent": 10,
+      "explain": "Une poule pond un œuf en un jour et demi, donc deux tiers d'œuf par jour.",
+      "choices": [
+        "Un œuf",
+        "Deux tiers d'œuf",
+        "Un œuf et demi",
+        "Un demi-œuf"
+      ]
+    },
+    {
+      "text": "Si hier était demain, aujourd'hui serait vendredi.\nQuel jour sommes-nous ?",
+      "answer": "Dimanche",
+      "percent": 5,
+      "explain": "Si on était deux jours plus tôt, on serait vendredi : nous sommes donc dimanche."
+    }
+  ]
+}
