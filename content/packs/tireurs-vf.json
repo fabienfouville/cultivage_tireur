@@ -5,19 +5,14 @@
   "description": "questions sur les Tireurs",
   "questions": [
     {
-      "text": "🎯 Spécial Tireurs · Les statuts des Tireurs d'éliste ont été signés le 4 novembre 2019.",
-      "correct": true,
-      "order": 1
-    },
-    {
       "text": "🎯 Spécial Tireurs · Le conseil d'administration des Tireurs comptait douze membres.",
       "correct": false,
-      "order": 2
+      "order": 1
     },
     {
       "text": "🎯 Spécial Tireurs · Selon leurs statuts, l'association des Tireurs était créée pour trois ans.",
       "correct": true,
-      "order": 3
+      "order": 2
     }
   ]
 }

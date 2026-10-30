@@ -5,10 +5,10 @@
   "mapId": "france",
   "questions": [
     {
-      "text": "🎯 Spécial Tireurs · Où se trouve l'École centrale de Marseille, terrain de chasse des Tireurs ?",
-      "answerHint": "Centrale Marseille — technopôle de Château-Gombert, Marseille 13e",
-      "lat": 43.343,
-      "lng": 5.4359
+      "text": "🎯 Spécial Tireurs · Où se trouve le trampoline park You Jump où les Tireurs ont organisé une de leurs journées ?",
+      "answerHint": "You Jump — Plan de Campagne, Les Pennes-Mirabeau",
+      "lat": 43.4104,
+      "lng": 5.3632
     }
   ]
 }

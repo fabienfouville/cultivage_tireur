@@ -4,15 +4,15 @@
   "theme": "Spécial Tireurs · Money Drop",
   "questions": [
     {
-      "text": "🎯 Spécial Tireurs · De quelle couleur sont les sweats des Tireurs ?",
+      "text": "🎯 Spécial Tireurs · Quel est le surnom de Sophie Balandreau, présidente des Tireurs ?",
       "answers": [
-        "Noirs",
-        "Kaki (vert olive)",
-        "Bleu marine",
-        "Bordeaux"
+        "Sophball",
+        "La Prezz",
+        "La madré mia",
+        "Prezz Sophball"
       ],
-      "correct": 1,
-      "answerHint": "Kaki/Olive/Vert olive/Vert kaki"
+      "correct": 3,
+      "answerHint": "Prezz Sophball"
     }
   ]
 }

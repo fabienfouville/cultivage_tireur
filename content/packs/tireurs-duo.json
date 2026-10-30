@@ -4,15 +4,15 @@
   "theme": "Spécial Tireurs · Duo / Carré / Cash",
   "questions": [
     {
-      "text": "🎯 Spécial Tireurs · Quel animal se cache dans la lunette de visée du logo des Tireurs ?",
+      "text": "🎯 Spécial Tireurs · Quel était le surnom de Fabien Fouville chez les Tireurs ?",
       "answers": [
-        "Un rapace",
-        "Un loup",
-        "Un lion",
-        "Un serpent"
+        "Fab la frite",
+        "Fab la menace",
+        "Fab la pêche",
+        "Fab lab"
       ],
       "correct": 0,
-      "answerHint": "Rapace/Aigle/Faucon"
+      "answerHint": "Fab la frite"
     }
   ]
 }

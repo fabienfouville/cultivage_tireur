@@ -4,48 +4,15 @@
   "theme": "Spécial Tireurs · QCM",
   "questions": [
     {
-      "text": "🎯 Spécial Tireurs · Pour quel bureau les Tireurs d'éliste étaient-ils candidats ?",
+      "text": "🎯 Spécial Tireurs · Quel animal se cache dans la lunette de visée du logo des Tireurs ?",
       "answers": [
-        "Le BDE",
-        "Le BDS",
-        "Le BDA",
-        "Le BDD"
+        "Un aigle",
+        "Un rapace",
+        "Un corbeau",
+        "Bleubite"
       ],
       "correct": 1,
-      "answerHint": "BDS/Bureau des sports"
-    },
-    {
-      "text": "🎯 Spécial Tireurs · Dans quelle école les Tireurs d'éliste ont-ils fait campagne ?",
-      "answers": [
-        "Centrale Marseille",
-        "Centrale Lyon",
-        "Polytech Marseille",
-        "Arts et Métiers Aix"
-      ],
-      "correct": 0,
-      "answerHint": "Centrale Marseille/École centrale de Marseille"
-    },
-    {
-      "text": "🎯 Spécial Tireurs · Quel était le surnom de Fabien Fouville chez les Tireurs ?",
-      "answers": [
-        "Fab la frite",
-        "Fabulous",
-        "Le Fabuleux",
-        "Fafa"
-      ],
-      "correct": 0,
-      "answerHint": "Fab la frite"
-    },
-    {
-      "text": "🎯 Spécial Tireurs · Quel est le surnom de Sophie Balandreau, présidente des Tireurs ?",
-      "answers": [
-        "Prezz Sophball",
-        "La Baronne",
-        "Garonne",
-        "Rush"
-      ],
-      "correct": 0,
-      "answerHint": "Prezz Sophball/Sophball"
+      "answerHint": "Rapace/Un rapace"
     }
   ]
 }
