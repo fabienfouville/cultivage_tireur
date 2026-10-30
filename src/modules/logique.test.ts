@@ -25,6 +25,14 @@ describe("À l'échelle", () => {
   it("l'écart est relatif : ×2 et ÷2 se valent", () => {
     expect(relativeError(2, 1)).toBeCloseTo(relativeError(0.5, 1))
   })
+  it('le classement se fait sur l’écart absolu (ISS : 109 m)', async () => {
+    const { echelle } = await import('./echelle')
+    const ans = (pid: string, value: number, at: number) => ({ id: pid, seq: 1, pid, name: pid, at: { toMillis: () => at }, data: { value } })
+    const r = (await echelle.score({ q: { answer: 109 } as any, answers: [ans('rouge', 202, 1), ans('loose', 52, 2), ans('fab', 274, 3)] as any, cfg: { timer: 25, podium: '5,3,1' }, round: {} as any, block: {} as any, participants: [], verdicts: {} })) as any
+    expect(r.results.loose.pts).toBe(5)
+    expect(r.results.rouge.pts).toBe(3)
+    expect(r.results.loose.detail).toBe('52 m (écart 57 m)')
+  })
 })
 
 describe('packs 100% Logique', async () => {

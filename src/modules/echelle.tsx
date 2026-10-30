@@ -10,6 +10,8 @@ const toMeters = (step: number, ref: number) => Math.exp(Math.log(ref / RANGE) +
 const toStep = (m: number, ref: number) => Math.round(((Math.log(m) - Math.log(ref / RANGE)) / Math.log(RANGE * RANGE)) * STEPS)
 /** Écart relatif : se tromper de 20 cm sur une fourmi compte plus que sur une girafe */
 export const relativeError = (guess: number, truth: number) => Math.abs(Math.log(guess / truth))
+/** Écart absolu (en mètres) : c'est lui qui classe les joueurs */
+export const absoluteError = (guess: number, truth: number) => Math.abs(guess - truth)
 
 export const echelle: ModuleDef = {
   key: 'echelle',
@@ -17,7 +19,7 @@ export const echelle: ModuleDef = {
   icon: '📏',
   tagline: 'Comparer des tailles',
   rules:
-    "On te donne la taille d'une référence : règle le curseur pour donner la taille de l'autre. Les plus proches gagnent (l'écart est compté en proportion). Dans une manche, la référence est l'objet deviné juste avant.",
+    "On te donne la taille d'une référence : règle le curseur pour donner la taille de l'autre. Les plus proches gagnent (écart en mètres avec la vraie taille). Dans une manche, la référence est l'objet deviné juste avant.",
   defaults: { timer: 25, podium: '5,3,1' },
   configFields: [{ key: 'podium', label: 'Points du podium', type: 'text', help: 'ex : 5,3,1' }],
   questionFields: [
@@ -69,13 +71,12 @@ export const echelle: ModuleDef = {
     const truth = Number(q.answer)
     const valid = answers
       .filter((a) => typeof a.data.value === 'number' && a.data.value > 0)
-      .map((a) => ({ pid: a.pid, value: a.data.value as number, err: relativeError(a.data.value, truth), at: ms(a) }))
+      .map((a) => ({ pid: a.pid, value: a.data.value as number, err: absoluteError(a.data.value, truth), at: ms(a) }))
       .sort((a, b) => a.err - b.err || a.at - b.at)
     const ranked = podium(valid, parsePoints(cfg.podium), (a, b) => Math.abs(a.err - b.err) < 1e-9)
     const results: Record<string, { pts: number; detail?: string }> = {}
     for (const r of ranked) {
-      const pct = Math.round((Math.exp(r.err) - 1) * 100)
-      results[r.pid] = { pts: r.pts, detail: `${formatMeters(r.value)} (écart ${pct} %)` }
+      results[r.pid] = { pts: r.pts, detail: `${formatMeters(r.value)} (écart ${formatMeters(r.err)})` }
     }
     return { results, summary: { guesses: ranked.map((r) => ({ pid: r.pid, value: r.value })) } }
   },
