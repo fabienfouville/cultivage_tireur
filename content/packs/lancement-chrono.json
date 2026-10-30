@@ -4,21 +4,6 @@
   "theme": "Lancement · Chronologie",
   "questions": [
     {
-      "text": "Objets du quotidien",
-      "events": [
-        "Allumette à friction",
-        "Fermeture éclair",
-        "Stylo-bille de Biro",
-        "Post-it"
-      ],
-      "dates": [
-        "1826",
-        "1913",
-        "1938",
-        "1980"
-      ]
-    },
-    {
       "text": "Débuts de règne",
       "events": [
         "Clovis",
@@ -79,21 +64,6 @@
       ]
     },
     {
-      "text": "Explorateurs",
-      "events": [
-        "Marco Polo part pour la Chine",
-        "Vasco de Gama atteint les Indes",
-        "Magellan part autour du monde",
-        "Cook atteint l'Australie"
-      ],
-      "dates": [
-        "1271",
-        "1498",
-        "1519",
-        "1770"
-      ]
-    },
-    {
       "text": "Technologie à la maison",
       "events": [
         "Télévision couleur en France",
@@ -121,21 +91,6 @@
         "1694",
         "1802",
         "1871"
-      ]
-    },
-    {
-      "text": "Films de Spielberg",
-      "events": [
-        "E.T. l'extra-terrestre",
-        "Jurassic Park",
-        "Il faut sauver le soldat Ryan",
-        "Lincoln"
-      ],
-      "dates": [
-        "1982",
-        "1993",
-        "1998",
-        "2012"
       ]
     },
     {
@@ -181,21 +136,6 @@
         "1981",
         "1990",
         "2012"
-      ]
-    },
-    {
-      "text": "Écouter de la musique",
-      "events": [
-        "Phonographe d'Edison",
-        "Disque vinyle 33 tours",
-        "Cassette audio",
-        "iPod"
-      ],
-      "dates": [
-        "1877",
-        "1948",
-        "1963",
-        "2001"
       ]
     }
   ]

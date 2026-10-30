@@ -15,26 +15,6 @@
       "correct": 0
     },
     {
-      "text": "📚 Littérature · Quel héros de Jules Verne fait le tour du monde en quatre-vingts jours ?",
-      "answers": [
-        "Phileas Fogg",
-        "Passepartout",
-        "Le capitaine Nemo",
-        "Michel Strogoff"
-      ],
-      "correct": 0
-    },
-    {
-      "text": "📚 Littérature · Dans quelle ville se déroule « Roméo et Juliette » ?",
-      "answers": [
-        "Venise",
-        "Vérone",
-        "Florence",
-        "Mantoue"
-      ],
-      "correct": 1
-    },
-    {
       "text": "🏛️ Histoire · Quelle reine d'Angleterre a régné de 1558 à 1603 ?",
       "answers": [
         "Marie Ire",
@@ -55,16 +35,6 @@
       "correct": 1
     },
     {
-      "text": "🌍 Géographie · Quel pays possède la plus longue côte du monde ?",
-      "answers": [
-        "La Russie",
-        "Le Canada",
-        "L'Indonésie",
-        "L'Australie"
-      ],
-      "correct": 1
-    },
-    {
       "text": "🎨 Arts · Qui a composé « Le Beau Danube bleu » ?",
       "answers": [
         "Johann Strauss fils",
@@ -73,16 +43,6 @@
         "Franz Liszt"
       ],
       "correct": 0
-    },
-    {
-      "text": "🎨 Arts · Dans quelle ville se trouve le musée de l'Ermitage ?",
-      "answers": [
-        "Moscou",
-        "Saint-Pétersbourg",
-        "Kiev",
-        "Varsovie"
-      ],
-      "correct": 1
     },
     {
       "text": "🏅 Sport · Combien de joueurs compte une équipe de rugby à XIII sur le terrain ?",
@@ -125,16 +85,6 @@
       "correct": 1
     },
     {
-      "text": "🎬 Cinéma et musique · Qui a réalisé « Le Dîner de cons » ?",
-      "answers": [
-        "Francis Veber",
-        "Claude Zidi",
-        "Gérard Oury",
-        "Patrice Leconte"
-      ],
-      "correct": 0
-    },
-    {
       "text": "🎬 Cinéma et musique · Dans quel film entend-on « Je suis ton père » ?",
       "answers": [
         "L'Empire contre-attaque",
@@ -151,16 +101,6 @@
         "Amir",
         "Louane",
         "Zaho de Sagazan"
-      ],
-      "correct": 0
-    },
-    {
-      "text": "⚡ Mythologie · Quel cheval ailé est né du sang de Méduse ?",
-      "answers": [
-        "Pégase",
-        "Bucéphale",
-        "Sleipnir",
-        "Arion"
       ],
       "correct": 0
     },

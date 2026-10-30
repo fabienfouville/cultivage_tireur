@@ -26,7 +26,7 @@ export interface GrandJeuFile {
   name: string
   description?: string
   cardsEnabled: boolean
-  slots: { module: ModuleKey; packId: string; questionCount: number; timer: number; extraPackId?: string; extraCount?: number }[]
+  slots: { module: ModuleKey; packId: string; questionCount: number; timer: number; extraPackId?: string; extraCount?: number; tokens?: number }[]
 }
 
 const GRAND_JEUX: GrandJeuFile[] = Object.values(
@@ -55,6 +55,7 @@ async function importGrandJeu(gj: GrandJeuFile, themes: Theme[]) {
         themeName: t.name,
         questionCount: s.questionCount,
         timer: s.timer,
+        ...(s.tokens ? { tokens: s.tokens } : {}),
         ...(x ? { extraThemeId: x.id, extraThemeName: x.name, extraCount: s.extraCount ?? 1 } : {}),
       }
     }),
@@ -87,7 +88,8 @@ async function importPack(pack: Pack, existing?: Theme): Promise<Theme> {
       module: pack.module,
       themeId,
       createdAt: serverTimestamp(),
-      ...(getModule(pack.module).ordered && q.order == null ? { order: i + 1 } : {}),
+      // L'ordre du pack est conservé (jeux à difficulté croissante, et Grands Jeux qui jouent les questions dans l'ordre)
+      ...(q.order == null ? { order: i + 1 } : {}),
     })
   })
   await batch.commit()

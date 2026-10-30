@@ -1,0 +1,32 @@
+{
+  "id": "gst-estimation",
+  "module": "estimation",
+  "theme": "Grande soirée des Tireurs · Estimation",
+  "questions": [
+    {
+      "text": "Combien de pays compte l'Afrique ?",
+      "answer": 54,
+      "unit": "pays"
+    },
+    {
+      "text": "En quelle année le premier Astérix est-il paru ?",
+      "answer": 1961,
+      "unit": ""
+    },
+    {
+      "text": "Quelle distance sépare Paris de Tokyo à vol d'oiseau ?",
+      "answer": 9700,
+      "unit": "km"
+    },
+    {
+      "text": "À quelle température le fer fond-il ?",
+      "answer": 1538,
+      "unit": "°C"
+    },
+    {
+      "text": "Combien de pattes a un mille-pattes de l'espèce Eumillipes persephone, record mondial ?",
+      "answer": 1306,
+      "unit": "pattes"
+    }
+  ]
+}

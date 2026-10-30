@@ -20,11 +20,6 @@
       "order": 3
     },
     {
-      "text": "La Belgique a pour capitale Bruges.",
-      "correct": false,
-      "order": 4
-    },
-    {
       "text": "Le français est une langue officielle au Canada.",
       "correct": true,
       "order": 5
@@ -33,11 +28,6 @@
       "text": "La Joconde est exposée au musée d'Orsay.",
       "correct": false,
       "order": 6
-    },
-    {
-      "text": "Le koala est un ours.",
-      "correct": false,
-      "order": 7
     },
     {
       "text": "Un kilo de plumes est plus léger qu'un kilo de plomb.",
@@ -50,11 +40,6 @@
       "order": 9
     },
     {
-      "text": "Le chocolat est toxique pour les chiens.",
-      "correct": true,
-      "order": 10
-    },
-    {
       "text": "La Suisse est membre de l'Union européenne.",
       "correct": false,
       "order": 11
@@ -63,11 +48,6 @@
       "text": "Le diamant et le graphite sont tous les deux faits de carbone.",
       "correct": true,
       "order": 12
-    },
-    {
-      "text": "Le mont Everest se trouve à la frontière entre le Népal et la Chine.",
-      "correct": true,
-      "order": 13
     },
     {
       "text": "Mozart est mort avant d'avoir 40 ans.",
@@ -85,24 +65,9 @@
       "order": 16
     },
     {
-      "text": "Les girafes ont autant de vertèbres dans le cou que les humains.",
-      "correct": true,
-      "order": 17
-    },
-    {
       "text": "Venise est construite sur plus de 100 îles.",
       "correct": true,
       "order": 18
-    },
-    {
-      "text": "La banane est une baie, au sens botanique.",
-      "correct": true,
-      "order": 19
-    },
-    {
-      "text": "Le Sahara est le plus grand désert du monde.",
-      "correct": false,
-      "order": 20
     },
     {
       "text": "Le hoquet peut durer plusieurs années.",
@@ -113,11 +78,6 @@
       "text": "La planète Vénus tourne sur elle-même dans le sens inverse de la Terre.",
       "correct": true,
       "order": 22
-    },
-    {
-      "text": "L'Australie est plus large que la Lune.",
-      "correct": true,
-      "order": 23
     },
     {
       "text": "Le Canada compte plus de lacs que tout le reste du monde réuni.",
@@ -175,11 +135,6 @@
       "order": 34
     },
     {
-      "text": "Albert Einstein a reçu le prix Nobel pour sa théorie de la relativité.",
-      "correct": false,
-      "order": 35
-    },
-    {
       "text": "La tour Eiffel peut grandir de quelques centimètres en été.",
       "correct": true,
       "order": 36
@@ -208,11 +163,6 @@
       "text": "Le Sahara a été couvert de végétation il y a quelques milliers d'années.",
       "correct": true,
       "order": 41
-    },
-    {
-      "text": "La France est le pays qui compte le plus de fuseaux horaires.",
-      "correct": true,
-      "order": 42
     },
     {
       "text": "Le mot « kiosque » vient du turc.",

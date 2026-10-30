@@ -1,0 +1,37 @@
+{
+  "id": "gst-logique",
+  "module": "logique",
+  "theme": "Grande soirée des Tireurs · 100% Logique",
+  "questions": [
+    {
+      "text": "Combien de zéros compte un milliard ?",
+      "answer": "9/neuf",
+      "percent": 50,
+      "explain": "1 000 000 000 : neuf zéros."
+    },
+    {
+      "text": "Complète la suite :\n2, 6, 18, 54, ?",
+      "answer": "162/cent soixante-deux/cent soixante deux",
+      "percent": 45,
+      "explain": "Chaque nombre est le triple du précédent."
+    },
+    {
+      "text": "Combien de fois faut-il plier une feuille en deux pour obtenir 8 épaisseurs ?",
+      "answer": "3/trois/3 fois/trois fois",
+      "percent": 40,
+      "explain": "2, puis 4, puis 8 épaisseurs : trois pliages."
+    },
+    {
+      "text": "Huit équipes jouent un tournoi où chacune rencontre toutes les autres une seule fois.\nCombien de matchs en tout ?",
+      "answer": "28/vingt-huit/vingt huit",
+      "percent": 25,
+      "explain": "8 × 7 ÷ 2 = 28."
+    },
+    {
+      "text": "Si hier était demain, aujourd'hui serait vendredi.\nQuel jour sommes-nous ?",
+      "answer": "Dimanche",
+      "percent": 5,
+      "explain": "Si on était deux jours plus tôt, on serait vendredi : nous sommes donc dimanche."
+    }
+  ]
+}

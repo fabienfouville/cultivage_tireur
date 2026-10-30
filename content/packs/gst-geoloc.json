@@ -1,0 +1,39 @@
+{
+  "id": "gst-geoloc",
+  "module": "geoloc",
+  "theme": "Grande soirée des Tireurs · Géoloc",
+  "mapId": "world",
+  "questions": [
+    {
+      "text": "Où se trouve Ushuaïa, la ville la plus australe du monde ?",
+      "answerHint": "Ushuaïa (Argentine)",
+      "lat": -54.8019,
+      "lng": -68.303
+    },
+    {
+      "text": "Où se trouve le mont Rushmore ?",
+      "answerHint": "Mont Rushmore — Dakota du Sud, États-Unis",
+      "lat": 43.8791,
+      "lng": -103.4591
+    },
+    {
+      "text": "Où se trouve le château de Neuschwanstein ?",
+      "answerHint": "Neuschwanstein — Bavière, Allemagne",
+      "lat": 47.5576,
+      "lng": 10.7498
+    },
+    {
+      "text": "Où se trouve Bora-Bora ?",
+      "answerHint": "Bora-Bora (Polynésie française)",
+      "lat": -16.5004,
+      "lng": -151.7415
+    },
+    {
+      "text": "Où se trouve la Norvège ?",
+      "answerHint": "Norvège",
+      "lat": 61.0,
+      "lng": 8.5,
+      "isoNum": 578
+    }
+  ]
+}

@@ -15,28 +15,6 @@
       "answerHint": "BDS/Bureau des sports"
     },
     {
-      "text": "🎯 Spécial Tireurs · De quelle couleur sont les sweats des Tireurs ?",
-      "answers": [
-        "Noirs",
-        "Kaki (vert olive)",
-        "Bleu marine",
-        "Bordeaux"
-      ],
-      "correct": 1,
-      "answerHint": "Kaki/Olive/Vert olive/Vert kaki"
-    },
-    {
-      "text": "🎯 Spécial Tireurs · Quel animal se cache dans la lunette de visée du logo des Tireurs ?",
-      "answers": [
-        "Un rapace",
-        "Un loup",
-        "Un lion",
-        "Un serpent"
-      ],
-      "correct": 0,
-      "answerHint": "Rapace/Aigle/Faucon"
-    },
-    {
       "text": "🎯 Spécial Tireurs · Dans quelle école les Tireurs d'éliste ont-ils fait campagne ?",
       "answers": [
         "Centrale Marseille",

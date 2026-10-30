@@ -10,11 +10,6 @@
     },
     {
       "text": "Quel est ce drapeau ?",
-      "imageUrl": "/pixel/drapeaux/br.jpg",
-      "answerHint": "Brésil/Bresil"
-    },
-    {
-      "text": "Quel est ce drapeau ?",
       "imageUrl": "/pixel/drapeaux/ca.jpg",
       "answerHint": "Canada"
     },
@@ -42,11 +37,6 @@
       "text": "Quel est ce drapeau ?",
       "imageUrl": "/pixel/drapeaux/es.jpg",
       "answerHint": "Espagne"
-    },
-    {
-      "text": "Quel est ce drapeau ?",
-      "imageUrl": "/pixel/drapeaux/kr.jpg",
-      "answerHint": "Corée du Sud/Coree du Sud/Corée"
     },
     {
       "text": "Quel est ce drapeau ?",
@@ -127,21 +117,6 @@
       "text": "Quel est ce drapeau ?",
       "imageUrl": "/pixel/drapeaux/ma.jpg",
       "answerHint": "Maroc"
-    },
-    {
-      "text": "Quel est ce drapeau ?",
-      "imageUrl": "/pixel/drapeaux/np.jpg",
-      "answerHint": "Népal/Nepal"
-    },
-    {
-      "text": "Quel est ce drapeau ?",
-      "imageUrl": "/pixel/drapeaux/jm.jpg",
-      "answerHint": "Jamaïque/Jamaique"
-    },
-    {
-      "text": "Quel est ce drapeau ?",
-      "imageUrl": "/pixel/drapeaux/ke.jpg",
-      "answerHint": "Kenya"
     }
   ]
 }

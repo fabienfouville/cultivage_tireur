@@ -17,12 +17,6 @@
       "lng": -21.9426
     },
     {
-      "text": "Où se trouve Ushuaïa, la ville la plus australe du monde ?",
-      "answerHint": "Ushuaïa (Argentine)",
-      "lat": -54.8019,
-      "lng": -68.303
-    },
-    {
       "text": "Où se trouve le lac Titicaca ?",
       "answerHint": "Lac Titicaca — Pérou / Bolivie",
       "lat": -15.9254,
@@ -35,22 +29,10 @@
       "lng": 12.3155
     },
     {
-      "text": "Où se trouve le mont Rushmore ?",
-      "answerHint": "Mont Rushmore — Dakota du Sud, États-Unis",
-      "lat": 43.8791,
-      "lng": -103.4591
-    },
-    {
       "text": "Où se trouve la tour de Pise ?",
       "answerHint": "Tour de Pise (Italie)",
       "lat": 43.723,
       "lng": 10.3966
-    },
-    {
-      "text": "Où se trouve le château de Neuschwanstein ?",
-      "answerHint": "Neuschwanstein — Bavière, Allemagne",
-      "lat": 47.5576,
-      "lng": 10.7498
     },
     {
       "text": "Où se trouve Saint-Pétersbourg ?",
@@ -75,12 +57,6 @@
       "answerHint": "Hollywood Sign — Los Angeles, États-Unis",
       "lat": 34.1341,
       "lng": -118.3215
-    },
-    {
-      "text": "Où se trouve Bora-Bora ?",
-      "answerHint": "Bora-Bora (Polynésie française)",
-      "lat": -16.5004,
-      "lng": -151.7415
     },
     {
       "text": "Où se trouve Vancouver ?",
@@ -117,13 +93,6 @@
       "answerHint": "Lac de Serre-Ponçon (Hautes-Alpes)",
       "lat": 44.53,
       "lng": 6.35
-    },
-    {
-      "text": "Où se trouve la Norvège ?",
-      "answerHint": "Norvège",
-      "lat": 61.0,
-      "lng": 8.5,
-      "isoNum": 578
     },
     {
       "text": "Où se trouve l'Argentine ?",

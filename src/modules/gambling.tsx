@@ -68,7 +68,7 @@ export const gambling: ModuleDef = {
       const kept = bets[correct]
       bank[p.id] = kept
       const lost = have - kept
-      const pts = last ? kept * Number(cfg.multiplier || 1) : 0
+      const pts = last ? Math.round(kept * Number(cfg.multiplier || 1)) : 0
       results[p.id] = {
         pts,
         detail: `🪙 ${have} → ${kept}` + (lost ? ` (${lost} tombé${lost > 1 ? 's' : ''})` : '') + (last ? ` · +${pts} pts` : ''),

@@ -1,0 +1,18 @@
+{
+  "id": "tireurs-moneydrop",
+  "module": "qcm",
+  "theme": "Spécial Tireurs · Money Drop",
+  "questions": [
+    {
+      "text": "🎯 Spécial Tireurs · De quelle couleur sont les sweats des Tireurs ?",
+      "answers": [
+        "Noirs",
+        "Kaki (vert olive)",
+        "Bleu marine",
+        "Bordeaux"
+      ],
+      "correct": 1,
+      "answerHint": "Kaki/Olive/Vert olive/Vert kaki"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "tireurs-duo",
+  "module": "qcm",
+  "theme": "Spécial Tireurs · Duo / Carré / Cash",
+  "questions": [
+    {
+      "text": "🎯 Spécial Tireurs · Quel animal se cache dans la lunette de visée du logo des Tireurs ?",
+      "answers": [
+        "Un rapace",
+        "Un loup",
+        "Un lion",
+        "Un serpent"
+      ],
+      "correct": 0,
+      "answerHint": "Rapace/Aigle/Faucon"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "gst-moneydrop",
+  "module": "qcm",
+  "theme": "Grande soirée des Tireurs · Money Drop",
+  "questions": [
+    {
+      "text": "Dans quel pays se trouvent les ruines de Pétra ?",
+      "answers": [
+        "Égypte",
+        "Jordanie",
+        "Liban",
+        "Syrie"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Combien de fuseaux horaires compte la Russie ?",
+      "answers": [
+        "7",
+        "9",
+        "11",
+        "13"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "De quelle couleur est la « boîte noire » d'un avion ?",
+      "answers": [
+        "Noire",
+        "Orange",
+        "Rouge",
+        "Jaune"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Combien d'épouses le roi Henri VIII a-t-il eues ?",
+      "answers": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Quelle langue est la plus parlée en Suisse ?",
+      "answers": [
+        "Le français",
+        "L'allemand",
+        "L'italien",
+        "Le romanche"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Dans quel pays le Rubik's Cube a-t-il été inventé ?",
+      "answers": [
+        "Le Japon",
+        "La Hongrie",
+        "L'Allemagne",
+        "L'URSS"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Quel animal figure sur les armoiries de Berlin ?",
+      "answers": [
+        "Un aigle",
+        "Un ours",
+        "Un lion",
+        "Un loup"
+      ],
+      "correct": 1
+    }
+  ]
+}

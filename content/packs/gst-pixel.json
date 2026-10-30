@@ -1,0 +1,32 @@
+{
+  "id": "gst-pixel",
+  "module": "pixel",
+  "theme": "Grande soirée des Tireurs · Pixel drapeaux",
+  "questions": [
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/br.jpg",
+      "answerHint": "Brésil/Bresil"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/jm.jpg",
+      "answerHint": "Jamaïque/Jamaique"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/np.jpg",
+      "answerHint": "Népal/Nepal"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/ke.jpg",
+      "answerHint": "Kenya"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/drapeaux/kr.jpg",
+      "answerHint": "Corée du Sud/Coree du Sud/Corée"
+    }
+  ]
+}

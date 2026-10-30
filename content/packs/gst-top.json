@@ -1,0 +1,27 @@
+{
+  "id": "gst-top",
+  "module": "top",
+  "theme": "Grande soirée des Tireurs · Le Top",
+  "questions": [
+    {
+      "text": "Les 5 plus hauts gratte-ciel du monde",
+      "answers": [
+        "Burj Khalifa",
+        "Merdeka 118",
+        "Shanghai Tower",
+        "Abraj Al-Bait (tour de l'Horloge)",
+        "Ping An Finance Center"
+      ]
+    },
+    {
+      "text": "Les 5 premiers mots de « La Marseillaise »",
+      "answers": [
+        "Allons",
+        "enfants",
+        "de",
+        "la",
+        "Patrie"
+      ]
+    }
+  ]
+}

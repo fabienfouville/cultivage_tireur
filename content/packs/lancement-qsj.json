@@ -6,17 +6,6 @@
     {
       "text": "Qui suis-je ?",
       "clues": [
-        "Je suis née à Paris en 1915, dans le quartier de Belleville.",
-        "Mon vrai nom est Édith Giovanna Gassion.",
-        "On m'a surnommée « la Môme ».",
-        "Marion Cotillard a reçu un Oscar en jouant mon rôle.",
-        "J'ai chanté « La Vie en rose » et « Non, je ne regrette rien »."
-      ],
-      "answerHint": "Édith Piaf/Piaf"
-    },
-    {
-      "text": "Qui suis-je ?",
-      "clues": [
         "Je suis né à Dole, dans le Jura, en 1822.",
         "J'ai étudié la fermentation du vin et de la bière.",
         "Un procédé de conservation par la chaleur porte mon nom.",
@@ -24,17 +13,6 @@
         "J'ai mis au point le vaccin contre la rage."
       ],
       "answerHint": "Louis Pasteur/Pasteur"
-    },
-    {
-      "text": "Qui suis-je ?",
-      "clues": [
-        "Je suis né en Gironde en 1910.",
-        "J'ai coinventé un détendeur pour la plongée autonome.",
-        "Mon film « Le Monde du silence » a reçu la Palme d'or.",
-        "Mon navire s'appelait la Calypso.",
-        "Je portais toujours un bonnet rouge."
-      ],
-      "answerHint": "Jacques-Yves Cousteau/Cousteau/Commandant Cousteau"
     },
     {
       "text": "Qui suis-je ?",
@@ -101,17 +79,6 @@
         "Nous sommes John, Paul, George et Ringo."
       ],
       "answerHint": "Les Beatles/Beatles/The Beatles"
-    },
-    {
-      "text": "Que suis-je ?",
-      "clues": [
-        "J'ai été construit à Belfast.",
-        "J'appartenais à la White Star Line.",
-        "Je suis parti de Southampton pour New York.",
-        "J'ai heurté un iceberg dans la nuit du 14 au 15 avril 1912.",
-        "James Cameron a fait de moi un film à succès en 1997."
-      ],
-      "answerHint": "Le Titanic/Titanic"
     },
     {
       "text": "Que suis-je ?",

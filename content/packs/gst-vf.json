@@ -1,0 +1,57 @@
+{
+  "id": "gst-vf",
+  "module": "vf-survie",
+  "theme": "Grande soirée des Tireurs · VF Survie",
+  "questions": [
+    {
+      "text": "La Belgique a pour capitale Bruges.",
+      "correct": false,
+      "order": 1
+    },
+    {
+      "text": "Le koala est un ours.",
+      "correct": false,
+      "order": 2
+    },
+    {
+      "text": "Le chocolat est toxique pour les chiens.",
+      "correct": true,
+      "order": 3
+    },
+    {
+      "text": "Le mont Everest se trouve à la frontière entre le Népal et la Chine.",
+      "correct": true,
+      "order": 4
+    },
+    {
+      "text": "Les girafes ont autant de vertèbres dans le cou que les humains.",
+      "correct": true,
+      "order": 5
+    },
+    {
+      "text": "La banane est une baie, au sens botanique.",
+      "correct": true,
+      "order": 6
+    },
+    {
+      "text": "Le Sahara est le plus grand désert du monde.",
+      "correct": false,
+      "order": 7
+    },
+    {
+      "text": "L'Australie est plus large que la Lune.",
+      "correct": true,
+      "order": 8
+    },
+    {
+      "text": "Albert Einstein a reçu le prix Nobel pour sa théorie de la relativité.",
+      "correct": false,
+      "order": 9
+    },
+    {
+      "text": "La France est le pays qui compte le plus de fuseaux horaires.",
+      "correct": true,
+      "order": 10
+    }
+  ]
+}

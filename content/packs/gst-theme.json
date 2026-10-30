@@ -1,0 +1,15 @@
+{
+  "id": "gst-theme",
+  "module": "theme",
+  "theme": "Grande soirée des Tireurs · Thème",
+  "questions": [
+    {
+      "text": "Une pièce de Molière",
+      "answerHint": "L'Avare, Tartuffe, Le Misanthrope, Le Malade imaginaire, Le Bourgeois gentilhomme, Dom Juan, Les Fourberies de Scapin, L'École des femmes, Les Précieuses ridicules, Le Médecin malgré lui, Les Femmes savantes, George Dandin, Amphitryon"
+    },
+    {
+      "text": "Un pays de l'Union européenne",
+      "answerHint": "Allemagne, Autriche, Belgique, Bulgarie, Chypre, Croatie, Danemark, Espagne, Estonie, Finlande, France, Grèce, Hongrie, Irlande, Italie, Lettonie, Lituanie, Luxembourg, Malte, Pays-Bas, Pologne, Portugal, Roumanie, Slovaquie, Slovénie, Suède, Tchéquie"
+    }
+  ]
+}

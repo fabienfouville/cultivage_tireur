@@ -117,6 +117,8 @@ export interface GrandJeuSlot {
   extraThemeId?: string
   extraThemeName?: string
   extraCount?: number
+  /** Money Drop : jetons au départ de ce jeu */
+  tokens?: number
 }
 
 export interface GrandJeu {

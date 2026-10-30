@@ -15,16 +15,6 @@
       "correct": 1
     },
     {
-      "text": "📚 Littérature · Dans quelle pièce de Molière trouve-t-on Harpagon ?",
-      "answers": [
-        "Le Misanthrope",
-        "L'Avare",
-        "Tartuffe",
-        "Le Malade imaginaire"
-      ],
-      "correct": 1
-    },
-    {
       "text": "📚 Littérature · Quel est le prénom de Madame Bovary ?",
       "answers": [
         "Emma",
@@ -55,16 +45,6 @@
       "correct": 2
     },
     {
-      "text": "🏛️ Histoire · Quel garde des Sceaux a porté l'abolition de la peine de mort en 1981 ?",
-      "answers": [
-        "Simone Veil",
-        "Robert Badinter",
-        "Jack Lang",
-        "Pierre Mauroy"
-      ],
-      "correct": 1
-    },
-    {
       "text": "🔬 Sciences · Quel savant a établi le tableau périodique des éléments ?",
       "answers": [
         "Antoine Lavoisier",
@@ -91,16 +71,6 @@
         "Bratislava",
         "Budapest",
         "Zagreb"
-      ],
-      "correct": 1
-    },
-    {
-      "text": "🌍 Géographie · Quel détroit sépare la Sicile de l'Italie continentale ?",
-      "answers": [
-        "Le Bosphore",
-        "Le détroit de Messine",
-        "Les bouches de Bonifacio",
-        "Le canal d'Otrante"
       ],
       "correct": 1
     },
@@ -185,16 +155,6 @@
       "correct": 1
     },
     {
-      "text": "🎬 Cinéma et musique · Quel groupe a sorti l'album « The Dark Side of the Moon » ?",
-      "answers": [
-        "The Who",
-        "Pink Floyd",
-        "Led Zeppelin",
-        "Genesis"
-      ],
-      "correct": 1
-    },
-    {
       "text": "🎬 Cinéma et musique · Qui joue le commissaire Juve dans les « Fantômas » des années 1960 ?",
       "answers": [
         "Bourvil",
@@ -211,16 +171,6 @@
         "Hermès",
         "Arès",
         "Héphaïstos"
-      ],
-      "correct": 1
-    },
-    {
-      "text": "⚡ Mythologie · Quel héros grec a tué le Minotaure ?",
-      "answers": [
-        "Persée",
-        "Thésée",
-        "Héraclès",
-        "Jason"
       ],
       "correct": 1
     },

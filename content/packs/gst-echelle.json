@@ -1,0 +1,72 @@
+{
+  "id": "gst-echelle",
+  "module": "echelle",
+  "theme": "Grande soirée des Tireurs · À l’échelle",
+  "questions": [
+    {
+      "text": "Quelle hauteur font les tours de Tower Bridge, à Londres ?",
+      "refName": "La tour Eiffel",
+      "refHeight": 330,
+      "refEmoji": "🗼",
+      "refImage": "/echelle/eiffel.webp",
+      "refLength": false,
+      "targetName": "Tower Bridge",
+      "answer": 65,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/tower-bridge.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle longueur peut atteindre un orque mâle ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "refImage": "/echelle/humain.webp",
+      "refLength": false,
+      "targetName": "Orque",
+      "answer": 8,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/orque.webp",
+      "targetLength": true
+    },
+    {
+      "text": "Quelle hauteur fait un rhinocéros blanc au garrot ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "refImage": "/echelle/humain.webp",
+      "refLength": false,
+      "targetName": "Rhinocéros blanc",
+      "answer": 1.8,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/rhinoceros.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle hauteur fait un bison d'Amérique au sommet de sa bosse ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "refImage": "/echelle/humain.webp",
+      "refLength": false,
+      "targetName": "Bison d'Amérique",
+      "answer": 1.9,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/bison.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle hauteur fait un dromadaire, tête levée ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "refImage": "/echelle/humain.webp",
+      "refLength": false,
+      "targetName": "Dromadaire",
+      "answer": 2.1,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/dromadaire.webp",
+      "targetLength": false
+    }
+  ]
+}

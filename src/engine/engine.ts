@@ -266,7 +266,7 @@ export async function startBlock(sid: string, opts: BlockOptions) {
   const questions = await pickQuestions(opts.themeId, opts.module, opts.count, opts.order)
   // Bonus (Grand Jeu) : quelques questions d'un autre thème, jouées en dernier
   if (opts.extra?.themeId && opts.extra.count > 0) {
-    const extra = await pickQuestions(opts.extra.themeId, opts.module, opts.extra.count, 'random')
+    const extra = await pickQuestions(opts.extra.themeId, opts.module, opts.extra.count, 'keep')
     questions.push(...extra.filter((q) => !questions.some((x) => x.id === q.id)))
   }
   if (!questions.length) throw new Error(all ? 'Aucune question pour ce jeu' : 'Ce thème ne contient aucune question')
@@ -687,6 +687,7 @@ export async function startSlot(sid: string, slot: GrandJeuSlot, step: number) {
     timer: slot.timer,
     slot: step,
     ...(slot.extraThemeId && slot.extraCount ? { extra: { themeId: slot.extraThemeId, count: slot.extraCount } } : {}),
+    ...(slot.tokens ? { tokensStart: slot.tokens } : {}),
   })
 }
 
