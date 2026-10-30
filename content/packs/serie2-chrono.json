@@ -1,0 +1,82 @@
+{
+  "id": "serie2-chrono",
+  "module": "chronologie",
+  "theme": "Série 2 · Chronologie",
+  "questions": [
+    {
+      "text": "Monuments de Paris",
+      "events": [
+        "Arc de Triomphe",
+        "Opéra Garnier",
+        "Tour Eiffel",
+        "Centre Pompidou"
+      ],
+      "dates": [
+        "1836",
+        "1875",
+        "1889",
+        "1977"
+      ]
+    },
+    {
+      "text": "Inventions",
+      "events": [
+        "Lunette de Galilée",
+        "Machine à calculer de Pascal",
+        "Paratonnerre de Franklin",
+        "Machine à coudre de Thimonnier"
+      ],
+      "dates": [
+        "1609",
+        "1642",
+        "1752",
+        "1830"
+      ]
+    },
+    {
+      "text": "Révolutions",
+      "events": [
+        "Glorieuse Révolution anglaise",
+        "Indépendance américaine",
+        "Révolution française",
+        "Révolution russe"
+      ],
+      "dates": [
+        "1688",
+        "1776",
+        "1789",
+        "1917"
+      ]
+    },
+    {
+      "text": "Présidents américains (début de mandat)",
+      "events": [
+        "George Washington",
+        "Abraham Lincoln",
+        "John F. Kennedy",
+        "Barack Obama"
+      ],
+      "dates": [
+        "1789",
+        "1861",
+        "1961",
+        "2009"
+      ]
+    },
+    {
+      "text": "Le numérique",
+      "events": [
+        "Minitel",
+        "Windows 95",
+        "YouTube",
+        "ChatGPT"
+      ],
+      "dates": [
+        "1982",
+        "1995",
+        "2005",
+        "2022"
+      ]
+    }
+  ]
+}

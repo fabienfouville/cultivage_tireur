@@ -1,0 +1,38 @@
+{
+  "id": "serie2-vf",
+  "module": "vf-survie",
+  "theme": "Série 2 · VF Survie",
+  "description": "du plus facile au plus dur",
+  "questions": [
+    {
+      "text": "Le Brésil est le plus grand pays d'Amérique du Sud.",
+      "correct": true,
+      "order": 1
+    },
+    {
+      "text": "Un marathon mesure plus de 40 km.",
+      "correct": true,
+      "order": 2
+    },
+    {
+      "text": "La Seine se jette dans la Manche.",
+      "correct": true,
+      "order": 3
+    },
+    {
+      "text": "Les tomates sont originaires d'Italie.",
+      "correct": false,
+      "order": 4
+    },
+    {
+      "text": "Mars possède deux lunes.",
+      "correct": true,
+      "order": 5
+    },
+    {
+      "text": "Les koalas boivent beaucoup d'eau.",
+      "correct": false,
+      "order": 6
+    }
+  ]
+}

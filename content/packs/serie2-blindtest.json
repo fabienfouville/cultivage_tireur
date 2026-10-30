@@ -1,0 +1,37 @@
+{
+  "id": "serie2-blindtest",
+  "module": "blindtest",
+  "theme": "Série 2 · Blind Test",
+  "questions": [
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Jacques Dutronc",
+      "answerHintTitle": "Il est cinq heures, Paris s'éveille"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "ABBA",
+      "answerHintTitle": "Mamma Mia"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Daniel Balavoine",
+      "answerHintTitle": "Le chanteur"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Coldplay",
+      "answerHintTitle": "Yellow"
+    },
+    {
+      "text": "Quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "Stromae",
+      "answerHintTitle": "Formidable"
+    }
+  ]
+}

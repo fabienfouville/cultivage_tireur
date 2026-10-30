@@ -1,0 +1,27 @@
+{
+  "id": "serie2-theme",
+  "module": "theme",
+  "theme": "Série 2 · Thème",
+  "questions": [
+    {
+      "text": "Une capitale d'Asie",
+      "answerHint": "Tokyo, Pékin, Séoul, Bangkok, Hanoï, New Delhi, Manille, Jakarta, Kaboul, Téhéran, Bagdad, Riyad, Katmandou, Oulan-Bator…"
+    },
+    {
+      "text": "Un oiseau qui ne vole pas",
+      "answerHint": "Autruche, émeu, nandou, kiwi, casoar, manchot, dodo, kakapo"
+    },
+    {
+      "text": "Un instrument de percussion",
+      "answerHint": "Batterie, tambour, timbale, xylophone, djembé, cymbale, triangle, castagnettes, tam-tam, maracas, bongo…"
+    },
+    {
+      "text": "Un film Pixar",
+      "answerHint": "Toy Story, 1001 pattes, Monstres & Cie, Le Monde de Nemo, Les Indestructibles, Cars, Ratatouille, WALL-E, Là-haut, Rebelle, Vice-versa, Coco, Soul, Luca, Alerte rouge, Élémentaire…"
+    },
+    {
+      "text": "Un fleuve d'Afrique",
+      "answerHint": "Nil, Congo, Niger, Zambèze, Orange, Limpopo, Sénégal, Okavango, Volta, Gambie…"
+    }
+  ]
+}

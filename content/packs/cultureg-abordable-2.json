@@ -1,0 +1,218 @@
+{
+  "id": "cultureg-abordable-2",
+  "module": "qcm",
+  "theme": "Culture G · Abordable 2",
+  "description": "10 domaines, niveau abordable",
+  "questions": [
+    {
+      "text": "📚 Littérature · Qui a écrit « Les Liaisons dangereuses » ?",
+      "answers": [
+        "Choderlos de Laclos",
+        "Denis Diderot",
+        "Marivaux",
+        "Jean-Jacques Rousseau"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "📚 Littérature · Quel héros de Jules Verne fait le tour du monde en quatre-vingts jours ?",
+      "answers": [
+        "Phileas Fogg",
+        "Passepartout",
+        "Le capitaine Nemo",
+        "Michel Strogoff"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "📚 Littérature · Dans quelle ville se déroule « Roméo et Juliette » ?",
+      "answers": [
+        "Venise",
+        "Vérone",
+        "Florence",
+        "Mantoue"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🏛️ Histoire · Quelle reine d'Angleterre a régné de 1558 à 1603 ?",
+      "answers": [
+        "Marie Ire",
+        "Élisabeth Ire",
+        "Victoria",
+        "Anne"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🔬 Sciences · Quelle est la formule chimique de l'eau oxygénée ?",
+      "answers": [
+        "H2O",
+        "H2O2",
+        "HO2",
+        "OH"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🌍 Géographie · Quel pays possède la plus longue côte du monde ?",
+      "answers": [
+        "La Russie",
+        "Le Canada",
+        "L'Indonésie",
+        "L'Australie"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎨 Arts · Qui a composé « Le Beau Danube bleu » ?",
+      "answers": [
+        "Johann Strauss fils",
+        "Mozart",
+        "Johannes Brahms",
+        "Franz Liszt"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "🎨 Arts · Dans quelle ville se trouve le musée de l'Ermitage ?",
+      "answers": [
+        "Moscou",
+        "Saint-Pétersbourg",
+        "Kiev",
+        "Varsovie"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🏅 Sport · Combien de joueurs compte une équipe de rugby à XIII sur le terrain ?",
+      "answers": [
+        "11",
+        "13",
+        "15",
+        "7"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "✍️ Langue française · Quel est le contraire de « prolixe » ?",
+      "answers": [
+        "Bavard",
+        "Concis",
+        "Généreux",
+        "Lent"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "✍️ Langue française · Qu'est-ce qu'un « bibliophile » ?",
+      "answers": [
+        "Un amateur de livres",
+        "Un bibliothécaire",
+        "Un libraire",
+        "Un imprimeur"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "✍️ Langue française · Comment appelle-t-on un poème de quatorze vers ?",
+      "answers": [
+        "Une ode",
+        "Un sonnet",
+        "Une ballade",
+        "Un haïku"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎬 Cinéma et musique · Qui a réalisé « Le Dîner de cons » ?",
+      "answers": [
+        "Francis Veber",
+        "Claude Zidi",
+        "Gérard Oury",
+        "Patrice Leconte"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "🎬 Cinéma et musique · Dans quel film entend-on « Je suis ton père » ?",
+      "answers": [
+        "L'Empire contre-attaque",
+        "Le Parrain",
+        "Le Roi lion",
+        "Retour vers le futur"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "🎬 Cinéma et musique · Qui a représenté la France à l'Eurovision 2021 avec « Voilà » ?",
+      "answers": [
+        "Barbara Pravi",
+        "Amir",
+        "Louane",
+        "Zaho de Sagazan"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "⚡ Mythologie · Quel cheval ailé est né du sang de Méduse ?",
+      "answers": [
+        "Pégase",
+        "Bucéphale",
+        "Sleipnir",
+        "Arion"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "📚 Littérature · Quel héros de Cervantès part combattre des moulins à vent ?",
+      "answers": [
+        "Don Quichotte",
+        "Sancho Panza",
+        "Gulliver",
+        "Candide"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "🔬 Sciences · Quel gaz est indispensable à une combustion ?",
+      "answers": [
+        "L'azote",
+        "L'oxygène",
+        "L'hélium",
+        "L'argon"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🏅 Sport · De quelle couleur est le maillot du leader du Tour d'Italie ?",
+      "answers": [
+        "Jaune",
+        "Rose",
+        "Rouge",
+        "Vert"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎲 Divers · Combien de branches compte l'étoile de David ?",
+      "answers": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "🎲 Divers · Combien de minutes dure une mi-temps de football ?",
+      "answers": [
+        "40",
+        "45",
+        "50",
+        "60"
+      ],
+      "correct": 1
+    }
+  ]
+}

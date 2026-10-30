@@ -1,0 +1,32 @@
+{
+  "id": "serie2-estimation",
+  "module": "estimation",
+  "theme": "Série 2 · Estimation",
+  "questions": [
+    {
+      "text": "Combien de pièces compte un jeu d'échecs complet ?",
+      "answer": 32,
+      "unit": "pièces"
+    },
+    {
+      "text": "Combien de jours dure une grossesse humaine, environ ?",
+      "answer": 280,
+      "unit": "jours"
+    },
+    {
+      "text": "Combien de cordes compte une guitare classique ?",
+      "answer": 6,
+      "unit": "cordes"
+    },
+    {
+      "text": "Quelle est l'altitude du mont Fuji ?",
+      "answer": 3776,
+      "unit": "m"
+    },
+    {
+      "text": "À quelle vitesse un faucon pèlerin peut-il plonger en piqué ?",
+      "answer": 390,
+      "unit": "km/h"
+    }
+  ]
+}

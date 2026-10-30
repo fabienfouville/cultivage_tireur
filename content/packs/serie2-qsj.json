@@ -1,0 +1,62 @@
+{
+  "id": "serie2-qsj",
+  "module": "quisuisje",
+  "theme": "Série 2 · Qui suis-je ?",
+  "questions": [
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né à Dijon en 1832.",
+        "J'ai construit le viaduc de Garabit.",
+        "J'ai conçu la structure intérieure de la statue de la Liberté.",
+        "J'ai été mêlé au scandale de Panama.",
+        "Ma tour domine Paris depuis 1889."
+      ],
+      "answerHint": "Gustave Eiffel/Eiffel"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né à Madère en 1985.",
+        "J'ai débuté au Sporting Portugal.",
+        "J'ai remporté cinq Ligues des champions.",
+        "J'ai gagné l'Euro 2016 avec mon pays.",
+        "On me surnomme CR7."
+      ],
+      "answerHint": "Cristiano Ronaldo/Ronaldo/CR7"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "Mon nom officiel est « La Liberté éclairant le monde ».",
+        "Mon sculpteur s'appelle Auguste Bartholdi.",
+        "La France m'a offerte aux États-Unis en 1886.",
+        "Je tiens une torche et une tablette.",
+        "Je veille sur le port de New York."
+      ],
+      "answerHint": "La statue de la Liberté/Statue de la Liberté"
+    },
+    {
+      "text": "Qui suis-je ?",
+      "clues": [
+        "Je suis né à Château-Thierry en 1621.",
+        "J'ai été maître des eaux et forêts.",
+        "Je suis entré à l'Académie française en 1684.",
+        "Je me suis beaucoup inspiré d'Ésope.",
+        "J'ai écrit « Le Corbeau et le Renard »."
+      ],
+      "answerHint": "Jean de La Fontaine/La Fontaine"
+    },
+    {
+      "text": "Que suis-je ?",
+      "clues": [
+        "Je suis inscrit au patrimoine mondial de l'Unesco depuis 1979.",
+        "Une statue dorée de l'archange me domine.",
+        "Les grandes marées m'entourent complètement.",
+        "Bretons et Normands se disputent mon appartenance.",
+        "Je suis une abbaye perchée sur un rocher, dans la Manche."
+      ],
+      "answerHint": "Le Mont-Saint-Michel/Mont-Saint-Michel/Mont Saint Michel"
+    }
+  ]
+}

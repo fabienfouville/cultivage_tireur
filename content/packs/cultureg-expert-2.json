@@ -1,0 +1,100 @@
+{
+  "id": "cultureg-expert-2",
+  "module": "cash",
+  "theme": "Culture G · Expert 2",
+  "description": "10 domaines, niveau expert, réponse libre",
+  "questions": [
+    {
+      "text": "📚 Littérature · Quel poète a écrit « Demain, dès l'aube… » ?",
+      "answerHint": "Victor Hugo/Hugo"
+    },
+    {
+      "text": "📚 Littérature · Quel auteur a écrit la nouvelle « Le Horla » ?",
+      "answerHint": "Guy de Maupassant/Maupassant"
+    },
+    {
+      "text": "📚 Littérature · Comment s'appelle le capitaine du Pequod dans « Moby Dick » ?",
+      "answerHint": "Achab/Ahab"
+    },
+    {
+      "text": "🏛️ Histoire · Quel roi de France est surnommé « le Roi-Chevalier » ?",
+      "answerHint": "François Ier/François 1er/Francois Ier"
+    },
+    {
+      "text": "🏛️ Histoire · Quel nom portait Istanbul sous l'Empire byzantin ?",
+      "answerHint": "Constantinople/Byzance"
+    },
+    {
+      "text": "🔬 Sciences · Comment s'appelle le plus long muscle du corps humain ?",
+      "answerHint": "Sartorius/Couturier/Muscle couturier"
+    },
+    {
+      "text": "🔬 Sciences · Quelle planète est marquée par la Grande Tache rouge ?",
+      "answerHint": "Jupiter"
+    },
+    {
+      "text": "🔬 Sciences · Quel est le seul nombre premier pair ?",
+      "answerHint": "2/deux"
+    },
+    {
+      "text": "🌍 Géographie · Quel est le plus grand désert froid du monde ?",
+      "answerHint": "Antarctique/L'Antarctique/Désert antarctique"
+    },
+    {
+      "text": "🌍 Géographie · Quel pays a pour capitale Tbilissi ?",
+      "answerHint": "Géorgie/Georgie"
+    },
+    {
+      "text": "🌍 Géographie · Quel volcan des Canaries est le point culminant de l'Espagne ?",
+      "answerHint": "Teide/Le Teide"
+    },
+    {
+      "text": "🎨 Arts · Quelle sculptrice a réalisé « La Valse » ?",
+      "answerHint": "Camille Claudel/Claudel"
+    },
+    {
+      "text": "🎨 Arts · Quel compositeur a écrit « Le Sacre du printemps » ?",
+      "answerHint": "Igor Stravinsky/Stravinsky/Stravinski"
+    },
+    {
+      "text": "🎨 Arts · Quel architecte britannique a conçu le Centre Pompidou avec Renzo Piano ?",
+      "answerHint": "Richard Rogers/Rogers"
+    },
+    {
+      "text": "🏅 Sport · Quelle joueuse française a remporté Roland-Garros en 2000 ?",
+      "answerHint": "Mary Pierce/Pierce"
+    },
+    {
+      "text": "✍️ Langue française · Comment appelle-t-on les habitants de Bourg-en-Bresse ?",
+      "answerHint": "Burgiens/Burgien/Burgiennes"
+    },
+    {
+      "text": "✍️ Langue française · Comment s'appelle le signe « & » ?",
+      "answerHint": "Esperluette/Et commercial"
+    },
+    {
+      "text": "🎬 Cinéma et musique · Qui a réalisé « Les Tontons flingueurs » ?",
+      "answerHint": "Georges Lautner/Lautner"
+    },
+    {
+      "text": "🎬 Cinéma et musique · Quel acteur français a reçu l'Oscar du meilleur acteur pour « The Artist » ?",
+      "answerHint": "Jean Dujardin/Dujardin"
+    },
+    {
+      "text": "🎬 Cinéma et musique · Quel était le vrai nom de famille de Johnny Hallyday ?",
+      "answerHint": "Smet"
+    },
+    {
+      "text": "⚡ Mythologie · Quelle déesse est sortie tout armée de la tête de Zeus ?",
+      "answerHint": "Athéna/Athena"
+    },
+    {
+      "text": "⚡ Mythologie · Comment s'appelle le navire de Jason et des Argonautes ?",
+      "answerHint": "Argo/L'Argo"
+    },
+    {
+      "text": "🎲 Divers · Quelle est la valeur du nombre d'or, arrondie au centième ?",
+      "answerHint": "1,62/1.62"
+    }
+  ]
+}

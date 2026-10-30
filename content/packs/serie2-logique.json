@@ -1,0 +1,38 @@
+{
+  "id": "serie2-logique",
+  "module": "logique",
+  "theme": "Série 2 · 100% Logique",
+  "description": "énigmes de 50 % à 10 %",
+  "questions": [
+    {
+      "text": "Complète la suite :\n1, 3, 9, 27, ?",
+      "answer": "81/quatre-vingt-un/quatre vingt un",
+      "percent": 50,
+      "explain": "Chaque nombre est le triple du précédent."
+    },
+    {
+      "text": "Je suis un nombre. Si on m'ajoute 5 puis qu'on double le résultat, on obtient 30.\nQui suis-je ?",
+      "answer": "10/dix",
+      "percent": 40,
+      "explain": "30 ÷ 2 = 15, puis 15 − 5 = 10."
+    },
+    {
+      "text": "Un dé est posé sur une table.\nCombien de ses faces peut-on voir en tournant autour ?",
+      "answer": "5/cinq",
+      "percent": 40,
+      "explain": "Toutes sauf celle posée sur la table."
+    },
+    {
+      "text": "Combien de fois la lettre A apparaît-elle dans « ABRACADABRA » ?",
+      "answer": "5/cinq",
+      "percent": 30,
+      "explain": "A-BR-A-C-A-D-A-BR-A : cinq A."
+    },
+    {
+      "text": "Un train de 1 km roule à 60 km/h et traverse un tunnel de 1 km.\nCombien de minutes entre l'entrée de la locomotive et la sortie du dernier wagon ?",
+      "answer": "2/deux/2 minutes/deux minutes/2 min",
+      "percent": 10,
+      "explain": "La locomotive doit parcourir 2 km (le tunnel + la longueur du train) : à 1 km par minute, 2 minutes."
+    }
+  ]
+}
