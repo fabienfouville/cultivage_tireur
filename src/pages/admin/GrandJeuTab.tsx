@@ -151,6 +151,14 @@ function GrandJeuEditor({ initial, onDone }: { initial?: GrandJeu; onDone: () =>
                   </button>
                 </span>
               </div>
+              {s.extraThemeId && (
+                <p className="small muted">
+                  ＋ {s.extraCount ?? 1} question{(s.extraCount ?? 1) > 1 ? 's' : ''} bonus en fin de jeu : {s.extraThemeName}{' '}
+                  <button type="button" className="btn btn-small" onClick={() => upd(i, { extraThemeId: undefined, extraThemeName: undefined, extraCount: undefined })}>
+                    Retirer
+                  </button>
+                </p>
+              )}
             </li>
           )
         })}

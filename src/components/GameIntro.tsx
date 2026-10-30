@@ -33,7 +33,8 @@ export function GameIntro({ session, compact }: { session: Session; compact?: bo
         <div className="game-intro-rules">
           <p>{mod.rules}</p>
           <p className="muted">
-            {slot.questionCount} question{slot.questionCount > 1 ? 's' : ''} · {slot.timer} s par question
+            {slot.questionCount} question{slot.questionCount > 1 ? 's' : ''}
+            {slot.extraThemeId && ` + ${slot.extraCount ?? 1} bonus « ${slot.extraThemeName} »`} · {slot.timer} s par question
           </p>
           <p className="muted small">L'animateur lance le jeu dans un instant…</p>
         </div>

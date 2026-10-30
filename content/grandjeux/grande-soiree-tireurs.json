@@ -1,0 +1,23 @@
+{
+  "id": "grande-soiree-tireurs",
+  "name": "Grande soirée des Tireurs",
+  "description": "≈ 2 heures, les 15 jeux, une question « Spécial Tireurs » à la fin de presque chaque jeu",
+  "cardsEnabled": false,
+  "slots": [
+    { "module": "qcm", "packId": "cultureg-abordable-2", "questionCount": 6, "timer": 20, "extraPackId": "tireurs-qcm", "extraCount": 1 },
+    { "module": "vf-survie", "packId": "vrac-vf", "questionCount": 10, "timer": 12, "extraPackId": "tireurs-vf", "extraCount": 1 },
+    { "module": "estimation", "packId": "lancement-estimation", "questionCount": 5, "timer": 25, "extraPackId": "tireurs-estimation", "extraCount": 1 },
+    { "module": "geoloc", "packId": "vrac-geoloc", "questionCount": 5, "timer": 30, "extraPackId": "tireurs-geoloc", "extraCount": 1 },
+    { "module": "blindtest", "packId": "lancement-blindtest", "questionCount": 6, "timer": 30, "extraPackId": "tireurs-blindtest", "extraCount": 1 },
+    { "module": "echelle", "packId": "lancement-echelle", "questionCount": 5, "timer": 25 },
+    { "module": "gambling", "packId": "vrac-qcm", "questionCount": 5, "timer": 30, "extraPackId": "tireurs-qcm", "extraCount": 1 },
+    { "module": "cash", "packId": "cultureg-expert-2", "questionCount": 5, "timer": 30, "extraPackId": "tireurs-cash", "extraCount": 1 },
+    { "module": "theme", "packId": "lancement-theme", "questionCount": 2, "timer": 45, "extraPackId": "tireurs-theme", "extraCount": 1 },
+    { "module": "chronologie", "packId": "lancement-chrono", "questionCount": 4, "timer": 40, "extraPackId": "tireurs-chrono", "extraCount": 1 },
+    { "module": "pixel", "packId": "lancement-pixel-drapeaux", "questionCount": 5, "timer": 30, "extraPackId": "tireurs-pixel", "extraCount": 1 },
+    { "module": "duo-carre-cash", "packId": "cultureg-abordable", "questionCount": 5, "timer": 30, "extraPackId": "tireurs-qcm", "extraCount": 1 },
+    { "module": "top", "packId": "lancement-top", "questionCount": 2, "timer": 30, "extraPackId": "tireurs-top", "extraCount": 1 },
+    { "module": "quisuisje", "packId": "lancement-qsj", "questionCount": 3, "timer": 50, "extraPackId": "tireurs-qsj", "extraCount": 1 },
+    { "module": "logique", "packId": "lancement-logique", "questionCount": 5, "timer": 45, "extraPackId": "tireurs-logique", "extraCount": 1 }
+  ]
+}

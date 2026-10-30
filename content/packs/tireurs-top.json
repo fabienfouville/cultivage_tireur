@@ -1,0 +1,17 @@
+{
+  "id": "tireurs-top",
+  "module": "top",
+  "theme": "Spécial Tireurs · Le Top",
+  "questions": [
+    {
+      "text": "🎯 Spécial Tireurs · Les 5 premiers Tireurs à avoir posté leur vers façon « Marseillaise », dans l'ordre",
+      "answers": [
+        "Sophie Balandreau",
+        "Fabien Fouville",
+        "Julie Bruant",
+        "Axel Maza",
+        "Antoine Béchu"
+      ]
+    }
+  ]
+}

@@ -178,6 +178,8 @@ export interface BlockOptions {
   timer: number
   slot?: number
   tokensStart?: number
+  /** Question(s) bonus ajoutée(s) à la fin, tirée(s) d'un autre thème */
+  extra?: { themeId: string; count: number }
 }
 
 /**
@@ -262,6 +264,11 @@ export async function startBlock(sid: string, opts: BlockOptions) {
     all ? null : getDoc(doc(db, 'themes', opts.themeId)),
   ])
   const questions = await pickQuestions(opts.themeId, opts.module, opts.count, opts.order)
+  // Bonus (Grand Jeu) : quelques questions d'un autre thème, jouées en dernier
+  if (opts.extra?.themeId && opts.extra.count > 0) {
+    const extra = await pickQuestions(opts.extra.themeId, opts.module, opts.extra.count, 'random')
+    questions.push(...extra.filter((q) => !questions.some((x) => x.id === q.id)))
+  }
   if (!questions.length) throw new Error(all ? 'Aucune question pour ce jeu' : 'Ce thème ne contient aucune question')
   // Toutes les questions en Géoloc : chaque question garde la carte de son thème
   let mapIds: Record<string, string> | undefined
@@ -679,6 +686,7 @@ export async function startSlot(sid: string, slot: GrandJeuSlot, step: number) {
     order: 'keep',
     timer: slot.timer,
     slot: step,
+    ...(slot.extraThemeId && slot.extraCount ? { extra: { themeId: slot.extraThemeId, count: slot.extraCount } } : {}),
   })
 }
 

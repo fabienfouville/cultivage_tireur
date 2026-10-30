@@ -1,0 +1,17 @@
+{
+  "id": "tireurs-estimation",
+  "module": "estimation",
+  "theme": "Spécial Tireurs · Estimation",
+  "questions": [
+    {
+      "text": "🎯 Spécial Tireurs · Combien de Tireurs figurent dans le tableau des tenues ?",
+      "answer": 33,
+      "unit": "Tireurs"
+    },
+    {
+      "text": "🎯 Spécial Tireurs · Quel était le montant de la cotisation annuelle d'un adhérent des Tireurs ?",
+      "answer": 50,
+      "unit": "€"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "tireurs-chrono",
+  "module": "chronologie",
+  "theme": "Spécial Tireurs · Chronologie",
+  "questions": [
+    {
+      "text": "🎯 Spécial Tireurs · Du plus ancien au plus récent",
+      "events": [
+        "Création de l'École centrale de Marseille",
+        "Signature des statuts des Tireurs d'éliste",
+        "Sortie effective du Royaume-Uni de l'UE",
+        "Jeux olympiques de Paris"
+      ],
+      "dates": [
+        "2006",
+        "2019",
+        "2020",
+        "2024"
+      ]
+    }
+  ]
+}

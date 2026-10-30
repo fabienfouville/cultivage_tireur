@@ -1,0 +1,15 @@
+{
+  "id": "tireurs-theme",
+  "module": "theme",
+  "theme": "Spécial Tireurs · Thème",
+  "questions": [
+    {
+      "text": "🎯 Spécial Tireurs · Une activité proposée lors des journées des Tireurs",
+      "answerHint": "Fléchettes, jeux vidéo, nerf, tir foot, water pong, pétanque, laser game, trampoline, dodgeball, concours de dunk, beer pong, réveil militaire, mêlée générale"
+    },
+    {
+      "text": "🎯 Spécial Tireurs · Un plat ou une douceur servi(e) par les Tireurs",
+      "answerHint": "Croziflette, poulet curry, dahl de lentilles, fajitas, couscous, buffet asiatique, lasagne, crêpes, tiramisu, pancake raclette"
+    }
+  ]
+}

@@ -113,6 +113,10 @@ export interface GrandJeuSlot {
   themeName: string
   questionCount: number
   timer: number
+  /** Question(s) bonus jouée(s) en dernier, tirée(s) d'un autre thème (ex. « Spécial Tireurs ») */
+  extraThemeId?: string
+  extraThemeName?: string
+  extraCount?: number
 }
 
 export interface GrandJeu {

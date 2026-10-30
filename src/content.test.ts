@@ -93,6 +93,12 @@ describe('grands jeux prêts à l’emploi', () => {
         expect(pack, s.packId).toBeTruthy()
         expect(bankOf(s.module), `${s.packId} pour ${s.module}`).toBe(pack!.module)
         expect(s.questionCount, s.packId).toBeLessThanOrEqual(pack!.questions.length)
+        if (s.extraPackId) {
+          const extra = packs.find((p) => p.id === s.extraPackId)
+          expect(extra, s.extraPackId).toBeTruthy()
+          expect(bankOf(s.module), `${s.extraPackId} pour ${s.module}`).toBe(extra!.module)
+          expect(s.extraCount ?? 1, s.extraPackId).toBeLessThanOrEqual(extra!.questions.length)
+        }
       }
     })
   }

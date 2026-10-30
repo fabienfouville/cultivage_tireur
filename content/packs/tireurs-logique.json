@@ -1,0 +1,14 @@
+{
+  "id": "tireurs-logique",
+  "module": "logique",
+  "theme": "Spécial Tireurs · 100% Logique",
+  "description": "énigme Tireurs",
+  "questions": [
+    {
+      "text": "🎯 Spécial Tireurs · Les 6 membres du conseil des Tireurs se serrent tous la main, une fois chacun.\nCombien de poignées de main en tout ?",
+      "answer": "15/quinze",
+      "percent": 35,
+      "explain": "6 × 5 ÷ 2 = 15."
+    }
+  ]
+}

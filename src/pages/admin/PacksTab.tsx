@@ -26,7 +26,7 @@ export interface GrandJeuFile {
   name: string
   description?: string
   cardsEnabled: boolean
-  slots: { module: ModuleKey; packId: string; questionCount: number; timer: number }[]
+  slots: { module: ModuleKey; packId: string; questionCount: number; timer: number; extraPackId?: string; extraCount?: number }[]
 }
 
 const GRAND_JEUX: GrandJeuFile[] = Object.values(
@@ -36,7 +36,7 @@ const GRAND_JEUX: GrandJeuFile[] = Object.values(
 /** Crée (ou met à jour) le Grand Jeu : importe d'abord les packs qui manquent, puis relie chaque jeu à son thème */
 async function importGrandJeu(gj: GrandJeuFile, themes: Theme[]) {
   const byPack = new Map(themes.filter((t) => t.packId).map((t) => [t.packId!, t]))
-  for (const packId of new Set(gj.slots.map((s) => s.packId))) {
+  for (const packId of new Set(gj.slots.flatMap((s) => (s.extraPackId ? [s.packId, s.extraPackId] : [s.packId])))) {
     if (byPack.has(packId)) continue
     const pack = PACKS.find((p) => p.id === packId)
     if (!pack) throw new Error(`Pack introuvable : ${packId}`)
@@ -48,7 +48,15 @@ async function importGrandJeu(gj: GrandJeuFile, themes: Theme[]) {
     gjFile: gj.id,
     slots: gj.slots.map((s) => {
       const t = byPack.get(s.packId)!
-      return { module: s.module, themeId: t.id, themeName: t.name, questionCount: s.questionCount, timer: s.timer }
+      const x = s.extraPackId ? byPack.get(s.extraPackId) : undefined
+      return {
+        module: s.module,
+        themeId: t.id,
+        themeName: t.name,
+        questionCount: s.questionCount,
+        timer: s.timer,
+        ...(x ? { extraThemeId: x.id, extraThemeName: x.name, extraCount: s.extraCount ?? 1 } : {}),
+      }
     }),
   }
   const existing = await getDocs(query(collection(db, 'grandJeux'), where('gjFile', '==', gj.id)))

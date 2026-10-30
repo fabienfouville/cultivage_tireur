@@ -1,0 +1,13 @@
+{
+  "id": "tireurs-blindtest",
+  "module": "blindtest",
+  "theme": "Spécial Tireurs · Blind Test",
+  "questions": [
+    {
+      "text": "🎯 Spécial Tireurs · Le rappeur marseillais des visuels des Tireurs : quelle est cette chanson ? 🎵",
+      "audioUrl": "",
+      "answerHintAuthor": "JUL",
+      "answerHintTitle": "Tchikita"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "tireurs-geoloc",
+  "module": "geoloc",
+  "theme": "Spécial Tireurs · Géoloc",
+  "mapId": "france",
+  "questions": [
+    {
+      "text": "🎯 Spécial Tireurs · Où se trouve l'École centrale de Marseille, terrain de chasse des Tireurs ?",
+      "answerHint": "Centrale Marseille — technopôle de Château-Gombert, Marseille 13e",
+      "lat": 43.343,
+      "lng": 5.4359
+    }
+  ]
+}

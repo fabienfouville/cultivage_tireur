@@ -1,0 +1,19 @@
+{
+  "id": "tireurs-cash",
+  "module": "cash",
+  "theme": "Spécial Tireurs · Cash",
+  "questions": [
+    {
+      "text": "🎯 Spécial Tireurs · Quel était le surnom de Savinien Laeuffer chez les Tireurs ?",
+      "answerHint": "QCD"
+    },
+    {
+      "text": "🎯 Spécial Tireurs · Quel était le surnom de Guillaume Lamazou chez les Tireurs ?",
+      "answerHint": "Mazou"
+    },
+    {
+      "text": "🎯 Spécial Tireurs · Quelle marque de textile a brodé les sweats des Tireurs ?",
+      "answerHint": "Brod Textile/Brod Textile Publicité"
+    }
+  ]
+}

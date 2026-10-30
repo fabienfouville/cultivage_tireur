@@ -1,0 +1,12 @@
+{
+  "id": "tireurs-pixel",
+  "module": "pixel",
+  "theme": "Spécial Tireurs · Pixel",
+  "questions": [
+    {
+      "text": "🎯 Spécial Tireurs · Quel est ce logo ?",
+      "imageUrl": "/pixel/tireurs-logo.jpg",
+      "answerHint": "Les Tireurs d'éliste/Tireurs d'éliste/Les Tireurs/Tireurs"
+    }
+  ]
+}

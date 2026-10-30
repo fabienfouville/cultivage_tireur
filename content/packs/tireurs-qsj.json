@@ -1,0 +1,18 @@
+{
+  "id": "tireurs-qsj",
+  "module": "quisuisje",
+  "theme": "Spécial Tireurs · Qui suis-je ?",
+  "questions": [
+    {
+      "text": "🎯 Spécial Tireurs · Qui sommes-nous ?",
+      "answerHint": "Les Tireurs d'éliste/Tireurs d'éliste/Les Tireurs/Tireurs",
+      "clues": [
+        "Nos statuts ont été signés à Marseille le 4 novembre 2019.",
+        "Notre conseil d'administration comptait six membres.",
+        "Notre logo : un rapace dans une lunette de visée.",
+        "Nous chantions « Formez vos bataillons, tirons, tirons ! ».",
+        "Nous étions la liste BDS de Centrale Marseille."
+      ]
+    }
+  ]
+}
