@@ -37,10 +37,10 @@ const GRAND_JEUX: GrandJeuFile[] = Object.values(
 async function importGrandJeu(gj: GrandJeuFile, themes: Theme[]) {
   const byPack = new Map(themes.filter((t) => t.packId).map((t) => [t.packId!, t]))
   for (const packId of new Set(gj.slots.flatMap((s) => (s.extraPackId ? [s.packId, s.extraPackId] : [s.packId])))) {
-    if (byPack.has(packId)) continue
     const pack = PACKS.find((p) => p.id === packId)
     if (!pack) throw new Error(`Pack introuvable : ${packId}`)
-    byPack.set(packId, await importPack(pack))
+    // Packs déjà importés : on remplace leurs questions, pour que le Grand Jeu joue exactement le contenu du fichier
+    byPack.set(packId, await importPack(pack, byPack.get(packId)))
   }
   const data = {
     name: gj.name,

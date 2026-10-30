@@ -34,7 +34,7 @@ Pas de serveur ni de Cloud Functions. Tout le texte visible est en français.
 - `firestore.rules` : sécurité. `tests/rules.test.ts` : ses tests.
 - `content/packs/*.json` : packs de questions importables depuis l'admin (onglet Packs).
 - `content/grandjeux/*.json` : Grands Jeux prêts à l'emploi (chaque jeu pointe vers un `packId`), créés depuis l'onglet
-  Packs (« Créer le Grand Jeu » importe aussi les packs manquants). Images des packs : `public/echelle/`, `public/pixel/`.
+  Packs (« Créer le Grand Jeu » / « ↻ Mettre à jour » importe ses packs, et réimporte ceux déjà présents). Images des packs : `public/echelle/`, `public/pixel/`.
 - Blind Test : `audioUrl` peut rester vide dans un pack, l'extrait est retrouvé sur iTunes au lancement de la question.
 
 ## Modèle de données (Firestore)
