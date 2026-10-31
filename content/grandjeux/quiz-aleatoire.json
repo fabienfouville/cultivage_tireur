@@ -1,0 +1,19 @@
+{
+  "id": "quiz-aleatoire",
+  "name": "Quiz aléatoire",
+  "description": "≈ 1 heure, 11 jeux, questions tirées au hasard dans toute la banque (les moins jouées d'abord)",
+  "cardsEnabled": false,
+  "slots": [
+    { "module": "duo-carre-cash", "questionCount": 5, "timer": 30 },
+    { "module": "vf-survie", "questionCount": 10, "timer": 12 },
+    { "module": "estimation", "questionCount": 4, "timer": 25 },
+    { "module": "geoloc", "questionCount": 4, "timer": 30 },
+    { "module": "blindtest", "questionCount": 5, "timer": 30 },
+    { "module": "echelle", "questionCount": 4, "timer": 25 },
+    { "module": "chronologie", "questionCount": 3, "timer": 40 },
+    { "module": "pixel", "questionCount": 4, "timer": 30 },
+    { "module": "quisuisje", "questionCount": 3, "timer": 50 },
+    { "module": "logique", "questionCount": 4, "timer": 45 },
+    { "module": "gambling", "questionCount": 6, "timer": 30, "tokens": 100 }
+  ]
+}

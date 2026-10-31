@@ -1,5 +1,6 @@
 import { addDoc, collection, doc, getDocs, query, serverTimestamp, updateDoc, where, writeBatch } from 'firebase/firestore'
 import { useState } from 'react'
+import { ALL_THEMES } from '../../engine/engine'
 import { db } from '../../firebase'
 import { useCol } from '../../lib/hooks'
 import { MODULES, getModule } from '../../modules'
@@ -20,13 +21,13 @@ const PACKS: Pack[] = Object.values(import.meta.glob<Pack>('../../../content/pac
   (a, b) => MODULES.findIndex((m) => m.key === a.module) - MODULES.findIndex((m) => m.key === b.module) || a.theme.localeCompare(b.theme),
 )
 
-/** Un Grand Jeu prêt à l'emploi (content/grandjeux) : chaque jeu pointe vers un pack */
+/** Un Grand Jeu prêt à l'emploi (content/grandjeux) : chaque jeu pointe vers un pack (sans pack : toutes les questions du jeu, au hasard) */
 export interface GrandJeuFile {
   id: string
   name: string
   description?: string
   cardsEnabled: boolean
-  slots: { module: ModuleKey; packId: string; questionCount: number; timer: number; extraPackId?: string; extraCount?: number; tokens?: number }[]
+  slots: { module: ModuleKey; packId?: string; questionCount: number; timer: number; extraPackId?: string; extraCount?: number; tokens?: number }[]
 }
 
 const GRAND_JEUX: GrandJeuFile[] = Object.values(
@@ -36,7 +37,7 @@ const GRAND_JEUX: GrandJeuFile[] = Object.values(
 /** Crée (ou met à jour) le Grand Jeu : importe d'abord les packs qui manquent, puis relie chaque jeu à son thème */
 async function importGrandJeu(gj: GrandJeuFile, themes: Theme[]) {
   const byPack = new Map(themes.filter((t) => t.packId).map((t) => [t.packId!, t]))
-  for (const packId of new Set(gj.slots.flatMap((s) => (s.extraPackId ? [s.packId, s.extraPackId] : [s.packId])))) {
+  for (const packId of new Set(gj.slots.flatMap((s) => [s.packId, s.extraPackId].filter((id): id is string => !!id)))) {
     const pack = PACKS.find((p) => p.id === packId)
     if (!pack) throw new Error(`Pack introuvable : ${packId}`)
     // Packs déjà importés : on remplace leurs questions, pour que le Grand Jeu joue exactement le contenu du fichier
@@ -47,7 +48,7 @@ async function importGrandJeu(gj: GrandJeuFile, themes: Theme[]) {
     cardsEnabled: gj.cardsEnabled,
     gjFile: gj.id,
     slots: gj.slots.map((s) => {
-      const t = byPack.get(s.packId)!
+      const t = s.packId ? byPack.get(s.packId)! : { id: ALL_THEMES, name: '🌍 Toutes les questions' }
       const x = s.extraPackId ? byPack.get(s.extraPackId) : undefined
       return {
         module: s.module,

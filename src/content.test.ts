@@ -89,6 +89,8 @@ describe('grands jeux prêts à l’emploi', () => {
     it(`${gj.id} : chaque jeu pointe vers un pack de la bonne banque`, () => {
       expect(gj.slots.length).toBeGreaterThan(0)
       for (const s of gj.slots) {
+        // Sans pack : toutes les questions du jeu, tirées au hasard
+        if (!s.packId) continue
         const pack = packs.find((p) => p.id === s.packId)
         expect(pack, s.packId).toBeTruthy()
         expect(bankOf(s.module), `${s.packId} pour ${s.module}`).toBe(pack!.module)
