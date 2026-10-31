@@ -5,19 +5,6 @@
   "description": "animaux, objets et monuments (vraies photos)",
   "questions": [
     {
-      "text": "Quelle hauteur fait un hippopotame adulte au garrot ?",
-      "refName": "Un humain",
-      "refHeight": 1.75,
-      "refEmoji": "🧍",
-      "refImage": "/echelle/humain.webp",
-      "refLength": false,
-      "targetName": "Hippopotame",
-      "answer": 1.5,
-      "targetEmoji": "❓",
-      "targetImage": "/echelle/hippopotame.webp",
-      "targetLength": false
-    },
-    {
       "text": "Quelle hauteur fait un ours polaire à quatre pattes ?",
       "refName": "Un humain",
       "refHeight": 1.75,
@@ -42,6 +29,32 @@
       "targetEmoji": "❓",
       "targetImage": "/echelle/velo.webp",
       "targetLength": true
+    },
+    {
+      "text": "Quelle hauteur fait un bison d'Amérique au sommet de sa bosse ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "refImage": "/echelle/humain.webp",
+      "refLength": false,
+      "targetName": "Bison d'Amérique",
+      "answer": 1.9,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/bison.webp",
+      "targetLength": false
+    },
+    {
+      "text": "Quelle hauteur fait un dromadaire, tête levée ?",
+      "refName": "Un humain",
+      "refHeight": 1.75,
+      "refEmoji": "🧍",
+      "refImage": "/echelle/humain.webp",
+      "refLength": false,
+      "targetName": "Dromadaire",
+      "answer": 2.1,
+      "targetEmoji": "❓",
+      "targetImage": "/echelle/dromadaire.webp",
+      "targetLength": false
     }
   ]
 }

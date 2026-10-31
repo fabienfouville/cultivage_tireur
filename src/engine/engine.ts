@@ -268,6 +268,9 @@ export async function startBlock(sid: string, opts: BlockOptions) {
   if (opts.extra?.themeId && opts.extra.count > 0) {
     const extra = await pickQuestions(opts.extra.themeId, opts.module, opts.extra.count, 'keep')
     questions.push(...extra.filter((q) => !questions.some((x) => x.id === q.id)))
+    // Jeu à difficulté croissante (100% Logique) : le bonus prend sa place selon sa difficulté
+    const rank = getModule(opts.module).orderBy
+    if (rank) questions.sort((a, b) => rank(a) - rank(b))
   }
   if (!questions.length) throw new Error(all ? 'Aucune question pour ce jeu' : 'Ce thème ne contient aucune question')
   // Toutes les questions en Géoloc : chaque question garde la carte de son thème

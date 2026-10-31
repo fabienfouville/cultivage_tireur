@@ -14,7 +14,8 @@
       "answer": 65,
       "targetEmoji": "❓",
       "targetImage": "/echelle/tower-bridge.webp",
-      "targetLength": false
+      "targetLength": false,
+      "order": 1
     },
     {
       "text": "Quelle longueur peut atteindre un orque mâle ?",
@@ -27,7 +28,22 @@
       "answer": 8,
       "targetEmoji": "❓",
       "targetImage": "/echelle/orque.webp",
-      "targetLength": true
+      "targetLength": true,
+      "order": 2
+    },
+    {
+      "text": "Quelle taille fait Ronflex ?",
+      "refName": "Pikachu",
+      "refHeight": 0.4,
+      "refEmoji": "⚡",
+      "targetName": "Ronflex",
+      "answer": 2.1,
+      "targetEmoji": "😴",
+      "refLength": false,
+      "refImage": "/echelle/pikachu.webp",
+      "targetLength": false,
+      "targetImage": "/echelle/ronflex.webp",
+      "order": 3
     },
     {
       "text": "Quelle hauteur fait un rhinocéros blanc au garrot ?",
@@ -40,33 +56,22 @@
       "answer": 1.8,
       "targetEmoji": "❓",
       "targetImage": "/echelle/rhinoceros.webp",
-      "targetLength": false
+      "targetLength": false,
+      "order": 4
     },
     {
-      "text": "Quelle hauteur fait un bison d'Amérique au sommet de sa bosse ?",
+      "text": "Quelle hauteur fait un hippopotame adulte au garrot ?",
       "refName": "Un humain",
       "refHeight": 1.75,
       "refEmoji": "🧍",
       "refImage": "/echelle/humain.webp",
       "refLength": false,
-      "targetName": "Bison d'Amérique",
-      "answer": 1.9,
+      "targetName": "Hippopotame",
+      "answer": 1.5,
       "targetEmoji": "❓",
-      "targetImage": "/echelle/bison.webp",
-      "targetLength": false
-    },
-    {
-      "text": "Quelle hauteur fait un dromadaire, tête levée ?",
-      "refName": "Un humain",
-      "refHeight": 1.75,
-      "refEmoji": "🧍",
-      "refImage": "/echelle/humain.webp",
-      "refLength": false,
-      "targetName": "Dromadaire",
-      "answer": 2.1,
-      "targetEmoji": "❓",
-      "targetImage": "/echelle/dromadaire.webp",
-      "targetLength": false
+      "targetImage": "/echelle/hippopotame.webp",
+      "targetLength": false,
+      "order": 5
     }
   ]
 }

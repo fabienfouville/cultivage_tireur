@@ -16,7 +16,8 @@
         "1913",
         "1938",
         "1980"
-      ]
+      ],
+      "order": 1
     },
     {
       "text": "Explorateurs",
@@ -31,7 +32,8 @@
         "1498",
         "1519",
         "1770"
-      ]
+      ],
+      "order": 2
     },
     {
       "text": "Films de Spielberg",
@@ -46,22 +48,24 @@
         "1993",
         "1998",
         "2012"
-      ]
+      ],
+      "order": 3
     },
     {
-      "text": "Écouter de la musique",
+      "text": "Création de marques",
       "events": [
-        "Phonographe d'Edison",
-        "Disque vinyle 33 tours",
-        "Cassette audio",
-        "iPod"
+        "Peugeot",
+        "Coca-Cola",
+        "Apple",
+        "Amazon"
       ],
       "dates": [
-        "1877",
-        "1948",
-        "1963",
-        "2001"
-      ]
+        "1810",
+        "1886",
+        "1976",
+        "1994"
+      ],
+      "order": 4
     }
   ]
 }

@@ -25,11 +25,6 @@
     },
     {
       "text": "Quel est ce Pokémon ?",
-      "imageUrl": "/pixel/ectoplasme.jpg",
-      "answerHint": "Ectoplasma/Ectoplasme/Gengar"
-    },
-    {
-      "text": "Quel est ce Pokémon ?",
       "imageUrl": "/pixel/lucario.jpg",
       "answerHint": "Lucario/Lucario"
     },

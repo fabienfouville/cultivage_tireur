@@ -5,19 +5,6 @@
   "description": "tailles officielles du Pokédex",
   "questions": [
     {
-      "text": "Quelle taille fait Ronflex ?",
-      "refName": "Pikachu",
-      "refHeight": 0.4,
-      "refEmoji": "⚡",
-      "targetName": "Ronflex",
-      "answer": 2.1,
-      "targetEmoji": "😴",
-      "refLength": false,
-      "refImage": "/echelle/pikachu.webp",
-      "targetLength": false,
-      "targetImage": "/echelle/ronflex.webp"
-    },
-    {
       "text": "Quelle taille fait Dracaufeu ?",
       "refName": "Pikachu",
       "refHeight": 0.4,

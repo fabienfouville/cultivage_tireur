@@ -5,21 +5,6 @@
   "questions": [
     {
       "text": "Quel est ce tableau ?",
-      "imageUrl": "/pixel/nuit-etoilee.jpg",
-      "answerHint": "La Nuit étoilée (Van Gogh)/La Nuit étoilée/Nuit étoilée"
-    },
-    {
-      "text": "Quel est ce tableau ?",
-      "imageUrl": "/pixel/jeune-fille-perle.jpg",
-      "answerHint": "La Jeune Fille à la perle (Vermeer)/La Jeune Fille à la perle/Jeune fille à la perle"
-    },
-    {
-      "text": "Quel est ce tableau ?",
-      "imageUrl": "/pixel/le-cri.jpg",
-      "answerHint": "Le Cri (Munch)/Le Cri/Cri"
-    },
-    {
-      "text": "Quel est ce tableau ?",
       "imageUrl": "/pixel/grande-vague.jpg",
       "answerHint": "La Grande Vague de Kanagawa (Hokusai)/La Grande Vague/Grande Vague de Kanagawa/La Vague"
     },

@@ -49,21 +49,6 @@
       ]
     },
     {
-      "text": "Création de marques",
-      "events": [
-        "Peugeot",
-        "Coca-Cola",
-        "Apple",
-        "Amazon"
-      ],
-      "dates": [
-        "1810",
-        "1886",
-        "1976",
-        "1994"
-      ]
-    },
-    {
       "text": "Technologie à la maison",
       "events": [
         "Télévision couleur en France",
@@ -136,6 +121,21 @@
         "1981",
         "1990",
         "2012"
+      ]
+    },
+    {
+      "text": "Écouter de la musique",
+      "events": [
+        "Phonographe d'Edison",
+        "Disque vinyle 33 tours",
+        "Cassette audio",
+        "iPod"
+      ],
+      "dates": [
+        "1877",
+        "1948",
+        "1963",
+        "2001"
       ]
     }
   ]

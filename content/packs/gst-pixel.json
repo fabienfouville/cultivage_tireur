@@ -4,29 +4,34 @@
   "theme": "Grande soirée des Tireurs · Pixel drapeaux",
   "questions": [
     {
-      "text": "Quel est ce drapeau ?",
-      "imageUrl": "/pixel/drapeaux/br.jpg",
-      "answerHint": "Brésil/Bresil"
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/pikachu.jpg",
+      "answerHint": "Pikachu",
+      "order": 1
     },
     {
-      "text": "Quel est ce drapeau ?",
-      "imageUrl": "/pixel/drapeaux/jm.jpg",
-      "answerHint": "Jamaïque/Jamaique"
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/le-cri.jpg",
+      "answerHint": "Le Cri (Munch)/Le Cri/Cri",
+      "order": 2
     },
     {
-      "text": "Quel est ce drapeau ?",
-      "imageUrl": "/pixel/drapeaux/np.jpg",
-      "answerHint": "Népal/Nepal"
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/nuit-etoilee.jpg",
+      "answerHint": "La Nuit étoilée (Van Gogh)/La Nuit étoilée/Nuit étoilée",
+      "order": 3
     },
     {
-      "text": "Quel est ce drapeau ?",
-      "imageUrl": "/pixel/drapeaux/ke.jpg",
-      "answerHint": "Kenya"
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/ectoplasme.jpg",
+      "answerHint": "Ectoplasma/Ectoplasme/Gengar",
+      "order": 4
     },
     {
-      "text": "Quel est ce drapeau ?",
-      "imageUrl": "/pixel/drapeaux/kr.jpg",
-      "answerHint": "Corée du Sud/Coree du Sud/Corée"
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/jeune-fille-perle.jpg",
+      "answerHint": "La Jeune Fille à la perle (Vermeer)/La Jeune Fille à la perle/Jeune fille à la perle",
+      "order": 5
     }
   ]
 }
