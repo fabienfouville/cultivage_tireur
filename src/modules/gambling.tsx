@@ -98,7 +98,8 @@ export const gambling: ModuleDef = {
     const kept = revealed ? bets[round.solution?.correct] ?? 0 : 0
     const change = (i: number, d: number) => {
       const n = [...bets]
-      n[i] = Math.max(0, n[i] + d)
+      // ±10 : on pose ce qui reste s'il en reste moins de 10, on retire tout s'il y en a moins de 10
+      n[i] = Math.max(0, n[i] + (d > 0 ? Math.min(d, left) : d))
       if (sum(n) > have) return
       if (keepOneEmpty && n.every((b) => b > 0)) return
       place(n)
@@ -149,6 +150,11 @@ export const gambling: ModuleDef = {
                 {CHOICE_SHAPES[i]} {c}
               </span>
               <span className="bet-ctrl">
+                {have >= 20 && (
+                  <button type="button" className="bet-ten" disabled={locked || revealed || bets[i] === 0} onClick={() => change(i, -10)}>
+                    −10
+                  </button>
+                )}
                 <button type="button" disabled={locked || revealed || bets[i] === 0} onClick={() => change(i, -1)}>
                   −
                 </button>
@@ -156,6 +162,11 @@ export const gambling: ModuleDef = {
                 <button type="button" disabled={locked || revealed || left <= 0} onClick={() => change(i, +1)}>
                   +
                 </button>
+                {have >= 20 && (
+                  <button type="button" className="bet-ten" disabled={locked || revealed || left <= 0} onClick={() => change(i, +10)}>
+                    +10
+                  </button>
+                )}
                 <button type="button" className="bet-all" disabled={locked || revealed || left <= 0} onClick={() => allIn(i)}>
                   Tout
                 </button>

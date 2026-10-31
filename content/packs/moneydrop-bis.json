@@ -1,0 +1,12 @@
+{
+  "id": "moneydrop-bis",
+  "module": "qcm",
+  "theme": "💰 MONEY DROP BIS",
+  "questions": [
+    { "text": "Combien de cœurs a une pieuvre ?", "answers": ["1", "2", "3", "4"], "correct": 2, "answerHint": "3/trois", "order": 1 },
+    { "text": "Quelle est la capitale du Mozambique ?", "answers": ["Maputo", "Luanda", "Harare", "Lusaka"], "correct": 0, "answerHint": "Maputo", "order": 2 },
+    { "text": "Combien de touches compte un piano classique ?", "answers": ["76", "88", "96", "102"], "correct": 1, "answerHint": "88", "order": 3 },
+    { "text": "En quelle année le Moulin Rouge a-t-il ouvert ses portes ?", "answers": ["1871", "1900", "1889", "1925"], "correct": 2, "answerHint": "1889", "order": 4 },
+    { "text": "Quel monument de Bruxelles représente un cristal de fer agrandi 165 milliards de fois ?", "answers": ["Le Manneken-Pis", "La Grand-Place", "Le Mont des Arts", "L'Atomium"], "correct": 3, "answerHint": "L'Atomium/Atomium", "order": 5 }
+  ]
+}

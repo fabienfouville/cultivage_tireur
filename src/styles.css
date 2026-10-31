@@ -622,6 +622,7 @@ details > summary {
 .bet {
   --c: #888;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
@@ -1754,6 +1755,10 @@ details > summary {
 .game-intro-compact .game-intro-rules {
   font-size: 17px;
   padding: 0 8px;
+}
+
+.bet-ctrl .bet-ten {
+  font-size: 15px;
 }
 
 .bet-ctrl .bet-all {
