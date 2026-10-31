@@ -1,10 +1,10 @@
 {
   "id": "grande-soiree-tireurs",
   "name": "Grande soirée des Tireurs",
-  "description": "≈ 2 heures, 12 jeux, une question « Spécial Tireurs » à la fin de la plupart des jeux, finale Money Drop à 100 jetons",
+  "description": "≈ 2 heures, 11 jeux, une question « Spécial Tireurs » à la fin de la plupart des jeux, finale Money Drop à 100 jetons",
   "cardsEnabled": false,
   "slots": [
-    { "module": "qcm", "packId": "gst-qcm", "questionCount": 6, "timer": 20, "extraPackId": "tireurs-qcm", "extraCount": 1 },
+    { "module": "duo-carre-cash", "packId": "gst-duo", "questionCount": 5, "timer": 30, "extraPackId": "tireurs-duo", "extraCount": 1 },
     { "module": "vf-survie", "packId": "gst-vf", "questionCount": 10, "timer": 12, "extraPackId": "tireurs-vf", "extraCount": 1 },
     { "module": "estimation", "packId": "gst-estimation", "questionCount": 5, "timer": 25, "extraPackId": "tireurs-estimation", "extraCount": 1 },
     { "module": "geoloc", "packId": "gst-geoloc", "questionCount": 5, "timer": 30, "extraPackId": "tireurs-geoloc", "extraCount": 1 },
@@ -12,7 +12,6 @@
     { "module": "echelle", "packId": "gst-echelle", "questionCount": 5, "timer": 25 },
     { "module": "chronologie", "packId": "gst-chrono", "questionCount": 4, "timer": 40, "extraPackId": "tireurs-chrono", "extraCount": 1 },
     { "module": "pixel", "packId": "gst-pixel", "questionCount": 5, "timer": 30, "extraPackId": "tireurs-pixel", "extraCount": 1 },
-    { "module": "duo-carre-cash", "packId": "gst-duo", "questionCount": 5, "timer": 30, "extraPackId": "tireurs-duo", "extraCount": 1 },
     { "module": "quisuisje", "packId": "gst-qsj", "questionCount": 3, "timer": 50, "extraPackId": "tireurs-qsj", "extraCount": 1 },
     { "module": "logique", "packId": "gst-logique", "questionCount": 5, "timer": 45, "extraPackId": "tireurs-logique", "extraCount": 1 },
     { "module": "gambling", "packId": "gst-moneydrop", "questionCount": 7, "timer": 30, "extraPackId": "tireurs-moneydrop", "extraCount": 1, "tokens": 100 }
