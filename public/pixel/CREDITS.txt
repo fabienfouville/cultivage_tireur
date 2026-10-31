@@ -26,6 +26,7 @@ Grande soirée des Tireurs :
 - logo-heineken.jpg : logo Heineken (marque déposée), via Wikimedia Commons.
 
 Packs Pixel · Mix (public/pixel/mix/) :
-- Tableaux : Wikimedia Commons (œuvres du domaine public).
+- Tableaux et monuments : Wikimedia Commons (œuvres du domaine public, photos sous licence libre).
+- Drapeaux : flagcdn.com (domaine public).
 - Logos : Wikimedia Commons (marques déposées, recadrées sur le symbole).
 - Affiches de films : Wikipédia (usage non commercial, quiz privé), recadrées pour cacher le titre.

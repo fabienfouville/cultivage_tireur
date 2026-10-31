@@ -1,0 +1,107 @@
+{
+  "id": "pixel-mix-2",
+  "module": "pixel",
+  "theme": "Pixel · Mix 2 (tableaux, monuments, drapeaux)",
+  "questions": [
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/mix/flag-gb-sct.jpg",
+      "answerHint": "Écosse"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/mix/tableau-arnolfini.jpg",
+      "answerHint": "Les Époux Arnolfini/Époux Arnolfini/Arnolfini"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/mix/flag-is.jpg",
+      "answerHint": "Islande"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/mix/tableau-moulin-galette.jpg",
+      "answerHint": "Bal du moulin de la Galette/Moulin de la Galette"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/mix/tableau-olympia.jpg",
+      "answerHint": "Olympia"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/mix/flag-fi.jpg",
+      "answerHint": "Finlande"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/mix/tableau-dame-hermine.jpg",
+      "answerHint": "La Dame à l'hermine/Dame à l'hermine"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/mix/tableau-grande-jatte.jpg",
+      "answerHint": "Un dimanche après-midi à l'île de la Grande Jatte/La Grande Jatte"
+    },
+    {
+      "text": "Quel est ce monument ?",
+      "imageUrl": "/pixel/mix/monument-tour-eiffel.jpg",
+      "answerHint": "La tour Eiffel/Tour Eiffel"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/mix/flag-hr.jpg",
+      "answerHint": "Croatie"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/mix/flag-lb.jpg",
+      "answerHint": "Liban"
+    },
+    {
+      "text": "Quel est ce monument ?",
+      "imageUrl": "/pixel/mix/monument-liberte.jpg",
+      "answerHint": "La statue de la Liberté/Statue de la Liberté"
+    },
+    {
+      "text": "Quel est ce monument ?",
+      "imageUrl": "/pixel/mix/monument-taj-mahal.jpg",
+      "answerHint": "Le Taj Mahal/Taj Mahal"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/mix/tableau-tour-babel.jpg",
+      "answerHint": "La Tour de Babel/Tour de Babel"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/mix/flag-bt.jpg",
+      "answerHint": "Bhoutan"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/mix/flag-cl.jpg",
+      "answerHint": "Chili"
+    },
+    {
+      "text": "Quel est ce monument ?",
+      "imageUrl": "/pixel/mix/monument-colisee.jpg",
+      "answerHint": "Le Colisée/Colisée"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/mix/tableau-jardin-delices.jpg",
+      "answerHint": "Le Jardin des délices/Jardin des délices"
+    },
+    {
+      "text": "Quel est ce drapeau ?",
+      "imageUrl": "/pixel/mix/flag-cu.jpg",
+      "answerHint": "Cuba"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/mix/tableau-ronde-de-nuit.jpg",
+      "answerHint": "La Ronde de nuit/Ronde de nuit"
+    }
+  ]
+}
