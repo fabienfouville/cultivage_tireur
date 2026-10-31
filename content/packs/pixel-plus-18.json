@@ -1,0 +1,42 @@
+{
+  "id": "pixel-plus-18",
+  "module": "pixel",
+  "theme": "Pixel · +18 🔞",
+  "questions": [
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/x18-tinder.jpg",
+      "answerHint": "Tinder"
+    },
+    {
+      "text": "Quelle est cette boisson ?",
+      "imageUrl": "/pixel/mix/x18-jagermeister.jpg",
+      "answerHint": "Jägermeister/Jager"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/x18-playboy.jpg",
+      "answerHint": "Playboy"
+    },
+    {
+      "text": "Quelle est cette boisson ?",
+      "imageUrl": "/pixel/mix/x18-captain-morgan.jpg",
+      "answerHint": "Captain Morgan"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/x18-durex.jpg",
+      "answerHint": "Durex"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/x18-absolut.jpg",
+      "answerHint": "Absolut/Absolut Vodka"
+    },
+    {
+      "text": "Quelle est cette boisson ?",
+      "imageUrl": "/pixel/mix/x18-bacardi.jpg",
+      "answerHint": "Bacardi"
+    }
+  ]
+}
