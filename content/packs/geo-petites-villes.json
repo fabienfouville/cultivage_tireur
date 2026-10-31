@@ -1,0 +1,908 @@
+{
+  "id": "geo-petites-villes",
+  "module": "geoloc",
+  "theme": "Géoloc · Petites villes de France (moins de 10 000 hab.)",
+  "mapId": "france",
+  "questions": [
+    {
+      "text": "Où se trouve Luzy ?",
+      "answerHint": "Luzy — Nièvre (58), 2 006 habitants",
+      "lat": 46.7986,
+      "lng": 3.9929
+    },
+    {
+      "text": "Où se trouve Saint-Benoît-sur-Loire ?",
+      "answerHint": "Saint-Benoît-sur-Loire — Loiret (45), 1 982 habitants",
+      "lat": 47.81,
+      "lng": 2.3195
+    },
+    {
+      "text": "Où se trouve La Ville-Dieu-du-Temple ?",
+      "answerHint": "La Ville-Dieu-du-Temple — Tarn-et-Garonne (82), 3 358 habitants",
+      "lat": 44.0417,
+      "lng": 1.221
+    },
+    {
+      "text": "Où se trouve Saint-Héand ?",
+      "answerHint": "Saint-Héand — Loire (42), 3 665 habitants",
+      "lat": 45.5317,
+      "lng": 4.3841
+    },
+    {
+      "text": "Où se trouve Nogent-sur-Seine ?",
+      "answerHint": "Nogent-sur-Seine — Aube (10), 5 537 habitants",
+      "lat": 48.4978,
+      "lng": 3.4943
+    },
+    {
+      "text": "Où se trouve Langrune-sur-Mer ?",
+      "answerHint": "Langrune-sur-Mer — Calvados (14), 1 916 habitants",
+      "lat": 49.3136,
+      "lng": -0.3805
+    },
+    {
+      "text": "Où se trouve Argancy ?",
+      "answerHint": "Argancy — Moselle (57), 1 381 habitants",
+      "lat": 49.2003,
+      "lng": 6.2141
+    },
+    {
+      "text": "Où se trouve Saint-Geniès-de-Fontedit ?",
+      "answerHint": "Saint-Geniès-de-Fontedit — Hérault (34), 1 722 habitants",
+      "lat": 43.4685,
+      "lng": 3.1734
+    },
+    {
+      "text": "Où se trouve Guise ?",
+      "answerHint": "Guise — Aisne (02), 4 490 habitants",
+      "lat": 49.8973,
+      "lng": 3.6229
+    },
+    {
+      "text": "Où se trouve La Bâtie-Montgascon ?",
+      "answerHint": "La Bâtie-Montgascon — Isère (38), 2 035 habitants",
+      "lat": 45.5744,
+      "lng": 5.5391
+    },
+    {
+      "text": "Où se trouve Sainte-Mère-Église ?",
+      "answerHint": "Sainte-Mère-Église — Manche (50), 2 896 habitants",
+      "lat": 49.4205,
+      "lng": -1.2967
+    },
+    {
+      "text": "Où se trouve Villemaréchal ?",
+      "answerHint": "Villemaréchal — Seine-et-Marne (77), 1 055 habitants",
+      "lat": 48.2731,
+      "lng": 2.8784
+    },
+    {
+      "text": "Où se trouve Villeneuve-Saint-Denis ?",
+      "answerHint": "Villeneuve-Saint-Denis — Seine-et-Marne (77), 1 369 habitants",
+      "lat": 48.8126,
+      "lng": 2.7929
+    },
+    {
+      "text": "Où se trouve Mamers ?",
+      "answerHint": "Mamers — Sarthe (72), 4 996 habitants",
+      "lat": 48.3554,
+      "lng": 0.3707
+    },
+    {
+      "text": "Où se trouve Seillons-Source-d'Argens ?",
+      "answerHint": "Seillons-Source-d'Argens — Var (83), 2 818 habitants",
+      "lat": 43.5156,
+      "lng": 5.8775
+    },
+    {
+      "text": "Où se trouve Huahine ?",
+      "answerHint": "Huahine — Polynésie française (987), 6 263 habitants",
+      "lat": -16.7517,
+      "lng": -150.996
+    },
+    {
+      "text": "Où se trouve Auchy-les-Mines ?",
+      "answerHint": "Auchy-les-Mines — Pas-de-Calais (62), 4 625 habitants",
+      "lat": 50.5041,
+      "lng": 2.7812
+    },
+    {
+      "text": "Où se trouve Hambye ?",
+      "answerHint": "Hambye — Manche (50), 1 072 habitants",
+      "lat": 48.9483,
+      "lng": -1.2625
+    },
+    {
+      "text": "Où se trouve Horbourg-Wihr ?",
+      "answerHint": "Horbourg-Wihr — Haut-Rhin (68), 6 199 habitants",
+      "lat": 48.0827,
+      "lng": 7.407
+    },
+    {
+      "text": "Où se trouve Orgères-en-Beauce ?",
+      "answerHint": "Orgères-en-Beauce — Eure-et-Loir (28), 1 007 habitants",
+      "lat": 48.1376,
+      "lng": 1.6865
+    },
+    {
+      "text": "Où se trouve Gorron ?",
+      "answerHint": "Gorron — Mayenne (53), 2 440 habitants",
+      "lat": 48.4209,
+      "lng": -0.7969
+    },
+    {
+      "text": "Où se trouve Pouligny-Saint-Pierre ?",
+      "answerHint": "Pouligny-Saint-Pierre — Indre (36), 1 023 habitants",
+      "lat": 46.6866,
+      "lng": 1.0529
+    },
+    {
+      "text": "Où se trouve Scy-Chazelles ?",
+      "answerHint": "Scy-Chazelles — Moselle (57), 2 753 habitants",
+      "lat": 49.1148,
+      "lng": 6.1214
+    },
+    {
+      "text": "Où se trouve Saint-Zacharie ?",
+      "answerHint": "Saint-Zacharie — Var (83), 5 879 habitants",
+      "lat": 43.3749,
+      "lng": 5.7164
+    },
+    {
+      "text": "Où se trouve Le Breil-sur-Mérize ?",
+      "answerHint": "Le Breil-sur-Mérize — Sarthe (72), 1 552 habitants",
+      "lat": 47.996,
+      "lng": 0.5031
+    },
+    {
+      "text": "Où se trouve Saint-Sorlin-en-Valloire ?",
+      "answerHint": "Saint-Sorlin-en-Valloire — Drôme (26), 2 251 habitants",
+      "lat": 45.2806,
+      "lng": 4.9629
+    },
+    {
+      "text": "Où se trouve Mirepeix ?",
+      "answerHint": "Mirepeix — Pyrénées-Atlantiques (64), 1 255 habitants",
+      "lat": 43.1953,
+      "lng": -0.2515
+    },
+    {
+      "text": "Où se trouve Fontevraud-l'Abbaye ?",
+      "answerHint": "Fontevraud-l'Abbaye — Maine-et-Loire (49), 1 453 habitants",
+      "lat": 47.1819,
+      "lng": 0.0261
+    },
+    {
+      "text": "Où se trouve Ventiseri ?",
+      "answerHint": "Ventiseri — Haute-Corse (2B), 2 629 habitants",
+      "lat": 41.9386,
+      "lng": 9.3552
+    },
+    {
+      "text": "Où se trouve Saint-Denis-la-Chevasse ?",
+      "answerHint": "Saint-Denis-la-Chevasse — Vendée (85), 2 419 habitants",
+      "lat": 46.8332,
+      "lng": -1.3846
+    },
+    {
+      "text": "Où se trouve Cresserons ?",
+      "answerHint": "Cresserons — Calvados (14), 1 068 habitants",
+      "lat": 49.288,
+      "lng": -0.3545
+    },
+    {
+      "text": "Où se trouve Billy-sur-Aisne ?",
+      "answerHint": "Billy-sur-Aisne — Aisne (02), 1 130 habitants",
+      "lat": 49.3555,
+      "lng": 3.3753
+    },
+    {
+      "text": "Où se trouve Cérons ?",
+      "answerHint": "Cérons — Gironde (33), 2 126 habitants",
+      "lat": 44.6268,
+      "lng": -0.3404
+    },
+    {
+      "text": "Où se trouve Jouy-aux-Arches ?",
+      "answerHint": "Jouy-aux-Arches — Moselle (57), 1 430 habitants",
+      "lat": 49.0667,
+      "lng": 6.084
+    },
+    {
+      "text": "Où se trouve Oisseau ?",
+      "answerHint": "Oisseau — Mayenne (53), 1 136 habitants",
+      "lat": 48.3673,
+      "lng": -0.6724
+    },
+    {
+      "text": "Où se trouve Rosselange ?",
+      "answerHint": "Rosselange — Moselle (57), 2 384 habitants",
+      "lat": 49.2673,
+      "lng": 6.0637
+    },
+    {
+      "text": "Où se trouve Challes ?",
+      "answerHint": "Challes — Sarthe (72), 1 156 habitants",
+      "lat": 47.936,
+      "lng": 0.4268
+    },
+    {
+      "text": "Où se trouve Pomponne ?",
+      "answerHint": "Pomponne — Seine-et-Marne (77), 4 215 habitants",
+      "lat": 48.887,
+      "lng": 2.6776
+    },
+    {
+      "text": "Où se trouve Plounéour-Brignogan-plages ?",
+      "answerHint": "Plounéour-Brignogan-plages — Finistère (29), 1 972 habitants",
+      "lat": 48.6519,
+      "lng": -4.3246
+    },
+    {
+      "text": "Où se trouve Bourth ?",
+      "answerHint": "Bourth — Eure (27), 1 191 habitants",
+      "lat": 48.7661,
+      "lng": 0.8082
+    },
+    {
+      "text": "Où se trouve Alzonne ?",
+      "answerHint": "Alzonne — Aude (11), 1 586 habitants",
+      "lat": 43.2646,
+      "lng": 2.1665
+    },
+    {
+      "text": "Où se trouve Baixas ?",
+      "answerHint": "Baixas — Pyrénées-Orientales (66), 2 777 habitants",
+      "lat": 42.744,
+      "lng": 2.8079
+    },
+    {
+      "text": "Où se trouve Ons-en-Bray ?",
+      "answerHint": "Ons-en-Bray — Oise (60), 1 367 habitants",
+      "lat": 49.417,
+      "lng": 1.9212
+    },
+    {
+      "text": "Où se trouve Peipin ?",
+      "answerHint": "Peipin — Alpes-de-Haute-Provence (04), 1 506 habitants",
+      "lat": 44.1407,
+      "lng": 5.9447
+    },
+    {
+      "text": "Où se trouve Bar-sur-Aube ?",
+      "answerHint": "Bar-sur-Aube — Aube (10), 4 665 habitants",
+      "lat": 48.233,
+      "lng": 4.7166
+    },
+    {
+      "text": "Où se trouve Dol-de-Bretagne ?",
+      "answerHint": "Dol-de-Bretagne — Ille-et-Vilaine (35), 5 829 habitants",
+      "lat": 48.5338,
+      "lng": -1.7467
+    },
+    {
+      "text": "Où se trouve Ballan-Miré ?",
+      "answerHint": "Ballan-Miré — Indre-et-Loire (37), 8 477 habitants",
+      "lat": 47.3393,
+      "lng": 0.5997
+    },
+    {
+      "text": "Où se trouve La Vicomté-sur-Rance ?",
+      "answerHint": "La Vicomté-sur-Rance — Côtes-d'Armor (22), 1 149 habitants",
+      "lat": 48.4882,
+      "lng": -1.9834
+    },
+    {
+      "text": "Où se trouve Roppe ?",
+      "answerHint": "Roppe — Territoire de Belfort (90), 1 041 habitants",
+      "lat": 47.6773,
+      "lng": 6.9073
+    },
+    {
+      "text": "Où se trouve Le Ban-Saint-Martin ?",
+      "answerHint": "Le Ban-Saint-Martin — Moselle (57), 4 684 habitants",
+      "lat": 49.1232,
+      "lng": 6.1434
+    },
+    {
+      "text": "Où se trouve Bétaille ?",
+      "answerHint": "Bétaille — Lot (46), 1 058 habitants",
+      "lat": 44.9439,
+      "lng": 1.7424
+    },
+    {
+      "text": "Où se trouve Cosnac ?",
+      "answerHint": "Cosnac — Corrèze (19), 3 044 habitants",
+      "lat": 45.1301,
+      "lng": 1.5837
+    },
+    {
+      "text": "Où se trouve Hadol ?",
+      "answerHint": "Hadol — Vosges (88), 2 311 habitants",
+      "lat": 48.0845,
+      "lng": 6.4475
+    },
+    {
+      "text": "Où se trouve Missiriac ?",
+      "answerHint": "Missiriac — Morbihan (56), 1 195 habitants",
+      "lat": 47.821,
+      "lng": -2.3598
+    },
+    {
+      "text": "Où se trouve Vernoil-le-Fourrier ?",
+      "answerHint": "Vernoil-le-Fourrier — Maine-et-Loire (49), 1 366 habitants",
+      "lat": 47.3972,
+      "lng": 0.1001
+    },
+    {
+      "text": "Où se trouve Theizé ?",
+      "answerHint": "Theizé — Rhône (69), 1 278 habitants",
+      "lat": 45.9418,
+      "lng": 4.6277
+    },
+    {
+      "text": "Où se trouve Dorlisheim ?",
+      "answerHint": "Dorlisheim — Bas-Rhin (67), 2 636 habitants",
+      "lat": 48.5199,
+      "lng": 7.4761
+    },
+    {
+      "text": "Où se trouve Mareuil-sur-Lay-Dissais ?",
+      "answerHint": "Mareuil-sur-Lay-Dissais — Vendée (85), 2 808 habitants",
+      "lat": 46.5321,
+      "lng": -1.2322
+    },
+    {
+      "text": "Où se trouve Cubjac-Auvézère-Val d'Ans ?",
+      "answerHint": "Cubjac-Auvézère-Val d'Ans — Dordogne (24), 1 127 habitants",
+      "lat": 45.2325,
+      "lng": 0.9623
+    },
+    {
+      "text": "Où se trouve Chabreloche ?",
+      "answerHint": "Chabreloche — Puy-de-Dôme (63), 1 156 habitants",
+      "lat": 45.8723,
+      "lng": 3.7003
+    },
+    {
+      "text": "Où se trouve Chirens ?",
+      "answerHint": "Chirens — Isère (38), 2 546 habitants",
+      "lat": 45.4148,
+      "lng": 5.5587
+    },
+    {
+      "text": "Où se trouve Étriché ?",
+      "answerHint": "Étriché — Maine-et-Loire (49), 1 600 habitants",
+      "lat": 47.6588,
+      "lng": -0.4536
+    },
+    {
+      "text": "Où se trouve Génissac ?",
+      "answerHint": "Génissac — Gironde (33), 2 041 habitants",
+      "lat": 44.8614,
+      "lng": -0.2496
+    },
+    {
+      "text": "Où se trouve Le Croisic ?",
+      "answerHint": "Le Croisic — Loire-Atlantique (44), 4 056 habitants",
+      "lat": 47.2942,
+      "lng": -2.5245
+    },
+    {
+      "text": "Où se trouve Ciboure ?",
+      "answerHint": "Ciboure — Pyrénées-Atlantiques (64), 5 951 habitants",
+      "lat": 43.3764,
+      "lng": -1.6661
+    },
+    {
+      "text": "Où se trouve Sablonceaux ?",
+      "answerHint": "Sablonceaux — Charente-Maritime (17), 1 458 habitants",
+      "lat": 45.7115,
+      "lng": -0.8935
+    },
+    {
+      "text": "Où se trouve Les Échelles ?",
+      "answerHint": "Les Échelles — Savoie (73), 1 286 habitants",
+      "lat": 45.4523,
+      "lng": 5.7437
+    },
+    {
+      "text": "Où se trouve Petit-Noir ?",
+      "answerHint": "Petit-Noir — Jura (39), 1 056 habitants",
+      "lat": 46.9292,
+      "lng": 5.3377
+    },
+    {
+      "text": "Où se trouve Évette-Salbert ?",
+      "answerHint": "Évette-Salbert — Territoire de Belfort (90), 2 029 habitants",
+      "lat": 47.6693,
+      "lng": 6.8034
+    },
+    {
+      "text": "Où se trouve Viviers-du-Lac ?",
+      "answerHint": "Viviers-du-Lac — Savoie (73), 2 355 habitants",
+      "lat": 45.6503,
+      "lng": 5.8926
+    },
+    {
+      "text": "Où se trouve Labastide-Saint-Georges ?",
+      "answerHint": "Labastide-Saint-Georges — Tarn (81), 2 002 habitants",
+      "lat": 43.699,
+      "lng": 1.8453
+    },
+    {
+      "text": "Où se trouve Saint-Vaury ?",
+      "answerHint": "Saint-Vaury — Creuse (23), 1 718 habitants",
+      "lat": 46.1962,
+      "lng": 1.7422
+    },
+    {
+      "text": "Où se trouve Pont-de-l'Arche ?",
+      "answerHint": "Pont-de-l'Arche — Eure (27), 4 133 habitants",
+      "lat": 49.2911,
+      "lng": 1.1447
+    },
+    {
+      "text": "Où se trouve Léojac ?",
+      "answerHint": "Léojac — Tarn-et-Garonne (82), 1 282 habitants",
+      "lat": 44.0055,
+      "lng": 1.4494
+    },
+    {
+      "text": "Où se trouve Montbronn ?",
+      "answerHint": "Montbronn — Moselle (57), 1 578 habitants",
+      "lat": 48.9965,
+      "lng": 7.3016
+    },
+    {
+      "text": "Où se trouve Void-Vacon ?",
+      "answerHint": "Void-Vacon — Meuse (55), 1 599 habitants",
+      "lat": 48.6788,
+      "lng": 5.6207
+    },
+    {
+      "text": "Où se trouve Gilette ?",
+      "answerHint": "Gilette — Alpes-Maritimes (06), 1 627 habitants",
+      "lat": 43.8436,
+      "lng": 7.1602
+    },
+    {
+      "text": "Où se trouve Origny-Sainte-Benoite ?",
+      "answerHint": "Origny-Sainte-Benoite — Aisne (02), 1 587 habitants",
+      "lat": 49.827,
+      "lng": 3.534
+    },
+    {
+      "text": "Où se trouve Le Temple-sur-Lot ?",
+      "answerHint": "Le Temple-sur-Lot — Lot-et-Garonne (47), 1 118 habitants",
+      "lat": 44.3761,
+      "lng": 0.5203
+    },
+    {
+      "text": "Où se trouve Saint-Vincent-de-Mercuze ?",
+      "answerHint": "Saint-Vincent-de-Mercuze — Isère (38), 1 532 habitants",
+      "lat": 45.374,
+      "lng": 5.957
+    },
+    {
+      "text": "Où se trouve Neuville-Saint-Vaast ?",
+      "answerHint": "Neuville-Saint-Vaast — Pas-de-Calais (62), 1 628 habitants",
+      "lat": 50.3566,
+      "lng": 2.754
+    },
+    {
+      "text": "Où se trouve Plonéour-Lanvern ?",
+      "answerHint": "Plonéour-Lanvern — Finistère (29), 6 452 habitants",
+      "lat": 47.9066,
+      "lng": -4.2678
+    },
+    {
+      "text": "Où se trouve Plaintel ?",
+      "answerHint": "Plaintel — Côtes-d'Armor (22), 4 602 habitants",
+      "lat": 48.4054,
+      "lng": -2.8072
+    },
+    {
+      "text": "Où se trouve Triaize ?",
+      "answerHint": "Triaize — Vendée (85), 1 071 habitants",
+      "lat": 46.3766,
+      "lng": -1.2052
+    },
+    {
+      "text": "Où se trouve Decize ?",
+      "answerHint": "Decize — Nièvre (58), 4 932 habitants",
+      "lat": 46.809,
+      "lng": 3.4695
+    },
+    {
+      "text": "Où se trouve Candas ?",
+      "answerHint": "Candas — Somme (80), 1 035 habitants",
+      "lat": 50.0992,
+      "lng": 2.282
+    },
+    {
+      "text": "Où se trouve Charbonnières-les-Bains ?",
+      "answerHint": "Charbonnières-les-Bains — Rhône (69), 5 383 habitants",
+      "lat": 45.7792,
+      "lng": 4.743
+    },
+    {
+      "text": "Où se trouve Coteaux du Lizon ?",
+      "answerHint": "Coteaux du Lizon — Jura (39), 2 130 habitants",
+      "lat": 46.4133,
+      "lng": 5.7985
+    },
+    {
+      "text": "Où se trouve Varois-et-Chaignot ?",
+      "answerHint": "Varois-et-Chaignot — Côte-d'Or (21), 2 094 habitants",
+      "lat": 47.3558,
+      "lng": 5.129
+    },
+    {
+      "text": "Où se trouve Chauvé ?",
+      "answerHint": "Chauvé — Loire-Atlantique (44), 3 070 habitants",
+      "lat": 47.1602,
+      "lng": -2.0132
+    },
+    {
+      "text": "Où se trouve Castelnau-de-Lévis ?",
+      "answerHint": "Castelnau-de-Lévis — Tarn (81), 1 603 habitants",
+      "lat": 43.9426,
+      "lng": 2.071
+    },
+    {
+      "text": "Où se trouve Couffé ?",
+      "answerHint": "Couffé — Loire-Atlantique (44), 2 535 habitants",
+      "lat": 47.3873,
+      "lng": -1.2853
+    },
+    {
+      "text": "Où se trouve Laiz ?",
+      "answerHint": "Laiz — Ain (01), 1 293 habitants",
+      "lat": 46.2462,
+      "lng": 4.9006
+    },
+    {
+      "text": "Où se trouve Ax-les-Thermes ?",
+      "answerHint": "Ax-les-Thermes — Ariège (09), 1 285 habitants",
+      "lat": 42.6841,
+      "lng": 1.8192
+    },
+    {
+      "text": "Où se trouve Tourneville-sur-Mer ?",
+      "answerHint": "Tourneville-sur-Mer — Manche (50), 1 666 habitants",
+      "lat": 48.9529,
+      "lng": -1.5302
+    },
+    {
+      "text": "Où se trouve Arzacq-Arraziguet ?",
+      "answerHint": "Arzacq-Arraziguet — Pyrénées-Atlantiques (64), 1 077 habitants",
+      "lat": 43.5425,
+      "lng": -0.4299
+    },
+    {
+      "text": "Où se trouve Briatexte ?",
+      "answerHint": "Briatexte — Tarn (81), 1 938 habitants",
+      "lat": 43.747,
+      "lng": 1.9227
+    },
+    {
+      "text": "Où se trouve Izel-lès-Équerchin ?",
+      "answerHint": "Izel-lès-Équerchin — Pas-de-Calais (62), 1 040 habitants",
+      "lat": 50.363,
+      "lng": 2.9446
+    },
+    {
+      "text": "Où se trouve Saint-Paul-de-Varax ?",
+      "answerHint": "Saint-Paul-de-Varax — Ain (01), 1 634 habitants",
+      "lat": 46.0949,
+      "lng": 5.1309
+    },
+    {
+      "text": "Où se trouve Val-Cenis ?",
+      "answerHint": "Val-Cenis — Savoie (73), 2 112 habitants",
+      "lat": 45.2764,
+      "lng": 6.8916
+    },
+    {
+      "text": "Où se trouve Entraigues-sur-la-Sorgue ?",
+      "answerHint": "Entraigues-sur-la-Sorgue — Vaucluse (84), 8 913 habitants",
+      "lat": 43.9959,
+      "lng": 4.9347
+    },
+    {
+      "text": "Où se trouve Le Buisson-de-Cadouin ?",
+      "answerHint": "Le Buisson-de-Cadouin — Dordogne (24), 1 965 habitants",
+      "lat": 44.8144,
+      "lng": 0.8885
+    },
+    {
+      "text": "Où se trouve Chaussin ?",
+      "answerHint": "Chaussin — Jura (39), 1 606 habitants",
+      "lat": 46.9743,
+      "lng": 5.4046
+    },
+    {
+      "text": "Où se trouve Serre-les-Sapins ?",
+      "answerHint": "Serre-les-Sapins — Doubs (25), 2 004 habitants",
+      "lat": 47.2383,
+      "lng": 5.9316
+    },
+    {
+      "text": "Où se trouve Duttlenheim ?",
+      "answerHint": "Duttlenheim — Bas-Rhin (67), 3 011 habitants",
+      "lat": 48.5248,
+      "lng": 7.5706
+    },
+    {
+      "text": "Où se trouve Saint-Romain-de-Lerps ?",
+      "answerHint": "Saint-Romain-de-Lerps — Ardèche (07), 1 034 habitants",
+      "lat": 44.9768,
+      "lng": 4.7952
+    },
+    {
+      "text": "Où se trouve Plozévet ?",
+      "answerHint": "Plozévet — Finistère (29), 2 984 habitants",
+      "lat": 47.9793,
+      "lng": -4.4164
+    },
+    {
+      "text": "Où se trouve Estrées-Saint-Denis ?",
+      "answerHint": "Estrées-Saint-Denis — Oise (60), 3 664 habitants",
+      "lat": 49.426,
+      "lng": 2.6305
+    },
+    {
+      "text": "Où se trouve Plonévez-Porzay ?",
+      "answerHint": "Plonévez-Porzay — Finistère (29), 1 781 habitants",
+      "lat": 48.1247,
+      "lng": -4.2387
+    },
+    {
+      "text": "Où se trouve Saint-Cyr-sur-Menthon ?",
+      "answerHint": "Saint-Cyr-sur-Menthon — Ain (01), 1 890 habitants",
+      "lat": 46.2751,
+      "lng": 4.9669
+    },
+    {
+      "text": "Où se trouve Domessin ?",
+      "answerHint": "Domessin — Savoie (73), 2 005 habitants",
+      "lat": 45.5354,
+      "lng": 5.6988
+    },
+    {
+      "text": "Où se trouve Bezannes ?",
+      "answerHint": "Bezannes — Marne (51), 5 039 habitants",
+      "lat": 49.2223,
+      "lng": 3.9915
+    },
+    {
+      "text": "Où se trouve Civray-de-Touraine ?",
+      "answerHint": "Civray-de-Touraine — Indre-et-Loire (37), 1 819 habitants",
+      "lat": 47.3325,
+      "lng": 1.0408
+    },
+    {
+      "text": "Où se trouve Candé ?",
+      "answerHint": "Candé — Maine-et-Loire (49), 2 801 habitants",
+      "lat": 47.5596,
+      "lng": -1.0335
+    },
+    {
+      "text": "Où se trouve Lormaison ?",
+      "answerHint": "Lormaison — Oise (60), 1 247 habitants",
+      "lat": 49.2541,
+      "lng": 2.1055
+    },
+    {
+      "text": "Où se trouve Grendelbruch ?",
+      "answerHint": "Grendelbruch — Bas-Rhin (67), 1 195 habitants",
+      "lat": 48.4779,
+      "lng": 7.3035
+    },
+    {
+      "text": "Où se trouve Gorze ?",
+      "answerHint": "Gorze — Moselle (57), 1 120 habitants",
+      "lat": 49.0597,
+      "lng": 5.9918
+    },
+    {
+      "text": "Où se trouve Abondance ?",
+      "answerHint": "Abondance — Haute-Savoie (74), 1 583 habitants",
+      "lat": 46.2526,
+      "lng": 6.7334
+    },
+    {
+      "text": "Où se trouve Maulévrier-Sainte-Gertrude ?",
+      "answerHint": "Maulévrier-Sainte-Gertrude — Seine-Maritime (76), 1 053 habitants",
+      "lat": 49.555,
+      "lng": 0.7049
+    },
+    {
+      "text": "Où se trouve Nordausques ?",
+      "answerHint": "Nordausques — Pas-de-Calais (62), 1 271 habitants",
+      "lat": 50.8157,
+      "lng": 2.0837
+    },
+    {
+      "text": "Où se trouve Fontaine-le-Comte ?",
+      "answerHint": "Fontaine-le-Comte — Vienne (86), 3 972 habitants",
+      "lat": 46.5265,
+      "lng": 0.2522
+    },
+    {
+      "text": "Où se trouve Tignes ?",
+      "answerHint": "Tignes — Savoie (73), 1 919 habitants",
+      "lat": 45.4744,
+      "lng": 6.9612
+    },
+    {
+      "text": "Où se trouve Céreste-en-Luberon ?",
+      "answerHint": "Céreste-en-Luberon — Alpes-de-Haute-Provence (04), 1 219 habitants",
+      "lat": 43.853,
+      "lng": 5.5883
+    },
+    {
+      "text": "Où se trouve Frénouville ?",
+      "answerHint": "Frénouville — Calvados (14), 2 050 habitants",
+      "lat": 49.1314,
+      "lng": -0.2463
+    },
+    {
+      "text": "Où se trouve Mozac ?",
+      "answerHint": "Mozac — Puy-de-Dôme (63), 3 957 habitants",
+      "lat": 45.8924,
+      "lng": 3.0852
+    },
+    {
+      "text": "Où se trouve Cauffry ?",
+      "answerHint": "Cauffry — Oise (60), 2 649 habitants",
+      "lat": 49.3138,
+      "lng": 2.428
+    },
+    {
+      "text": "Où se trouve Oyeu ?",
+      "answerHint": "Oyeu — Isère (38), 1 106 habitants",
+      "lat": 45.4283,
+      "lng": 5.4787
+    },
+    {
+      "text": "Où se trouve La Chapelle-Saint-Aubin ?",
+      "answerHint": "La Chapelle-Saint-Aubin — Sarthe (72), 2 256 habitants",
+      "lat": 48.0346,
+      "lng": 0.1568
+    },
+    {
+      "text": "Où se trouve Violès ?",
+      "answerHint": "Violès — Vaucluse (84), 1 762 habitants",
+      "lat": 44.1764,
+      "lng": 4.9511
+    },
+    {
+      "text": "Où se trouve Bergues ?",
+      "answerHint": "Bergues — Nord (59), 3 525 habitants",
+      "lat": 50.969,
+      "lng": 2.4342
+    },
+    {
+      "text": "Où se trouve Pontorson ?",
+      "answerHint": "Pontorson — Manche (50), 4 280 habitants",
+      "lat": 48.5612,
+      "lng": -1.462
+    },
+    {
+      "text": "Où se trouve Saint-Caradec ?",
+      "answerHint": "Saint-Caradec — Côtes-d'Armor (22), 1 132 habitants",
+      "lat": 48.1993,
+      "lng": -2.8653
+    },
+    {
+      "text": "Où se trouve Boynes ?",
+      "answerHint": "Boynes — Loiret (45), 1 289 habitants",
+      "lat": 48.1169,
+      "lng": 2.3603
+    },
+    {
+      "text": "Où se trouve Biéville-Beuville ?",
+      "answerHint": "Biéville-Beuville — Calvados (14), 3 840 habitants",
+      "lat": 49.2416,
+      "lng": -0.3381
+    },
+    {
+      "text": "Où se trouve Saint-Alban-d'Ay ?",
+      "answerHint": "Saint-Alban-d'Ay — Ardèche (07), 1 384 habitants",
+      "lat": 45.1862,
+      "lng": 4.6318
+    },
+    {
+      "text": "Où se trouve La Séguinière ?",
+      "answerHint": "La Séguinière — Maine-et-Loire (49), 4 248 habitants",
+      "lat": 47.0794,
+      "lng": -0.9622
+    },
+    {
+      "text": "Où se trouve Beaufort-Orbagna ?",
+      "answerHint": "Beaufort-Orbagna — Jura (39), 1 481 habitants",
+      "lat": 46.5854,
+      "lng": 5.4355
+    },
+    {
+      "text": "Où se trouve Nuaillé-d'Aunis ?",
+      "answerHint": "Nuaillé-d'Aunis — Charente-Maritime (17), 1 279 habitants",
+      "lat": 46.2384,
+      "lng": -0.9264
+    },
+    {
+      "text": "Où se trouve Zudausques ?",
+      "answerHint": "Zudausques — Pas-de-Calais (62), 1 084 habitants",
+      "lat": 50.7555,
+      "lng": 2.1571
+    },
+    {
+      "text": "Où se trouve Sénas ?",
+      "answerHint": "Sénas — Bouches-du-Rhône (13), 6 925 habitants",
+      "lat": 43.7402,
+      "lng": 5.073
+    },
+    {
+      "text": "Où se trouve Gorcy ?",
+      "answerHint": "Gorcy — Meurthe-et-Moselle (54), 2 971 habitants",
+      "lat": 49.5351,
+      "lng": 5.6852
+    },
+    {
+      "text": "Où se trouve Saint-Christophe-du-Bois ?",
+      "answerHint": "Saint-Christophe-du-Bois — Maine-et-Loire (49), 2 828 habitants",
+      "lat": 47.0309,
+      "lng": -0.971
+    },
+    {
+      "text": "Où se trouve Pierric ?",
+      "answerHint": "Pierric — Loire-Atlantique (44), 1 010 habitants",
+      "lat": 47.689,
+      "lng": -1.7816
+    },
+    {
+      "text": "Où se trouve Saint-Georges-de-Reintembault ?",
+      "answerHint": "Saint-Georges-de-Reintembault — Ille-et-Vilaine (35), 1 541 habitants",
+      "lat": 48.5068,
+      "lng": -1.2324
+    },
+    {
+      "text": "Où se trouve La Croix-en-Touraine ?",
+      "answerHint": "La Croix-en-Touraine — Indre-et-Loire (37), 2 543 habitants",
+      "lat": 47.35,
+      "lng": 0.9935
+    },
+    {
+      "text": "Où se trouve Laplume ?",
+      "answerHint": "Laplume — Lot-et-Garonne (47), 1 330 habitants",
+      "lat": 44.1249,
+      "lng": 0.5374
+    },
+    {
+      "text": "Où se trouve Sardieu ?",
+      "answerHint": "Sardieu — Isère (38), 1 193 habitants",
+      "lat": 45.3601,
+      "lng": 5.2192
+    },
+    {
+      "text": "Où se trouve Étreillers ?",
+      "answerHint": "Étreillers — Aisne (02), 1 157 habitants",
+      "lat": 49.8309,
+      "lng": 3.1565
+    },
+    {
+      "text": "Où se trouve Biard ?",
+      "answerHint": "Biard — Vienne (86), 1 910 habitants",
+      "lat": 46.5861,
+      "lng": 0.2952
+    },
+    {
+      "text": "Où se trouve Fretin ?",
+      "answerHint": "Fretin — Nord (59), 3 214 habitants",
+      "lat": 50.5676,
+      "lng": 3.1306
+    }
+  ]
+}
