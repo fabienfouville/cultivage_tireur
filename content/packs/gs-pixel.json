@@ -37,6 +37,11 @@
       "text": "Quel est ce Pokémon ?",
       "imageUrl": "/pixel/mew.jpg",
       "answerHint": "Mew/Mew"
+    },
+    {
+      "text": "Quel est ce Pokémon ?",
+      "imageUrl": "/pixel/ectoplasme.jpg",
+      "answerHint": "Ectoplasma/Ectoplasme/Gengar"
     }
   ]
 }

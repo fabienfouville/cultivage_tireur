@@ -47,6 +47,11 @@
       "text": "Quel est ce tableau ?",
       "imageUrl": "/pixel/glaneuses.jpg",
       "answerHint": "Des glaneuses (Millet)/Les Glaneuses/Des glaneuses"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/le-cri.jpg",
+      "answerHint": "Le Cri (Munch)/Le Cri/Cri"
     }
   ]
 }

@@ -20,3 +20,7 @@ Tableaux célèbres, œuvres du domaine public, reproductions issues de Wikimedi
 Pack Test (pikachu, evoli, ronflex, mewtwo, bulbizarre, magicarpe) : illustrations officielles Pokémon via PokéAPI.
 
 Pack Lancement · drapeaux (public/pixel/drapeaux/) : flagcdn.com (drapeaux nationaux, domaine public).
+
+Grande soirée des Tireurs :
+- affiche-titanic.jpg : affiche de « Titanic » (James Cameron, 1997, 20th Century Fox / Paramount), recadrée, via Wikipédia (usage non commercial, quiz privé).
+- logo-heineken.jpg : logo Heineken (marque déposée), via Wikimedia Commons.

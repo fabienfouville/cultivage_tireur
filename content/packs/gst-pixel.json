@@ -11,20 +11,20 @@
     },
     {
       "text": "Quel est ce tableau ?",
-      "imageUrl": "/pixel/le-cri.jpg",
-      "answerHint": "Le Cri (Munch)/Le Cri/Cri",
+      "imageUrl": "/pixel/nuit-etoilee.jpg",
+      "answerHint": "La Nuit étoilée (Van Gogh)/La Nuit étoilée/Nuit étoilée",
       "order": 2
     },
     {
-      "text": "Quel est ce tableau ?",
-      "imageUrl": "/pixel/nuit-etoilee.jpg",
-      "answerHint": "La Nuit étoilée (Van Gogh)/La Nuit étoilée/Nuit étoilée",
+      "text": "🎯 Spécial Tireurs · Quel est ce logo ?",
+      "imageUrl": "/pixel/tireurs-logo.jpg",
+      "answerHint": "Les Tireurs d'éliste/Tireurs d'éliste/Les Tireurs/Tireurs",
       "order": 3
     },
     {
-      "text": "Quel est ce Pokémon ?",
-      "imageUrl": "/pixel/ectoplasme.jpg",
-      "answerHint": "Ectoplasma/Ectoplasme/Gengar",
+      "text": "De quel film est cette affiche ?",
+      "imageUrl": "/pixel/affiche-titanic.jpg",
+      "answerHint": "Titanic",
       "order": 4
     },
     {
@@ -32,6 +32,12 @@
       "imageUrl": "/pixel/jeune-fille-perle.jpg",
       "answerHint": "La Jeune Fille à la perle (Vermeer)/La Jeune Fille à la perle/Jeune fille à la perle",
       "order": 5
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/logo-heineken.jpg",
+      "answerHint": "Heineken",
+      "order": 6
     }
   ]
 }
