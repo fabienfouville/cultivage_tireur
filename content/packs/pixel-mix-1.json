@@ -1,0 +1,97 @@
+{
+  "id": "pixel-mix-1",
+  "module": "pixel",
+  "theme": "Pixel · Mix 1 (films, marques, tableaux)",
+  "questions": [
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/logo-audi.jpg",
+      "answerHint": "Audi"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/logo-nike.jpg",
+      "answerHint": "Nike"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/logo-lacoste.jpg",
+      "answerHint": "Lacoste"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/logo-instagram.jpg",
+      "answerHint": "Instagram"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/mix/tableau-cene.jpg",
+      "answerHint": "La Cène/Cène"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/mix/tableau-menines.jpg",
+      "answerHint": "Les Ménines/Ménines/Las Meninas"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/mix/tableau-tournesols.jpg",
+      "answerHint": "Les Tournesols/Tournesols"
+    },
+    {
+      "text": "De quel film est cette affiche ?",
+      "imageUrl": "/pixel/mix/film-et.jpg",
+      "answerHint": "E.T./E.T. l'extra-terrestre/ET"
+    },
+    {
+      "text": "De quel film est cette affiche ?",
+      "imageUrl": "/pixel/mix/film-star-wars.jpg",
+      "answerHint": "Star Wars/La Guerre des étoiles"
+    },
+    {
+      "text": "Quel est ce tableau ?",
+      "imageUrl": "/pixel/mix/tableau-joconde.jpg",
+      "answerHint": "La Joconde/Joconde/Mona Lisa"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/logo-pepsi.jpg",
+      "answerHint": "Pepsi"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/logo-apple.jpg",
+      "answerHint": "Apple"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/logo-toyota.jpg",
+      "answerHint": "Toyota"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/logo-mercedes.jpg",
+      "answerHint": "Mercedes/Mercedes-Benz"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/logo-volkswagen.jpg",
+      "answerHint": "Volkswagen/VW"
+    },
+    {
+      "text": "De quel film est cette affiche ?",
+      "imageUrl": "/pixel/mix/film-amelie.jpg",
+      "answerHint": "Le Fabuleux Destin d'Amélie Poulain/Amélie Poulain/Amélie"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/logo-spotify.jpg",
+      "answerHint": "Spotify"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/logo-mitsubishi.jpg",
+      "answerHint": "Mitsubishi"
+    }
+  ]
+}

@@ -24,3 +24,8 @@ Pack Lancement · drapeaux (public/pixel/drapeaux/) : flagcdn.com (drapeaux nati
 Grande soirée des Tireurs :
 - affiche-titanic.jpg : affiche de « Titanic » (James Cameron, 1997, 20th Century Fox / Paramount), recadrée, via Wikipédia (usage non commercial, quiz privé).
 - logo-heineken.jpg : logo Heineken (marque déposée), via Wikimedia Commons.
+
+Packs Pixel · Mix (public/pixel/mix/) :
+- Tableaux : Wikimedia Commons (œuvres du domaine public).
+- Logos : Wikimedia Commons (marques déposées, recadrées sur le symbole).
+- Affiches de films : Wikipédia (usage non commercial, quiz privé), recadrées pour cacher le titre.
