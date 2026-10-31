@@ -5,6 +5,36 @@
   "questions": [
     {
       "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/x18-absolut.jpg",
+      "answerHint": "Absolut/Absolut Vodka"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/x18-durex.jpg",
+      "answerHint": "Durex"
+    },
+    {
+      "text": "Quelle est cette boisson ?",
+      "imageUrl": "/pixel/mix/x18-hennessy.jpg",
+      "answerHint": "Hennessy"
+    },
+    {
+      "text": "Quelle est cette boisson ?",
+      "imageUrl": "/pixel/mix/x18-corona.jpg",
+      "answerHint": "Corona"
+    },
+    {
+      "text": "Quelle est cette boisson ?",
+      "imageUrl": "/pixel/mix/x18-guinness.jpg",
+      "answerHint": "Guinness"
+    },
+    {
+      "text": "Quelle est cette marque ?",
+      "imageUrl": "/pixel/mix/x18-playboy.jpg",
+      "answerHint": "Playboy"
+    },
+    {
+      "text": "Quelle est cette marque ?",
       "imageUrl": "/pixel/mix/x18-tinder.jpg",
       "answerHint": "Tinder"
     },
@@ -14,29 +44,14 @@
       "answerHint": "Jägermeister/Jager"
     },
     {
-      "text": "Quelle est cette marque ?",
-      "imageUrl": "/pixel/mix/x18-playboy.jpg",
-      "answerHint": "Playboy"
+      "text": "Quelle est cette boisson ?",
+      "imageUrl": "/pixel/mix/x18-bacardi.jpg",
+      "answerHint": "Bacardi"
     },
     {
       "text": "Quelle est cette boisson ?",
       "imageUrl": "/pixel/mix/x18-captain-morgan.jpg",
       "answerHint": "Captain Morgan"
-    },
-    {
-      "text": "Quelle est cette marque ?",
-      "imageUrl": "/pixel/mix/x18-durex.jpg",
-      "answerHint": "Durex"
-    },
-    {
-      "text": "Quelle est cette marque ?",
-      "imageUrl": "/pixel/mix/x18-absolut.jpg",
-      "answerHint": "Absolut/Absolut Vodka"
-    },
-    {
-      "text": "Quelle est cette boisson ?",
-      "imageUrl": "/pixel/mix/x18-bacardi.jpg",
-      "answerHint": "Bacardi"
     }
   ]
 }
