@@ -1,0 +1,1070 @@
+{
+  "id": "geo-grandes-villes",
+  "module": "geoloc",
+  "theme": "Géoloc · Grandes villes de France (plus de 40 000 hab.)",
+  "mapId": "france",
+  "questions": [
+    {
+      "text": "Où se trouve Meaux ?",
+      "answerHint": "Meaux — Seine-et-Marne (77), 56 905 habitants",
+      "lat": 48.9573,
+      "lng": 2.9035
+    },
+    {
+      "text": "Où se trouve La Courneuve ?",
+      "answerHint": "La Courneuve — Seine-Saint-Denis (93), 47 167 habitants",
+      "lat": 48.9341,
+      "lng": 2.3986
+    },
+    {
+      "text": "Où se trouve Strasbourg ?",
+      "answerHint": "Strasbourg — Bas-Rhin (67), 293 771 habitants",
+      "lat": 48.5691,
+      "lng": 7.7621
+    },
+    {
+      "text": "Où se trouve Nouméa ?",
+      "answerHint": "Nouméa — Nouvelle-Calédonie (988), 85 976 habitants",
+      "lat": -22.3363,
+      "lng": 166.4076
+    },
+    {
+      "text": "Où se trouve Quimper ?",
+      "answerHint": "Quimper — Finistère (29), 64 385 habitants",
+      "lat": 47.9982,
+      "lng": -4.0972
+    },
+    {
+      "text": "Où se trouve Avignon ?",
+      "answerHint": "Avignon — Vaucluse (84), 92 188 habitants",
+      "lat": 43.9416,
+      "lng": 4.8333
+    },
+    {
+      "text": "Où se trouve Épinay-sur-Seine ?",
+      "answerHint": "Épinay-sur-Seine — Seine-Saint-Denis (93), 52 833 habitants",
+      "lat": 48.9544,
+      "lng": 2.3172
+    },
+    {
+      "text": "Où se trouve Choisy-le-Roi ?",
+      "answerHint": "Choisy-le-Roi — Val-de-Marne (94), 45 946 habitants",
+      "lat": 48.7635,
+      "lng": 2.4202
+    },
+    {
+      "text": "Où se trouve Hyères ?",
+      "answerHint": "Hyères — Var (83), 55 858 habitants",
+      "lat": 43.1139,
+      "lng": 6.2357
+    },
+    {
+      "text": "Où se trouve Arras ?",
+      "answerHint": "Arras — Pas-de-Calais (62), 42 875 habitants",
+      "lat": 50.2893,
+      "lng": 2.7679
+    },
+    {
+      "text": "Où se trouve Bordeaux ?",
+      "answerHint": "Bordeaux — Gironde (33), 267 991 habitants",
+      "lat": 44.8624,
+      "lng": -0.5848
+    },
+    {
+      "text": "Où se trouve Mulhouse ?",
+      "answerHint": "Mulhouse — Haut-Rhin (68), 104 978 habitants",
+      "lat": 47.7526,
+      "lng": 7.3255
+    },
+    {
+      "text": "Où se trouve Narbonne ?",
+      "answerHint": "Narbonne — Aude (11), 57 587 habitants",
+      "lat": 43.1493,
+      "lng": 3.0337
+    },
+    {
+      "text": "Où se trouve Toulouse ?",
+      "answerHint": "Toulouse — Haute-Garonne (31), 514 819 habitants",
+      "lat": 43.6007,
+      "lng": 1.4328
+    },
+    {
+      "text": "Où se trouve Angers ?",
+      "answerHint": "Angers — Maine-et-Loire (49), 159 022 habitants",
+      "lat": 47.4819,
+      "lng": -0.5629
+    },
+    {
+      "text": "Où se trouve Bourges ?",
+      "answerHint": "Bourges — Cher (18), 64 186 habitants",
+      "lat": 47.078,
+      "lng": 2.3983
+    },
+    {
+      "text": "Où se trouve Gennevilliers ?",
+      "answerHint": "Gennevilliers — Hauts-de-Seine (92), 50 979 habitants",
+      "lat": 48.9319,
+      "lng": 2.288
+    },
+    {
+      "text": "Où se trouve Tours ?",
+      "answerHint": "Tours — Indre-et-Loire (37), 139 259 habitants",
+      "lat": 47.3943,
+      "lng": 0.6949
+    },
+    {
+      "text": "Où se trouve Montauban ?",
+      "answerHint": "Montauban — Tarn-et-Garonne (82), 62 945 habitants",
+      "lat": 44.0217,
+      "lng": 1.3646
+    },
+    {
+      "text": "Où se trouve Valenciennes ?",
+      "answerHint": "Valenciennes — Nord (59), 43 468 habitants",
+      "lat": 50.362,
+      "lng": 3.5142
+    },
+    {
+      "text": "Où se trouve Les Sables-d'Olonne ?",
+      "answerHint": "Les Sables-d'Olonne — Vendée (85), 49 603 habitants",
+      "lat": 46.5264,
+      "lng": -1.7611
+    },
+    {
+      "text": "Où se trouve Limoges ?",
+      "answerHint": "Limoges — Haute-Vienne (87), 129 937 habitants",
+      "lat": 45.8567,
+      "lng": 1.226
+    },
+    {
+      "text": "Où se trouve Salon-de-Provence ?",
+      "answerHint": "Salon-de-Provence — Bouches-du-Rhône (13), 44 194 habitants",
+      "lat": 43.643,
+      "lng": 5.049
+    },
+    {
+      "text": "Où se trouve La Seyne-sur-Mer ?",
+      "answerHint": "La Seyne-sur-Mer — Var (83), 63 732 habitants",
+      "lat": 43.0837,
+      "lng": 5.8789
+    },
+    {
+      "text": "Où se trouve Bastia ?",
+      "answerHint": "Bastia — Haute-Corse (2B), 46 867 habitants",
+      "lat": 42.6861,
+      "lng": 9.424
+    },
+    {
+      "text": "Où se trouve Clermont-Ferrand ?",
+      "answerHint": "Clermont-Ferrand — Puy-de-Dôme (63), 146 351 habitants",
+      "lat": 45.787,
+      "lng": 3.1127
+    },
+    {
+      "text": "Où se trouve Le Blanc-Mesnil ?",
+      "answerHint": "Le Blanc-Mesnil — Seine-Saint-Denis (93), 62 376 habitants",
+      "lat": 48.9372,
+      "lng": 2.4576
+    },
+    {
+      "text": "Où se trouve Wattrelos ?",
+      "answerHint": "Wattrelos — Nord (59), 40 847 habitants",
+      "lat": 50.7125,
+      "lng": 3.2159
+    },
+    {
+      "text": "Où se trouve Saint-Brieuc ?",
+      "answerHint": "Saint-Brieuc — Côtes-d'Armor (22), 44 364 habitants",
+      "lat": 48.5108,
+      "lng": -2.7657
+    },
+    {
+      "text": "Où se trouve Drancy ?",
+      "answerHint": "Drancy — Seine-Saint-Denis (93), 72 390 habitants",
+      "lat": 48.925,
+      "lng": 2.4446
+    },
+    {
+      "text": "Où se trouve Martigues ?",
+      "answerHint": "Martigues — Bouches-du-Rhône (13), 48 298 habitants",
+      "lat": 43.3839,
+      "lng": 5.0451
+    },
+    {
+      "text": "Où se trouve Marcq-en-Barœul ?",
+      "answerHint": "Marcq-en-Barœul — Nord (59), 40 184 habitants",
+      "lat": 50.6793,
+      "lng": 3.1006
+    },
+    {
+      "text": "Où se trouve Bourg-en-Bresse ?",
+      "answerHint": "Bourg-en-Bresse — Ain (01), 42 372 habitants",
+      "lat": 46.2027,
+      "lng": 5.2469
+    },
+    {
+      "text": "Où se trouve Alès ?",
+      "answerHint": "Alès — Gard (30), 46 125 habitants",
+      "lat": 44.125,
+      "lng": 4.0905
+    },
+    {
+      "text": "Où se trouve Saint-Herblain ?",
+      "answerHint": "Saint-Herblain — Loire-Atlantique (44), 50 973 habitants",
+      "lat": 47.2246,
+      "lng": -1.6306
+    },
+    {
+      "text": "Où se trouve Troyes ?",
+      "answerHint": "Troyes — Aube (10), 62 088 habitants",
+      "lat": 48.2924,
+      "lng": 4.0761
+    },
+    {
+      "text": "Où se trouve Nice ?",
+      "answerHint": "Nice — Alpes-Maritimes (06), 357 737 habitants",
+      "lat": 43.7032,
+      "lng": 7.2528
+    },
+    {
+      "text": "Où se trouve Istres ?",
+      "answerHint": "Istres — Bouches-du-Rhône (13), 44 292 habitants",
+      "lat": 43.5455,
+      "lng": 4.9477
+    },
+    {
+      "text": "Où se trouve Blois ?",
+      "answerHint": "Blois — Loir-et-Cher (41), 47 219 habitants",
+      "lat": 47.5813,
+      "lng": 1.3049
+    },
+    {
+      "text": "Où se trouve Clamart ?",
+      "answerHint": "Clamart — Hauts-de-Seine (92), 58 576 habitants",
+      "lat": 48.7957,
+      "lng": 2.2518
+    },
+    {
+      "text": "Où se trouve Melun ?",
+      "answerHint": "Melun — Seine-et-Marne (77), 45 995 habitants",
+      "lat": 48.5421,
+      "lng": 2.6552
+    },
+    {
+      "text": "Où se trouve Compiègne ?",
+      "answerHint": "Compiègne — Oise (60), 40 761 habitants",
+      "lat": 49.4006,
+      "lng": 2.8547
+    },
+    {
+      "text": "Où se trouve Cagnes-sur-Mer ?",
+      "answerHint": "Cagnes-sur-Mer — Alpes-Maritimes (06), 53 354 habitants",
+      "lat": 43.6712,
+      "lng": 7.1502
+    },
+    {
+      "text": "Où se trouve Ivry-sur-Seine ?",
+      "answerHint": "Ivry-sur-Seine — Val-de-Marne (94), 65 064 habitants",
+      "lat": 48.8125,
+      "lng": 2.3872
+    },
+    {
+      "text": "Où se trouve Cannes ?",
+      "answerHint": "Cannes — Alpes-Maritimes (06), 74 350 habitants",
+      "lat": 43.5454,
+      "lng": 7.0152
+    },
+    {
+      "text": "Où se trouve Sevran ?",
+      "answerHint": "Sevran — Seine-Saint-Denis (93), 52 535 habitants",
+      "lat": 48.9378,
+      "lng": 2.5311
+    },
+    {
+      "text": "Où se trouve Sartrouville ?",
+      "answerHint": "Sartrouville — Yvelines (78), 52 763 habitants",
+      "lat": 48.9374,
+      "lng": 2.1744
+    },
+    {
+      "text": "Où se trouve Bagnolet ?",
+      "answerHint": "Bagnolet — Seine-Saint-Denis (93), 43 086 habitants",
+      "lat": 48.8671,
+      "lng": 2.4252
+    },
+    {
+      "text": "Où se trouve Carcassonne ?",
+      "answerHint": "Carcassonne — Aude (11), 46 080 habitants",
+      "lat": 43.2078,
+      "lng": 2.3491
+    },
+    {
+      "text": "Où se trouve Saint-Étienne ?",
+      "answerHint": "Saint-Étienne — Loire (42), 173 136 habitants",
+      "lat": 45.4241,
+      "lng": 4.3665
+    },
+    {
+      "text": "Où se trouve Sarcelles ?",
+      "answerHint": "Sarcelles — Val-d'Oise (95), 59 173 habitants",
+      "lat": 48.9925,
+      "lng": 2.3858
+    },
+    {
+      "text": "Où se trouve Corbeil-Essonnes ?",
+      "answerHint": "Corbeil-Essonnes — Essonne (91), 54 471 habitants",
+      "lat": 48.5973,
+      "lng": 2.4646
+    },
+    {
+      "text": "Où se trouve Gap ?",
+      "answerHint": "Gap — Hautes-Alpes (05), 41 293 habitants",
+      "lat": 44.5797,
+      "lng": 6.0616
+    },
+    {
+      "text": "Où se trouve Grenoble ?",
+      "answerHint": "Grenoble — Isère (38), 156 140 habitants",
+      "lat": 45.1842,
+      "lng": 5.7155
+    },
+    {
+      "text": "Où se trouve Créteil ?",
+      "answerHint": "Créteil — Val-de-Marne (94), 93 397 habitants",
+      "lat": 48.7845,
+      "lng": 2.4523
+    },
+    {
+      "text": "Où se trouve Montélimar ?",
+      "answerHint": "Montélimar — Drôme (26), 40 595 habitants",
+      "lat": 44.5545,
+      "lng": 4.7454
+    },
+    {
+      "text": "Où se trouve Antibes ?",
+      "answerHint": "Antibes — Alpes-Maritimes (06), 77 637 habitants",
+      "lat": 43.5823,
+      "lng": 7.1048
+    },
+    {
+      "text": "Où se trouve Cholet ?",
+      "answerHint": "Cholet — Maine-et-Loire (49), 54 404 habitants",
+      "lat": 47.0358,
+      "lng": -0.875
+    },
+    {
+      "text": "Où se trouve Bayonne ?",
+      "answerHint": "Bayonne — Pyrénées-Atlantiques (64), 54 306 habitants",
+      "lat": 43.4844,
+      "lng": -1.4611
+    },
+    {
+      "text": "Où se trouve Calais ?",
+      "answerHint": "Calais — Pas-de-Calais (62), 67 571 habitants",
+      "lat": 50.9523,
+      "lng": 1.869
+    },
+    {
+      "text": "Où se trouve Aubagne ?",
+      "answerHint": "Aubagne — Bouches-du-Rhône (13), 47 529 habitants",
+      "lat": 43.2904,
+      "lng": 5.5643
+    },
+    {
+      "text": "Où se trouve Albi ?",
+      "answerHint": "Albi — Tarn (81), 51 290 habitants",
+      "lat": 43.929,
+      "lng": 2.1323
+    },
+    {
+      "text": "Où se trouve Maisons-Alfort ?",
+      "answerHint": "Maisons-Alfort — Val-de-Marne (94), 56 799 habitants",
+      "lat": 48.8017,
+      "lng": 2.44
+    },
+    {
+      "text": "Où se trouve Marseille ?",
+      "answerHint": "Marseille — Bouches-du-Rhône (13), 886 040 habitants",
+      "lat": 43.2803,
+      "lng": 5.3806
+    },
+    {
+      "text": "Où se trouve Lille ?",
+      "answerHint": "Lille — Nord (59), 238 246 habitants",
+      "lat": 50.6311,
+      "lng": 3.0468
+    },
+    {
+      "text": "Où se trouve Brest ?",
+      "answerHint": "Brest — Finistère (29), 142 346 habitants",
+      "lat": 48.4085,
+      "lng": -4.4996
+    },
+    {
+      "text": "Où se trouve Annecy ?",
+      "answerHint": "Annecy — Haute-Savoie (74), 132 117 habitants",
+      "lat": 45.9024,
+      "lng": 6.1264
+    },
+    {
+      "text": "Où se trouve Rueil-Malmaison ?",
+      "answerHint": "Rueil-Malmaison — Hauts-de-Seine (92), 82 874 habitants",
+      "lat": 48.8717,
+      "lng": 2.1806
+    },
+    {
+      "text": "Où se trouve Livry-Gargan ?",
+      "answerHint": "Livry-Gargan — Seine-Saint-Denis (93), 47 228 habitants",
+      "lat": 48.9184,
+      "lng": 2.5351
+    },
+    {
+      "text": "Où se trouve Aix-en-Provence ?",
+      "answerHint": "Aix-en-Provence — Bouches-du-Rhône (13), 149 695 habitants",
+      "lat": 43.536,
+      "lng": 5.3879
+    },
+    {
+      "text": "Où se trouve Dijon ?",
+      "answerHint": "Dijon — Côte-d'Or (21), 161 830 habitants",
+      "lat": 47.3319,
+      "lng": 5.0322
+    },
+    {
+      "text": "Où se trouve Saint-Quentin ?",
+      "answerHint": "Saint-Quentin — Aisne (02), 52 813 habitants",
+      "lat": 49.8475,
+      "lng": 3.279
+    },
+    {
+      "text": "Où se trouve Argenteuil ?",
+      "answerHint": "Argenteuil — Val-d'Oise (95), 106 130 habitants",
+      "lat": 48.9501,
+      "lng": 2.2478
+    },
+    {
+      "text": "Où se trouve Noisy-le-Grand ?",
+      "answerHint": "Noisy-le-Grand — Seine-Saint-Denis (93), 72 978 habitants",
+      "lat": 48.8327,
+      "lng": 2.556
+    },
+    {
+      "text": "Où se trouve Courbevoie ?",
+      "answerHint": "Courbevoie — Hauts-de-Seine (92), 82 902 habitants",
+      "lat": 48.8976,
+      "lng": 2.2574
+    },
+    {
+      "text": "Où se trouve Antony ?",
+      "answerHint": "Antony — Hauts-de-Seine (92), 64 263 habitants",
+      "lat": 48.7507,
+      "lng": 2.2976
+    },
+    {
+      "text": "Où se trouve Poitiers ?",
+      "answerHint": "Poitiers — Vienne (86), 89 916 habitants",
+      "lat": 46.5846,
+      "lng": 0.3715
+    },
+    {
+      "text": "Où se trouve Besançon ?",
+      "answerHint": "Besançon — Doubs (25), 118 489 habitants",
+      "lat": 47.2602,
+      "lng": 6.0123
+    },
+    {
+      "text": "Où se trouve Colmar ?",
+      "answerHint": "Colmar — Haut-Rhin (68), 66 970 habitants",
+      "lat": 48.1115,
+      "lng": 7.3924
+    },
+    {
+      "text": "Où se trouve Rezé ?",
+      "answerHint": "Rezé — Loire-Atlantique (44), 43 556 habitants",
+      "lat": 47.1733,
+      "lng": -1.5573
+    },
+    {
+      "text": "Où se trouve Beauvais ?",
+      "answerHint": "Beauvais — Oise (60), 55 550 habitants",
+      "lat": 49.4425,
+      "lng": 2.0877
+    },
+    {
+      "text": "Où se trouve Pantin ?",
+      "answerHint": "Pantin — Seine-Saint-Denis (93), 61 929 habitants",
+      "lat": 48.9006,
+      "lng": 2.4085
+    },
+    {
+      "text": "Où se trouve Perpignan ?",
+      "answerHint": "Perpignan — Pyrénées-Orientales (66), 121 616 habitants",
+      "lat": 42.699,
+      "lng": 2.9045
+    },
+    {
+      "text": "Où se trouve Villeneuve-d'Ascq ?",
+      "answerHint": "Villeneuve-d'Ascq — Nord (59), 62 868 habitants",
+      "lat": 50.6362,
+      "lng": 3.1619
+    },
+    {
+      "text": "Où se trouve Paris ?",
+      "answerHint": "Paris — Paris (75), 2 103 778 habitants",
+      "lat": 48.8589,
+      "lng": 2.347
+    },
+    {
+      "text": "Où se trouve Champigny-sur-Marne ?",
+      "answerHint": "Champigny-sur-Marne — Val-de-Marne (94), 78 072 habitants",
+      "lat": 48.8173,
+      "lng": 2.5206
+    },
+    {
+      "text": "Où se trouve Pessac ?",
+      "answerHint": "Pessac — Gironde (33), 67 339 habitants",
+      "lat": 44.786,
+      "lng": -0.681
+    },
+    {
+      "text": "Où se trouve Talence ?",
+      "answerHint": "Talence — Gironde (33), 46 338 habitants",
+      "lat": 44.8061,
+      "lng": -0.5918
+    },
+    {
+      "text": "Où se trouve Nancy ?",
+      "answerHint": "Nancy — Meurthe-et-Moselle (54), 103 671 habitants",
+      "lat": 48.6881,
+      "lng": 6.1734
+    },
+    {
+      "text": "Où se trouve Montrouge ?",
+      "answerHint": "Montrouge — Hauts-de-Seine (92), 46 324 habitants",
+      "lat": 48.8159,
+      "lng": 2.3163
+    },
+    {
+      "text": "Où se trouve Vincennes ?",
+      "answerHint": "Vincennes — Val-de-Marne (94), 48 193 habitants",
+      "lat": 48.8471,
+      "lng": 2.4383
+    },
+    {
+      "text": "Où se trouve Garges-lès-Gonesse ?",
+      "answerHint": "Garges-lès-Gonesse — Val-d'Oise (95), 41 791 habitants",
+      "lat": 48.9696,
+      "lng": 2.4035
+    },
+    {
+      "text": "Où se trouve Bron ?",
+      "answerHint": "Bron — Rhône (69), 42 982 habitants",
+      "lat": 45.7355,
+      "lng": 4.9116
+    },
+    {
+      "text": "Où se trouve Béziers ?",
+      "answerHint": "Béziers — Hérault (34), 81 545 habitants",
+      "lat": 43.3481,
+      "lng": 3.2342
+    },
+    {
+      "text": "Où se trouve Évreux ?",
+      "answerHint": "Évreux — Eure (27), 49 360 habitants",
+      "lat": 49.018,
+      "lng": 1.1406
+    },
+    {
+      "text": "Où se trouve Poissy ?",
+      "answerHint": "Poissy — Yvelines (78), 40 983 habitants",
+      "lat": 48.9241,
+      "lng": 2.025
+    },
+    {
+      "text": "Où se trouve Rosny-sous-Bois ?",
+      "answerHint": "Rosny-sous-Bois — Seine-Saint-Denis (93), 47 180 habitants",
+      "lat": 48.8744,
+      "lng": 2.4872
+    },
+    {
+      "text": "Où se trouve Mantes-la-Jolie ?",
+      "answerHint": "Mantes-la-Jolie — Yvelines (78), 43 526 habitants",
+      "lat": 48.9961,
+      "lng": 1.6918
+    },
+    {
+      "text": "Où se trouve Alfortville ?",
+      "answerHint": "Alfortville — Val-de-Marne (94), 45 531 habitants",
+      "lat": 48.7963,
+      "lng": 2.4214
+    },
+    {
+      "text": "Où se trouve Roubaix ?",
+      "answerHint": "Roubaix — Nord (59), 98 286 habitants",
+      "lat": 50.6887,
+      "lng": 3.1843
+    },
+    {
+      "text": "Où se trouve Asnières-sur-Seine ?",
+      "answerHint": "Asnières-sur-Seine — Hauts-de-Seine (92), 93 941 habitants",
+      "lat": 48.9181,
+      "lng": 2.2935
+    },
+    {
+      "text": "Où se trouve Tourcoing ?",
+      "answerHint": "Tourcoing — Nord (59), 98 772 habitants",
+      "lat": 50.721,
+      "lng": 3.1577
+    },
+    {
+      "text": "Où se trouve Nanterre ?",
+      "answerHint": "Nanterre — Hauts-de-Seine (92), 97 783 habitants",
+      "lat": 48.8974,
+      "lng": 2.2018
+    },
+    {
+      "text": "Où se trouve Toulon ?",
+      "answerHint": "Toulon — Var (83), 179 116 habitants",
+      "lat": 43.1364,
+      "lng": 5.9334
+    },
+    {
+      "text": "Où se trouve Châlons-en-Champagne ?",
+      "answerHint": "Châlons-en-Champagne — Marne (51), 42 971 habitants",
+      "lat": 48.9656,
+      "lng": 4.3801
+    },
+    {
+      "text": "Où se trouve Tarbes ?",
+      "answerHint": "Tarbes — Hautes-Pyrénées (65), 44 399 habitants",
+      "lat": 43.2387,
+      "lng": 0.0653
+    },
+    {
+      "text": "Où se trouve Puteaux ?",
+      "answerHint": "Puteaux — Hauts-de-Seine (92), 44 002 habitants",
+      "lat": 48.8824,
+      "lng": 2.2384
+    },
+    {
+      "text": "Où se trouve Rouen ?",
+      "answerHint": "Rouen — Seine-Maritime (76), 117 662 habitants",
+      "lat": 49.4412,
+      "lng": 1.0912
+    },
+    {
+      "text": "Où se trouve Levallois-Perret ?",
+      "answerHint": "Levallois-Perret — Hauts-de-Seine (92), 68 092 habitants",
+      "lat": 48.8946,
+      "lng": 2.2874
+    },
+    {
+      "text": "Où se trouve Thionville ?",
+      "answerHint": "Thionville — Moselle (57), 42 658 habitants",
+      "lat": 49.3718,
+      "lng": 6.1443
+    },
+    {
+      "text": "Où se trouve Villejuif ?",
+      "answerHint": "Villejuif — Val-de-Marne (94), 60 183 habitants",
+      "lat": 48.7934,
+      "lng": 2.3603
+    },
+    {
+      "text": "Où se trouve Vannes ?",
+      "answerHint": "Vannes — Morbihan (56), 55 790 habitants",
+      "lat": 47.6577,
+      "lng": -2.7485
+    },
+    {
+      "text": "Où se trouve Colomiers ?",
+      "answerHint": "Colomiers — Haute-Garonne (31), 40 882 habitants",
+      "lat": 43.6116,
+      "lng": 1.3245
+    },
+    {
+      "text": "Où se trouve Lorient ?",
+      "answerHint": "Lorient — Morbihan (56), 58 329 habitants",
+      "lat": 47.7494,
+      "lng": -3.3799
+    },
+    {
+      "text": "Où se trouve Ajaccio ?",
+      "answerHint": "Ajaccio — Corse-du-Sud (2A), 76 320 habitants",
+      "lat": 41.9228,
+      "lng": 8.7058
+    },
+    {
+      "text": "Où se trouve Douai ?",
+      "answerHint": "Douai — Nord (59), 40 250 habitants",
+      "lat": 50.3785,
+      "lng": 3.1004
+    },
+    {
+      "text": "Où se trouve Saint-Ouen-sur-Seine ?",
+      "answerHint": "Saint-Ouen-sur-Seine — Seine-Saint-Denis (93), 53 615 habitants",
+      "lat": 48.9118,
+      "lng": 2.3329
+    },
+    {
+      "text": "Où se trouve Suresnes ?",
+      "answerHint": "Suresnes — Hauts-de-Seine (92), 48 956 habitants",
+      "lat": 48.871,
+      "lng": 2.2183
+    },
+    {
+      "text": "Où se trouve Villeurbanne ?",
+      "answerHint": "Villeurbanne — Rhône (69), 163 684 habitants",
+      "lat": 45.7719,
+      "lng": 4.8898
+    },
+    {
+      "text": "Où se trouve Lyon ?",
+      "answerHint": "Lyon — Rhône (69), 519 127 habitants",
+      "lat": 45.758,
+      "lng": 4.8351
+    },
+    {
+      "text": "Où se trouve Nantes ?",
+      "answerHint": "Nantes — Loire-Atlantique (44), 327 734 habitants",
+      "lat": 47.2382,
+      "lng": -1.5603
+    },
+    {
+      "text": "Où se trouve Le Mans ?",
+      "answerHint": "Le Mans — Sarthe (72), 146 249 habitants",
+      "lat": 47.9819,
+      "lng": 0.1957
+    },
+    {
+      "text": "Où se trouve Caen ?",
+      "answerHint": "Caen — Calvados (14), 109 400 habitants",
+      "lat": 49.1846,
+      "lng": -0.3722
+    },
+    {
+      "text": "Où se trouve Cherbourg-en-Cotentin ?",
+      "answerHint": "Cherbourg-en-Cotentin — Manche (50), 78 258 habitants",
+      "lat": 49.6277,
+      "lng": -1.6356
+    },
+    {
+      "text": "Où se trouve Belfort ?",
+      "answerHint": "Belfort — Territoire de Belfort (90), 45 912 habitants",
+      "lat": 47.6458,
+      "lng": 6.841
+    },
+    {
+      "text": "Où se trouve Niort ?",
+      "answerHint": "Niort — Deux-Sèvres (79), 59 854 habitants",
+      "lat": 46.3274,
+      "lng": -0.4613
+    },
+    {
+      "text": "Où se trouve Évry-Courcouronnes ?",
+      "answerHint": "Évry-Courcouronnes — Essonne (91), 66 919 habitants",
+      "lat": 48.6287,
+      "lng": 2.4313
+    },
+    {
+      "text": "Où se trouve Bobigny ?",
+      "answerHint": "Bobigny — Seine-Saint-Denis (93), 56 927 habitants",
+      "lat": 48.9073,
+      "lng": 2.4432
+    },
+    {
+      "text": "Où se trouve Caluire-et-Cuire ?",
+      "answerHint": "Caluire-et-Cuire — Rhône (69), 43 597 habitants",
+      "lat": 45.7986,
+      "lng": 4.8494
+    },
+    {
+      "text": "Où se trouve Gagny ?",
+      "answerHint": "Gagny — Seine-Saint-Denis (93), 42 313 habitants",
+      "lat": 48.8826,
+      "lng": 2.545
+    },
+    {
+      "text": "Où se trouve Saint-Germain-en-Laye ?",
+      "answerHint": "Saint-Germain-en-Laye — Yvelines (78), 45 931 habitants",
+      "lat": 48.931,
+      "lng": 2.1052
+    },
+    {
+      "text": "Où se trouve Fréjus ?",
+      "answerHint": "Fréjus — Var (83), 59 719 habitants",
+      "lat": 43.4553,
+      "lng": 6.7848
+    },
+    {
+      "text": "Où se trouve Châteauroux ?",
+      "answerHint": "Châteauroux — Indre (36), 42 963 habitants",
+      "lat": 46.8023,
+      "lng": 1.6903
+    },
+    {
+      "text": "Où se trouve Colombes ?",
+      "answerHint": "Colombes — Hauts-de-Seine (92), 91 053 habitants",
+      "lat": 48.9218,
+      "lng": 2.2469
+    },
+    {
+      "text": "Où se trouve Cergy ?",
+      "answerHint": "Cergy — Val-d'Oise (95), 70 906 habitants",
+      "lat": 49.0373,
+      "lng": 2.0455
+    },
+    {
+      "text": "Où se trouve Meudon ?",
+      "answerHint": "Meudon — Hauts-de-Seine (92), 46 334 habitants",
+      "lat": 48.8028,
+      "lng": 2.2288
+    },
+    {
+      "text": "Où se trouve Stains ?",
+      "answerHint": "Stains — Seine-Saint-Denis (93), 41 388 habitants",
+      "lat": 48.9578,
+      "lng": 2.3868
+    },
+    {
+      "text": "Où se trouve Nîmes ?",
+      "answerHint": "Nîmes — Gard (30), 151 839 habitants",
+      "lat": 43.8322,
+      "lng": 4.3429
+    },
+    {
+      "text": "Où se trouve Rennes ?",
+      "answerHint": "Rennes — Ille-et-Vilaine (35), 230 890 habitants",
+      "lat": 48.1159,
+      "lng": -1.6884
+    },
+    {
+      "text": "Où se trouve Pau ?",
+      "answerHint": "Pau — Pyrénées-Atlantiques (64), 80 441 habitants",
+      "lat": 43.3219,
+      "lng": -0.3435
+    },
+    {
+      "text": "Où se trouve Aulnay-sous-Bois ?",
+      "answerHint": "Aulnay-sous-Bois — Seine-Saint-Denis (93), 87 599 habitants",
+      "lat": 48.9457,
+      "lng": 2.4918
+    },
+    {
+      "text": "Où se trouve Le Cannet ?",
+      "answerHint": "Le Cannet — Alpes-Maritimes (06), 41 938 habitants",
+      "lat": 43.5745,
+      "lng": 7.001
+    },
+    {
+      "text": "Où se trouve Reims ?",
+      "answerHint": "Reims — Marne (51), 177 674 habitants",
+      "lat": 49.2535,
+      "lng": 4.0551
+    },
+    {
+      "text": "Où se trouve Laval ?",
+      "answerHint": "Laval — Mayenne (53), 49 400 habitants",
+      "lat": 48.0578,
+      "lng": -0.7692
+    },
+    {
+      "text": "Où se trouve Saint-Malo ?",
+      "answerHint": "Saint-Malo — Ille-et-Vilaine (35), 47 439 habitants",
+      "lat": 48.6465,
+      "lng": -2.0066
+    },
+    {
+      "text": "Où se trouve Aubervilliers ?",
+      "answerHint": "Aubervilliers — Seine-Saint-Denis (93), 88 365 habitants",
+      "lat": 48.9128,
+      "lng": 2.3886
+    },
+    {
+      "text": "Où se trouve Montpellier ?",
+      "answerHint": "Montpellier — Hérault (34), 310 240 habitants",
+      "lat": 43.61,
+      "lng": 3.8742
+    },
+    {
+      "text": "Où se trouve Issy-les-Moulineaux ?",
+      "answerHint": "Issy-les-Moulineaux — Hauts-de-Seine (92), 67 669 habitants",
+      "lat": 48.824,
+      "lng": 2.2628
+    },
+    {
+      "text": "Où se trouve Versailles ?",
+      "answerHint": "Versailles — Yvelines (78), 84 095 habitants",
+      "lat": 48.8039,
+      "lng": 2.1191
+    },
+    {
+      "text": "Où se trouve Chambéry ?",
+      "answerHint": "Chambéry — Savoie (73), 59 964 habitants",
+      "lat": 45.5822,
+      "lng": 5.9064
+    },
+    {
+      "text": "Où se trouve Anglet ?",
+      "answerHint": "Anglet — Pyrénées-Atlantiques (64), 43 271 habitants",
+      "lat": 43.4893,
+      "lng": -1.5193
+    },
+    {
+      "text": "Où se trouve La Roche-sur-Yon ?",
+      "answerHint": "La Roche-sur-Yon — Vendée (85), 54 849 habitants",
+      "lat": 46.6659,
+      "lng": -1.4162
+    },
+    {
+      "text": "Où se trouve Vénissieux ?",
+      "answerHint": "Vénissieux — Rhône (69), 65 502 habitants",
+      "lat": 45.7012,
+      "lng": 4.8805
+    },
+    {
+      "text": "Où se trouve Grasse ?",
+      "answerHint": "Grasse — Alpes-Maritimes (06), 50 970 habitants",
+      "lat": 43.656,
+      "lng": 6.937
+    },
+    {
+      "text": "Où se trouve Fontenay-sous-Bois ?",
+      "answerHint": "Fontenay-sous-Bois — Val-de-Marne (94), 53 757 habitants",
+      "lat": 48.8503,
+      "lng": 2.4736
+    },
+    {
+      "text": "Où se trouve Dunkerque ?",
+      "answerHint": "Dunkerque — Nord (59), 86 263 habitants",
+      "lat": 51.0183,
+      "lng": 2.3431
+    },
+    {
+      "text": "Où se trouve Boulogne-Billancourt ?",
+      "answerHint": "Boulogne-Billancourt — Hauts-de-Seine (92), 119 019 habitants",
+      "lat": 48.8375,
+      "lng": 2.2429
+    },
+    {
+      "text": "Où se trouve Draguignan ?",
+      "answerHint": "Draguignan — Var (83), 40 826 habitants",
+      "lat": 43.5346,
+      "lng": 6.4651
+    },
+    {
+      "text": "Où se trouve Neuilly-sur-Seine ?",
+      "answerHint": "Neuilly-sur-Seine — Hauts-de-Seine (92), 59 538 habitants",
+      "lat": 48.8862,
+      "lng": 2.2651
+    },
+    {
+      "text": "Où se trouve Chalon-sur-Saône ?",
+      "answerHint": "Chalon-sur-Saône — Saône-et-Loire (71), 45 102 habitants",
+      "lat": 46.7896,
+      "lng": 4.8509
+    },
+    {
+      "text": "Où se trouve Clichy ?",
+      "answerHint": "Clichy — Hauts-de-Seine (92), 64 410 habitants",
+      "lat": 48.9041,
+      "lng": 2.3041
+    },
+    {
+      "text": "Où se trouve Le Havre ?",
+      "answerHint": "Le Havre — Seine-Maritime (76), 166 687 habitants",
+      "lat": 49.4958,
+      "lng": 0.1312
+    },
+    {
+      "text": "Où se trouve Amiens ?",
+      "answerHint": "Amiens — Somme (80), 136 449 habitants",
+      "lat": 49.8987,
+      "lng": 2.2847
+    },
+    {
+      "text": "Où se trouve Villenave-d'Ornon ?",
+      "answerHint": "Villenave-d'Ornon — Gironde (33), 42 545 habitants",
+      "lat": 44.7736,
+      "lng": -0.5523
+    },
+    {
+      "text": "Où se trouve Bondy ?",
+      "answerHint": "Bondy — Seine-Saint-Denis (93), 50 595 habitants",
+      "lat": 48.9036,
+      "lng": 2.4846
+    },
+    {
+      "text": "Où se trouve Charleville-Mézières ?",
+      "answerHint": "Charleville-Mézières — Ardennes (08), 45 560 habitants",
+      "lat": 49.7802,
+      "lng": 4.7304
+    },
+    {
+      "text": "Où se trouve Saint-Maur-des-Fossés ?",
+      "answerHint": "Saint-Maur-des-Fossés — Val-de-Marne (94), 76 572 habitants",
+      "lat": 48.7999,
+      "lng": 2.4921
+    },
+    {
+      "text": "Où se trouve Orléans ?",
+      "answerHint": "Orléans — Loiret (45), 116 357 habitants",
+      "lat": 47.8734,
+      "lng": 1.9122
+    },
+    {
+      "text": "Où se trouve Noisy-le-Sec ?",
+      "answerHint": "Noisy-le-Sec — Seine-Saint-Denis (93), 45 510 habitants",
+      "lat": 48.8917,
+      "lng": 2.4578
+    },
+    {
+      "text": "Où se trouve Metz ?",
+      "answerHint": "Metz — Moselle (57), 122 572 habitants",
+      "lat": 49.1048,
+      "lng": 6.1962
+    },
+    {
+      "text": "Où se trouve Boulogne-sur-Mer ?",
+      "answerHint": "Boulogne-sur-Mer — Pas-de-Calais (62), 40 539 habitants",
+      "lat": 50.7303,
+      "lng": 1.6062
+    },
+    {
+      "text": "Où se trouve Vitry-sur-Seine ?",
+      "answerHint": "Vitry-sur-Seine — Val-de-Marne (94), 93 963 habitants",
+      "lat": 48.7893,
+      "lng": 2.3951
+    },
+    {
+      "text": "Où se trouve Sète ?",
+      "answerHint": "Sète — Hérault (34), 45 337 habitants",
+      "lat": 43.3844,
+      "lng": 3.6441
+    },
+    {
+      "text": "Où se trouve Vaulx-en-Velin ?",
+      "answerHint": "Vaulx-en-Velin — Rhône (69), 53 069 habitants",
+      "lat": 45.7776,
+      "lng": 4.925
+    },
+    {
+      "text": "Où se trouve Angoulême ?",
+      "answerHint": "Angoulême — Charente (16), 41 908 habitants",
+      "lat": 45.6458,
+      "lng": 0.145
+    },
+    {
+      "text": "Où se trouve Brive-la-Gaillarde ?",
+      "answerHint": "Brive-la-Gaillarde — Corrèze (19), 47 095 habitants",
+      "lat": 45.145,
+      "lng": 1.5144
+    },
+    {
+      "text": "Où se trouve Arles ?",
+      "answerHint": "Arles — Bouches-du-Rhône (13), 51 811 habitants",
+      "lat": 43.5441,
+      "lng": 4.6513
+    }
+  ]
+}
