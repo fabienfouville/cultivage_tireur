@@ -1,0 +1,584 @@
+{
+  "id": "geo-departements",
+  "module": "geoloc",
+  "theme": "Géoloc · Tous les départements",
+  "mapId": "france",
+  "questions": [
+    {
+      "text": "Où se trouve ce département : Ain (01) ?",
+      "answerHint": "Ain (01) — préfecture : Bourg-en-Bresse",
+      "lat": 46.1003,
+      "lng": 5.3483
+    },
+    {
+      "text": "Où se trouve ce département : Aisne (02) ?",
+      "answerHint": "Aisne (02) — préfecture : Laon",
+      "lat": 49.5613,
+      "lng": 3.5596
+    },
+    {
+      "text": "Où se trouve ce département : Allier (03) ?",
+      "answerHint": "Allier (03) — préfecture : Moulins",
+      "lat": 46.3934,
+      "lng": 3.1878
+    },
+    {
+      "text": "Où se trouve ce département : Alpes-de-Haute-Provence (04) ?",
+      "answerHint": "Alpes-de-Haute-Provence (04) — préfecture : Digne-les-Bains",
+      "lat": 44.1063,
+      "lng": 6.2451
+    },
+    {
+      "text": "Où se trouve ce département : Hautes-Alpes (05) ?",
+      "answerHint": "Hautes-Alpes (05) — préfecture : Gap",
+      "lat": 44.6637,
+      "lng": 6.2646
+    },
+    {
+      "text": "Où se trouve ce département : Alpes-Maritimes (06) ?",
+      "answerHint": "Alpes-Maritimes (06) — préfecture : Nice",
+      "lat": 43.939,
+      "lng": 7.1167
+    },
+    {
+      "text": "Où se trouve ce département : Ardèche (07) ?",
+      "answerHint": "Ardèche (07) — préfecture : Privas",
+      "lat": 44.7533,
+      "lng": 4.4261
+    },
+    {
+      "text": "Où se trouve ce département : Ardennes (08) ?",
+      "answerHint": "Ardennes (08) — préfecture : Charleville-Mézières",
+      "lat": 49.6164,
+      "lng": 4.6402
+    },
+    {
+      "text": "Où se trouve ce département : Ariège (09) ?",
+      "answerHint": "Ariège (09) — préfecture : Foix",
+      "lat": 42.9213,
+      "lng": 1.5036
+    },
+    {
+      "text": "Où se trouve ce département : Aube (10) ?",
+      "answerHint": "Aube (10) — préfecture : Troyes",
+      "lat": 48.3045,
+      "lng": 4.1609
+    },
+    {
+      "text": "Où se trouve ce département : Aude (11) ?",
+      "answerHint": "Aude (11) — préfecture : Carcassonne",
+      "lat": 43.1035,
+      "lng": 2.4122
+    },
+    {
+      "text": "Où se trouve ce département : Aveyron (12) ?",
+      "answerHint": "Aveyron (12) — préfecture : Rodez",
+      "lat": 44.2813,
+      "lng": 2.6778
+    },
+    {
+      "text": "Où se trouve ce département : Bouches-du-Rhône (13) ?",
+      "answerHint": "Bouches-du-Rhône (13) — préfecture : Marseille",
+      "lat": 43.543,
+      "lng": 5.0854
+    },
+    {
+      "text": "Où se trouve ce département : Calvados (14) ?",
+      "answerHint": "Calvados (14) — préfecture : Caen",
+      "lat": 49.1001,
+      "lng": -0.3608
+    },
+    {
+      "text": "Où se trouve ce département : Cantal (15) ?",
+      "answerHint": "Cantal (15) — préfecture : Aurillac",
+      "lat": 45.0518,
+      "lng": 2.6688
+    },
+    {
+      "text": "Où se trouve ce département : Charente (16) ?",
+      "answerHint": "Charente (16) — préfecture : Angoulême",
+      "lat": 45.7187,
+      "lng": 0.2024
+    },
+    {
+      "text": "Où se trouve ce département : Charente-Maritime (17) ?",
+      "answerHint": "Charente-Maritime (17) — préfecture : La Rochelle",
+      "lat": 45.7712,
+      "lng": -0.6506
+    },
+    {
+      "text": "Où se trouve ce département : Cher (18) ?",
+      "answerHint": "Cher (18) — préfecture : Bourges",
+      "lat": 47.0657,
+      "lng": 2.4923
+    },
+    {
+      "text": "Où se trouve ce département : Corrèze (19) ?",
+      "answerHint": "Corrèze (19) — préfecture : Tulle",
+      "lat": 45.3577,
+      "lng": 1.8774
+    },
+    {
+      "text": "Où se trouve ce département : Corse-du-Sud (2A) ?",
+      "answerHint": "Corse-du-Sud (2A) — préfecture : Ajaccio",
+      "lat": 41.8636,
+      "lng": 8.9893
+    },
+    {
+      "text": "Où se trouve ce département : Haute-Corse (2B) ?",
+      "answerHint": "Haute-Corse (2B) — préfecture : Bastia",
+      "lat": 42.3946,
+      "lng": 9.2069
+    },
+    {
+      "text": "Où se trouve ce département : Côte-d'Or (21) ?",
+      "answerHint": "Côte-d'Or (21) — préfecture : Dijon",
+      "lat": 47.426,
+      "lng": 4.7723
+    },
+    {
+      "text": "Où se trouve ce département : Côtes-d'Armor (22) ?",
+      "answerHint": "Côtes-d'Armor (22) — préfecture : Saint-Brieuc",
+      "lat": 48.4405,
+      "lng": -2.8655
+    },
+    {
+      "text": "Où se trouve ce département : Creuse (23) ?",
+      "answerHint": "Creuse (23) — préfecture : Guéret",
+      "lat": 46.0903,
+      "lng": 2.018
+    },
+    {
+      "text": "Où se trouve ce département : Dordogne (24) ?",
+      "answerHint": "Dordogne (24) — préfecture : Périgueux",
+      "lat": 45.105,
+      "lng": 0.7412
+    },
+    {
+      "text": "Où se trouve ce département : Doubs (25) ?",
+      "answerHint": "Doubs (25) — préfecture : Besançon",
+      "lat": 47.1656,
+      "lng": 6.3628
+    },
+    {
+      "text": "Où se trouve ce département : Drôme (26) ?",
+      "answerHint": "Drôme (26) — préfecture : Valence",
+      "lat": 44.6793,
+      "lng": 5.1633
+    },
+    {
+      "text": "Où se trouve ce département : Eure (27) ?",
+      "answerHint": "Eure (27) — préfecture : Évreux",
+      "lat": 49.1143,
+      "lng": 0.9964
+    },
+    {
+      "text": "Où se trouve ce département : Eure-et-Loir (28) ?",
+      "answerHint": "Eure-et-Loir (28) — préfecture : Chartres",
+      "lat": 48.3883,
+      "lng": 1.3698
+    },
+    {
+      "text": "Où se trouve ce département : Finistère (29) ?",
+      "answerHint": "Finistère (29) — préfecture : Quimper",
+      "lat": 48.2605,
+      "lng": -4.0582
+    },
+    {
+      "text": "Où se trouve ce département : Gard (30) ?",
+      "answerHint": "Gard (30) — préfecture : Nîmes",
+      "lat": 43.9936,
+      "lng": 4.1803
+    },
+    {
+      "text": "Où se trouve ce département : Haute-Garonne (31) ?",
+      "answerHint": "Haute-Garonne (31) — préfecture : Toulouse",
+      "lat": 43.3589,
+      "lng": 1.1733
+    },
+    {
+      "text": "Où se trouve ce département : Gers (32) ?",
+      "answerHint": "Gers (32) — préfecture : Auch",
+      "lat": 43.6927,
+      "lng": 0.4529
+    },
+    {
+      "text": "Où se trouve ce département : Gironde (33) ?",
+      "answerHint": "Gironde (33) — préfecture : Bordeaux",
+      "lat": 44.8247,
+      "lng": -0.5751
+    },
+    {
+      "text": "Où se trouve ce département : Hérault (34) ?",
+      "answerHint": "Hérault (34) — préfecture : Montpellier",
+      "lat": 43.5792,
+      "lng": 3.3681
+    },
+    {
+      "text": "Où se trouve ce département : Ille-et-Vilaine (35) ?",
+      "answerHint": "Ille-et-Vilaine (35) — préfecture : Rennes",
+      "lat": 48.1512,
+      "lng": -1.6336
+    },
+    {
+      "text": "Où se trouve ce département : Indre (36) ?",
+      "answerHint": "Indre (36) — préfecture : Châteauroux",
+      "lat": 46.7782,
+      "lng": 1.5766
+    },
+    {
+      "text": "Où se trouve ce département : Indre-et-Loire (37) ?",
+      "answerHint": "Indre-et-Loire (37) — préfecture : Tours",
+      "lat": 47.2583,
+      "lng": 0.691
+    },
+    {
+      "text": "Où se trouve ce département : Isère (38) ?",
+      "answerHint": "Isère (38) — préfecture : Grenoble",
+      "lat": 45.2638,
+      "lng": 5.5749
+    },
+    {
+      "text": "Où se trouve ce département : Jura (39) ?",
+      "answerHint": "Jura (39) — préfecture : Lons-le-Saunier",
+      "lat": 46.7298,
+      "lng": 5.6976
+    },
+    {
+      "text": "Où se trouve ce département : Landes (40) ?",
+      "answerHint": "Landes (40) — préfecture : Mont-de-Marsan",
+      "lat": 43.9658,
+      "lng": -0.7837
+    },
+    {
+      "text": "Où se trouve ce département : Loir-et-Cher (41) ?",
+      "answerHint": "Loir-et-Cher (41) — préfecture : Blois",
+      "lat": 47.6169,
+      "lng": 1.4289
+    },
+    {
+      "text": "Où se trouve ce département : Loire (42) ?",
+      "answerHint": "Loire (42) — préfecture : Saint-Étienne",
+      "lat": 45.7276,
+      "lng": 4.1653
+    },
+    {
+      "text": "Où se trouve ce département : Haute-Loire (43) ?",
+      "answerHint": "Haute-Loire (43) — préfecture : Le Puy-en-Velay",
+      "lat": 45.1277,
+      "lng": 3.8064
+    },
+    {
+      "text": "Où se trouve ce département : Loire-Atlantique (44) ?",
+      "answerHint": "Loire-Atlantique (44) — préfecture : Nantes",
+      "lat": 47.3627,
+      "lng": -1.6789
+    },
+    {
+      "text": "Où se trouve ce département : Loiret (45) ?",
+      "answerHint": "Loiret (45) — préfecture : Orléans",
+      "lat": 47.9125,
+      "lng": 2.3443
+    },
+    {
+      "text": "Où se trouve ce département : Lot (46) ?",
+      "answerHint": "Lot (46) — préfecture : Cahors",
+      "lat": 44.6249,
+      "lng": 1.6053
+    },
+    {
+      "text": "Où se trouve ce département : Lot-et-Garonne (47) ?",
+      "answerHint": "Lot-et-Garonne (47) — préfecture : Agen",
+      "lat": 44.3674,
+      "lng": 0.4606
+    },
+    {
+      "text": "Où se trouve ce département : Lozère (48) ?",
+      "answerHint": "Lozère (48) — préfecture : Mende",
+      "lat": 44.5172,
+      "lng": 3.4991
+    },
+    {
+      "text": "Où se trouve ce département : Maine-et-Loire (49) ?",
+      "answerHint": "Maine-et-Loire (49) — préfecture : Angers",
+      "lat": 47.3905,
+      "lng": -0.559
+    },
+    {
+      "text": "Où se trouve ce département : Manche (50) ?",
+      "answerHint": "Manche (50) — préfecture : Saint-Lô",
+      "lat": 49.0814,
+      "lng": -1.3294
+    },
+    {
+      "text": "Où se trouve ce département : Marne (51) ?",
+      "answerHint": "Marne (51) — préfecture : Châlons-en-Champagne",
+      "lat": 48.9496,
+      "lng": 4.2392
+    },
+    {
+      "text": "Où se trouve ce département : Haute-Marne (52) ?",
+      "answerHint": "Haute-Marne (52) — préfecture : Chaumont",
+      "lat": 48.1099,
+      "lng": 5.2254
+    },
+    {
+      "text": "Où se trouve ce département : Mayenne (53) ?",
+      "answerHint": "Mayenne (53) — préfecture : Laval",
+      "lat": 48.1473,
+      "lng": -0.6567
+    },
+    {
+      "text": "Où se trouve ce département : Meurthe-et-Moselle (54) ?",
+      "answerHint": "Meurthe-et-Moselle (54) — préfecture : Nancy",
+      "lat": 48.7881,
+      "lng": 6.1622
+    },
+    {
+      "text": "Où se trouve ce département : Meuse (55) ?",
+      "answerHint": "Meuse (55) — préfecture : Bar-le-Duc",
+      "lat": 48.9916,
+      "lng": 5.3813
+    },
+    {
+      "text": "Où se trouve ce département : Morbihan (56) ?",
+      "answerHint": "Morbihan (56) — préfecture : Vannes",
+      "lat": 47.8544,
+      "lng": -2.8052
+    },
+    {
+      "text": "Où se trouve ce département : Moselle (57) ?",
+      "answerHint": "Moselle (57) — préfecture : Metz",
+      "lat": 49.0376,
+      "lng": 6.6603
+    },
+    {
+      "text": "Où se trouve ce département : Nièvre (58) ?",
+      "answerHint": "Nièvre (58) — préfecture : Nevers",
+      "lat": 47.1156,
+      "lng": 3.5043
+    },
+    {
+      "text": "Où se trouve ce département : Nord (59) ?",
+      "answerHint": "Nord (59) — préfecture : Lille",
+      "lat": 50.4487,
+      "lng": 3.2163
+    },
+    {
+      "text": "Où se trouve ce département : Oise (60) ?",
+      "answerHint": "Oise (60) — préfecture : Beauvais",
+      "lat": 49.4101,
+      "lng": 2.4257
+    },
+    {
+      "text": "Où se trouve ce département : Orne (61) ?",
+      "answerHint": "Orne (61) — préfecture : Alençon",
+      "lat": 48.623,
+      "lng": 0.1275
+    },
+    {
+      "text": "Où se trouve ce département : Pas-de-Calais (62) ?",
+      "answerHint": "Pas-de-Calais (62) — préfecture : Arras",
+      "lat": 50.4932,
+      "lng": 2.2879
+    },
+    {
+      "text": "Où se trouve ce département : Puy-de-Dôme (63) ?",
+      "answerHint": "Puy-de-Dôme (63) — préfecture : Clermont-Ferrand",
+      "lat": 45.726,
+      "lng": 3.1404
+    },
+    {
+      "text": "Où se trouve ce département : Pyrénées-Atlantiques (64) ?",
+      "answerHint": "Pyrénées-Atlantiques (64) — préfecture : Pau",
+      "lat": 43.2564,
+      "lng": -0.7588
+    },
+    {
+      "text": "Où se trouve ce département : Hautes-Pyrénées (65) ?",
+      "answerHint": "Hautes-Pyrénées (65) — préfecture : Tarbes",
+      "lat": 43.0516,
+      "lng": 0.1661
+    },
+    {
+      "text": "Où se trouve ce département : Pyrénées-Orientales (66) ?",
+      "answerHint": "Pyrénées-Orientales (66) — préfecture : Perpignan",
+      "lat": 42.5999,
+      "lng": 2.52
+    },
+    {
+      "text": "Où se trouve ce département : Bas-Rhin (67) ?",
+      "answerHint": "Bas-Rhin (67) — préfecture : Strasbourg",
+      "lat": 48.6714,
+      "lng": 7.5522
+    },
+    {
+      "text": "Où se trouve ce département : Haut-Rhin (68) ?",
+      "answerHint": "Haut-Rhin (68) — préfecture : Colmar",
+      "lat": 47.8593,
+      "lng": 7.2734
+    },
+    {
+      "text": "Où se trouve ce département : Rhône (69) ?",
+      "answerHint": "Rhône (69) — préfecture : Lyon",
+      "lat": 45.8713,
+      "lng": 4.6411
+    },
+    {
+      "text": "Où se trouve ce département : Haute-Saône (70) ?",
+      "answerHint": "Haute-Saône (70) — préfecture : Vesoul",
+      "lat": 47.6414,
+      "lng": 6.0874
+    },
+    {
+      "text": "Où se trouve ce département : Saône-et-Loire (71) ?",
+      "answerHint": "Saône-et-Loire (71) — préfecture : Mâcon",
+      "lat": 46.6448,
+      "lng": 4.5432
+    },
+    {
+      "text": "Où se trouve ce département : Sarthe (72) ?",
+      "answerHint": "Sarthe (72) — préfecture : Le Mans",
+      "lat": 47.9949,
+      "lng": 0.2231
+    },
+    {
+      "text": "Où se trouve ce département : Savoie (73) ?",
+      "answerHint": "Savoie (73) — préfecture : Chambéry",
+      "lat": 45.4779,
+      "lng": 6.4429
+    },
+    {
+      "text": "Où se trouve ce département : Haute-Savoie (74) ?",
+      "answerHint": "Haute-Savoie (74) — préfecture : Annecy",
+      "lat": 46.035,
+      "lng": 6.428
+    },
+    {
+      "text": "Où se trouve ce département : Paris (75) ?",
+      "answerHint": "Paris (75) — préfecture : Paris",
+      "lat": 48.8563,
+      "lng": 2.3439
+    },
+    {
+      "text": "Où se trouve ce département : Seine-Maritime (76) ?",
+      "answerHint": "Seine-Maritime (76) — préfecture : Rouen",
+      "lat": 49.6553,
+      "lng": 1.0272
+    },
+    {
+      "text": "Où se trouve ce département : Seine-et-Marne (77) ?",
+      "answerHint": "Seine-et-Marne (77) — préfecture : Melun",
+      "lat": 48.6275,
+      "lng": 2.934
+    },
+    {
+      "text": "Où se trouve ce département : Yvelines (78) ?",
+      "answerHint": "Yvelines (78) — préfecture : Versailles",
+      "lat": 48.8154,
+      "lng": 1.8416
+    },
+    {
+      "text": "Où se trouve ce département : Deux-Sèvres (79) ?",
+      "answerHint": "Deux-Sèvres (79) — préfecture : Niort",
+      "lat": 46.557,
+      "lng": -0.3181
+    },
+    {
+      "text": "Où se trouve ce département : Somme (80) ?",
+      "answerHint": "Somme (80) — préfecture : Amiens",
+      "lat": 49.9582,
+      "lng": 2.2761
+    },
+    {
+      "text": "Où se trouve ce département : Tarn (81) ?",
+      "answerHint": "Tarn (81) — préfecture : Albi",
+      "lat": 43.7856,
+      "lng": 2.1656
+    },
+    {
+      "text": "Où se trouve ce département : Tarn-et-Garonne (82) ?",
+      "answerHint": "Tarn-et-Garonne (82) — préfecture : Montauban",
+      "lat": 44.086,
+      "lng": 1.2811
+    },
+    {
+      "text": "Où se trouve ce département : Var (83) ?",
+      "answerHint": "Var (83) — préfecture : Toulon",
+      "lat": 43.4442,
+      "lng": 6.2443
+    },
+    {
+      "text": "Où se trouve ce département : Vaucluse (84) ?",
+      "answerHint": "Vaucluse (84) — préfecture : Avignon",
+      "lat": 43.9939,
+      "lng": 5.1854
+    },
+    {
+      "text": "Où se trouve ce département : Vendée (85) ?",
+      "answerHint": "Vendée (85) — préfecture : La Roche-sur-Yon",
+      "lat": 46.6727,
+      "lng": -1.2877
+    },
+    {
+      "text": "Où se trouve ce département : Vienne (86) ?",
+      "answerHint": "Vienne (86) — préfecture : Poitiers",
+      "lat": 46.5649,
+      "lng": 0.459
+    },
+    {
+      "text": "Où se trouve ce département : Haute-Vienne (87) ?",
+      "answerHint": "Haute-Vienne (87) — préfecture : Limoges",
+      "lat": 45.8925,
+      "lng": 1.2339
+    },
+    {
+      "text": "Où se trouve ce département : Vosges (88) ?",
+      "answerHint": "Vosges (88) — préfecture : Épinal",
+      "lat": 48.1961,
+      "lng": 6.3808
+    },
+    {
+      "text": "Où se trouve ce département : Yonne (89) ?",
+      "answerHint": "Yonne (89) — préfecture : Auxerre",
+      "lat": 47.8401,
+      "lng": 3.5631
+    },
+    {
+      "text": "Où se trouve ce département : Territoire de Belfort (90) ?",
+      "answerHint": "Territoire de Belfort (90) — préfecture : Belfort",
+      "lat": 47.6321,
+      "lng": 6.9272
+    },
+    {
+      "text": "Où se trouve ce département : Essonne (91) ?",
+      "answerHint": "Essonne (91) — préfecture : Évry-Courcouronnes",
+      "lat": 48.522,
+      "lng": 2.2428
+    },
+    {
+      "text": "Où se trouve ce département : Hauts-de-Seine (92) ?",
+      "answerHint": "Hauts-de-Seine (92) — préfecture : Nanterre",
+      "lat": 48.8482,
+      "lng": 2.2455
+    },
+    {
+      "text": "Où se trouve ce département : Seine-Saint-Denis (93) ?",
+      "answerHint": "Seine-Saint-Denis (93) — préfecture : Bobigny",
+      "lat": 48.9175,
+      "lng": 2.4779
+    },
+    {
+      "text": "Où se trouve ce département : Val-de-Marne (94) ?",
+      "answerHint": "Val-de-Marne (94) — préfecture : Créteil",
+      "lat": 48.777,
+      "lng": 2.4683
+    },
+    {
+      "text": "Où se trouve ce département : Val-d'Oise (95) ?",
+      "answerHint": "Val-d'Oise (95) — préfecture : Cergy",
+      "lat": 49.0829,
+      "lng": 2.1307
+    }
+  ]
+}
