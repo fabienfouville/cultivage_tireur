@@ -48,6 +48,8 @@ export const RECOMMENDED: Record<string, Record<string, unknown>> = {
   echelle: { podium: '5,4,3,2,1' },
   geoloc: { podium: '5,4,3,2,1' },
   pixel: { podium: '5,4,3,2,1', startCells: 8, step: 3, curve: 2.5 },
+  // Artiste et titre comptent chacun : 3 + 3 = 6 pts au maximum pour le plus rapide
+  blindtest: { podium: '3,2,1', others: 1 },
   cash: { points: 4 },
   theme: { solo: 2 },
   top: { timer: 30 },
