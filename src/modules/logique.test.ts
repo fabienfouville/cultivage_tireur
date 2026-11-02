@@ -31,7 +31,17 @@ describe("À l'échelle", () => {
     const r = (await echelle.score({ q: { answer: 109 } as any, answers: [ans('rouge', 202, 1), ans('loose', 52, 2), ans('fab', 274, 3)] as any, cfg: { timer: 25, podium: '5,3,1' }, round: {} as any, block: {} as any, participants: [], verdicts: {} })) as any
     expect(r.results.loose.pts).toBe(5)
     expect(r.results.rouge.pts).toBe(3)
-    expect(r.results.loose.detail).toBe('52 m (écart 57 m)')
+    // On compare à l'œil : pas de mètres affichés, seulement l'écart en %
+    expect(r.results.loose.detail).toBe('trop petit de 52 %')
+  })
+
+  it('la réponse est donnée en rapport de tailles, sans mètres', async () => {
+    const { ratioText, guessText } = await import('./echelle')
+    expect(ratioText('Ronflex', 2.1, 'Pikachu', 0.4)).toBe('Ronflex est 5,3 fois plus grand que Pikachu')
+    expect(ratioText('Pikachu', 0.4, 'Ronflex', 2.1)).toBe('Pikachu est 5,3 fois plus petit que Ronflex')
+    expect(ratioText('Bison', 1.85, 'Rhinocéros', 1.8)).toBe('Bison fait la même taille que Rhinocéros')
+    expect(guessText(110, 109)).toBe('🎯 pile poil !')
+    expect(guessText(218, 109)).toBe('trop grand de 100 %')
   })
 })
 

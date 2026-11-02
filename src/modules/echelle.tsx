@@ -15,13 +15,27 @@ export const relativeError = (guess: number, truth: number) => Math.abs(Math.log
 /** Écart absolu (en mètres) : c'est lui qui classe les joueurs */
 export const absoluteError = (guess: number, truth: number) => Math.abs(guess - truth)
 
+/** Les joueurs comparent à l'œil : on ne montre jamais de mètres, seulement des rapports de taille */
+const times = (k: number) => k.toLocaleString('fr-FR', { maximumFractionDigits: k < 10 ? 1 : 0 })
+export function ratioText(target: string, meters: number, ref: string, refMeters: number) {
+  const k = meters / refMeters
+  if (!Number.isFinite(k) || k <= 0) return target
+  if (Math.abs(k - 1) < 0.05) return `${target} fait la même taille que ${ref}`
+  return k > 1 ? `${target} est ${times(k)} fois plus grand que ${ref}` : `${target} est ${times(1 / k)} fois plus petit que ${ref}`
+}
+export function guessText(guess: number, truth: number) {
+  const d = guess / truth
+  if (Math.abs(d - 1) < 0.03) return '🎯 pile poil !'
+  return d > 1 ? `trop grand de ${Math.round((d - 1) * 100)} %` : `trop petit de ${Math.round((1 - d) * 100)} %`
+}
+
 export const echelle: ModuleDef = {
   key: 'echelle',
   name: "À l'échelle",
   icon: '📏',
   tagline: 'Comparer des tailles',
   rules:
-    "On te donne la taille d'une référence : règle le curseur pour donner la taille de l'autre. Les plus proches gagnent (écart en mètres avec la vraie taille). Dans une manche, la référence est l'objet deviné juste avant.",
+    "Agrandis ou rétrécis l'objet avec le curseur pour qu'il ait la bonne taille à côté de la référence : on compare à l'œil, sans mètres. Les plus proches gagnent. Dans une manche, la référence est l'objet deviné juste avant.",
   defaults: { timer: 25, podium: '5,3,1' },
   configFields: [{ key: 'podium', label: 'Points du podium', type: 'text', help: 'ex : 5,3,1' }],
   questionFields: [
@@ -80,7 +94,7 @@ export const echelle: ModuleDef = {
     const ranked = podium(valid, parsePoints(cfg.podium), (a, b) => Math.abs(a.err - b.err) < 1e-9)
     const results: Record<string, { pts: number; detail?: string }> = {}
     for (const r of ranked) {
-      results[r.pid] = { pts: r.pts, detail: `${formatMeters(r.value)} (écart ${formatMeters(r.err)})` }
+      results[r.pid] = { pts: r.pts, detail: guessText(r.value, truth) }
     }
     return { results, summary: { guesses: ranked.map((r) => ({ pid: r.pid, value: r.value })) } }
   },
@@ -96,6 +110,7 @@ export const echelle: ModuleDef = {
         <QuestionText>{p.text}</QuestionText>
         <ScaleScene
           height={260}
+          sizes={false}
           figures={[
             { label: p.refName, meters: ref, emoji: p.refEmoji, image: p.refImage ?? undefined, length: p.refLength },
             {
@@ -120,16 +135,15 @@ export const echelle: ModuleDef = {
               onChange={(e) => setStep(Number(e.target.value))}
               aria-label={`Taille de ${p.targetName}`}
             />
-            <div className="scale-value">{formatMeters(guess)}</div>
             <button className="btn btn-primary btn-block" disabled={locked} onClick={() => submit({ value: Number(guess.toPrecision(3)) })}>
-              Valider {formatMeters(guess)}
+              Valider cette taille
             </button>
           </div>
         )}
-        {answer && !locked && !revealed && <Sent>Envoyé : {formatMeters(answer.data.value)}</Sent>}
+        {answer && !locked && !revealed && <Sent>Envoyé ! Tu peux encore changer</Sent>}
         {revealed && (
           <div className="big-answer">
-            {round.solution?.label}
+            {ratioText(p.targetName, round.solution?.meters, p.refName, ref)}
             <div className="muted small">{round.results?.[me.id]?.detail ?? 'Pas de réponse'}</div>
           </div>
         )}
@@ -148,13 +162,14 @@ export const echelle: ModuleDef = {
           <QuestionText big>{p.text}</QuestionText>
           {revealed && (
             <>
-              <div className="big-answer">{round.solution?.label}</div>
+              <div className="big-answer">{ratioText(p.targetName, round.solution?.meters, p.refName, Number(p.refHeight))}</div>
               <RevealList round={round} names={names} />
             </>
           )}
         </div>
         <ScaleScene
           height={480}
+          sizes={false}
           unknownMeters={Number(p.refHeight)}
           figures={[
             { label: p.refName, meters: Number(p.refHeight), emoji: p.refEmoji, image: p.refImage ?? undefined, length: p.refLength },

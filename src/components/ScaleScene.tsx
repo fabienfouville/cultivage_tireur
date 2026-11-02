@@ -52,6 +52,7 @@ export function ScaleScene({
   marks = [],
   height = 320,
   unknownMeters,
+  sizes = true,
 }: {
   figures: Figure[]
   /** estimations des joueurs, pour la dernière figure (celle à deviner) */
@@ -59,6 +60,8 @@ export function ScaleScene({
   height?: number
   /** taille affichée pour une figure inconnue (« ? ») */
   unknownMeters?: number
+  /** afficher la taille en mètres sous chaque figure (sinon : comparaison à l'œil seulement) */
+  sizes?: boolean
 }) {
   const W = 600
   const H = 400
@@ -126,6 +129,13 @@ export function ScaleScene({
                 </text>
               </g>
             )}
+            {/* Trait au bord mesuré (le haut, ou le bout pour une longueur) : on voit exactement où s'arrête la taille */}
+            {known &&
+              (f.length ? (
+                <line x1={left + w} x2={left + w} y1={ground - h - 10} y2={ground} stroke="currentColor" strokeOpacity={0.75} strokeWidth={2} strokeDasharray="6 4" />
+              ) : (
+                <line x1={left - 10} x2={left + w + 10} y1={ground - h} y2={ground - h} stroke="currentColor" strokeOpacity={0.75} strokeWidth={2} strokeDasharray="6 4" />
+              ))}
             {last &&
               marks.map((m, k) =>
                 f.length ? (
@@ -144,9 +154,9 @@ export function ScaleScene({
                   </g>
                 ),
               )}
-            <text x={labelX(cx, `${f.label}${known ? ` · ${formatMeters(f.meters!)}` : ''}`)} y={ground + 24} textAnchor="middle" fontSize={16} fill="currentColor" fontWeight={700}>
+            <text x={labelX(cx, `${f.label}${known && sizes ? ` · ${formatMeters(f.meters!)}` : ''}`)} y={ground + 24} textAnchor="middle" fontSize={16} fill="currentColor" fontWeight={700}>
               {f.label}
-              {known ? ` · ${formatMeters(f.meters!)}` : ''}
+              {known && sizes ? ` · ${formatMeters(f.meters!)}` : ''}
             </text>
           </g>
         )
